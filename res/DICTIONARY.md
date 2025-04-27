@@ -32,10 +32,10 @@ It may be followed by a dot and **attributes**.
 If only the base form is provided (no irregular), regular forms will be
 automatically generated for these four word classes:
 
-- **Adjective**: Comparative (_*er*), Superlative (_*est*)
-- **Noun**: Plural (_*s*)
-- **Pronoun**: Plural (_*s*)
-- **Verb**: Present tense (_*s*), Present participle (_*ing*),
-            Past tense (_*ed*)
+- **Adjective**: Comparative (\_*er*), Superlative (\_*est*)
+- **Noun**: Plural (\_*s*)
+- **Pronoun**: Plural (\_*s*)
+- **Verb**: Present tense (\_*s*), Present participle (\_*ing*),
+            Past tense (\_*ed*)
 
 There are rules for attaching the suffixes, but they're not perfect.
