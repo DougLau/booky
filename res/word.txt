@@ -97,7 +97,6 @@ Monday:N.n
 Mr:N.n
 Mrs:N.n
 Ms:N.n
-Ms:N.n
 Neanderthal:A
 Neptune:N.n
 Nov:N.n
@@ -43882,7 +43881,7 @@ owned:A
 owner:N
 ownerless:A
 ownership:N
-ox:N,_en,_
+ox:N,_en
 oxacillin:N
 oxalacetate:N
 oxalate:N
@@ -49676,7 +49675,7 @@ pussytoes:N
 pustulate:A
 pustule:N
 put:N
-put:V,_
+put:V,_s,_ting
 putamen:N
 putative:A
 putdownable:A
@@ -50707,7 +50706,7 @@ reactive:A
 reactivity:N
 reactor:N
 read:N
-read:V,_
+read:V,_s,_ing
 readability:N
 readable:A
 readably:Av
@@ -51149,7 +51148,7 @@ redly:Av
 redmaids:N
 redneck:N
 redness:N
-redo:V,_es,redid,_ne
+redo:V,_es,_ing,redid,_ne
 redolence:N
 redolent:A
 redouble:V
@@ -52251,7 +52250,7 @@ retral:A
 retranslate:V
 retransmit:V
 retread:N
-retread:V,retrod,retrodden,_ed
+retread:V,_s,_ing,retrod,retrodden,_ed
 retreat:N
 retreat:V
 retreatant:N
@@ -52754,7 +52753,7 @@ rippling:N
 ripsaw:N
 riptide:N
 rise:N
-rise:V,rose,_n
+rise:V,_s,rising,rose,_n
 risen:A
 riser:N
 risibility:N
@@ -53599,7 +53598,7 @@ sally:N
 sally:V
 salmagundi:N
 salmi:N
-salmon:N,_,_s
+salmon:N,_s
 salmonberry:N
 salmonella:N
 salmonellosis:N
@@ -54040,7 +54039,7 @@ saxitoxin:N
 saxophone:N
 saxophonist:N
 say:N
-say:V,_s,said
+say:V,_s,_ing,said
 sayeret:N
 saying:N
 sayonara:N
@@ -54159,7 +54158,7 @@ scaremonger:N
 scarer:N
 scarey:A
 scarf:N
-scarf:V,scarves,_s
+scarf:V,scarves,_s,_ing
 scarfpin:N
 scarify:V
 scarily:Av
@@ -54866,7 +54865,7 @@ sedulousness:N
 sedum:N
 see:Av
 see:N
-see:V,saw,_n
+see:V,_s,_ing,saw,_n
 seeable:A
 seed:N
 seed:V
@@ -55360,7 +55359,7 @@ session:N
 sestet:N
 set:A
 set:N
-set:V,_
+set:V,_s,_ting
 seta:N
 setaceous:A
 setback:N
@@ -55417,7 +55416,7 @@ severely:Av
 severeness:N
 severing:N
 severity:N
-sew:V,_ed,_n
+sew:V,_s,_ing,_ed,_n
 sewage:N
 sewed:A
 sewellel:N
@@ -55505,7 +55504,7 @@ shaheed:N
 shaitan:N
 shakable:A
 shake:N
-shake:V,shook,_n
+shake:V,_s,shaking,shook,_n
 shakeable:A
 shakedown:A
 shakedown:N
@@ -55650,7 +55649,7 @@ shebang:N
 shebeen:N
 shed:A
 shed:N
-shed:V,_
+shed:V,_s,_ding
 shedder:N
 shedding:N
 sheen:N
@@ -56028,7 +56027,7 @@ shrilling:A
 shrilling:N
 shrillness:N
 shrilly:Av
-shrimp:N,_,_s
+shrimp:N
 shrimp:V
 shrimper:N
 shrimpfish:N
@@ -56083,7 +56082,7 @@ shunt:V
 shunter:N
 shush:V
 shut:A
-shut:V,_s,_ting,_
+shut:V,_s,_ting
 shutdown:N
 shuteye:N
 shutout:N
@@ -57043,7 +57042,7 @@ smear:V
 smeared:A
 smegma:N
 smell:N
-smell:V,smelt,_ed
+smell:V,_s,_ing,smelt,_ed
 smelling:A
 smelling:N
 smelly:A
@@ -57891,7 +57890,7 @@ sovietise:V
 sovietism:N
 sovietize:V
 sow:N
-sow:V,_ed,_n
+sow:V,_s,_ing,_ed,_n
 sowbane:N
 sowbelly:N
 sowbread:N
@@ -58244,7 +58243,7 @@ spikenard:N
 spiky:A
 spile:N
 spill:N
-spill:V,spilt,_ed
+spill:V,_s,_ing,spilt,_ed
 spillage:N
 spiller:N
 spillikin:N
@@ -58545,7 +58544,7 @@ sprayer:N
 spraying:N
 spread:A
 spread:N
-spread:V,_
+spread:V,_s,_ing
 spreadeagle:V
 spreader:N
 spreadhead:N
@@ -59681,7 +59680,7 @@ stretchiness:N
 stretching:A
 stretching:N
 stretchy:A
-strew:V,_ed,_n
+strew:V,_s,_ing,_ed,_n
 strewing:N
 strewn:A
 stria:N
@@ -59742,7 +59741,7 @@ stripping:N
 striptease:N
 stripteaser:N
 stripy:A
-strive:V,strove,_n,_d
+strive:V,_s,striving,strove,_n,_d
 striver:N
 striving:N
 strobe:N
@@ -60962,7 +60961,7 @@ sweetpea:N
 sweetsop:N
 swell:A
 swell:N
-swell:V,_ed,swollen
+swell:V,_s,_ing,_ed,swollen
 swelled:A
 swellhead:N
 swelling:A
@@ -62794,7 +62793,7 @@ throughout:P
 throughput:N
 throughway:N
 throw:N
-throw:V,threw,_n,_s,_ing
+throw:V,_s,_ing,threw,_n
 throwaway:A
 throwaway:N
 throwback:A
@@ -63994,7 +63993,7 @@ treachery:N
 treacle:N
 treacly:A
 tread:N
-tread:V,trod,trodden,_s,_ing
+tread:V,_s,_ing,trod,trodden
 treadle:N
 treadle:V
 treadmill:N
@@ -64399,7 +64398,7 @@ trousered:A
 trousering:N
 trousers:N
 trousseau:N
-trout:N,_,_s
+trout:N,_s
 trove:N
 trowel:N
 trowel:V
@@ -64580,7 +64579,7 @@ tumultuously:Av
 tumultuousness:N
 tumulus:N
 tun:N
-tuna:N,_,_s
+tuna:N,_s
 tunaburger:N
 tundra:N
 tune:N
@@ -65581,7 +65580,7 @@ underframe:N
 underfur:N
 undergarment:N
 undergird:V
-undergo:V,underwent,_ne
+undergo:V,_es,_ing,underwent,_ne
 undergrad:N
 undergraduate:N
 underground:A
@@ -65746,7 +65745,7 @@ undisturbed:A
 undiversified:A
 undividable:A
 undivided:A
-undo:V,_es,undid,_ne
+undo:V,_es,_ing,undid,_ne
 undoable:A
 undock:V
 undocked:A
@@ -69242,7 +69241,7 @@ weeness:N
 weenie:N
 weensy:A
 weeny:A
-weep:V,wept,_s,_ing
+weep:V,_s,_ing,wept
 weeper:N
 weepiness:N
 weeping:A
