@@ -72,6 +72,23 @@ fn is_roman_numeral(w: &str) -> bool {
     w.chars().all(is_roman_numeral_char) && !w.is_empty() && w != "I"
 }
 
+/// Check if a string is an ordinal number
+fn is_ordinal_number(w: &str) -> bool {
+    if let Some(p) = w.strip_suffix("1st") {
+        return p.chars().all(|c| c.is_ascii_digit());
+    }
+    if let Some(p) = w.strip_suffix("2nd") {
+        return p.chars().all(|c| c.is_ascii_digit());
+    }
+    if let Some(p) = w.strip_suffix("3rd") {
+        return p.chars().all(|c| c.is_ascii_digit());
+    }
+    if let Some(p) = w.strip_suffix("th") {
+        return p.chars().all(|c| c.is_ascii_digit());
+    }
+    false
+}
+
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         write!(fmt, "{:5} {}", self.seen, self.word)?;
@@ -83,7 +100,10 @@ impl TryFrom<&str> for WordEntry {
     type Error = ();
 
     fn try_from(word: &str) -> Result<Self, Self::Error> {
-        if is_word_valid(word) && !is_roman_numeral(word) {
+        if is_word_valid(word)
+            && !is_roman_numeral(word)
+            && !is_ordinal_number(word)
+        {
             Ok(WordEntry::new(1, word))
         } else {
             Err(())
