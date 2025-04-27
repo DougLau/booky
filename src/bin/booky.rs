@@ -1,8 +1,8 @@
 use anyhow::Result;
 use argh::FromArgs;
-use std::io::{BufWriter, Write, stdin, stdout};
 use booky::tally::WordTally;
 use booky::word::{Dict, Word, WordClass};
+use std::io::{BufWriter, Write, stdin, stdout};
 use yansi::Paint;
 
 /// Command-line arguments
