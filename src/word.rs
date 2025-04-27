@@ -415,7 +415,7 @@ impl Dict {
     /// Get built-in dictionary
     pub fn builtin() -> Self {
         let mut dict = Dict::default();
-        for (i, line) in include_str!("../res/word.txt").lines().enumerate() {
+        for (i, line) in include_str!("../res/english.csv").lines().enumerate() {
             match Word::try_from(line) {
                 Ok(word) => dict.insert(word),
                 Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
