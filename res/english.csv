@@ -1706,6 +1706,7 @@ ahorse:A
 ahorse:Av
 ahorseback:A
 ahorseback:Av
+ahoy:I
 aibophobia:N
 aid:N
 aid:V
@@ -5128,6 +5129,7 @@ avariciously:Av
 avariciousness:N
 avaritia:N
 avascular:A
+avast:I
 avatar:N
 avellan:A
 avellane:A
@@ -5271,7 +5273,8 @@ ay:I
 ayah:N
 ayapana:N
 ayatollah:N
-aye-aye:N
+aye:Av
+aye:N
 ayin:N
 azadirachtin:N
 azalea:N
@@ -8260,6 +8263,7 @@ bowling:N
 bowls:N
 bowman:N,bowmen
 bowse:V
+bowsman:N,bowsmen
 bowsprit:N
 bowstring:N
 box:N
@@ -11014,11 +11018,14 @@ cetacean:A
 cetacean:N
 cetaceous:A
 cetchup:N
+cetology:N
 cetrimide:N
 cf:Av
 cha-cha:N
 chabasite:N
 chabazite:N
+chace:N
+chace:V
 chachalaca:N
 chachka:N
 chacma:N
@@ -12301,7 +12308,7 @@ cleat:V
 cleats:N
 cleavable:A
 cleavage:N
-cleave:V,cleft,clove,cloven
+cleave:V,_s,cleaving,cleft,clove,cloven
 cleaver:N
 cleavers:N
 clef:N
@@ -14672,6 +14679,7 @@ corpse:N
 corpulence:N
 corpulent:A
 corpus:N,corpora
+corpusant:N
 corpuscle:N
 corpuscular:A
 corrade:V
@@ -21297,7 +21305,7 @@ endearing:A
 endearingly:Av
 endearment:N
 endeavor:N
-endeavor:V
+endeavor:V,_s,_ing,_ed
 endeavour:N
 endeavour:V
 ended:A
@@ -25044,7 +25052,7 @@ forested:A
 forester:N
 forestiera:N
 forestry:N
-foreswear:V
+foreswear:V,_s,_ing,foreswore,foresworn
 foretaste:N
 foretell:V
 foretelling:N
@@ -25157,7 +25165,7 @@ forsake:V
 forsaken:A
 forsaking:N
 forsooth:Av
-forswear:V
+forswear:V,_s,_ing,forswore,forsworn
 forswearing:N
 forsythia:N
 fort:N
@@ -26014,6 +26022,7 @@ gamelan:N
 gamely:Av
 gameness:N
 gamesmanship:N
+gamesome:A
 gamester:N
 gametangium:N
 gamete:N
@@ -27922,6 +27931,7 @@ gunwale:N
 guppy:N
 gurgle:N
 gurgle:V
+gurgling:N
 gurnard:N
 gurney:N
 guru:N
@@ -28815,6 +28825,7 @@ heartthrob:N
 heartwarming:A
 heartwood:N
 hearty:A
+hearty:N
 heat:N
 heat:V
 heatable:A
@@ -30347,6 +30358,8 @@ hut:N
 hutch:N
 hutment:N
 hutzpah:N
+huzza:I
+huzzah:I
 hyacinth:N
 hyaena:N
 hyalin:N
@@ -30855,6 +30868,7 @@ idly:Av
 idocrase:N
 idol:N
 idolater:N
+idolator:N
 idolatress:N
 idolatrous:A
 idolatrously:Av
@@ -37434,6 +37448,7 @@ marcel:N
 marcel:V
 march:N
 march:V
+marchant:N
 marcher:N
 marching:N
 marchioness:N
@@ -37470,6 +37485,7 @@ marinade:V
 marinara:N
 marinate:V
 marine:A
+marine:N
 mariner:N
 marionette:N
 mariposa:N
@@ -38496,9 +38512,11 @@ metharbital:N
 metheglin:N
 methenamine:N
 methicillin:N
+methinks:V,methought
 methionine:N
 methocarbamol:N
 method:N
+methodic:A
 methodical:A
 methodically:Av
 methodicalness:N
@@ -46616,6 +46634,7 @@ pitchfork:N
 pitchfork:V
 pitching:N
 pitchman:N,pitchmen
+pitchpole:V
 pitchstone:N
 pitchy:A
 piteous:A
@@ -46764,6 +46783,8 @@ planetoid:N
 plangency:N
 plangent:A
 planimeter:N
+planisphere:N
+planispheric:A
 plank:N
 plank:V
 planking:N
@@ -49517,6 +49538,7 @@ punch:V
 punchayet:N
 punchball:N
 punchboard:N
+punchbowl:N
 puncher:N
 punctilio:N
 punctilious:A
@@ -52823,7 +52845,7 @@ riverbank:N
 riverbed:N
 riverside:N
 rivet:N
-rivet:V
+rivet:V,_s,_ing,_ed
 riveter:N
 riveting:A
 rivetter:N
@@ -54576,9 +54598,11 @@ scrimmage:N
 scrimmage:V
 scrimp:V
 scrimpy:A
+scrimshander:N
 scrimshank:V
 scrimshanker:N
 scrimshaw:N
+scrimshaw:V
 scrimy:A
 scrip:N
 script:N
@@ -54594,7 +54618,7 @@ scrofula:N
 scrofulous:A
 scroll:N
 scroll:V
-scromit:V
+scromit:V,_s,_ing,_ed
 scrooge:N
 scrotal:A
 scrotum:N
@@ -55548,7 +55572,7 @@ shaking:N
 shako:N
 shaky:A
 shale:N
-shall:V.a,should
+shall:V.a,shalt,should
 shallon:N
 shallot:N
 shallow:A
@@ -55674,6 +55698,8 @@ sheath:N
 sheathe:V
 sheathed:A
 sheathing:N
+sheave:N
+sheave:V
 shebang:N
 shebeen:N
 shed:A
@@ -56671,6 +56697,7 @@ skive:V
 skivvy:N
 skreak:V
 skreigh:V
+skrimshander:N
 skua:N
 skulduggery:N
 skulk:V
@@ -57132,6 +57159,7 @@ smooth:N
 smooth:V
 smoothbark:N
 smoothbore:A
+smoothe:A
 smoothed:A
 smoothen:V
 smoothened:A
@@ -58557,6 +58585,7 @@ spout:N
 spout:V
 spouter:N
 spouting:A
+spouting:N
 sprachgefuhl:N
 sprag:N
 sprain:N
@@ -60178,6 +60207,9 @@ subterminal:A
 subterranean:A
 subterraneous:A
 subthalamus:N
+subtile:A
+subtilely:Av
+subtileness:N
 subtilin:N
 subtilise:V
 subtilize:V
@@ -60336,6 +60368,7 @@ suggestibility:N
 suggestible:A
 suggestion:N
 suggestive:A
+suggestively:Av
 suggestiveness:N
 sugi:N
 suicidal:A
@@ -60508,6 +60541,8 @@ suntan:V
 suntanned:A
 suntrap:N
 sunup:N
+sunward:A
+sunwards:A
 sup:N
 sup:V
 super:A
@@ -60944,7 +60979,7 @@ sway:V
 swayback:A
 swaybacked:A
 swayer:N
-swear:V,swore,sworn
+swear:V,_s,_ing,swore,sworn
 swearer:N
 swearing:N
 swearword:N
@@ -61811,7 +61846,7 @@ teaberry:N
 teaboard:N
 teacake:N
 teacart:N
-teach:V,taught
+teach:V,_es,_ing,taught
 teachable:A
 teacher:N
 teachership:N
@@ -62245,6 +62280,7 @@ ternion:N
 terpene:N
 terpsichore:N
 terpsichorean:A
+terra:N
 terrace:N
 terrace:V
 terrain:N
@@ -64425,15 +64461,16 @@ trounce:V
 trouncing:N
 troupe:N
 trouper:N
+trouser:A
 trouser:N
 trousered:A
 trousering:N
-trousers:N
 trousseau:N
 trout:N,_s
 trove:N
 trowel:N
 trowel:V
+trowsers:N
 troy:N
 truancy:N
 truant:A
@@ -65137,6 +65174,7 @@ unascertainable:A
 unascribable:A
 unashamed:A
 unashamedly:Av
+unasinous:A
 unasked:A
 unassailable:A
 unassailably:Av
@@ -66110,6 +66148,7 @@ unhappiness:N
 unhappy:A
 unhardened:A
 unharmed:A
+unharming:A
 unharmonious:A
 unharmoniously:Av
 unharness:V
@@ -66421,6 +66460,7 @@ unmanly:Av
 unmanned:A
 unmannered:A
 unmannerly:A
+unmanufactured:A
 unmapped:A
 unmarked:A
 unmarketable:A
@@ -66699,6 +66739,7 @@ unprotesting:A
 unprovable:A
 unproved:A
 unproven:A
+unprovided:A
 unprovocative:A
 unprovoked:A
 unprovoking:A
@@ -66833,6 +66874,8 @@ unresponsiveness:N
 unrest:N
 unrested:A
 unrestfully:Av
+unresting:A
+unrestingly:Av
 unrestored:A
 unrestrained:A
 unrestrainedly:Av
@@ -67300,6 +67343,7 @@ unvoiced:A
 unvoluntary:A
 unvulcanised:A
 unvulcanized:A
+unwaning:A
 unwanted:A
 unwantedly:Av
 unwarily:Av
@@ -67825,6 +67869,7 @@ vaporization:N
 vaporize:V
 vaporized:A
 vaporous:A
+vapory:A
 vapour:N
 vapour:V
 vapourish:A
@@ -68613,6 +68658,7 @@ voice:N
 voice:V
 voiced:A
 voiceless:A
+voicelessly:Av
 voicelessness:N
 voiceprint:N
 voicer:N
@@ -68685,7 +68731,7 @@ volva:N
 volvulus:N
 vomer:N
 vomit:N
-vomit:V
+vomit:V,_s,_ing,_ed
 vomiter:N
 vomiting:N
 vomitive:N
@@ -69110,6 +69156,7 @@ waterside:N
 waterskin:N
 waterspout:N
 watertight:A
+waterward:Av
 waterway:N
 waterweed:N
 waterwheel:N
@@ -69394,6 +69441,7 @@ whale:N
 whale:V
 whaleboat:N
 whalebone:N
+whaleman:N,whalemen
 whaler:N
 whalesucker:N
 wham:V
