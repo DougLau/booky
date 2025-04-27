@@ -1,5 +1,10 @@
 [package]
 name = "booky"
+description = "A tool to analyze English text"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/booky"
+repository = "https://github.com/DougLau/booky/"
+readme = "README.md"
 version = "0.1.0"
 edition = "2024"
 default-run = "booky"
