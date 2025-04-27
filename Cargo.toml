@@ -1,0 +1,15 @@
+[package]
+name = "booky"
+version = "0.1.0"
+edition = "2024"
+default-run = "booky"
+
+[dependencies]
+anyhow = "1.0"
+argh = "0.1"
+fastrand = "2.0"
+yansi = "1.0"
+
+[[bin]]
+name = "booky"
+path = "src/bin/booky.rs"
