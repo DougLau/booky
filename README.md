@@ -9,8 +9,8 @@ Commands
 
 - `booky word`: show entries for a word
 
-The `freq`, `proper` and `unknown` commands read from `stdin`, which can
-be redirected from a file:
+The `freq`, `proper` and `unknown` commands read UTF-8 text from `stdin`, which
+can be redirected from a file:
 
 - `booky freq < [file]`: count word frequencies
 - `booky proper < [file]`: list proper nouns (best guess)

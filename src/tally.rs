@@ -191,6 +191,8 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Full("there’s", "there", "is"),
     Contraction::Full("what’s", "what", "is"),
     Contraction::Full("who’s", "who", "is"),
+    Contraction::Full("’tis", "it", "is"),
+    Contraction::Full("’twas", "it", "was"),
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
     Contraction::Suffix("’", ""),  // possessive
