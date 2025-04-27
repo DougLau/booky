@@ -6390,7 +6390,7 @@ begin:V,_s,_ning,began,begun
 beginner:N
 beginning:A
 beginning:N
-begird:V
+begird:V,_s,_ing,_ed,begirt
 begone:V,_
 begonia:N
 begotten:A
@@ -7628,7 +7628,7 @@ blotto:A
 blouse:N
 bloviate:V
 blow:N
-blow:V,_s,_ing,blew,_n
+blow:V,_s,_ing,blew,_ed,_n
 blowback:N
 blowball:N
 blower:N
@@ -8478,6 +8478,7 @@ breadboard:N
 breadbox:N
 breadcrumb:N
 breadfruit:N
+breadless:A
 breadline:N
 breadroot:N
 breadstick:N
@@ -11152,6 +11153,7 @@ changeling:N
 changeover:N
 changer:N
 changing:A
+changingly:Av
 channel:N
 channel:V
 channelisation:N
@@ -11976,6 +11978,7 @@ cinch:V
 cinchona:N
 cincture:N
 cinder:N
+cinderous:A
 cinema:N
 cinematic:A
 cinematise:V
@@ -12004,6 +12007,7 @@ circlet:N
 circuit:N
 circuit:V
 circuitous:A
+circuitously:Av
 circuitry:N
 circular:A
 circular:N
@@ -13428,6 +13432,7 @@ comply:V
 complying:A
 component:N
 comport:V
+comportable:A
 comportment:N
 compose:V
 composed:A
@@ -13697,7 +13702,7 @@ confederate:V
 confederation:N
 confederative:A
 confer:Av
-confer:V
+confer:V,_s,_ring,_red
 conferee:N
 conference:N
 conferment:N
@@ -15658,7 +15663,7 @@ crudely:Av
 crudeness:N
 crudites:N
 crudity:N
-cruel:A,_ler,_lest
+cruel:A,_er,_ler,_est,_lest
 cruelly:Av
 cruelness:N
 cruelty:N
@@ -15917,6 +15922,7 @@ cupcake:N
 cupel:N
 cupflower:N
 cupful:N
+cupid:N
 cupidity:N
 cuplike:A
 cupola:N
@@ -17411,6 +17417,7 @@ denotive:A
 denouement:N
 denounce:V
 denouncement:N
+denouncer:N
 dense:A
 densely:Av
 denseness:N
@@ -17651,6 +17658,7 @@ descent:N
 describable:A
 describe:V
 described:A
+descript:A
 description:N
 descriptive:A
 descriptively:Av
@@ -21158,6 +21166,8 @@ empyrean:N
 emu:N
 emulate:V
 emulation:N
+emulative:A
+emulatively:Av
 emulator:N
 emulous:A
 emulously:Av
@@ -24297,7 +24307,7 @@ flake:V
 flakey:A
 flakiness:N
 flaky:A
-flambeau:N
+flambeau:N,_x,_s
 flamboyance:N
 flamboyant:A
 flamboyant:N
@@ -24882,6 +24892,7 @@ footman:N,footmen
 footmark:N
 footnote:N
 footnote:V
+footpace:N
 footpad:N
 footpath:N
 footplate:N
@@ -24994,6 +25005,8 @@ foremother:N
 forename:N
 forenoon:N
 forensic:A
+forensic:N
+forensically:Av
 foreordain:V
 foreordained:A
 foreordination:N
@@ -26623,7 +26636,8 @@ giraffe:N
 girandola:N
 girandole:N
 girasol:N
-gird:V
+gird:N
+gird:V,_s,_ing,_ed,girt
 girder:N
 girdle:N
 girdle:V
@@ -27276,6 +27290,7 @@ grandiosely:Av
 grandiosity:N
 grandly:Av
 grandma:N
+grandmamma:N
 grandmaster:N
 grandmother:N
 grandnephew:N
@@ -27695,6 +27710,7 @@ growl:N
 growl:V
 growler:N
 growling:N
+growlingly:Av
 grown:A
 grownup:A
 grownup:N
@@ -27884,6 +27900,7 @@ gunflint:N
 gunite:N
 gunk:N
 gunlock:N
+gunmaker:N
 gunman:N,gunmen
 gunmetal:N
 gunnel:N
@@ -30960,6 +30977,7 @@ imaginativeness:N
 imagine:V
 imagined:A
 imaging:N
+imagining:N
 imagism:N
 imago:N
 imam:N
@@ -32429,6 +32447,7 @@ inscribed:A
 inscription:N
 inscrutability:N
 inscrutable:A
+inscrutable:N
 insect:N
 insectan:A
 insecticide:N
@@ -32619,6 +32638,7 @@ insulin:N
 insult:N
 insult:V
 insulted:A
+insulter:N
 insulting:A
 insultingly:Av
 insuperable:A
@@ -33138,6 +33158,7 @@ investing:N
 investiture:N
 investment:N
 investor:N
+inveteracy:N
 inveterate:A
 inveterately:Av
 invidia:N
@@ -34147,6 +34168,8 @@ kenning:N
 keno:N
 kenogenesis:N
 kentan:N
+kep:N
+kep:V,_s,_ping,_ped,_pen,kippen
 kepi:N
 kept:A
 keratalgia:N
@@ -45668,6 +45691,7 @@ perplexedly:Av
 perplexing:A
 perplexity:N
 perquisite:N
+perquisition:N
 perry:N
 persecute:V
 persecution:N
@@ -48216,6 +48240,7 @@ preparatory:A
 prepare:V
 prepared:A
 preparedness:N
+preparing:N
 prepay:V
 prepayment:N
 preponderance:N
@@ -50955,12 +50980,14 @@ recode:V
 recoding:N
 recognisable:A
 recognisance:N
+recognisant:A
 recognise:V
 recognised:A
 recognition:N
 recognizable:A
 recognizably:Av
 recognizance:N
+recognizant:A
 recognize:V
 recognized:A
 recoil:N
@@ -50982,6 +51009,7 @@ recompense:V
 reconcilable:A
 reconcile:V
 reconciled:A
+reconcilement:N
 reconciler:N
 reconciliation:N
 reconciling:A
@@ -52186,6 +52214,7 @@ retake:V,_s,retaking,retook,_n
 retaking:N
 retaliate:V
 retaliation:N
+retaliative:A
 retaliator:N
 retaliatory:A
 retard:N
@@ -57109,6 +57138,7 @@ smoothened:A
 smoother:N
 smoothhound:N
 smoothie:N
+smoothing:N
 smoothly:Av
 smoothness:N
 smoothy:N
@@ -57118,6 +57148,7 @@ smother:V
 smothered:A
 smotherer:N
 smothering:A
+smothering:N
 smoulder:N
 smoulder:V
 smouldering:A
@@ -61777,6 +61808,7 @@ tayra:N
 tchotchke:N
 tea:N
 teaberry:N
+teaboard:N
 teacake:N
 teacart:N
 teach:V,taught
