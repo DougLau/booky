@@ -15,17 +15,32 @@ Codes for one of nine basic word classes:
 
 | Code | Class        |
 |------|--------------|
-| A    | Adjective    |
-| Av   | Adverb       |
-| C    | Conjunction  |
-| D    | Determiner   |
-| I    | Interjection |
-| N    | Noun         |
-| P    | Preposition  |
-| Pn   | Pronoun      |
-| V    | Verb         |
+| `A`  | Adjective    |
+| `Av` | Adverb       |
+| `C`  | Conjunction  |
+| `D`  | Determiner   |
+| `I`  | Interjection |
+| `N`  | Noun         |
+| `P`  | Preposition  |
+| `Pn` | Pronoun      |
+| `V`  | Verb         |
 
-It may be followed by a dot and **attributes**.
+### Attributes
+
+If any attributes are provided, they are preceded by a dot `.`:
+
+| Code | Description                      | Examples
+|------|----------------------------------|---------
+| `a`  | Auxiliary verb                   | _cannot_
+| `c`  | Countable noun (default)         | _chair_
+| `u`  | Uncountable noun (mass)          | _furniture_
+| `g`  | Group (collective noun)          | _water_
+| `n`  | Proper (name) noun               | _Monday_
+| `p`  | Plurale Tantum                   | _pants_, _scissors_
+| `i`  | Intransitive verb or preposition |
+| `t`  | Transitive verb or preposition   |
+| `j`  | Conjunctive preposition          |
+| `v`  | "Deverbal" prepositions          | _excluding_
 
 ### Forms
 

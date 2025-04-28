@@ -222,7 +222,9 @@ impl Word {
     /// Check if a word (noun) has plural form
     fn has_plural(&self) -> bool {
         for a in self.attr.chars() {
-            if let Ok(WordAttr::Uncountable) = WordAttr::try_from(a) {
+            if let Ok(WordAttr::Uncountable | WordAttr::PluraleTantum) =
+                WordAttr::try_from(a)
+            {
                 return false;
             }
         }
@@ -415,7 +417,8 @@ impl Dict {
     /// Get built-in dictionary
     pub fn builtin() -> Self {
         let mut dict = Dict::default();
-        for (i, line) in include_str!("../res/english.csv").lines().enumerate() {
+        for (i, line) in include_str!("../res/english.csv").lines().enumerate()
+        {
             match Word::try_from(line) {
                 Ok(word) => dict.insert(word),
                 Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),

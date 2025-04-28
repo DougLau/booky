@@ -5,13 +5,23 @@ Installation:
 cargo install booky
 ```
 
-Commands
+### Commands
 
-- `booky word`: show entries for a word
+> booky word _{word}_
 
-The `freq`, `proper` and `unknown` commands read UTF-8 text from `stdin`, which
-can be redirected from a file:
+Show entries for _{word}_.
 
-- `booky freq < [file]`: count word frequencies
-- `booky proper < [file]`: list proper nouns (best guess)
-- `booky unknown < [file]`: list unknown words
+The `freq`, `proper` and `unknown` commands read UTF-8 text from `stdin`,
+which can be redirected from a file:
+
+> booky freq < _{file}_
+
+Count frequencies of words in _{file}_.
+
+> booky proper < _{file}_
+
+List proper nouns in _{file}_ (best guess).
+
+> booky unknown < _{file}_
+
+List unknown words in _{file}_.

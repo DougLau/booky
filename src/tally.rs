@@ -148,7 +148,7 @@ impl WordEntry {
     fn is_probably_proper(&self) -> bool {
         let mut chars = self.word.chars();
         match chars.next() {
-            Some(c) if c.is_uppercase() => chars.all(|c| c.is_lowercase()),
+            Some(c) if c.is_uppercase() => chars.any(|c| c.is_lowercase()),
             _ => false,
         }
     }
@@ -193,6 +193,7 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Full("who’s", "who", "is"),
     Contraction::Full("’tis", "it", "is"),
     Contraction::Full("’twas", "it", "was"),
+    Contraction::Full("’twill", "it", "will"),
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
     Contraction::Suffix("’", ""),  // possessive
