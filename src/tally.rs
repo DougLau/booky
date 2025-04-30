@@ -89,6 +89,14 @@ fn is_ordinal_number(w: &str) -> bool {
     false
 }
 
+/// Check if a string is a "plural" number
+fn is_plural_number(w: &str) -> bool {
+    if let Some(n) = w.strip_suffix("s") {
+        return n.chars().all(|c| c.is_ascii_digit());
+    }
+    false
+}
+
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         write!(fmt, "{:5} {}", self.seen, self.word)?;
@@ -103,6 +111,7 @@ impl TryFrom<&str> for WordEntry {
         if is_word_valid(word)
             && !is_roman_numeral(word)
             && !is_ordinal_number(word)
+            && !is_plural_number(word)
         {
             Ok(WordEntry::new(1, word))
         } else {
