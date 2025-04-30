@@ -153,6 +153,13 @@ impl WordEntry {
         &mut self.word
     }
 
+    /// Check if a word is foreign (not English)
+    fn is_foreign(&self) -> bool {
+        self.word
+            .chars()
+            .any(|c| !c.is_ascii_alphanumeric() && c != '-' && c != '\u{2019}')
+    }
+
     /// Check if a word is probably proper
     fn is_probably_proper(&self) -> bool {
         let mut chars = self.word.chars();
@@ -293,11 +300,25 @@ impl WordTally {
         self.words.is_empty()
     }
 
-    /// Take all "probably" proper nouns into a new tally
-    pub fn take_proper(&mut self) -> Self {
+    /// Take all foreign words into a new tally
+    pub fn take_foreign(&mut self, dict: &Dict) -> Self {
         let mut other = WordTally::new();
         for we in self.words.values() {
-            if we.is_probably_proper() {
+            if !dict.contains(we.word()) && we.is_foreign() {
+                other.tally_word(we.word(), we.seen());
+            }
+        }
+        for key in other.words.keys() {
+            self.words.remove(&key[..]);
+        }
+        other
+    }
+
+    /// Take all "probably" proper nouns into a new tally
+    pub fn take_proper(&mut self, dict: &Dict) -> Self {
+        let mut other = WordTally::new();
+        for we in self.words.values() {
+            if !dict.contains(we.word()) && we.is_probably_proper() {
                 other.tally_word(we.word(), we.seen());
             }
         }

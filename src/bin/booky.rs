@@ -17,6 +17,7 @@ struct Args {
 #[argh(subcommand)]
 enum SubCommand {
     Dict(DictCmd),
+    Foreign(Foreign),
     Freq(Freq),
     Nonsense(Nonsense),
     Proper(Proper),
@@ -28,6 +29,11 @@ enum SubCommand {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "dict")]
 struct DictCmd {}
+
+/// List foreign words
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "foreign")]
+struct Foreign {}
 
 /// Count word frequencies
 #[derive(FromArgs, Debug, PartialEq)]
@@ -100,6 +106,27 @@ impl WordCmd {
     }
 }
 
+/// List foreign words
+fn foreign() -> Result<()> {
+    let builtin = Dict::builtin();
+    let mut tally = WordTally::new();
+    tally.parse_text(stdin().lock())?;
+    tally.split_unknown_compounds(&builtin);
+    tally.split_unknown_contractions(&builtin);
+    tally.remove_single(&builtin);
+    let foreign = tally.take_foreign(&builtin);
+    let mut writer = BufWriter::new(stdout());
+    let mut words = 0;
+    for entry in foreign.into_entries() {
+        if !builtin.contains(entry.word()) {
+            writeln!(writer, "{entry}")?;
+            words += 1;
+        }
+    }
+    writeln!(writer, "\nforeign words: {words}\n")?;
+    Ok(())
+}
+
 /// Count word frequency in text
 fn freq() -> Result<()> {
     let mut tally = WordTally::new();
@@ -146,7 +173,8 @@ fn proper() -> Result<()> {
     tally.split_unknown_compounds(&builtin);
     tally.split_unknown_contractions(&builtin);
     tally.remove_single(&builtin);
-    let proper = tally.take_proper();
+    let _foreign = tally.take_foreign(&builtin);
+    let proper = tally.take_proper(&builtin);
     let mut writer = BufWriter::new(stdout());
     let mut words = 0;
     for entry in proper.into_entries() {
@@ -167,7 +195,8 @@ fn unknown() -> Result<()> {
     tally.split_unknown_compounds(&builtin);
     tally.split_unknown_contractions(&builtin);
     tally.remove_single(&builtin);
-    let _proper = tally.take_proper();
+    let _foreign = tally.take_foreign(&builtin);
+    let _proper = tally.take_proper(&builtin);
     let mut writer = BufWriter::new(stdout());
     let mut words = 0;
     for entry in tally.into_entries() {
@@ -184,6 +213,7 @@ fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
         Some(SubCommand::Dict(_)) => dict()?,
+        Some(SubCommand::Foreign(_)) => foreign()?,
         Some(SubCommand::Freq(_)) => freq()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         Some(SubCommand::Proper(_)) => proper()?,
