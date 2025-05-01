@@ -16,15 +16,24 @@ struct Args {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand)]
 enum SubCommand {
+    Cat(Cat),
     Dict(DictCmd),
     Acronym(Acronym),
     Foreign(Foreign),
     Freq(Freq),
     Nonsense(Nonsense),
+    Ordinal(Ordinal),
+    Num(Num),
     Proper(Proper),
+    RomanNum(RomanNum),
     Unknown(Unknown),
     Word(WordCmd),
 }
+
+/// Categorize words
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "cat")]
+struct Cat {}
 
 /// Print dictionary
 #[derive(FromArgs, Debug, PartialEq)]
@@ -51,10 +60,25 @@ struct Freq {}
 #[argh(subcommand, name = "nonsense")]
 struct Nonsense {}
 
+/// List ordinal numbers
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "ordinal")]
+struct Ordinal {}
+
+/// List numbers
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "num")]
+struct Num {}
+
 /// List proper nouns
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "proper")]
 struct Proper {}
+
+/// List roman numerals
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "roman")]
+struct RomanNum {}
 
 /// List unknown words
 #[derive(FromArgs, Debug, PartialEq)]
@@ -67,6 +91,22 @@ struct Unknown {}
 struct WordCmd {
     #[argh(positional)]
     word: String,
+}
+
+/// Count words of category
+fn cat_counts() -> Result<()> {
+    let builtin = Dict::builtin();
+    let mut tally = WordTally::new();
+    tally.parse_text(stdin().lock())?;
+    tally.split_unknown_compounds(&builtin);
+    tally.split_unknown_contractions(&builtin);
+    tally.remove_single(&builtin);
+    tally.remove_dict(&builtin);
+    let mut writer = BufWriter::new(stdout());
+    for cat in Category::all() {
+        writeln!(writer, "{cat:?}: {}", tally.cat_count(*cat))?;
+    }
+    Ok(())
 }
 
 /// Print dictionary
@@ -120,7 +160,7 @@ fn list_category(cat: Category) -> Result<()> {
     tally.split_unknown_compounds(&builtin);
     tally.split_unknown_contractions(&builtin);
     tally.remove_single(&builtin);
-    let tally = tally.take_category(&builtin, cat);
+    tally.retain_category(cat);
     let mut writer = BufWriter::new(stdout());
     let mut words = 0;
     for entry in tally.into_entries() {
@@ -174,12 +214,16 @@ fn nonsense() {
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
+        Some(SubCommand::Cat(_)) => cat_counts()?,
         Some(SubCommand::Dict(_)) => dict()?,
-        Some(SubCommand::Acronym(_)) => list_category(Category::Initialism)?,
+        Some(SubCommand::Acronym(_)) => list_category(Category::Acronym)?,
         Some(SubCommand::Foreign(_)) => list_category(Category::Foreign)?,
         Some(SubCommand::Freq(_)) => freq()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
+        Some(SubCommand::Num(_)) => list_category(Category::Number)?,
+        Some(SubCommand::Ordinal(_)) => list_category(Category::Ordinal)?,
         Some(SubCommand::Proper(_)) => list_category(Category::Proper)?,
+        Some(SubCommand::RomanNum(_)) => list_category(Category::Roman)?,
         Some(SubCommand::Unknown(_)) => list_category(Category::Unknown)?,
         Some(SubCommand::Word(word)) => word.lookup()?,
         None => {

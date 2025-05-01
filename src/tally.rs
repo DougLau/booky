@@ -3,6 +3,12 @@ use std::collections::HashMap;
 use std::fmt;
 use std::io::BufRead;
 
+/// Uppercase roman numerals
+const ROMAN_UPPER: &str = "IVXLCDM";
+
+/// Lowercase roman numerals
+const ROMAN_LOWER: &str = "ivxlcdm";
+
 /// Word contractions
 enum Contraction {
     Full(&'static str, &'static str, &'static str),
@@ -12,8 +18,14 @@ enum Contraction {
 /// Word category
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub enum Category {
-    /// Initialism / Acronym
-    Initialism,
+    /// Ordinal number
+    Ordinal,
+    /// Roman numeral
+    Roman,
+    /// Number (may include letters)
+    Number,
+    /// Acronym / Initialism
+    Acronym,
     /// Foreign (non-English)
     Foreign,
     /// Proper noun (name)
@@ -75,14 +87,31 @@ fn is_word_valid(w: &str) -> bool {
     w.chars().all(is_word_char) && !w.is_empty()
 }
 
-/// Check if a character is a romal numeral
-fn is_roman_numeral_char(c: char) -> bool {
-    ['I', 'V', 'X', 'L', 'C', 'D', 'M'].contains(&c)
+impl Category {
+    pub fn all() -> &'static [Self] {
+        use Category::*;
+        &[Ordinal, Roman, Number, Acronym, Foreign, Proper, Unknown]
+    }
 }
 
-/// Check if a string is a romal numeral (not "I")
-fn is_roman_numeral(w: &str) -> bool {
-    w.chars().all(is_roman_numeral_char) && !w.is_empty() && w != "I"
+impl From<&str> for Category {
+    fn from(word: &str) -> Self {
+        if is_foreign(word) {
+            Category::Foreign
+        } else if is_ordinal_number(word) {
+            Category::Ordinal
+        } else if is_roman_numeral(word) {
+            Category::Roman
+        } else if is_number(word) {
+            Category::Number
+        } else if is_acronym(word) {
+            Category::Acronym
+        } else if is_probably_proper(word) {
+            Category::Proper
+        } else {
+            Category::Unknown
+        }
+    }
 }
 
 /// Check if a string is an ordinal number
@@ -102,37 +131,27 @@ fn is_ordinal_number(w: &str) -> bool {
     false
 }
 
-/// Check if a string is a "plural" number
-fn is_plural_number(w: &str) -> bool {
-    if let Some(n) = w.strip_suffix("s") {
-        return n.chars().all(|c| c.is_ascii_digit());
-    }
-    false
+/// Check if a string is a romal numeral
+fn is_roman_numeral(word: &str) -> bool {
+    !word.is_empty()
+        && (word.chars().all(|c| ROMAN_UPPER.contains(c))
+            || word.chars().all(|c| ROMAN_LOWER.contains(c)))
 }
 
-impl From<&str> for Category {
-    fn from(word: &str) -> Self {
-        if is_foreign(word) {
-            Category::Foreign
-        } else if is_initialism(word) {
-            Category::Initialism
-        } else if is_probably_proper(word) {
-            Category::Proper
-        } else {
-            Category::Unknown
-        }
-    }
+/// Check if a word contains a number
+fn is_number(word: &str) -> bool {
+    word.chars().any(|c| c.is_ascii_digit())
+}
+
+/// Check if a word is an acronym / initialism
+fn is_acronym(word: &str) -> bool {
+    word.len() >= 2 && word.chars().all(|c| c.is_uppercase() || c == '.')
 }
 
 /// Check if a word is foreign (not English)
 fn is_foreign(word: &str) -> bool {
     word.chars()
         .any(|c| !c.is_ascii_alphanumeric() && c != '-' && c != '\u{2019}')
-}
-
-/// Check if a word is an initialism / acronym
-fn is_initialism(word: &str) -> bool {
-    word.len() >= 2 && word.chars().all(|c| c.is_uppercase() || c == '.')
 }
 
 /// Check if a word is probably proper
@@ -155,11 +174,7 @@ impl TryFrom<&str> for WordEntry {
     type Error = ();
 
     fn try_from(word: &str) -> Result<Self, Self::Error> {
-        if is_word_valid(word)
-            && !is_roman_numeral(word)
-            && !is_ordinal_number(word)
-            && !is_plural_number(word)
-        {
+        if is_word_valid(word) {
             Ok(WordEntry::new(1, word))
         } else {
             Err(())
@@ -336,18 +351,17 @@ impl WordTally {
         self.words.is_empty()
     }
 
-    /// Take all words of a category into a new tally
-    pub fn take_category(&mut self, dict: &Dict, cat: Category) -> Self {
-        let mut other = WordTally::new();
-        for we in self.words.values() {
-            if !dict.contains(we.word()) && cat == we.category() {
-                other.tally_word(we.word(), we.seen());
-            }
-        }
-        for key in other.words.keys() {
-            self.words.remove(&key[..]);
-        }
-        other
+    /// Count the words of a given category
+    pub fn cat_count(&self, cat: Category) -> usize {
+        self.words
+            .iter()
+            .filter(|(_k, we)| we.category() == cat)
+            .count()
+    }
+
+    /// Retain only words of a given category
+    pub fn retain_category(&mut self, cat: Category) {
+        self.words.retain(|_k, we| we.category() == cat);
     }
 
     /// Get a Vec of word entries
@@ -399,5 +413,10 @@ impl WordTally {
     pub fn remove_single(&mut self, dict: &Dict) {
         self.words
             .retain(|_key, we| dict.contains(we.word()) || we.word().len() > 1);
+    }
+
+    /// Remove words which are in dictionary
+    pub fn remove_dict(&mut self, dict: &Dict) {
+        self.words.retain(|_key, we| !dict.contains(we.word()));
     }
 }
