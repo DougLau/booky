@@ -1,6 +1,6 @@
 use anyhow::Result;
 use argh::FromArgs;
-use booky::tally::WordTally;
+use booky::tally::{Category, WordTally};
 use booky::word::{Dict, Word, WordClass};
 use std::io::{BufWriter, Write, stdin, stdout};
 use yansi::Paint;
@@ -17,6 +17,7 @@ struct Args {
 #[argh(subcommand)]
 enum SubCommand {
     Dict(DictCmd),
+    Acronym(Acronym),
     Foreign(Foreign),
     Freq(Freq),
     Nonsense(Nonsense),
@@ -29,6 +30,11 @@ enum SubCommand {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "dict")]
 struct DictCmd {}
+
+/// List acronyms / initialisms
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "acronym")]
+struct Acronym {}
 
 /// List foreign words
 #[derive(FromArgs, Debug, PartialEq)]
@@ -106,24 +112,24 @@ impl WordCmd {
     }
 }
 
-/// List foreign words
-fn foreign() -> Result<()> {
+/// List words of a given category
+fn list_category(cat: Category) -> Result<()> {
     let builtin = Dict::builtin();
     let mut tally = WordTally::new();
     tally.parse_text(stdin().lock())?;
     tally.split_unknown_compounds(&builtin);
     tally.split_unknown_contractions(&builtin);
     tally.remove_single(&builtin);
-    let foreign = tally.take_foreign(&builtin);
+    let tally = tally.take_category(&builtin, cat);
     let mut writer = BufWriter::new(stdout());
     let mut words = 0;
-    for entry in foreign.into_entries() {
+    for entry in tally.into_entries() {
         if !builtin.contains(entry.word()) {
             writeln!(writer, "{entry}")?;
             words += 1;
         }
     }
-    writeln!(writer, "\nforeign words: {words}\n")?;
+    writeln!(writer, "\n{cat:?}: {words}\n")?;
     Ok(())
 }
 
@@ -165,59 +171,16 @@ fn nonsense() {
     println!("{subject} {verb}")
 }
 
-/// List proper nouns
-fn proper() -> Result<()> {
-    let builtin = Dict::builtin();
-    let mut tally = WordTally::new();
-    tally.parse_text(stdin().lock())?;
-    tally.split_unknown_compounds(&builtin);
-    tally.split_unknown_contractions(&builtin);
-    tally.remove_single(&builtin);
-    let _foreign = tally.take_foreign(&builtin);
-    let proper = tally.take_proper(&builtin);
-    let mut writer = BufWriter::new(stdout());
-    let mut words = 0;
-    for entry in proper.into_entries() {
-        if !builtin.contains(entry.word()) {
-            writeln!(writer, "{entry}")?;
-            words += 1;
-        }
-    }
-    writeln!(writer, "\nproper nouns?: {words}\n")?;
-    Ok(())
-}
-
-/// List unknown words
-fn unknown() -> Result<()> {
-    let builtin = Dict::builtin();
-    let mut tally = WordTally::new();
-    tally.parse_text(stdin().lock())?;
-    tally.split_unknown_compounds(&builtin);
-    tally.split_unknown_contractions(&builtin);
-    tally.remove_single(&builtin);
-    let _foreign = tally.take_foreign(&builtin);
-    let _proper = tally.take_proper(&builtin);
-    let mut writer = BufWriter::new(stdout());
-    let mut words = 0;
-    for entry in tally.into_entries() {
-        if !builtin.contains(entry.word()) {
-            writeln!(writer, "{entry}")?;
-            words += 1;
-        }
-    }
-    writeln!(writer, "\nunknown words: {words}")?;
-    Ok(())
-}
-
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
         Some(SubCommand::Dict(_)) => dict()?,
-        Some(SubCommand::Foreign(_)) => foreign()?,
+        Some(SubCommand::Acronym(_)) => list_category(Category::Initialism)?,
+        Some(SubCommand::Foreign(_)) => list_category(Category::Foreign)?,
         Some(SubCommand::Freq(_)) => freq()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
-        Some(SubCommand::Proper(_)) => proper()?,
-        Some(SubCommand::Unknown(_)) => unknown()?,
+        Some(SubCommand::Proper(_)) => list_category(Category::Proper)?,
+        Some(SubCommand::Unknown(_)) => list_category(Category::Unknown)?,
         Some(SubCommand::Word(word)) => word.lookup()?,
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {

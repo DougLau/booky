@@ -9,6 +9,19 @@ enum Contraction {
     Suffix(&'static str, &'static str),
 }
 
+/// Word category
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+pub enum Category {
+    /// Initialism / Acronym
+    Initialism,
+    /// Foreign (non-English)
+    Foreign,
+    /// Proper noun (name)
+    Proper,
+    /// Unknown / Other
+    Unknown,
+}
+
 /// Word tally entry
 #[derive(Clone, Eq, Hash, Ord, PartialEq, PartialOrd)]
 pub struct WordEntry {
@@ -97,6 +110,40 @@ fn is_plural_number(w: &str) -> bool {
     false
 }
 
+impl From<&str> for Category {
+    fn from(word: &str) -> Self {
+        if is_foreign(word) {
+            Category::Foreign
+        } else if is_initialism(word) {
+            Category::Initialism
+        } else if is_probably_proper(word) {
+            Category::Proper
+        } else {
+            Category::Unknown
+        }
+    }
+}
+
+/// Check if a word is foreign (not English)
+fn is_foreign(word: &str) -> bool {
+    word.chars()
+        .any(|c| !c.is_ascii_alphanumeric() && c != '-' && c != '\u{2019}')
+}
+
+/// Check if a word is an initialism / acronym
+fn is_initialism(word: &str) -> bool {
+    word.len() >= 2 && word.chars().all(|c| c.is_uppercase() || c == '.')
+}
+
+/// Check if a word is probably proper
+fn is_probably_proper(word: &str) -> bool {
+    let mut chars = word.chars();
+    match chars.next() {
+        Some(c) if c.is_uppercase() => chars.any(|c| c.is_lowercase()),
+        _ => false,
+    }
+}
+
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         write!(fmt, "{:5} {}", self.seen, self.word)?;
@@ -153,20 +200,9 @@ impl WordEntry {
         &mut self.word
     }
 
-    /// Check if a word is foreign (not English)
-    fn is_foreign(&self) -> bool {
-        self.word
-            .chars()
-            .any(|c| !c.is_ascii_alphanumeric() && c != '-' && c != '\u{2019}')
-    }
-
-    /// Check if a word is probably proper
-    fn is_probably_proper(&self) -> bool {
-        let mut chars = self.word.chars();
-        match chars.next() {
-            Some(c) if c.is_uppercase() => chars.any(|c| c.is_lowercase()),
-            _ => false,
-        }
+    /// Guess word category
+    fn category(&self) -> Category {
+        Category::from(self.word())
     }
 }
 
@@ -300,25 +336,11 @@ impl WordTally {
         self.words.is_empty()
     }
 
-    /// Take all foreign words into a new tally
-    pub fn take_foreign(&mut self, dict: &Dict) -> Self {
+    /// Take all words of a category into a new tally
+    pub fn take_category(&mut self, dict: &Dict, cat: Category) -> Self {
         let mut other = WordTally::new();
         for we in self.words.values() {
-            if !dict.contains(we.word()) && we.is_foreign() {
-                other.tally_word(we.word(), we.seen());
-            }
-        }
-        for key in other.words.keys() {
-            self.words.remove(&key[..]);
-        }
-        other
-    }
-
-    /// Take all "probably" proper nouns into a new tally
-    pub fn take_proper(&mut self, dict: &Dict) -> Self {
-        let mut other = WordTally::new();
-        for we in self.words.values() {
-            if !dict.contains(we.word()) && we.is_probably_proper() {
+            if !dict.contains(we.word()) && cat == we.category() {
                 other.tally_word(we.word(), we.seen());
             }
         }
