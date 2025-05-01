@@ -1,6 +1,7 @@
 // Basic HTML content parsing
 use anyhow::Result;
 use core::str;
+use html_escape::decode_html_entities;
 use std::io::{BufRead, stdin};
 
 struct Content {
@@ -37,7 +38,7 @@ impl Content {
             if let Ok(text) = str::from_utf8(&self.buf) {
                 let text = text.trim();
                 if !text.is_empty() {
-                    println!("{text}");
+                    println!("{}", decode_html_entities(text));
                 }
             }
         }

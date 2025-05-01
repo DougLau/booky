@@ -15,6 +15,9 @@ argh = "0.1"
 fastrand = "2.0"
 yansi = "1.0"
 
+[dev-dependencies]
+html-escape = "0.2.13"
+
 [[bin]]
 name = "booky"
 path = "src/bin/booky.rs"

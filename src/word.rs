@@ -279,7 +279,9 @@ fn is_vowel(c: char) -> bool {
 
 /// Check if a word ends with a consonant which should repeat
 fn consonant_end_repeat(s: &str) -> Option<char> {
-    // ideally, we would determine whether the final syllable is stressed
+    // consonant doubling rules (as far as I can tell):
+    // 1. stress on final syllable
+    // 2. always double an "l" final consonant
     let mut suffix = (' ', ' ', ' ');
     for c in s.chars() {
         if suffix.2 == 'q' && c == 'u' {

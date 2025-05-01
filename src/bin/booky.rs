@@ -163,13 +163,14 @@ fn list_category(cat: Category) -> Result<()> {
     tally.retain_category(cat);
     let mut writer = BufWriter::new(stdout());
     let mut words = 0;
+    writeln!(writer)?;
     for entry in tally.into_entries() {
         if !builtin.contains(entry.word()) {
             writeln!(writer, "{entry}")?;
             words += 1;
         }
     }
-    writeln!(writer, "\n{cat:?}: {words}\n")?;
+    writeln!(writer, "\n{cat:?}: {}", words.yellow().bright())?;
     Ok(())
 }
 
