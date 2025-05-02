@@ -1478,6 +1478,7 @@ afterdamp:N
 afterdeck:N
 aftereffect:N
 afterglow:N
+afterhour:N
 afterimage:N
 afterlife:N
 afterlight:N
@@ -1718,6 +1719,8 @@ aioli:N
 air:A
 air:N
 air:V
+airbase:N
+airboat:N
 airborne:A
 airbrake:N
 airbrush:N
@@ -1732,6 +1735,7 @@ aircrewman:N,aircrewmen
 airdock:N
 airdrome:N
 airdrop:N
+airdrop:V
 aired:A
 airfare:N
 airfield:N
@@ -5859,6 +5863,7 @@ baron:N
 baronage:N
 baronduki:N
 baroness:N
+baronet:N
 baronetcy:N
 baronetise:V
 baronetize:V
@@ -6408,6 +6413,10 @@ beige:N
 beigel:N
 being:N
 beingness:N
+bejeezus:I
+bejeezus:N
+bejesus:I
+bejesus:N
 bejewel:V
 bejeweled:A
 bejewelled:A
@@ -6671,6 +6680,7 @@ bestowment:N
 bestrew:V,_s,_ing,_n,_ed
 bestrewn:A
 bestride:V,_s,bestriding,bestrode,bestridden
+bestseller:N
 bestubbled:A
 bet:N
 bet:V,_s,_ting
@@ -7061,6 +7071,7 @@ biophysicist:N
 biophysics:N
 biopiracy:N
 biopsy:N
+bioreactor:N
 bioremediation:N
 biosafety:N
 bioscience:N
@@ -7125,6 +7136,7 @@ birdnesting:N
 birdseed:N
 birdsong:N
 birdwatch:V
+birdwatcher:N
 birefringence:N
 birefringent:A
 biretta:N
@@ -7318,7 +7330,7 @@ blamelessly:Av
 blamelessness:N
 blameworthiness:N
 blameworthy:A
-blanch:V
+blanch:V,_es,_ing,_ed
 blanched:A
 blancmange:N
 blanco:V
@@ -7757,6 +7769,7 @@ boeuf:N
 boffin:N
 bog:N
 bog:V
+bogan:N
 bogbean:N
 bogey:N
 bogey:V
@@ -8228,6 +8241,7 @@ boxthorn:N
 boxwood:N
 boxy:A
 boy:N
+boyband:N
 boycott:N
 boycott:V
 boyfriend:N
@@ -8598,6 +8612,7 @@ brindled:A
 brine:N
 brine:V
 bring:V,_s,_ing,brought
+bringer:N
 bringing:N
 brininess:N
 brinjal:N
@@ -12295,6 +12310,7 @@ climate:N
 climatic:A
 climatical:A
 climatically:Av
+climatologist:N
 climatology:N
 climax:N
 climax:V
@@ -12468,6 +12484,7 @@ club:N
 club:V
 clubable:A
 clubbable:A
+clubber:N
 clubbing:N
 clubbish:A
 clubby:A
@@ -12734,6 +12751,7 @@ coffer:N
 cofferdam:N
 coffin:N
 coffin:V
+cofound:V
 cofounder:N
 cog:N
 cog:V
@@ -13975,6 +13993,7 @@ constitutional:N
 constitutionalise:V
 constitutionalism:N
 constitutionalist:N
+constitutionality:N
 constitutionalize:V
 constitutionally:Av
 constitutive:A
@@ -14717,6 +14736,7 @@ cosmetic:N
 cosmetically:Av
 cosmetician:N
 cosmetologist:N
+cosmetology:N
 cosmic:A
 cosmogenic:A
 cosmogenical:A
@@ -15793,6 +15813,8 @@ culturally:Av
 culturati:N
 culture:N
 cultured:A
+culturologist:N
+culturology:N
 cultus:N
 culverin:N
 culvert:N
@@ -16336,6 +16358,7 @@ danaid:N
 dance:N
 dance:V
 danceable:A
+dancefloor:N
 dancer:N
 dancing:N
 dandelion:N
@@ -16607,7 +16630,7 @@ debugger:N
 debunk:V
 debunking:N
 debut:N
-debut:V
+debut:V,_s,_ing,_ed
 debutante:N
 decade:N
 decadence:N
@@ -17744,7 +17767,7 @@ detector:N
 detent:N
 detente:N
 detention:N
-deter:V
+deter:V,_s,_ring,_red
 deterge:V
 detergence:N
 detergency:N
@@ -17995,6 +18018,7 @@ diamondback:N
 diamonte:N
 dianoetic:A
 diapason:N
+diapause:N
 diapedesis:N
 diapensia:N
 diaper:N
@@ -18531,6 +18555,7 @@ disclosed:A
 disclosing:A
 disclosure:N
 disco:N
+discography:N
 discoid:A
 discoidal:A
 discolor:V
@@ -19406,7 +19431,7 @@ domino:N
 dominos:N
 dominus:N
 don:N
-don:V
+don:V,_s,_ning,_ned
 donate:V
 donated:A
 donation:N
@@ -19599,6 +19624,8 @@ download:V
 downmarket:A
 downplay:V
 downpour:N
+downregulate:V
+downregulation:N
 downright:A
 downright:Av
 downrightness:N
@@ -20389,6 +20416,7 @@ eclipse:V
 eclipsis:N
 ecliptic:N
 eclogue:N
+eclose:V
 ecobabble:N
 ecologic:A
 ecological:A
@@ -20718,6 +20746,7 @@ electricity:N
 electrification:N
 electrify:V
 electrifying:A
+electro:N
 electrocardiogram:N
 electrocardiographic:A
 electrocautery:N
@@ -21329,6 +21358,8 @@ engelmannia:N
 engender:V
 engild:V
 engine:N
+engine:V
+engined:A
 engineer:N
 engineer:V
 engineering:N
@@ -22131,6 +22162,7 @@ ethnologic:A
 ethnological:A
 ethnologist:N
 ethnology:N
+ethnonym:N
 ethnos:N
 ethologist:N
 ethology:N
@@ -22554,7 +22586,7 @@ existentialist:A
 existentialist:N
 existing:A
 exit:N
-exit:V
+exit:V,_s,_ing,_ed
 exobiology:N
 exocarp:N
 exocentric:A
@@ -22741,6 +22773,7 @@ expository:A
 expostulate:V
 expostulation:N
 exposure:N
+exposé:N
 expound:V
 expounding:N
 express:A
@@ -22855,6 +22888,7 @@ extract:V
 extractable:A
 extractible:A
 extraction:N
+extractive:A
 extractor:N
 extracurricular:A
 extradite:V
@@ -23023,7 +23057,7 @@ factious:A
 factitious:A
 factoid:N
 factor:N
-factor:V
+factor:V,_s,_ing,_ed
 factorial:A
 factorial:N
 factoring:N
@@ -24090,6 +24124,7 @@ fishgig:N
 fishhook:N
 fishily:Av
 fishing:N
+fishkeeping:N
 fishlike:A
 fishmonger:N
 fishnet:N
@@ -25296,6 +25331,7 @@ freeholder:N
 freeing:N
 freelance:A
 freelance:N
+freelance:V
 freeload:V
 freeloader:N
 freely:Av
@@ -25902,6 +25938,7 @@ gamelan:N
 gamely:Av
 gameness:N
 gameplay:N
+gamer:N
 gamesmanship:N
 gamesome:A
 gamester:N
@@ -26936,6 +26973,7 @@ goldfinch:N
 goldfish:N
 goldilocks:N
 goldmine:N
+goldminer:N
 goldplate:V
 goldsmith:N
 goldstone:N
@@ -29032,6 +29070,7 @@ herbarium:N
 herbicide:N
 herbivore:N
 herbivorous:A
+herbivory:N
 herculean:A
 herd:N
 herd:V
@@ -29236,6 +29275,7 @@ hieroglyphic:N
 hieroglyphical:A
 hieroglyphically:Av
 hierolatry:N
+hierophant:N
 hifalutin:A
 higgle:V
 higgledy-piggledy:A
@@ -30342,6 +30382,7 @@ hygienical:A
 hygienically:Av
 hygienics:N
 hygienise:V
+hygienist:N
 hygienize:V
 hygrodeik:N
 hygrometer:N
@@ -34179,7 +34220,7 @@ killing:N
 killingly:Av
 killjoy:N
 kiln:N
-kilo:N
+kilo:N,_s
 kilobyte:N
 kilocalorie:N
 kilocycle:N
@@ -36208,6 +36249,7 @@ longevity:N
 longhand:A
 longhand:N
 longhorn:N
+longhouse:N
 longicorn:N
 longing:N
 longingly:Av
@@ -36919,7 +36961,7 @@ majesty:N
 majolica:N
 major:A
 major:N
-major:V
+major:V,_s,_ing,_ed
 major-domo:N
 majority:N
 majuscule:A
@@ -37347,7 +37389,7 @@ marked:A
 markedly:Av
 marker:N
 market:N
-market:V
+market:V,_s,_ing,_ed
 marketable:A
 marketer:N
 marketing:N
@@ -38282,6 +38324,7 @@ metal:V
 metalanguage:N
 metalepsis:N
 metallic:A
+metallicity:N
 metallike:A
 metalloid:A
 metallurgic:A
@@ -39010,7 +39053,7 @@ mishpocha:N
 misidentify:V
 misinform:V
 misinformation:N
-misinterpret:V
+misinterpret:V,_s,_ing,_ed
 misinterpretation:N
 misjudge:V
 mislabeled:A
@@ -39152,6 +39195,7 @@ mixed:A
 mixer:N
 mixing:N
 mixologist:N
+mixtape:N
 mixture:N
 mizen:N
 mizenmast:N
@@ -39261,6 +39305,7 @@ modularity:N
 modulate:V
 modulated:A
 modulation:N
+modulator:N
 module:N
 modulo:P.t
 modulus:N
@@ -39752,6 +39797,7 @@ mothball:N
 mothball:V
 mother:N
 mother:V
+motherboard:N
 motherese:N
 motherfucker:N
 motherhood:N
@@ -40049,6 +40095,7 @@ multinucleate:A
 multiparous:A
 multipartite:A
 multiphase:A
+multiplayer:A
 multiple:A
 multiple:N
 multiplex:A
@@ -40396,6 +40443,8 @@ mythic:A
 mythical:A
 mythicise:V
 mythicize:V
+mythographer:N
+mythography:N
 mythologic:A
 mythological:A
 mythologisation:N
@@ -41036,6 +41085,7 @@ neuroscientist:N
 neurosis:N
 neurosurgeon:N
 neurosurgery:N
+neurosurgical:A
 neurosyphilis:N
 neurotic:A
 neurotic:N
@@ -41442,6 +41492,7 @@ noncollapsable:A
 noncollapsible:A
 noncolumned:A
 noncom:N
+noncombat:A
 noncombatant:A
 noncombatant:N
 noncombinative:A
@@ -42479,6 +42530,7 @@ office:N
 officeholder:N
 officer:N
 officer:V
+officership:N
 official:A
 official:N
 officialdom:N
@@ -42890,8 +42942,12 @@ optimum:N
 option:N
 optional:A
 optionally:Av
+optoelectronic:A
+optoelectronic:N
 optometrist:N
 optometry:N
+optronic:A
+optronic:N
 opulence:N
 opulent:A
 opulently:Av
@@ -43524,7 +43580,8 @@ overdraw:V,_s,_ing,overdrew,_n
 overdress:V
 overdressed:A
 overdrive:N
-overdrive:V
+overdrive:V,_s,overdriving,overdrove,_n
+overdriven:A
 overdue:A
 overeager:A
 overeat:V
@@ -44373,8 +44430,9 @@ paralepsis:N
 paralipsis:N
 parallax:N
 parallel:A
+parallel:Av
 parallel:N
-parallel:V
+parallel:V,_s,_ing,_ed
 parallelepiped:N
 parallelepipedon:N
 parallelism:N
@@ -47656,6 +47714,9 @@ postposition:N
 postpositive:A
 postprandial:A
 postscript:N
+postseason:A
+postseason:N
+posttraumatic:A
 postulant:N
 postulate:N
 postulate:V
@@ -47855,7 +47916,7 @@ prayerbook:N
 prayerful:A
 prazosin:N
 pre:P.t
-preach:V
+preach:V,_es,_ing,_ed
 preacher:N
 preachification:N
 preachify:V
@@ -48074,6 +48135,7 @@ prelapsarian:A
 prelate:N
 prelature:N
 prelim:N
+preliminarily:Av
 preliminary:A
 preliminary:N
 preliterate:A
@@ -48154,6 +48216,7 @@ prepuberty:N
 prepubescent:A
 prepuce:N
 prepupal:A
+prequel:N
 prerecord:V
 prerecorded:A
 prerequisite:A
@@ -48561,6 +48624,7 @@ prodroma:N
 prodromal:A
 prodrome:N
 prodromic:A
+prodrug:N
 produce:N
 produce:V
 produced:A
@@ -49363,6 +49427,8 @@ pullulate:V
 pullulation:N
 pulmonary:A
 pulmonic:A
+pulmonologist:N
+pulmonology:N
 pulp:N
 pulp:V
 pulpatoon:N
@@ -49459,6 +49525,7 @@ pup:V
 pupa:N,_e,_s
 pupal:A
 pupate:V
+pupation:N
 pupil:N
 pupillary:A
 puppet:N
@@ -50735,6 +50802,8 @@ rebelliously:Av
 rebelliousness:N
 rebind:V
 rebirth:N
+rebleed:N
+rebleed:V,_s,_ing,rebled
 reboot:V
 reborn:A
 rebound:N
@@ -50901,6 +50970,7 @@ recondition:V
 reconditioned:A
 reconfirm:V
 reconnaissance:N
+reconnect:V
 reconnoiter:V
 reconnoitering:N
 reconnoitre:V
@@ -51075,6 +51145,7 @@ redress:N
 redress:V
 redroot:N
 redshank:N
+redshirt:N
 redstart:N
 redtail:N
 reduce:V
@@ -51299,6 +51370,7 @@ registrar:N
 registration:N
 registry:N
 regma:N
+regnal:A
 regnant:A
 regnellidium:N
 regorge:V
@@ -51449,6 +51521,7 @@ relearn:V
 release:N
 release:V
 released:A
+releaser:N
 releasing:A
 relegate:V
 relegating:N
@@ -51521,6 +51594,7 @@ remarkable:A
 remarkably:Av
 remarriage:N
 remarry:V
+remaster:V
 rematch:N
 remediable:A
 remedial:A
@@ -52072,6 +52146,7 @@ resume:N
 resume:V
 resumption:N
 resupine:A
+resupply:V
 resurface:V
 resurge:V
 resurgence:N
@@ -52218,6 +52293,7 @@ retsina:N
 return:N
 return:V
 returnable:A
+returner:N
 returning:A
 reunification:N
 reunify:V
@@ -52712,7 +52788,8 @@ rival:N
 rival:V
 rivalrous:A
 rivalry:N
-rive:V
+rive:V,_s,riving,_n,_d
+riven:A
 river:N
 riverbank:N
 riverbed:N
@@ -52848,6 +52925,7 @@ romaine:N
 roman:N
 romance:N
 romance:V
+romanize:V
 romantic:A
 romantic:N
 romantically:Av
@@ -54090,6 +54168,7 @@ scarred:A
 scary:A
 scat:N
 scathe:N
+scathe:V
 scathing:A
 scathingly:Av
 scatological:A
@@ -54785,6 +54864,7 @@ see:Av
 see:N
 see:V,_s,_ing,saw,_n
 seeable:A
+seed:A
 seed:N
 seed:V
 seedbed:N
@@ -54793,6 +54873,7 @@ seedcase:N
 seeded:A
 seeder:N
 seediness:N
+seeding:N
 seedless:A
 seedlike:A
 seedling:N
@@ -55494,6 +55575,7 @@ shapeliness:N
 shapely:A
 shaper:N
 shapeshift:V
+shapeshifter:N
 shaping:A
 shaping:N
 shard:N
@@ -55894,6 +55976,7 @@ show:N
 show:V,_s,_ing,_ed,_n
 showboat:N
 showcase:N
+showcase:V
 showdown:N
 shower:N
 shower:V
@@ -57362,6 +57445,8 @@ soft:A
 soft:Av
 softback:N
 softball:N
+softcover:A
+softcover:N
 soften:V
 softened:A
 softener:N
@@ -58185,6 +58270,7 @@ spinner:N
 spinney:N
 spinning:A
 spinning:N
+spinoff:N
 spinose:A
 spinous:A
 spinster:N
@@ -58786,6 +58872,7 @@ stanchion:N
 stanchly:Av
 stand:N
 stand:V,_s,_ing,stood
+standalone:A
 standard:A
 standard:N
 standardisation:N
@@ -58902,6 +58989,7 @@ stately:A
 statement:N
 stater:N
 stateroom:N
+stateside:A
 statesman:N,statesmen
 statesmanlike:A
 statesmanly:A
@@ -59921,6 +60009,7 @@ sublunar:A
 sublunary:A
 subluxate:V
 subluxation:N
+submachine:A
 submarine:A
 submarine:N
 submarine:V
@@ -60434,6 +60523,7 @@ superfluous:A
 superfluously:Av
 supergiant:N
 supergrass:N
+supergroup:N
 superhet:N
 superhighway:N
 superhuman:A
@@ -61746,6 +61836,7 @@ technically:Av
 technician:N
 technicolor:N
 technique:N
+techno:N
 technobabble:N
 technocracy:N
 technocrat:N
@@ -61860,6 +61951,7 @@ telephotograph:N
 telephotography:N
 teleport:V
 teleportation:N
+teleporter:N
 teleprinter:N
 teleprocessing:N
 telerobotics:N
@@ -64208,6 +64300,8 @@ triton:N
 triumph:N
 triumph:V
 triumphal:A
+triumphalism:N
+triumphalist:N
 triumphant:A
 triumphantly:Av
 triumvir:N
@@ -64317,6 +64411,7 @@ truckle:N
 truckle:V
 truckler:N
 truckling:N
+truckload:N
 truculence:N
 truculency:N
 truculent:A
@@ -64753,6 +64848,7 @@ typology:N
 tyramine:N
 tyrannic:A
 tyrannical:A
+tyrannically:Av
 tyrannicide:N
 tyrannid:N
 tyrannise:V
@@ -65908,6 +66004,7 @@ unfreeze:V
 unfrequented:A
 unfrequently:Av
 unfretted:A
+unfriend:V
 unfriendliness:N
 unfriendly:A
 unfrightened:A
@@ -65992,6 +66089,7 @@ unharming:A
 unharmonious:A
 unharmoniously:Av
 unharness:V
+unhasp:V
 unhatched:A
 unhazardous:A
 unheaded:A
@@ -66010,6 +66108,7 @@ unhelpful:A
 unhelpfully:Av
 unhelpfulness:N
 unheralded:A
+unheroic:A
 unhesitating:A
 unhesitatingly:Av
 unhewn:A
@@ -66683,6 +66782,7 @@ unreliable:A
 unreliableness:N
 unreliably:Av
 unrelieved:A
+unreligious:A
 unremarkable:A
 unremarkably:Av
 unremarked:A
@@ -68216,6 +68316,7 @@ video:N
 videocassette:N
 videodisc:N
 videodisk:N
+videogame:N
 videographer:N
 videography:N
 videotape:N
@@ -69317,6 +69418,7 @@ wharf:N,wharves,_s
 wharf:V
 wharfage:N
 what:D
+whataboutism:N
 whatchamacallit:N
 whatever:A
 whatever:Av
@@ -70563,6 +70665,7 @@ zoftig:A
 zoic:A
 zombi:N
 zombie:N
+zombify:V
 zona:N
 zonal:A
 zonary:A

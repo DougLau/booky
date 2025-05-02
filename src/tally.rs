@@ -12,6 +12,7 @@ const ROMAN_LOWER: &str = "ivxlcdm";
 /// Word contractions
 enum Contraction {
     Full(&'static str, &'static str, &'static str),
+    Prefix(&'static str, &'static str),
     Suffix(&'static str, &'static str),
 }
 
@@ -264,6 +265,7 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
     Contraction::Suffix("’", ""),  // possessive
+    Contraction::Prefix("’", ""),  // weird quote
 ];
 
 impl Contraction {
@@ -271,6 +273,7 @@ impl Contraction {
     fn check(&self, word: &str) -> bool {
         match self {
             Contraction::Full(c, _, _) => word.eq_ignore_ascii_case(c),
+            Contraction::Prefix(p, _) => word.starts_with(p),
             Contraction::Suffix(s, _) => word.ends_with(s),
         }
     }
@@ -279,6 +282,10 @@ impl Contraction {
     fn expand<'a>(&self, word: &'a str) -> Vec<&'a str> {
         match self {
             Contraction::Full(_, a, b) => vec![a, b],
+            Contraction::Prefix(p, ex) => match word.strip_prefix(p) {
+                Some(base) => vec![base, ex],
+                None => vec![word],
+            },
             Contraction::Suffix(s, ex) => match word.strip_suffix(s) {
                 Some(base) => vec![base, ex],
                 None => vec![word],
@@ -288,13 +295,28 @@ impl Contraction {
 }
 
 /// Split contractions
-fn split_contractions(word: &str) -> impl Iterator<Item = &str> {
-    for con in CONTRACTIONS {
-        if con.check(word) {
-            return con.expand(word).into_iter();
+fn split_contractions(word: &str) -> Vec<&str> {
+    let mut words = vec![word];
+    let mut ex = Vec::with_capacity(2);
+    while let Some(word) = words.pop() {
+        let mut expanded = split_contraction(word);
+        if expanded.is_empty() {
+            ex.push(word);
+        } else {
+            words.append(&mut expanded);
         }
     }
-    vec![word].into_iter()
+    ex
+}
+
+/// Split one contraction
+fn split_contraction(word: &str) -> Vec<&str> {
+    for con in CONTRACTIONS {
+        if con.check(word) {
+            return con.expand(word);
+        }
+    }
+    vec![]
 }
 
 impl WordTally {

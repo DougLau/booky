@@ -281,7 +281,7 @@ fn is_vowel(c: char) -> bool {
 fn consonant_end_repeat(s: &str) -> Option<char> {
     // consonant doubling rules (as far as I can tell):
     // 1. stress on final syllable
-    // 2. always double an "l" final consonant
+    // 2. always double an "l" final consonant (not "parallel")
     let mut suffix = (' ', ' ', ' ');
     for c in s.chars() {
         if suffix.2 == 'q' && c == 'u' {
