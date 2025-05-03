@@ -51,6 +51,8 @@ Herr:N.n
 Hollywood:A
 I:Pn
 Indian:N.n
+Indologist:N
+Indology:N
 Jan:N.n
 January:N.n
 Jul:N.n
@@ -2687,6 +2689,7 @@ analyser:N
 analysis:N,analyses
 analyst:N
 analytic:A
+analytic:N
 analytical:A
 analytically:Av
 analyticity:N
@@ -6692,6 +6695,7 @@ bestrew:V,_s,_ing,_n,_ed
 bestrewn:A
 bestride:V,_s,bestriding,bestrode,bestridden
 bestseller:N
+bestselling:A
 bestubbled:A
 bet:N
 bet:V,_s,_ting
@@ -7961,6 +7965,7 @@ booklet:N
 booklouse:N
 booklover:N
 bookmaker:N
+bookmaking:N
 bookmark:N
 bookmarker:N
 bookmobile:N
@@ -9337,6 +9342,9 @@ bye-bye:N
 bygone:A
 bygone:N
 bylaw:N
+byline:N
+byline:V
+byliner:N
 bypass:N
 bypass:V
 bypast:A
@@ -11136,7 +11144,8 @@ changer:N
 changing:A
 changingly:Av
 channel:N
-channel:V
+channel:V,_s,_ing,_ling,_ed,_led
+channeler:N
 channelisation:N
 channelise:V
 channelization:N
@@ -13795,6 +13804,7 @@ congou:N
 congratulate:V
 congratulation:N
 congratulatory:A
+congregant:N
 congregate:A
 congregate:V
 congregating:N
@@ -19323,6 +19333,7 @@ docudrama:N
 document:N
 document:V
 documental:A
+documentarian:N
 documentary:A
 documentary:N
 documentation:N
@@ -24784,6 +24795,10 @@ foliose:A
 folium:N
 folk:N
 folklore:N
+folkloric:A
+folklorish:A
+folklorist:N
+folkloristic:A
 folksong:N
 folksy:A
 folktale:N
@@ -26943,6 +26958,7 @@ goalkeeper:N
 goalless:A
 goalmouth:N
 goalpost:N
+goalscorer:N
 goaltender:N
 goat:N
 goatee:N
@@ -28276,6 +28292,7 @@ handed:A
 handedness:N
 handful:N
 handgrip:N
+handguard:N
 handgun:N
 handheld:A
 handhold:N
@@ -28723,6 +28740,7 @@ healing:N
 health:N
 healthcare:N
 healthful:A
+healthfully:Av
 healthfulness:N
 healthier:A
 healthily:Av
@@ -28902,6 +28920,8 @@ heliacal:A
 helianthemum:N
 helianthus:N
 helical:A
+helicoid:A
+helicoidal:A
 helicon:N
 helicopter:N
 heliocentric:A
@@ -30320,6 +30340,8 @@ hybrid:A
 hybrid:N
 hybridisation:N
 hybridise:V
+hybridism:N
+hybridity:N
 hybridization:N
 hybridize:V
 hybridizing:N
@@ -30351,6 +30373,7 @@ hydremia:N
 hydric:A
 hydride:N
 hydrilla:N
+hydro:N
 hydrocarbon:N
 hydrocele:N
 hydrocephalic:A
@@ -34799,6 +34822,7 @@ lamppost:N
 lamprey:N
 lampshade:N
 lampshell:N
+lampstand:N
 lanai:N
 lanate:A
 lance:N
@@ -38163,6 +38187,7 @@ menopause:N
 menorah:N
 menorrhagia:N
 menorrhea:N
+mens:N.p
 mensal:A
 mensch:N
 menses:N
@@ -38187,7 +38212,7 @@ mention:N
 mention:V
 mentioner:N
 mentor:N
-mentor:V
+mentor:V,_s,_ing,_ed
 mentum:N
 menu:N
 men’s:N
@@ -38587,6 +38612,9 @@ microgauss:N
 microglia:N
 microgliacyte:N
 microgram:N
+micrograph:N
+micrography:N
+microlight:N
 micrometeor:N
 micrometeoric:A
 micrometeorite:N
@@ -39603,6 +39631,7 @@ mononeuropathy:N
 mononuclear:A
 mononucleate:A
 mononucleosis:N
+mononym:N
 monophonic:A
 monophony:N
 monoplane:N
@@ -43237,6 +43266,7 @@ orthopteron:N
 orthoptic:A
 orthoptics:N.p
 orthoptist:N
+orthorhombic:A
 orthoscope:N
 orthostatic:A
 orthotropous:A
@@ -43540,6 +43570,7 @@ outwatch:V
 outwear:V
 outweigh:V
 outwit:V
+outwith:P
 outwork:N
 ouzel:N
 ouzo:N
@@ -43745,6 +43776,7 @@ overnight:A
 overnight:Av
 overnighter:N
 overpass:N
+overpass:V
 overpay:V
 overpayment:N
 overplay:V
@@ -44411,6 +44443,7 @@ paperbacked:A
 paperboard:N
 paperboy:N
 paperclip:N
+papercut:N
 paperer:N
 paperhanger:N
 paperhanging:N
@@ -46158,6 +46191,7 @@ photosensitise:V
 photosensitive:A
 photosensitivity:N
 photosensitize:V
+photoshoot:N
 photosphere:N
 photostat:N
 photostat:V
@@ -46187,6 +46221,9 @@ phthisis:N
 phycobilin:N
 phycocyanin:N
 phycoerythrin:N
+phycological:A
+phycologist:N
+phycology:N
 phycomycosis:N
 phylactery:N
 phyle:N
@@ -47910,6 +47947,8 @@ powerhouse:N
 powerless:A
 powerlessly:Av
 powerlessness:N
+powerlifter:N
+powerlifting:N
 powerwash:V
 powwow:N
 powwow:V
@@ -48738,6 +48777,7 @@ proficient:A
 proficiently:Av
 profile:N
 profile:V
+profiler:N
 profiling:N
 profit:N
 profit:V,_s,_ing,_ed
@@ -50239,6 +50279,9 @@ racemose:A
 racer:N
 racerunner:N
 racetrack:N
+racewalk:V
+racewalker:N
+racewalking:N
 raceway:N
 rachet:N
 rachis:N
@@ -55798,6 +55841,7 @@ sherbet:N
 sherd:N
 sheriff:N
 sherlock:N
+sherpa:N
 sherry:N
 shew:V
 shiatsu:N
@@ -56485,6 +56529,7 @@ singing:N
 single:A
 single:N
 single:V
+single-handedly:Av
 singleness:N
 singlestick:N
 singlet:N
@@ -59067,6 +59112,8 @@ starwort:N
 stash:N
 stash:V
 stasis:N
+stat:Av
+stat:N
 statant:A
 state:N
 state:V
@@ -63626,6 +63673,7 @@ touching:A
 touching:N
 touchingly:Av
 touchline:N
+touchscreen:N
 touchstone:N
 touchwood:N
 touchy:A
@@ -65721,6 +65769,7 @@ undernourishment:N
 underpants:N
 underpart:N
 underpass:N
+underpass:V
 underpay:V
 underpayment:N
 underperform:V
@@ -70760,6 +70809,9 @@ zinger:N
 zinkenite:N
 zinnia:N
 zinnwaldite:N
+zionism:N
+zionist:A
+zionist:N
 zip:N
 zip:V
 zipper:N
