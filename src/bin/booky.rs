@@ -21,6 +21,7 @@ enum SubCommand {
     Acronym(Acronym),
     Foreign(Foreign),
     Freq(Freq),
+    List(List),
     Nonsense(Nonsense),
     Ordinal(Ordinal),
     Num(Num),
@@ -54,6 +55,11 @@ struct Foreign {}
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "freq")]
 struct Freq {}
+
+/// List all word forms
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "list")]
+struct List {}
 
 /// Generate nonsense text
 #[derive(FromArgs, Debug, PartialEq)]
@@ -115,6 +121,15 @@ fn dict() -> Result<()> {
     dict.sort();
     for word in dict.iter() {
         println!("{word:?}");
+    }
+    Ok(())
+}
+
+/// List all word forms
+fn list() -> Result<()> {
+    let dict = Dict::builtin();
+    for form in dict.forms() {
+        println!("{form}");
     }
     Ok(())
 }
@@ -220,6 +235,7 @@ fn main() -> Result<()> {
         Some(SubCommand::Acronym(_)) => list_category(Category::Acronym)?,
         Some(SubCommand::Foreign(_)) => list_category(Category::Foreign)?,
         Some(SubCommand::Freq(_)) => freq()?,
+        Some(SubCommand::List(_)) => list()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         Some(SubCommand::Num(_)) => list_category(Category::Number)?,
         Some(SubCommand::Ordinal(_)) => list_category(Category::Ordinal)?,

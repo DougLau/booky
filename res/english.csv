@@ -1769,6 +1769,7 @@ airmailer:N
 airman:N,airmen
 airmanship:N
 airplane:N
+airplay:N
 airport:N
 airpost:N
 airscrew:N
@@ -4402,6 +4403,8 @@ asparaginase:N
 asparagine:N
 asparagus:N
 aspartame:N
+aspartate:N
+aspartic:A
 aspect:N
 aspectual:A
 aspen:N
@@ -5161,7 +5164,7 @@ avitaminosis:N
 avitaminotic:A
 avo:N
 avocado:A
-avocado:N
+avocado:N,_s
 avocation:N
 avocational:A
 avocet:N
@@ -5892,6 +5895,7 @@ baroqueness:N
 baroreceptor:N
 barosaur:N
 barosaurus:N
+barotrauma:N
 barouche:N
 barque:N
 barrack:N
@@ -9438,6 +9442,7 @@ cacogenics:N
 cacography:N
 cacomistle:N
 cacomixle:N
+cacophobia:N
 cacophonic:A
 cacophonous:A
 cacophony:N
@@ -9499,6 +9504,7 @@ caftan:N
 café:N
 cage:N
 cage:V
+cageless:A
 cager:N
 cagey:A
 cagily:Av
@@ -11342,6 +11348,7 @@ checkmate:N
 checkmate:V
 checkout:N
 checkpoint:N
+checkpoint:V
 checkrein:N
 checkroom:N
 checkrow:V
@@ -11454,6 +11461,7 @@ chess:N
 chessboard:N
 chessman:N,chessmen
 chest:N
+chested:A
 chesterfield:N
 chestnut:A
 chestnut:N
@@ -12755,6 +12763,8 @@ codling:N
 codon:N
 codpiece:N
 codswallop:N
+coed:A
+coed:N
 coeducate:V
 coeducation:N
 coeducational:A
@@ -12826,6 +12836,7 @@ cognoscible:A
 cogwheel:N
 cohabit:V
 cohabitation:N
+coheiress:N
 cohere:V
 coherence:N
 coherency:N
@@ -13346,6 +13357,7 @@ compensate:V
 compensated:A
 compensation:N
 compensative:A
+compensator:N
 compensatory:A
 compere:N
 compere:V
@@ -17202,6 +17214,7 @@ deliquium:N
 delirious:A
 deliriously:Av
 delirium:N
+delist:V
 deliver:V
 deliverable:A
 deliverable:N
@@ -17373,6 +17386,7 @@ denationalize:V
 denaturalise:V
 denaturalize:V
 denaturant:N
+denaturation:N
 denature:V
 denatured:A
 denaturised:A
@@ -19712,6 +19726,7 @@ downstream:Av
 downstream:P.i
 downstroke:N
 downswing:N
+downtempo:A
 downtick:N
 downtime:N
 downtown:A
@@ -19724,6 +19739,7 @@ downward:P.i
 downwardly:Av
 downwards:Av
 downwards:P.i
+downwash:N
 downwind:A
 downwind:Av
 downwind:P.i
@@ -23491,6 +23507,8 @@ faultlessly:Av
 faulty:A
 faun:N
 fauna:N
+faunal:A
+faunally:Av
 fauteuil:N
 fauvism:N
 fauvist:N
@@ -24582,6 +24600,7 @@ floppy:A
 floppy:N
 flora:N
 floral:A
+floral:N
 florescence:N
 floret:N
 floricultural:A
@@ -32182,6 +32201,7 @@ influentially:Av
 influenza:N
 influx:N
 info:N
+infographic:N
 infolding:N
 infomercial:N
 inform:V
@@ -32804,6 +32824,9 @@ interfere:V
 interference:N
 interfering:A
 interferometer:N
+interferometric:A
+interferometrically:Av
+interferometry:N
 interferon:N
 intergalactic:A
 interim:A
@@ -33776,6 +33799,7 @@ jiggle:V
 jigsaw:N
 jihad:N
 jihadi:A
+jihadist:N
 jillions:N
 jilt:N
 jilt:V
@@ -36306,7 +36330,7 @@ logistical:A
 logistician:N
 logistics:N
 logjam:N
-logo:N
+logo:N,_s
 logogram:N
 logogrammatic:A
 logogrammatically:Av
@@ -36396,7 +36420,9 @@ lookdown:N
 looker:N
 looking:A
 looking:N
+lookism:N
 lookout:N
+looksism:N
 lookup:N
 loom:N
 loom:V
@@ -36840,6 +36866,7 @@ macerate:V
 maceration:N
 macerative:A
 machete:N
+machi:N
 machicolate:V
 machicolation:N
 machilid:N
@@ -39593,7 +39620,7 @@ monism:N
 monistic:A
 monition:N
 monitor:N
-monitor:V
+monitor:V,_s,_ing,_ed
 monitoring:N
 monitory:A
 monitrice:N
@@ -40683,6 +40710,7 @@ nap:V
 napa:N
 napalm:N
 nape:N
+naped:A
 napery:N
 naphazoline:N
 naphtha:N
@@ -41673,6 +41701,9 @@ nondeductible:A
 nondenominational:A
 nondescript:A
 nondescript:N
+nondestructive:A
+nondestructively:Av
+nondestructiveness:N
 nondevelopment:N
 nondigestible:A
 nondisjunction:N
@@ -41850,6 +41881,7 @@ nonreciprocating:A
 nonrecreational:A
 nonreflecting:A
 nonreflective:A
+nonrelevant:A
 nonremittal:N
 nonrenewable:A
 nonrepresentational:A
@@ -43220,6 +43252,7 @@ orientated:A
 orientating:A
 orientation:N
 oriented:A
+orienteering:N
 orienting:A
 orifice:N
 oriflamme:N
@@ -44585,6 +44618,7 @@ parallel:V,_s,_ing,_ed
 parallelepiped:N
 parallelepipedon:N
 parallelism:N
+parallelization:N
 parallelize:V
 parallelogram:N
 parallelopiped:N
@@ -44946,6 +44980,9 @@ pastor:N
 pastoral:A
 pastoral:N
 pastorale:N
+pastoralism:N
+pastoralist:A
+pastoralist:N
 pastorate:N
 pastorship:N
 pastrami:N
@@ -45383,6 +45420,8 @@ peneplane:N
 penetrability:N
 penetrable:A
 penetralia:N
+penetrant:A
+penetrant:N
 penetrate:V
 penetrating:A
 penetratingly:Av
@@ -47834,6 +47873,7 @@ posterboard:N
 posterior:A
 posterior:N
 posteriority:N
+posteriorly:Av
 posterity:N
 postern:N
 postexilic:A
@@ -48899,7 +48939,7 @@ progressiveness:N
 progressivism:N
 progressivity:N
 progymnosperm:N
-prohibit:V
+prohibit:V,prohitibs,_ing,_ed
 prohibited:A
 prohibition:N
 prohibitionist:N
@@ -48968,7 +49008,7 @@ promising:A
 promisingly:Av
 promisor:N
 promissory:A
-promo:N
+promo:N,_s
 promontory:N
 promote:V
 promoter:N
@@ -50991,6 +51031,7 @@ rebound:N
 rebound:V
 reboxetine:N
 rebozo:N
+rebreather:N
 rebroadcast:V
 rebuff:N
 rebuff:V
@@ -51139,6 +51180,7 @@ recommended:A
 recommit:V
 recompense:N
 recompense:V
+recompression:N
 reconcilable:A
 reconcile:V
 reconciled:A
@@ -51662,6 +51704,7 @@ reiteration:N
 reiterative:A
 reject:N
 reject:V
+rejectable:A
 rejected:A
 rejection:N
 rejective:A
@@ -51898,6 +51941,7 @@ rente:N
 renter:N
 rentier:N
 renting:N
+renumber:V
 renunciant:A
 renunciation:N
 renunciative:A
@@ -52121,6 +52165,7 @@ reread:V
 rerebrace:N
 reredos:N
 rerelease:V,_s,rereleasing,_d
+reroute:V
 rerun:N
 rerun:V,_s,_ning,reran
 resale:N
@@ -52185,6 +52230,7 @@ residential:A
 residentially:Av
 residual:A
 residual:N
+residually:Av
 residuary:A
 residue:N
 residuum:N
@@ -52561,6 +52607,7 @@ revetement:N
 revetment:N
 review:N
 review:V
+reviewable:A
 reviewer:N
 revile:V
 reviled:A
@@ -53479,6 +53526,7 @@ rumour:V
 rumourmonger:N
 rumourmongering:N
 rump:N
+rumped:A
 rumple:V
 rumpled:A
 rumpus:N
@@ -54716,6 +54764,8 @@ screener:N
 screening:N
 screenland:N
 screenplay:N
+screenprint:N
+screenprint:V
 screenshot:N
 screenwriter:N
 screw:N
@@ -60260,6 +60310,8 @@ subnormality:N
 subocean:A
 suboceanic:A
 subocular:A
+suboptimal:A
+suboptimally:Av
 suborbital:A
 suborder:N
 subordinate:A
@@ -62439,6 +62491,7 @@ terpsichorean:A
 terra:N
 terrace:N
 terrace:V
+terracotta:N
 terrain:N
 terrapin:N
 terrarium:N
@@ -64853,6 +64906,7 @@ turbinal:N
 turbinate:A
 turbinate:N
 turbine:N
+turbo:N,_s
 turbofan:N
 turbogenerator:N
 turbojet:N
@@ -65177,6 +65231,7 @@ ultramontanism:N
 ultranationalism:N
 ultranationalistic:A
 ultrasonic:A
+ultrasonic:N
 ultrasonically:Av
 ultrasonography:N
 ultrasound:N
@@ -67730,6 +67785,7 @@ upstream:P.i
 upstroke:N
 upsurge:N
 uptake:N
+uptempo:A
 upthrow:N
 upthrust:N
 uptick:N
@@ -69357,6 +69413,7 @@ waterfowl:N
 waterfront:N
 wateriness:N
 watering:N
+waterjet:N
 waterleaf:N
 waterless:A
 waterlessness:N
