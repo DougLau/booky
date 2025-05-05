@@ -3986,7 +3986,7 @@ archine:N
 arching:A
 archipallium:N
 archipelagic:A
-archipelago:N
+archipelago:N,_s,_es
 architect:N
 architectonic:A
 architectonics:N
@@ -5164,7 +5164,7 @@ avitaminosis:N
 avitaminotic:A
 avo:N
 avocado:A
-avocado:N,_s
+avocado:N
 avocation:N
 avocational:A
 avocet:N
@@ -5715,7 +5715,7 @@ banian:N
 banish:V
 banishment:N
 banister:N
-banjo:N,_s
+banjo:N,_s,_es
 bank:N
 bank:V
 bankable:A
@@ -8431,7 +8431,7 @@ brattish:A
 brattle:V
 bratty:A
 bratwurst:N
-bravado:N
+bravado:N,_s,_es
 brave:A
 brave:N
 brave:V
@@ -9938,7 +9938,7 @@ cantilever:V
 cantillate:V
 cantillation:N
 cantle:N
-canto:N,_s
+canto:N
 canton:N
 canton:V
 cantonal:A
@@ -10222,7 +10222,7 @@ caretaker:N
 careworn:A
 carfare:N
 carful:N
-cargo:N
+cargo:N,_s,_es
 carhop:N
 caribe:N
 caribou:N
@@ -10418,7 +10418,7 @@ cashier:N
 cashier:V
 cashmere:N
 casing:N
-casino:N,_s
+casino:N
 cask:N
 cask:V
 casket:N
@@ -17746,7 +17746,7 @@ despairing:A
 despairingly:Av
 despatch:N
 despatch:V
-desperado:N
+desperado:N,_s,_es
 desperate:A
 desperate:N
 desperately:Av
@@ -19505,8 +19505,7 @@ domineeringness:N
 dominical:A
 dominie:N
 dominion:N
-domino:N
-dominos:N
+domino:N,_s,_es
 dominus:N
 don:N
 don:V,_s,_ning,_ned
@@ -20472,7 +20471,7 @@ echinococcosis:N
 echinococcus:N
 echinoderm:N
 echinus:N
-echo:N
+echo:N,_es
 echo:V
 echocardiogram:N
 echocardiograph:N
@@ -21062,7 +21061,7 @@ embroil:V
 embroiled:A
 embroilment:N
 embrown:V
-embryo:N,_s
+embryo:N
 embryologic:A
 embryology:N
 embryonal:A
@@ -29240,7 +29239,7 @@ hermitic:A
 hermitical:A
 hernia:N
 herniation:N
-hero:N
+hero:N,_es
 heroic:A
 heroic:N
 heroical:A
@@ -32420,7 +32419,7 @@ innovative:A
 innovativeness:N
 innovator:N
 innoxious:A
-innuendo:N
+innuendo:N,_s,_es
 innumerable:A
 innumerableness:N
 innumerate:A
@@ -33836,6 +33835,7 @@ jittery:A
 jiujitsu:N
 jive:N
 jive:V
+jo:N,_es
 job:N
 job:V
 jobber:N
@@ -34349,7 +34349,7 @@ killing:N
 killingly:Av
 killjoy:N
 kiln:N
-kilo:N,_s
+kilo:N
 kilobyte:N
 kilocalorie:N
 kilocycle:N
@@ -36330,7 +36330,7 @@ logistical:A
 logistician:N
 logistics:N
 logjam:N
-logo:N,_s
+logo:N
 logogram:N
 logogrammatic:A
 logogrammatically:Av
@@ -37316,7 +37316,7 @@ mangle:V
 mangled:A
 mangler:N
 manglietia:N
-mango:N
+mango:N,_s,_es
 mangold:N
 mangonel:N
 mangosteen:N
@@ -38198,7 +38198,7 @@ membrane:N
 membranophone:N
 membranous:A
 meme:N
-memento:N
+memento:N,_s,_es
 memo:N
 memoir:N
 memorabilia:N
@@ -39938,7 +39938,7 @@ mosey:V
 mosh:V
 moshav:N
 mosque:N
-mosquito:N
+mosquito:N,_s,_es
 mosquitofish:N
 moss:N
 mossback:N
@@ -40030,7 +40030,7 @@ motorway:N
 mottle:V
 mottled:A
 mottling:N
-motto:N
+motto:N,_s,_es
 moue:N
 moufflon:N
 mouflon:N
@@ -41030,7 +41030,7 @@ negotiator:N
 negotiatress:N
 negotiatrix:N
 negro:A
-negro:N
+negro:N,_es
 negroid:A
 negus:N
 neigh:N
@@ -41276,7 +41276,7 @@ neutralization:N
 neutralize:V
 neutralized:A
 neutrally:Av
-neutrino:N,_s
+neutrino:N
 neutron:N
 neutropenia:N
 neutrophil:N
@@ -43539,8 +43539,8 @@ outflow:N
 outflowing:A
 outfox:V
 outgeneral:V
-outgo:N
-outgo:V
+outgo:N,_es
+outgo:V,_es,_ing,outwent
 outgoer:N
 outgoing:A
 outgrow:V
@@ -46229,7 +46229,7 @@ phosphorus:N
 phot:N
 photalgia:N
 photic:A
-photo:N,_s
+photo:N
 photocathode:N
 photocell:N
 photochemical:A
@@ -46382,7 +46382,7 @@ pianist:N
 pianistic:A
 piano:A
 piano:Av
-piano:N,_s
+piano:N
 pianoforte:N
 piaster:N
 piastre:N
@@ -46397,7 +46397,7 @@ picaresque:A
 picayune:A
 piccalilli:N
 piccaninny:N
-piccolo:N,_s
+piccolo:N
 pichi:N
 pichiciago:N
 pichiciego:N
@@ -47944,7 +47944,7 @@ potamogale:N
 potash:N
 potassium:N
 potation:N
-potato:N
+potato:N,_es
 potbellied:A
 potbelly:N
 potboiler:N
@@ -49008,7 +49008,7 @@ promising:A
 promisingly:Av
 promisor:N
 promissory:A
-promo:N,_s
+promo:N
 promontory:N
 promote:V
 promoter:N
@@ -57975,7 +57975,7 @@ sopping:Av
 soppy:A
 sopranino:A
 soprano:A
-soprano:N,_s
+soprano:N
 sorb:N
 sorb:V
 sorbate:N
@@ -59130,6 +59130,7 @@ stamp:V
 stamped:A
 stampede:N
 stampede:V
+stampedo:N
 stamper:N
 stance:N
 stanch:V
@@ -63564,7 +63565,7 @@ tomahawk:N
 tomahawk:V
 tomalley:N
 tomatillo:N
-tomato:N
+tomato:N,_es
 tomb:N
 tomb:V
 tombac:N
@@ -63715,11 +63716,11 @@ tormented:A
 tormenter:N
 tormentor:N
 torn:A
-tornado:N
+tornado:N,_s,_es
 tornillo:N
 toroid:N
 toroidal:A
-torpedo:N
+torpedo:N,_es
 torpedo:V
 torpid:A
 torpidity:N
@@ -63734,7 +63735,7 @@ torrid:A
 torridity:N
 torsion:N
 torsk:N
-torso:N
+torso:N,_es,torsi
 tort:N
 torte:N
 tortellini:N
@@ -64906,7 +64907,7 @@ turbinal:N
 turbinate:A
 turbinate:N
 turbine:N
-turbo:N,_s
+turbo:N
 turbofan:N
 turbogenerator:N
 turbojet:N
@@ -65089,7 +65090,7 @@ twitter:V
 twitterer:N
 two:A
 two:D
-two:N,_s
+two:N
 twofer:N
 twofold:A
 twofold:Av
@@ -65154,7 +65155,7 @@ tyrannous:A
 tyranny:N
 tyrant:N
 tyre:N
-tyro:N,_s
+tyro:N
 tyrocidin:N
 tyrocidine:N
 tyrolean:N
@@ -68547,7 +68548,7 @@ veteran:N
 veterinarian:N
 veterinary:A
 veterinary:N
-veto:N
+veto:N,_es
 veto:V
 vex:V
 vexation:N
@@ -68962,7 +68963,7 @@ volatilized:A
 volcanic:A
 volcanically:Av
 volcanism:N
-volcano:N
+volcano:N,_s,_es
 volcanology:N
 vole:N
 volition:N
@@ -69635,6 +69636,7 @@ weird:A
 weirdie:N
 weirdly:Av
 weirdness:N
+weirdo:A
 weirdo:N
 weirdy:N
 weisenheimer:N
@@ -70935,7 +70937,7 @@ zephyr:N
 zeppelin:N
 zero:A
 zero:D
-zero:N,_s
+zero:N,_s,_es
 zero:V
 zeroth:A
 zest:N

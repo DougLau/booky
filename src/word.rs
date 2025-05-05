@@ -265,8 +265,6 @@ fn noun_plural(base: &str) -> String {
     } else if ends_in_y(base) {
         let base = base.trim_end_matches('y');
         format!("{base}ies")
-    } else if ends_in_o(base) {
-        format!("{base}es")
     } else {
         format!("{base}s")
     }
@@ -321,16 +319,6 @@ fn verb_present(base: &str) -> String {
     } else {
         format!("{base}s")
     }
-}
-
-/// Check if a base word ends in `o` (with no other vowel)
-fn ends_in_o(base: &str) -> bool {
-    base.ends_with("o")
-        && !(base.ends_with("ao")
-            || base.ends_with("eo")
-            || base.ends_with("io")
-            || base.ends_with("oo")
-            || base.ends_with("uo"))
 }
 
 /// Check if a base word ends in `y` (with no other vowel)
