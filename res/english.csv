@@ -5437,6 +5437,7 @@ backstitch:V
 backstop:N
 backstop:V
 backstory:N
+backstretch:N
 backstroke:N
 backstroke:V
 backstroker:N
@@ -6105,6 +6106,7 @@ battery:N
 batting:N
 battle:N
 battle:V
+battlecruiser:N
 battledore:N
 battlefield:N
 battlefront:N
@@ -6226,6 +6228,9 @@ beat:A
 beat:N
 beat:V,_s,_ing,_en
 beatable:A
+beatbox:N
+beatbox:V
+beatboxer:N
 beaten:A
 beater:N
 beatific:A
@@ -6925,7 +6930,7 @@ bigwig:N
 bijou:N
 bike:N
 bike:V
-bikers:N
+biker:N
 bikeway:N
 bikini:N
 bilabial:A
@@ -7089,6 +7094,7 @@ biologistic:A
 biology:N
 bioluminescence:N
 bioluminescent:A
+biomarker:N
 biomass:N
 biome:N
 biomedical:A
@@ -8584,6 +8590,7 @@ bribery:N
 bric-a-brac:N
 brick:N
 brickbat:N
+brickbatting:N
 brickfield:N
 brickie:N
 brickkiln:N
@@ -10418,6 +10425,7 @@ cased:A
 caseful:N
 casein:N
 casemaker:N
+casemate:N
 casement:N
 caseous:A
 casern:N
@@ -10780,6 +10788,7 @@ ceilidh:N
 ceiling:N
 ceilinged:A
 celandine:N
+celeb:N
 celebrant:N
 celebrate:V
 celebrated:A
@@ -10793,6 +10802,7 @@ celeriac:N
 celerity:N
 celery:N
 celesta:N
+celeste:N
 celestial:A
 celestite:N
 celiac:A
@@ -11725,11 +11735,13 @@ chlortetracycline:N
 chlorthalidone:N
 choanocyte:N
 choc:N
+chocaholic:N
 chock:Av
 chock:N
 chock:V
 chockablock:A
 chockful:A
+chocoholic:N
 chocolate:N
 choice:A
 choice:N
@@ -13598,6 +13610,8 @@ concertina:N
 concertina:V
 concertise:V
 concertize:V
+concertmaster:N
+concertmeister:N
 concerto:N,concerti,_s
 concession:N
 concessionaire:N
@@ -13792,6 +13806,7 @@ conformable:A
 conformably:Av
 conformance:N
 conformation:N
+conformational:A
 conforming:A
 conformism:N
 conformist:A
@@ -16901,7 +16916,10 @@ decompress:V
 decompressing:N
 decompression:N
 deconcentrate:V
+decongest:V
 decongestant:N
+decongestion:N
+decongestive:A
 deconsecrate:V
 deconsecrated:A
 deconstruct:V
@@ -17443,6 +17461,7 @@ denigratory:A
 denim:N
 denitrify:V
 denizen:N
+denoising:A
 denominate:V
 denomination:N
 denominational:A
@@ -17624,6 +17643,8 @@ derate:V
 derby:N
 derecognise:V
 derecognize:V
+deregister:V
+deregistration:N
 deregulate:V
 deregulating:N
 deregulation:N
@@ -18400,6 +18421,9 @@ dimensional:A
 dimensionality:N
 dimensioning:A
 dimer:N
+dimeric:A
+dimerization:N
+dimerize:V
 dimethylglyoxime:N
 dimetrodon:N
 diminish:V
@@ -18718,6 +18742,7 @@ discontinue:V
 discontinued:A
 discontinuity:N
 discontinuous:A
+discontinuously:Av
 discord:N
 discord:V
 discordance:N
@@ -19974,6 +19999,7 @@ driveller:N
 driven:A
 driver:N
 driveshaft:N
+drivetrain:N
 driveway:N
 driving:A
 driving:N
@@ -20481,6 +20507,7 @@ ebonite:N
 ebonize:V
 ebony:A
 ebony:N
+ebook:N
 ebracteate:A
 ebullience:N
 ebullient:A
@@ -24145,6 +24172,8 @@ fingerling:N
 fingermark:N
 fingernail:N
 fingerpaint:N
+fingerpick:V
+fingerpicking:N
 fingerpointing:N
 fingerpost:N
 fingerprint:N
@@ -24627,6 +24656,7 @@ floodlit:A
 floodplain:N
 floor:N
 floor:V
+floorball:N
 floorboard:N
 floored:A
 flooring:N
@@ -24971,6 +25001,7 @@ footstall:N
 footstep:N
 footstool:N
 footsure:A
+footvolley:N
 footwall:N
 footway:N
 footwear:N
@@ -25409,6 +25440,8 @@ franc:N
 franchise:N
 franchise:V
 francium:N
+francophone:A
+francophone:N
 frangible:A
 frangipane:N
 frangipani:N
@@ -25487,6 +25520,8 @@ freesia:N
 freestanding:A
 freestone:N
 freestyle:N
+freestyle:V
+freestyler:N
 freetail:N
 freethinker:N
 freethinking:N
@@ -26352,6 +26387,7 @@ gecko:N
 gee:N
 gee:V
 geebung:N
+geegaw:N
 geek:N
 geezer:N
 geezerhood:N
@@ -26454,7 +26490,8 @@ genlisea:N
 genocide:N
 genoise:N
 genome:N
-genomics:N
+genomic:A
+genomics:N.p
 genotype:N
 genotypic:A
 genotypical:A
@@ -26670,11 +26707,12 @@ gillie:N
 gillyflower:N
 gilt:A
 gilt:N
+gimbal:N
+gimbal:V,_s,_ing,_ling,_ed,_led
 gimbaled:A
-gimbals:N
 gimcrack:A
+gimcrack:N
 gimcrackery:N
-gimcracks:N
 gimel:N
 gimlet:N
 gimmick:N
@@ -27182,6 +27220,8 @@ goof:V
 goofball:N
 goofproof:V
 goofy:A
+google:V
+googleable:A
 googly:N
 googol:N
 googolplex:N
@@ -29035,7 +29075,7 @@ heliotype:N
 heliozoan:N
 heliport:N
 helium:N
-helix:N
+helix:N,helices,_es
 hell:N
 hellbender:N
 hellcat:N
@@ -29324,6 +29364,8 @@ hesitator:N
 hessian:N
 hessonite:N
 het:A
+hetero:A
+hetero:N
 heterocercal:A
 heterocycle:N
 heterocyclic:A
@@ -32100,6 +32142,7 @@ inerrant:A
 inert:A
 inertia:N
 inertial:A
+inertially:Av
 inertness:N
 inescapable:A
 inescapably:Av
@@ -33282,7 +33325,10 @@ invigorator:N
 invincibility:N
 invincible:A
 invincibly:Av
+inviolability:N
 inviolable:A
+inviolableness:N
+inviolably:Av
 inviolate:A
 invisibility:N
 invisible:A
@@ -33518,6 +33564,7 @@ isocost:N
 isocyanate:N
 isocyclic:A
 isoflurane:N
+isoform:N
 isogamete:N
 isogamy:N
 isogon:N
@@ -38172,6 +38219,8 @@ megascopic:A
 megasporangium:N
 megaspore:N
 megasporophyll:N
+megastar:N
+megastardom:N
 megathere:N
 megatherian:N
 megatheriid:N
@@ -38345,6 +38394,7 @@ mention:V
 mentioner:N
 mentor:N
 mentor:V,_s,_ing,_ed
+mentorship:N
 mentum:N
 menu:N
 men’s:N
@@ -42264,6 +42314,7 @@ nuclease:N
 nucleate:A
 nucleate:V
 nucleated:A
+nucleic:A
 nucleole:N
 nucleolus:N
 nucleon:N
@@ -46674,6 +46725,7 @@ pinecone:N
 pinesap:N
 pinetum:N
 pineweed:N
+pinfall:N
 pinfish:N
 pinfold:N
 ping:N
@@ -47241,6 +47293,7 @@ plosive:A
 plosive:N
 plot:N
 plot:V
+plotline:N
 plotted:A
 plotter:N
 plough:N
@@ -47649,6 +47702,8 @@ polyoma:N
 polyose:N
 polyp:N
 polypectomy:N
+polyped:A
+polyped:N
 polypeptide:N
 polypetalous:A
 polyphase:A
@@ -48584,6 +48639,8 @@ prestissimo:A
 prestissimo:Av
 presto:A
 presto:Av
+prestress:N
+prestress:V
 presumable:A
 presumably:Av
 presume:V
@@ -49248,6 +49305,7 @@ proscribe:V
 proscribed:A
 proscription:N
 prose:N
+prosecutable:A
 prosecute:V
 prosecution:N
 prosecutor:N
@@ -51255,6 +51313,8 @@ recommencement:N
 recommend:V
 recommendation:N
 recommended:A
+recommission:N
+recommission:V
 recommit:V
 recompense:N
 recompense:V
@@ -51270,6 +51330,8 @@ recondite:A
 reconditeness:N
 recondition:V
 reconditioned:A
+reconfigurable:A
+reconfigure:V
 reconfirm:V
 reconnaissance:N
 reconnect:V
@@ -51943,7 +52005,7 @@ remittance:N
 remittent:A
 remix:V
 remnant:N
-remodel:V
+remodel:V,_s,_ing,_ed
 remodeled:A
 remold:V
 remonstrance:N
@@ -52041,6 +52103,7 @@ reorientate:V
 reorientation:N
 reovirus:N
 rep:N
+repack:V
 repackage:V
 repaint:V
 repair:N
@@ -52065,6 +52128,7 @@ repeal:N
 repeal:V
 repeat:N
 repeat:V
+repeatability:N
 repeatable:A
 repeated:A
 repeatedly:Av
@@ -52154,9 +52218,14 @@ represented:A
 repress:V
 repressed:A
 represser:N
+repressibility:N
+repressible:A
 repressing:A
+repressing:N
 repression:N
 repressive:A
+repressively:Av
+repressiveness:N
 repressor:N
 reprieve:N
 reprieve:V
@@ -52610,6 +52679,7 @@ retsina:N
 return:N
 return:V
 returnable:A
+returnee:N
 returner:N
 returning:A
 reunification:N
@@ -53103,8 +53173,9 @@ ritualize:V
 ritually:Av
 ritz:N
 ritzy:A
+rival:A
 rival:N
-rival:V
+rival:V,_s,_ing,_ling,_ed,_led
 rivalrous:A
 rivalry:N
 rive:V,_s,riving,_n,_d
@@ -53137,6 +53208,7 @@ roadside:N
 roadstead:N
 roadster:N
 roadway:N
+roadwork:N
 roadworthiness:N
 roadworthy:A
 roam:V
@@ -53272,6 +53344,7 @@ roofed:A
 roofer:N
 roofing:N
 roofless:A
+roofline:N
 rooftop:N
 rooftree:N
 roofy:N
@@ -54448,6 +54521,8 @@ scanty:A
 scanty:N
 scape:N
 scapegoat:N
+scapegoat:V
+scapegoatism:N
 scapegrace:N
 scaphocephaly:N
 scaphoid:A
@@ -58106,6 +58181,7 @@ sorrowing:A
 sorry:A
 sort:N
 sort:V
+sortation:N
 sorted:A
 sorter:N
 sortie:N
@@ -58454,7 +58530,7 @@ spectroscope:N
 spectroscopic:A
 spectroscopical:A
 spectroscopy:N
-spectrum:N
+spectrum:N,spectra,_s
 specular:A
 speculate:V
 speculation:N
@@ -59943,6 +60019,7 @@ straplike:A
 strappado:N
 strapper:N
 strapping:A
+strapwork:N
 stratagem:N
 strategian:N
 strategic:A
@@ -60872,6 +60949,7 @@ superego:N
 supererogation:N
 supererogatory:A
 superfamily:N
+superfan:N
 superfatted:A
 superfecta:N
 superfecundation:N
@@ -60888,6 +60966,8 @@ superfluously:Av
 supergiant:N
 supergrass:N
 supergroup:N
+superhero:N
+superheroine:N
 superhet:N
 superhighway:N
 superhuman:A
@@ -60954,9 +61034,12 @@ supersensitised:A
 supersensitive:A
 supersensitized:A
 supersession:N
+supersize:A
+supersize:V
 superslasher:N
 supersonic:A
 superstar:N
+superstardom:N
 superstition:N
 superstitious:A
 superstitiously:Av
@@ -60971,6 +61054,7 @@ supertonic:N
 supertwister:N
 supervene:V
 supervention:N
+supervillain:N
 supervise:V
 supervised:A
 supervising:N
@@ -61614,6 +61698,7 @@ syntagma:N
 syntagmatic:A
 syntax:N
 synth:N
+synthase:N
 synthesis:N,syntheses
 synthesise:V
 synthesiser:N
@@ -62500,7 +62585,9 @@ tensile:A
 tensimeter:N
 tensiometer:N
 tension:N
+tension:V
 tensional:A
+tensioner:N
 tensionless:A
 tensity:N
 tensor:N
@@ -63369,6 +63456,7 @@ tiltyard:N
 timbale:N
 timber:N
 timbered:A
+timbering:N
 timberland:N
 timberline:N
 timberman:N,timbermen
@@ -63832,6 +63920,8 @@ torrential:A
 torrid:A
 torridity:N
 torsion:N
+torsional:A
+torsionally:Av
 torsk:N
 torso:N,_es,torsi
 tort:N
@@ -64172,6 +64262,8 @@ transcriber:N
 transcript:N
 transcriptase:N
 transcription:N
+transcriptional:A
+transcriptionally:Av
 transcultural:A
 transcutaneous:A
 transdermal:A
@@ -66106,6 +66198,8 @@ underworld:N
 underwrite:V,_s,underwriting,underwrote,underwritten
 underwriter:N
 undescended:A
+undescribable:A
+undescribed:A
 undescriptive:A
 undeserted:A
 undeserved:A
@@ -66347,6 +66441,7 @@ unfavorably:Av
 unfavourable:A
 unfavourableness:N
 unfavourably:Av
+unfazed:A
 unfearing:A
 unfeasibility:N
 unfeasible:A
@@ -67218,6 +67313,7 @@ unrenewable:A
 unrenewed:A
 unrentable:A
 unrepaired:A
+unrepealed:A
 unrepeatable:A
 unrepentant:A
 unrepentantly:Av
@@ -67810,6 +67906,8 @@ upchuck:V
 upcoming:A
 upcountry:A
 upcurved:A
+upcycle:V
+upcycling:N
 update:N
 update:V
 updating:N
@@ -69016,6 +69114,9 @@ vizier:N
 viziership:N
 vizla:N
 vizor:N
+vlog:N
+vlog:V
+vlogger:N
 vocable:N
 vocabulary:N
 vocal:A
@@ -69311,7 +69412,7 @@ walleye:N
 walleyed:A
 wallflower:N
 wallop:N
-wallop:V
+wallop:V,_s,_ing,_ed
 walloper:N
 walloping:A
 walloping:N
