@@ -255,16 +255,16 @@ impl Word {
 
 /// Make a regular plural noun from the singular form
 fn noun_plural(base: &str) -> String {
-    if base.ends_with("s")
+    if ends_in_y(base) {
+        let base = base.trim_end_matches('y');
+        format!("{base}ies")
+    } else if base.ends_with("s")
         || base.ends_with("sh")
         || base.ends_with("ch")
         || base.ends_with("x")
         || base.ends_with("z")
     {
         format!("{base}es")
-    } else if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        format!("{base}ies")
     } else {
         format!("{base}s")
     }
@@ -279,7 +279,7 @@ fn is_vowel(c: char) -> bool {
 fn consonant_end_repeat(s: &str) -> Option<char> {
     // consonant doubling rules (as far as I can tell):
     // 1. stress on final syllable
-    // 2. always double an "l" final consonant (not "parallel")
+    // 2. always double an "l" final consonant (not "refuel", "parallel")
     let mut suffix = (' ', ' ', ' ');
     for c in s.chars() {
         if suffix.2 == 'q' && c == 'u' {
@@ -306,16 +306,19 @@ fn consonant_end_repeat(s: &str) -> Option<char> {
 
 /// Make a regular present verb from the base form
 fn verb_present(base: &str) -> String {
-    if base.ends_with("s") || base.ends_with("z") {
+    if ends_in_y(base) {
+        let base = base.trim_end_matches('y');
+        format!("{base}ies")
+    } else if base.ends_with("s") || base.ends_with("z") {
         match consonant_end_repeat(base) {
             Some(end) => format!("{base}{end}es"),
             None => format!("{base}es"),
         }
-    } else if base.ends_with("sh") {
+    } else if base.ends_with("sh")
+        || base.ends_with("ch")
+        || base.ends_with("x")
+    {
         format!("{base}es")
-    } else if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        format!("{base}ies")
     } else {
         format!("{base}s")
     }
