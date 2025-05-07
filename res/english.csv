@@ -7085,6 +7085,8 @@ biographic:A
 biographical:A
 biography:N
 biohazard:N
+bioinformatic:A
+bioinformatics:N.p
 biologic:A
 biological:A
 biologically:Av
@@ -12949,6 +12951,7 @@ collaboration:N
 collaborationism:N
 collaborationist:N
 collaborative:A
+collaboratively:Av
 collaborator:N
 collage:N
 collagen:N
@@ -15683,6 +15686,8 @@ crowded:A
 crowdfund:V
 crowdfunding:N
 crowding:N
+crowdsource:V
+crowdsourcing:N
 crowfoot:N
 crowing:A
 crowing:N
@@ -18926,7 +18931,7 @@ disinfection:N
 disinfest:V
 disinfestation:N
 disinflation:N
-disinformation:N
+disinformation:N.s
 disingenuous:A
 disingenuously:Av
 disingenuousness:N
@@ -20269,7 +20274,7 @@ duskily:Av
 duskiness:N
 duskly:Av
 dusky:A
-dust:N
+dust:N.s
 dust:V
 dustbin:N
 dustcart:N
@@ -22374,6 +22379,8 @@ eulogist:N
 eulogistic:A
 eulogize:V
 eulogy:N
+eunomic:A
+eunomy:N
 eunuch:N
 eunuchoidism:N
 euonym:N
@@ -25914,8 +25921,8 @@ furlough:V
 furnace:N
 furnish:V
 furnished:A
-furnishings:N
-furniture:N.u
+furnishings:N.p
+furniture:N.s
 furor:N
 furore:N
 furosemide:N
@@ -26078,7 +26085,7 @@ gallop:N
 gallop:V,_s,_ing,_ed
 galloping:A
 gallous:N
-gallows:N
+gallows:N.p
 gallstone:N
 gallus:N
 gally:V
@@ -26540,6 +26547,7 @@ geographical:A
 geographically:Av
 geographics:N
 geography:N
+geolocation:N
 geologic:A
 geological:A
 geologically:Av
@@ -32306,8 +32314,8 @@ informal:A
 informality:N
 informally:Av
 informant:N
-informatics:N
-information:N
+informatics:N.p
+information:N.s
 informative:A
 informatively:Av
 informatory:A
@@ -37749,6 +37757,7 @@ mash:N
 mash:V
 masher:N
 mashie:N
+mashup:N
 masjid:N
 mask:N
 mask:V
@@ -39322,7 +39331,7 @@ mishpachah:N
 mishpocha:N
 misidentify:V
 misinform:V
-misinformation:N
+misinformation:N.s
 misinterpret:V,_s,_ing,_ed
 misinterpretation:N
 misjudge:V
@@ -40264,7 +40273,7 @@ mucose:A
 mucous:A
 mucoviscidosis:N
 mucuna:N
-mucus:N.u
+mucus:N.s
 mud:N
 mud:V
 mudcat:N
@@ -44512,7 +44521,7 @@ palter:V
 paltering:N
 paltriness:N
 paltry:A
-pampas:N.u
+pampas:N.s
 pamper:V
 pampered:A
 pamperer:N
@@ -45280,7 +45289,7 @@ pax:N
 pay:N
 pay:V,_s,_ing,paid
 payable:A
-payables:N.u
+payables:N.p
 payback:N
 paycheck:N
 payday:N
@@ -46855,7 +46864,7 @@ piscine:A
 piscivorous:A
 pisiform:N
 pismire:N
-piss:N.u
+piss:N.s
 piss:V
 pissed:A
 pisser:N
@@ -48550,6 +48559,8 @@ prepossession:N
 preposterous:A
 preposterously:Av
 preprandial:A
+preprint:N
+preprint:V
 prepubertal:A
 prepuberty:N
 prepubescent:A
@@ -52065,6 +52076,8 @@ reniform:A
 renin:N
 rennet:N
 rennin:N
+renominate:V
+renomination:N
 renormalise:V
 renormalize:V
 renounce:V
@@ -57775,7 +57788,7 @@ soapbox:N
 soapfish:N
 soaprock:N
 soapstone:N
-soapsuds:N
+soapsuds:N.p
 soapweed:N
 soapwort:N
 soapy:A
@@ -60687,7 +60700,7 @@ suddenness:N
 sudor:N
 sudorific:A
 sudra:N
-suds:N
+suds:N.p
 suds:V
 sudsy:A
 sue:V
@@ -66119,7 +66132,7 @@ underneath:P
 undernourish:V
 undernourished:A
 undernourishment:N
-underpants:N
+underpants:N.p
 underpart:N
 underpass:N
 underpass:V
@@ -68684,6 +68697,7 @@ versification:N
 versifier:N
 versify:V
 version:N
+versioning:N
 versipel:N
 versipellous:A
 verso:N
@@ -69724,7 +69738,7 @@ weakly:Av
 weakness:N
 weal:N
 weald:N
-wealth:N
+wealth:N.s
 wealthily:Av
 wealthiness:N
 wealthy:A

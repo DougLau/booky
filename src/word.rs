@@ -4,26 +4,18 @@ use std::fmt;
 /// Word attributes
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq, Ord, PartialOrd)]
 pub enum WordAttr {
-    /// `a`: Auxiliary verb (e.g. "cannot")
-    Auxiliary,
-    /// `c`: Count noun (e.g. "chair")
-    Countable,
-    /// `u`: Uncountable noun (mass, e.g. "furniture")
-    Uncountable,
-    /// `g` Group (collective noun)
-    Group,
-    /// `n`: Proper (name) noun
-    Proper,
+    /// `s`: Singulare Tantum (e.g. "dust" or "information")
+    SingulareTantum,
     /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
     PluraleTantum,
+    /// `n`: Proper (name) noun
+    Proper,
+    /// `a`: Auxiliary verb (e.g. "cannot")
+    Auxiliary,
     /// `i` Intransitive verb or preposition
     Intransitive,
     /// `t` Transitive verb or preposition
     Transitive,
-    /// `j` Conjunctive preposition
-    Conjunctive,
-    /// `v` "Deverbal" prepositions (e.g. "excluding")
-    Deverbal,
 }
 
 /// Word class
@@ -79,16 +71,12 @@ impl TryFrom<char> for WordAttr {
 
     fn try_from(val: char) -> Result<Self, Self::Error> {
         match val {
-            'a' => Ok(Self::Auxiliary),
-            'c' => Ok(Self::Countable),
-            'u' => Ok(Self::Uncountable),
-            'g' => Ok(Self::Group),
-            'n' => Ok(Self::Proper),
+            's' => Ok(Self::SingulareTantum),
             'p' => Ok(Self::PluraleTantum),
+            'n' => Ok(Self::Proper),
+            'a' => Ok(Self::Auxiliary),
             'i' => Ok(Self::Intransitive),
             't' => Ok(Self::Transitive),
-            'j' => Ok(Self::Conjunctive),
-            'v' => Ok(Self::Deverbal),
             _ => Err(()),
         }
     }
@@ -239,7 +227,7 @@ impl Word {
     /// Check if a word (noun) has plural form
     fn has_plural(&self) -> bool {
         for a in self.attr.chars() {
-            if let Ok(WordAttr::Uncountable | WordAttr::PluraleTantum) =
+            if let Ok(WordAttr::SingulareTantum | WordAttr::PluraleTantum) =
                 WordAttr::try_from(a)
             {
                 return false;

@@ -31,16 +31,12 @@ If any attributes are provided, they are preceded by a dot `.`:
 
 | Code | Description                      | Examples
 |------|----------------------------------|---------
-| `a`  | Auxiliary verb                   | _cannot_
-| `c`  | Countable noun (default)         | _chair_
-| `u`  | Uncountable noun (mass)          | _furniture_
-| `g`  | Group (collective noun)          | _water_
-| `n`  | Proper (name) noun               | _Monday_
+| `s`  | Singulare Tantum                 | _dust_, _information_
 | `p`  | Plurale Tantum                   | _pants_, _scissors_
+| `n`  | Proper (name) noun               | _Monday_
+| `a`  | Auxiliary verb                   | _cannot_
 | `i`  | Intransitive verb or preposition |
 | `t`  | Transitive verb or preposition   |
-| `j`  | Conjunctive preposition          |
-| `v`  | "Deverbal" prepositions          | _excluding_
 
 ### Forms
 
