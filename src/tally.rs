@@ -115,19 +115,16 @@ impl From<&str> for Category {
     }
 }
 
+/// Ordinal suffixes
+const ORD_SUFFIXES: &[&str] =
+    &["1st", "1ST", "2nd", "2ND", "3rd", "3RD", "th", "TH"];
+
 /// Check if a string is an ordinal number
 fn is_ordinal_number(w: &str) -> bool {
-    if let Some(p) = w.strip_suffix("1st") {
-        return p.chars().all(|c| c.is_ascii_digit());
-    }
-    if let Some(p) = w.strip_suffix("2nd") {
-        return p.chars().all(|c| c.is_ascii_digit());
-    }
-    if let Some(p) = w.strip_suffix("3rd") {
-        return p.chars().all(|c| c.is_ascii_digit());
-    }
-    if let Some(p) = w.strip_suffix("th") {
-        return p.chars().all(|c| c.is_ascii_digit());
+    for suf in ORD_SUFFIXES {
+        if let Some(p) = w.strip_suffix(suf) {
+            return p.chars().all(|c| c.is_ascii_digit());
+        }
     }
     false
 }
