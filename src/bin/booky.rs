@@ -16,40 +16,51 @@ struct Args {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand)]
 enum SubCommand {
-    Cat(Cat),
+    Cat(CatCmd),
     Dict(DictCmd),
-    Acronym(Acronym),
-    Foreign(Foreign),
     Freq(Freq),
     List(List),
     Nonsense(Nonsense),
-    Ordinal(Ordinal),
-    Num(Num),
-    Proper(Proper),
-    RomanNum(RomanNum),
-    Unknown(Unknown),
     Word(WordCmd),
 }
 
 /// Categorize words
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "cat")]
-struct Cat {}
+struct CatCmd {
+    /// list dictionary words
+    #[argh(switch, short = 'd')]
+    dictionary: bool,
+    /// list acronyms / initialisms
+    #[argh(switch, short = 'a')]
+    acronym: bool,
+    /// list foreign words (non-English)
+    #[argh(switch, short = 'f')]
+    foreign: bool,
+    /// list numbers
+    #[argh(switch, short = 'n')]
+    number: bool,
+    /// list ordinal numbers
+    #[argh(switch, short = 'o')]
+    ordinal: bool,
+    /// list proper names
+    #[argh(switch, short = 'p')]
+    proper: bool,
+    /// list roman numerals
+    #[argh(switch, short = 'r')]
+    roman: bool,
+    /// list single letter words
+    #[argh(switch, short = 'l')]
+    letter: bool,
+    /// list unknown words
+    #[argh(switch, short = 'u')]
+    unknown: bool,
+}
 
 /// Print dictionary
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "dict")]
 struct DictCmd {}
-
-/// List acronyms / initialisms
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "acronym")]
-struct Acronym {}
-
-/// List foreign words
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "foreign")]
-struct Foreign {}
 
 /// Count word frequencies
 #[derive(FromArgs, Debug, PartialEq)]
@@ -66,30 +77,73 @@ struct List {}
 #[argh(subcommand, name = "nonsense")]
 struct Nonsense {}
 
-/// List ordinal numbers
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "ordinal")]
-struct Ordinal {}
+impl CatCmd {
+    /// Run command
+    fn run(self) -> Result<()> {
+        if Category::all().iter().any(|c| self.show_category(*c)) {
+            self.list_category()?;
+        } else {
+            self.counts()?;
+        }
+        Ok(())
+    }
 
-/// List numbers
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "num")]
-struct Num {}
+    /// Count words of categories
+    fn counts(self) -> Result<()> {
+        let builtin = Dict::builtin();
+        let mut tally = WordTally::new();
+        tally.parse_text(stdin().lock())?;
+        tally.split_unknown_compounds(&builtin);
+        tally.split_unknown_contractions(&builtin);
+        tally.check_dict(&builtin);
+        let mut writer = BufWriter::new(stdout());
+        for cat in Category::all() {
+            let count = tally.cat_count(*cat);
+            writeln!(
+                writer,
+                "{:5} {} {cat:?}",
+                count.bright().yellow(),
+                cat.code().yellow()
+            )?;
+        }
+        Ok(())
+    }
 
-/// List proper nouns
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "proper")]
-struct Proper {}
+    /// List words of selected categories
+    fn list_category(self) -> Result<()> {
+        let builtin = Dict::builtin();
+        let mut tally = WordTally::new();
+        tally.parse_text(stdin().lock())?;
+        tally.split_unknown_compounds(&builtin);
+        tally.split_unknown_contractions(&builtin);
+        tally.check_dict(&builtin);
+        let mut writer = BufWriter::new(stdout());
+        let mut count = 0;
+        for entry in tally.into_entries() {
+            if self.show_category(entry.category()) {
+                writeln!(writer, "{entry}")?;
+                count += 1;
+            }
+        }
+        writeln!(writer, "\ncount: {}", count.bright().yellow())?;
+        Ok(())
+    }
 
-/// List roman numerals
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "roman")]
-struct RomanNum {}
-
-/// List unknown words
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "unknown")]
-struct Unknown {}
+    /// Check if a word category should be shown
+    fn show_category(&self, cat: Category) -> bool {
+        match cat {
+            Category::Dictionary => self.dictionary,
+            Category::Acronym => self.acronym,
+            Category::Foreign => self.foreign,
+            Category::Ordinal => self.ordinal,
+            Category::Number => self.number,
+            Category::Proper => self.proper,
+            Category::Roman => self.roman,
+            Category::Letter => self.letter,
+            Category::Unknown => self.unknown,
+        }
+    }
+}
 
 /// Lookup a word
 #[derive(FromArgs, Debug, PartialEq)]
@@ -98,23 +152,6 @@ struct WordCmd {
     #[argh(positional)]
     word: String,
 }
-
-/// Count words of category
-fn cat_counts() -> Result<()> {
-    let builtin = Dict::builtin();
-    let mut tally = WordTally::new();
-    tally.parse_text(stdin().lock())?;
-    tally.split_unknown_compounds(&builtin);
-    tally.split_unknown_contractions(&builtin);
-    tally.remove_single(&builtin);
-    tally.remove_dict(&builtin);
-    let mut writer = BufWriter::new(stdout());
-    for cat in Category::all() {
-        writeln!(writer, "{cat:?}: {}", tally.cat_count(*cat))?;
-    }
-    Ok(())
-}
-
 /// Print dictionary
 fn dict() -> Result<()> {
     let mut dict = Dict::builtin();
@@ -230,18 +267,11 @@ fn nonsense() {
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
-        Some(SubCommand::Cat(_)) => cat_counts()?,
         Some(SubCommand::Dict(_)) => dict()?,
-        Some(SubCommand::Acronym(_)) => list_category(Category::Acronym)?,
-        Some(SubCommand::Foreign(_)) => list_category(Category::Foreign)?,
+        Some(SubCommand::Cat(cmd)) => cmd.run()?,
         Some(SubCommand::Freq(_)) => freq()?,
         Some(SubCommand::List(_)) => list()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
-        Some(SubCommand::Num(_)) => list_category(Category::Number)?,
-        Some(SubCommand::Ordinal(_)) => list_category(Category::Ordinal)?,
-        Some(SubCommand::Proper(_)) => list_category(Category::Proper)?,
-        Some(SubCommand::RomanNum(_)) => list_category(Category::Roman)?,
-        Some(SubCommand::Unknown(_)) => list_category(Category::Unknown)?,
         Some(SubCommand::Word(word)) => word.lookup()?,
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {

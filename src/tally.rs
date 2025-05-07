@@ -2,6 +2,7 @@ use crate::word::Dict;
 use std::collections::HashMap;
 use std::fmt;
 use std::io::BufRead;
+use yansi::Paint;
 
 /// Uppercase roman numerals
 const ROMAN_UPPER: &str = "IVXLCDM";
@@ -17,8 +18,10 @@ enum Contraction {
 }
 
 /// Word category
-#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq, PartialOrd, Ord, Hash)]
 pub enum Category {
+    /// Dictionary
+    Dictionary,
     /// Ordinal number
     Ordinal,
     /// Roman numeral
@@ -31,6 +34,8 @@ pub enum Category {
     Foreign,
     /// Proper noun (name)
     Proper,
+    /// Single letter
+    Letter,
     /// Unknown / Other
     Unknown,
 }
@@ -42,6 +47,8 @@ pub struct WordEntry {
     seen: usize,
     /// Word
     word: String,
+    /// Category
+    cat: Category,
 }
 
 /// Word tally list
@@ -89,9 +96,29 @@ fn is_word_valid(w: &str) -> bool {
 }
 
 impl Category {
+    /// Get all categories
     pub fn all() -> &'static [Self] {
         use Category::*;
-        &[Ordinal, Roman, Number, Acronym, Foreign, Proper, Unknown]
+        &[
+            Dictionary, Ordinal, Roman, Number, Acronym, Foreign, Proper,
+            Letter, Unknown,
+        ]
+    }
+
+    /// Get category code
+    pub fn code(self) -> char {
+        use Category::*;
+        match self {
+            Dictionary => 'd',
+            Ordinal => 'o',
+            Roman => 'r',
+            Number => 'n',
+            Acronym => 'a',
+            Foreign => 'f',
+            Proper => 'p',
+            Letter => 'l',
+            Unknown => 'u',
+        }
     }
 }
 
@@ -109,6 +136,8 @@ impl From<&str> for Category {
             Category::Acronym
         } else if is_probably_proper(word) {
             Category::Proper
+        } else if word.len() == 1 {
+            Category::Letter
         } else {
             Category::Unknown
         }
@@ -163,7 +192,14 @@ fn is_probably_proper(word: &str) -> bool {
 
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{:5} {}", self.seen, self.word)?;
+        let cat = self.category().code();
+        write!(
+            fmt,
+            "{:5} {} {}",
+            self.seen.bright().yellow(),
+            cat.yellow(),
+            self.word
+        )?;
         Ok(())
     }
 }
@@ -189,8 +225,9 @@ fn canonical_spelling(word: &str) -> String {
 impl WordEntry {
     /// Create a new word entry
     fn new(seen: usize, word: &str) -> Self {
+        let cat = Category::from(word);
         let word = word.to_string();
-        WordEntry { seen, word }
+        WordEntry { seen, word, cat }
     }
 
     /// Get seen count
@@ -214,8 +251,8 @@ impl WordEntry {
     }
 
     /// Guess word category
-    fn category(&self) -> Category {
-        Category::from(self.word())
+    pub fn category(&self) -> Category {
+        self.cat
     }
 }
 
@@ -378,11 +415,6 @@ impl WordTally {
             .count()
     }
 
-    /// Retain only words of a given category
-    pub fn retain_category(&mut self, cat: Category) {
-        self.words.retain(|_k, we| we.category() == cat);
-    }
-
     /// Get a Vec of word entries
     pub fn into_entries(self) -> Vec<WordEntry> {
         let mut entries: Vec<_> = self.words.into_values().collect();
@@ -428,14 +460,12 @@ impl WordTally {
         }
     }
 
-    /// Remove single-letter words not in dictionary
-    pub fn remove_single(&mut self, dict: &Dict) {
-        self.words
-            .retain(|_key, we| dict.contains(we.word()) || we.word().len() > 1);
-    }
-
-    /// Remove words which are in dictionary
-    pub fn remove_dict(&mut self, dict: &Dict) {
-        self.words.retain(|_key, we| !dict.contains(we.word()));
+    /// Check for word entries in dictionary
+    pub fn check_dict(&mut self, dict: &Dict) {
+        for (_key, we) in self.words.iter_mut() {
+            if dict.contains(we.word()) {
+                we.cat = Category::Dictionary;
+            }
+        }
     }
 }
