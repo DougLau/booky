@@ -219,6 +219,23 @@ impl Word {
         &self.forms[..]
     }
 
+    /// Count syllables in base word (poorly)
+    fn count_syllables(&self) -> usize {
+        let mut base = self.base();
+        if ends_in_e(base) {
+            base = base.trim_end_matches('e');
+        }
+        let mut syllables = 0;
+        let mut letter = None;
+        for c in base.chars() {
+            if is_vowel(c) && !is_vowel(letter.unwrap_or(' ')) {
+                syllables += 1;
+            }
+            letter = Some(c);
+        }
+        syllables
+    }
+
     /// Check if a word (noun) has plural form
     fn has_plural(&self) -> bool {
         for a in self.attr.chars() {
@@ -234,19 +251,17 @@ impl Word {
     /// Build regular word forms
     fn build_regular_forms(&mut self) {
         match self.word_class {
-            Some(WordClass::Noun) => {
-                if self.has_plural() {
-                    self.forms.push(noun_plural(&self.base));
-                }
+            Some(WordClass::Adjective) if self.count_syllables() < 4 => {
+                self.forms.push(adjective_comparative(&self.base));
+                self.forms.push(adjective_superlative(&self.base));
+            }
+            Some(WordClass::Noun) if self.has_plural() => {
+                self.forms.push(noun_plural(&self.base));
             }
             Some(WordClass::Verb) => {
                 self.forms.push(verb_present(&self.base));
                 self.forms.push(verb_present_participle(&self.base));
                 self.forms.push(verb_past(&self.base));
-            }
-            Some(WordClass::Adjective) => {
-                self.forms.push(adjective_comparative(&self.base));
-                self.forms.push(adjective_superlative(&self.base));
             }
             _ => (),
         }
