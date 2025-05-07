@@ -18,7 +18,6 @@ struct Args {
 enum SubCommand {
     Cat(CatCmd),
     Dict(DictCmd),
-    Freq(Freq),
     Nonsense(Nonsense),
 }
 
@@ -26,6 +25,9 @@ enum SubCommand {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "cat")]
 struct CatCmd {
+    /// list words in all categories
+    #[argh(switch, short = 'A')]
+    all: bool,
     /// list dictionary words
     #[argh(switch, short = 'd')]
     dictionary: bool,
@@ -66,11 +68,6 @@ struct DictCmd {
     #[argh(positional)]
     word: Option<String>,
 }
-
-/// Count word frequencies
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "freq")]
-struct Freq {}
 
 /// Generate nonsense text
 #[derive(FromArgs, Debug, PartialEq)]
@@ -131,6 +128,9 @@ impl CatCmd {
 
     /// Check if a word category should be shown
     fn show_category(&self, cat: Category) -> bool {
+        if self.all {
+            return true;
+        }
         match cat {
             Category::Dictionary => self.dictionary,
             Category::Acronym => self.acronym,
@@ -199,24 +199,6 @@ impl DictCmd {
     }
 }
 
-/// Count word frequency in text
-fn freq() -> Result<()> {
-    let builtin = Dict::builtin();
-    let mut tally = WordTally::new();
-    tally.parse_text(stdin().lock())?;
-    tally.split_unknown_compounds(&builtin);
-    tally.split_unknown_contractions(&builtin);
-    tally.check_dict(&builtin);
-    let mut writer = BufWriter::new(stdout());
-    let mut count = 0;
-    for entry in tally.into_entries() {
-        writeln!(writer, "{entry}")?;
-        count += 1;
-    }
-    writeln!(writer, "\ncount: {}", count.bright().yellow())?;
-    Ok(())
-}
-
 /// Choose a word from a slice
 fn choose_word<'a>(words: &'a [&'a Word]) -> &'a Word {
     let mut n = words.len();
@@ -246,7 +228,6 @@ fn main() -> Result<()> {
     match args.cmd {
         Some(SubCommand::Cat(cmd)) => cmd.run()?,
         Some(SubCommand::Dict(cmd)) => cmd.run()?,
-        Some(SubCommand::Freq(_)) => freq()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {
