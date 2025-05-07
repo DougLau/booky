@@ -19,9 +19,7 @@ enum SubCommand {
     Cat(CatCmd),
     Dict(DictCmd),
     Freq(Freq),
-    List(List),
     Nonsense(Nonsense),
-    Word(WordCmd),
 }
 
 /// Categorize words
@@ -57,20 +55,22 @@ struct CatCmd {
     unknown: bool,
 }
 
-/// Print dictionary
+/// Print dictionary words
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "dict")]
-struct DictCmd {}
+struct DictCmd {
+    /// list all word forms
+    #[argh(switch, short = 'f')]
+    forms: bool,
+    /// lookup a word
+    #[argh(positional)]
+    word: Option<String>,
+}
 
 /// Count word frequencies
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "freq")]
 struct Freq {}
-
-/// List all word forms
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "list")]
-struct List {}
 
 /// Generate nonsense text
 #[derive(FromArgs, Debug, PartialEq)]
@@ -145,48 +145,43 @@ impl CatCmd {
     }
 }
 
-/// Lookup a word
-#[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "word")]
-struct WordCmd {
-    #[argh(positional)]
-    word: String,
-}
-/// Print dictionary
-fn dict() -> Result<()> {
-    let mut dict = Dict::builtin();
-    dict.sort();
-    for word in dict.iter() {
-        println!("{word:?}");
+impl DictCmd {
+    /// Run command
+    fn run(self) -> Result<()> {
+        if self.forms {
+            let dict = Dict::builtin();
+            let mut forms: Vec<_> = dict.forms().collect();
+            forms.sort();
+            for form in forms {
+                println!("{form}");
+            }
+        } else if let Some(word) = &self.word {
+            self.lookup(word)?;
+        } else {
+            let mut dict = Dict::builtin();
+            dict.sort();
+            for word in dict.iter() {
+                println!("{word:?}");
+            }
+        }
+        Ok(())
     }
-    Ok(())
-}
 
-/// List all word forms
-fn list() -> Result<()> {
-    let dict = Dict::builtin();
-    for form in dict.forms() {
-        println!("{form}");
-    }
-    Ok(())
-}
-
-impl WordCmd {
-    /// Lookup the word
-    fn lookup(self) -> Result<()> {
+    /// Lookup a word form
+    fn lookup(&self, word: &str) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
         let dict = Dict::builtin();
-        if dict.contains(&self.word) {
-            for word in dict.iter() {
-                for form in word.forms() {
-                    if form == &self.word {
-                        write!(writer, "{} ", word.italic())?;
-                        for f in word.forms() {
-                            if f == &self.word {
+        if dict.contains(word) {
+            for w in dict.iter() {
+                for form in w.forms() {
+                    if form == word {
+                        write!(writer, "{} ", form.italic())?;
+                        for f in w.forms() {
+                            if f == word {
                                 write!(
                                     writer,
                                     "{} ",
-                                    f.underline().green().bright()
+                                    f.bright().green().underline()
                                 )?;
                             } else {
                                 write!(writer, "{f} ")?;
@@ -198,45 +193,27 @@ impl WordCmd {
                 }
             }
         } else {
-            writeln!(writer, "`{}` not found", self.word)?;
+            writeln!(writer, "`{word}` not found")?;
         }
         Ok(())
     }
 }
 
-/// List words of a given category
-fn list_category(cat: Category) -> Result<()> {
+/// Count word frequency in text
+fn freq() -> Result<()> {
     let builtin = Dict::builtin();
     let mut tally = WordTally::new();
     tally.parse_text(stdin().lock())?;
     tally.split_unknown_compounds(&builtin);
     tally.split_unknown_contractions(&builtin);
-    tally.remove_single(&builtin);
-    tally.retain_category(cat);
-    let mut writer = BufWriter::new(stdout());
-    let mut words = 0;
-    writeln!(writer)?;
-    for entry in tally.into_entries() {
-        if !builtin.contains(entry.word()) {
-            writeln!(writer, "{entry}")?;
-            words += 1;
-        }
-    }
-    writeln!(writer, "\n{cat:?}: {}", words.yellow().bright())?;
-    Ok(())
-}
-
-/// Count word frequency in text
-fn freq() -> Result<()> {
-    let mut tally = WordTally::new();
-    tally.parse_text(stdin().lock())?;
+    tally.check_dict(&builtin);
     let mut writer = BufWriter::new(stdout());
     let mut count = 0;
     for entry in tally.into_entries() {
         writeln!(writer, "{entry}")?;
         count += 1;
     }
-    writeln!(writer, "\ncount: {count}")?;
+    writeln!(writer, "\ncount: {}", count.bright().yellow())?;
     Ok(())
 }
 
@@ -267,12 +244,10 @@ fn nonsense() {
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
-        Some(SubCommand::Dict(_)) => dict()?,
         Some(SubCommand::Cat(cmd)) => cmd.run()?,
+        Some(SubCommand::Dict(cmd)) => cmd.run()?,
         Some(SubCommand::Freq(_)) => freq()?,
-        Some(SubCommand::List(_)) => list()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
-        Some(SubCommand::Word(word)) => word.lookup()?,
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {
                 eprintln!("{}", e.output);
