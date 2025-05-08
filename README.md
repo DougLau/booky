@@ -29,16 +29,16 @@ Command-line options can be added to list all words for a category.
 
 Option | Category   | Description
 -------|------------|-----------------------------
-d      | Dictionary | Found in built-in dictionary
-o      | Ordinal    | Ordinal numbers (1st, 2nd, etc.)
-r      | Roman      | Roman numerals (IV, LXI, etc.)
-n      | Number     | Other words containing numbers
-a      | Acronym    | Acronyms / initialisms (ALL-CAPS)
-f      | Foreign    | Foreign words (non-English)
-p      | Proper     | Proper names / nouns
-l      | Letter     | Single-letter "words"
-u      | Unknown    | Unknown (no other category)
-A      | all        | All categories
+`-d`   | Dictionary | Found in built-in dictionary
+`-o`   | Ordinal    | Ordinal numbers (1st, 2nd, etc.)
+`-r`   | Roman      | Roman numerals (IV, LXI, etc.)
+`-n`   | Number     | Other words containing numbers
+`-a`   | Acronym    | Acronyms / initialisms (ALL-CAPS)
+`-f`   | Foreign    | Foreign words (non-English)
+`-p`   | Proper     | Proper names / nouns
+`-l`   | Letter     | Single-letter "words"
+`-u`   | Unknown    | Unknown (no other category)
+`-A`   | All        | All categories
 
 ### Dictionary
 
@@ -51,5 +51,5 @@ word words
 word words wording worded
 ```
 
-With no options, all dictionary entries are listed.  Using `-f` lists all
-known word forms.
+- With no options, all dictionary entries are listed
+- Using `-f` lists all known word forms
