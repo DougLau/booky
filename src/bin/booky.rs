@@ -3,7 +3,7 @@ use argh::FromArgs;
 use booky::tally::{Category, WordTally};
 use booky::word::{Dict, Word, WordClass};
 use std::io::{BufWriter, Write, stdin, stdout};
-use yansi::Paint;
+use yansi::{Paint, Color::Green, Color::White};
 
 /// Command-line arguments
 #[derive(FromArgs, Debug, PartialEq)]
@@ -21,7 +21,7 @@ enum SubCommand {
     Nonsense(Nonsense),
 }
 
-/// Categorize words
+/// Categorize words from a text
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "cat")]
 struct CatCmd {
@@ -57,7 +57,7 @@ struct CatCmd {
     unknown: bool,
 }
 
-/// Print dictionary words
+/// List words from dictionary
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "dict")]
 struct DictCmd {
@@ -175,17 +175,16 @@ impl DictCmd {
             for w in dict.iter() {
                 for form in w.forms() {
                     if form == word {
-                        write!(writer, "{} ", form.italic())?;
                         for f in w.forms() {
-                            if f == word {
-                                write!(
-                                    writer,
-                                    "{} ",
-                                    f.bright().green().underline()
-                                )?;
+                            let mut style = if f == word {
+                                Green.bright().underline().on_primary()
                             } else {
-                                write!(writer, "{f} ")?;
+                                White.on_primary()
+                            };
+                            if f == w.base() {
+                                style = style.italic();
                             }
+                            write!(writer, "{} ", f.paint(style))?;
                         }
                         writeln!(writer)?;
                         break;
