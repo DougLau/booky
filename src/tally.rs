@@ -152,7 +152,7 @@ const ORD_SUFFIXES: &[&str] =
 fn is_ordinal_number(w: &str) -> bool {
     for suf in ORD_SUFFIXES {
         if let Some(p) = w.strip_suffix(suf) {
-            return p.chars().all(|c| c.is_ascii_digit());
+            return !p.is_empty() && p.chars().all(|c| c.is_ascii_digit());
         }
     }
     false
