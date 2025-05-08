@@ -1,3 +1,4 @@
+/// Find nouns with both singular and plural entries
 use anyhow::Result;
 use booky::word::{Dict, Word, WordClass};
 
