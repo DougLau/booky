@@ -12,17 +12,17 @@ from a file.  With no additional options, a summary of words in each category
 is listed:
 
 ```
-> booky cat < _{file}_
+> booky cat < Dr_Jeckyll_And_Mr_Hyde.txt
 
-14907 d Dictionary
-    9 o Ordinal
-   11 r Roman
+ 3850 d Dictionary
+    4 o Ordinal
+    1 r Roman
     0 n Number
-   31 a Acronym
-    9 f Foreign
-  938 p Proper
-    9 l Letter
-  928 u Unknown
+    3 a Acronym
+    1 f Foreign
+   30 p Proper
+    3 l Letter
+    6 u Unknown
 ```
 
 Command-line options can be added to list all words for a category.
