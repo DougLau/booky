@@ -2,8 +2,8 @@ use anyhow::Result;
 use argh::FromArgs;
 use booky::tally::{Category, WordTally};
 use booky::word::{Dict, Word, WordClass};
-use std::io::{BufWriter, Write, stdin, stdout};
-use yansi::{Paint, Color::Green, Color::White};
+use std::io::{BufRead, BufWriter, IsTerminal, Write, stdin, stdout};
+use yansi::{Color::Green, Color::White, Paint};
 
 /// Command-line arguments
 #[derive(FromArgs, Debug, PartialEq)]
@@ -21,7 +21,7 @@ enum SubCommand {
     Nonsense(Nonsense),
 }
 
-/// Categorize words from a text
+/// Categorize words from stdin
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "cat")]
 struct CatCmd {
@@ -77,52 +77,19 @@ struct Nonsense {}
 impl CatCmd {
     /// Run command
     fn run(self) -> Result<()> {
+        let stdin = stdin();
+        if stdin.is_terminal() {
+            eprintln!(
+                "{0} stdin must be redirected {0}",
+                "!!!".yellow().bright()
+            );
+            return Ok(());
+        }
         if Category::all().iter().any(|c| self.show_category(*c)) {
-            self.list_category()?;
+            self.list_category(stdin.lock())?;
         } else {
-            self.counts()?;
+            self.counts(stdin.lock())?;
         }
-        Ok(())
-    }
-
-    /// Count words of categories
-    fn counts(self) -> Result<()> {
-        let builtin = Dict::builtin();
-        let mut tally = WordTally::new();
-        tally.parse_text(stdin().lock())?;
-        tally.split_unknown_compounds(&builtin);
-        tally.split_unknown_contractions(&builtin);
-        tally.check_dict(&builtin);
-        let mut writer = BufWriter::new(stdout());
-        for cat in Category::all() {
-            let count = tally.cat_count(*cat);
-            writeln!(
-                writer,
-                "{:5} {} {cat:?}",
-                count.bright().yellow(),
-                cat.code().yellow()
-            )?;
-        }
-        Ok(())
-    }
-
-    /// List words of selected categories
-    fn list_category(self) -> Result<()> {
-        let builtin = Dict::builtin();
-        let mut tally = WordTally::new();
-        tally.parse_text(stdin().lock())?;
-        tally.split_unknown_compounds(&builtin);
-        tally.split_unknown_contractions(&builtin);
-        tally.check_dict(&builtin);
-        let mut writer = BufWriter::new(stdout());
-        let mut count = 0;
-        for entry in tally.into_entries() {
-            if self.show_category(entry.category()) {
-                writeln!(writer, "{entry}")?;
-                count += 1;
-            }
-        }
-        writeln!(writer, "\ncount: {}", count.bright().yellow())?;
         Ok(())
     }
 
@@ -142,6 +109,47 @@ impl CatCmd {
             Category::Letter => self.letter,
             Category::Unknown => self.unknown,
         }
+    }
+
+    /// List words of selected categories
+    fn list_category<R: BufRead>(self, read: R) -> Result<()> {
+        let builtin = Dict::builtin();
+        let mut tally = WordTally::new();
+        tally.parse_text(read)?;
+        tally.split_unknown_compounds(&builtin);
+        tally.split_unknown_contractions(&builtin);
+        tally.check_dict(&builtin);
+        let mut writer = BufWriter::new(stdout());
+        let mut count = 0;
+        for entry in tally.into_entries() {
+            if self.show_category(entry.category()) {
+                writeln!(writer, "{entry}")?;
+                count += 1;
+            }
+        }
+        writeln!(writer, "\ncount: {}", count.bright().yellow())?;
+        Ok(())
+    }
+
+    /// Count words of categories
+    fn counts<R: BufRead>(self, read: R) -> Result<()> {
+        let builtin = Dict::builtin();
+        let mut tally = WordTally::new();
+        tally.parse_text(read)?;
+        tally.split_unknown_compounds(&builtin);
+        tally.split_unknown_contractions(&builtin);
+        tally.check_dict(&builtin);
+        let mut writer = BufWriter::new(stdout());
+        for cat in Category::all() {
+            let count = tally.cat_count(*cat);
+            writeln!(
+                writer,
+                "{:5} {} {cat:?}",
+                count.bright().yellow(),
+                cat.code().yellow()
+            )?;
+        }
+        Ok(())
     }
 }
 
