@@ -144,6 +144,7 @@ fn is_ordinal_number(w: &str) -> bool {
 
 /// Check if a string is a romal numeral
 fn is_roman_numeral(word: &str) -> bool {
+    let word = word.trim_end_matches('.');
     !word.is_empty()
         && (word.chars().all(|c| ROMAN_UPPER.contains(c))
             || word.chars().all(|c| ROMAN_LOWER.contains(c)))
@@ -428,7 +429,10 @@ impl WordTally {
         for key in words {
             if let Some(we) = self.words.get(&key) {
                 let word = we.word().trim_end_matches('.');
-                if dict.contains(word) || we.cat == Category::Proper {
+                if dict.contains(word)
+                    || is_roman_numeral(word)
+                    || we.cat == Category::Proper
+                {
                     let we = self.words.remove(&key).unwrap();
                     let word = we.word().trim_end_matches('.');
                     self.tally_word(word, we.seen());

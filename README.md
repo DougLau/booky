@@ -16,9 +16,9 @@ is listed:
 
  3850 d Dictionary
     4 o Ordinal
-    0 r Roman
+    1 r Roman
     1 n Number
-   10 a Acronym
+    9 a Acronym
     1 f Foreign
    32 p Proper
     1 l Letter
