@@ -20,7 +20,7 @@ is listed:
     1 n Number
    10 a Acronym
     1 f Foreign
-   33 p Proper
+   32 p Proper
     1 l Letter
     6 u Unknown
 ```

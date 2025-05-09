@@ -88,8 +88,10 @@ impl CatCmd {
         let builtin = Dict::builtin();
         let mut tally = WordTally::new();
         tally.parse_text(stdin.lock())?;
+        tally.trim_periods(&builtin);
         tally.split_unknown_compounds(&builtin);
         tally.split_unknown_contractions(&builtin);
+        // NOTE: trim periods second time after splitting
         tally.trim_periods(&builtin);
         tally.check_dict(&builtin);
         if Category::all().iter().any(|c| self.show_category(*c)) {
