@@ -134,9 +134,11 @@ const ORD_SUFFIXES: &[&str] =
 
 /// Check if a string is an ordinal number
 fn is_ordinal_number(w: &str) -> bool {
-    for suf in ORD_SUFFIXES {
-        if let Some(p) = w.strip_suffix(suf) {
-            return !p.is_empty() && p.chars().all(|c| c.is_ascii_digit());
+    if w.len() >= 3 {
+        for suf in ORD_SUFFIXES {
+            if let Some(p) = w.strip_suffix(suf) {
+                return p.chars().all(|c| c.is_ascii_digit());
+            }
         }
     }
     false
@@ -453,7 +455,8 @@ impl WordTally {
             .collect();
         for key in compounds {
             if let Some(we) = self.words.remove(&key) {
-                for word in we.word().split('-') {
+                let com = we.word().trim_end_matches('.');
+                for word in com.split('-') {
                     self.tally_word(word, we.seen());
                 }
             }
@@ -472,7 +475,8 @@ impl WordTally {
             .collect();
         for key in contractions {
             if let Some(we) = self.words.remove(&key) {
-                for word in split_contractions(we.word()) {
+                let con = we.word().trim_end_matches('.');
+                for word in split_contractions(con) {
                     self.tally_word(word, we.seen());
                 }
             }
