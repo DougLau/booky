@@ -16,12 +16,12 @@ is listed:
 
  3850 d Dictionary
     4 o Ordinal
-    1 r Roman
-    0 n Number
-    3 a Acronym
+    0 r Roman
+    1 n Number
+   10 a Acronym
     1 f Foreign
-   30 p Proper
-    3 l Letter
+   33 p Proper
+    1 l Letter
     6 u Unknown
 ```
 

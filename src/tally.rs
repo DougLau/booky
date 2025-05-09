@@ -69,25 +69,9 @@ fn is_apostrophe(c: char) -> bool {
     c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
 }
 
-/// Check if a character should be trimmed at word start
-fn is_trim_start(c: char) -> bool {
-    !c.is_alphanumeric() && !is_apostrophe(c)
-}
-
-/// Check if a character should be trimmed at word end
-fn is_trim_end(c: char) -> bool {
-    !c.is_alphabetic() && !is_apostrophe(c)
-}
-
-/// Trim non-word characters from start and end of a word
-fn trim_word(w: &str) -> &str {
-    w.trim_start_matches(is_trim_start)
-        .trim_end_matches(is_trim_end)
-}
-
 /// Check if a character is part of a word
 fn is_word_char(c: char) -> bool {
-    c.is_alphanumeric() || is_apostrophe(c) || c == '-'
+    c.is_alphanumeric() || is_apostrophe(c) || c == '-' || c == '.'
 }
 
 /// Check if a string is a valid word
@@ -177,8 +161,9 @@ fn is_acronym(word: &str) -> bool {
 
 /// Check if a word is foreign (not English)
 fn is_foreign(word: &str) -> bool {
-    word.chars()
-        .any(|c| !c.is_ascii_alphanumeric() && c != '-' && c != '\u{2019}')
+    word.chars().any(|c| {
+        !c.is_ascii_alphanumeric() && c != '-' && c != '.' && c != '\u{2019}'
+    })
 }
 
 /// Check if a word is probably proper
@@ -218,8 +203,20 @@ impl TryFrom<&str> for WordEntry {
 
 /// Make "canonical" English spelling of a word
 fn canonical_spelling(word: &str) -> String {
-    let word = trim_word(word);
+    let word = word
+        .trim_start_matches(is_trim_start)
+        .trim_end_matches(is_trim_end);
     word.replace(is_apostrophe, "’").replace('æ', "ae")
+}
+
+/// Check if a character should be trimmed at start of a word
+fn is_trim_start(c: char) -> bool {
+    c == '-' || c == '.' || !is_word_char(c)
+}
+
+/// Check if a character should be trimmed at end of a word
+fn is_trim_end(c: char) -> bool {
+    c == '-' || !is_word_char(c)
 }
 
 impl WordEntry {
@@ -416,6 +413,28 @@ impl WordTally {
         let mut entries: Vec<_> = self.words.into_values().collect();
         entries.sort();
         entries
+    }
+
+    /// Trim periods from end of words in dictionary
+    pub fn trim_periods(&mut self, dict: &Dict) {
+        let words: Vec<_> = self
+            .words
+            .iter()
+            .filter(|(_k, we)| {
+                !dict.contains(we.word()) && we.word().ends_with('.')
+            })
+            .map(|(key, _we)| key.clone())
+            .collect();
+        for key in words {
+            if let Some(we) = self.words.get(&key) {
+                let word = we.word().trim_end_matches('.');
+                if dict.contains(word) || we.cat == Category::Proper {
+                    let we = self.words.remove(&key).unwrap();
+                    let word = we.word().trim_end_matches('.');
+                    self.tally_word(word, we.seen());
+                }
+            }
+        }
     }
 
     /// Split compound words (with hyphen) not in dictionary

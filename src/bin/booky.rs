@@ -90,6 +90,7 @@ impl CatCmd {
         tally.parse_text(stdin.lock())?;
         tally.split_unknown_compounds(&builtin);
         tally.split_unknown_contractions(&builtin);
+        tally.trim_periods(&builtin);
         tally.check_dict(&builtin);
         if Category::all().iter().any(|c| self.show_category(*c)) {
             self.write_entries(tally)
