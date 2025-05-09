@@ -2,7 +2,7 @@ use anyhow::Result;
 use argh::FromArgs;
 use booky::tally::{Category, WordTally};
 use booky::word::{Dict, Word, WordClass};
-use std::io::{BufRead, BufWriter, IsTerminal, Write, stdin, stdout};
+use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
 use yansi::{Color::Green, Color::White, Paint};
 
 /// Command-line arguments
@@ -85,12 +85,17 @@ impl CatCmd {
             );
             return Ok(());
         }
+        let builtin = Dict::builtin();
+        let mut tally = WordTally::new();
+        tally.parse_text(stdin.lock())?;
+        tally.split_unknown_compounds(&builtin);
+        tally.split_unknown_contractions(&builtin);
+        tally.check_dict(&builtin);
         if Category::all().iter().any(|c| self.show_category(*c)) {
-            self.list_category(stdin.lock())?;
+            self.write_entries(tally)
         } else {
-            self.counts(stdin.lock())?;
+            self.write_summary(tally)
         }
-        Ok(())
     }
 
     /// Check if a word category should be shown
@@ -111,14 +116,8 @@ impl CatCmd {
         }
     }
 
-    /// List words of selected categories
-    fn list_category<R: BufRead>(self, read: R) -> Result<()> {
-        let builtin = Dict::builtin();
-        let mut tally = WordTally::new();
-        tally.parse_text(read)?;
-        tally.split_unknown_compounds(&builtin);
-        tally.split_unknown_contractions(&builtin);
-        tally.check_dict(&builtin);
+    /// Write entries of selected categories
+    fn write_entries(self, tally: WordTally) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
         let mut count = 0;
         for entry in tally.into_entries() {
@@ -131,14 +130,8 @@ impl CatCmd {
         Ok(())
     }
 
-    /// Count words of categories
-    fn counts<R: BufRead>(self, read: R) -> Result<()> {
-        let builtin = Dict::builtin();
-        let mut tally = WordTally::new();
-        tally.parse_text(read)?;
-        tally.split_unknown_compounds(&builtin);
-        tally.split_unknown_contractions(&builtin);
-        tally.check_dict(&builtin);
+    /// Write summary of categories
+    fn write_summary(self, tally: WordTally) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
         for cat in Category::all() {
             let count = tally.cat_count(*cat);
