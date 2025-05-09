@@ -245,11 +245,6 @@ impl WordEntry {
         &self.word
     }
 
-    /// Get mutable word
-    fn word_mut(&mut self) -> &mut String {
-        &mut self.word
-    }
-
     /// Guess word category
     pub fn category(&self) -> Category {
         self.cat
@@ -385,7 +380,8 @@ impl WordTally {
             Some(e) => {
                 // use variant with fewest uppercase characters
                 if count_uppercase(we.word()) < count_uppercase(e.word()) {
-                    *e.word_mut() = we.word;
+                    e.word = we.word;
+                    e.cat = we.cat;
                 }
                 *e.seen_mut() += count;
             }
