@@ -431,10 +431,7 @@ impl WordTally {
         for key in words {
             if let Some(we) = self.words.get(&key) {
                 let word = we.word().trim_end_matches('.');
-                if dict.contains(word)
-                    || is_roman_numeral(word)
-                    || we.cat == Category::Proper
-                {
+                if we.cat != Category::Acronym || dict.contains(word) {
                     let we = self.words.remove(&key).unwrap();
                     let word = we.word().trim_end_matches('.');
                     self.tally_word(word, we.seen());
