@@ -10325,6 +10325,7 @@ carouser:N
 carousing:A
 carp:N
 carp:V
+carpaccio:N
 carpal:A
 carpal:N
 carpel:N
@@ -19789,7 +19790,9 @@ downhill:N
 downhill:P.i
 downiness:N
 downlike:A
+download:N
 download:V
+downloadable:A
 downmarket:A
 downplay:V
 downpour:N
@@ -19801,6 +19804,7 @@ downrightness:N
 downriver:Av
 downscale:A
 downside:N
+downsize:V
 downsizing:N
 downslope:N
 downspin:N
@@ -21926,6 +21930,9 @@ epigone:N
 epigram:N
 epigrammatic:A
 epigraph:N
+epigraphic:A
+epigraphical:A
+epigraphically:Av
 epigraphy:N
 epikeratophakia:N
 epilate:V
@@ -25590,8 +25597,8 @@ frequent:A
 frequent:V
 frequenter:N
 frequently:Av
-fresco:N
-fresco:V
+fresco:N,_s,_es
+fresco:V,_s,_es,_ing,_ed
 fresh:A
 fresh:Av
 freshen:V
@@ -25846,6 +25853,7 @@ fullback:V
 fuller:N
 fullerene:N
 fullness:N
+fullscreen:N
 fully:Av
 fulmar:N
 fulminant:A
@@ -30105,6 +30113,7 @@ hornlike:A
 hornpipe:N
 hornpout:N
 hornstone:N
+hornswoggle:V
 hornwort:N
 horny:A
 horologer:N
@@ -30259,6 +30268,7 @@ houselights:N
 housemaid:N
 houseman:N,housemen
 housemaster:N
+housemate:N
 housemother:N
 housepaint:N
 houseplant:N
@@ -32536,7 +32546,7 @@ inlaid:A
 inland:A
 inland:Av
 inlay:N
-inlay:V
+inlay:V,_s,_ing,inlaid
 inlet:N
 inline:A
 inmarriage:N
@@ -39387,7 +39397,7 @@ misinterpretation:N
 misjudge:V
 mislabeled:A
 mislaid:A
-mislay:V
+mislay:V,_s,_ing,mislaid
 mislead:V,_s,_ing,misled
 misleader:N
 misleading:A
@@ -42175,6 +42185,7 @@ nooky:N
 noon:N
 noonday:N
 noontide:N
+noontime:N
 noose:N
 noose:V
 nopal:N
@@ -42450,6 +42461,8 @@ numerosity:N
 numerous:A
 numerousness:N
 numinous:A
+numismatic:A
+numismatically:Av
 numismatics:N.p
 numismatist:N
 numismatologist:N
@@ -44020,7 +44033,7 @@ overlapping:A
 overlapping:N
 overlarge:A
 overlay:N
-overlay:V
+overlay:V,_s,_ing,overlaid
 overlayer:N
 overleaf:Av
 overleap:V
@@ -48846,6 +48859,7 @@ prime:N
 prime:V
 primed:A
 primer:N
+primetime:A
 primeval:A
 primidone:N
 primigravida:N
@@ -51969,7 +51983,7 @@ relaxer:N
 relaxin:N
 relaxing:A
 relay:N
-relay:V
+relay:V,_s,_ing,_ed,relaid
 relearn:V
 release:N
 release:V
@@ -57269,7 +57283,7 @@ slavey:N
 slavish:A
 slavishly:Av
 slaw:N
-slay:V
+slay:V,_s,_ing,slew,_ed,slain
 slayer:N
 slaying:N
 sleaze:N
@@ -66202,7 +66216,7 @@ underhung:A
 underivative:A
 underived:A
 underlay:N
-underlay:V
+underlay:V,_s,_ing,underlaid
 underlayment:N
 underlie:V
 underline:N
