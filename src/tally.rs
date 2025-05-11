@@ -22,6 +22,8 @@ enum Contraction {
 pub enum Kind {
     /// Dictionary
     Dictionary,
+    /// Foreign (non-English)
+    Foreign,
     /// Ordinal number
     Ordinal,
     /// Roman numeral
@@ -30,12 +32,10 @@ pub enum Kind {
     Number,
     /// Acronym / Initialism
     Acronym,
-    /// Foreign (non-English)
-    Foreign,
     /// Proper noun (name)
     Proper,
-    /// Single letter
-    Letter,
+    /// Symbol or letter (punctuation, etc.)
+    Symbol,
     /// Unknown / Other
     Unknown,
 }
@@ -84,8 +84,8 @@ impl Kind {
     pub fn all() -> &'static [Self] {
         use Kind::*;
         &[
-            Dictionary, Ordinal, Roman, Number, Acronym, Foreign, Proper,
-            Letter, Unknown,
+            Dictionary, Foreign, Ordinal, Roman, Number, Acronym, Proper,
+            Symbol, Unknown,
         ]
     }
 
@@ -94,13 +94,13 @@ impl Kind {
         use Kind::*;
         match self {
             Dictionary => 'd',
+            Foreign => 'f',
             Ordinal => 'o',
             Roman => 'r',
             Number => 'n',
             Acronym => 'a',
-            Foreign => 'f',
             Proper => 'p',
-            Letter => 'l',
+            Symbol => 's',
             Unknown => 'u',
         }
     }
@@ -121,11 +121,18 @@ impl From<&str> for Kind {
         } else if is_probably_proper(word) {
             Kind::Proper
         } else if word.len() == 1 {
-            Kind::Letter
+            Kind::Symbol
         } else {
             Kind::Unknown
         }
     }
+}
+
+/// Check if a word is foreign (not English)
+fn is_foreign(word: &str) -> bool {
+    word.chars().any(|c| {
+        !c.is_ascii_alphanumeric() && c != '-' && c != '.' && c != '\u{2019}'
+    })
 }
 
 /// Ordinal suffixes
@@ -160,13 +167,6 @@ fn is_number(word: &str) -> bool {
 /// Check if a word is an acronym / initialism
 fn is_acronym(word: &str) -> bool {
     word.len() >= 2 && word.chars().all(|c| c.is_uppercase() || c == '.')
-}
-
-/// Check if a word is foreign (not English)
-fn is_foreign(word: &str) -> bool {
-    word.chars().any(|c| {
-        !c.is_ascii_alphanumeric() && c != '-' && c != '.' && c != '\u{2019}'
-    })
 }
 
 /// Check if a word is probably proper

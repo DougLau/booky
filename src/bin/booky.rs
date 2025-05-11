@@ -31,27 +31,27 @@ struct KindCmd {
     /// list dictionary words
     #[argh(switch, short = 'd')]
     dictionary: bool,
-    /// list acronyms / initialisms
-    #[argh(switch, short = 'a')]
-    acronym: bool,
     /// list foreign words (non-English)
     #[argh(switch, short = 'f')]
     foreign: bool,
-    /// list numbers
-    #[argh(switch, short = 'n')]
-    number: bool,
     /// list ordinal numbers
     #[argh(switch, short = 'o')]
     ordinal: bool,
-    /// list proper names
-    #[argh(switch, short = 'p')]
-    proper: bool,
     /// list roman numerals
     #[argh(switch, short = 'r')]
     roman: bool,
-    /// list single letter words
-    #[argh(switch, short = 'l')]
-    letter: bool,
+    /// list numbers
+    #[argh(switch, short = 'n')]
+    number: bool,
+    /// list acronyms / initialisms
+    #[argh(switch, short = 'a')]
+    acronym: bool,
+    /// list proper names
+    #[argh(switch, short = 'p')]
+    proper: bool,
+    /// list symbols / letters
+    #[argh(switch, short = 's')]
+    symbol: bool,
     /// list unknown words
     #[argh(switch, short = 'u')]
     unknown: bool,
@@ -106,13 +106,13 @@ impl KindCmd {
         }
         match kind {
             Kind::Dictionary => self.dictionary,
-            Kind::Acronym => self.acronym,
             Kind::Foreign => self.foreign,
             Kind::Ordinal => self.ordinal,
-            Kind::Number => self.number,
-            Kind::Proper => self.proper,
             Kind::Roman => self.roman,
-            Kind::Letter => self.letter,
+            Kind::Number => self.number,
+            Kind::Acronym => self.acronym,
+            Kind::Proper => self.proper,
+            Kind::Symbol => self.symbol,
             Kind::Unknown => self.unknown,
         }
     }
