@@ -5178,6 +5178,7 @@ avocet:N
 avoid:V
 avoidable:A
 avoidance:N
+avoidant:A
 avoirdupois:N
 avouch:V
 avouchment:N
@@ -9252,6 +9253,7 @@ bushbuck:N
 bushed:A
 bushel:N
 bushel:V
+bushfire:N
 bushing:N
 bushland:N
 bushman:N,bushmen
@@ -15943,6 +15945,7 @@ cultivated:A
 cultivation:N
 cultivator:N
 cultural:A
+culturalism:N
 culturally:Av
 culturati:N
 culture:N
@@ -25389,6 +25392,8 @@ found:A
 found:N
 found:V
 foundation:N
+foundational:A
+foundationally:Av
 founded:A
 founder:N
 founder:V
@@ -31221,6 +31226,9 @@ immensity:N
 immensurable:A
 immerse:V
 immersion:N
+immersive:A
+immersively:Av
+immersiveness:N
 immigrant:N
 immigrate:V
 immigration:N
@@ -32614,6 +32622,7 @@ input:N
 input:V
 inquest:N
 inquietude:N
+inquiline:N
 inquire:V
 inquirer:N
 inquiring:A
@@ -51431,6 +51440,7 @@ reconnoitering:N
 reconnoitre:V
 reconnoitring:N
 reconquer:V
+reconquest:N
 reconsecrate:V
 reconsider:V
 reconsideration:N
@@ -51963,6 +51973,7 @@ relatedness:N
 relatiative:A
 relation:N
 relational:A
+relationally:Av
 relationship:N
 relative:A
 relative:N
@@ -55168,6 +55179,7 @@ seabird:N
 seaboard:N
 seaborne:A
 seacoast:N
+seacock:N
 seadragon:N
 seafarer:N
 seafaring:A
@@ -55852,6 +55864,8 @@ servomechanism:N
 servosystem:N
 sesame:N
 sesbania:N
+sesquicentennial:A
+sesquicentennial:N
 sesquipedalia:N
 sesquipedalian:A
 sesquipedalian:N
@@ -56887,6 +56901,7 @@ simulated:A
 simulation:N
 simulator:N
 simulcast:N
+simulcast:V
 simultaneity:N
 simultaneous:A
 simultaneously:Av
@@ -57947,6 +57962,7 @@ sociology:N
 sociometry:N
 sociopath:N
 sociopathic:A
+sociopolitical:A
 sock:N
 sock:V
 socket:N
@@ -58289,6 +58305,7 @@ sortation:N
 sorted:A
 sorter:N
 sortie:N
+sortie:V,_s,_ing,_d
 sorting:N
 sortition:N
 sorus:N
@@ -65202,6 +65219,7 @@ tup:N
 tupek:N
 tupelo:N
 tupik:N
+tuple:N
 tuppence:N
 tuppeny:A
 turaco:N
@@ -68983,7 +69001,8 @@ videographer:N
 videography:N
 videotape:N
 videotape:V
-vie:V
+vie:V,_s,vying,_d
+vier:N
 view:N
 view:V
 viewable:A
@@ -70342,6 +70361,7 @@ wholesomely:Av
 wholesomeness:N
 wholly:Av
 whom:Pn
+whomever:Pn
 whomp:V
 whomsoever:Pn
 whoop:N
