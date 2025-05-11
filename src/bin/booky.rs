@@ -1,6 +1,6 @@
 use anyhow::Result;
 use argh::FromArgs;
-use booky::tally::{Category, WordTally};
+use booky::tally::{Kind, WordTally};
 use booky::word::{Dict, Word, WordClass};
 use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
 use yansi::{Color::Green, Color::White, Paint};
@@ -16,16 +16,16 @@ struct Args {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand)]
 enum SubCommand {
-    Cat(CatCmd),
+    Kind(KindCmd),
     Dict(DictCmd),
     Nonsense(Nonsense),
 }
 
-/// Categorize words from stdin
+/// Group words by kind from stdin
 #[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "cat")]
-struct CatCmd {
-    /// list words in all categories
+#[argh(subcommand, name = "kind")]
+struct KindCmd {
+    /// list words of all kinds
     #[argh(switch, short = 'A')]
     all: bool,
     /// list dictionary words
@@ -74,7 +74,7 @@ struct DictCmd {
 #[argh(subcommand, name = "nonsense")]
 struct Nonsense {}
 
-impl CatCmd {
+impl KindCmd {
     /// Run command
     fn run(self) -> Result<()> {
         let stdin = stdin();
@@ -92,37 +92,37 @@ impl CatCmd {
         tally.split_unknown_contractions(&builtin);
         tally.trim_periods(&builtin);
         tally.check_dict(&builtin);
-        if Category::all().iter().any(|c| self.show_category(*c)) {
+        if Kind::all().iter().any(|k| self.show_kind(*k)) {
             self.write_entries(tally)
         } else {
             self.write_summary(tally)
         }
     }
 
-    /// Check if a word category should be shown
-    fn show_category(&self, cat: Category) -> bool {
+    /// Check if a word kind should be shown
+    fn show_kind(&self, kind: Kind) -> bool {
         if self.all {
             return true;
         }
-        match cat {
-            Category::Dictionary => self.dictionary,
-            Category::Acronym => self.acronym,
-            Category::Foreign => self.foreign,
-            Category::Ordinal => self.ordinal,
-            Category::Number => self.number,
-            Category::Proper => self.proper,
-            Category::Roman => self.roman,
-            Category::Letter => self.letter,
-            Category::Unknown => self.unknown,
+        match kind {
+            Kind::Dictionary => self.dictionary,
+            Kind::Acronym => self.acronym,
+            Kind::Foreign => self.foreign,
+            Kind::Ordinal => self.ordinal,
+            Kind::Number => self.number,
+            Kind::Proper => self.proper,
+            Kind::Roman => self.roman,
+            Kind::Letter => self.letter,
+            Kind::Unknown => self.unknown,
         }
     }
 
-    /// Write entries of selected categories
+    /// Write entries of selected kinds
     fn write_entries(self, tally: WordTally) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
         let mut count = 0;
         for entry in tally.into_entries() {
-            if self.show_category(entry.category()) {
+            if self.show_kind(entry.kind()) {
                 writeln!(writer, "{entry}")?;
                 count += 1;
             }
@@ -131,16 +131,16 @@ impl CatCmd {
         Ok(())
     }
 
-    /// Write summary of categories
+    /// Write summary of kinds
     fn write_summary(self, tally: WordTally) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
-        for cat in Category::all() {
-            let count = tally.cat_count(*cat);
+        for kind in Kind::all() {
+            let count = tally.count_kind(*kind);
             writeln!(
                 writer,
-                "{:5} {} {cat:?}",
+                "{:5} {} {kind:?}",
                 count.bright().yellow(),
-                cat.code().yellow()
+                kind.code().yellow()
             )?;
         }
         Ok(())
@@ -227,7 +227,7 @@ fn nonsense() {
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
-        Some(SubCommand::Cat(cmd)) => cmd.run()?,
+        Some(SubCommand::Kind(cmd)) => cmd.run()?,
         Some(SubCommand::Dict(cmd)) => cmd.run()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         None => {

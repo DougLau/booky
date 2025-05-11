@@ -17,9 +17,9 @@ enum Contraction {
     Suffix(&'static str, &'static str),
 }
 
-/// Word category
+/// Word kind
 #[derive(Clone, Copy, Debug, Eq, PartialEq, PartialOrd, Ord, Hash)]
-pub enum Category {
+pub enum Kind {
     /// Dictionary
     Dictionary,
     /// Ordinal number
@@ -47,8 +47,8 @@ pub struct WordEntry {
     seen: usize,
     /// Word
     word: String,
-    /// Category
-    cat: Category,
+    /// Kind grouping
+    kind: Kind,
 }
 
 /// Word tally list
@@ -79,19 +79,19 @@ fn is_word_valid(w: &str) -> bool {
     w.chars().all(is_word_char) && !w.is_empty()
 }
 
-impl Category {
-    /// Get all categories
+impl Kind {
+    /// Get all word kinds
     pub fn all() -> &'static [Self] {
-        use Category::*;
+        use Kind::*;
         &[
             Dictionary, Ordinal, Roman, Number, Acronym, Foreign, Proper,
             Letter, Unknown,
         ]
     }
 
-    /// Get category code
+    /// Get code
     pub fn code(self) -> char {
-        use Category::*;
+        use Kind::*;
         match self {
             Dictionary => 'd',
             Ordinal => 'o',
@@ -106,24 +106,24 @@ impl Category {
     }
 }
 
-impl From<&str> for Category {
+impl From<&str> for Kind {
     fn from(word: &str) -> Self {
         if is_foreign(word) {
-            Category::Foreign
+            Kind::Foreign
         } else if is_ordinal_number(word) {
-            Category::Ordinal
+            Kind::Ordinal
         } else if is_roman_numeral(word) {
-            Category::Roman
+            Kind::Roman
         } else if is_number(word) {
-            Category::Number
+            Kind::Number
         } else if is_acronym(word) {
-            Category::Acronym
+            Kind::Acronym
         } else if is_probably_proper(word) {
-            Category::Proper
+            Kind::Proper
         } else if word.len() == 1 {
-            Category::Letter
+            Kind::Letter
         } else {
-            Category::Unknown
+            Kind::Unknown
         }
     }
 }
@@ -180,12 +180,12 @@ fn is_probably_proper(word: &str) -> bool {
 
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        let cat = self.category().code();
+        let kind = self.kind().code();
         write!(
             fmt,
             "{:5} {} {}",
             self.seen.bright().yellow(),
-            cat.yellow(),
+            kind.yellow(),
             self.word
         )?;
         Ok(())
@@ -225,9 +225,9 @@ fn is_trim_end(c: char) -> bool {
 impl WordEntry {
     /// Create a new word entry
     fn new(seen: usize, word: &str) -> Self {
-        let cat = Category::from(word);
+        let kind = Kind::from(word);
         let word = word.to_string();
-        WordEntry { seen, word, cat }
+        WordEntry { seen, word, kind }
     }
 
     /// Get seen count
@@ -245,9 +245,9 @@ impl WordEntry {
         &self.word
     }
 
-    /// Guess word category
-    pub fn category(&self) -> Category {
-        self.cat
+    /// Guess kind grouping
+    pub fn kind(&self) -> Kind {
+        self.kind
     }
 }
 
@@ -381,7 +381,7 @@ impl WordTally {
                 // use variant with fewest uppercase characters
                 if count_uppercase(we.word()) < count_uppercase(e.word()) {
                     e.word = we.word;
-                    e.cat = we.cat;
+                    e.kind = we.kind;
                 }
                 *e.seen_mut() += count;
             }
@@ -403,11 +403,11 @@ impl WordTally {
         self.words.is_empty()
     }
 
-    /// Count the words of a given category
-    pub fn cat_count(&self, cat: Category) -> usize {
+    /// Count the words of a given kind
+    pub fn count_kind(&self, kind: Kind) -> usize {
         self.words
             .iter()
-            .filter(|(_k, we)| we.category() == cat)
+            .filter(|(_k, we)| we.kind() == kind)
             .count()
     }
 
@@ -431,7 +431,7 @@ impl WordTally {
         for key in words {
             if let Some(we) = self.words.get(&key) {
                 let word = we.word().trim_end_matches('.');
-                if we.cat != Category::Acronym || dict.contains(word) {
+                if we.kind != Kind::Acronym || dict.contains(word) {
                     let we = self.words.remove(&key).unwrap();
                     let word = we.word().trim_end_matches('.');
                     self.tally_word(word, we.seen());
@@ -484,7 +484,7 @@ impl WordTally {
     pub fn check_dict(&mut self, dict: &Dict) {
         for (_key, we) in self.words.iter_mut() {
             if dict.contains(we.word()) {
-                we.cat = Category::Dictionary;
+                we.kind = Kind::Dictionary;
             }
         }
     }

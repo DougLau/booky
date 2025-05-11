@@ -5,14 +5,14 @@ Installation:
 cargo install booky
 ```
 
-### Categorizing Words
+### Grouping Words by Kind
 
-The `cat` sub-command reads UTF-8 text from `stdin`, which can be redirected
-from a file.  With no additional options, a summary of words in each category
-is listed:
+The `kind` sub-command reads UTF-8 text from `stdin`, which can be redirected
+from a file.  With no additional options, a summary of words of each kind is
+listed:
 
 ```
-> booky cat < Dr_Jeckyll_And_Mr_Hyde.txt
+> booky kind < Dr_Jeckyll_And_Mr_Hyde.txt
 
  3850 d Dictionary
     4 o Ordinal
@@ -25,9 +25,9 @@ is listed:
     6 u Unknown
 ```
 
-Command-line options can be added to list all words for a category.
+Command-line options can be added to list all words of a kind.
 
-Option | Category   | Description
+Option | Kind       | Description
 -------|------------|-----------------------------
 `-d`   | Dictionary | Found in built-in dictionary
 `-o`   | Ordinal    | Ordinal numbers (1st, 2nd, etc.)
@@ -37,8 +37,8 @@ Option | Category   | Description
 `-f`   | Foreign    | Foreign words (non-English)
 `-p`   | Proper     | Proper names / nouns
 `-l`   | Letter     | Single-letter "words"
-`-u`   | Unknown    | Unknown (no other category)
-`-A`   | All        | All categories
+`-u`   | Unknown    | Unknown (no other kind)
+`-A`   | All        | All kinds
 
 ### Dictionary
 
