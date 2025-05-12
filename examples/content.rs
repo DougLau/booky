@@ -5,8 +5,10 @@ use html_escape::decode_html_entities;
 use std::io::{BufRead, stdin};
 
 struct Content {
+    /// read buffer
     buf: Vec<u8>,
-    stack: Vec<String>,
+    /// DOM element stack display bool
+    stack: Vec<bool>,
 }
 
 fn main() -> Result<()> {
@@ -18,7 +20,17 @@ fn main() -> Result<()> {
 const NON_CLOSING: &[&str] = &["!--", "img", "input", "link", "meta", "source"];
 
 const NON_DISPLAYED: &[&str] = &[
-    "figure", "footer", "form", "header", "label", "nav", "script", "style",
+    "a",
+    "annotation",
+    "figure",
+    "footer",
+    "form",
+    "header",
+    "label",
+    "nav",
+    "script",
+    "semantics",
+    "style",
 ];
 
 impl Content {
@@ -30,7 +42,7 @@ impl Content {
     }
 
     fn is_content_displayed(&self) -> bool {
-        !self.stack.iter().any(|e| NON_DISPLAYED.contains(&&e[..]))
+        !self.stack.iter().any(|d| !d)
     }
 
     fn handle_content(&self) {
@@ -61,16 +73,17 @@ impl Content {
                 }
                 if let Some(b'>') = self.buf.pop() {
                     if let Ok(text) = str::from_utf8(&self.buf) {
-                        if let Some(elem) =
-                            text.trim().split_whitespace().next()
-                        {
+                        let mut parts = text.trim().split_whitespace();
+                        if let Some(elem) = parts.next() {
                             if NON_CLOSING.contains(&elem) {
                                 continue;
                             }
                             if elem.starts_with('/') {
                                 self.stack.pop();
                             } else {
-                                self.stack.push(elem.to_string());
+                                let displayed = !NON_DISPLAYED.contains(&elem);
+                                let hidden = parts.any(is_class_hidden);
+                                self.stack.push(displayed && !hidden);
                             }
                         }
                     }
@@ -78,5 +91,15 @@ impl Content {
             }
         }
         Ok(())
+    }
+}
+
+fn is_class_hidden(part: &str) -> bool {
+    part.starts_with("class") && {
+        part.contains("catlinks")
+            || part.contains("sidebar-list")
+            || part.contains("infobox")
+            || part.contains("vector-menu")
+            || part.contains("references")
     }
 }
