@@ -14,15 +14,15 @@ listed:
 ```
 > booky kind < Dr_Jeckyll_And_Mr_Hyde.txt
 
- 3850 d Dictionary
+ 3863 d Dictionary
     1 f Foreign
     4 o Ordinal
     1 r Roman
-    1 n Number
-    9 a Acronym
+    2 n Number
+   10 a Acronym
    32 p Proper
-    1 s Symbol
-    6 u Unknown
+   13 s Symbol
+    7 u Unknown
 ```
 
 Command-line options can be added to list all words of a kind.

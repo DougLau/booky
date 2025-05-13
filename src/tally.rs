@@ -1,3 +1,4 @@
+use crate::splitter::WordSplitter;
 use crate::word::Dict;
 use std::collections::HashMap;
 use std::fmt;
@@ -69,16 +70,6 @@ fn is_apostrophe(c: char) -> bool {
     c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
 }
 
-/// Check if a character is part of a word
-fn is_word_char(c: char) -> bool {
-    c.is_alphanumeric() || is_apostrophe(c) || c == '-' || c == '.'
-}
-
-/// Check if a string is a valid word
-fn is_word_valid(w: &str) -> bool {
-    w.chars().all(is_word_char) && !w.is_empty()
-}
-
 impl Kind {
     /// Get all word kinds
     pub fn all() -> &'static [Self] {
@@ -120,7 +111,7 @@ impl From<&str> for Kind {
             Kind::Acronym
         } else if is_probably_proper(word) {
             Kind::Proper
-        } else if word.len() == 1 {
+        } else if word.chars().count() == 1 {
             Kind::Symbol
         } else {
             Kind::Unknown
@@ -130,9 +121,8 @@ impl From<&str> for Kind {
 
 /// Check if a word is foreign (not English)
 fn is_foreign(word: &str) -> bool {
-    word.chars().any(|c| {
-        !c.is_ascii_alphanumeric() && c != '-' && c != '.' && c != '\u{2019}'
-    })
+    word.chars()
+        .any(|c| c.is_alphabetic() && !c.is_ascii() && !is_apostrophe(c))
 }
 
 /// Ordinal suffixes
@@ -141,7 +131,7 @@ const ORD_SUFFIXES: &[&str] =
 
 /// Check if a string is an ordinal number
 fn is_ordinal_number(w: &str) -> bool {
-    if w.len() >= 3 {
+    if w.chars().count() >= 3 {
         for suf in ORD_SUFFIXES {
             if let Some(p) = w.strip_suffix(suf) {
                 return p.chars().all(|c| c.is_ascii_digit());
@@ -166,7 +156,8 @@ fn is_number(word: &str) -> bool {
 
 /// Check if a word is an acronym / initialism
 fn is_acronym(word: &str) -> bool {
-    word.len() >= 2 && word.chars().all(|c| c.is_uppercase() || c == '.')
+    word.chars().count() >= 2
+        && word.chars().all(|c| c.is_uppercase() || c == '.')
 }
 
 /// Check if a word is probably proper
@@ -181,45 +172,20 @@ fn is_probably_proper(word: &str) -> bool {
 impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         let kind = self.kind().code();
-        write!(
-            fmt,
-            "{:5} {} {}",
-            self.seen.bright().yellow(),
-            kind.yellow(),
-            self.word
-        )?;
-        Ok(())
-    }
-}
-
-impl TryFrom<&str> for WordEntry {
-    type Error = ();
-
-    fn try_from(word: &str) -> Result<Self, Self::Error> {
-        if is_word_valid(word) {
-            Ok(WordEntry::new(1, word))
-        } else {
-            Err(())
+        write!(fmt, "{:5} {} ", self.seen.bright().yellow(), kind.yellow())?;
+        if let Some(c) = self.word.chars().next() {
+            if c.is_control() || c == '\u{FEFF}' {
+                return write!(fmt, "{}", c.escape_unicode());
+            }
         }
+        write!(fmt, "{}", self.word)
     }
 }
 
 /// Make "canonical" English spelling of a word
 fn canonical_spelling(word: &str) -> String {
-    let word = word
-        .trim_start_matches(is_trim_start)
-        .trim_end_matches(is_trim_end);
+    let word = word.trim_start_matches(['-', '.']).trim_end_matches('-');
     word.replace(is_apostrophe, "’").replace('æ', "ae")
-}
-
-/// Check if a character should be trimmed at start of a word
-fn is_trim_start(c: char) -> bool {
-    c == '-' || c == '.' || !is_word_char(c)
-}
-
-/// Check if a character should be trimmed at end of a word
-fn is_trim_end(c: char) -> bool {
-    c == '-' || !is_word_char(c)
 }
 
 impl WordEntry {
@@ -260,7 +226,7 @@ fn count_uppercase(word: &str) -> usize {
 fn is_compound(com: &str) -> bool {
     if com.contains('-') {
         for word in com.split('-') {
-            if WordEntry::try_from(word).is_err() {
+            if word.is_empty() {
                 return false;
             }
         }
@@ -359,12 +325,10 @@ impl WordTally {
     where
         R: BufRead,
     {
-        for line in reader.lines() {
-            for cluster in line?.split_whitespace() {
-                // Don't allow double-hyphen in words
-                for clump in cluster.split("--") {
-                    self.tally_word(&canonical_spelling(clump), 1);
-                }
+        for cluster in WordSplitter::new(reader) {
+            // Don't allow double-hyphen in words
+            for clump in cluster?.split("--") {
+                self.tally_word(&canonical_spelling(clump), 1);
             }
         }
         Ok(())
@@ -372,10 +336,11 @@ impl WordTally {
 
     /// Tally a word
     fn tally_word(&mut self, word: &str, count: usize) {
-        let Ok(we) = WordEntry::try_from(word) else {
+        if word.is_empty() {
             return;
-        };
-        let key = we.word().to_lowercase();
+        }
+        let we = WordEntry::new(1, word);
+        let key = word.to_lowercase();
         match self.words.get_mut(&key) {
             Some(e) => {
                 // use variant with fewest uppercase characters
@@ -433,7 +398,10 @@ impl WordTally {
                 let word = we.word().trim_end_matches('.');
                 if we.kind != Kind::Acronym || dict.contains(word) {
                     let we = self.words.remove(&key).unwrap();
-                    let word = we.word().trim_end_matches('.');
+                    let mut word = we.word().trim_end_matches('.');
+                    if !dict.contains(word) && word.contains('.') {
+                        word = we.word();
+                    }
                     self.tally_word(word, we.seen());
                 }
             }
