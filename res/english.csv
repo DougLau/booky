@@ -120,6 +120,7 @@ aah:V
 aalii:N
 aardvark:N
 aardwolf:N,aardwolves
+aasvogel:N
 ab:N
 aba:N
 abaca:N
@@ -1961,7 +1962,7 @@ alienism:N
 alienist:N
 aliform:A
 alight:A
-alight:V
+alight:V,_s,_ing,_ed,alit
 align:V
 aligned:A
 aligning:A
@@ -5825,6 +5826,7 @@ barbital:N
 barbitone:N
 barbiturate:N
 barbu:N
+barbwire:N
 barcarole:N
 barcarolle:N
 bard:N
@@ -7114,6 +7116,7 @@ bioluminescence:N
 bioluminescent:A
 biomarker:N
 biomass:N
+biomaterial:N
 biome:N
 biomedical:A
 biomedicine:N
@@ -11118,6 +11121,7 @@ chagrin:V
 chagrined:A
 chain:N
 chain:V
+chainage:N
 chained:A
 chainlike:A
 chainsaw:N
@@ -14722,6 +14726,7 @@ cornhusking:N
 cornice:N
 cornice:V
 cornmeal:N
+cornmill:N
 cornpone:N
 cornsmut:N
 cornstarch:N
@@ -16194,6 +16199,7 @@ customhouse:N
 customise:V
 customised:A
 customizable:A
+customization:N
 customize:V
 customized:A
 customshouse:N
@@ -19900,6 +19906,7 @@ drabness:N
 dracaena:N
 drachm:N
 drachma:N
+draconian:A
 dracontium:N
 dracunculiasis:N
 draft:N
@@ -20119,6 +20126,7 @@ drosophila:N
 dross:N
 drought:N
 drove:N
+drove:V
 drover:N
 drown:V
 drowned:A
@@ -23848,6 +23856,7 @@ feminise:V
 feminism:N
 feminist:A
 feminist:N
+feministic:A
 feminization:N
 feminize:V
 femoral:A
@@ -24735,7 +24744,7 @@ floodhead:N
 flooding:A
 flooding:N
 floodlight:N
-floodlight:V
+floodlight:V,_s,_ing,floodlit,_ed
 floodlighted:A
 floodlit:A
 floodplain:N
@@ -25609,6 +25618,7 @@ freely:Av
 freemail:N
 freeman:N,freemen
 freemasonry:N
+freeride:N
 freesia:N
 freestanding:A
 freestone:N
@@ -26882,7 +26892,8 @@ giving:A
 giving:N
 gizmo:N
 gizzard:N
-glabella:N
+glabella:N,_e
+glabellar:A
 glabrescent:A
 glabrous:A
 glabrousness:N
@@ -27705,6 +27716,7 @@ greening:A
 greening:N
 greenish:A
 greenishness:N
+greenlight:V,_s,_ing,greenlit
 greenling:N
 greenly:Av
 greenmail:N
@@ -29014,6 +29026,7 @@ heartbroken:A
 heartburn:N
 heartburning:N
 hearted:A
+heartedly:Av
 heartedness:N
 hearten:V
 heartening:A
@@ -29139,6 +29152,7 @@ heedlessness:N
 heel:N
 heel:V
 heelbone:N
+heeler:N
 heft:N
 heft:V
 heftiness:N
@@ -30299,6 +30313,8 @@ hotspot:N
 hotspur:N
 hottish:A
 houdah:N
+hough:N
+hough:V
 houhere:N
 hoummos:N
 hound:N
@@ -32824,6 +32840,7 @@ inspire:V
 inspired:A
 inspirer:N
 inspiring:A
+inspiringly:Av
 inspirit:V,_s,_ing,_ed
 inspiriting:A
 inspissate:V
@@ -33602,6 +33619,7 @@ ironmonger:N
 ironmongery:N
 ironshod:A
 ironside:N
+ironstone:N
 ironware:N
 ironweed:N
 ironwood:N
@@ -40093,6 +40111,7 @@ moonily:Av
 moonless:A
 moonlight:N
 moonlight:V
+moonlighter:N
 moonlike:A
 moonlit:A
 moonrise:N
@@ -42708,6 +42727,8 @@ obfuscation:N
 obi:N
 obiism:N
 obit:N
+obiter:Av
+obiter:N
 obituary:N
 object:N
 object:V
@@ -44938,6 +44959,8 @@ paradoxically:Av
 paraesthesia:N
 paraffin:N
 parafovea:N
+paraglide:V
+paragliding:N
 paragon:N
 paragonite:N
 paragraph:N
@@ -51880,6 +51903,7 @@ reflexed:A
 reflexion:N
 reflexive:A
 reflexive:N
+reflexively:Av
 reflexiveness:N
 reflexivity:N
 reflexly:Av
@@ -55374,6 +55398,8 @@ seamanly:A
 seamanship:N
 seamed:A
 seamless:A
+seamlessly:Av
+seamlessness:N
 seamount:N
 seamster:N
 seamstress:N
@@ -59236,7 +59262,7 @@ spotless:A
 spotlessly:Av
 spotlessness:N
 spotlight:N
-spotlight:V
+spotlight:V,_s,_ing,spotlit,_ed
 spotted:A
 spotter:N
 spotting:N
@@ -61271,6 +61297,9 @@ superfluously:Av
 supergiant:N
 supergrass:N
 supergroup:N
+superheat:N
+superheat:V
+superheater:N
 superhero:N
 superheroine:N
 superhet:N
@@ -64341,6 +64370,8 @@ touring:A
 tourism:N
 tourist:N
 touristed:A
+touristic:A
+touristically:Av
 touristry:N
 touristy:A
 tourmaline:N
@@ -64493,6 +64524,8 @@ trailing:A
 trailing:N
 train:N
 train:V
+trainability:N
+trainable:A
 trainband:N
 trainbandsman:N,trainbandsmen
 trainbearer:N
@@ -65454,6 +65487,7 @@ turn:N
 turn:V
 turnabout:N
 turnaround:N
+turnbuckle:N
 turncoat:N
 turncock:N
 turndown:N
@@ -66363,6 +66397,7 @@ underachiever:N
 underact:V
 underactive:A
 underage:A
+underaged:A
 underarm:A
 underarm:Av
 underbelly:N
@@ -66903,6 +66938,7 @@ ungratifying:A
 ungreased:A
 ungregarious:A
 ungroomed:A
+ungrouped:A
 ungrudging:A
 ungrudgingly:Av
 ungual:A
@@ -70771,6 +70807,7 @@ wingman:N,wingmen
 wingspan:N
 wingspread:N
 wingstem:N
+wingsuit:N
 wink:N
 wink:V
 winker:N
