@@ -198,8 +198,7 @@ fn canonical_char(c: char) -> Option<&'static str> {
 
 impl WordEntry {
     /// Create a new word entry
-    fn new(seen: usize, word: &str) -> Self {
-        let kind = Kind::from(word);
+    fn new(seen: usize, word: &str, kind: Kind) -> Self {
         let word = word.to_string();
         WordEntry { seen, word, kind }
     }
@@ -219,7 +218,7 @@ impl WordEntry {
         &self.word
     }
 
-    /// Guess kind grouping
+    /// Get kind grouping
     pub fn kind(&self) -> Kind {
         self.kind
     }
@@ -381,7 +380,12 @@ impl WordTally {
         if word.is_empty() {
             return;
         }
-        let we = WordEntry::new(1, word);
+        let kind = if self.dict.contains(word) {
+            Kind::Dictionary
+        } else {
+            Kind::from(word)
+        };
+        let we = WordEntry::new(1, word, kind);
         let key = word.to_lowercase();
         match self.words.get_mut(&key) {
             Some(e) => {
@@ -441,15 +445,6 @@ impl WordTally {
                 for word in split_contractions(con) {
                     self.tally_word(word, we.seen());
                 }
-            }
-        }
-    }
-
-    /// Check for word entries in dictionary
-    pub fn check_dict(&mut self) {
-        for (_key, we) in self.words.iter_mut() {
-            if self.dict.contains(we.word()) {
-                we.kind = Kind::Dictionary;
             }
         }
     }

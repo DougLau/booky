@@ -88,7 +88,6 @@ impl KindCmd {
         let mut tally = WordTally::new(Dict::builtin());
         tally.parse_text(stdin.lock())?;
         tally.split_unknown_contractions();
-        tally.check_dict();
         if Kind::all().iter().any(|k| self.show_kind(*k)) {
             self.write_entries(tally)
         } else {
