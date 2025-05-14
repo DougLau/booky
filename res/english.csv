@@ -258,6 +258,8 @@ aboard:P
 abocclusion:N
 abode:N
 abohm:N
+aboil:A
+aboil:Av
 abolish:V
 abolishable:A
 abolishment:N
@@ -3012,6 +3014,7 @@ anisotropy:N
 anjou:N
 ankle:N
 anklebone:N
+ankled:A
 anklet:N
 ankyloglossia:N
 ankylosaur:N
@@ -21464,6 +21467,7 @@ endemic:A
 endemic:N
 endemical:A
 endemism:N
+ender:N
 endermatic:A
 endermic:A
 endgame:N
@@ -24403,6 +24407,8 @@ fissiped:N
 fissure:N
 fissure:V
 fist:N
+fist:V
+fisted:A
 fistfight:N
 fistfight:V
 fistful:N
@@ -27317,12 +27323,14 @@ gonion:N
 gonococcus:N
 gonorrhea:N
 gonorrhoea:N
+gonzo:A
 goo:N
 goober:N
 good:A,better,best
 good:Av
 good:N
 good-by:N
+good-bye:N
 goodby:N
 goodbye:N
 goodish:A
@@ -27393,6 +27401,8 @@ gossiping:N
 gossipmonger:N
 gossipmongering:N
 gossipy:A
+goth:A
+goth:N
 gothic:A
 gothite:N
 gouache:N
@@ -28541,6 +28551,7 @@ handcraft:V
 handcuff:N
 handcuff:V
 handed:A
+handedly:Av
 handedness:N
 hander:N
 handful:N
@@ -32539,7 +32550,7 @@ ingrowth:N
 inguen:N
 inguinal:A
 ingurgitate:V
-inhabit:V
+inhabit:V,_s,_ing,_ed
 inhabitable:A
 inhabitancy:N
 inhabitant:N
@@ -33024,6 +33035,7 @@ intention:N
 intentional:A
 intentionality:N
 intentionally:Av
+intentioned:A
 intently:Av
 intentness:N
 inter:V
@@ -35855,6 +35867,7 @@ lessen:V
 lessened:A
 lessening:N
 lesser:A
+lessness:N
 lesson:N
 lessor:N
 lest:Av
@@ -35909,7 +35922,7 @@ levanter:N
 levee:N
 level:A
 level:N
-level:V
+level:V,_s,_ing,_ling,_ed,_led
 leveler:N
 levelheaded:A
 leveling:N
@@ -39278,6 +39291,7 @@ mincingly:Av
 mind:N
 mind:V
 minded:A
+mindedly:Av
 mindedness:N
 minder:N
 mindful:A
@@ -41830,6 +41844,8 @@ nitrify:V
 nitril:N
 nitrile:N
 nitrite:N
+nitro:A
+nitro:N
 nitrobacterium:N,nitrobacteria
 nitrobenzene:N
 nitrocalcite:N
@@ -46442,6 +46458,7 @@ pharyngitis:N
 pharynx:N
 phase:N
 phase:V
+phaser:N
 phasianid:N
 phasmid:N
 pheasant:N
@@ -47366,6 +47383,7 @@ platitudinal:A
 platitudinarian:N
 platitudinous:A
 platonic:A
+platonically:Av
 platoon:N
 platter:N
 platy:N
@@ -47733,6 +47751,7 @@ poetizer:N
 poetry:N
 pogey:N
 pogge:N
+pogo:V
 pogonia:N
 pogonion:N
 pogonip:N
@@ -49299,6 +49318,8 @@ profuse:A
 profusely:Av
 profuseness:N
 profusion:N
+prog:N
+prog:V
 progenitor:N
 progeny:N
 progeria:N
@@ -51169,6 +51190,7 @@ rateable:A
 rateables:N
 ratel:N
 ratepayer:N
+rater:N
 rather:Av
 rathole:N
 rathskeller:N
@@ -52294,6 +52316,9 @@ remodeled:A
 remodelled:A
 remold:V
 remonstrance:N
+remonstrant:A
+remonstrant:N
+remonstrantly:Av
 remonstrate:V
 remora:N
 remorse:N
@@ -53612,6 +53637,7 @@ roman:N
 romance:N
 romance:V
 romanize:V
+romano:N
 romantic:A
 romantic:N
 romantically:Av
@@ -54687,7 +54713,7 @@ savior:N
 saviour:N
 savoir-faire:N
 savor:N
-savor:V
+savor:V,_s,_ing,_ed
 savoriness:N
 savoring:N
 savorless:A
@@ -54695,7 +54721,7 @@ savorlessness:N
 savory:A
 savory:N
 savour:N
-savour:V
+savour:V,_s,_ing,_ed
 savouring:N
 savourless:A
 savourlessness:N
@@ -57118,6 +57144,7 @@ sinciput:N
 sine:N
 sinecure:N
 sinew:N
+sinew:V
 sinewy:A
 sinful:A
 sinfulness:N
@@ -59040,6 +59067,7 @@ spirant:A
 spirant:N
 spire:N
 spirea:N
+spired:A
 spirilla:N
 spirillum:N
 spirit:N
@@ -62377,6 +62405,7 @@ tantamount:A
 tantara:N
 tantra:N
 tantrum:N
+tao:N
 tap:N
 tap:V
 tapa:N
@@ -62656,6 +62685,7 @@ tediousness:N
 tedium:N
 tee:N
 tee:V
+tee-hee:V
 teem:V
 teeming:A
 teemingness:N
@@ -63385,6 +63415,7 @@ thievishly:Av
 thievishness:N
 thigh:N
 thighbone:N
+thighed:A
 thill:N
 thimble:N
 thimbleberry:N
@@ -63478,6 +63509,7 @@ thou:Pn
 though:Av
 though:C
 thought:N
+thoughted:A
 thoughtful:A
 thoughtfully:Av
 thoughtfulness:N
@@ -64229,6 +64261,7 @@ topsoil:N
 topspin:N
 topsy-turvy:A
 topsy-turvy:Av
+topsy-turvy:N
 topsy-turvyness:N
 toque:N
 tor:N
@@ -65731,6 +65764,7 @@ ubiquitous:A
 ubiquitousness:N
 ubiquity:N
 udder:N
+uddered:A
 udometer:N
 ugh:I
 ugli:N
@@ -69756,6 +69790,7 @@ waist:N
 waistband:N
 waistcloth:N
 waistcoat:N
+waisted:A
 waistline:N
 wait:N
 wait:V
@@ -71056,6 +71091,7 @@ woof:N
 woofer:N
 wooing:N
 wool:N
+wooled:A
 woolen:A
 woolen:N
 woolgather:V
@@ -71594,12 +71630,14 @@ zionist:A
 zionist:N
 zip:N
 zip:V
+zipless:A
 zipper:N
 zipper:V
 zippy:A
 zircon:N
 zirconia:N
 zirconium:N
+zit:N
 zither:N
 zithern:N
 ziti:N
@@ -71650,6 +71688,7 @@ zootoxin:N
 zori:N
 zoril:N
 zoster:N
+zounds:I
 zoysia:N
 zucchini:N
 zwieback:N
