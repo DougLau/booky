@@ -17,11 +17,11 @@ listed:
  3863 d Dictionary
     1 f Foreign
     4 o Ordinal
-    1 r Roman
+    0 r Roman
     2 n Number
-   10 a Acronym
+   12 a Acronym
    32 p Proper
-   13 s Symbol
+   15 s Symbol
     7 u Unknown
 ```
 

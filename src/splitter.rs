@@ -1,17 +1,24 @@
 use std::io::{self, Bytes, Read};
 
-/// Splitter for separating text into "chunks" and "symbols".
+/// Character chunk types
+#[derive(Clone, Debug, PartialEq)]
+pub enum Chunk {
+    /// Alphanumeric character or apostrophe text
+    Text(char),
+    /// Any non-`Text` displayable character
+    Symbol(char),
+    /// Discard character
+    Discard,
+}
+
+/// Splitter for separating string chunks
 ///
-/// Chunks are strings of alphanumeric characters, hyphens, periods, or
-/// 4 types of apostrophe.  Symbols are any other displayable characters.
-/// All whitespace and control characters are stripped.
+/// All whitespace and control characters are discarded.
 pub struct WordSplitter<R: Read> {
     /// Remaining bytes of underlying reader
     bytes: Bytes<R>,
     /// Current unicode UTF-8 code
     code: Vec<u8>,
-    /// Next character
-    next: Option<char>,
 }
 
 impl<R> WordSplitter<R>
@@ -23,7 +30,6 @@ where
         WordSplitter {
             bytes: r.bytes(),
             code: Vec::with_capacity(4),
-            next: None,
         }
     }
 
@@ -58,55 +64,29 @@ impl<R> Iterator for WordSplitter<R>
 where
     R: Read,
 {
-    type Item = Result<String, io::Error>;
+    type Item = Result<Chunk, io::Error>;
 
     fn next(&mut self) -> Option<Self::Item> {
-        let mut chunk = String::new();
-        if let Some(c) = self.next.take() {
-            chunk.push(c);
-        }
-        while let Some(c) = self.next_char() {
-            match c {
-                Ok(next) => {
-                    if should_discard(next) {
-                        if !chunk.is_empty() {
-                            return Some(Ok(chunk));
-                        }
-                    } else {
-                        match chunk.chars().next() {
-                            Some(c) => {
-                                if is_chunk_char(c) && is_chunk_char(next) {
-                                    chunk.push(next);
-                                } else {
-                                    self.next = Some(next);
-                                    return Some(Ok(chunk));
-                                }
-                            }
-                            None => {
-                                chunk.push(next);
-                            }
-                        }
-                    }
-                }
-                Err(e) => return Some(Err(e)),
-            }
-        }
-        if !chunk.is_empty() {
-            Some(Ok(chunk))
-        } else {
-            None
+        match self.next_char() {
+            Some(Ok(c)) => Some(Ok(Chunk::from_char(c))),
+            Some(Err(e)) => Some(Err(e)),
+            None => None,
         }
     }
 }
 
-/// Check if a character should be discarded
-fn should_discard(c: char) -> bool {
-    c.is_whitespace() || c == '\u{FEFF}' || c.is_control()
-}
-
-/// Check if a character is part of a chunk
-fn is_chunk_char(c: char) -> bool {
-    c.is_alphanumeric() || is_apostrophe(c) || c == '-' || c == '.'
+impl Chunk {
+    /// Determine chunk type from a single character
+    fn from_char(c: char) -> Self {
+        if c.is_whitespace() || c.is_control() || c == '\u{FEFF}' {
+            // ZERO WIDTH NO-BREAK SPACE `U+FEFF` is sometimes used as a BOM
+            Chunk::Discard
+        } else if c.is_alphanumeric() || is_apostrophe(c) {
+            Chunk::Text(c)
+        } else {
+            Chunk::Symbol(c)
+        }
+    }
 }
 
 /// Check if a character is an apostrophe
@@ -118,34 +98,4 @@ fn is_chunk_char(c: char) -> bool {
 ///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
 fn is_apostrophe(c: char) -> bool {
     c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
-}
-
-#[cfg(test)]
-mod test {
-    use super::*;
-
-    #[test]
-    fn test_chunks() {
-        for (val, chunks) in [
-            ("", [].as_slice()),
-            ("a", ["a"].as_slice()),
-            (" a ", ["a"].as_slice()),
-            ("a b", ["a", "b"].as_slice()),
-            ("a \t\n b", ["a", "b"].as_slice()),
-            ("a.b", ["a.b"].as_slice()),
-            ("a-b", ["a-b"].as_slice()),
-            ("a,b", ["a", ",", "b"].as_slice()),
-            ("a?b!", ["a", "?", "b", "!"].as_slice()),
-            ("abc 123", ["abc", "123"].as_slice()),
-            ("...", ["..."].as_slice()),
-            ("!!!", ["!", "!", "!"].as_slice()),
-        ] {
-            assert_eq!(
-                WordSplitter::new(val.as_bytes())
-                    .map(|w| w.unwrap())
-                    .collect::<Vec<_>>(),
-                chunks
-            );
-        }
-    }
 }

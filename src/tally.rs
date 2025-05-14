@@ -1,4 +1,4 @@
-use crate::splitter::WordSplitter;
+use crate::splitter::{Chunk, WordSplitter};
 use crate::word::Dict;
 use std::collections::HashMap;
 use std::fmt;
@@ -53,8 +53,9 @@ pub struct WordEntry {
 }
 
 /// Word tally list
-#[derive(Default)]
 pub struct WordTally {
+    /// Dictionary
+    dict: Dict,
     /// Words in list
     words: HashMap<String, WordEntry>,
 }
@@ -143,7 +144,6 @@ fn is_ordinal_number(w: &str) -> bool {
 
 /// Check if a string is a romal numeral
 fn is_roman_numeral(word: &str) -> bool {
-    let word = word.trim_end_matches('.');
     !word.is_empty()
         && (word.chars().all(|c| ROMAN_UPPER.contains(c))
             || word.chars().all(|c| ROMAN_LOWER.contains(c)))
@@ -156,8 +156,11 @@ fn is_number(word: &str) -> bool {
 
 /// Check if a word is an acronym / initialism
 fn is_acronym(word: &str) -> bool {
-    word.chars().count() >= 2
-        && word.chars().all(|c| c.is_uppercase() || c == '.')
+    let len = word.chars().count();
+    let upper = word.chars().filter(|c| c.is_uppercase()).count();
+    let dots = word.chars().filter(|c| *c == '.').count();
+    // must have no dots or half dots
+    len >= 2 && upper + dots == len && (dots == 0 || dots * 2 == len)
 }
 
 /// Check if a word is probably proper
@@ -182,10 +185,15 @@ impl fmt::Display for WordEntry {
     }
 }
 
-/// Make "canonical" English spelling of a word
-fn canonical_spelling(word: &str) -> String {
-    let word = word.trim_start_matches(['-', '.']).trim_end_matches('-');
-    word.replace(is_apostrophe, "’").replace('æ', "ae")
+/// Make "canonical" English spelling of a character
+fn canonical_char(c: char) -> Option<&'static str> {
+    if is_apostrophe(c) {
+        Some("’")
+    } else if c == 'æ' {
+        Some("ae")
+    } else {
+        None
+    }
 }
 
 impl WordEntry {
@@ -220,20 +228,6 @@ impl WordEntry {
 /// Count the number of uppercase characters in a word
 fn count_uppercase(word: &str) -> usize {
     word.chars().filter(|c| c.is_uppercase()).count()
-}
-
-/// Check if a word is a compound
-fn is_compound(com: &str) -> bool {
-    if com.contains('-') {
-        for word in com.split('-') {
-            if word.is_empty() {
-                return false;
-            }
-        }
-        true
-    } else {
-        false
-    }
 }
 
 /// Some contractions
@@ -316,8 +310,11 @@ fn split_contraction(word: &str) -> Vec<&str> {
 
 impl WordTally {
     /// Create a new word tally
-    pub fn new() -> Self {
-        WordTally::default()
+    pub fn new(dict: Dict) -> Self {
+        WordTally {
+            dict,
+            words: HashMap::new(),
+        }
     }
 
     /// Parse text from a reader
@@ -325,13 +322,58 @@ impl WordTally {
     where
         R: BufRead,
     {
-        for cluster in WordSplitter::new(reader) {
-            // Don't allow double-hyphen in words
-            for clump in cluster?.split("--") {
-                self.tally_word(&canonical_spelling(clump), 1);
+        let mut compound = String::new();
+        for chunk in WordSplitter::new(reader) {
+            match chunk? {
+                Chunk::Discard => {
+                    self.tally_compound(&compound, 1);
+                    String::clear(&mut compound);
+                }
+                Chunk::Symbol(c) => {
+                    if c == '-' {
+                        // double dash means no more compound
+                        if !compound.is_empty() && !compound.ends_with('-') {
+                            compound.push('-');
+                            continue;
+                        }
+                    }
+                    if c == '.' {
+                        compound.push('.');
+                        if is_acronym(&compound) {
+                            continue;
+                        } else {
+                            compound.pop();
+                        }
+                    }
+                    self.tally_compound(&compound, 1);
+                    String::clear(&mut compound);
+                    self.tally_word(&String::from(c), 1);
+                }
+                Chunk::Text(c) => match canonical_char(c) {
+                    Some(s) => compound.push_str(s),
+                    None => compound.push(c),
+                },
             }
         }
+        self.tally_compound(&compound, 1);
         Ok(())
+    }
+
+    /// Tally a compound cluster
+    fn tally_compound(&mut self, compound: &str, count: usize) {
+        if self.dict.contains(compound) {
+            self.tally_word(compound, count);
+            return;
+        }
+        // not in dictionary; split it up
+        let mut first = false;
+        for chunk in compound.split('-') {
+            if !first {
+                self.tally_word("-", count);
+            }
+            self.tally_word(chunk, count);
+            first = false;
+        }
     }
 
     /// Tally a word
@@ -383,64 +425,19 @@ impl WordTally {
         entries
     }
 
-    /// Trim periods from end of words in dictionary
-    pub fn trim_periods(&mut self, dict: &Dict) {
-        let words: Vec<_> = self
-            .words
-            .iter()
-            .filter(|(_k, we)| {
-                !dict.contains(we.word()) && we.word().ends_with('.')
-            })
-            .map(|(key, _we)| key.clone())
-            .collect();
-        for key in words {
-            if let Some(we) = self.words.get(&key) {
-                let word = we.word().trim_end_matches('.');
-                if we.kind != Kind::Acronym || dict.contains(word) {
-                    let we = self.words.remove(&key).unwrap();
-                    let mut word = we.word().trim_end_matches('.');
-                    if !dict.contains(word) && word.contains('.') {
-                        word = we.word();
-                    }
-                    self.tally_word(word, we.seen());
-                }
-            }
-        }
-    }
-
-    /// Split compound words (with hyphen) not in dictionary
-    pub fn split_unknown_compounds(&mut self, dict: &Dict) {
-        let compounds: Vec<_> = self
-            .words
-            .iter()
-            .filter(|(_k, we)| {
-                !dict.contains(we.word()) && is_compound(we.word())
-            })
-            .map(|(key, _we)| key.clone())
-            .collect();
-        for key in compounds {
-            if let Some(we) = self.words.remove(&key) {
-                let com = we.word().trim_end_matches('.');
-                for word in com.split('-') {
-                    self.tally_word(word, we.seen());
-                }
-            }
-        }
-    }
-
     /// Split contractions (with apostrophe) not in dictionary
-    pub fn split_unknown_contractions(&mut self, dict: &Dict) {
+    pub fn split_unknown_contractions(&mut self) {
         let contractions: Vec<_> = self
             .words
             .iter()
             .filter(|(_k, we)| {
-                !dict.contains(we.word()) && we.word().contains('’')
+                !self.dict.contains(we.word()) && we.word().contains('’')
             })
             .map(|(key, _we)| key.clone())
             .collect();
         for key in contractions {
             if let Some(we) = self.words.remove(&key) {
-                let con = we.word().trim_end_matches('.');
+                let con = we.word();
                 for word in split_contractions(con) {
                     self.tally_word(word, we.seen());
                 }
@@ -449,9 +446,9 @@ impl WordTally {
     }
 
     /// Check for word entries in dictionary
-    pub fn check_dict(&mut self, dict: &Dict) {
+    pub fn check_dict(&mut self) {
         for (_key, we) in self.words.iter_mut() {
-            if dict.contains(we.word()) {
+            if self.dict.contains(we.word()) {
                 we.kind = Kind::Dictionary;
             }
         }
