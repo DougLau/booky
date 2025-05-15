@@ -250,6 +250,9 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Full("’tis", "it", "is"),
     Contraction::Full("’twas", "it", "was"),
     Contraction::Full("’twill", "it", "will"),
+    Contraction::Full("m’dear", "my", "dear"),
+    Contraction::Full("m’lady", "my", "lady"),
+    Contraction::Full("m’lord", "my", "lord"),
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
     Contraction::Suffix("’", ""),  // possessive
