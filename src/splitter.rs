@@ -1,4 +1,4 @@
-use std::io::{self, Bytes, Read};
+use std::io::{self, BufRead, Bytes};
 
 /// Character chunk types
 #[derive(Clone, Debug, PartialEq)]
@@ -14,7 +14,7 @@ pub enum Chunk {
 /// Splitter for separating string chunks
 ///
 /// All whitespace and control characters are discarded.
-pub struct WordSplitter<R: Read> {
+pub struct WordSplitter<R: BufRead> {
     /// Remaining bytes of underlying reader
     bytes: Bytes<R>,
     /// Current unicode UTF-8 code
@@ -23,7 +23,7 @@ pub struct WordSplitter<R: Read> {
 
 impl<R> WordSplitter<R>
 where
-    R: Read,
+    R: BufRead,
 {
     /// Create a new word splitter
     pub fn new(r: R) -> Self {
@@ -56,13 +56,13 @@ where
                 }
             }
         }
-        Some(Err(io::Error::new(io::ErrorKind::Other, "Invalid UTF-8")))
+        Some(Err(io::Error::other("Invalid UTF-8")))
     }
 }
 
 impl<R> Iterator for WordSplitter<R>
 where
-    R: Read,
+    R: BufRead,
 {
     type Item = Result<Chunk, io::Error>;
 
