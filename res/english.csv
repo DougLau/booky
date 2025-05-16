@@ -4393,6 +4393,7 @@ ashen:A
 ashlar:N
 ashore:Av
 ashore:P.i
+ashplant:N
 ashtray:N
 ashy:A
 aside:Av
@@ -10837,6 +10838,7 @@ ceftazidime:N
 ceftriaxone:N
 cefuroxime:N
 ceibo:N
+ceil:V
 ceilidh:N
 ceiling:N
 ceilinged:A
@@ -15177,6 +15179,7 @@ coursework:N
 coursing:N
 court:N
 court:V
+court-martial:V,_s,_ing,_ling,_ed,_led
 courteous:A
 courteously:Av
 courtesan:N
@@ -19802,6 +19805,8 @@ doubtfulness:N
 doubting:A
 doubtingly:Av
 doubtless:Av
+douce:A
+doucely:Av
 douche:N
 douche:V
 dough:N
@@ -21343,6 +21348,7 @@ empowered:A
 empowerment:N
 empress:N
 emptied:A
+emptily:Av
 emptiness:N
 emptor:N
 empty:A
@@ -24370,6 +24376,7 @@ firefly:N
 fireguard:N
 firehose:N
 firehouse:N
+fireless:A
 firelight:N
 firelighter:N
 firelit:A
@@ -27264,6 +27271,7 @@ goatsfoot:N,goatsfeet
 goatskin:N
 goatsucker:N
 gob:N
+gob:V
 gobbet:N
 gobble:N
 gobble:V
@@ -28745,6 +28753,7 @@ hardheads:N
 hardhearted:A
 hardheartedness:N
 hardihood:N
+hardily:Av
 hardiness:N
 hardinggrass:N
 hardline:A
@@ -31568,6 +31577,7 @@ impertinently:Av
 imperturbability:N
 imperturbable:A
 imperturbableness:N
+imperturbably:Av
 imperviable:A
 impervious:A
 imperviousness:N
@@ -34244,8 +34254,12 @@ joke:N
 joke:V
 joker:N
 jokester:N
+jokey:A
+jokily:Av
+jokiness:N
 joking:A
 jokingly:Av
+joky:A
 jollification:N
 jollify:V
 jollity:N
@@ -49213,6 +49227,7 @@ prismatic:A
 prismatoid:N
 prismoid:N
 prison:N
+prison:V
 prisonbreak:N
 prisoner:N
 prisonhouse:N
@@ -50889,6 +50904,9 @@ rabbitweed:N
 rabbitwood:N
 rabble:N
 rabid:A
+rabidity:N
+rabidly:Av
+rabidness:N
 rabies:N
 raccoon:N
 race:N
@@ -53529,6 +53547,7 @@ ringing:N
 ringleader:N
 ringlet:N
 ringleted:A
+ringletted:A
 ringlike:A
 ringmaster:N
 ringside:N
@@ -59358,6 +59377,8 @@ spoonfeed:V
 spoonfeeding:N
 spoonflower:N
 spoonful:N
+spoony:A
+spoony:N
 spoor:N
 sporadic:A
 sporadically:Av
@@ -62522,6 +62543,7 @@ tantamount:A
 tantara:N
 tantra:N
 tantrum:N
+tanyard:N
 tao:N
 tap:N
 tap:V
@@ -63348,6 +63370,7 @@ theelin:N
 theft:N
 their:D
 theirs:Pn
+theirself:Pn,theirselves
 theism:N
 theist:A
 theist:N
@@ -65381,6 +65404,8 @@ troublesomely:Av
 troublesomeness:N
 troubling:A
 troublous:A
+troublously:Av
+troublousness:N
 trough:N
 trounce:V
 trouncing:N
@@ -66211,6 +66236,8 @@ unbleached:A
 unblemished:A
 unblended:A
 unblessed:A
+unblighted:A
+unblightedly:Av
 unblinking:A
 unblinkingly:Av
 unblock:V
@@ -66257,6 +66284,7 @@ unburned:A
 unburnished:A
 unbutton:V
 unbuttoned:A
+uncalled:A
 uncamphorated:A
 uncannily:Av
 uncanny:A
@@ -66806,6 +66834,7 @@ undramatic:A
 undramatically:Av
 undrape:V
 undraped:A
+undraw:V,_s,_ing,undrew,_n
 undrawn:A
 undreamed:A
 undreamt:A
@@ -66949,6 +66978,7 @@ unfairness:N
 unfaithful:A
 unfaithfully:Av
 unfaithfulness:N
+unfallen:A
 unfaltering:A
 unfalteringly:Av
 unfamiliar:A
@@ -67082,6 +67112,8 @@ ungetatable:A
 unglamorous:A
 unglamourous:A
 unglazed:A
+unglove:V
+ungloved:A
 ungodliness:N
 ungodly:A
 ungovernable:A
@@ -67427,6 +67459,8 @@ unlooked:A
 unloose:V
 unloosen:V
 unlovable:A
+unlove:N
+unlove:V
 unloved:A
 unlovely:A
 unloving:A
@@ -68067,6 +68101,7 @@ unsmoothed:A
 unsnarl:V
 unsnarled:A
 unsnarling:N
+unsnuffed:A
 unsociability:N
 unsociable:A
 unsociableness:N
@@ -68191,6 +68226,7 @@ unsuspected:A
 unsuspecting:A
 unsuspectingly:Av
 unsuspicious:A
+unsustained:A
 unswallowed:A
 unswayed:A
 unsweet:A
@@ -68917,6 +68953,7 @@ vapory:A
 vapour:N
 vapour:V
 vapourish:A
+vapoury:A
 vaquero:N
 vaquita:N
 var:N
@@ -71232,6 +71269,7 @@ woodworker:N
 woodworking:N
 woodworm:N
 woody:A
+woodyard:N
 wooer:N
 woof:N
 woofer:N
@@ -71301,6 +71339,7 @@ workspace:N
 workstation:N
 worktable:N
 workweek:N
+workwoman:N,workwomen
 world:A
 world:N
 worldliness:N
