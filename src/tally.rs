@@ -115,8 +115,21 @@ impl WordTally {
             if !first {
                 self.tally_word("-", 1);
             }
-            self.tally_word(ch, 1);
+            self.tally_word_splittable(ch);
             first = false;
+        }
+    }
+
+    /// Tally a splittable (contraction) word
+    fn tally_word_splittable(&mut self, word: &str) {
+        if word.contains('’') && !self.lex.contains(word) {
+            for word in contractions::split(word) {
+                if !word.is_empty() {
+                    self.tally_word(word, 1);
+                }
+            }
+        } else if !word.is_empty() {
+            self.tally_word(word, 1);
         }
     }
 
@@ -169,27 +182,5 @@ impl WordTally {
         let mut entries: Vec<_> = self.words.into_values().collect();
         entries.sort();
         entries
-    }
-
-    /// Split contractions (with apostrophe) not in lexicon
-    pub fn split_unknown_contractions(&mut self) {
-        let contractions: Vec<_> = self
-            .words
-            .iter()
-            .filter(|(_k, we)| {
-                !self.lex.contains(we.word()) && we.word().contains('’')
-            })
-            .map(|(key, _we)| key.clone())
-            .collect();
-        for key in contractions {
-            if let Some(we) = self.words.remove(&key) {
-                let con = we.word();
-                for word in contractions::split(con) {
-                    if !word.is_empty() {
-                        self.tally_word(word, we.seen());
-                    }
-                }
-            }
-        }
     }
 }
