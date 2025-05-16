@@ -1,5 +1,5 @@
 use crate::splitter::{Chunk, WordSplitter};
-use crate::word::Dict;
+use crate::word::Lexicon;
 use std::collections::HashMap;
 use std::fmt;
 use std::io::BufRead;
@@ -54,8 +54,8 @@ pub struct WordEntry {
 
 /// Word tally list
 pub struct WordTally {
-    /// Dictionary
-    dict: Dict,
+    /// Lexicon
+    lex: Lexicon,
     /// Words in list
     words: HashMap<String, WordEntry>,
 }
@@ -312,9 +312,9 @@ fn split_contraction(word: &str) -> Vec<&str> {
 
 impl WordTally {
     /// Create a new word tally
-    pub fn new(dict: Dict) -> Self {
+    pub fn new(lex: Lexicon) -> Self {
         WordTally {
-            dict,
+            lex,
             words: HashMap::new(),
         }
     }
@@ -363,11 +363,11 @@ impl WordTally {
 
     /// Tally a compound cluster
     fn tally_compound(&mut self, compound: &str, count: usize) {
-        if self.dict.contains(compound) {
+        if self.lex.contains(compound) {
             self.tally_word(compound, count);
             return;
         }
-        // not in dictionary; split it up
+        // not in lexicon; split it up
         let mut first = false;
         for chunk in compound.split('-') {
             if !first {
@@ -383,7 +383,7 @@ impl WordTally {
         if word.is_empty() {
             return;
         }
-        let kind = if self.dict.contains(word) {
+        let kind = if self.lex.contains(word) {
             Kind::Dictionary
         } else {
             Kind::from(word)
@@ -432,13 +432,13 @@ impl WordTally {
         entries
     }
 
-    /// Split contractions (with apostrophe) not in dictionary
+    /// Split contractions (with apostrophe) not in lexicon
     pub fn split_unknown_contractions(&mut self) {
         let contractions: Vec<_> = self
             .words
             .iter()
             .filter(|(_k, we)| {
-                !self.dict.contains(we.word()) && we.word().contains('’')
+                !self.lex.contains(we.word()) && we.word().contains('’')
             })
             .map(|(key, _we)| key.clone())
             .collect();

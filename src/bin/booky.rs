@@ -1,7 +1,7 @@
 use anyhow::Result;
 use argh::FromArgs;
 use booky::tally::{Kind, WordTally};
-use booky::word::{Dict, Word, WordClass};
+use booky::word::{Lexicon, Word, WordClass};
 use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
 use yansi::{Color::Green, Color::White, Paint};
 
@@ -85,7 +85,7 @@ impl KindCmd {
             );
             return Ok(());
         }
-        let mut tally = WordTally::new(Dict::builtin());
+        let mut tally = WordTally::new(Lexicon::builtin());
         tally.parse_text(stdin.lock())?;
         tally.split_unknown_contractions();
         if Kind::all().iter().any(|k| self.show_kind(*k)) {
@@ -147,8 +147,8 @@ impl DictCmd {
     /// Run command
     fn run(self) -> Result<()> {
         if self.forms {
-            let dict = Dict::builtin();
-            let mut forms: Vec<_> = dict.forms().collect();
+            let lex = Lexicon::builtin();
+            let mut forms: Vec<_> = lex.forms().collect();
             forms.sort();
             for form in forms {
                 println!("{form}");
@@ -156,9 +156,9 @@ impl DictCmd {
         } else if let Some(word) = &self.word {
             self.lookup(word)?;
         } else {
-            let mut dict = Dict::builtin();
-            dict.sort();
-            for word in dict.iter() {
+            let mut lex = Lexicon::builtin();
+            lex.sort();
+            for word in lex.iter() {
                 println!("{word:?}");
             }
         }
@@ -168,9 +168,9 @@ impl DictCmd {
     /// Lookup a word form
     fn lookup(&self, word: &str) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
-        let dict = Dict::builtin();
-        if dict.contains(word) {
-            for w in dict.iter() {
+        let lex = Lexicon::builtin();
+        if lex.contains(word) {
+            for w in lex.iter() {
                 for form in w.forms() {
                     if form == word {
                         for f in w.forms() {
@@ -206,12 +206,12 @@ fn choose_word<'a>(words: &'a [&'a Word]) -> &'a Word {
 
 /// Print nonsense
 fn nonsense() {
-    let dict = Dict::builtin();
-    let nouns: Vec<_> = dict
+    let lex = Lexicon::builtin();
+    let nouns: Vec<_> = lex
         .iter()
         .filter(|w| w.word_class() == Some(WordClass::Noun))
         .collect();
-    let verbs: Vec<_> = dict
+    let verbs: Vec<_> = lex
         .iter()
         .filter(|w| w.word_class() == Some(WordClass::Verb))
         .collect();

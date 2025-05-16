@@ -57,9 +57,9 @@ pub struct Word {
     forms: Vec<String>,
 }
 
-/// Dictionary of words
+/// Lexicon of words
 #[derive(Default)]
-pub struct Dict {
+pub struct Lexicon {
     /// Words
     words: Vec<Word>,
     /// All word forms
@@ -404,26 +404,26 @@ fn adjective_superlative(base: &str) -> String {
     }
 }
 
-impl Dict {
-    /// Create a new empty dictionary
+impl Lexicon {
+    /// Create a new empty lexicon
     pub fn new() -> Self {
-        Dict::default()
+        Lexicon::default()
     }
 
-    /// Get built-in dictionary
+    /// Get built-in lexicon
     pub fn builtin() -> Self {
-        let mut dict = Dict::default();
+        let mut lex = Lexicon::default();
         for (i, line) in include_str!("../res/english.csv").lines().enumerate()
         {
             match Word::try_from(line) {
-                Ok(word) => dict.insert(word),
+                Ok(word) => lex.insert(word),
                 Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
             }
         }
-        dict
+        lex
     }
 
-    /// Insert a word into the dictionary
+    /// Insert a word into the lexicon
     pub fn insert(&mut self, word: Word) {
         for form in word.forms() {
             self.insert_form(form);
@@ -447,7 +447,7 @@ impl Dict {
         self.words.sort();
     }
 
-    /// Check if dictionary contains a word
+    /// Check if lexicon contains a word
     pub fn contains(&self, word: &str) -> bool {
         self.forms.contains_key(&word.to_lowercase())
     }
