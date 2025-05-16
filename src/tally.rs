@@ -105,26 +105,23 @@ impl WordTally {
 
     /// Tally a chunk
     fn tally_chunk(&mut self, chunk: &str) {
-        if chunk.chars().count() < 2 || self.lex.contains(chunk) {
+        if chunk.chars().count() == 1 || self.lex.contains(chunk) {
             self.tally_word(chunk, 1);
             return;
         }
         // not in lexicon; split up compound on hyphens
         let mut first = true;
-        for chunk in chunk.split('-') {
+        for ch in chunk.split('-') {
             if !first {
                 self.tally_word("-", 1);
             }
-            self.tally_word(chunk, 1);
+            self.tally_word(ch, 1);
             first = false;
         }
     }
 
     /// Tally a word
     fn tally_word(&mut self, word: &str, count: usize) {
-        if word.is_empty() {
-            return;
-        }
         let kind = if self.lex.contains(word) {
             Kind::Lexicon
         } else {
@@ -188,7 +185,9 @@ impl WordTally {
             if let Some(we) = self.words.remove(&key) {
                 let con = we.word();
                 for word in contractions::split(con) {
-                    self.tally_word(word, we.seen());
+                    if !word.is_empty() {
+                        self.tally_word(word, we.seen());
+                    }
                 }
             }
         }
