@@ -19745,7 +19745,7 @@ dormant:A
 dormer:N
 dormie:A
 dormitory:N
-dormouse:N
+dormouse:N,dormice
 dormy:A
 dorsal:A
 dorsally:Av
@@ -24145,7 +24145,7 @@ fielder:N
 fieldfare:N
 fieldhand:N
 fielding:N
-fieldmouse:N
+fieldmouse:N,fieldmice
 fieldsman:N,fieldsmen
 fieldstone:N
 fieldwork:N
@@ -56892,7 +56892,7 @@ shrewdness:N
 shrewish:A
 shrewishly:Av
 shrewishness:N
-shrewmouse:N
+shrewmouse:N,shrewmice
 shriek:N
 shriek:V
 shrieked:A
@@ -64136,7 +64136,7 @@ title:N
 title:V
 titled:A
 titleholder:N
-titmouse:N
+titmouse:N,titmice
 titrate:V
 titration:N
 titrator:N
