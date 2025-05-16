@@ -1,6 +1,7 @@
 use anyhow::Result;
 use argh::FromArgs;
-use booky::tally::{Kind, WordTally};
+use booky::kind::Kind;
+use booky::tally::WordTally;
 use booky::word::{Lexicon, Word, WordClass};
 use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
 use yansi::{Color::Green, Color::White, Paint};
