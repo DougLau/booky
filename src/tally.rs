@@ -328,7 +328,7 @@ impl WordTally {
         for chunk in WordSplitter::new(reader) {
             match chunk? {
                 Chunk::Discard => {
-                    self.tally_compound(&compound, 1);
+                    self.tally_compound(&compound);
                     String::clear(&mut compound);
                 }
                 Chunk::Symbol(c) => {
@@ -347,7 +347,7 @@ impl WordTally {
                             compound.pop();
                         }
                     }
-                    self.tally_compound(&compound, 1);
+                    self.tally_compound(&compound);
                     String::clear(&mut compound);
                     self.tally_word(&String::from(c), 1);
                 }
@@ -357,23 +357,23 @@ impl WordTally {
                 },
             }
         }
-        self.tally_compound(&compound, 1);
+        self.tally_compound(&compound);
         Ok(())
     }
 
     /// Tally a compound cluster
-    fn tally_compound(&mut self, compound: &str, count: usize) {
+    fn tally_compound(&mut self, compound: &str) {
         if self.lex.contains(compound) {
-            self.tally_word(compound, count);
+            self.tally_word(compound, 1);
             return;
         }
         // not in lexicon; split it up
-        let mut first = false;
+        let mut first = true;
         for chunk in compound.split('-') {
             if !first {
-                self.tally_word("-", count);
+                self.tally_word("-", 1);
             }
-            self.tally_word(chunk, count);
+            self.tally_word(chunk, 1);
             first = false;
         }
     }
