@@ -150,11 +150,8 @@ fn is_number(word: &str) -> bool {
 
 /// Check if a word is an acronym / initialism
 fn is_acronym(word: &str) -> bool {
-    let len = word.chars().count();
-    let upper = word.chars().filter(|c| c.is_uppercase()).count();
-    let dots = word.chars().filter(|c| *c == '.').count();
-    // must have no dots or half dots
-    len >= 2 && upper + dots == len && (dots == 0 || dots * 2 == len)
+    word.chars().count() >= 2
+        && word.chars().all(|c| c.is_uppercase() || c == '.')
 }
 
 /// Check if a word is probably proper
