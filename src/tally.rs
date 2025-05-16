@@ -1,4 +1,4 @@
-use crate::splitter::{Chunk, WordSplitter};
+use crate::splitter::{ChunkHandler, chunk_text};
 use crate::word::Lexicon;
 use std::collections::HashMap;
 use std::fmt;
@@ -76,8 +76,8 @@ impl Kind {
     pub fn all() -> &'static [Self] {
         use Kind::*;
         &[
-            Lexicon, Foreign, Ordinal, Roman, Number, Acronym, Proper,
-            Symbol, Unknown,
+            Lexicon, Foreign, Ordinal, Roman, Number, Acronym, Proper, Symbol,
+            Unknown,
         ]
     }
 
@@ -182,17 +182,6 @@ impl fmt::Display for WordEntry {
             }
         }
         write!(fmt, "{}", self.word)
-    }
-}
-
-/// Make "canonical" English spelling of a character
-fn canonical_char(c: char) -> Option<&'static str> {
-    if is_apostrophe(c) {
-        Some("’")
-    } else if c == 'æ' {
-        Some("ae")
-    } else {
-        None
     }
 }
 
@@ -310,6 +299,18 @@ fn split_contraction(word: &str) -> Vec<&str> {
     vec![]
 }
 
+impl ChunkHandler for &mut WordTally {
+    fn text(&mut self, ch: &str) {
+        self.tally_chunk(ch);
+    }
+    fn symbol(&mut self, ch: &str) {
+        self.tally_chunk(ch);
+    }
+    fn discard(&mut self, _ch: &str) {
+        // ignore discarded chunks
+    }
+}
+
 impl WordTally {
     /// Create a new word tally
     pub fn new(lex: Lexicon) -> Self {
@@ -324,52 +325,20 @@ impl WordTally {
     where
         R: BufRead,
     {
-        let mut compound = String::new();
-        for chunk in WordSplitter::new(reader) {
-            match chunk? {
-                Chunk::Discard => {
-                    self.tally_compound(&compound);
-                    String::clear(&mut compound);
-                }
-                Chunk::Symbol(c) => {
-                    if c == '-' {
-                        // double dash means no more compound
-                        if !compound.is_empty() && !compound.ends_with('-') {
-                            compound.push('-');
-                            continue;
-                        }
-                    }
-                    if c == '.' {
-                        compound.push('.');
-                        if is_acronym(&compound) {
-                            continue;
-                        } else {
-                            compound.pop();
-                        }
-                    }
-                    self.tally_compound(&compound);
-                    String::clear(&mut compound);
-                    self.tally_word(&String::from(c), 1);
-                }
-                Chunk::Text(c) => match canonical_char(c) {
-                    Some(s) => compound.push_str(s),
-                    None => compound.push(c),
-                },
-            }
-        }
-        self.tally_compound(&compound);
+        let mut h = self;
+        chunk_text(reader, &mut h)?;
         Ok(())
     }
 
-    /// Tally a compound cluster
-    fn tally_compound(&mut self, compound: &str) {
-        if self.lex.contains(compound) {
-            self.tally_word(compound, 1);
+    /// Tally a chunk
+    fn tally_chunk(&mut self, chunk: &str) {
+        if chunk.chars().count() < 2 || self.lex.contains(chunk) {
+            self.tally_word(chunk, 1);
             return;
         }
-        // not in lexicon; split it up
+        // not in lexicon; split up compound on hyphens
         let mut first = true;
-        for chunk in compound.split('-') {
+        for chunk in chunk.split('-') {
             if !first {
                 self.tally_word("-", 1);
             }

@@ -1,33 +1,41 @@
 use std::io::{self, BufRead, Bytes};
 
+/// Handler for parsing text chunks
+pub trait ChunkHandler {
+    /// Handle a text chunk
+    fn text(&mut self, ch: &str);
+    /// Handle a symbol chunk
+    fn symbol(&mut self, ch: &str);
+    /// Handle a discard chunk
+    fn discard(&mut self, ch: &str);
+}
+
 /// Character chunk types
-#[derive(Clone, Debug, PartialEq)]
-pub enum Chunk {
+#[derive(Clone, Copy, Debug, PartialEq)]
+enum Chunk {
     /// Alphanumeric character or apostrophe text
-    Text(char),
+    Text,
     /// Any non-`Text` displayable character
-    Symbol(char),
+    Symbol,
     /// Discard character
     Discard,
 }
 
-/// Splitter for separating string chunks
-///
-/// All whitespace and control characters are discarded.
-pub struct WordSplitter<R: BufRead> {
+/// Splitter for separating text into characters
+struct CharSplitter<R: BufRead> {
     /// Remaining bytes of underlying reader
     bytes: Bytes<R>,
     /// Current unicode UTF-8 code
     code: Vec<u8>,
 }
 
-impl<R> WordSplitter<R>
+impl<R> CharSplitter<R>
 where
     R: BufRead,
 {
-    /// Create a new word splitter
-    pub fn new(r: R) -> Self {
-        WordSplitter {
+    /// Create a new char splitter
+    fn new(r: R) -> Self {
+        CharSplitter {
             bytes: r.bytes(),
             code: Vec::with_capacity(4),
         }
@@ -41,7 +49,7 @@ where
                 Some(Err(e)) => return Some(Err(e)),
                 Some(Ok(b)) => {
                     self.code.push(b);
-                    if let Ok(c) = core::str::from_utf8(&self.code) {
+                    if let Ok(c) = str::from_utf8(&self.code) {
                         if let Some(c) = c.chars().next() {
                             return Some(Ok(c));
                         }
@@ -60,18 +68,14 @@ where
     }
 }
 
-impl<R> Iterator for WordSplitter<R>
+impl<R> Iterator for CharSplitter<R>
 where
     R: BufRead,
 {
-    type Item = Result<Chunk, io::Error>;
+    type Item = Result<char, io::Error>;
 
     fn next(&mut self) -> Option<Self::Item> {
-        match self.next_char() {
-            Some(Ok(c)) => Some(Ok(Chunk::from_char(c))),
-            Some(Err(e)) => Some(Err(e)),
-            None => None,
-        }
+        self.next_char()
     }
 }
 
@@ -82,9 +86,9 @@ impl Chunk {
             // ZERO WIDTH NO-BREAK SPACE `U+FEFF` is sometimes used as a BOM
             Chunk::Discard
         } else if c.is_alphanumeric() || is_apostrophe(c) {
-            Chunk::Text(c)
+            Chunk::Text
         } else {
-            Chunk::Symbol(c)
+            Chunk::Symbol
         }
     }
 }
@@ -98,4 +102,91 @@ impl Chunk {
 ///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
 fn is_apostrophe(c: char) -> bool {
     c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
+}
+
+/// Parse text into chunks
+pub fn chunk_text<R, H>(
+    reader: R,
+    handler: &mut H,
+) -> Result<(), std::io::Error>
+where
+    R: BufRead,
+    H: ChunkHandler,
+{
+    let mut chunk = String::new();
+    for ch in CharSplitter::new(reader) {
+        let c = ch?;
+        match Chunk::from_char(c) {
+            Chunk::Discard => {
+                handle_text(handler, &mut chunk);
+                chunk.push(c);
+                handler.discard(&chunk);
+                chunk.clear();
+            }
+            Chunk::Symbol => {
+                if c == '-' {
+                    // double dash means no more compound
+                    if !chunk.is_empty() && !chunk.ends_with('-') {
+                        chunk.push('-');
+                        continue;
+                    }
+                }
+                if c == '.' && is_dot_appendable(&chunk) {
+                    chunk.push('.');
+                    continue;
+                }
+                handle_text(handler, &mut chunk);
+                chunk.push(c);
+                handler.symbol(&chunk);
+                chunk.clear();
+            }
+            Chunk::Text => match canonical_char(c) {
+                Some(s) => chunk.push_str(s),
+                None => chunk.push(c),
+            },
+        }
+    }
+    handle_text(handler, &mut chunk);
+    Ok(())
+}
+
+/// Handle text chunk
+fn handle_text<H>(handler: &mut H, chunk: &mut String)
+where
+    H: ChunkHandler,
+{
+    if !chunk.is_empty() {
+        // this check doesn't work for abbreviations...
+        if chunk.ends_with('.')
+            && chunk.chars().filter(|c| *c == '.').count() == 1
+        {
+            chunk.pop();
+            handler.text(chunk);
+            chunk.clear();
+            chunk.push('.');
+            handler.text(chunk);
+            chunk.clear();
+        } else {
+            handler.text(chunk);
+        }
+        chunk.clear();
+    }
+}
+
+/// Check if a dot is appendable
+fn is_dot_appendable(word: &str) -> bool {
+    word.chars().count() > 0
+        && word.chars().all(|c| c.is_uppercase() || c == '.')
+        && !word.ends_with('.')
+}
+
+/// Make "canonical" English spelling of a character
+fn canonical_char(c: char) -> Option<&'static str> {
+    if is_apostrophe(c) {
+        Some("’")
+    } else if c == 'æ' {
+        Some("ae")
+    } else {
+        None
+    }
 }
