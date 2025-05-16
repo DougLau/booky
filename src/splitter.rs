@@ -164,7 +164,7 @@ where
             handler.text(chunk);
             chunk.clear();
             chunk.push('.');
-            handler.text(chunk);
+            handler.symbol(chunk);
             chunk.clear();
         } else {
             handler.text(chunk);
