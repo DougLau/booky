@@ -32511,10 +32511,12 @@ inflation:N
 inflationary:A
 inflator:N
 inflect:V
+inflectable:A
 inflected:A
 inflection:N
 inflectional:A
 inflectionless:A
+inflective:A
 inflexibility:N
 inflexible:A
 inflexibleness:N
@@ -35839,7 +35841,7 @@ leitmotiv:N
 lek:N
 lekvar:N
 lemanderin:N
-lemma:N
+lemma:N,_s,_ta
 lemming:N
 lemniscate:N
 lemniscus:N
