@@ -51,11 +51,6 @@ impl WordEntry {
         self.seen
     }
 
-    /// Get mutable seen count
-    fn seen_mut(&mut self) -> &mut usize {
-        &mut self.seen
-    }
-
     /// Get word
     pub fn word(&self) -> &str {
         &self.word
@@ -106,14 +101,14 @@ impl WordTally {
     /// Tally a chunk
     fn tally_chunk(&mut self, chunk: &str) {
         if chunk.chars().count() == 1 || self.lex.contains(chunk) {
-            self.tally_word(chunk, 1);
+            self.tally_word(chunk);
             return;
         }
         // not in lexicon; split up compound on hyphens
         let mut first = true;
         for ch in chunk.split('-') {
             if !first {
-                self.tally_word("-", 1);
+                self.tally_word("-");
             }
             self.tally_word_splittable(ch);
             first = false;
@@ -125,16 +120,16 @@ impl WordTally {
         if word.contains('’') && !self.lex.contains(word) {
             for word in contractions::split(word) {
                 if !word.is_empty() {
-                    self.tally_word(word, 1);
+                    self.tally_word(word);
                 }
             }
         } else if !word.is_empty() {
-            self.tally_word(word, 1);
+            self.tally_word(word);
         }
     }
 
     /// Tally a word
-    fn tally_word(&mut self, word: &str, count: usize) {
+    fn tally_word(&mut self, word: &str) {
         let kind = if self.lex.contains(word) {
             Kind::Lexicon
         } else {
@@ -149,11 +144,11 @@ impl WordTally {
                     e.word = we.word;
                     e.kind = we.kind;
                 }
-                *e.seen_mut() += count;
+                e.seen += 1;
             }
             None => {
                 let mut we = we;
-                *we.seen_mut() = count;
+                we.seen = 1;
                 self.words.insert(key, we);
             }
         }
