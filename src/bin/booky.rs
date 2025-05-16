@@ -17,7 +17,7 @@ struct Args {
 #[argh(subcommand)]
 enum SubCommand {
     Kind(KindCmd),
-    Dict(DictCmd),
+    Lex(LexCmd),
     Nonsense(Nonsense),
 }
 
@@ -28,9 +28,9 @@ struct KindCmd {
     /// list words of all kinds
     #[argh(switch, short = 'A')]
     all: bool,
-    /// list dictionary words
-    #[argh(switch, short = 'd')]
-    dictionary: bool,
+    /// list lexicon words
+    #[argh(switch, short = 'l')]
+    lexicon: bool,
     /// list foreign words (non-English)
     #[argh(switch, short = 'f')]
     foreign: bool,
@@ -57,10 +57,10 @@ struct KindCmd {
     unknown: bool,
 }
 
-/// List words from dictionary
+/// List words from lexicon
 #[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "dict")]
-struct DictCmd {
+#[argh(subcommand, name = "lex")]
+struct LexCmd {
     /// list all word forms
     #[argh(switch, short = 'f')]
     forms: bool,
@@ -101,7 +101,7 @@ impl KindCmd {
             return true;
         }
         match kind {
-            Kind::Dictionary => self.dictionary,
+            Kind::Lexicon => self.lexicon,
             Kind::Foreign => self.foreign,
             Kind::Ordinal => self.ordinal,
             Kind::Roman => self.roman,
@@ -143,7 +143,7 @@ impl KindCmd {
     }
 }
 
-impl DictCmd {
+impl LexCmd {
     /// Run command
     fn run(self) -> Result<()> {
         if self.forms {
@@ -224,7 +224,7 @@ fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
         Some(SubCommand::Kind(cmd)) => cmd.run()?,
-        Some(SubCommand::Dict(cmd)) => cmd.run()?,
+        Some(SubCommand::Lex(cmd)) => cmd.run()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {

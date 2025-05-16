@@ -1,6 +1,6 @@
 ## Word Entries
 
-The dictionary `english.csv` is a special CSV format with extra rules:
+The lexicon `english.csv` is a special CSV format with extra rules:
 
 * Value 1: **base word** : **word class** {.**attributes**}
 * Values 2+: **irregular forms**

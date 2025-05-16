@@ -21,8 +21,8 @@ enum Contraction {
 /// Word kind
 #[derive(Clone, Copy, Debug, Eq, PartialEq, PartialOrd, Ord, Hash)]
 pub enum Kind {
-    /// Dictionary
-    Dictionary,
+    /// In Lexicon
+    Lexicon,
     /// Foreign (non-English)
     Foreign,
     /// Ordinal number
@@ -76,7 +76,7 @@ impl Kind {
     pub fn all() -> &'static [Self] {
         use Kind::*;
         &[
-            Dictionary, Foreign, Ordinal, Roman, Number, Acronym, Proper,
+            Lexicon, Foreign, Ordinal, Roman, Number, Acronym, Proper,
             Symbol, Unknown,
         ]
     }
@@ -85,7 +85,7 @@ impl Kind {
     pub fn code(self) -> char {
         use Kind::*;
         match self {
-            Dictionary => 'd',
+            Lexicon => 'l',
             Foreign => 'f',
             Ordinal => 'o',
             Roman => 'r',
@@ -384,7 +384,7 @@ impl WordTally {
             return;
         }
         let kind = if self.lex.contains(word) {
-            Kind::Dictionary
+            Kind::Lexicon
         } else {
             Kind::from(word)
         };

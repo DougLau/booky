@@ -14,7 +14,7 @@ listed:
 ```
 > booky kind < Dr_Jeckyll_And_Mr_Hyde.txt
 
- 3863 d Dictionary
+ 3863 l Lexicon
     1 f Foreign
     4 o Ordinal
     0 r Roman
@@ -27,29 +27,29 @@ listed:
 
 Command-line options can be added to list all words of a kind.
 
-Option | Kind       | Description
--------|------------|-----------------------------
-`-d`   | Dictionary | Found in built-in dictionary
-`-f`   | Foreign    | Foreign words (non-English)
-`-o`   | Ordinal    | Ordinal numbers (1st, 2nd, etc.)
-`-r`   | Roman      | Roman numerals (IV, LXI, etc.)
-`-n`   | Number     | Other words containing numbers
-`-a`   | Acronym    | Acronyms / initialisms (ALL-CAPS)
-`-p`   | Proper     | Proper names / nouns
-`-s`   | Symbol     | Symbols / letters
-`-u`   | Unknown    | Unknown (no other kind)
-`-A`   | All        | All kinds
+Option | Kind    | Description
+-------|---------|--------------------------
+`-l`   | Lexicon | Found in built-in lexicon
+`-f`   | Foreign | Foreign words (non-English)
+`-o`   | Ordinal | Ordinal numbers (1st, 2nd, etc.)
+`-r`   | Roman   | Roman numerals (IV, LXI, etc.)
+`-n`   | Number  | Other words containing numbers
+`-a`   | Acronym | Acronyms / initialisms (ALL-CAPS)
+`-p`   | Proper  | Proper names / nouns
+`-s`   | Symbol  | Symbols / letters
+`-u`   | Unknown | Unknown (no other kind)
+`-A`   | All     | All kinds
 
-### Dictionary
+### Lexicon
 
-The `dict` sub-command lists words from the built-in dictionary.
+The `lex` sub-command lists words from the built-in lexicon.
 
 ```
-> booky dict words
+> booky lex words
 
 word words
 word words wording worded
 ```
 
-- With no options, all dictionary entries are listed
+- With no options, all lexicon entries are listed
 - Using `-f` lists all known word forms
