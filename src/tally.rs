@@ -79,8 +79,8 @@ impl ChunkHandler for &mut WordTally {
     fn symbol(&mut self, ch: &str) {
         self.tally_chunk(ch);
     }
-    fn discard(&mut self, _ch: &str) {
-        // ignore discarded chunks
+    fn boundary(&mut self, _ch: &str) {
+        // discard boundary chunks
     }
 }
 

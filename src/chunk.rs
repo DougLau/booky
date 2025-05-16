@@ -6,8 +6,8 @@ pub trait ChunkHandler {
     fn text(&mut self, ch: &str);
     /// Handle a symbol chunk
     fn symbol(&mut self, ch: &str);
-    /// Handle a discard chunk
-    fn discard(&mut self, ch: &str);
+    /// Handle a boundary chunk
+    fn boundary(&mut self, ch: &str);
 }
 
 /// Character chunk types
@@ -17,8 +17,8 @@ enum Chunk {
     Text,
     /// Any non-`Text` displayable character
     Symbol,
-    /// Discard character
-    Discard,
+    /// Word boundary character (whitespace, control, etc.)
+    Boundary,
 }
 
 /// Splitter for separating text into characters
@@ -82,15 +82,21 @@ where
 impl Chunk {
     /// Determine chunk type from a single character
     fn from_char(c: char) -> Self {
-        if c.is_whitespace() || c.is_control() || c == '\u{FEFF}' {
-            // ZERO WIDTH NO-BREAK SPACE `U+FEFF` is sometimes used as a BOM
-            Chunk::Discard
+        if is_boundary(c) {
+            Chunk::Boundary
         } else if c.is_alphanumeric() || is_apostrophe(c) {
             Chunk::Text
         } else {
             Chunk::Symbol
         }
     }
+}
+
+/// Check if a character is a word "boundary" (non-Symbol)
+fn is_boundary(c: char) -> bool {
+    // ZERO WIDTH SPACE `U+200B` is a non-whitespace "space" (WTF?!)
+    // ZERO WIDTH NO-BREAK SPACE `U+FEFF` is sometimes used as a BOM
+    c.is_whitespace() || c.is_control() || c == '\u{200B}' || c == '\u{FEFF}'
 }
 
 /// Check if a character is an apostrophe
@@ -117,10 +123,10 @@ where
     for ch in CharSplitter::new(reader) {
         let c = ch?;
         match Chunk::from_char(c) {
-            Chunk::Discard => {
+            Chunk::Boundary => {
                 handle_text(handler, &mut chunk);
                 chunk.push(c);
-                handler.discard(&chunk);
+                handler.boundary(&chunk);
                 chunk.clear();
             }
             Chunk::Symbol => {
