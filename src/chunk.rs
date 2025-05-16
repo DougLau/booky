@@ -105,7 +105,7 @@ fn is_apostrophe(c: char) -> bool {
 }
 
 /// Parse text into chunks
-pub fn chunk_text<R, H>(
+pub fn parse_text<R, H>(
     reader: R,
     handler: &mut H,
 ) -> Result<(), std::io::Error>

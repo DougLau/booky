@@ -1,4 +1,4 @@
-use crate::splitter::{ChunkHandler, chunk_text};
+use crate::chunk::{ChunkHandler, parse_text};
 use crate::word::Lexicon;
 use std::collections::HashMap;
 use std::fmt;
@@ -326,7 +326,7 @@ impl WordTally {
         R: BufRead,
     {
         let mut h = self;
-        chunk_text(reader, &mut h)?;
+        parse_text(reader, &mut h)?;
         Ok(())
     }
 
