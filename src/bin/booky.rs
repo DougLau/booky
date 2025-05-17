@@ -86,8 +86,8 @@ impl KindCmd {
             );
             return Ok(());
         }
-        let mut tally = WordTally::new(Lexicon::builtin());
-        tally.parse_text(stdin.lock())?;
+        let mut tally = WordTally::new();
+        tally.parse_text(Lexicon::builtin(), stdin.lock())?;
         if Kind::all().iter().any(|k| self.show_kind(*k)) {
             self.write_entries(tally)
         } else {

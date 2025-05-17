@@ -1,6 +1,5 @@
-use crate::chunk::{ChunkHandler, parse_text};
-use crate::contractions;
 use crate::kind::Kind;
+use crate::parse::{Chunk, Parser};
 use crate::word::Lexicon;
 use std::collections::HashMap;
 use std::fmt;
@@ -20,8 +19,6 @@ pub struct WordEntry {
 
 /// Word tally list
 pub struct WordTally {
-    /// Lexicon
-    lex: Lexicon,
     /// Words in list
     words: HashMap<String, WordEntry>,
 }
@@ -41,8 +38,7 @@ impl fmt::Display for WordEntry {
 
 impl WordEntry {
     /// Create a new word entry
-    fn new(seen: usize, word: &str, kind: Kind) -> Self {
-        let word = word.to_string();
+    fn new(seen: usize, word: String, kind: Kind) -> Self {
         WordEntry { seen, word, kind }
     }
 
@@ -67,76 +63,36 @@ fn count_uppercase(word: &str) -> usize {
     word.chars().filter(|c| c.is_uppercase()).count()
 }
 
-impl ChunkHandler for &mut WordTally {
-    fn text(&mut self, ch: &str) {
-        self.tally_chunk(ch);
-    }
-    fn symbol(&mut self, ch: &str) {
-        self.tally_chunk(ch);
-    }
-    fn boundary(&mut self, _ch: &str) {
-        // discard boundary chunks
-    }
-}
-
 impl WordTally {
     /// Create a new word tally
-    pub fn new(lex: Lexicon) -> Self {
+    pub fn new() -> Self {
         WordTally {
-            lex,
             words: HashMap::new(),
         }
     }
 
     /// Parse text from a reader
-    pub fn parse_text<R>(&mut self, reader: R) -> Result<(), std::io::Error>
+    pub fn parse_text<R>(
+        &mut self,
+        lex: Lexicon,
+        reader: R,
+    ) -> Result<(), std::io::Error>
     where
         R: BufRead,
     {
-        let mut h = self;
-        parse_text(reader, &mut h)?;
+        for chunk in Parser::new(lex, reader) {
+            let (chunk, text, kind) = chunk?;
+            if chunk != Chunk::Boundary {
+                self.tally_word(text, kind);
+            }
+        }
         Ok(())
     }
 
-    /// Tally a chunk
-    fn tally_chunk(&mut self, chunk: &str) {
-        if chunk.chars().count() == 1 || self.lex.contains(chunk) {
-            self.tally_word(chunk);
-            return;
-        }
-        // not in lexicon; split up compound on hyphens
-        let mut first = true;
-        for ch in chunk.split('-') {
-            if !first {
-                self.tally_word("-");
-            }
-            self.tally_word_splittable(ch);
-            first = false;
-        }
-    }
-
-    /// Tally a splittable (contraction) word
-    fn tally_word_splittable(&mut self, word: &str) {
-        if word.contains('’') && !self.lex.contains(word) {
-            for word in contractions::split(word) {
-                if !word.is_empty() {
-                    self.tally_word(word);
-                }
-            }
-        } else if !word.is_empty() {
-            self.tally_word(word);
-        }
-    }
-
     /// Tally a word
-    fn tally_word(&mut self, word: &str) {
-        let kind = if self.lex.contains(word) {
-            Kind::Lexicon
-        } else {
-            Kind::from(word)
-        };
-        let we = WordEntry::new(1, word, kind);
+    fn tally_word(&mut self, word: String, kind: Kind) {
         let key = word.to_lowercase();
+        let we = WordEntry::new(1, word, kind);
         match self.words.get_mut(&key) {
             Some(e) => {
                 // use variant with fewest uppercase characters
