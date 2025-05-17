@@ -36,28 +36,32 @@ const CONTRACTIONS: &[Contraction] = &[
 ];
 
 impl Contraction {
-    /// Check if a word uses the contraction
-    fn check(&self, word: &str) -> bool {
+    /// Try to expand the contraction
+    fn try_expand<'a>(&self, word: &'a str) -> Option<(&'a str, &'a str)> {
         match self {
-            Contraction::Full(c, _, _) => word.eq_ignore_ascii_case(c),
-            Contraction::Prefix(p, _) => word.starts_with(p),
-            Contraction::Suffix(s, _) => word.ends_with(s),
+            Contraction::Full(c, a, b) => {
+                if word.eq_ignore_ascii_case(c) {
+                    return Some((a, b));
+                }
+            }
+            Contraction::Prefix(p, ex) => {
+                if let Some((a, b)) = word.split_at_checked(p.len()) {
+                    if a.eq_ignore_ascii_case(p) {
+                        return Some((ex, b));
+                    }
+                }
+            }
+            Contraction::Suffix(s, ex) => {
+                if let Some((a, b)) =
+                    word.split_at_checked(word.len() - s.len())
+                {
+                    if b.eq_ignore_ascii_case(s) {
+                        return Some((a, ex));
+                    }
+                }
+            }
         }
-    }
-
-    /// Expand the contraction
-    fn expand<'a>(&self, word: &'a str) -> Vec<&'a str> {
-        match self {
-            Contraction::Full(_, a, b) => vec![a, b],
-            Contraction::Prefix(p, ex) => match word.strip_prefix(p) {
-                Some(base) => vec![base, ex],
-                None => vec![word],
-            },
-            Contraction::Suffix(s, ex) => match word.strip_suffix(s) {
-                Some(base) => vec![base, ex],
-                None => vec![word],
-            },
-        }
+        None
     }
 }
 
@@ -66,22 +70,24 @@ pub fn split(word: &str) -> Vec<&str> {
     let mut words = vec![word];
     let mut ex = Vec::with_capacity(2);
     while let Some(word) = words.pop() {
-        let mut expanded = split_contraction(word);
-        if expanded.is_empty() {
+        if let Some(word) = split_contraction(&mut words, word) {
             ex.push(word);
-        } else {
-            words.append(&mut expanded);
         }
     }
     ex
 }
 
 /// Split one contraction
-fn split_contraction(word: &str) -> Vec<&str> {
+fn split_contraction<'a>(
+    words: &mut Vec<&'a str>,
+    word: &'a str,
+) -> Option<&'a str> {
     for con in CONTRACTIONS {
-        if con.check(word) {
-            return con.expand(word);
+        if let Some(ex) = con.try_expand(word) {
+            words.push(ex.0);
+            words.push(ex.1);
+            return None;
         }
     }
-    vec![]
+    Some(word)
 }
