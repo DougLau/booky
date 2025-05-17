@@ -32,7 +32,7 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
     Contraction::Suffix("’", ""),  // possessive
-    Contraction::Prefix("’", ""),  // weird quote
+    Contraction::Prefix("’", "’"), // nested quote
 ];
 
 impl Contraction {

@@ -126,8 +126,6 @@ fn is_dot_appendable(word: &str) -> bool {
 fn canonical_char(c: char) -> Option<&'static str> {
     if is_apostrophe(c) {
         Some("’")
-    } else if c == 'æ' {
-        Some("ae")
     } else {
         None
     }

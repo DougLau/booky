@@ -3476,6 +3476,11 @@ anyways:Av
 anywhere:Av
 anywhere:D
 anywise:Av
+anæsthetic:A
+anæsthetic:N
+anæsthetist:N
+anæsthetize:V
+anæsthetized:A
 aorist:N
 aoristic:A
 aorta:N
@@ -4023,6 +4028,10 @@ archosaurian:A
 archosaurian:N
 archpriest:N
 archway:N
+archæologic:A
+archæological:A
+archæologist:N
+archæology:N
 arciform:A
 arcminute:N
 arcsecond:N
@@ -20500,6 +20509,7 @@ dystopian:A
 dystrophy:N
 dysuria:N
 dziggetai:N
+dæmon:N
 début:N
 e-mail:N
 e-mail:V
@@ -21484,6 +21494,8 @@ encyclopedia:N
 encyclopedic:A
 encyclopedism:N
 encyclopedist:N
+encyclopædia:N
+encyclopædic:A
 encysted:A
 end:N
 end:V
@@ -69291,7 +69303,7 @@ versipellous:A
 verso:N
 verst:N
 versus:P.t
-vertebra:N,_e,_s
+vertebra:N,_e,vertebræ,_s
 vertebral:A
 vertebrate:A
 vertebrate:N
@@ -71898,6 +71910,10 @@ zymolytic:A
 zymosis:N,zymoses
 zymotic:A
 zymurgy:N
+æsthetic:A
+æsthetic:N
+æsthetical:A
+æsthetically:Av
 éclair:N
 ’hood:N
 ’tween:Av
