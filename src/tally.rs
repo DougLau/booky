@@ -18,6 +18,7 @@ pub struct WordEntry {
 }
 
 /// Word tally list
+#[derive(Default)]
 pub struct WordTally {
     /// Words in list
     words: HashMap<String, WordEntry>,
@@ -66,9 +67,7 @@ fn count_uppercase(word: &str) -> usize {
 impl WordTally {
     /// Create a new word tally
     pub fn new() -> Self {
-        WordTally {
-            words: HashMap::new(),
-        }
+        Self::default()
     }
 
     /// Parse text from a reader
