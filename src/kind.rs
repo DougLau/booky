@@ -72,19 +72,7 @@ impl From<&str> for Kind {
 
 /// Check if a word is foreign (not English)
 fn is_foreign(word: &str) -> bool {
-    word.chars()
-        .any(|c| c.is_alphabetic() && !c.is_ascii() && !is_apostrophe(c))
-}
-
-/// Check if a character is an apostrophe
-///
-/// Unicode has several different apostrophes:
-///  - ' `U+0027` (ASCII APOSTROPHE)
-///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE)
-///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
-///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
-fn is_apostrophe(c: char) -> bool {
-    c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
+    word.chars().any(|c| c.is_alphabetic() && !c.is_ascii())
 }
 
 /// Ordinal suffixes

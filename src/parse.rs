@@ -122,15 +122,6 @@ fn is_dot_appendable(word: &str) -> bool {
         && !word.ends_with('.')
 }
 
-/// Make "canonical" English spelling of a character
-fn canonical_char(c: char) -> Option<&'static str> {
-    if is_apostrophe(c) {
-        Some("’")
-    } else {
-        None
-    }
-}
-
 impl<R> Iterator for Parser<R>
 where
     R: BufRead,
@@ -196,10 +187,7 @@ where
                     self.push_symbol(c);
                     return;
                 }
-                Chunk::Text => match canonical_char(c) {
-                    Some(s) => self.text.push_str(s),
-                    None => self.text.push(c),
-                },
+                Chunk::Text => self.text.push(c),
             }
         }
         self.push_text();
@@ -237,7 +225,7 @@ where
     fn push_chunk(&mut self, chunk: Chunk, txt: String) {
         if txt.chars().count() == 1
             || self.lex.contains(&txt)
-            || !txt.contains(['-', '’'])
+            || !txt.chars().any(is_splittable)
         {
             self.push_word(chunk, txt);
             return;
@@ -255,7 +243,7 @@ where
 
     /// Push a splittable (contraction) word
     fn push_word_splittable(&mut self, word: &str) {
-        if word.contains('’') && !self.lex.contains(word) {
+        if word.chars().any(is_apostrophe) && !self.lex.contains(word) {
             for word in contractions::split(word) {
                 if !word.is_empty() {
                     self.push_word(Chunk::Text, String::from(word));
@@ -275,4 +263,9 @@ where
         };
         self.chunks.push(Ok((chunk, word, kind)));
     }
+}
+
+/// Check if a character is splittable
+fn is_splittable(c: char) -> bool {
+    c == '-' || is_apostrophe(c)
 }

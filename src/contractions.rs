@@ -40,13 +40,13 @@ impl Contraction {
     fn try_expand<'a>(&self, word: &'a str) -> Option<(&'a str, &'a str)> {
         match self {
             Contraction::Full(c, a, b) => {
-                if word.eq_ignore_ascii_case(c) {
+                if equals_contraction(c, word) {
                     return Some((a, b));
                 }
             }
             Contraction::Prefix(p, ex) => {
                 if let Some((a, b)) = word.split_at_checked(p.len()) {
-                    if a.eq_ignore_ascii_case(p) {
+                    if equals_contraction(p, a) {
                         return Some((ex, b));
                     }
                 }
@@ -55,7 +55,7 @@ impl Contraction {
                 if let Some((a, b)) =
                     word.split_at_checked(word.len() - s.len())
                 {
-                    if b.eq_ignore_ascii_case(s) {
+                    if equals_contraction(s, b) {
                         return Some((a, ex));
                     }
                 }
@@ -63,6 +63,32 @@ impl Contraction {
         }
         None
     }
+}
+
+/// Check if a contraction part equals a string
+fn equals_contraction(part: &str, word: &str) -> bool {
+    if part.chars().count() != word.chars().count() {
+        return false;
+    }
+    for (a, b) in part.chars().zip(word.chars()) {
+        let a = a.to_ascii_lowercase();
+        let b = b.to_ascii_lowercase();
+        if a != b && !(is_apostrophe(a) && is_apostrophe(b)) {
+            return false;
+        }
+    }
+    true
+}
+
+/// Check if a character is an apostrophe
+///
+/// Unicode has several different apostrophes:
+///  - ' `U+0027` (ASCII APOSTROPHE)
+///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE)
+///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
+///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
+fn is_apostrophe(c: char) -> bool {
+    c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
 }
 
 /// Split contractions
