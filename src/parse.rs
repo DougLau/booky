@@ -213,6 +213,7 @@ where
         if !text.is_empty() {
             // this check doesn't work for abbreviations...
             if text.ends_with('.')
+                && text.chars().count() > 2
                 && text.chars().filter(|c| *c == '.').count() == 1
             {
                 text.pop();
