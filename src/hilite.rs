@@ -26,19 +26,19 @@ fn style(kind: Kind, word: &str) -> Style {
                 return Style::new();
             };
             match wc {
-                WordClass::Noun => Style::new().bright_red().bold(),
-                WordClass::Pronoun => Style::new().red().bold(),
+                WordClass::Noun => Style::new().bright_blue().bold(),
+                WordClass::Pronoun => Style::new().bright_blue().italic(),
+                WordClass::Adjective => Style::new().bright_cyan().bold(),
                 WordClass::Verb => Style::new().bright_green(),
                 WordClass::Adverb => Style::new().green(),
-                WordClass::Adjective => Style::new().bright_yellow(),
                 _ => Style::new().bright_white(),
             }
         }
-        Kind::Foreign => Style::new().bright().italic(),
+        Kind::Foreign => Style::new().bright().bold().italic(),
         Kind::Ordinal | Kind::Roman | Kind::Number => {
-            Style::new().bright_blue()
+            Style::new().bright_red().bold()
         }
-        Kind::Proper => Style::new().bold(),
+        Kind::Proper => Style::new().bright().bold(),
         Kind::Symbol => Style::new().dim(),
         Kind::Unknown => Style::new().underline(),
         _ => Style::new(),
