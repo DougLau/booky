@@ -255,8 +255,8 @@ where
         if self.lex.contains(word) {
             return Kind::Lexicon;
         }
-        let mut kinds = Vec::new();
         if word.chars().any(is_apostrophe) {
+            let mut kinds = Vec::new();
             for w in contractions::split(word) {
                 if !w.is_empty() {
                     let k = self.word_kind(w);
@@ -266,8 +266,10 @@ where
                     kinds.push(k);
                 }
             }
+            kinds.pop().unwrap_or(Kind::Unknown)
+        } else {
+            Kind::from(word)
         }
-        kinds.pop().unwrap_or(Kind::Unknown)
     }
 
     /// Get word kind
