@@ -1,22 +1,5 @@
 use std::fmt;
 
-/// Word attributes
-#[derive(Clone, Copy, Debug, Eq, Hash, PartialEq, Ord, PartialOrd)]
-pub enum WordAttr {
-    /// `s`: Singulare Tantum (e.g. "dust" or "information")
-    SingulareTantum,
-    /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
-    PluraleTantum,
-    /// `n`: Proper (name) noun
-    Proper,
-    /// `a`: Auxiliary verb (e.g. "cannot")
-    Auxiliary,
-    /// `i` Intransitive verb or preposition
-    Intransitive,
-    /// `t` Transitive verb or preposition
-    Transitive,
-}
-
 /// Word class
 #[derive(Clone, Copy, Debug, Default, Eq, Hash, PartialEq, Ord, PartialOrd)]
 pub enum WordClass {
@@ -41,35 +24,36 @@ pub enum WordClass {
     Verb,
 }
 
+/// Word attributes
+#[derive(Clone, Copy, Debug, Eq, Hash, PartialEq, Ord, PartialOrd)]
+pub enum WordAttr {
+    /// `s`: Singulare Tantum (e.g. "dust" or "information")
+    SingulareTantum,
+    /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
+    PluraleTantum,
+    /// `n`: Proper (name) noun
+    Proper,
+    /// `a`: Auxiliary verb (e.g. "cannot")
+    Auxiliary,
+    /// `i` Intransitive verb or preposition
+    Intransitive,
+    /// `t` Transitive verb or preposition
+    Transitive,
+}
+
 /// Word
 #[derive(Clone, Eq, Hash, Ord, PartialEq, PartialOrd)]
 pub struct Word {
     /// Base word form
     base: String,
     /// Word class
-    word_class: Option<WordClass>,
+    word_class: WordClass,
     /// Attributes
     attr: String,
     /// Irregular forms
     irregular_forms: Vec<String>,
     /// All forms
     forms: Vec<String>,
-}
-
-impl TryFrom<char> for WordAttr {
-    type Error = ();
-
-    fn try_from(val: char) -> Result<Self, Self::Error> {
-        match val {
-            's' => Ok(Self::SingulareTantum),
-            'p' => Ok(Self::PluraleTantum),
-            'n' => Ok(Self::Proper),
-            'a' => Ok(Self::Auxiliary),
-            'i' => Ok(Self::Intransitive),
-            't' => Ok(Self::Transitive),
-            _ => Err(()),
-        }
-    }
 }
 
 impl TryFrom<&str> for WordClass {
@@ -108,6 +92,22 @@ impl fmt::Display for WordClass {
     }
 }
 
+impl TryFrom<char> for WordAttr {
+    type Error = ();
+
+    fn try_from(val: char) -> Result<Self, Self::Error> {
+        match val {
+            's' => Ok(Self::SingulareTantum),
+            'p' => Ok(Self::PluraleTantum),
+            'n' => Ok(Self::Proper),
+            'a' => Ok(Self::Auxiliary),
+            'i' => Ok(Self::Intransitive),
+            't' => Ok(Self::Transitive),
+            _ => Err(()),
+        }
+    }
+}
+
 impl TryFrom<&str> for Word {
     type Error = ();
 
@@ -117,7 +117,7 @@ impl TryFrom<&str> for Word {
         let (base, cla) = base.split_once(':').unwrap_or((base, ""));
         let base = base.to_string();
         let (wc, a) = cla.split_once('.').unwrap_or((cla, ""));
-        let word_class = WordClass::try_from(wc).ok();
+        let word_class = WordClass::try_from(wc).ok().unwrap_or_default();
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
@@ -146,17 +146,14 @@ impl TryFrom<&str> for Word {
 
 impl fmt::Debug for Word {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{}", self.base)?;
-        if let Some(wc) = self.word_class {
-            write!(fmt, ":{wc}")?;
-            if !self.attr.is_empty() {
-                write!(fmt, ".{}", self.attr)?;
-            }
-            for form in &self.irregular_forms {
-                match form.strip_prefix(&self.base) {
-                    Some(suffix) => write!(fmt, ",_{suffix}")?,
-                    None => write!(fmt, ",{form}")?,
-                }
+        write!(fmt, "{}:{}", self.base, self.word_class)?;
+        if !self.attr.is_empty() {
+            write!(fmt, ".{}", self.attr)?;
+        }
+        for form in &self.irregular_forms {
+            match form.strip_prefix(&self.base) {
+                Some(suffix) => write!(fmt, ",_{suffix}")?,
+                None => write!(fmt, ",{form}")?,
             }
         }
         Ok(())
@@ -165,12 +162,9 @@ impl fmt::Debug for Word {
 
 impl fmt::Display for Word {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{}", self.base)?;
-        if let Some(wc) = self.word_class {
-            write!(fmt, ":{wc}")?;
-            if !self.attr.is_empty() {
-                write!(fmt, ".{}", self.attr)?;
-            }
+        write!(fmt, "{}:{}", self.base, self.word_class)?;
+        if !self.attr.is_empty() {
+            write!(fmt, ".{}", self.attr)?;
         }
         Ok(())
     }
@@ -183,7 +177,7 @@ impl Word {
     }
 
     /// Get the word class
-    pub fn word_class(&self) -> Option<WordClass> {
+    pub fn word_class(&self) -> WordClass {
         self.word_class
     }
 
@@ -229,14 +223,14 @@ impl Word {
     /// Build regular word forms
     fn build_regular_forms(&mut self) {
         match self.word_class {
-            Some(WordClass::Adjective) if self.count_syllables() < 4 => {
+            WordClass::Adjective if self.count_syllables() < 4 => {
                 self.forms.push(adjective_comparative(&self.base));
                 self.forms.push(adjective_superlative(&self.base));
             }
-            Some(WordClass::Noun) if self.has_plural() => {
+            WordClass::Noun if self.has_plural() => {
                 self.forms.push(noun_plural(&self.base));
             }
-            Some(WordClass::Verb) => {
+            WordClass::Verb => {
                 self.forms.push(verb_present(&self.base));
                 self.forms.push(verb_present_participle(&self.base));
                 self.forms.push(verb_past(&self.base));

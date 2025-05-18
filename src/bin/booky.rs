@@ -225,11 +225,11 @@ fn choose_word<'a>(words: &[&'a Word]) -> &'a Word {
 fn nonsense() {
     let nouns: Vec<_> = lex::builtin()
         .iter()
-        .filter(|w| w.word_class() == Some(WordClass::Noun))
+        .filter(|w| w.word_class() == WordClass::Noun)
         .collect();
     let verbs: Vec<_> = lex::builtin()
         .iter()
-        .filter(|w| w.word_class() == Some(WordClass::Verb))
+        .filter(|w| w.word_class() == WordClass::Verb)
         .collect();
     let subject = choose_word(&nouns[..]).base();
     let verb = choose_word(&verbs[..]).base();

@@ -13,9 +13,9 @@ fn main() -> Result<()> {
 }
 
 fn keep(lex: &Lexicon, word: &Word) -> bool {
-    if let Some(WordClass::Noun) = word.word_class() {
+    if WordClass::Noun == word.word_class() {
         for w in lex.iter() {
-            if let Some(WordClass::Noun) = w.word_class() {
+            if WordClass::Noun == w.word_class() {
                 if w != word {
                     for form in w.forms() {
                         if form == word.base() {
