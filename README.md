@@ -21,7 +21,7 @@ listed:
     2 n Number
    12 a Acronym
    32 p Proper
-   15 s Symbol
+   16 s Symbol
     7 u Unknown
 ```
 
@@ -44,12 +44,6 @@ Option | Kind    | Description
 
 The `lex` sub-command lists words from the built-in lexicon.
 
-```
-> booky lex words
-
-word words
-word words wording worded
-```
-
+- Looks up all entries matching the provided word
+- The `-f` option lists all known word forms
 - With no options, all lexicon entries are listed
-- Using `-f` lists all known word forms
