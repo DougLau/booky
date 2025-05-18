@@ -5,8 +5,8 @@ use booky::kind::Kind;
 use booky::lex;
 use booky::tally::WordTally;
 use booky::word::{Word, WordClass};
-use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
-use yansi::{Color::Green, Color::White, Paint};
+use std::io::{IsTerminal, stdin};
+use yansi::{Paint, Style};
 
 /// Command-line arguments
 #[derive(FromArgs, Debug, PartialEq)]
@@ -90,7 +90,7 @@ impl HiliteCmd {
         if stdin.is_terminal() {
             eprintln!(
                 "{0} stdin must be redirected {0}",
-                "!!!".yellow().bright()
+                "!!!".bright_yellow()
             );
             return Ok(());
         }
@@ -106,7 +106,7 @@ impl KindCmd {
         if stdin.is_terminal() {
             eprintln!(
                 "{0} stdin must be redirected {0}",
-                "!!!".yellow().bright()
+                "!!!".bright_yellow()
             );
             return Ok(());
         }
@@ -139,29 +139,26 @@ impl KindCmd {
 
     /// Write entries of selected kinds
     fn write_entries(self, tally: WordTally) -> Result<()> {
-        let mut writer = BufWriter::new(stdout());
         let mut count = 0;
         for entry in tally.into_entries() {
             if self.show_kind(entry.kind()) {
-                writeln!(writer, "{entry}")?;
+                println!("{entry}");
                 count += 1;
             }
         }
-        writeln!(writer, "\ncount: {}", count.bright().yellow())?;
+        println!("\ncount: {}", count.bright_yellow());
         Ok(())
     }
 
     /// Write summary of kinds
     fn write_summary(self, tally: WordTally) -> Result<()> {
-        let mut writer = BufWriter::new(stdout());
         for kind in Kind::all() {
             let count = tally.count_kind(*kind);
-            writeln!(
-                writer,
+            println!(
                 "{:5} {} {kind:?}",
-                count.bright().yellow(),
+                count.bright_yellow(),
                 kind.code().yellow()
-            )?;
+            );
         }
         Ok(())
     }
@@ -189,32 +186,26 @@ impl LexCmd {
 
     /// Lookup a word form
     fn lookup(&self, word: &str) -> Result<()> {
-        let mut writer = BufWriter::new(stdout());
         let lex = lex::builtin();
         if lex.contains(word) {
             for w in lex.word_entries(word) {
                 for f in w.forms() {
                     let mut style = if f == word {
-                        Green.bright().underline().on_primary()
+                        Style::new().bright_yellow().italic()
                     } else {
-                        White.on_primary()
+                        Style::new()
                     };
                     if f == w.base() {
-                        style = style.italic();
-                        write!(
-                            writer,
-                            "{}:{} ",
-                            f.paint(style),
-                            w.word_class()
-                        )?;
+                        style = style.bold();
+                        print!("{}:{} ", f.paint(style), w.word_class().bold());
                     } else {
-                        write!(writer, "{} ", f.paint(style))?;
+                        print!("{} ", f.paint(style));
                     }
                 }
-                writeln!(writer)?;
+                println!();
             }
         } else {
-            writeln!(writer, "`{word}` not found")?;
+            println!("`{word}` not found");
         }
         Ok(())
     }

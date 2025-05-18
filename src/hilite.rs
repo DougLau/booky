@@ -28,10 +28,10 @@ fn style(kind: Kind, word: &str) -> Style {
             }
             let word = ents.pop().unwrap();
             match word.word_class() {
-                WordClass::Noun => Style::new().bright_red(),
-                WordClass::Pronoun => Style::new().red(),
+                WordClass::Noun => Style::new().bright_red().bold(),
+                WordClass::Pronoun => Style::new().red().bold(),
                 WordClass::Verb => Style::new().bright_green(),
-                WordClass::Adverb => Style::new().bright_cyan(),
+                WordClass::Adverb => Style::new().green(),
                 _ => Style::new().bright_white(),
             }
         }
