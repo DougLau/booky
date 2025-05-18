@@ -38,10 +38,10 @@ fn style(kind: Kind, word: &str) -> Style {
         Kind::Ordinal | Kind::Roman | Kind::Number => {
             Style::new().bright_red().bold()
         }
+        Kind::Acronym => Style::new().bold(),
         Kind::Proper => Style::new().bright().bold(),
         Kind::Symbol => Style::new().dim(),
         Kind::Unknown => Style::new().underline(),
-        _ => Style::new(),
     }
 }
 
