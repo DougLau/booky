@@ -47,3 +47,7 @@ The `lex` sub-command lists words from the built-in lexicon.
 - Looks up all entries matching the provided word
 - The `-f` option lists all known word forms
 - With no options, all lexicon entries are listed
+
+### Highlighting
+
+The `hl` sub-command adds highlighting to a text.

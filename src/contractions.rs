@@ -9,9 +9,16 @@ enum Contraction {
 const CONTRACTIONS: &[Contraction] = &[
     Contraction::Full("ain’t", "am", "not"),
     Contraction::Full("can’t", "can", "not"),
+    Contraction::Full("couldn’t", "could", "not"),
+    Contraction::Full("daren’t", "dare", "not"),
+    Contraction::Full("don’t", "do", "not"),
+    Contraction::Full("doesn’t", "does", "not"),
+    Contraction::Full("isn’t", "is", "not"),
+    Contraction::Full("needn’t", "need", "not"),
     Contraction::Full("shan’t", "shall", "not"),
+    Contraction::Full("wasn’t", "was", "not"),
     Contraction::Full("won’t", "will", "not"),
-    Contraction::Suffix("n’t", "not"),
+    Contraction::Full("wouldn’t", "would", "not"),
     Contraction::Suffix("’ve", "have"),
     Contraction::Suffix("’ll", "will"),
     Contraction::Full("I’m", "I", "am"),
@@ -47,7 +54,7 @@ impl Contraction {
             Contraction::Prefix(p, ex) => {
                 if let Some((a, b)) = word.split_at_checked(p.len()) {
                     if equals_contraction(p, a) {
-                        return Some((ex, b));
+                        return Some((b, ex));
                     }
                 }
             }
@@ -56,7 +63,7 @@ impl Contraction {
                     word.split_at_checked(word.len() - s.len())
                 {
                     if equals_contraction(s, b) {
-                        return Some((a, ex));
+                        return Some((ex, a));
                     }
                 }
             }
@@ -110,8 +117,15 @@ fn split_contraction<'a>(
 ) -> Option<&'a str> {
     for con in CONTRACTIONS {
         if let Some(ex) = con.try_expand(word) {
-            words.push(ex.0);
-            words.push(ex.1);
+            if !ex.0.is_empty() {
+                words.push(ex.0);
+            }
+            if !ex.0.is_empty() && !ex.1.is_empty() {
+                words.push(" ");
+            }
+            if !ex.1.is_empty() {
+                words.push(ex.1);
+            }
             return None;
         }
     }

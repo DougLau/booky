@@ -1,5 +1,6 @@
 use anyhow::Result;
 use argh::FromArgs;
+use booky::hilite;
 use booky::kind::Kind;
 use booky::tally::WordTally;
 use booky::word::{Lexicon, Word, WordClass};
@@ -17,10 +18,16 @@ struct Args {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand)]
 enum SubCommand {
+    Hilite(HiliteCmd),
     Kind(KindCmd),
     Lex(LexCmd),
     Nonsense(Nonsense),
 }
+
+/// Hilight text from stdin
+#[derive(FromArgs, Debug, PartialEq)]
+#[argh(subcommand, name = "hl")]
+struct HiliteCmd {}
 
 /// Group words by kind from stdin
 #[derive(FromArgs, Debug, PartialEq)]
@@ -74,6 +81,22 @@ struct LexCmd {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "nonsense")]
 struct Nonsense {}
+
+impl HiliteCmd {
+    /// Run command
+    fn run(self) -> Result<()> {
+        let stdin = stdin();
+        if stdin.is_terminal() {
+            eprintln!(
+                "{0} stdin must be redirected {0}",
+                "!!!".yellow().bright()
+            );
+            return Ok(());
+        }
+        hilite::hilite_text(Lexicon::builtin(), stdin.lock())?;
+        Ok(())
+    }
+}
 
 impl KindCmd {
     /// Run command
@@ -223,6 +246,7 @@ fn nonsense() {
 fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
+        Some(SubCommand::Hilite(cmd)) => cmd.run()?,
         Some(SubCommand::Kind(cmd)) => cmd.run()?,
         Some(SubCommand::Lex(cmd)) => cmd.run()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
