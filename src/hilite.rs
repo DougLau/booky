@@ -1,6 +1,6 @@
 use crate::kind::Kind;
 use crate::parse::Parser;
-use crate::word::Lexicon;
+use crate::lex::Lexicon;
 use std::io::BufRead;
 use yansi::Paint;
 

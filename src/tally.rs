@@ -1,6 +1,6 @@
 use crate::kind::Kind;
 use crate::parse::{Chunk, Parser};
-use crate::word::Lexicon;
+use crate::lex::Lexicon;
 use std::collections::HashMap;
 use std::fmt;
 use std::io::BufRead;

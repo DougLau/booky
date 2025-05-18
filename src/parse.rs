@@ -1,6 +1,6 @@
 use crate::contractions;
 use crate::kind::Kind;
-use crate::word::Lexicon;
+use crate::lex::Lexicon;
 use std::io::{self, BufRead, Bytes};
 
 /// Character chunk types

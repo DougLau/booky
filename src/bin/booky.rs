@@ -2,8 +2,9 @@ use anyhow::Result;
 use argh::FromArgs;
 use booky::hilite;
 use booky::kind::Kind;
+use booky::lex::Lexicon;
 use booky::tally::WordTally;
-use booky::word::{Lexicon, Word, WordClass};
+use booky::word::{Word, WordClass};
 use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
 use yansi::{Color::Green, Color::White, Paint};
 
