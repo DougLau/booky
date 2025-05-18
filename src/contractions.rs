@@ -45,18 +45,22 @@ impl Contraction {
                 }
             }
             Contraction::Prefix(p, ex) => {
-                if let Some((a, b)) = word.split_at_checked(p.len()) {
-                    if equals_contraction(p, a) {
-                        return Some((b, ex));
+                let len = p.chars().count();
+                if let Some((i, _c)) = word.char_indices().nth(len) {
+                    if let Some((a, b)) = word.split_at_checked(i) {
+                        if equals_contraction(p, a) {
+                            return Some((b, ex));
+                        }
                     }
                 }
             }
             Contraction::Suffix(s, ex) => {
-                if let Some((a, b)) =
-                    word.split_at_checked(word.len() - s.len())
-                {
-                    if equals_contraction(s, b) {
-                        return Some((ex, a));
+                let len = s.chars().count() - 1;
+                if let Some((i, _c)) = word.char_indices().rev().nth(len) {
+                    if let Some((a, b)) = word.split_at_checked(i) {
+                        if equals_contraction(s, b) {
+                            return Some((ex, a));
+                        }
                     }
                 }
             }
