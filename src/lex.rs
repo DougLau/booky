@@ -10,6 +10,16 @@ pub struct Lexicon {
     forms: HashMap<String, Vec<usize>>,
 }
 
+impl IntoIterator for Lexicon {
+    type Item = Word;
+    type IntoIter = std::vec::IntoIter<Self::Item>;
+
+    fn into_iter(mut self) -> Self::IntoIter {
+        self.words.sort();
+        self.words.into_iter()
+    }
+}
+
 impl Lexicon {
     /// Create a new empty lexicon
     pub fn new() -> Self {
@@ -48,19 +58,21 @@ impl Lexicon {
         }
     }
 
-    /// Sort the words
-    pub fn sort(&mut self) {
-        self.words.sort();
-    }
-
     /// Check if lexicon contains a word
     pub fn contains(&self, word: &str) -> bool {
         self.forms.contains_key(&word.to_lowercase())
     }
 
-    /// Get an iterator of words
-    pub fn iter(&self) -> impl Iterator<Item = &Word> {
-        self.words.iter()
+    /// Get all entries containing a word
+    pub fn word_entries(&self, word: &str) -> Vec<&Word> {
+        if let Some(indices) = self.forms.get(&word.to_lowercase()) {
+            let mut entries = Vec::with_capacity(indices.len());
+            for i in indices {
+                entries.push(&self.words[*i]);
+            }
+            return entries;
+        }
+        vec![]
     }
 
     /// Get an iterator of all word forms (lowercase)

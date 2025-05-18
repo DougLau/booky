@@ -180,9 +180,7 @@ impl LexCmd {
         } else if let Some(word) = &self.word {
             self.lookup(word)?;
         } else {
-            let mut lex = Lexicon::builtin();
-            lex.sort();
-            for word in lex.iter() {
+            for word in Lexicon::builtin().into_iter() {
                 println!("{word:?}");
             }
         }
@@ -194,24 +192,19 @@ impl LexCmd {
         let mut writer = BufWriter::new(stdout());
         let lex = Lexicon::builtin();
         if lex.contains(word) {
-            for w in lex.iter() {
-                for form in w.forms() {
-                    if form == word {
-                        for f in w.forms() {
-                            let mut style = if f == word {
-                                Green.bright().underline().on_primary()
-                            } else {
-                                White.on_primary()
-                            };
-                            if f == w.base() {
-                                style = style.italic();
-                            }
-                            write!(writer, "{} ", f.paint(style))?;
-                        }
-                        writeln!(writer)?;
-                        break;
+            for w in lex.word_entries(word) {
+                for f in w.forms() {
+                    let mut style = if f == word {
+                        Green.bright().underline().on_primary()
+                    } else {
+                        White.on_primary()
+                    };
+                    if f == w.base() {
+                        style = style.italic();
                     }
+                    write!(writer, "{} ", f.paint(style))?;
                 }
+                writeln!(writer)?;
             }
         } else {
             writeln!(writer, "`{word}` not found")?;
@@ -221,7 +214,7 @@ impl LexCmd {
 }
 
 /// Choose a word from a slice
-fn choose_word<'a>(words: &'a [&'a Word]) -> &'a Word {
+fn choose_word(words: &[Word]) -> &Word {
     let mut n = words.len();
     n = fastrand::usize(1..=n);
     n = fastrand::usize(..n);
@@ -230,13 +223,12 @@ fn choose_word<'a>(words: &'a [&'a Word]) -> &'a Word {
 
 /// Print nonsense
 fn nonsense() {
-    let lex = Lexicon::builtin();
-    let nouns: Vec<_> = lex
-        .iter()
+    let nouns: Vec<_> = Lexicon::builtin()
+        .into_iter()
         .filter(|w| w.word_class() == Some(WordClass::Noun))
         .collect();
-    let verbs: Vec<_> = lex
-        .iter()
+    let verbs: Vec<_> = Lexicon::builtin()
+        .into_iter()
         .filter(|w| w.word_class() == Some(WordClass::Verb))
         .collect();
     let subject = choose_word(&nouns[..]).base();
