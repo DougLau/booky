@@ -236,31 +236,52 @@ where
             if !first {
                 self.push_word(Chunk::Symbol, String::from('-'));
             }
-            self.push_word_splittable(ch);
+            self.push_word_check_contraction(ch);
             first = false;
         }
     }
 
-    /// Push a splittable (contraction) word
-    fn push_word_splittable(&mut self, word: &str) {
-        if word.chars().any(is_apostrophe) && !self.lex.contains(word) {
-            for word in contractions::split(word) {
-                if !word.is_empty() {
-                    self.push_word(Chunk::Text, String::from(word));
+    /// Push a word (possible contraction)
+    fn push_word_check_contraction(&mut self, word: &str) {
+        if !word.is_empty() {
+            let kind = self.contraction_kind(word);
+            self.chunks
+                .push(Ok((Chunk::Text, String::from(word), kind)));
+        }
+    }
+
+    /// Check contraction kind
+    fn contraction_kind(&self, word: &str) -> Kind {
+        if self.lex.contains(word) {
+            return Kind::Lexicon;
+        }
+        let mut kinds = Vec::new();
+        if word.chars().any(is_apostrophe) {
+            for w in contractions::split(word) {
+                if !w.is_empty() {
+                    let k = self.word_kind(w);
+                    if k == Kind::Unknown {
+                        return Kind::Unknown;
+                    }
+                    kinds.push(k);
                 }
             }
-        } else if !word.is_empty() {
-            self.push_word(Chunk::Text, String::from(word));
+        }
+        kinds.pop().unwrap_or(Kind::Unknown)
+    }
+
+    /// Get word kind
+    fn word_kind(&self, word: &str) -> Kind {
+        if self.lex.contains(word) {
+            Kind::Lexicon
+        } else {
+            Kind::from(word)
         }
     }
 
     /// Push one word
     fn push_word(&mut self, chunk: Chunk, word: String) {
-        let kind = if self.lex.contains(&word) {
-            Kind::Lexicon
-        } else {
-            Kind::from(&word[..])
-        };
+        let kind = self.word_kind(&word);
         self.chunks.push(Ok((chunk, word, kind)));
     }
 }
