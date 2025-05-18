@@ -22,16 +22,15 @@ where
 fn style(kind: Kind, word: &str) -> Style {
     match kind {
         Kind::Lexicon => {
-            let mut ents = lex::builtin().word_entries(word);
-            if ents.len() != 1 {
+            let Some(wc) = word_class(word) else {
                 return Style::new();
-            }
-            let word = ents.pop().unwrap();
-            match word.word_class() {
+            };
+            match wc {
                 WordClass::Noun => Style::new().bright_red().bold(),
                 WordClass::Pronoun => Style::new().red().bold(),
                 WordClass::Verb => Style::new().bright_green(),
                 WordClass::Adverb => Style::new().green(),
+                WordClass::Adjective => Style::new().bright_yellow(),
                 _ => Style::new().bright_white(),
             }
         }
@@ -43,5 +42,17 @@ fn style(kind: Kind, word: &str) -> Style {
         Kind::Symbol => Style::new().dim(),
         Kind::Unknown => Style::new().underline(),
         _ => Style::new(),
+    }
+}
+
+/// Determine word class
+fn word_class(word: &str) -> Option<WordClass> {
+    let mut ents = lex::builtin().word_entries(word);
+    if ents.len() == 1 {
+        let we = ents.pop().unwrap();
+        Some(we.word_class())
+    } else {
+        // FIXME: match sentence structure to choose word class?
+        None
     }
 }
