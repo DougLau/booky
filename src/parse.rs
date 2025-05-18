@@ -1,6 +1,6 @@
 use crate::contractions;
 use crate::kind::Kind;
-use crate::lex::Lexicon;
+use crate::lex::{self, Lexicon};
 use std::io::{self, BufRead, Bytes};
 
 /// Character chunk types
@@ -145,7 +145,8 @@ where
     R: BufRead,
 {
     /// Create a new parser
-    pub fn new(lex: &'static Lexicon, reader: R) -> Self {
+    pub fn new(reader: R) -> Self {
+        let lex = lex::builtin();
         let splitter = CharSplitter::new(reader);
         let chunks = Vec::new();
         let text = String::new();

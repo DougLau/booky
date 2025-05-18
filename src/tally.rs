@@ -1,5 +1,4 @@
 use crate::kind::Kind;
-use crate::lex::Lexicon;
 use crate::parse::{Chunk, Parser};
 use std::collections::HashMap;
 use std::fmt;
@@ -71,15 +70,11 @@ impl WordTally {
     }
 
     /// Parse text from a reader
-    pub fn parse_text<R>(
-        &mut self,
-        lex: &'static Lexicon,
-        reader: R,
-    ) -> Result<(), std::io::Error>
+    pub fn parse_text<R>(&mut self, reader: R) -> Result<(), std::io::Error>
     where
         R: BufRead,
     {
-        for chunk in Parser::new(lex, reader) {
+        for chunk in Parser::new(reader) {
             let (chunk, text, kind) = chunk?;
             if chunk != Chunk::Boundary {
                 self.tally_word(text, kind);

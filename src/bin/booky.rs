@@ -94,7 +94,7 @@ impl HiliteCmd {
             );
             return Ok(());
         }
-        hilite::hilite_text(lex::builtin(), stdin.lock())?;
+        hilite::hilite_text(stdin.lock())?;
         Ok(())
     }
 }
@@ -111,7 +111,7 @@ impl KindCmd {
             return Ok(());
         }
         let mut tally = WordTally::new();
-        tally.parse_text(lex::builtin(), stdin.lock())?;
+        tally.parse_text(stdin.lock())?;
         if Kind::all().iter().any(|k| self.show_kind(*k)) {
             self.write_entries(tally)
         } else {
