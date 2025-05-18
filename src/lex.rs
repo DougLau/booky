@@ -14,7 +14,6 @@ fn make_builtin() -> Lexicon {
             Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
         }
     }
-    lex.words.sort();
     lex
 }
 
@@ -24,12 +23,22 @@ pub fn builtin() -> &'static Lexicon {
 }
 
 /// Lexicon of words
-#[derive(Default)]
+#[derive(Default, Clone)]
 pub struct Lexicon {
     /// Words
     words: Vec<Word>,
     /// All word forms
     forms: HashMap<String, Vec<usize>>,
+}
+
+impl IntoIterator for Lexicon {
+    type Item = Word;
+    type IntoIter = std::vec::IntoIter<Self::Item>;
+
+    fn into_iter(mut self) -> Self::IntoIter {
+        self.words.sort();
+        self.words.into_iter()
+    }
 }
 
 impl Lexicon {

@@ -179,7 +179,8 @@ impl LexCmd {
         } else if let Some(word) = &self.word {
             self.lookup(word)?;
         } else {
-            for word in lex::builtin().iter() {
+            // into_iter() sorts the entries
+            for word in lex::builtin().clone().into_iter() {
                 println!("{word:?}");
             }
         }
