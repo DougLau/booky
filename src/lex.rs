@@ -1,5 +1,27 @@
 use crate::word::Word;
 use std::collections::HashMap;
+use std::sync::LazyLock;
+
+/// Static lexicon
+static LEXICON: LazyLock<Lexicon> = LazyLock::new(make_builtin);
+
+/// Make builtin lexicon
+fn make_builtin() -> Lexicon {
+    let mut lex = Lexicon::default();
+    for (i, line) in include_str!("../res/english.csv").lines().enumerate() {
+        match Word::try_from(line) {
+            Ok(word) => lex.insert(word),
+            Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
+        }
+    }
+    lex.words.sort();
+    lex
+}
+
+/// Get built-in lexicon
+pub fn builtin() -> &'static Lexicon {
+    &LEXICON
+}
 
 /// Lexicon of words
 #[derive(Default)]
@@ -10,33 +32,10 @@ pub struct Lexicon {
     forms: HashMap<String, Vec<usize>>,
 }
 
-impl IntoIterator for Lexicon {
-    type Item = Word;
-    type IntoIter = std::vec::IntoIter<Self::Item>;
-
-    fn into_iter(mut self) -> Self::IntoIter {
-        self.words.sort();
-        self.words.into_iter()
-    }
-}
-
 impl Lexicon {
     /// Create a new empty lexicon
     pub fn new() -> Self {
         Lexicon::default()
-    }
-
-    /// Get built-in lexicon
-    pub fn builtin() -> Self {
-        let mut lex = Lexicon::default();
-        for (i, line) in include_str!("../res/english.csv").lines().enumerate()
-        {
-            match Word::try_from(line) {
-                Ok(word) => lex.insert(word),
-                Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
-            }
-        }
-        lex
     }
 
     /// Insert a word into the lexicon
@@ -78,5 +77,10 @@ impl Lexicon {
     /// Get an iterator of all word forms (lowercase)
     pub fn forms(&self) -> impl Iterator<Item = &String> {
         self.forms.keys()
+    }
+
+    /// Get an iterator of all words
+    pub fn iter(&self) -> impl Iterator<Item = &Word> {
+        self.words.iter()
     }
 }

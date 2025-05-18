@@ -1,11 +1,14 @@
 use crate::kind::Kind;
-use crate::parse::Parser;
 use crate::lex::Lexicon;
+use crate::parse::Parser;
 use std::io::BufRead;
 use yansi::Paint;
 
 /// Hilite text from a reader
-pub fn hilite_text<R>(lex: Lexicon, reader: R) -> Result<(), std::io::Error>
+pub fn hilite_text<R>(
+    lex: &'static Lexicon,
+    reader: R,
+) -> Result<(), std::io::Error>
 where
     R: BufRead,
 {

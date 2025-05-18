@@ -25,7 +25,7 @@ struct CharSplitter<R: BufRead> {
 /// Text parser
 pub struct Parser<R: BufRead> {
     /// Word lexicon
-    lex: Lexicon,
+    lex: &'static Lexicon,
     /// Text character splitter
     splitter: CharSplitter<R>,
     /// Current text chunk
@@ -145,7 +145,7 @@ where
     R: BufRead,
 {
     /// Create a new parser
-    pub fn new(lex: Lexicon, reader: R) -> Self {
+    pub fn new(lex: &'static Lexicon, reader: R) -> Self {
         let splitter = CharSplitter::new(reader);
         let chunks = Vec::new();
         let text = String::new();

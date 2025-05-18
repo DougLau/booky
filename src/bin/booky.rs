@@ -2,7 +2,7 @@ use anyhow::Result;
 use argh::FromArgs;
 use booky::hilite;
 use booky::kind::Kind;
-use booky::lex::Lexicon;
+use booky::lex;
 use booky::tally::WordTally;
 use booky::word::{Word, WordClass};
 use std::io::{BufWriter, IsTerminal, Write, stdin, stdout};
@@ -94,7 +94,7 @@ impl HiliteCmd {
             );
             return Ok(());
         }
-        hilite::hilite_text(Lexicon::builtin(), stdin.lock())?;
+        hilite::hilite_text(lex::builtin(), stdin.lock())?;
         Ok(())
     }
 }
@@ -111,7 +111,7 @@ impl KindCmd {
             return Ok(());
         }
         let mut tally = WordTally::new();
-        tally.parse_text(Lexicon::builtin(), stdin.lock())?;
+        tally.parse_text(lex::builtin(), stdin.lock())?;
         if Kind::all().iter().any(|k| self.show_kind(*k)) {
             self.write_entries(tally)
         } else {
@@ -171,8 +171,7 @@ impl LexCmd {
     /// Run command
     fn run(self) -> Result<()> {
         if self.forms {
-            let lex = Lexicon::builtin();
-            let mut forms: Vec<_> = lex.forms().collect();
+            let mut forms: Vec<_> = lex::builtin().forms().collect();
             forms.sort();
             for form in forms {
                 println!("{form}");
@@ -180,7 +179,7 @@ impl LexCmd {
         } else if let Some(word) = &self.word {
             self.lookup(word)?;
         } else {
-            for word in Lexicon::builtin().into_iter() {
+            for word in lex::builtin().iter() {
                 println!("{word:?}");
             }
         }
@@ -190,7 +189,7 @@ impl LexCmd {
     /// Lookup a word form
     fn lookup(&self, word: &str) -> Result<()> {
         let mut writer = BufWriter::new(stdout());
-        let lex = Lexicon::builtin();
+        let lex = lex::builtin();
         if lex.contains(word) {
             for w in lex.word_entries(word) {
                 for f in w.forms() {
@@ -214,7 +213,7 @@ impl LexCmd {
 }
 
 /// Choose a word from a slice
-fn choose_word(words: &[Word]) -> &Word {
+fn choose_word<'a>(words: &[&'a Word]) -> &'a Word {
     let mut n = words.len();
     n = fastrand::usize(1..=n);
     n = fastrand::usize(..n);
@@ -223,12 +222,12 @@ fn choose_word(words: &[Word]) -> &Word {
 
 /// Print nonsense
 fn nonsense() {
-    let nouns: Vec<_> = Lexicon::builtin()
-        .into_iter()
+    let nouns: Vec<_> = lex::builtin()
+        .iter()
         .filter(|w| w.word_class() == Some(WordClass::Noun))
         .collect();
-    let verbs: Vec<_> = Lexicon::builtin()
-        .into_iter()
+    let verbs: Vec<_> = lex::builtin()
+        .iter()
         .filter(|w| w.word_class() == Some(WordClass::Verb))
         .collect();
     let subject = choose_word(&nouns[..]).base();

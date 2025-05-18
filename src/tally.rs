@@ -73,7 +73,7 @@ impl WordTally {
     /// Parse text from a reader
     pub fn parse_text<R>(
         &mut self,
-        lex: Lexicon,
+        lex: &'static Lexicon,
         reader: R,
     ) -> Result<(), std::io::Error>
     where
