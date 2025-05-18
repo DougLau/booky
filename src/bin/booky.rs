@@ -201,8 +201,15 @@ impl LexCmd {
                     };
                     if f == w.base() {
                         style = style.italic();
+                        write!(
+                            writer,
+                            "{}:{} ",
+                            f.paint(style),
+                            w.word_class()
+                        )?;
+                    } else {
+                        write!(writer, "{} ", f.paint(style))?;
                     }
-                    write!(writer, "{} ", f.paint(style))?;
                 }
                 writeln!(writer)?;
             }
