@@ -108,7 +108,7 @@ fn is_boundary(c: char) -> bool {
 ///
 /// Unicode has several different apostrophes:
 ///  - ' `U+0027` (ASCII APOSTROPHE)
-///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE)
+///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE) -- glottal stop
 ///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
 ///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
 fn is_apostrophe(c: char) -> bool {
