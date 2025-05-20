@@ -114,10 +114,10 @@ impl TryFrom<&str> for Word {
     fn try_from(line: &str) -> Result<Self, Self::Error> {
         let mut vals = line.split(',');
         let base = vals.next().filter(|b| !b.is_empty()).ok_or(())?;
-        let (base, cla) = base.split_once(':').unwrap_or((base, ""));
+        let (base, cla) = base.split_once(':').ok_or(())?;
         let base = base.to_string();
         let (wc, a) = cla.split_once('.').unwrap_or((cla, ""));
-        let word_class = WordClass::try_from(wc).ok().unwrap_or_default();
+        let word_class = WordClass::try_from(wc)?;
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
