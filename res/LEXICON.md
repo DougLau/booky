@@ -1,9 +1,17 @@
-## Word Entries
+## Lexicon Entries
 
-The lexicon `english.csv` is a special CSV format with extra rules:
+The lexicon `english.csv` uses a variation of the comma separated value (CSV)
+format.  Each line contains one **lexeme**, including inflected forms if
+necessary.
 
 * Value 1: **lemma** : **word class** {.**attributes**}
 * Values 2+: **irregular inflected forms**
+
+Example:
+
+```
+go:V,_es,_ing,went,_ne
+```
 
 ### Lemma (Base Word)
 
@@ -39,6 +47,9 @@ If any attributes are provided, they are preceded by a dot `.`:
 | `t`  | Transitive verb or preposition   |
 
 ### Inflected Forms
+
+Forms are modifications of the **lemma**, indicating tense, number, etc.
+An underscore (\_) in a form is treated as an exact copy of the lemma.
 
 If no inflected forms are provided, regular forms will be automatically
 generated for these four word classes:

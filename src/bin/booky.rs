@@ -4,7 +4,7 @@ use booky::hilite;
 use booky::kind::Kind;
 use booky::lex;
 use booky::tally::WordTally;
-use booky::word::{Word, WordClass};
+use booky::word::{Lexeme, WordClass};
 use std::io::{IsTerminal, stdin};
 use yansi::{Paint, Style};
 
@@ -195,7 +195,7 @@ impl LexCmd {
                     } else {
                         Style::new()
                     };
-                    if f == w.base() {
+                    if f == w.lemma() {
                         style = style.bold();
                         print!("{}:{} ", f.paint(style), w.word_class().bold());
                     } else {
@@ -212,7 +212,7 @@ impl LexCmd {
 }
 
 /// Choose a word from a slice
-fn choose_word<'a>(words: &[&'a Word]) -> &'a Word {
+fn choose_word<'a>(words: &[&'a Lexeme]) -> &'a Lexeme {
     let mut n = words.len();
     n = fastrand::usize(1..=n);
     n = fastrand::usize(..n);
@@ -229,8 +229,8 @@ fn nonsense() {
         .iter()
         .filter(|w| w.word_class() == WordClass::Verb)
         .collect();
-    let subject = choose_word(&nouns[..]).base();
-    let verb = choose_word(&verbs[..]).base();
+    let subject = choose_word(&nouns[..]).lemma();
+    let verb = choose_word(&verbs[..]).lemma();
     println!("{subject} {verb}")
 }
 

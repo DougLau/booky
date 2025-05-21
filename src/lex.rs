@@ -1,4 +1,4 @@
-use crate::word::Word;
+use crate::word::Lexeme;
 use std::collections::HashMap;
 use std::sync::LazyLock;
 
@@ -9,7 +9,7 @@ static LEXICON: LazyLock<Lexicon> = LazyLock::new(make_builtin);
 fn make_builtin() -> Lexicon {
     let mut lex = Lexicon::default();
     for (i, line) in include_str!("../res/english.csv").lines().enumerate() {
-        match Word::try_from(line) {
+        match Lexeme::try_from(line) {
             Ok(word) => lex.insert(word),
             Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
         }
@@ -25,14 +25,14 @@ pub fn builtin() -> &'static Lexicon {
 /// Lexicon of words
 #[derive(Default, Clone)]
 pub struct Lexicon {
-    /// Words
-    words: Vec<Word>,
+    /// All lexemes
+    words: Vec<Lexeme>,
     /// All word forms
     forms: HashMap<String, Vec<usize>>,
 }
 
 impl IntoIterator for Lexicon {
-    type Item = Word;
+    type Item = Lexeme;
     type IntoIter = std::vec::IntoIter<Self::Item>;
 
     fn into_iter(mut self) -> Self::IntoIter {
@@ -47,8 +47,8 @@ impl Lexicon {
         Lexicon::default()
     }
 
-    /// Insert a word into the lexicon
-    pub fn insert(&mut self, word: Word) {
+    /// Insert a lexeme (word) into the lexicon
+    pub fn insert(&mut self, word: Lexeme) {
         for form in word.forms() {
             self.insert_form(form);
         }
@@ -66,13 +66,13 @@ impl Lexicon {
         }
     }
 
-    /// Check if lexicon contains a word
+    /// Check if lexicon contains a word form
     pub fn contains(&self, word: &str) -> bool {
         self.forms.contains_key(&word.to_lowercase())
     }
 
-    /// Get all entries containing a word
-    pub fn word_entries(&self, word: &str) -> Vec<&Word> {
+    /// Get all lexeme entries containing a word form
+    pub fn word_entries(&self, word: &str) -> Vec<&Lexeme> {
         if let Some(indices) = self.forms.get(&word.to_lowercase()) {
             let mut entries = Vec::with_capacity(indices.len());
             for i in indices {
@@ -88,8 +88,8 @@ impl Lexicon {
         self.forms.keys()
     }
 
-    /// Get an iterator of all words
-    pub fn iter(&self) -> impl Iterator<Item = &Word> {
+    /// Get an iterator of all lexemes (words)
+    pub fn iter(&self) -> impl Iterator<Item = &Lexeme> {
         self.words.iter()
     }
 }

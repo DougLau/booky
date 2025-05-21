@@ -41,11 +41,11 @@ pub enum WordAttr {
     Transitive,
 }
 
-/// Word
+/// Word Lexeme
 #[derive(Clone, Eq, Hash, Ord, PartialEq, PartialOrd)]
-pub struct Word {
-    /// Base word form
-    base: String,
+pub struct Lexeme {
+    /// Lemma word form
+    lemma: String,
     /// Word class
     word_class: WordClass,
     /// Attributes
@@ -108,30 +108,30 @@ impl TryFrom<char> for WordAttr {
     }
 }
 
-impl TryFrom<&str> for Word {
+impl TryFrom<&str> for Lexeme {
     type Error = ();
 
     fn try_from(line: &str) -> Result<Self, Self::Error> {
         let mut vals = line.split(',');
-        let base = vals.next().filter(|b| !b.is_empty()).ok_or(())?;
-        let (base, cla) = base.split_once(':').ok_or(())?;
-        let base = base.to_string();
+        let lemma = vals.next().filter(|v| !v.is_empty()).ok_or(())?;
+        let (lemma, cla) = lemma.split_once(':').ok_or(())?;
+        let lemma = lemma.to_string();
         let (wc, a) = cla.split_once('.').unwrap_or((cla, ""));
         let word_class = WordClass::try_from(wc)?;
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
-            irregular_forms.push(form.replace("_", &base));
+            irregular_forms.push(form.replace("_", &lemma));
         }
         let mut forms = Vec::new();
-        forms.push(base.clone());
+        forms.push(lemma.clone());
         for form in &irregular_forms {
-            if *form != base {
+            if *form != lemma {
                 forms.push(form.clone());
             }
         }
-        let mut word = Word {
-            base,
+        let mut word = Lexeme {
+            lemma,
             word_class,
             attr,
             irregular_forms,
@@ -144,14 +144,14 @@ impl TryFrom<&str> for Word {
     }
 }
 
-impl fmt::Debug for Word {
+impl fmt::Debug for Lexeme {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{}:{}", self.base, self.word_class)?;
+        write!(fmt, "{}:{}", self.lemma, self.word_class)?;
         if !self.attr.is_empty() {
             write!(fmt, ".{}", self.attr)?;
         }
         for form in &self.irregular_forms {
-            match form.strip_prefix(&self.base) {
+            match form.strip_prefix(&self.lemma) {
                 Some(suffix) => write!(fmt, ",_{suffix}")?,
                 None => write!(fmt, ",{form}")?,
             }
@@ -160,9 +160,9 @@ impl fmt::Debug for Word {
     }
 }
 
-impl fmt::Display for Word {
+impl fmt::Display for Lexeme {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
-        write!(fmt, "{}:{}", self.base, self.word_class)?;
+        write!(fmt, "{}:{}", self.lemma, self.word_class)?;
         if !self.attr.is_empty() {
             write!(fmt, ".{}", self.attr)?;
         }
@@ -170,10 +170,10 @@ impl fmt::Display for Word {
     }
 }
 
-impl Word {
-    /// Get base word as a string slice
-    pub fn base(&self) -> &str {
-        &self.base
+impl Lexeme {
+    /// Get lemma as a string slice
+    pub fn lemma(&self) -> &str {
+        &self.lemma
     }
 
     /// Get the word class
@@ -191,15 +191,15 @@ impl Word {
         &self.forms[..]
     }
 
-    /// Count syllables in base word (poorly)
+    /// Count syllables in lemma form (poorly)
     fn count_syllables(&self) -> usize {
-        let mut base = self.base();
-        if ends_in_e(base) {
-            base = base.trim_end_matches('e');
+        let mut lemma = self.lemma();
+        if ends_in_e(lemma) {
+            lemma = lemma.trim_end_matches('e');
         }
         let mut syllables = 0;
         let mut letter = None;
-        for c in base.chars() {
+        for c in lemma.chars() {
             if is_vowel(c) && !is_vowel(letter.unwrap_or(' ')) {
                 syllables += 1;
             }
@@ -224,16 +224,16 @@ impl Word {
     fn build_regular_forms(&mut self) {
         match self.word_class {
             WordClass::Adjective if self.count_syllables() < 4 => {
-                self.forms.push(adjective_comparative(&self.base));
-                self.forms.push(adjective_superlative(&self.base));
+                self.forms.push(adjective_comparative(&self.lemma));
+                self.forms.push(adjective_superlative(&self.lemma));
             }
             WordClass::Noun if self.has_plural() => {
-                self.forms.push(noun_plural(&self.base));
+                self.forms.push(noun_plural(&self.lemma));
             }
             WordClass::Verb => {
-                self.forms.push(verb_present(&self.base));
-                self.forms.push(verb_present_participle(&self.base));
-                self.forms.push(verb_past(&self.base));
+                self.forms.push(verb_present(&self.lemma));
+                self.forms.push(verb_present_participle(&self.lemma));
+                self.forms.push(verb_past(&self.lemma));
             }
             _ => (),
         }
@@ -241,19 +241,19 @@ impl Word {
 }
 
 /// Make a regular plural noun from the singular form
-fn noun_plural(base: &str) -> String {
-    if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        format!("{base}ies")
-    } else if base.ends_with("s")
-        || base.ends_with("sh")
-        || base.ends_with("ch")
-        || base.ends_with("x")
-        || base.ends_with("z")
+fn noun_plural(lemma: &str) -> String {
+    if ends_in_y(lemma) {
+        let root = lemma.trim_end_matches('y');
+        format!("{root}ies")
+    } else if lemma.ends_with("s")
+        || lemma.ends_with("sh")
+        || lemma.ends_with("ch")
+        || lemma.ends_with("x")
+        || lemma.ends_with("z")
     {
-        format!("{base}es")
+        format!("{lemma}es")
     } else {
-        format!("{base}s")
+        format!("{lemma}s")
     }
 }
 
@@ -291,99 +291,99 @@ fn consonant_end_repeat(s: &str) -> Option<char> {
     }
 }
 
-/// Make a regular present verb from the base form
-fn verb_present(base: &str) -> String {
-    if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        format!("{base}ies")
-    } else if base.ends_with("s") || base.ends_with("z") {
-        match consonant_end_repeat(base) {
-            Some(end) => format!("{base}{end}es"),
-            None => format!("{base}es"),
+/// Make a regular present verb from the lemma form
+fn verb_present(lemma: &str) -> String {
+    if ends_in_y(lemma) {
+        let root = lemma.trim_end_matches('y');
+        format!("{root}ies")
+    } else if lemma.ends_with("s") || lemma.ends_with("z") {
+        match consonant_end_repeat(lemma) {
+            Some(end) => format!("{lemma}{end}es"),
+            None => format!("{lemma}es"),
         }
-    } else if base.ends_with("sh")
-        || base.ends_with("ch")
-        || base.ends_with("x")
+    } else if lemma.ends_with("sh")
+        || lemma.ends_with("ch")
+        || lemma.ends_with("x")
     {
-        format!("{base}es")
+        format!("{lemma}es")
     } else {
-        format!("{base}s")
+        format!("{lemma}s")
     }
 }
 
-/// Check if a base word ends in `y` (with no other vowel)
-fn ends_in_y(base: &str) -> bool {
-    base.ends_with("y")
-        && !(base.ends_with("ay")
-            || base.ends_with("ey")
-            || base.ends_with("iy")
-            || base.ends_with("oy")
-            || base.ends_with("uy")
-            || base.ends_with("yy"))
+/// Check if a lemma word ends in `y` (with no other vowel)
+fn ends_in_y(lemma: &str) -> bool {
+    lemma.ends_with("y")
+        && !(lemma.ends_with("ay")
+            || lemma.ends_with("ey")
+            || lemma.ends_with("iy")
+            || lemma.ends_with("oy")
+            || lemma.ends_with("uy")
+            || lemma.ends_with("yy"))
 }
 
-/// Check if a base word ends in `e`
-fn ends_in_e(base: &str) -> bool {
-    base.ends_with("e")
-        && !(base.ends_with("ae")
-            || base.ends_with("ee")
-            || base.ends_with("ie")
-            || base.ends_with("oe")
-            || base.ends_with("ye"))
+/// Check if a lemma word ends in `e`
+fn ends_in_e(lemma: &str) -> bool {
+    lemma.ends_with("e")
+        && !(lemma.ends_with("ae")
+            || lemma.ends_with("ee")
+            || lemma.ends_with("ie")
+            || lemma.ends_with("oe")
+            || lemma.ends_with("ye"))
 }
 
-/// Make a regular present participle verb from the base form
-fn verb_present_participle(base: &str) -> String {
-    if let Some(end) = consonant_end_repeat(base) {
-        return format!("{base}{end}ing");
+/// Make a regular present participle verb from the lemma form
+fn verb_present_participle(lemma: &str) -> String {
+    if let Some(end) = consonant_end_repeat(lemma) {
+        return format!("{lemma}{end}ing");
     }
-    if ends_in_e(base) {
-        let base = base.trim_end_matches('e');
-        format!("{base}ing")
+    if ends_in_e(lemma) {
+        let root = lemma.trim_end_matches('e');
+        format!("{root}ing")
     } else {
-        format!("{base}ing")
+        format!("{lemma}ing")
     }
 }
 
-/// Make a regular past verb from the base form
-fn verb_past(base: &str) -> String {
-    if let Some(end) = consonant_end_repeat(base) {
-        return format!("{base}{end}ed");
+/// Make a regular past verb from the lemma form
+fn verb_past(lemma: &str) -> String {
+    if let Some(end) = consonant_end_repeat(lemma) {
+        return format!("{lemma}{end}ed");
     }
-    if base.ends_with("e") {
-        format!("{base}d")
-    } else if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        format!("{base}ied")
+    if lemma.ends_with("e") {
+        format!("{lemma}d")
+    } else if ends_in_y(lemma) {
+        let root = lemma.trim_end_matches('y');
+        format!("{root}ied")
     } else {
-        format!("{base}ed")
+        format!("{lemma}ed")
     }
 }
 
-/// Make a regular comparative adjective from the base form
-fn adjective_comparative(base: &str) -> String {
-    if base.ends_with("e") {
-        return format!("{base}r");
-    } else if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        return format!("{base}ier");
+/// Make a regular comparative adjective from the lemma form
+fn adjective_comparative(lemma: &str) -> String {
+    if lemma.ends_with("e") {
+        return format!("{lemma}r");
+    } else if ends_in_y(lemma) {
+        let root = lemma.trim_end_matches('y');
+        return format!("{root}ier");
     }
-    match consonant_end_repeat(base) {
-        Some(end) => format!("{base}{end}er"),
-        None => format!("{base}er"),
+    match consonant_end_repeat(lemma) {
+        Some(end) => format!("{lemma}{end}er"),
+        None => format!("{lemma}er"),
     }
 }
 
-/// Make a regular superlative adjective from the base form
-fn adjective_superlative(base: &str) -> String {
-    if base.ends_with("e") {
-        return format!("{base}st");
-    } else if ends_in_y(base) {
-        let base = base.trim_end_matches('y');
-        return format!("{base}iest");
+/// Make a regular superlative adjective from the lemma form
+fn adjective_superlative(lemma: &str) -> String {
+    if lemma.ends_with("e") {
+        return format!("{lemma}st");
+    } else if ends_in_y(lemma) {
+        let root = lemma.trim_end_matches('y');
+        return format!("{root}iest");
     }
-    match consonant_end_repeat(base) {
-        Some(end) => format!("{base}{end}est"),
-        None => format!("{base}est"),
+    match consonant_end_repeat(lemma) {
+        Some(end) => format!("{lemma}{end}est"),
+        None => format!("{lemma}est"),
     }
 }
