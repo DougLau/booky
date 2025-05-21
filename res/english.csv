@@ -8197,7 +8197,7 @@ bottle:N
 bottle:V
 bottlebrush:N
 bottlecap:N
-bottlefeed:V
+bottlefeed:V,_s,_ing,bottlefed
 bottleful:N
 bottleneck:N
 bottleneck:V
@@ -8570,7 +8570,7 @@ breast:N
 breast:V
 breastbone:N
 breasted:A
-breastfeed:V
+breastfeed:V,_s,_ing,breastfed
 breastless:A
 breastpin:N
 breastplate:N
@@ -44316,7 +44316,7 @@ overextend:V
 overfamiliar:A
 overfatigue:V
 overfed:A
-overfeed:V
+overfeed:V,_s,_ing,overfed
 overfeeding:N
 overfill:V
 overfit:V
@@ -44398,7 +44398,7 @@ overnight:Av
 overnighter:N
 overpass:N
 overpass:V
-overpay:V
+overpay:V,_s,_ing,overpaid
 overpayment:N
 overplay:V
 overplus:N
@@ -48987,7 +48987,7 @@ prepare:V
 prepared:A
 preparedness:N
 preparing:N
-prepay:V
+prepay:V,_s,_ing,prepaid
 prepayment:N
 prepense:A
 prepensely:Av
@@ -59450,7 +59450,7 @@ spoon:V
 spoonbill:N
 spoondrift:N
 spoonerism:N
-spoonfeed:V
+spoonfeed:V,_s,_ing,spoonfed
 spoonfeeding:N
 spoonflower:N
 spoonful:N
@@ -66001,6 +66001,9 @@ ubiquity:N
 udder:N
 uddered:A
 udometer:N
+ufological:A
+ufologist:N
+ufology:N
 ugh:I
 ugli:N
 uglify:V
@@ -66008,6 +66011,7 @@ uglily:Av
 ugliness:N
 ugly:A
 ugly:Av
+uh:I
 uh-oh:I
 uintathere:N
 ukase:N
@@ -66026,7 +66030,7 @@ ulema:N
 ulemorrhagia:N
 ulitis:N
 ullage:N
-ulna:N
+ulna:N,_e,_s
 ulnar:A
 ulster:N
 ult:A
@@ -66045,9 +66049,12 @@ ultracentrifuge:V
 ultraconservative:A
 ultraconservative:N
 ultracrepidarian:N
+ultrahigh:A
 ultraism:N
 ultraist:N
 ultraistic:A
+ultralight:A
+ultralight:N
 ultramarine:A
 ultramarine:N
 ultramicroscope:N
@@ -66058,6 +66065,8 @@ ultramontane:N
 ultramontanism:N
 ultranationalism:N
 ultranationalistic:A
+ultrasensitive:A
+ultrashort:A
 ultrasonic:A
 ultrasonic:N
 ultrasonically:Av
@@ -66079,7 +66088,7 @@ umber:A
 umber:N
 umbilical:A
 umbilicate:A
-umbilicus:N
+umbilicus:N,umbilici,_es
 umbo:N
 umbra:N
 umbrage:N
@@ -66088,6 +66097,7 @@ umbrella:A
 umbrella:N
 umbrellalike:A
 umbrellawort:N
+umiak:N
 umlaut:N
 ump:N
 umpirage:N
@@ -66163,6 +66173,7 @@ unalarming:A
 unalert:A
 unalienable:A
 unalike:A
+unalive:A
 unallied:A
 unalloyed:A
 unalterability:N
@@ -66235,6 +66246,8 @@ unassertively:Av
 unassertiveness:N
 unassignable:A
 unassigned:A
+unassimilable:A
+unassimilably:Av
 unassisted:A
 unassuming:A
 unassumingly:Av
@@ -66373,6 +66386,7 @@ uncalled:A
 uncamphorated:A
 uncannily:Av
 uncanny:A
+uncap:V
 uncapped:A
 uncarbonated:A
 uncaring:A
@@ -66380,6 +66394,7 @@ uncarpeted:A
 uncarved:A
 uncase:V
 uncastrated:A
+uncatalogued:A
 uncategorised:A
 uncategorized:A
 uncaught:A
@@ -66417,6 +66432,7 @@ uncharted:A
 unchartered:A
 unchaste:A
 unchastened:A
+uncheck:V
 uncheckable:A
 unchecked:A
 uncheerful:A
@@ -66427,6 +66443,7 @@ unchivalrously:Av
 unchristian:A
 unchristianly:A
 unchristlike:A
+unchurched:A
 uncial:A
 uncial:N
 uncivil:A
@@ -66442,6 +66459,8 @@ uncle:N
 unclean:A
 uncleaned:A
 uncleanliness:N
+uncleanliness:N
+uncleanly:Av
 uncleanness:N
 uncleansed:A
 unclear:A
@@ -66494,6 +66513,8 @@ uncomparable:A
 uncomparably:Av
 uncompartmented:A
 uncompassionate:A
+uncompelling:A
+uncompellingly:Av
 uncompensated:A
 uncompetitive:A
 uncomplaining:A
@@ -66532,6 +66553,7 @@ unconquerable:A
 unconquered:A
 unconscientious:A
 unconscionable:A
+unconscionably:Av
 unconscious:A
 unconscious:N
 unconsciously:Av
@@ -66607,6 +66629,7 @@ uncrossed:A
 uncrowded:A
 uncrowned:A
 uncrumple:V
+uncrushable:A
 uncrystallised:A
 uncrystallized:A
 unction:N
@@ -66631,6 +66654,7 @@ undatable:A
 undated:A
 undaunted:A
 undauntedly:Av
+undead:A
 undebauched:A
 undecagon:N
 undeceive:V
@@ -66674,6 +66698,7 @@ underact:V
 underactive:A
 underage:A
 underaged:A
+underappreciated:A
 underarm:A
 underarm:Av
 underbelly:N
@@ -66694,10 +66719,13 @@ underclothing:N
 undercoat:N
 undercoat:V
 undercoated:A
+undercount:N
+undercount:V
 undercover:A
 undercurrent:N
 undercut:N
 undercut:V
+underdeliver:V
 underdevelop:V,_s,_ing,_ed
 underdeveloped:A
 underdevelopment:N
@@ -66708,6 +66736,7 @@ underdress:V
 underdressed:A
 undereducated:A
 underemployed:A
+underemployment:N
 underestimate:N
 underestimate:V
 underestimation:N
@@ -66715,11 +66744,15 @@ underevaluation:N
 underexpose:V
 underexposure:N
 underfed:A
+underfeed:V,_s,_ing,underfed
 underfelt:N
 underfit:V
+underfloor:A
+underflow:N
 underfoot:Av
 underfoot:P.i
 underframe:N
+underfund:V
 underfur:N
 undergarment:N
 undergird:V
@@ -66736,13 +66769,19 @@ underhand:A
 underhand:Av
 underhanded:A
 underhandedly:Av
+underhandedness:N
 underhung:A
+underinflated:A
+underinflation:N
+underinsured:A
+underinvest:V
+underinvestment:N
 underivative:A
 underived:A
 underlay:N
 underlay:V,_s,_ing,underlaid
 underlayment:N
-underlie:V
+underlie:V,_s,underlying,underlay,underlain
 underline:N
 underline:V
 underlinen:N
@@ -66752,6 +66791,8 @@ underlying:A
 undermanned:A
 undermentioned:A
 undermine:V
+undermost:A
+undermost:Av
 underneath:Av
 underneath:P
 undernourish:V
@@ -66761,13 +66802,15 @@ underpants:N.p
 underpart:N
 underpass:N
 underpass:V
-underpay:V
+underpay:V,_s,_ing,underpaid
 underpayment:N
 underperform:V
+underperformance:N
 underperformer:N
 underpin:V
 underplay:V
 underpopulated:A
+underprepared:A
 underprice:V
 underprivileged:A
 underproduce:V
@@ -66787,9 +66830,11 @@ undersecretary:N
 undersell:V,_s,_ing,undersold
 underseller:N
 underservant:N
+underserved:A
 undersexed:A
 undershirt:N
 undershoot:V,_s,_ing,undershot
+undershorts:N.p
 undershot:A
 undershrub:N
 underside:N
@@ -66802,6 +66847,7 @@ undersoil:N
 underspend:V,_s,_ing,underspent
 underspent:A
 understaffed:A
+understaffing:N
 understand:V,_s,_ing,understood
 understandability:N
 understandable:A
@@ -66823,9 +66869,14 @@ undersurface:N
 undertake:V,_s,undertaking,undertook,_n
 undertaker:N
 undertaking:N
+underthings:N.p
 undertide:N
 undertone:N
 undertow:N
+underused:A
+underutilization:N
+underutilize:V
+underutilized:A
 undervaluation:N
 undervalue:V
 underwater:A
@@ -66834,6 +66885,7 @@ underwear:N.p
 underweight:A
 underwhelm:V
 underwing:N
+underwire:N
 underwood:N
 underworld:N
 underwrite:V,_s,underwriting,underwrote,underwritten
@@ -66943,6 +66995,7 @@ undynamic:A
 uneager:A
 unearned:A
 unearth:V
+unearthliness:N
 unearthly:A
 unease:N
 uneasily:Av
@@ -66958,6 +67011,7 @@ uneducated:A
 uneffective:A
 unelaborate:A
 unelaborated:A
+unelected:A
 unembarrassed:A
 unembellished:A
 unembodied:A
@@ -67013,6 +67067,8 @@ unessential:A
 unestablished:A
 unethical:A
 unethically:Av
+unevacuated:A
+unevaluated:A
 uneven:A
 unevenly:Av
 unevenness:N
@@ -67023,6 +67079,7 @@ unexampled:A
 unexceeded:A
 unexcelled:A
 unexceptionable:A
+unexceptionably:Av
 unexceptional:A
 unexchangeability:N
 unexchangeable:A
@@ -67117,10 +67174,13 @@ unfit:A
 unfit:V
 unfitness:N
 unfitting:A
+unfix:V
 unfixed:A
 unflagging:A
 unflaggingly:Av
+unflappability:N
 unflappable:A
+unflappably:Av
 unflattering:A
 unflavored:A
 unflavoured:A
@@ -67138,6 +67198,7 @@ unfocussed:A
 unfold:V
 unfolded:A
 unfolding:N
+unfollow:V
 unforbearing:A
 unforced:A
 unforceful:A
@@ -67244,8 +67305,11 @@ ungusseted:A
 unhallowed:A
 unhampered:A
 unhand:V
+unhandily:Av
+unhandiness:N
 unhandsome:A
 unhandsomely:Av
+unhandy:A
 unhappily:Av
 unhappiness:N
 unhappy:A
@@ -67282,6 +67346,9 @@ unhewn:A
 unhindered:A
 unhinge:V
 unhinged:A
+unhistoric:A
+unhistorical:A
+unhistorically:Av
 unhitch:V
 unholiness:N
 unhollowed:A
@@ -67301,6 +67368,7 @@ unhurriedness:N
 unhurt:A
 unhygienic:A
 unhygienically:Av
+unibody:N
 unicameral:A
 unicellular:A
 unicorn:N
@@ -67312,8 +67380,10 @@ unidentified:A
 unidimensional:A
 unidirectional:A
 unifacial:A
+unifiable:A
 unification:N
 unified:A
+unifier:N
 unifilar:A
 unifoliate:A
 uniform:A
@@ -67327,6 +67397,8 @@ uniformly:Av
 uniformness:N
 unify:V
 unifying:A
+unignorable:A
+unignorably:Av
 unilateral:A
 unilateralism:N
 unilateralist:A
@@ -67402,11 +67474,14 @@ uninterestingly:Av
 uninterestingness:N
 uninterrupted:A
 uninterruptedly:Av
+uninterruptible:A
 unintimidated:A
 unintoxicated:A
 unintrusive:A
+unintuitive:A
 uninucleate:A
 uninventive:A
+uninvested:A
 uninvited:A
 uninvitedly:Av
 uninviting:A
@@ -67473,6 +67548,7 @@ unkempt:A
 unkemptness:N
 unkept:A
 unkeyed:A
+unkillable:A
 unkind:A
 unkindled:A
 unkindly:A
@@ -67524,6 +67600,7 @@ unlikely:A
 unlikeness:N
 unlimited:A
 unlined:A
+unlink:V
 unlipped:A
 unlisted:A
 unlistening:A
@@ -67595,6 +67672,7 @@ unmechanised:A
 unmechanized:A
 unmediated:A
 unmedical:A
+unmedicated:A
 unmedicative:A
 unmedicinal:A
 unmelodic:A
@@ -67604,6 +67682,7 @@ unmelted:A
 unmemorable:A
 unmemorably:Av
 unmentionable:A
+unmentionable:N
 unmentioned:A
 unmercenary:A
 unmerchantable:A
@@ -67611,6 +67690,7 @@ unmerciful:A
 unmercifully:Av
 unmercifulness:N
 unmergeable:A
+unmerged:A
 unmerited:A
 unmeritorious:A
 unmet:A
@@ -67621,6 +67701,7 @@ unmindfully:Av
 unmindfulness:N
 unmined:A
 unmingled:A
+unmissable:A
 unmistakable:A
 unmistakably:Av
 unmitigable:A
@@ -67640,6 +67721,7 @@ unmortgaged:A
 unmotivated:A
 unmotorised:A
 unmotorized:A
+unmount:V
 unmourned:A
 unmovable:A
 unmoved:A
@@ -67648,6 +67730,7 @@ unmown:A
 unmurmuring:A
 unmusical:A
 unmusically:Av
+unmute:V
 unmutilated:A
 unmyelinated:A
 unmysterious:A
