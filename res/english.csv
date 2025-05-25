@@ -3607,6 +3607,7 @@ apopemptic:A
 apophasis:N
 apophatic:A
 apophatism:N
+apophenia:N
 apophthegm:N
 apophyseal:A
 apophysis:N
@@ -15724,7 +15725,7 @@ crossbreeding:N
 crosscheck:N
 crosscurrent:N
 crosscut:N
-crosscut:V
+crosscut:V,_s,_ting
 crosse:N
 crossed:A
 crossfire:N
@@ -45271,6 +45272,7 @@ pardoner:N
 pare:V
 paregmenon:N
 paregoric:N
+pareidolia:N
 parenchyma:N
 parent:N
 parent:V
@@ -51229,6 +51231,7 @@ ramee:N
 ramekin:N
 ramen:N
 ramequin:N
+ramgunshoch:A
 ramie:N
 ramification:N
 ramify:V
@@ -51648,6 +51651,7 @@ rebind:V
 rebirth:N
 rebleed:N
 rebleed:V,_s,_ing,rebled
+reboil:V
 reboot:V
 reborn:A
 rebound:N
@@ -51688,6 +51692,7 @@ recant:V
 recantation:N
 recap:N
 recap:V
+recapitalization:N
 recapitualtion:N
 recapitulate:V
 recapitulation:N
@@ -51814,7 +51819,11 @@ recommission:V
 recommit:V
 recompense:N
 recompense:V
+recompilation:N
+recompile:V
 recompression:N
+recon:N
+recon:V
 reconcilable:A
 reconcile:V
 reconciled:A
@@ -51858,6 +51867,7 @@ record:V
 recorded:A
 recorder:N
 recording:N
+recordkeeping:N
 recount:N
 recount:V
 recounting:N
@@ -51881,6 +51891,7 @@ recriminatory:A
 recrossed:N
 recrudesce:V
 recrudescence:N
+recrudescent:A
 recruit:N
 recruit:V
 recruiter:N
@@ -51927,10 +51938,11 @@ recusant:A
 recusant:N
 recusation:N
 recuse:V
+recut:V,_s,_ting
 recyclable:A
 recycle:V
 recycling:N
-red:A
+red:A,_der,_dest
 red:N
 redact:N
 redact:V
@@ -51947,11 +51959,12 @@ redbud:N
 redbug:N
 redcap:N
 redcoat:N
+redcurrant:N
 redden:V
 reddened:A
-redder:A
 reddish:A
 reddle:N
+redeclare:V
 redecorate:V
 rededicate:V
 rededication:N
@@ -51983,6 +51996,7 @@ redheaded:A
 redheader:N
 redhorse:N
 redirect:V
+redirection:N
 rediscover:V
 rediscovery:N
 redispose:V
@@ -51990,6 +52004,8 @@ redisposition:N
 redistribute:V
 redistributed:A
 redistribution:N
+redistrict:V
+redivide:V
 redline:V
 redly:Av
 redmaids:N
@@ -52002,14 +52018,19 @@ redouble:V
 redoubled:A
 redoubt:N
 redoubtable:A
+redoubtably:Av
 redound:V
 redox:N
 redpoll:N
 redraft:N
+redraw:N
+redraw:V,_s,_ing,redrew,_n
 redress:N
 redress:V
 redroot:N
 redshank:N
+redshift:N
+redshifted:A
 redshirt:N
 redstart:N
 redtail:N
@@ -52035,10 +52056,12 @@ reduviid:N
 redux:A
 redwing:N
 redwood:N
+redye:V
 reecho:V
 reechoing:A
 reed:N
 reedbird:N
+reediness:N
 reedlike:A
 reedmace:N
 reedy:A
@@ -52071,9 +52094,13 @@ reeve:N
 reeve:V
 reexamination:N
 reexamine:V
+reexport:V
+reexportation:N
 ref:N
+ref:V
 refabrication:N
 reface:V
+refactor:V,_s,_ing,_ed
 refashion:V
 refection:N
 refectory:N
@@ -52105,8 +52132,10 @@ refinish:V
 refinisher:N
 refit:N
 refit:V
+reflash:N
 reflate:V
 reflation:N
+reflationary:A
 reflect:V
 reflectance:N
 reflected:A
@@ -52129,7 +52158,11 @@ reflexively:Av
 reflexiveness:N
 reflexivity:N
 reflexly:Av
+reflexologist:N
+reflexology:N
 refloat:V
+reflow:N
+reflow:V
 reflux:N
 refocus:V,_es,_ing,_ed
 refocusing:N
@@ -52140,6 +52173,7 @@ reforge:V
 reform:N
 reform:V
 reformable:A
+reformat:V
 reformation:N
 reformative:A
 reformatory:A
@@ -52150,6 +52184,8 @@ reformism:N
 reformist:A
 reformist:N
 reformulate:V
+refortification:N
+refortify:V
 refract:V
 refractile:A
 refraction:N
@@ -52165,6 +52201,7 @@ refractory:N
 refracture:V
 refrain:N
 refrain:V
+reframe:V
 refresh:V
 refreshed:A
 refreshen:V
@@ -52190,6 +52227,7 @@ refulgency:N
 refulgent:A
 refund:N
 refund:V
+refurb:N
 refurbish:V
 refurbishment:N
 refurnish:V
@@ -52204,6 +52242,7 @@ regain:V
 regaining:N
 regal:A
 regale:V
+regalement:N
 regalia:N
 regally:Av
 regard:N
@@ -52213,9 +52252,11 @@ regardful:A
 regarding:P.t
 regardless:A
 regardless:Av
+regather:V
 regatta:N
 regency:A
 regency:N
+regeneracy:N
 regenerate:A
 regenerate:V
 regenerating:A
@@ -52223,6 +52264,7 @@ regeneration:N
 regent:A
 regent:N
 reggae:N
+regicidal:A
 regicide:N
 regime:N
 regimen:N
@@ -52247,10 +52289,12 @@ registrar:N
 registration:N
 registry:N
 reglaze:V
+reglue:V
 regma:N
 regnal:A
 regnant:A
 regnellidium:N
+regolith:N
 regorge:V
 regosol:N
 regress:N
@@ -52263,7 +52307,7 @@ regretful:A
 regretfully:Av
 regrettable:A
 regrettably:Av
-regrind:V
+regrind:V,_s,_ing,reground
 regroup:V
 regrow:V,_s,_ing,regrew,_n
 regular:A
@@ -52294,6 +52338,7 @@ rehabilitate:V
 rehabilitated:A
 rehabilitation:N
 rehabilitative:A
+rehang:V,_s,_ing,rehung,_ed
 reharmonisation:N
 reharmonise:V
 reharmonization:N
@@ -52308,6 +52353,7 @@ reheat:V
 reheated:A
 reheel:V
 rehire:V
+rehome:V
 rehouse:V
 reification:N
 reify:V
@@ -52344,6 +52390,7 @@ reinterpret:V
 reinterpretation:N
 reintroduce:V
 reintroduction:N
+reinvade:V
 reinvasion:N
 reinvent:V
 reinvigorate:V
@@ -52375,6 +52422,7 @@ relapsing:N
 relate:V
 related:A
 relatedness:N
+relater:N
 relatiative:A
 relation:N
 relational:A
@@ -52385,6 +52433,7 @@ relative:N
 relatively:Av
 relativise:V
 relativism:N
+relativist:N
 relativistic:A
 relativistically:Av
 relativity:N
@@ -52441,6 +52490,7 @@ religiousism:N
 religiously:Av
 religiousness:N
 reline:V
+relink:V
 relinquish:V
 relinquished:A
 relinquishing:N
@@ -52449,6 +52499,7 @@ reliquary:N
 relish:N
 relish:V
 relishing:N
+relist:V
 relistening:N
 relive:V
 reliving:N
@@ -52463,6 +52514,7 @@ reluctantly:Av
 reluctivity:N
 rely:V
 relyric:V
+rem:N
 remain:V
 remainder:N
 remainder:V
@@ -52473,9 +52525,11 @@ remake:V
 remaking:N
 remand:N
 remand:V
+remap:V
 remark:N
 remark:V
 remarkable:A
+remarkableness:N
 remarkably:Av
 remarriage:N
 remarry:V
@@ -52530,6 +52584,7 @@ remorseful:A
 remorsefully:Av
 remorseless:A
 remorselessly:Av
+remorselessness:N
 remote:A
 remote:N
 remotely:Av
@@ -52558,6 +52613,8 @@ renascent:A
 rend:V
 render:N
 render:V
+renderable:A
+renderer:N
 rendering:N
 rendezvous:N
 rendezvous:V
@@ -52568,6 +52625,7 @@ renegade:N
 renegade:V
 renege:N
 renege:V
+reneger:N
 renegociate:V
 renegotiate:V
 renew:V
@@ -52624,6 +52682,7 @@ repackage:V
 repaint:V
 repair:N
 repair:V
+repairability:N
 repairable:A
 repaired:A
 repairer:N
@@ -52632,6 +52691,7 @@ repand:A
 reparable:A
 reparation:N
 repartee:N
+repartition:N
 repass:V
 repast:N
 repatriate:N
@@ -52674,6 +52734,7 @@ repetitiousness:N
 repetitive:A
 repetitively:Av
 repetitiveness:N
+rephotograph:V
 rephrase:V
 rephrasing:N
 repine:V
@@ -52691,12 +52752,17 @@ replenish:V
 replenishment:N
 replete:A
 replete:V
+repleteness:N
 repletion:N
 replica:N
+replicant:N
 replicate:V
 replication:N
+replicator:N
 reply:N
 reply:V
+repo:A
+repo:N
 repoint:V
 repopulate:V
 repopulation:N
@@ -52708,6 +52774,8 @@ reported:A
 reportedly:Av
 reporter:N
 reporting:N
+reportorial:A
+reportorially:Av
 repose:N
 repose:V
 reposeful:A
@@ -52719,6 +52787,8 @@ repositioning:N
 repository:N
 repossess:V
 repossession:N
+repost:N
+repost:V
 repot:V
 repp:N
 reprehend:V
@@ -52774,6 +52844,8 @@ reproducible:A
 reproducibly:Av
 reproduction:N
 reproductive:A
+reprogram:V
+reprogrammable:A
 reproof:N
 reproof:V
 reproval:N
@@ -52796,6 +52868,7 @@ repudiate:V
 repudiated:A
 repudiation:N
 repudiative:A
+repudiator:N
 repugn:V
 repugnance:N
 repugnant:A
@@ -52807,10 +52880,12 @@ repulsively:Av
 repulsiveness:N
 repurchase:N
 repurchase:V
+repurpose:V
 reputability:N
 reputable:A
 reputably:Av
 reputation:N
+reputational:A
 repute:N
 repute:V
 reputed:A
@@ -52831,6 +52906,7 @@ requisition:N
 requisition:V
 requital:N
 requite:V
+requiter:N
 reread:V
 rerebrace:N
 rerecord:V
@@ -52840,6 +52916,7 @@ reroute:V
 rerun:N
 rerun:V,_s,_ning,reran
 resale:N
+resample:V
 rescale:V
 reschedule:V
 rescind:V
@@ -52865,9 +52942,10 @@ resell:V,_s,_ing,resold
 reseller:N
 resemblance:N
 resemble:V
-resent:V
+resend:V,_s,_ing,resent
 resentful:A
 resentfully:Av
+resentfulness:N
 resentment:N
 reserpine:N
 reservation:N
@@ -52876,6 +52954,7 @@ reserve:N
 reserve:V
 reserved:A
 reservedly:Av
+reservedness:N
 reservist:N
 reservoir:N
 reset:N
@@ -52905,7 +52984,7 @@ residual:N
 residually:Av
 residuary:A
 residue:N
-residuum:N
+residuum:N,residua
 resift:V
 resign:V
 resignation:N
@@ -52931,7 +53010,10 @@ resistive:A
 resistivity:N
 resistless:A
 resistor:N
+resit:V,_s,_ting,resat
 resize:V
+reskill:V
+reskin:V
 resmudge:V
 resole:V
 resolute:A
@@ -52976,6 +53058,9 @@ respecting:P.t
 respective:A
 respectively:Av
 respector:N
+respell:V
+respelling:N
+respin:V
 respiration:N
 respirator:N
 respiratory:A
@@ -53001,6 +53086,8 @@ responsively:Av
 responsiveness:N
 rest:N
 rest:V
+restage:V
+restamp:V
 restart:V
 restate:V
 restatement:N
@@ -53040,6 +53127,8 @@ restriction:N
 restrictive:A
 restrictively:Av
 restrictiveness:N
+restrictor:N
+restring:V,_s,_ing,restrung
 restroom:N
 restructure:V
 resublime:V
@@ -53093,9 +53182,11 @@ retardant:N
 retardation:N
 retarded:A
 retardent:N
+retarder:N
 retch:N
 retch:V
 rete:N
+reteach:V,_es,_ing,retaught
 retell:V
 retem:N
 retention:N
@@ -53144,6 +53235,7 @@ retracted:A
 retractile:A
 retraction:N
 retractor:N
+retrad:A
 retrain:V
 retraining:N
 retral:A
@@ -53170,6 +53262,8 @@ retro:A
 retro:N
 retroactive:A
 retroactively:Av
+retrofire:N
+retrofire:V
 retrofit:N
 retrofit:V
 retroflection:N
@@ -53216,6 +53310,10 @@ rev:V
 revaluation:N
 revalue:V
 revamp:V
+revanche:N
+revanchism:N
+revanchist:A
+revanchist:N
 reveal:V
 revealed:A
 revealing:A
@@ -53236,6 +53334,7 @@ revengeful:A
 revengefully:Av
 revenue:N
 revenuer:N
+reverb:N
 reverberance:N
 reverberant:A
 reverberate:V
@@ -53286,6 +53385,7 @@ reviewer:N
 revile:V
 reviled:A
 revilement:N
+reviler:N
 revisal:N
 revise:N
 revise:V
@@ -53324,6 +53424,7 @@ revolt:V
 revolting:A
 revoltingly:Av
 revolution:N
+revolutionarily:Av
 revolutionary:A
 revolutionary:N
 revolutionise:V
@@ -53332,6 +53433,8 @@ revolutionize:V
 revolve:V
 revolved:A
 revolver:N
+revote:N
+revote:V
 revue:N
 revulsion:N
 reward:N
@@ -53340,6 +53443,10 @@ rewardable:A
 rewardful:A
 rewarding:A
 rewardingly:Av
+rewarm:V
+rewash:V
+reweave:V,_s,reweaving,_d,rewove,rewoven
+rewed:V,_s,_ding,_ded
 rewind:V,_s,_ing,rewound
 rewire:V
 reword:V
@@ -53359,6 +53466,7 @@ rhabdovirus:N
 rhagades:N
 rhaphe:N
 rhapsodic:A
+rhapsodical:A
 rhapsodically:Av
 rhapsodise:V
 rhapsodize:V
@@ -53462,6 +53570,7 @@ riband:N
 ribavirin:N
 ribband:N
 ribbed:A
+ribber:N
 ribbing:N
 ribbon:N
 ribbonfish:N
@@ -53514,7 +53623,9 @@ riddle:V
 riddled:A
 ride:N
 ride:V,_s,riding,rode,ridden
+rideable:A
 rider:N
+riderless:A
 ridership:N
 rideshare:N
 ridesharing:N
@@ -53524,8 +53635,10 @@ ridged:A
 ridgel:N
 ridgeling:N
 ridgepole:N
+ridgetop:N
 ridgil:N
 ridgling:N
+ridgy:A
 ridicule:N
 ridicule:V
 ridiculer:N
@@ -53548,6 +53661,7 @@ rifle:V
 riflebird:N
 rifled:A
 rifleman:N,riflemen
+rifler:N
 rifling:N
 rift:N
 rift:V
@@ -53576,6 +53690,8 @@ rightist:N
 rightly:Av
 rightmost:A
 rightness:N
+righto:I
+rightsize:V
 rightward:P.i
 rightwards:P.i
 rigid:A
@@ -53610,6 +53726,7 @@ riming:A
 rimless:A
 rimmed:A
 rimose:A
+rimstone:N
 rimu:N
 rimy:A
 rind:N
@@ -53633,6 +53750,7 @@ ringlike:A
 ringmaster:N
 ringside:N
 ringtail:N
+ringtone:N
 ringworm:N
 rink:N
 rinkhals:N
@@ -53655,6 +53773,7 @@ ripen:V
 ripened:A
 ripeness:N
 ripening:N
+ripoff:N
 riposte:N
 riposte:V
 ripper:N
@@ -53662,7 +53781,9 @@ ripping:A
 ripple:N
 ripple:V
 rippled:A
+rippler:N
 rippling:N
+ripply:A
 ripsaw:N
 riptide:N
 rise:N
@@ -53707,6 +53828,7 @@ riven:A
 river:N
 riverbank:N
 riverbed:N
+riverboat:N
 riverfront:N
 riverine:A
 riverside:N
@@ -53715,6 +53837,7 @@ rivet:V,_s,_ing,_ed
 riveter:N
 riveting:A
 rivetter:N
+riviera:N
 rivulet:N
 rivulus:N
 riyal:N
@@ -53726,10 +53849,13 @@ roadblock:N
 roadbook:N
 roadhog:N
 roadhouse:N
+roadie:N
+roadkill:N
 roadless:A
 roadman:N,roadmen
 roadmap:N
 roadrunner:N
+roadshow:N
 roadside:N
 roadstead:N
 roadster:N
@@ -53761,9 +53887,14 @@ robe:V
 robed:A
 robin:N
 roble:N
+robocall:N
+robocall:V
+robocaller:N
+robocalling:N
 robolo:N
 robot:N
 robotic:N
+robotize:V
 robotlike:A
 robust:A
 robustious:A
@@ -53783,8 +53914,10 @@ rockery:N
 rocket:N
 rocket:V,_s,_ing,_ed
 rocketry:N
+rockfall:N
 rockfish:N
 rockfoil:N
+rockiness:N
 rocklike:A
 rockrose:N
 rockslide:N
@@ -53794,6 +53927,7 @@ rock’n’roll:N
 rococo:A
 rococo:N
 rod:N
+rodder:N
 rodent:N
 rodeo:N
 rodlike:A
@@ -53807,6 +53941,7 @@ roentgenography:N
 roentgenoscope:N
 rofecoxib:N
 rogation:N
+roger:I
 rogue:N
 roguery:N
 roguish:A
@@ -53826,14 +53961,12 @@ roll:V
 rollback:N
 rolled:A
 roller:N
-rollerblade:N
-rollerblade:V
 rollick:V
 rollicking:A
 rollickingly:Av
 rolling:A
 rolling:N
-rollmops:N
+rollmop:N
 rollover:N
 roly-poly:N
 rolypoliness:N
@@ -53898,9 +54031,13 @@ root:V
 rootage:N
 rootbound:A
 rooted:A
+rootedness:N
+rooter:N
 rooting:N
+rootkit:N
 rootle:V
 rootless:A
+rootlessness:N
 rootlet:N
 rootlike:A
 rootstalk:N
@@ -53938,6 +54075,7 @@ rosemaling:N
 rosemary:N
 roseola:N
 rosette:N
+rosewater:A
 rosewood:N
 rosilla:N
 rosily:Av
@@ -53973,6 +54111,7 @@ rotisserie:N
 rotl:N
 rotogravure:N
 rotor:N
+rototiller:N
 rotted:A
 rotten:A
 rottenly:Av
@@ -53980,10 +54119,12 @@ rottenness:N
 rottenstone:N
 rotter:N
 rotting:N
+rottweiler:N
 rotund:A
 rotunda:N
 rotundity:N
 rotundly:Av
+rotundness:N
 rouble:N
 roue:N
 rouge:N
@@ -54001,6 +54142,8 @@ roughdried:A
 roughen:V
 roughened:A
 roughhewn:A
+roughhouse:N
+roughhouse:V
 roughish:A
 roughleg:N
 roughly:Av
@@ -54038,6 +54181,7 @@ rouse:V
 rouser:N
 rousing:A
 rousing:N
+roust:V
 roustabout:N
 rout:N
 rout:V
@@ -54048,6 +54192,8 @@ router:N
 routine:A
 routine:N
 routinely:Av
+routinization:N
+routinize:V
 roux:N
 rove:V
 rover:N
@@ -54064,6 +54210,7 @@ rowdy:A
 rowdy:N
 rowdyism:N
 rowel:N
+rowel:V
 rower:N
 rowhouse:N
 rowing:N
@@ -54089,6 +54236,7 @@ rubberized:A
 rubberlike:A
 rubberneck:N
 rubberneck:V
+rubbernecker:N
 rubberstamp:V
 rubbery:A
 rubbing:N
@@ -54096,6 +54244,7 @@ rubbish:N
 rubbish:V
 rubbishy:A
 rubble:N
+rubblestone:N
 rubdown:N
 rube:N
 rubefacient:N
@@ -54113,6 +54262,8 @@ rubric:V
 rubricate:V
 ruby:A
 ruby:N
+ruche:N
+ruched:A
 ruck:N
 ruck:V
 ruckle:V
@@ -54161,7 +54312,9 @@ ruggedly:Av
 ruggedness:N
 ruggelach:N
 rugger:N
+rugosa:N
 rugose:A
+rugrat:N
 rugulah:N
 ruin:N
 ruin:V
@@ -54221,6 +54374,7 @@ rumrunner:N
 run:N
 run:V,_s,_ning,ran
 runabout:N
+runaround:N
 runaway:A
 runaway:N
 runch:N
@@ -54230,6 +54384,8 @@ rundown:N
 rune:N
 rung:N
 runic:A
+runlet:N
+runnable:A
 runnel:N
 runner:N
 runniness:N
@@ -54237,6 +54393,7 @@ running:A
 running:N
 runny:A
 runoff:N
+runout:N
 runproof:A
 runt:N
 runtime:N
@@ -54280,6 +54437,8 @@ rusticate:V
 rustication:N
 rusticism:N
 rusticity:N
+rustily:Av
+rustiness:N
 rusting:N
 rustle:N
 rustle:V
@@ -57062,7 +57221,7 @@ shortchanger:N
 shortcoming:N
 shortcrust:A
 shortcut:N
-shortcut:V
+shortcut:V,_s,_ting
 shorten:V
 shortened:A
 shortener:N
@@ -61126,8 +61285,9 @@ striking:A
 striking:N
 strikingly:Av
 strikingness:N
+string:A
 string:N
-string:V
+string:V,_s,_ing,strung
 stringency:N
 stringent:A
 stringently:Av
@@ -67493,7 +67653,7 @@ undercount:V
 undercover:A
 undercurrent:N
 undercut:N
-undercut:V
+undercut:V,_s,_ting
 underdeliver:V
 underdevelop:V,_s,_ing,_ed
 underdeveloped:A
@@ -69127,7 +69287,7 @@ unstrained:A
 unstrap:V
 unstratified:A
 unstressed:A
-unstring:V
+unstring:V,_s,_ing,unstrung
 unstructured:A
 unstrung:A
 unstuck:A
@@ -69224,7 +69384,7 @@ untarnished:A
 untasted:A
 untaught:A
 untaxed:A
-unteach:V
+unteach:V,_es,_ing,untaught
 untechnical:A
 untellable:A
 untempered:A
@@ -69503,7 +69663,7 @@ upper:A
 upper:N
 uppercase:A
 uppercut:N
-uppercut:V
+uppercut:V,_s,_ting
 uppermost:A
 uppermost:Av
 uppish:A
@@ -71489,7 +71649,7 @@ webpage:N
 website:N
 webworm:N
 wed:A
-wed:V
+wed:V,_s,_ding,_ded
 wedded:A
 wedder:N
 wedding:N
