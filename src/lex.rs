@@ -11,7 +11,7 @@ fn make_builtin() -> Lexicon {
     for (i, line) in include_str!("../res/english.csv").lines().enumerate() {
         match Lexeme::try_from(line) {
             Ok(word) => lex.insert(word),
-            Err(_) => eprintln!("Bad word on line {}: `{line}`", i + 1),
+            Err(_) => panic!("Bad word on line {}: `{line}`", i + 1),
         }
     }
     lex
