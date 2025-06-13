@@ -22,6 +22,32 @@ pub fn builtin() -> &'static Lexicon {
     &LEXICON
 }
 
+/// Check if a character is an apostrophe
+///
+/// Unicode has several different apostrophes:
+///  - ' `U+0027` (ASCII APOSTROPHE)
+///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE) -- glottal stop
+///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
+///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
+pub fn is_apostrophe(c: char) -> bool {
+    c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
+}
+
+/// Make word to check lexicon
+pub fn make_word(word: &str) -> String {
+    let mut w = String::with_capacity(word.len());
+    for c in word.chars() {
+        if is_apostrophe(c) {
+            w.push('’');
+        } else {
+            for cl in c.to_lowercase() {
+                w.push(cl);
+            }
+        }
+    }
+    w
+}
+
 /// Lexicon of words
 #[derive(Default, Clone)]
 pub struct Lexicon {
@@ -68,12 +94,12 @@ impl Lexicon {
 
     /// Check if lexicon contains a word form
     pub fn contains(&self, word: &str) -> bool {
-        self.forms.contains_key(&word.to_lowercase())
+        self.forms.contains_key(&make_word(word))
     }
 
     /// Get all lexeme entries containing a word form
     pub fn word_entries(&self, word: &str) -> Vec<&Lexeme> {
-        if let Some(indices) = self.forms.get(&word.to_lowercase()) {
+        if let Some(indices) = self.forms.get(&make_word(word)) {
             let mut entries = Vec::with_capacity(indices.len());
             for i in indices {
                 entries.push(&self.words[*i]);

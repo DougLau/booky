@@ -1,6 +1,6 @@
 use crate::contractions;
 use crate::kind::Kind;
-use crate::lex::{self, Lexicon};
+use crate::lex::{self, Lexicon, is_apostrophe};
 use std::io::{self, BufRead, Bytes};
 
 /// Character chunk types
@@ -102,17 +102,6 @@ fn is_boundary(c: char) -> bool {
     // ZERO WIDTH SPACE `U+200B` is a non-whitespace "space" (WTF?!)
     // ZERO WIDTH NO-BREAK SPACE `U+FEFF` is sometimes used as a BOM
     c.is_whitespace() || c.is_control() || c == '\u{200B}' || c == '\u{FEFF}'
-}
-
-/// Check if a character is an apostrophe
-///
-/// Unicode has several different apostrophes:
-///  - ' `U+0027` (ASCII APOSTROPHE)
-///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE) -- glottal stop
-///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
-///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
-fn is_apostrophe(c: char) -> bool {
-    c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
 }
 
 /// Check if a dot is appendable

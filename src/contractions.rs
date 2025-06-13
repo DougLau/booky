@@ -1,3 +1,5 @@
+use crate::lex::is_apostrophe;
+
 /// Word contractions
 enum Contraction {
     Full(&'static str, &'static str, &'static str),
@@ -82,17 +84,6 @@ fn equals_contraction(part: &str, word: &str) -> bool {
         }
     }
     true
-}
-
-/// Check if a character is an apostrophe
-///
-/// Unicode has several different apostrophes:
-///  - ' `U+0027` (ASCII APOSTROPHE)
-///  - ʼ `U+02BC` (MODIFIER LETTER APOSTROPHE) -- glottal stop
-///  - ’ `U+2019` (RIGHT SINGLE QUOTATION MARK) -- recommended by Unicode!
-///  - ＇ `U+FF07` (FULLWIDTH APOSTROPHE)
-fn is_apostrophe(c: char) -> bool {
-    c == '\u{0027}' || c == '\u{02BC}' || c == '\u{2019}' || c == '\u{FF07}'
 }
 
 /// Split contractions

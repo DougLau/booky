@@ -1,4 +1,5 @@
 use crate::kind::Kind;
+use crate::lex::make_word;
 use crate::parse::{Chunk, Parser};
 use std::collections::HashMap;
 use std::fmt;
@@ -85,7 +86,7 @@ impl WordTally {
 
     /// Tally a word
     fn tally_word(&mut self, word: String, kind: Kind) {
-        let key = word.to_lowercase();
+        let key = make_word(&word);
         let we = WordEntry::new(1, word, kind);
         match self.words.get_mut(&key) {
             Some(e) => {
