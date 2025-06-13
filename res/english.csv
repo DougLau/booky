@@ -2688,7 +2688,7 @@ analphabetism:N
 analysand:N
 analyse:V
 analyser:N
-analysis:N,analyses
+analysis:N
 analyst:N
 analytic:A
 analytic:N
@@ -3203,7 +3203,7 @@ antheridial:A
 antheridiophore:N
 antheridium:N
 antherozoid:N
-anthesis:N,antheses
+anthesis:N
 anthill:N
 anthologise:V
 anthologist:N
@@ -3405,7 +3405,7 @@ antisubmarine:A
 antisyphilitic:N
 antitank:A
 antitauon:N
-antithesis:N,antitheses
+antithesis:N
 antithetic:A
 antithetical:A
 antithetically:Av
@@ -4243,8 +4243,8 @@ arteriography:N
 arteriola:N
 arteriolar:A
 arteriole:N
-arteriolosclerosis:N,arterioloscleroses
-arteriosclerosis:N,arterioscleroses
+arteriolosclerosis:N
+arteriosclerosis:N
 arteriosclerotic:A
 arteriovenous:A
 arteritis:N
@@ -4714,7 +4714,7 @@ atherogenesis:N
 atheroma:N
 atheromatic:A
 atheromatous:A
-atherosclerosis:N,atheroscleroses
+atherosclerosis:N
 atherosclerotic:A
 athetosis:N
 athirst:A
@@ -5010,7 +5010,7 @@ autobiographic:A
 autobiographical:A
 autobiography:N
 autobus:N
-autocatalysis:N,autocatalyses
+autocatalysis:N
 autocatalytic:A
 autochthonal:A
 autochthonic:A
@@ -6026,7 +6026,7 @@ basined:A
 basinet:N
 basinful:N
 basipetal:A
-basis:N,bases
+basis:N
 basiscopic:A
 bask:V
 basket:N
@@ -7158,7 +7158,7 @@ biosafety:N
 bioscience:N
 bioscope:N
 biosphere:N
-biosynthesis:N,biosyntheses
+biosynthesis:N
 biosynthetic:A
 biosystematic:A
 biosystematics:N.p
@@ -10593,7 +10593,7 @@ cataloguer:N
 catalpa:N
 catalufa:N
 catalyse:V
-catalysis:N,catalyses
+catalysis:N
 catalyst:N
 catalytic:A
 catalytically:Av
@@ -11525,7 +11525,7 @@ chemosis:N
 chemosorption:N
 chemosorptive:A
 chemosurgery:N
-chemosynthesis:N,chemosyntheses
+chemosynthesis:N
 chemotaxis:N
 chemotherapeutic:A
 chemotherapeutical:A
@@ -15626,7 +15626,7 @@ cripple:N
 cripple:V
 crippled:A
 crippling:A
-crisis:N,crises
+crisis:N
 crisp:A
 crisp:N
 crisp:V
@@ -15894,7 +15894,7 @@ cryoscope:N
 cryostat:N
 cryosurgery:N
 crypt:N
-cryptanalysis:N,cryptanalyses
+cryptanalysis:N
 cryptanalyst:N
 cryptanalytic:A
 cryptanalytics:N.p
@@ -17799,7 +17799,7 @@ dermatome:N
 dermatomycosis:N
 dermatomyositis:N
 dermatophytosis:N
-dermatosclerosis:N,dermatoscleroses
+dermatosclerosis:N
 dermatosis:N
 dermic:A
 dermis:N
@@ -18213,7 +18213,7 @@ diaglyph:N
 diagnosable:A
 diagnose:V
 diagnosing:N
-diagnosis:N,diagnoses
+diagnosis:N
 diagnostic:A
 diagnostician:N
 diagnostics:N.p
@@ -18298,7 +18298,7 @@ diastole:N
 diastolic:A
 diastrophism:N
 diathermy:N
-diathesis:N,diatheses
+diathesis:N
 diatom:N
 diatomic:A
 diatomite:N
@@ -21140,7 +21140,7 @@ elkhound:N
 elkwood:N
 ell:N
 ellipse:N
-ellipsis:N,ellipses
+ellipsis:N
 ellipsoid:A
 ellipsoid:N
 ellipsoidal:A
@@ -21977,7 +21977,7 @@ epaulette:N
 epauliere:N
 epee:N
 ependyma:N
-epenthesis:N,epentheses
+epenthesis:N
 epenthetic:A
 epergne:N
 epha:N
@@ -22008,7 +22008,7 @@ epicine:N
 epicondyle:N
 epicondylitis:N
 epicranium:N
-epicrisis:N,epicrises
+epicrisis:N
 epicure:N
 epicurean:A
 epicurean:N
@@ -30981,7 +30981,7 @@ hyphenated:A
 hyphenation:N
 hypnagogic:A
 hypnagogue:N
-hypnoanalysis:N,hypnoanalyses
+hypnoanalysis:N
 hypnoanalytic:A
 hypnogenesis:N
 hypnogogic:A
@@ -31066,7 +31066,7 @@ hypothalamus:N
 hypothecate:V
 hypothermia:N
 hypothermic:A
-hypothesis:N,hypotheses
+hypothesis:N
 hypothesise:V
 hypothesize:V
 hypothetic:A
@@ -34788,7 +34788,7 @@ kin:A
 kin:N
 kina:N
 kinaesthesia:N
-kinaesthesis:N,kinaestheses
+kinaesthesis:N
 kinaesthetic:A
 kinaesthetically:Av
 kinanesthesia:N
@@ -34817,7 +34817,7 @@ kinescope:N
 kinesiology:N
 kinesis:N
 kinesthesia:N
-kinesthesis:N,kinestheses
+kinesthesis:N
 kinesthetic:A
 kinesthetically:Av
 kinesthetics:N.p
@@ -38966,7 +38966,7 @@ metatarsal:A
 metatarsal:N
 metatarsus:N
 metatherian:N
-metathesis:N,metatheses
+metathesis:N
 metaverse:N
 metazoan:N
 mete:N
@@ -41239,7 +41239,7 @@ narcist:N
 narcolepsy:N
 narcoleptic:A
 narcoleptic:N
-narcosis:N,narcoses
+narcosis:N
 narcoterrorism:N
 narcotic:A
 narcotic:N
@@ -41585,7 +41585,7 @@ nelson:N
 nematode:N
 nemertean:N
 nemertine:N
-nemesis:N,nemeses
+nemesis:N
 nemophila:N
 neo:A
 neoclassic:A
@@ -41664,7 +41664,7 @@ nephron:N
 nephropathy:N
 nephroptosia:N
 nephroptosis:N
-nephrosclerosis:N,nephroscleroses
+nephrosclerosis:N
 nephrosis:N
 nephrotomy:N
 nephrotoxic:A
@@ -41805,7 +41805,7 @@ neuropteron:N
 neurosarcoma:N
 neuroscience:N
 neuroscientist:N
-neurosis:N,neuroses
+neurosis:N
 neurosurgeon:N
 neurosurgery:N
 neurosurgical:A
@@ -42143,7 +42143,7 @@ nodule:N
 noduled:A
 nodulose:A
 noel:N
-noesis:N,noeses
+noesis:N
 noetic:A
 nog:N
 noggin:N
@@ -42965,7 +42965,7 @@ nucleonics:N.p
 nucleoplasm:N
 nucleoprotein:N
 nucleoside:N
-nucleosynthesis:N,nucleosyntheses
+nucleosynthesis:N
 nucleotide:N
 nucleus:N,nuclei,necleuses
 nude:A
@@ -43131,7 +43131,7 @@ oarlock:N
 oarsman:N,oarsmen
 oarsmanship:N
 oarswoman:N,oarswomen
-oasis:N,oases
+oasis:N
 oast:N
 oat:N
 oatcake:N
@@ -44282,7 +44282,7 @@ osteopetrosis:N
 osteophyte:N
 osteoporosis:N
 osteosarcoma:N
-osteosclerosis:N,osteoscleroses
+osteosclerosis:N
 osteostracan:N
 osteotomy:N
 ostiarius:N
@@ -44319,7 +44319,7 @@ otologist:N
 otology:N
 otoplasty:N
 otorrhea:N
-otosclerosis:N,otoscleroses
+otosclerosis:N
 otoscope:N
 ototoxic:A
 ottar:N
@@ -45632,7 +45632,7 @@ parallelopiped:N
 parallelopipedon:N
 paralogism:N
 paralyse:V
-paralysis:N,paralyses
+paralysis:N
 paralytic:A
 paralytic:N
 paralytical:A
@@ -45745,7 +45745,7 @@ parentally:Av
 parented:A
 parenteral:A
 parenterally:Av
-parenthesis:N,parentheses
+parenthesis:N
 parenthesize:V
 parenthetic:A
 parenthetical:A
@@ -46791,7 +46791,7 @@ peripheral:A
 peripheral:N
 peripherally:Av
 periphery:N
-periphrasis:N,periphrases
+periphrasis:N
 periphrastic:A
 peripteral:A
 perirhinal:A
@@ -46803,7 +46803,7 @@ perishables:N.p
 perisher:N
 perisperm:N
 perissodactyl:N
-peristalsis:N,peristalses
+peristalsis:N
 peristaltic:A
 peristome:N
 peristylar:A
@@ -47419,7 +47419,7 @@ photosphere:N
 photostat:N
 photostat:V
 photostatic:A
-photosynthesis:N,photosyntheses
+photosynthesis:N
 photosynthesize:V
 photosynthetic:A
 photosynthetically:Av
@@ -50266,7 +50266,7 @@ progestin:N
 progestogen:N
 prognathic:A
 prognathous:A
-prognosis:N,prognoses
+prognosis:N
 prognostic:A
 prognostic:N
 prognosticate:V
@@ -50569,7 +50569,7 @@ prostatectomy:N
 prostatic:A
 prostatitis:N
 prostheon:N
-prosthesis:N,prostheses
+prosthesis:N
 prosthetic:A
 prosthetics:N.p
 prosthetist:N
@@ -50836,7 +50836,7 @@ psychically:Av
 psycho:N
 psychoactive:A
 psychoanalyse:V
-psychoanalysis:N,psychoanalyses
+psychoanalysis:N
 psychoanalyst:N
 psychoanalytic:A
 psychoanalytical:A
@@ -50861,7 +50861,7 @@ psychometrics:N.p
 psychometrika:N
 psychometry:N
 psychomotor:A
-psychoneurosis:N,psychoneuroses
+psychoneurosis:N
 psychoneurotic:A
 psychoneurotic:N
 psychonomics:N.p
@@ -50881,7 +50881,7 @@ psychophysiology:N
 psychopomp:N
 psychosexual:A
 psychosexuality:N
-psychosis:N,psychoses
+psychosis:N
 psychosomatic:A
 psychosurgery:N
 psychotherapeutic:A
@@ -50908,7 +50908,7 @@ pterosaur:N
 pterygium:N
 ptomain:N
 ptomaine:N
-ptosis:N,ptoses
+ptosis:N
 ptyalin:N
 ptyalise:V
 ptyalism:N
@@ -51310,9 +51310,9 @@ pya:N
 pyaemia:N
 pyaemic:A
 pycnidium:N
-pycnodysostosis:N,pycnodysostoses
+pycnodysostosis:N
 pycnogonid:N
-pycnosis:N,pycnoses
+pycnosis:N
 pycnotic:A
 pyelogram:N
 pyelography:N
@@ -51324,7 +51324,7 @@ pyinma:N
 pyjama:N
 pyjamaed:A
 pyknic:A
-pyknosis:N,pyknoses
+pyknosis:N
 pyknotic:A
 pylon:N
 pyloric:A
@@ -56381,7 +56381,7 @@ scleroderma:N
 sclerometer:N
 scleroprotein:N
 sclerosed:A
-sclerosis:N,scleroses
+sclerosis:N
 sclerotic:A
 sclerotinia:N
 sclerotium:N
@@ -58666,7 +58666,7 @@ sirolimus:N
 sirrah:N
 sirree:N
 sirup:N
-sis:N
+sis:N,_es,_ses
 sisal:N
 sise:N
 sisham:N
@@ -59901,9 +59901,9 @@ solving:N
 som:N
 soma:N
 somaesthesia:N
-somaesthesis:N,somaestheses
+somaesthesis:N
 soman:N
-somatatesthesis:N,somatatestheses
+somatatesthesis:N
 somatesthesia:N
 somatic:A
 somatogenetic:A
@@ -59935,7 +59935,7 @@ somersaulting:N
 somerset:N
 somerset:V
 somesthesia:N
-somesthesis:N,somestheses
+somesthesis:N
 something:D
 something:N
 sometime:A
@@ -60804,7 +60804,7 @@ spondaize:V
 spondee:N
 spondylarthritis:N
 spondylitis:N
-spondylolisthesis:N,spondylolistheses
+spondylolisthesis:N
 sponge:N
 sponge:V
 spongefly:N
@@ -63673,7 +63673,7 @@ sylvan:N
 sylvanite:N
 sylvine:N
 sylvite:N
-symbiosis:N,symbioses
+symbiosis:N
 symbiotic:A
 symbiotically:Av
 symbol:N
@@ -63817,7 +63817,7 @@ synonymous:A
 synonymously:Av
 synonymousness:N
 synonymy:N
-synopsis:N,synopses
+synopsis:N
 synoptic:A
 synoptical:A
 synovia:N
@@ -63836,7 +63836,7 @@ syntagmatic:A
 syntax:N
 synth:N
 synthase:N
-synthesis:N,syntheses
+synthesis:N
 synthesise:V
 synthesiser:N
 synthesist:N
@@ -65232,7 +65232,7 @@ theropod:N
 thesaural:A
 thesaurus:N,thesauri,_es
 these:D
-thesis:N,theses
+thesis:N
 thespian:A
 thespian:N
 theta:N
@@ -65469,7 +65469,7 @@ thrombophlebitis:N
 thromboplastin:N
 thrombose:V
 thrombosed:A
-thrombosis:N,thromboses
+thrombosis:N
 thrombotic:A
 thrombus:N,thrombi
 throne:N
@@ -70674,7 +70674,7 @@ urial:N
 uric:A
 uricaciduria:N
 urinal:N
-urinalysis:N,urinalyses
+urinalysis:N
 urinary:A
 urinate:V
 urination:N
@@ -74153,7 +74153,7 @@ zymogen:N
 zymoid:A
 zymolysis:N
 zymolytic:A
-zymosis:N,zymoses
+zymosis:N
 zymotic:A
 zymurgy:N
 æsthetic:A

@@ -242,6 +242,11 @@ impl Lexeme {
 
 /// Make a regular plural noun from the singular form
 fn noun_plural(lemma: &str) -> String {
+    if let Some(root) = lemma.strip_suffix("sis") {
+        if !root.is_empty() {
+            return format!("{root}ses");
+        }
+    }
     if ends_in_y(lemma) {
         let root = lemma.trim_end_matches('y');
         format!("{root}ies")
