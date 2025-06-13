@@ -6,7 +6,7 @@ use booky::word::{Lexeme, WordClass};
 fn main() -> Result<()> {
     let lex = lex::builtin();
     for word in lex.iter() {
-        if keep(&lex, word) {
+        if !keep(&lex, word) {
             println!("{word:?}");
         }
     }
