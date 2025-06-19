@@ -252,7 +252,7 @@ abolitionary:A
 abolitionism:N
 abolitionist:N
 abomasal:A
-abomasum:N
+abomasum:N,abomasa
 abominable:A
 abominably:Av
 abominate:V
@@ -20885,7 +20885,7 @@ efflorescent:A
 effluence:N
 effluent:A
 effluent:N
-effluvium:N
+effluvium:N,effluvia,_s
 efflux:N
 effort:N
 effortful:A
@@ -21369,7 +21369,7 @@ employed:A
 employee:N
 employer:N
 employment:N
-emporium:N
+emporium:N,_s,emporia
 empower:V
 empowered:A
 empowerment:N
@@ -21473,7 +21473,7 @@ encoding:N
 encoffin:V,_s,_ing,_ed
 encolure:N
 encomiastic:A
-encomium:N
+encomium:N,_s,encomia
 encompass:V
 encompassing:A
 encompassment:N
@@ -21547,11 +21547,11 @@ endlessness:N
 endmost:A
 endoblast:N
 endocarditis:N
-endocardium:N
+endocardium:N,endocardia
 endocarp:N
 endocentric:A
 endocervicitis:N
-endocranium:N
+endocranium:N,endocrania
 endocrinal:A
 endocrine:A
 endocrine:N
@@ -21575,11 +21575,12 @@ endolymph:N
 endometrial:A
 endometriosis:N
 endometritis:N
-endometrium:N
+endometrium:N,endometria
 endomorph:N
 endomorphic:A
 endomorphy:N
-endoneurium:N
+endoneurial:A
+endoneurium:N,endoneuria
 endonuclease:N
 endoparasite:N
 endoparasitic:A
@@ -21597,7 +21598,7 @@ endosperm:N
 endospore:N
 endosteum:N
 endothelial:A
-endothelium:N
+endothelium:N,endothelia
 endothermal:A
 endothermic:A
 endotoxin:N
@@ -22001,8 +22002,8 @@ epic:N
 epical:A
 epicalyx:N
 epicanthus:N
-epicardia:N
-epicardium:N
+epicardial:A
+epicardium:N,epicardia
 epicarp:N
 epicarpal:A
 epicene:A
@@ -22011,7 +22012,7 @@ epicentre:N
 epicine:N
 epicondyle:N
 epicondylitis:N
-epicranium:N
+epicranium:N,epicrania
 epicrisis:N
 epicure:N
 epicurean:A
@@ -22038,7 +22039,7 @@ epididymitis:N
 epidural:A
 epidural:N
 epigastric:A
-epigastrium:N
+epigastrium:N,epigastria
 epigenesis:N
 epiglottis:N
 epiglottitis:N
@@ -22099,11 +22100,11 @@ epitaph:N
 epitaxy:N
 epithalamic:A
 epithalamion:N
-epithalamium:N
+epithalamium:N,_s,epithalamia
 epithelial:A
 epitheliod:A
 epithelioma:N
-epithelium:N
+epithelium:N,epithelia
 epithet:N
 epitome:N
 epitomise:V
@@ -22160,7 +22161,7 @@ equilateral:A
 equilibrate:V
 equilibration:N
 equilibrise:V
-equilibrium:N
+equilibrium:N,_s,equilibria
 equilibrize:V
 equine:A
 equine:N
@@ -22566,7 +22567,7 @@ eurypterid:N
 eurythmics:N.p
 eurythmy:N
 eusporangiate:A
-eusporangium:N
+eusporangium:N,eusporangia
 eutectic:N
 euthanasia:N
 euthanize:V
@@ -22935,7 +22936,7 @@ exorciser:N
 exorcism:N
 exorcist:N
 exorcize:V
-exordium:N
+exordium:N,_s,exordia
 exoskeleton:N
 exosphere:N
 exostosis:N
@@ -24859,7 +24860,7 @@ floriculture:N
 florid:A
 floridly:Av
 floridness:N
-florilegium:N
+florilegium:N,florilegia
 florin:N
 florist:N
 floss:N
@@ -25089,7 +25090,7 @@ folie:N
 folio:N
 foliolate:A
 foliose:A
-folium:N
+folium:N,folia
 folk:N
 folklore:N
 folkloric:A
@@ -26320,10 +26321,10 @@ gamer:N
 gamesmanship:N
 gamesome:A
 gamester:N
-gametangium:N
+gametangium:N,gametangia
 gamete:N
 gametocyte:N
-gametoecium:N
+gametoecium:N,gametoecia
 gametogenesis:N
 gametophore:N
 gametophyte:N
@@ -27136,7 +27137,7 @@ globularness:N
 globule:N
 globulin:N
 glochid:N
-glochidium:N
+glochidium:N,glochidia
 glockenspiel:N
 glogg:N
 glom:V
@@ -28297,7 +28298,7 @@ guzzling:N
 gybe:V
 gym:N
 gymkhana:N
-gymnasium:N
+gymnasium:N,_s,gymnasia
 gymnast:N
 gymnastic:A
 gymnastics:N.p
@@ -28323,11 +28324,12 @@ gyneolatry:N
 gynobase:N
 gynocentric:A
 gynocentrism:N
-gynoecium:N
+gynoecial:A
+gynoecium:N,gynoecia
 gynogenesis:N
 gynophobia:N
 gynophore:N
-gynostegium:N
+gynostegium:N,gynostegia
 gyp:N
 gyp:V
 gypsum:N
@@ -28962,7 +28964,7 @@ haunter:N
 haunting:A
 hausen:N
 hausmannite:N
-haustorium:N
+haustorium:N,haustoria
 hautbois:N
 hautboy:N
 hauteur:N
@@ -29507,7 +29509,7 @@ herbaceous:A
 herbage:N
 herbal:A
 herbalist:N
-herbarium:N
+herbarium:N,herbaria
 herbicide:N
 herbivore:N
 herbivorous:A
@@ -30198,7 +30200,7 @@ honor:V
 honorable:A
 honorableness:N
 honorably:Av
-honorarium:N
+honorarium:N,honoraria,_s
 honorary:A
 honored:A
 honoree:N
@@ -30861,7 +30863,7 @@ hymen:N
 hymenal:A
 hymeneal:A
 hymeneal:N
-hymenium:N
+hymenium:N,hymenia,_s
 hymenopter:N
 hymenopteran:N
 hymenopteron:N
@@ -30879,7 +30881,7 @@ hyoscine:N
 hyoscyamine:N
 hypaethral:A
 hypallage:N
-hypanthium:N
+hypanthium:N,hypanthia
 hype:N
 hyperacidity:N
 hyperactive:A
@@ -31009,7 +31011,7 @@ hypnotizer:N
 hypo:N
 hypoactive:A
 hypoadrenalism:N
-hypobasidium:N
+hypobasidium:N,hypobasidia
 hypoblast:N
 hypocalcaemia:N
 hypocalcemia:N
@@ -31021,7 +31023,7 @@ hypochondriac:A
 hypochondriac:N
 hypochondriacal:A
 hypochondriasis:N
-hypochondrium:N
+hypochondrium:N,hypochondria
 hypocorism:N
 hypocrisy:N
 hypocrite:N
@@ -31289,7 +31291,7 @@ ileostomy:N
 ileum:N
 ileus:N
 iliac:A
-ilium:N
+ilium:N,ilia
 ilk:N
 ill:A
 ill:Av
@@ -32343,7 +32345,7 @@ indurate:A
 indurate:V
 induration:N
 indusial:A
-indusium:N
+indusium:N,indusia
 industrial:A
 industrialisation:N
 industrialise:V
@@ -33843,7 +33845,8 @@ ischaemia:N
 ischaemic:A
 ischemia:N
 ischemic:A
-ischium:N
+ischial:A
+ischium:N,ischia
 isentropic:A
 isinglass:N
 island:N
@@ -35267,7 +35270,7 @@ lame:A
 lame:N
 lame:V
 lamedh:N
-lamella:N
+lamella:N,_e,_s
 lamellibranch:A
 lamellibranch:N
 lamely:Av
@@ -35831,7 +35834,7 @@ legation:N
 legato:A
 legato:Av
 legend:N
-legendarium:N
+legendarium:N,legendaria
 legendary:A
 leger:N
 legerdemain:N
@@ -35974,7 +35977,7 @@ leptorrhinic:A
 leptospira:N
 leptospirosis:N
 leptosporangiate:A
-leptosporangium:N
+leptosporangium:N,leptosporangia
 leptotene:N
 leresis:N
 lerot:N
@@ -37367,7 +37370,7 @@ macrophage:N
 macroscopic:A
 macroscopical:A
 macroscopically:Av
-macrosporangium:N
+macrosporangium:N,macrosporangia
 macrospore:N
 macrotus:N
 macrozamia:N
@@ -37902,7 +37905,7 @@ mantua:N
 manual:A
 manual:N
 manually:Av
-manubrium:N
+manubrium:N,manubria,_s
 manufactory:N
 manufacturability:N
 manufacturable:A
@@ -38089,7 +38092,7 @@ marshmallow:N
 marshy:A
 marsupial:A
 marsupial:N
-marsupium:N
+marsupium:N,marsupia
 mart:N
 martagon:N
 marten:N
@@ -38629,7 +38632,7 @@ megaphone:N
 megapixel:N
 megapode:N
 megascopic:A
-megasporangium:N
+megasporangium:N,megasporangia
 megaspore:N
 megasporophyll:N
 megastar:N
@@ -38966,8 +38969,9 @@ mesophyte:N
 mesophytic:A
 mesorrhine:A
 mesosphere:N
+mesothelial:A
 mesothelioma:N
-mesothelium:N
+mesothelium:N,mesothelia
 mesotron:N
 mesquit:N
 mesquite:N
@@ -39290,7 +39294,7 @@ microsecond:N
 microseism:N
 microsomal:A
 microsome:N
-microsporangium:N
+microsporangium:N,microsporangia
 microspore:N
 microsporidian:N
 microsporophyll:N
@@ -39443,7 +39447,7 @@ military:N
 militate:V
 militia:N
 militiaman:N,militiamen
-milium:N
+milium:N,milia
 milk:N
 milk:V
 milkcap:N
@@ -40536,7 +40540,7 @@ moralizer:N
 moralizing:N
 morally:Av
 morass:N
-moratorium:N
+moratorium:N,_s,moratoria
 moray:N
 morbid:A
 morbidity:N
@@ -41267,7 +41271,7 @@ my:D
 myalgia:N
 myalgic:A
 myasthenia:N
-mycelium:N
+mycelium:N,mycelia
 mycobacterium:N,mycobacteria
 mycologist:N
 mycology:N
@@ -41306,7 +41310,7 @@ mynah:N
 myocardial:A
 myocardiopathy:N
 myocarditis:N
-myocardium:N
+myocardium:N,myocardia
 myoclonus:N
 myodynia:N
 myofibril:N
@@ -41592,7 +41596,7 @@ natalism:N
 natalist:N
 natality:N
 natator:N
-natatorium:N
+natatorium:N,natatoria,_s
 natch:Av
 nates:N
 nation:N
@@ -41908,7 +41912,7 @@ neon:N
 neonatal:A
 neonate:N
 neonatology:N
-neopallium:N
+neopallium:N,neopallia,_s
 neophilia:N
 neophiliac:N
 neophobia:N
@@ -42052,7 +42056,7 @@ neurodiverse:A
 neurodiversity:N
 neuroendocrine:A
 neuroepithelioma:N
-neuroepithelium:N
+neuroepithelium:N,neuroepithelia,_s
 neuroethics:N.p
 neurofibroma:N
 neurofibromatosis:N
@@ -43951,7 +43955,7 @@ olm:N
 ology:N
 olympian:A
 om:N
-omasum:N
+omasum:N,omasa
 ombrophobous:A
 ombu:N
 ombudsman:N,ombudsmen
@@ -43972,7 +43976,7 @@ omission:N
 omissive:A
 omit:V
 ommastrephes:N
-ommatidium:N
+ommatidium:N,ommatidia
 omnibus:A
 omnibus:N
 omnidirectional:A
@@ -45628,7 +45632,7 @@ pallid:A
 pallidly:Av
 pallidness:N
 pallidum:N
-pallium:N
+pallium:N,pallia,_s
 pallone:N
 pallor:N
 pally:A
@@ -45702,12 +45706,12 @@ pancreatin:N
 pancreatitis:N
 pancytopenia:N
 panda:N
-pandaemonium:N
+pandaemonium:N,pandaemonia,_s
 pandanus:N
 pandar:N
 pandemic:A
 pandemic:N
-pandemonium:N
+pandemonium:N,pandemonia,_s
 pander:N
 pander:V
 panderer:N
@@ -45930,7 +45934,7 @@ paramagnet:N
 paramagnetic:A
 paramagnetism:N
 paramecia:N
-paramecium:N
+paramecium:N,paramecia,_s
 paramedic:N
 paramedical:A
 paramedical:N
@@ -45969,7 +45973,8 @@ paraphysis:N
 paraplegia:N
 paraplegic:A
 paraplegic:N
-parapodium:N
+parapodial:A
+parapodium:N,parapodia
 parapraxis:N
 paraprofessional:N
 paraprosdokian:N
@@ -47028,7 +47033,7 @@ pericarp:N
 pericementoclasia:N
 periclase:N
 peridinian:N
-peridium:N
+peridium:N,peridia
 peridot:N
 peridotite:N
 perigee:N
@@ -47096,9 +47101,10 @@ peristaltic:A
 peristome:N
 peristylar:A
 peristyle:N
-perithecium:N
+perithecial:A
+perithecium:N,perithecia
 perithelial:A
-perithelium:N
+perithelium:N,perithelia
 peritoneal:A
 peritoneum:N
 peritonitis:N
@@ -48373,7 +48379,7 @@ planeness:N
 planer:N
 planet:N
 planetal:A
-planetarium:N
+planetarium:N,_s,planetaria
 planetary:A
 planetesimal:N
 planetoid:N
@@ -48422,7 +48428,7 @@ plasmapheresis:N
 plasmid:N
 plasmin:N
 plasminogen:N
-plasmodium:N
+plasmodium:N,plasmodia
 plasmon:N
 plaster:N
 plaster:V
@@ -48821,11 +48827,11 @@ podalgia:N
 podcast:N
 podcast:V
 podcaster:N
-podetium:N
+podetium:N,podetia
 podgy:A
 podiatrist:N
 podiatry:N
-podium:N
+podium:N,_s,podia
 podlike:A
 podocarp:N
 podsol:N
@@ -48986,7 +48992,7 @@ pollex:N
 pollinate:V
 pollination:N
 pollinator:N
-pollinium:N
+pollinium:N,pollinia
 pollinosis:N
 polliwog:N
 pollock:N
@@ -49620,7 +49626,7 @@ practise:V
 practised:A
 practitioner:N
 praenomen:N
-praesidium:N
+praesidium:N,_s,praesidia
 praetor:N
 praetorial:A
 praetorian:A
@@ -49788,7 +49794,7 @@ precooked:A
 precool:V
 precooled:A
 precordial:A
-precordium:N
+precordium:N,precordia
 precursor:N
 precursory:A
 predaceous:A
@@ -50088,7 +50094,7 @@ president:N
 presidential:A
 presidentship:N
 presidio:N
-presidium:N
+presidium:N,presidia,_s
 presocratic:A
 presort:V
 press:N
@@ -50279,7 +50285,7 @@ primo:N
 primogenitor:N
 primogeniture:N
 primordial:A
-primordium:N
+primordium:N,primordia
 primp:V
 primping:N
 primrose:N
@@ -50672,7 +50678,7 @@ promulgate:V
 promulgated:A
 promulgation:N
 promulgator:N
-promycelium:N
+promycelium:N,promycelia
 pronatalist:N
 pronate:V
 pronation:N
@@ -51066,7 +51072,7 @@ psalm:N
 psalm:V
 psalmist:N
 psalmody:N
-psalterium:N
+psalterium:N,psalteria
 psaltery:N
 psammoma:N
 psephologist:N
@@ -51085,7 +51091,7 @@ pseudonymous:A
 pseudoperipteral:A
 pseudophloem:N
 pseudopod:N
-pseudopodium:N
+pseudopodium:N,pseudopodia
 pseudoprostyle:A
 pseudorandom:A
 pseudorubella:N
@@ -51195,7 +51201,7 @@ pterion:N
 pterodactyl:N
 pteropogon:N
 pterosaur:N
-pterygium:N
+pterygium:N,pterygia,_s
 ptomain:N
 ptomaine:N
 ptosis:N
@@ -51262,7 +51268,7 @@ puerile:A
 puerility:N
 puerpera:N
 puerperal:A
-puerperium:N
+puerperium:N,puerperia
 puff:A
 puff:N
 puff:V
@@ -51599,7 +51605,8 @@ puzzling:A
 pya:N
 pyaemia:N
 pyaemic:A
-pycnidium:N
+pycnidial:A
+pycnidium:N,pycnidia
 pycnodysostosis:N
 pycnogonid:N
 pycnosis:N
@@ -51701,7 +51708,7 @@ python:N
 pythoness:N
 pyuria:N
 pyx:N
-pyxidium:N
+pyxidium:N,pyxidia,_s
 pyxie:N
 pyxis:N
 qabala:N
@@ -55952,9 +55959,9 @@ sampler:N
 sampling:N
 samsara:N
 samurai:N
-sanatarium:N
+sanatarium:N,_s,sanataria
 sanative:A
-sanatorium:N
+sanatorium:N,_s,sanatoria
 sanctification:N
 sanctified:A
 sanctify:V
@@ -56042,7 +56049,7 @@ sanies:N
 sanious:A
 sanitarian:N
 sanitariness:N
-sanitarium:N
+sanitarium:N,_s,sanitaria
 sanitary:A
 sanitate:V
 sanitation:N
@@ -56672,9 +56679,10 @@ sclerometer:N
 scleroprotein:N
 sclerosed:A
 sclerosis:N
+sclerotial:A
 sclerotic:A
 sclerotinia:N
-sclerotium:N
+sclerotium:N,sclerotia
 sclerotomy:N
 scoff:N
 scoff:V
@@ -56692,6 +56700,7 @@ scolion:N
 scoliosis:N
 scollop:N
 scollop:V
+scolopendra:N
 scolopendrium:N
 scombroid:N
 sconce:N
@@ -57657,7 +57666,7 @@ serialize:V
 serially:Av
 seriatim:Av
 sericeous:A
-sericterium:N
+sericterium:N,sericteria
 serictery:N
 sericultural:A
 sericulture:N
@@ -61135,8 +61144,9 @@ spoony:N
 spoor:N
 sporadic:A
 sporadically:Av
+sporangial:A
 sporangiophore:N
-sporangium:N
+sporangium:N,sporangia
 spore:N
 sporocarp:N
 sporogenous:A
@@ -61459,7 +61469,7 @@ stacked:A
 stacker:N
 stacte:N
 staddle:N
-stadium:N
+stadium:N,_s,stadia
 staff:N
 staff:V
 staffer:N
@@ -62643,7 +62653,7 @@ stylite:N
 stylization:N
 stylize:V
 stylized:A
-stylopodium:N
+stylopodium:N,stylopodia
 stylostixis:N
 stylus:N,styli,_es
 stymie:N
@@ -63316,7 +63326,7 @@ supercharger:N
 supercilious:A
 superciliously:Av
 superciliousness:N
-supercilium:N
+supercilium:N,supercilia
 supercity:N
 superclass:N
 supercluster:N
@@ -63929,7 +63939,7 @@ swot:V
 sybarite:N
 sybaritic:A
 sycamore:N
-syconium:N
+syconium:N,syconia
 sycophancy:N
 sycophant:N
 sycophantic:A
@@ -64071,7 +64081,8 @@ syncretism:N
 syncretistic:A
 syncretistical:A
 syncretize:V
-syncytium:N
+syncytial:A
+syncytium:N,syncytia
 syndactylism:N
 syndactyly:N
 syndetic:A
@@ -65099,7 +65110,7 @@ tenth:N
 tenthly:Av
 tenting:N
 tentmaker:N
-tentorium:N
+tentorium:N,tentoria
 tenuity:N
 tenuous:A
 tenuously:Av
@@ -65178,7 +65189,7 @@ terrace:V
 terracotta:N
 terrain:N
 terrapin:N
-terrarium:N
+terrarium:N,terraria,_s
 terrasse:V
 terrazzo:N
 terrene:A
@@ -65296,7 +65307,7 @@ tetrapod:N
 tetrasaccharide:N
 tetraskele:N
 tetraskelion:N
-tetrasporangium:N
+tetrasporangium:N,tetrasporangia
 tetraspore:N
 tetravalent:A
 tetri:N
@@ -67295,7 +67306,7 @@ trickster:N
 tricksy:A
 tricky:A
 triclinic:A
-triclinium:N
+triclinium:N,triclinia
 tricolor:A
 tricolor:N
 tricolored:A
@@ -70944,7 +70955,7 @@ urchin:N
 urea:N
 urease:N
 uredinial:A
-uredinium:N
+uredinium:N,uredinia
 uredo:N
 uredostage:N
 uremia:N
