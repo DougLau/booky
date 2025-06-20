@@ -49,7 +49,11 @@ If any attributes are provided, they are preceded by a dot `.`:
 ### Inflected Forms
 
 Forms are modifications of the **lemma**, indicating tense, number, etc.
-An underscore (\_) in a form is treated as an exact copy of the lemma.
+They can be abbreviated in a couple ways:
+
+- An underscore (\_) in a form is treated as an exact copy of the lemma.
+- A hyphen (\-) at the beginning of a form includes the lemma, trimmed
+  to the first letter after the hyphen.  For example, `alumnus:N,-ni`
 
 If no inflected forms are provided, regular forms will be automatically
 generated for these four word classes:

@@ -103,7 +103,7 @@ aah:I
 aah:V
 aalii:N
 aardvark:N
-aardwolf:N,aardwolves
+aardwolf:N,-lves
 aasvogel:N
 ab:N
 aba:N
@@ -173,7 +173,7 @@ abductor:N
 abeam:Av
 abecedarian:A
 abecedarian:N
-abecedarium:N,abecedaria
+abecedarium:N,-ia
 abecedarius:N
 abed:Av
 abele:N
@@ -2261,7 +2261,7 @@ aluminize:V
 aluminous:A
 aluminum:N
 alumna:N,_e
-alumnus:N,alumni
+alumnus:N,-ni
 alumroot:N
 alundum:N
 alveolar:A

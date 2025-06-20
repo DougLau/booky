@@ -121,7 +121,7 @@ impl TryFrom<&str> for Lexeme {
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
-            irregular_forms.push(form.replace("_", &lemma));
+            irregular_forms.push(make_irregular(&lemma, form));
         }
         let mut forms = Vec::new();
         forms.push(lemma.clone());
@@ -142,6 +142,21 @@ impl TryFrom<&str> for Lexeme {
         }
         Ok(word)
     }
+}
+
+/// Make an irregular form of a lemma
+fn make_irregular(lemma: &str, form: &str) -> String {
+    if let Some(suffix) = form.strip_prefix('-') {
+        if let Some(c) = suffix.chars().next() {
+            if let Some((base, _ending)) = lemma.rsplit_once(c) {
+                let mut f = String::with_capacity(base.len() + suffix.len());
+                f.push_str(base);
+                f.push_str(suffix);
+                return f;
+            }
+        }
+    }
+    form.replace("_", lemma)
 }
 
 impl fmt::Debug for Lexeme {
