@@ -121,7 +121,7 @@ impl TryFrom<&str> for Lexeme {
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
-            irregular_forms.push(make_irregular(&lemma, form));
+            irregular_forms.push(decode_irregular(&lemma, form));
         }
         let mut forms = Vec::new();
         forms.push(lemma.clone());
@@ -144,8 +144,8 @@ impl TryFrom<&str> for Lexeme {
     }
 }
 
-/// Make an irregular form of a lemma
-fn make_irregular(lemma: &str, form: &str) -> String {
+/// Decode an irregular word form
+fn decode_irregular(lemma: &str, form: &str) -> String {
     if let Some(suffix) = form.strip_prefix('-') {
         if let Some(c) = suffix.chars().next() {
             if let Some((base, _ending)) = lemma.rsplit_once(c) {
@@ -159,6 +159,32 @@ fn make_irregular(lemma: &str, form: &str) -> String {
     form.replace("_", lemma)
 }
 
+/// Encode an irregular word form
+fn encode_irregular(lemma: &str, form: &str) -> String {
+    let mut pos = None;
+    for i in 3..lemma.len() {
+        if let (Some((a0, a1)), Some((b0, b1))) =
+            (lemma.split_at_checked(i), form.split_at_checked(i))
+        {
+            if a0 == b0 {
+                let mut ch = a1.chars();
+                if let Some(c) = ch.next() {
+                    if b1.starts_with(c) && !ch.any(|x| x == c) {
+                        pos = Some(i);
+                    }
+                }
+            }
+        }
+    }
+    if let Some(i) = pos {
+        let suffix = &form[i..];
+        let mut s = String::from('-');
+        s.push_str(suffix);
+        return s;
+    }
+    form.into()
+}
+
 impl fmt::Debug for Lexeme {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         write!(fmt, "{}:{}", self.lemma, self.word_class)?;
@@ -166,9 +192,10 @@ impl fmt::Debug for Lexeme {
             write!(fmt, ".{}", self.attr)?;
         }
         for form in &self.irregular_forms {
+            write!(fmt, ",")?;
             match form.strip_prefix(&self.lemma) {
-                Some(suffix) => write!(fmt, ",_{suffix}")?,
-                None => write!(fmt, ",{form}")?,
+                Some(suffix) => write!(fmt, "_{suffix}")?,
+                None => write!(fmt, "{}", encode_irregular(&self.lemma, form))?,
             }
         }
         Ok(())
@@ -405,5 +432,17 @@ fn adjective_superlative(lemma: &str) -> String {
     match consonant_end_repeat(lemma) {
         Some(end) => format!("{lemma}{end}est"),
         None => format!("{lemma}est"),
+    }
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn irregular() {
+        let a = decode_irregular("addendum", "-da");
+        let form = encode_irregular("addendum", &a);
+        assert_eq!(form, "-da");
     }
 }
