@@ -252,7 +252,7 @@ abolitionary:A
 abolitionism:N
 abolitionist:N
 abomasal:A
-abomasum:N,abomasa
+abomasum:N,-sa
 abominable:A
 abominably:Av
 abominate:V
@@ -964,7 +964,7 @@ addable:A
 addax:N
 added:A
 addend:N
-addendum:N,addenda
+addendum:N,-da
 adder:N
 addible:A
 addict:N
@@ -1287,7 +1287,7 @@ adz:N
 adze:N
 aecial:A
 aeciospore:N
-aecium:N,aecia
+aecium:N,-ia
 aegir:N
 aegis:N
 aeolian:A
@@ -1484,7 +1484,7 @@ aftereffect:N
 afterglow:N
 afterhour:N
 afterimage:N
-afterlife:N,_s,afterlives
+afterlife:N,_s,-ives
 afterlight:N
 aftermath:N
 aftermost:A
@@ -1734,10 +1734,10 @@ airbrush:V
 airburst:N
 airbus:N
 aircraft:N,_
-aircraftman:N,aircraftmen
-aircraftsman:N,aircraftsmen
+aircraftman:N,-men
+aircraftsman:N,-men
 aircrew:N
-aircrewman:N,aircrewmen
+aircrewman:N,-men
 airdock:N
 airdrome:N
 airdrop:N
@@ -1765,7 +1765,7 @@ airlock:N
 airmail:N
 airmail:V
 airmailer:N
-airman:N,airmen
+airman:N,-men
 airmanship:N
 airplane:N
 airplay:N
@@ -1784,7 +1784,7 @@ airt:V
 airtight:A
 airwave:N
 airway:N
-airwoman:N,airwomen
+airwoman:N,-men
 airworthiness:N
 airworthy:A
 airy:A
@@ -1872,7 +1872,7 @@ aldehyde:N
 aldehydic:A
 alder:N
 alderfly:N
-alderman:N,aldermen
+alderman:N,-men
 aldermanic:A
 aldermanly:A
 aldohexose:N
@@ -1897,7 +1897,7 @@ alertly:Av
 alertness:N
 aleurone:N
 aleuronic:A
-alewife:N,alewives
+alewife:N,-ives
 alexandrite:N
 alexia:N
 alexic:A
@@ -2138,7 +2138,7 @@ allusiveness:N
 alluvial:A
 alluviation:N
 alluvion:N
-alluvium:N,_s,alluvia
+alluvium:N,_s,-ia
 ally:N
 ally:V
 allyl:N
@@ -2769,8 +2769,8 @@ anchor:V,_s,_ing,_ed
 anchorage:N
 anchorite:N
 anchoritic:A
-anchorman:N,anchormen
-anchorperson:N,anchorpeople,_s
+anchorman:N,-men
+anchorperson:N,-eople,_s
 anchovy:N
 anchusa:N
 anchylosis:N
@@ -3201,7 +3201,7 @@ anther:N
 antheral:A
 antheridial:A
 antheridiophore:N
-antheridium:N,antheridia
+antheridium:N,-ia
 antherozoid:N
 anthesis:N
 anthill:N
@@ -3634,7 +3634,7 @@ apostrophise:V
 apostrophize:V
 apothecary:N
 apothecial:A
-apothecium:N,apothecia
+apothecium:N,-ia
 apothegm:N
 apothegmatic:A
 apothegmatical:A
@@ -3691,7 +3691,7 @@ appendicitis:N
 appendicle:N
 appendicular:A
 appendicularia:N
-appendix:N,appendices,_es
+appendix:N,-ices,_es
 apperceive:V
 apperception:N
 apperceptive:A
@@ -3850,7 +3850,7 @@ aquaphobic:A
 aquaplane:N
 aquaplane:V
 aquarelle:N
-aquarium:N,_s,aquaria
+aquarium:N,_s,-ia
 aquatic:A
 aquatic:N
 aquatint:N
@@ -3938,7 +3938,7 @@ arch:A
 arch:N
 arch:V
 archaean:A
-archaebacterium:N,archaebacteria
+archaebacterium:N,-ia
 archaeologic:A
 archaeological:A
 archaeologist:N
@@ -3969,7 +3969,7 @@ archean:A
 arched:A
 archegonial:A
 archegoniate:A
-archegonium:N,archegonia
+archegonium:N,-ia
 archenemy:N
 archenteron:N
 archeologic:A
@@ -3984,7 +3984,7 @@ archerfish:N
 archery:N
 archespore:N
 archesporial:A
-archesporium:N,archesporia
+archesporium:N,-ia
 archetypal:A
 archetype:N
 archetypical:A
@@ -4104,7 +4104,7 @@ ariled:A
 arillate:A
 ariose:A
 arioso:N
-arise:V,_s,arising,arose,_n
+arise:V,_s,-sing,arose,_n
 arishth:N
 arista:N
 aristocracy:N
@@ -4123,7 +4123,7 @@ arm:V
 armada:N
 armadillo:N
 armament:N
-armamentarium:N,armamentaria
+armamentarium:N,-ia
 armature:N
 armband:N
 armchair:A
@@ -4296,7 +4296,7 @@ artificial:A
 artificiality:N
 artificially:Av
 artillery:N
-artilleryman:N,artillerymen
+artilleryman:N,-men
 artiodactyl:A
 artiodactyl:N
 artiodactylous:A
@@ -4484,8 +4484,8 @@ assembled:A
 assembler:N
 assembling:N
 assembly:N
-assemblyman:N,assemblymen
-assemblywoman:N,assemblywomen
+assemblyman:N,-men
+assemblywoman:N,-men
 assent:N
 assent:V
 assentient:A
@@ -4772,7 +4772,7 @@ atresia:N
 atrial:A
 atrioventricular:A
 atrip:A
-atrium:N,atria,_s
+atrium:N,-ia,_s
 atrocious:A
 atrociously:Av
 atrociousness:N
@@ -4902,7 +4902,7 @@ audition:N
 audition:V
 auditive:A
 auditor:N
-auditorium:N,_s,auditoria
+auditorium:N,_s,-ia
 auditory:A
 augend:N
 auger:N
@@ -5070,7 +5070,7 @@ automation:N
 automatise:V
 automatism:N
 automatize:V
-automaton:N,automata,_s
+automaton:N,-ta,_s
 automatonlike:A
 automobile:N
 automobile:V
@@ -5205,7 +5205,7 @@ aw:I
 await:V
 awaited:A
 awake:A
-awake:V,_s,awaking,awoke,awoken
+awake:V,_s,-king,awoke,awoken
 awaken:V
 awakened:A
 awakening:N
@@ -5367,7 +5367,7 @@ bachelorhood:N
 bacillar:A
 bacillary:A
 bacilliform:A
-bacillus:N,bacilli
+bacillus:N,-li
 bacitracin:N
 back:A
 back:Av
@@ -5476,7 +5476,7 @@ backwash:N
 backwater:N
 backwoods:A
 backwoods:N
-backwoodsman:N,backwoodsmen
+backwoodsman:N,-men
 backyard:N
 bacon:N
 bacteremia:N
@@ -5503,7 +5503,7 @@ bacteriostasis:N
 bacteriostat:N
 bacteriostatic:A
 bacterise:V
-bacterium:N,bacteria
+bacterium:N,-ia
 bacterize:V
 bacteroid:A
 bacteroid:N
@@ -5542,11 +5542,11 @@ bagatelle:N
 bagel:N
 bagful:N
 baggage:N
-baggageman:N,baggagemen
+baggageman:N,-men
 bagger:N
 bagging:N
 baggy:A
-bagman:N,bagmen
+bagman:N,-men
 bagnio:N
 bagpipe:N
 bagpiper:N
@@ -5721,7 +5721,7 @@ bandmate:N
 bandoleer:N
 bandolier:N
 bandsaw:N
-bandsman:N,bandsmen
+bandsman:N,-men
 bandstand:N
 bandtail:N
 bandwagon:N
@@ -5871,7 +5871,7 @@ barge:N
 barge:V
 bargee:N
 bargello:N
-bargeman:N,bargemen
+bargeman:N,-men
 baric:A
 barilla:N
 baring:N
@@ -5890,7 +5890,7 @@ barley:N
 barleycorn:N
 barm:N
 barmaid:N
-barman:N,barmen
+barman:N,-men
 barmbrack:N
 barmy:A
 barn:N
@@ -5991,7 +5991,7 @@ based:A
 baseless:A
 baseline:N
 basely:Av
-baseman:N,basemen
+baseman:N,-men
 basement:N
 baseness:N
 basenji:N
@@ -6010,7 +6010,7 @@ basidiomycete:N
 basidiomycetous:A
 basidiospore:N
 basidiosporous:A
-basidium:N,basidia
+basidium:N,-ia
 basifixed:A
 basify:V
 basil:N
@@ -6111,13 +6111,13 @@ bathysphere:N
 batik:N
 batik:V
 batiste:N
-batman:N,batmen
+batman:N,-men
 baton:N
 batrachian:A
 batrachian:N
 batrachomyomachia:N
 bats:A
-batsman:N,batsmen
+batsman:N,-men
 battalion:N
 batten:N
 batten:V
@@ -6200,7 +6200,7 @@ beaded:A
 beading:N
 beadle:N
 beadlike:A
-beadsman:N,beadsmen
+beadsman:N,-men
 beadwork:N
 beady:A
 beagle:N
@@ -6294,7 +6294,7 @@ beck:N
 becket:N
 beckon:V
 becloud:V
-become:V,_s,becoming,became
+become:V,_s,-ming,became
 becoming:A
 becomingly:Av
 becomingness:N
@@ -6315,8 +6315,8 @@ bedder:N
 bedding:N
 bedeck:V
 bedecked:A
-bedeman:N,bedemen
-bedesman:N,bedesmen
+bedeman:N,-men
+bedesman:N,-men
 bedevil:V
 bedevilment:N
 bedew:V
@@ -6415,9 +6415,9 @@ begetter:N
 beggar:N
 beggar:V
 beggarly:A
-beggarman:N,beggarmen
+beggarman:N,-men
 beggarweed:N
-beggarwoman:N,beggarwomen
+beggarwoman:N,-men
 beggary:N
 begging:N
 begild:V
@@ -6425,7 +6425,7 @@ begin:V,_s,_ning,began,begun
 beginner:N
 beginning:A
 beginning:N
-begird:V,_s,_ing,_ed,begirt
+begird:V,_s,_ing,_ed,-rt
 begone:V,_
 begonia:N
 begotten:A
@@ -6531,7 +6531,7 @@ belligerent:A
 belligerent:N
 belligerently:Av
 belling:N
-bellman:N,bellmen
+bellman:N,-men
 bellow:N
 bellow:V
 bellower:N
@@ -6718,7 +6718,7 @@ bespangle:V
 bespangled:A
 bespatter:V
 bespattered:A
-bespeak:V,_s,_ing,bespoke,bespoken
+bespeak:V,_s,_ing,-poke,-poken
 bespeckle:V
 bespectacled:A
 besplashed:A
@@ -6744,7 +6744,7 @@ bestowed:A
 bestowment:N
 bestrew:V,_s,_ing,_n,_ed
 bestrewn:A
-bestride:V,_s,bestriding,bestrode,bestridden
+bestride:V,_s,-ding,-rode,-dden
 bestseller:N
 bestselling:A
 bestubbled:A
@@ -6753,12 +6753,12 @@ bet:V,_s,_ting
 beta:A
 beta:N
 betaine:N
-betake:V,_s,betaking,betook,_n
+betake:V,_s,-king,betook,_n
 betatron:N
 betel:N
 beth:N
 bethel:N
-bethink:V,_s,_ing,bethought
+bethink:V,_s,_ing,-hought
 betide:V
 betimes:Av
 betise:N
@@ -6916,7 +6916,7 @@ biegnet:N
 biennial:A
 biennial:N
 biennially:Av
-biennium:N,_s,biennia
+biennium:N,_s,-ia
 bier:N
 biface:A
 bifacial:A
@@ -7043,7 +7043,7 @@ bimetallist:N
 bimetallistic:A
 bimillenary:N
 bimillenial:A
-bimillennium:N,_s,bimillennia
+bimillennium:N,_s,-ia
 bimli:N
 bimodal:A
 bimolecular:A
@@ -7523,7 +7523,7 @@ blemish:V
 blemished:A
 blench:V
 blend:N
-blend:V,_s,_ing,_ed,blent
+blend:V,_s,_ing,_ed,-nt
 blende:N
 blended:A
 blender:N
@@ -7808,7 +7808,7 @@ boater:N
 boathouse:N
 boating:N
 boatload:N
-boatman:N,boatmen
+boatman:N,-men
 boatmanship:N
 boatswain:N
 bob:N
@@ -7863,7 +7863,7 @@ bogan:N
 bogbean:N
 bogey:N
 bogey:V
-bogeyman:N,bogeymen
+bogeyman:N,-men
 boggle:V
 boggy:A
 bogie:N
@@ -7961,12 +7961,12 @@ bonderize:V
 bondholder:N
 bonding:N
 bondmaid:N
-bondman:N,bondmen
+bondman:N,-men
 bondservant:N
-bondsman:N,bondsmen
-bondswoman:N,bondswomen
+bondsman:N,-men
+bondswoman:N,-men
 bonduc:N
-bondwoman:N,bondwomen
+bondwoman:N,-men
 bone:A
 bone:N
 bone:V
@@ -8015,7 +8015,7 @@ booboisie:N
 booby:N
 boodle:N
 booger:N
-boogeyman:N,boogeymen
+boogeyman:N,-men
 boogie:N
 boogie-woogie:N
 book:N
@@ -8037,7 +8037,7 @@ bookishness:N
 bookkeeper:N
 bookkeeping:N
 booklet:N
-booklouse:N,booklice
+booklouse:N,-lice
 booklover:N
 bookmaker:N
 bookmaking:N
@@ -8046,7 +8046,7 @@ bookmarker:N
 bookmobile:N
 bookplate:N
 bookseller:N
-bookshelf:N,bookshelves
+bookshelf:N,-lves
 bookshop:N
 bookstall:N
 bookstore:N
@@ -8198,7 +8198,7 @@ bottle:N
 bottle:V
 bottlebrush:N
 bottlecap:N
-bottlefeed:V,_s,_ing,bottlefed
+bottlefeed:V,_s,_ing,-fed
 bottleful:N
 bottleneck:N
 bottleneck:V
@@ -8314,9 +8314,9 @@ bowler:N
 bowlful:N
 bowline:N
 bowling:N
-bowman:N,bowmen
+bowman:N,-men
 bowse:V
-bowsman:N,bowsmen
+bowsman:N,-men
 bowsprit:N
 bowstring:N
 box:N
@@ -8368,7 +8368,7 @@ brachiation:N
 brachiopod:A
 brachiopod:N
 brachiopodous:A
-brachium:N,brachia
+brachium:N,-ia
 brachycephalic:A
 brachycranial:A
 brachycranic:A
@@ -8443,7 +8443,7 @@ braised:A
 braising:N
 brake:N
 brake:V
-brakeman:N,brakemen
+brakeman:N,-men
 braky:A
 braless:A
 bramble:N
@@ -8571,7 +8571,7 @@ breast:N
 breast:V
 breastbone:N
 breasted:A
-breastfeed:V,_s,_ing,breastfed
+breastfeed:V,_s,_ing,-fed
 breastless:A
 breastpin:N
 breastplate:N
@@ -9032,7 +9032,7 @@ bugologist:N
 bugology:N
 buhl:N
 build:N
-build:V,_s,_ing,built
+build:V,_s,_ing,-lt
 builder:N
 building:N
 buildup:N
@@ -9300,7 +9300,7 @@ bushel:V
 bushfire:N
 bushing:N
 bushland:N
-bushman:N,bushmen
+bushman:N,-men
 bushtit:N
 bushwalk:N
 bushwalk:V
@@ -9312,14 +9312,14 @@ bushy:A
 busily:Av
 business:N
 businesslike:A
-businessman:N,businessmen
-businessperson:N,businesspeople,_s
-businesswoman:N,businesswomen
+businessman:N,-men
+businessperson:N,-eople,_s
+businesswoman:N,-men
 busk:V
 busker:N
 buskin:N
 busload:N
-busman:N,busmen
+busman:N,-men
 buspirone:N
 buss:N
 buss:V
@@ -9481,7 +9481,7 @@ cabinetwork:N
 cable:N
 cable:V
 cablegram:N
-cabman:N,cabmen
+cabman:N,-men
 cabochon:N
 caboodle:N
 caboose:N
@@ -9522,7 +9522,7 @@ cacophobia:N
 cacophonic:A
 cacophonous:A
 cacophony:N
-cactus:N,cacti,_es
+cactus:N,-ti,_es
 cacuminal:A
 cad:N
 cadaster:N
@@ -9794,7 +9794,7 @@ camass:N
 camber:N
 camber:V
 cambial:A
-cambium:N,_s,cambia
+cambium:N,_s,-ia
 cambric:N
 camcorder:N
 camel:N
@@ -9805,7 +9805,7 @@ camelopard:N
 camelpox:N
 cameo:N
 camera:N
-cameraman:N,cameramen
+cameraman:N,-men
 camion:N
 camise:N
 camisole:N
@@ -10730,7 +10730,7 @@ cattie:N
 cattiness:N
 cattish:A
 cattle:N
-cattleman:N,cattlemen
+cattleman:N,-men
 cattleship:N
 cattleya:N
 catty:A
@@ -10791,11 +10791,11 @@ cavalier:N
 cavalierly:Av
 cavalla:N
 cavalry:N
-cavalryman:N,cavalrymen
+cavalryman:N,-men
 cave:N
 cave:V
 caveat:N
-caveman:N,cavemen
+caveman:N,-men
 caver:N
 cavern:N
 cavern:V
@@ -10881,7 +10881,7 @@ cellarage:N
 cellaret:N
 cellblock:N
 cellist:N
-cello:N,celli,_s
+cello:N,-li,_s
 cellophane:N
 cellphone:N
 cellular:A
@@ -11158,11 +11158,11 @@ chainsaw:N
 chair:N
 chair:V
 chairlift:N
-chairman:N,chairmen
+chairman:N,-men
 chairman:V
 chairmanship:N
-chairperson:N,chairpeople,_s
-chairwoman:N,chairwomen
+chairperson:N,-eople,_s
+chairwoman:N,-men
 chaise:N
 chaja:N
 chalaza:N
@@ -11296,7 +11296,7 @@ chaplaincy:N
 chaplainship:N
 chaplet:N
 chapleted:A
-chapman:N,chapmen
+chapman:N,-men
 chapped:A
 chapter:N
 chapterhouse:N
@@ -11327,7 +11327,7 @@ charge:N
 charge:V
 chargeable:A
 charged:A
-chargeman:N,chargemen
+chargeman:N,-men
 charger:N
 charily:Av
 chariness:N
@@ -11366,7 +11366,7 @@ chartist:N
 chartless:A
 chartreuse:A
 chartreuse:N
-charwoman:N,charwomen
+charwoman:N,-men
 chary:A
 chase:N
 chase:V
@@ -11554,7 +11554,7 @@ cherubic:A
 chervil:N
 chess:N
 chessboard:N
-chessman:N,chessmen
+chessman:N,-men
 chest:N
 chested:A
 chesterfield:N
@@ -11610,7 +11610,7 @@ chicle:N
 chicness:N
 chicory:N
 chicot:N
-chide:V,_s,chiding,chid,_d,chidden
+chide:V,_s,-ding,-d,_d,-dden
 chiding:N
 chief:A
 chief:N
@@ -11863,7 +11863,7 @@ chondroma:N
 chondrosarcoma:N
 chondrule:N
 choora:N
-choose:V,_s,choosing,chose,chosen
+choose:V,_s,-sing,chose,chosen
 chooser:N
 choosey:A
 choosy:A
@@ -12027,7 +12027,7 @@ churchgoer:N
 churchgoing:A
 churchlike:A
 churchly:A
-churchman:N,churchmen
+churchman:N,-men
 churchwarden:N
 churchyard:N
 churidars:N
@@ -12083,7 +12083,7 @@ ciliate:A
 ciliate:N
 ciliated:A
 ciliophoran:N
-cilium:N,cilia
+cilium:N,-ia
 cimarron:N
 cimetidine:N
 cinch:N
@@ -12099,7 +12099,7 @@ cinematize:V
 cinematographer:N
 cinematography:N
 cineraria:N
-cinerarium:N,cineraria
+cinerarium:N,-ia
 cinerary:A
 cingulum:N
 cinnabar:A
@@ -12286,8 +12286,8 @@ clanking:A
 clannish:A
 clannishly:Av
 clannishness:N
-clansman:N,clansmen
-clanswoman:N,clanswomen
+clansman:N,-men
+clanswoman:N,-men
 clap:N
 clap:V
 clapboard:N
@@ -12363,7 +12363,7 @@ claw:N
 claw:V
 clawback:N
 clawed:A
-clawfoot:N,clawfeet
+clawfoot:N,-feet
 clawhammer:N
 clawlike:A
 claxon:N
@@ -12409,7 +12409,7 @@ cleat:N
 cleat:V
 cleavable:A
 cleavage:N
-cleave:V,_s,cleaving,_d,clave,clove,cleft,cloven
+cleave:V,_s,-ving,_d,clave,clove,cleft,cloven
 cleaver:N
 clef:N
 cleft:A
@@ -12421,7 +12421,7 @@ cleistogamic:A
 cleistogamous:A
 cleistogamy:N
 cleistothecial:A
-cleistothecium:N,cleistothecia
+cleistothecium:N,-ia
 clematis:N
 clemency:N
 clement:A
@@ -12433,7 +12433,7 @@ cleome:N
 clepsydra:N
 clerestory:N
 clergy:N
-clergyman:N,clergymen
+clergyman:N,-men
 cleric:N
 clerical:A
 clericalism:N
@@ -12592,7 +12592,7 @@ closeup:N
 closing:A
 closing:N
 clostridial:A
-clostridium:N,clostridia
+clostridium:N,-ia
 closure:N
 closure:V
 clot:N
@@ -12632,7 +12632,7 @@ clout:V
 clove:N
 cloven:A
 clover:N
-cloverleaf:N,cloverleaves
+cloverleaf:N,-aves
 cloveroot:N
 clowder:N
 clowlike:A
@@ -12653,7 +12653,7 @@ clubber:N
 clubbing:N
 clubbish:A
 clubby:A
-clubfoot:N,clubfeet
+clubfoot:N,-feet
 clubfooted:A
 clubhead:N
 clubhouse:N
@@ -12698,7 +12698,7 @@ coach:N
 coach:V
 coachbuilder:N
 coaching:N
-coachman:N,coachmen
+coachman:N,-men
 coachwhip:N
 coachwork:N
 coact:V
@@ -12724,7 +12724,7 @@ coalface:N
 coalfield:N
 coalhole:N
 coalition:N
-coalman:N,coalmen
+coalman:N,-men
 coalpit:N
 coaming:N
 coapt:V
@@ -12740,7 +12740,7 @@ coast:V
 coastal:A
 coaster:N
 coastguard:N
-coastguardsman:N,coastguardsmen
+coastguardsman:N,-men
 coastland:N
 coastline:N
 coastward:Av
@@ -12792,8 +12792,8 @@ coccal:A
 cocci:N
 coccidiomycosis:N
 coccidiosis:N
-coccidium:N,coccidia
-coccobacillus:N,coccobacilli
+coccidium:N,-ia
+coccobacillus:N,-li
 coccoid:A
 coccus:N
 coccygeal:A
@@ -13117,14 +13117,14 @@ colloidally:Av
 colloquial:A
 colloquialism:N
 colloquially:Av
-colloquium:N,_s,colloquia
+colloquium:N,_s,-ia
 colloquy:N
 collotype:N
 collude:V
 collusion:N
 collusive:A
 colly:V
-collyrium:N,collyria,_s
+collyrium:N,-ia,_s
 collywobbles:N
 colobus:N
 cologne:N
@@ -13201,7 +13201,7 @@ coltish:A
 coltsfoot:N
 colubrid:N
 colugo:N
-columbarium:N,columbaria
+columbarium:N,-ia
 columbary:N
 columbine:N
 columbite:N
@@ -13364,8 +13364,8 @@ committal:N
 committed:A
 committedness:N
 committee:N
-committeeman:N,committeemen
-committeewoman:N,committeewomen
+committeeman:N,-men
+committeewoman:N,-men
 commix:V
 commixture:N
 commode:N
@@ -13481,7 +13481,7 @@ compeer:N
 compel:V
 compelling:A
 compendious:A
-compendium:N,_s,compendia
+compendium:N,_s,-ia
 compensable:A
 compensate:V
 compensated:A
@@ -13702,7 +13702,7 @@ concertise:V
 concertize:V
 concertmaster:N
 concertmeister:N
-concerto:N,concerti,_s
+concerto:N,-ti,_s
 concession:N
 concessionaire:N
 concessioner:N
@@ -13795,7 +13795,7 @@ condo:N
 condole:V
 condolence:N
 condom:N
-condominium:N,_s,condominia
+condominium:N,_s,-ia
 condonation:N
 condone:V
 condor:N
@@ -13975,8 +13975,8 @@ congregational:A
 congregationalist:A
 congress:N
 congressional:A
-congressman:N,congressmen
-congresswoman:N,congresswomen
+congressman:N,-men
+congresswoman:N,-men
 congruence:N
 congruent:A
 congruity:N
@@ -13989,7 +13989,7 @@ conically:Av
 conidial:A
 conidiophore:N
 conidiospore:N
-conidium:N,conidia
+conidium:N,-ia
 conifer:N
 coniferous:A
 conima:N
@@ -14024,7 +14024,7 @@ conjury:N
 conk:N
 conk:V
 conker:N
-conman:N,conmen
+conman:N,-men
 conn:V
 connate:A
 connatural:A
@@ -14153,7 +14153,7 @@ consonantal:A
 consonate:V
 consort:N
 consort:V
-consortium:N,consortia,_s
+consortium:N,-ia,_s
 conspecific:A
 conspecific:N
 conspectus:N
@@ -14735,7 +14735,7 @@ corgi:N
 coriaceous:A
 coriander:N
 corinthian:A
-corium:N,coria
+corium:N,-ia
 cork:N
 cork:V
 corkage:N
@@ -14816,7 +14816,7 @@ corposant:N
 corpse:N
 corpulence:N
 corpulent:A
-corpus:N,corpora
+corpus:N,-pora
 corpusant:N
 corpuscle:N
 corpuscular:A
@@ -14917,7 +14917,7 @@ corvine:A
 corydalis:N
 corymb:N
 corymbose:A
-corynebacterium:N,corynebacteria
+corynebacterium:N,-ia
 coryphantha:N
 corythosaur:N
 corythosaurus:N
@@ -15041,10 +15041,10 @@ coumarone:N
 council:N
 councillor:N
 councillorship:N
-councilman:N,councilmen
+councilman:N,-men
 councilor:N
 councilorship:N
-councilwoman:N,councilwomen
+councilwoman:N,-men
 counsel:N
 counsel:V
 counseling:N
@@ -15108,7 +15108,7 @@ counterintelligence:N
 counterintuitive:A
 counterintuitively:Av
 counterirritant:N
-counterman:N,countermen
+counterman:N,-men
 countermand:N
 countermand:V
 countermarch:N
@@ -15122,7 +15122,7 @@ counteroffer:N
 counterpane:N
 counterpart:N
 counterparty:N
-counterperson:N,counterpeople,_s
+counterperson:N,-eople,_s
 counterplan:N
 counterplay:N
 counterplea:N
@@ -15160,7 +15160,7 @@ countervail:V
 countervailing:A
 counterweight:N
 counterweight:V
-counterwoman:N,counterwomen
+counterwoman:N,-men
 countess:N
 counting:N
 counting:P.t
@@ -15170,11 +15170,11 @@ countlessness:N
 countrified:A
 country:N
 countryfied:A
-countryman:N,countrymen
+countryman:N,-men
 countryseat:N
 countryside:N
 countrywide:A
-countrywoman:N,countrywomen
+countrywoman:N,-men
 county:N
 countywide:A
 coup:N
@@ -15281,7 +15281,7 @@ cowl:V
 cowled:A
 cowlick:N
 cowling:N
-cowman:N,cowmen
+cowman:N,-men
 coworker:N
 cowpea:N
 cowpie:N
@@ -15345,7 +15345,7 @@ crackle:V
 crackleware:N
 crackling:N
 crackpot:N
-cracksman:N,cracksmen
+cracksman:N,-men
 cradle:N
 cradle:V
 cradlesong:N
@@ -15354,14 +15354,14 @@ craft:V
 crafter:N
 craftily:Av
 craftiness:N
-craftsman:N,craftsmen
+craftsman:N,-men
 craftsmanship:N
 crafty:A
 crag:N
 cragfast:A
 cragged:A
 craggy:A
-cragsman:N,cragsmen
+cragsman:N,-men
 crake:N
 cram:V
 crammer:N
@@ -15387,7 +15387,7 @@ craniometric:A
 craniometrical:A
 craniometry:N
 craniotomy:N
-cranium:N,_s,crania
+cranium:N,_s,-ia
 crank:A
 crank:N
 crank:V
@@ -15525,7 +15525,7 @@ creese:N
 cremains:N
 cremate:V
 cremation:N
-crematorium:N,crematoria,_s
+crematorium:N,-ia,_s
 crematory:N
 crenate:A
 crenated:A
@@ -15578,7 +15578,7 @@ crew:N
 crew:V
 crewelwork:N
 crewet:N
-crewman:N,crewmen
+crewman:N,-men
 crib:N
 crib:V
 cribbage:N
@@ -15646,7 +15646,7 @@ crisscrossed:A
 cristal:N
 cristobalite:N
 criterial:A
-criterion:N,criteria,_s
+criterion:N,-ia,_s
 criterional:A
 crith:N
 critic:N
@@ -15791,7 +15791,7 @@ crowdfunding:N
 crowding:N
 crowdsource:V
 crowdsourcing:N
-crowfoot:N,crowfeet,_s
+crowfoot:N,-feet,_s
 crowing:A
 crowing:N
 crown:N
@@ -15945,7 +15945,7 @@ crystallizing:N
 crystallography:N
 crêpe:N
 ctene:N
-ctenidium:N,ctenidia
+ctenidium:N,-ia
 ctenophore:N
 cub:N
 cub:V
@@ -16166,7 +16166,7 @@ currently:Av
 currentness:N
 curricle:N
 curricular:A
-curriculum:N,curricula,_s
+curriculum:N,-la,_s
 currier:N
 currish:A
 currishly:Av
@@ -16301,7 +16301,7 @@ cyanamide:N
 cyanide:N
 cyanite:N
 cyanobacterial:A
-cyanobacterium:N,cyanobacteria
+cyanobacterium:N,-ia
 cyanocobalamin:N
 cyanogen:N
 cyanogenetic:A
@@ -16372,7 +16372,7 @@ cylindricality:N
 cylindricalness:N
 cylix:N
 cyma:N
-cymatium:N,cymatia
+cymatium:N,-ia
 cymbal:N
 cymbid:N
 cymbidium:N
@@ -16517,7 +16517,7 @@ daiquiri:N
 dairy:N
 dairying:N
 dairymaid:N
-dairyman:N,dairymen
+dairyman:N,-men
 dais:N
 daishiki:N
 daisy:N
@@ -16529,7 +16529,7 @@ dakoity:N
 dal:N
 dalasi:N
 dale:N
-dalesman:N,dalesmen
+dalesman:N,-men
 daleth:N
 dalliance:N
 dallier:N
@@ -16870,7 +16870,7 @@ decaf:N
 decagon:N
 decagram:N
 decahedral:A
-decahedron:N,decahedra,_s
+decahedron:N,-ra,_s
 decal:N
 decalcification:N
 decalcify:V
@@ -16918,7 +16918,7 @@ decelerate:V
 deceleration:N
 decency:N
 decennary:N
-decennium:N,_s,decennia
+decennium:N,_s,-ia
 decent:A
 decent:Av
 decentalisation:N
@@ -17160,7 +17160,7 @@ defence:N
 defenceless:A
 defencelessly:Av
 defencelessness:N
-defenceman:N,defencemen
+defenceman:N,-men
 defend:V
 defendable:A
 defendant:N
@@ -17172,7 +17172,7 @@ defense:N
 defenseless:A
 defenseless:Av
 defenselessness:N
-defenseman:N,defensemen
+defenseman:N,-men
 defensible:A
 defensive:A
 defensive:N
@@ -17380,7 +17380,7 @@ deliquescent:A
 deliquium:N
 delirious:A
 deliriously:Av
-delirium:N,_s,deliria
+delirium:N,_s,-ia
 delist:V
 deliver:V
 deliverable:A
@@ -17388,10 +17388,10 @@ deliverable:N
 deliverance:N
 deliverer:N
 delivery:N
-deliveryman:N,deliverymen
+deliveryman:N,-men
 dell:N
 delouse:V
-delphinium:N,_s,delphinia
+delphinium:N,_s,-ia
 delta:N
 deltoid:A
 deltoid:N
@@ -17905,7 +17905,7 @@ desirous:A
 desist:V
 desk:N
 deskbound:A
-deskman:N,deskmen
+deskman:N,-men
 deskmate:N
 desktop:N
 desmid:N
@@ -18958,7 +18958,7 @@ disentangle:V
 disentangled:A
 disentanglement:N
 disentangler:N
-disequilibrium:N,_s,disequilibria
+disequilibrium:N,_s,-ia
 disestablish:V
 disestablishment:N
 disestablishmentarianism:N
@@ -19570,7 +19570,7 @@ doddery:A
 doddle:N
 dodecagon:N
 dodecahedral:A
-dodecahedron:N,dodecahedra,_s
+dodecahedron:N,-ra,_s
 dodge:N
 dodge:V
 dodger:N
@@ -19659,7 +19659,7 @@ dolt:N
 doltish:A
 doltishly:Av
 domain:N
-domatium:N,domatia
+domatium:N,-ia
 dombeya:N
 dome:N
 domed:A
@@ -19741,7 +19741,7 @@ doorkeeper:N
 doorknob:N
 doorknocker:N
 doorlock:N
-doorman:N,doormen
+doorman:N,-men
 doormat:N
 doornail:N
 doorplate:N
@@ -19771,7 +19771,7 @@ dormant:A
 dormer:N
 dormie:A
 dormitory:N
-dormouse:N,dormice
+dormouse:N,-mice
 dormy:A
 dorsal:A
 dorsally:Av
@@ -19979,9 +19979,9 @@ draft:V
 draftee:N
 drafter:N
 drafting:N
-draftsman:N,draftsmen
+draftsman:N,-men
 draftsmanship:N
-draftsperson:N,draftspeople,_s
+draftsperson:N,-eople,_s
 drafty:A
 drag:N
 drag:V
@@ -19992,7 +19992,7 @@ draggingly:Av
 draggle:V
 draggled:A
 dragnet:N
-dragoman:N,_s,dragomen
+dragoman:N,_s,-men
 dragon:N
 dragonet:N
 dragonfly:N
@@ -20031,7 +20031,7 @@ drastically:Av
 drat:V
 draught:N
 draught:V
-draughtsman:N,draughtsmen
+draughtsman:N,-men
 draughty:A
 draw:N
 draw:V,_s,_ing,drew,_n
@@ -20041,7 +20041,7 @@ drawbridge:N
 drawee:N
 drawer:N
 drawing:N
-drawknife:N,drawknives
+drawknife:N,-ives
 drawl:N
 drawl:V
 drawler:N
@@ -20135,7 +20135,7 @@ dripping:N
 drippy:A
 dripstone:N
 drive:N
-drive:V,_s,driving,drove,_n
+drive:V,_s,-ving,drove,_n
 drivel:N
 drivel:V
 driveller:N
@@ -20421,7 +20421,7 @@ dustcart:N
 dustcloth:N
 duster:N
 dustlike:A
-dustman:N,dustmen
+dustman:N,-men
 dustmop:N
 dustpan:N
 dustpanful:N
@@ -20435,7 +20435,7 @@ dutifully:Av
 dutifulness:N
 duty:N
 duvet:N
-dwarf:N,dwarves,_s
+dwarf:N,-rves,_s
 dwarf:V
 dwarfish:A
 dwarfishness:N
@@ -20586,7 +20586,7 @@ earthing:N
 earthlike:A
 earthling:N
 earthly:A
-earthman:N,earthmen
+earthman:N,-men
 earthnut:N
 earthquake:N
 earthquaked:A
@@ -20885,7 +20885,7 @@ efflorescent:A
 effluence:N
 effluent:A
 effluent:N
-effluvium:N,effluvia,_s
+effluvium:N,-ia,_s
 efflux:N
 effort:N
 effortful:A
@@ -21249,7 +21249,7 @@ emboldened:A
 embolectomy:N
 embolic:A
 embolism:N
-embolus:N,emboli
+embolus:N,-li
 embonpoint:A
 embonpoint:N
 embosom:V,_s,_ing,_ed
@@ -21369,7 +21369,7 @@ employed:A
 employee:N
 employer:N
 employment:N
-emporium:N,_s,emporia
+emporium:N,_s,-ia
 empower:V
 empowered:A
 empowerment:N
@@ -21473,7 +21473,7 @@ encoding:N
 encoffin:V,_s,_ing,_ed
 encolure:N
 encomiastic:A
-encomium:N,_s,encomia
+encomium:N,_s,-ia
 encompass:V
 encompassing:A
 encompassment:N
@@ -21547,11 +21547,11 @@ endlessness:N
 endmost:A
 endoblast:N
 endocarditis:N
-endocardium:N,endocardia
+endocardium:N,-ia
 endocarp:N
 endocentric:A
 endocervicitis:N
-endocranium:N,endocrania
+endocranium:N,-ia
 endocrinal:A
 endocrine:A
 endocrine:N
@@ -21575,12 +21575,12 @@ endolymph:N
 endometrial:A
 endometriosis:N
 endometritis:N
-endometrium:N,endometria
+endometrium:N,-ia
 endomorph:N
 endomorphic:A
 endomorphy:N
 endoneurial:A
-endoneurium:N,endoneuria
+endoneurium:N,-ia
 endonuclease:N
 endoparasite:N
 endoparasitic:A
@@ -21598,7 +21598,7 @@ endosperm:N
 endospore:N
 endosteum:N
 endothelial:A
-endothelium:N,endothelia
+endothelium:N,-ia
 endothermal:A
 endothermic:A
 endotoxin:N
@@ -21810,7 +21810,7 @@ enterics:N.p
 entering:A
 entering:N
 enteritis:N
-enterobacterium:N,enterobacteria
+enterobacterium:N,-ia
 enterobiasis:N
 enteroceptor:N
 enterokinase:N
@@ -22003,7 +22003,7 @@ epical:A
 epicalyx:N
 epicanthus:N
 epicardial:A
-epicardium:N,epicardia
+epicardium:N,-ia
 epicarp:N
 epicarpal:A
 epicene:A
@@ -22012,7 +22012,7 @@ epicentre:N
 epicine:N
 epicondyle:N
 epicondylitis:N
-epicranium:N,epicrania
+epicranium:N,-ia
 epicrisis:N
 epicure:N
 epicurean:A
@@ -22039,7 +22039,7 @@ epididymitis:N
 epidural:A
 epidural:N
 epigastric:A
-epigastrium:N,epigastria
+epigastrium:N,-ia
 epigenesis:N
 epiglottis:N
 epiglottitis:N
@@ -22100,11 +22100,11 @@ epitaph:N
 epitaxy:N
 epithalamic:A
 epithalamion:N
-epithalamium:N,_s,epithalamia
+epithalamium:N,_s,-ia
 epithelial:A
 epitheliod:A
 epithelioma:N
-epithelium:N,epithelia
+epithelium:N,-ia
 epithet:N
 epitome:N
 epitomise:V
@@ -22161,7 +22161,7 @@ equilateral:A
 equilibrate:V
 equilibration:N
 equilibrise:V
-equilibrium:N,_s,equilibria
+equilibrium:N,_s,-ia
 equilibrize:V
 equine:A
 equine:N
@@ -22258,7 +22258,7 @@ errand:N
 errant:A
 erratic:A
 erratically:Av
-erratum:N,errata
+erratum:N,-ta
 erreminise:V
 errhine:A
 erring:A
@@ -22503,7 +22503,7 @@ etymologize:V
 etymologizing:N
 etymology:N
 etymon:N
-eubacterium:N,eubacteria
+eubacterium:N,-ia
 eucalypt:N
 eucalyptus:N
 eucaryote:N
@@ -22567,7 +22567,7 @@ eurypterid:N
 eurythmics:N.p
 eurythmy:N
 eusporangiate:A
-eusporangium:N,eusporangia
+eusporangium:N,-ia
 eutectic:N
 euthanasia:N
 euthanize:V
@@ -22641,7 +22641,7 @@ every:D
 everybody:D
 everyday:A
 everydayness:N
-everyman:N,everymen
+everyman:N,-men
 everyone:D
 everyplace:Av
 everything:D
@@ -22754,7 +22754,7 @@ exchanger:N
 exchequer:N
 excise:N
 excise:V
-exciseman:N,excisemen
+exciseman:N,-men
 excision:N
 excitability:N
 excitable:A
@@ -22936,7 +22936,7 @@ exorciser:N
 exorcism:N
 exorcist:N
 exorcize:V
-exordium:N,_s,exordia
+exordium:N,_s,-ia
 exoskeleton:N
 exosphere:N
 exostosis:N
@@ -23288,7 +23288,7 @@ exurbia:N
 exuviae:N
 exuvial:A
 exuviate:V
-exwife:N,exwives
+exwife:N,-ives
 eyas:N
 eye:N
 eye:V,_s,eying,_ing,_d
@@ -23910,7 +23910,7 @@ felled:A
 feller:N
 felloe:N
 fellow:N
-fellowman:N,fellowmen
+fellowman:N,-men
 fellowship:N
 felly:N
 felon:N
@@ -24009,7 +24009,7 @@ ferry:N
 ferry:V
 ferryboat:N
 ferrying:N
-ferryman:N,ferrymen
+ferryman:N,-men
 fertile:A
 fertilisation:N
 fertilise:V
@@ -24176,8 +24176,8 @@ fielder:N
 fieldfare:N
 fieldhand:N
 fielding:N
-fieldmouse:N,fieldmice
-fieldsman:N,fieldsmen
+fieldmouse:N,-mice
+fieldsman:N,-men
 fieldstone:N
 fieldwork:N
 fieldworker:N
@@ -24326,7 +24326,7 @@ fine:N
 fine:V
 fineable:A
 fined:A
-finedraw:V,_s,_ing,finedrew,_n
+finedraw:V,_s,_ing,-rew,_n
 finely:Av
 fineness:N
 finery:N
@@ -24412,7 +24412,7 @@ firelight:N
 firelighter:N
 firelit:A
 firelock:N
-fireman:N,firemen
+fireman:N,-men
 fireplace:N
 fireplug:N
 firepower:N
@@ -24459,7 +24459,7 @@ fish:V
 fishbone:N
 fishbowl:N
 fisher:N
-fisherman:N,fishermen
+fisherman:N,-men
 fishery:N
 fisheye:A
 fishgig:N
@@ -24474,7 +24474,7 @@ fishpaste:N
 fishplate:N
 fishpond:N
 fishtail:V
-fishwife:N,fishwives
+fishwife:N,-ives
 fishworm:N
 fishy:A
 fissile:A
@@ -24489,7 +24489,7 @@ fist:N
 fist:V
 fisted:A
 fistfight:N
-fistfight:V,_s,_ing,fistfought
+fistfight:V,_s,_ing,-fought
 fistful:N
 fisticuffs:N
 fistmele:N
@@ -24646,7 +24646,7 @@ flatbread:N
 flatbrod:N
 flatcar:N
 flatfish:N
-flatfoot:N,flatfeet,_s
+flatfoot:N,-feet,_s
 flathead:N
 flatiron:N
 flatlet:N
@@ -24830,7 +24830,7 @@ floodhead:N
 flooding:A
 flooding:N
 floodlight:N
-floodlight:V,_s,_ing,floodlit,_ed
+floodlight:V,_s,_ing,-it,_ed
 floodlighted:A
 floodlit:A
 floodplain:N
@@ -24860,7 +24860,7 @@ floriculture:N
 florid:A
 floridly:Av
 floridness:N
-florilegium:N,florilegia
+florilegium:N,-ia
 florin:N
 florist:N
 floss:N
@@ -24995,7 +24995,7 @@ flyer:N
 flyfish:V
 flying:A
 flying:N
-flyleaf:N,flyleaves
+flyleaf:N,-aves
 flyover:N
 flypaper:N
 flypast:N
@@ -25037,7 +25037,7 @@ fodder:N
 fodder:V
 foe:N
 foehn:N
-foeman:N,foemen
+foeman:N,-men
 foetal:A
 foetid:A
 foetology:N
@@ -25090,7 +25090,7 @@ folie:N
 folio:N
 foliolate:A
 foliose:A
-folium:N,folia
+folium:N,-ia
 folk:N
 folklore:N
 folkloric:A
@@ -25166,7 +25166,7 @@ footlight:N
 footling:A
 footlocker:N
 footloose:A
-footman:N,footmen
+footman:N,-men
 footmark:N
 footnote:N
 footnote:V
@@ -25204,10 +25204,10 @@ forasmuch:C
 foray:N
 foray:V
 forbear:N
-forbear:V,_s,_ing,forbore,forborne
+forbear:V,_s,_ing,-bore,-borne
 forbearance:N
 forbearing:A
-forbid:V,_s,_ding,forbade,_den
+forbid:V,_s,_ding,-bade,_den
 forbiddance:N
 forbidden:A
 forbidding:A
@@ -25255,7 +25255,7 @@ foredeck:N
 foredoom:V
 forefather:N
 forefinger:N
-forefoot:N,forefeet
+forefoot:N,-feet
 forefront:N
 foregather:V
 forego:V
@@ -25278,7 +25278,7 @@ foreland:N
 foreleg:N
 forelimb:N
 forelock:N
-foreman:N,foremen
+foreman:N,-men
 foremanship:N
 foremast:N
 foremilk:N
@@ -25295,12 +25295,12 @@ foreordained:A
 foreordination:N
 forepart:N
 forepaw:N
-foreperson:N,forepeople,_s
+foreperson:N,-eople,_s
 foreplay:N
 forequarter:N
 forerunner:N
 foresail:N
-foresee:V,_s,_ing,foresaw,_n
+foresee:V,_s,_ing,-saw,_n
 foreseeable:A
 foreseen:A
 foreshadow:V
@@ -25327,7 +25327,7 @@ forested:A
 forester:N
 forestiera:N
 forestry:N
-foreswear:V,_s,_ing,foreswore,foresworn
+foreswear:V,_s,_ing,-wore,-worn
 foretaste:N
 foretell:V
 foretelling:N
@@ -25341,7 +25341,7 @@ forevermore:Av
 forewarn:V
 forewarning:N
 forewing:N
-forewoman:N,forewomen
+forewoman:N,-men
 foreword:N
 forfeit:A
 forfeit:N
@@ -25355,7 +25355,7 @@ forge:V
 forged:A
 forger:N
 forgery:N
-forget:V,_s,_ting,forgot,forgotten
+forget:V,_s,_ting,-got,-gotten
 forgetful:A
 forgetfully:Av
 forgetfulness:N
@@ -25363,7 +25363,7 @@ forgettable:A
 forging:N
 forgivable:A
 forgivably:Av
-forgive:V,_s,forgiving,forgave,_n
+forgive:V,_s,-ving,-gave,_n
 forgiveness:N
 forgiver:N
 forgiving:A
@@ -25437,11 +25437,11 @@ fornix:N
 forrad:Av
 forrader:Av
 forrard:Av
-forsake:V,_s,forsaking,forsook,_n
+forsake:V,_s,-king,-sook,_n
 forsaken:A
 forsaking:N
 forsooth:Av
-forswear:V,_s,_ing,forswore,forsworn
+forswear:V,_s,_ing,-wore,-worn
 forswearing:N
 forsythia:N
 fort:N
@@ -25685,9 +25685,9 @@ freebie:N
 freebooter:N
 freeborn:A
 freed:A
-freedman:N,freedmen
+freedman:N,-men
 freedom:N
-freedwoman:N,freedwomen
+freedwoman:N,-men
 freefall:N
 freeform:A
 freegan:N
@@ -25705,7 +25705,7 @@ freeload:V
 freeloader:N
 freely:Av
 freemail:N
-freeman:N,freemen
+freeman:N,-men
 freemasonry:N
 freeride:N
 freesia:N
@@ -25724,9 +25724,9 @@ freewheel:V
 freewheeler:N
 freewheeling:A
 freewill:A
-freewoman:N,freewomen
+freewoman:N,-men
 freeze:N
-freeze:V,_s,freezing,froze,frozen
+freeze:V,_s,-zing,froze,frozen
 freezer:N
 freezing:N
 freight:N
@@ -25754,7 +25754,7 @@ fresher:N
 freshet:N
 freshly:Av
 freshman:A
-freshman:N,freshmen
+freshman:N,-men
 freshness:N
 freshwater:A
 fress:V
@@ -25845,7 +25845,7 @@ frog:N
 frogbit:N
 frogfish:N
 froghopper:N
-frogman:N,frogmen
+frogman:N,-men
 frogmarch:V
 frogmouth:N
 frolic:N
@@ -25865,12 +25865,12 @@ frontal:N
 frontally:Av
 frontbencher:N
 frontier:N
-frontiersman:N,frontiersmen
-frontierswoman:N,frontierswomen
+frontiersman:N,-men
+frontierswoman:N,-men
 frontispiece:N
 frontlet:N
 frontline:N
-frontman:N,frontmen
+frontman:N,-men
 frontmost:A
 frontstall:N
 frontward:Av
@@ -25978,7 +25978,7 @@ fugally:Av
 fuggy:A
 fugitive:A
 fugitive:N
-fugleman:N,fuglemen
+fugleman:N,-men
 fugu:N
 fugue:N
 fuji:N
@@ -26070,7 +26070,7 @@ fungicidal:A
 fungicide:N
 fungoid:A
 fungous:A
-fungus:N,fungi,_es
+fungus:N,-gi,_es
 funguslike:A
 funicle:N
 funicular:A
@@ -26212,7 +26212,7 @@ gage:N
 gage:V
 gaggle:N
 gaggle:V
-gagman:N,gagmen
+gagman:N,-men
 gagster:N
 gagwriter:N
 gaiety:N
@@ -26225,7 +26225,7 @@ gainful:A
 gainfully:Av
 gainlessly:Av
 gainly:A
-gainsay:V,_s,_ing,gainsaid
+gainsay:V,_s,_ing,-aid
 gait:N
 gaiter:N
 gal:N
@@ -26321,10 +26321,10 @@ gamer:N
 gamesmanship:N
 gamesome:A
 gamester:N
-gametangium:N,gametangia
+gametangium:N,-ia
 gamete:N
 gametocyte:N
-gametoecium:N,gametoecia
+gametoecium:N,-ia
 gametogenesis:N
 gametophore:N
 gametophyte:N
@@ -26463,7 +26463,7 @@ gasify:V
 gasket:N
 gaskin:N
 gaslight:N
-gasman:N,gasmen
+gasman:N,-men
 gasmask:N
 gasohol:N
 gasolene:N
@@ -26601,7 +26601,7 @@ gelatinize:V
 gelatinlike:A
 gelatinous:A
 gelatinousness:N
-gelato:N,gelati,_s
+gelato:N,-ti,_s
 geld:V
 gelded:A
 gelding:N
@@ -26711,7 +26711,7 @@ gentile:N
 gentility:N
 gentle:A
 gentle:V
-gentleman:N,gentlemen
+gentleman:N,-men
 gentlemanlike:A
 gentlemanly:A
 gentleness:N
@@ -26849,7 +26849,7 @@ ghostfish:N
 ghostlike:A
 ghostliness:N
 ghostly:A
-ghostwrite:V,_s,ghostwriting,ghostwrote,ghostwritten
+ghostwrite:V,_s,-ting,-rote,-tten
 ghostwriter:N
 ghoul:N
 ghoulish:A
@@ -27137,7 +27137,7 @@ globularness:N
 globule:N
 globulin:N
 glochid:N
-glochidium:N,glochidia
+glochidium:N,-ia
 glockenspiel:N
 glogg:N
 glom:V
@@ -27302,7 +27302,7 @@ goateed:A
 goatfish:N
 goatherd:N
 goatsbeard:N
-goatsfoot:N,goatsfeet
+goatsfoot:N,-feet
 goatskin:N
 goatsucker:N
 gob:N
@@ -27454,7 +27454,7 @@ goose:N,geese
 gooseberry:N
 goosefish:N
 gooseflesh:N
-goosefoot:N,goosefeet
+goosefoot:N,-feet
 gooselike:A
 gooseneck:N
 goosey:A
@@ -27573,7 +27573,7 @@ graduate:N
 graduate:V
 graduated:A
 graduation:N
-graffito:N,graffiti
+graffito:N,-ti
 graft:N
 graft:V
 grafter:N
@@ -27821,7 +27821,7 @@ greening:A
 greening:N
 greenish:A
 greenishness:N
-greenlight:V,_s,_ing,greenlit
+greenlight:V,_s,_ing,-it
 greenling:N
 greenly:Av
 greenmail:N
@@ -27957,7 +27957,7 @@ groom:N
 groom:V
 groomed:A
 grooming:N
-groomsman:N,groomsmen
+groomsman:N,-men
 groove:N
 groove:V
 grooved:A
@@ -28012,7 +28012,7 @@ groundnut:N
 groundsel:N
 groundsheet:N
 groundskeeper:N
-groundsman:N,groundsmen
+groundsman:N,-men
 groundspeed:N
 groundwork:N
 group:N
@@ -28123,7 +28123,7 @@ guardian:N
 guardianship:N
 guardrail:N
 guardroom:N
-guardsman:N,guardsmen
+guardsman:N,-men
 guava:N
 guayule:N
 gubbins:N
@@ -28234,7 +28234,7 @@ gunite:N
 gunk:N
 gunlock:N
 gunmaker:N
-gunman:N,gunmen
+gunman:N,-men
 gunmetal:N
 gunnel:N
 gunner:N
@@ -28298,7 +28298,7 @@ guzzling:N
 gybe:V
 gym:N
 gymkhana:N
-gymnasium:N,_s,gymnasia
+gymnasium:N,_s,-ia
 gymnast:N
 gymnastic:A
 gymnastics:N.p
@@ -28325,11 +28325,11 @@ gynobase:N
 gynocentric:A
 gynocentrism:N
 gynoecial:A
-gynoecium:N,gynoecia
+gynoecium:N,-ia
 gynogenesis:N
 gynophobia:N
 gynophore:N
-gynostegium:N,gynostegia
+gynostegium:N,-ia
 gyp:N
 gyp:V
 gypsum:N
@@ -28577,7 +28577,7 @@ halma:N
 halo:N
 haloalkane:N
 halobacter:N
-halobacterium:N,halobacteria
+halobacterium:N,-ia
 halocarbon:N
 haloform:N
 halogen:N
@@ -28635,7 +28635,7 @@ handbill:N
 handbook:N
 handbow:N
 handbreadth:N
-handbuild:V,_s,_ing,handbuilt
+handbuild:V,_s,_ing,-lt
 handcar:N
 handcart:N
 handclap:N
@@ -28704,11 +28704,11 @@ handwear:N
 handwheel:N
 handwork:N
 handwoven:A
-handwrite:V,_s,handwriting,handwrote,handwritten
+handwrite:V,_s,-ting,-rote,-tten
 handwriting:N
 handwritten:A
 handy:A
-handyman:N,handymen
+handyman:N,-men
 hang:N
 hang:V,_s,_ing,hung,_ed
 hangar:N
@@ -28716,7 +28716,7 @@ hangbird:N
 hangdog:A
 hanger:N
 hanging:N
-hangman:N,hangmen
+hangman:N,-men
 hangnail:N
 hangout:N
 hangover:N
@@ -28803,7 +28803,7 @@ hardship:N
 hardtack:N
 hardtop:N
 hardware:N
-hardwareman:N,hardwaremen
+hardwareman:N,-men
 hardwood:A
 hardwood:N
 hardworking:A
@@ -28888,7 +28888,7 @@ harvest:V
 harvester:N
 harvestfish:N
 harvesting:N
-harvestman:N,harvestmen
+harvestman:N,-men
 haschisch:N
 hash:N
 hash:V
@@ -28964,7 +28964,7 @@ haunter:N
 haunting:A
 hausen:N
 hausmannite:N
-haustorium:N,haustoria
+haustorium:N,-ia
 hautbois:N
 hautboy:N
 hauteur:N
@@ -29064,7 +29064,7 @@ headlinese:N
 headlock:N
 headlong:A
 headlong:Av
-headman:N,headmen
+headman:N,-men
 headmaster:N
 headmastership:N
 headmistress:N
@@ -29085,7 +29085,7 @@ headshake:N
 headshaking:N
 headship:N
 headshot:N
-headsman:N,headsmen
+headsman:N,-men
 headspace:N
 headspring:N
 headstall:N
@@ -29314,7 +29314,7 @@ heliozoan:N
 helipad:N
 heliport:N
 helium:N
-helix:N,helices,_es
+helix:N,-ices,_es
 hell:N
 hellbender:N
 hellcat:N
@@ -29341,7 +29341,7 @@ helminth:N
 helminthiasis:N
 helminthic:A
 helminthic:N
-helmsman:N,helmsmen
+helmsman:N,-men
 helot:N
 help:N
 help:V
@@ -29470,7 +29470,7 @@ hence:P.i
 henceforth:Av
 henceforth:P.i
 henceforward:Av
-henchman:N,henchmen
+henchman:N,-men
 hencoop:N
 hendiadys:N
 henhouse:N
@@ -29509,7 +29509,7 @@ herbaceous:A
 herbage:N
 herbal:A
 herbalist:N
-herbarium:N,herbaria
+herbarium:N,-ia
 herbicide:N
 herbivore:N
 herbivorous:A
@@ -29519,7 +29519,7 @@ herd:N
 herd:V
 herder:N
 herding:A
-herdsman:N,herdsmen
+herdsman:N,-men
 here:A
 here:Av
 here:N
@@ -29662,7 +29662,7 @@ hexagon:N
 hexagonal:A
 hexagram:N
 hexahedral:A
-hexahedron:N,hexahedra,_s
+hexahedron:N,-ra,_s
 hexameter:N
 hexane:N
 hexangular:A
@@ -29764,7 +29764,7 @@ highstrung:A
 hightail:V
 highwater:N
 highway:N
-highwayman:N,highwaymen
+highwayman:N,-men
 hijab:N
 hijack:N
 hijack:V
@@ -29800,7 +29800,7 @@ hinder:V
 hindering:A
 hinderingly:Av
 hindermost:A
-hindfoot:N,hindfeet
+hindfoot:N,-feet
 hindgut:N
 hindleg:N
 hindmost:A
@@ -29833,7 +29833,7 @@ hippoboscid:N
 hippocampus:N
 hippodrome:N
 hippogriff:N
-hippopotamus:N,hippopotami,_es
+hippopotamus:N,-mi,_es
 hippopotomonstrosesquipedaliophobia:N
 hippy:N
 hipster:N
@@ -29888,7 +29888,7 @@ hitchrack:N
 hither:Av
 hitherto:Av
 hitless:A
-hitman:N,hitmen
+hitman:N,-men
 hitter:N
 hitting:N
 hive:N
@@ -29937,7 +29937,7 @@ hockey:N
 hocus-pocus:N
 hod:N
 hodgepodge:N
-hodman:N,hodmen
+hodman:N,-men
 hodometer:N
 hodoscope:N
 hoe:N
@@ -30200,7 +30200,7 @@ honor:V
 honorable:A
 honorableness:N
 honorably:Av
-honorarium:N,honoraria,_s
+honorarium:N,-ia,_s
 honorary:A
 honored:A
 honoree:N
@@ -30348,7 +30348,7 @@ horsehide:N
 horselaugh:N
 horseleech:N
 horselike:A
-horseman:N,horsemen
+horseman:N,-men
 horsemanship:N
 horsemeat:N
 horsemint:N
@@ -30366,7 +30366,7 @@ horseweed:N
 horsewhip:N
 horsewhip:V
 horsewhipping:N
-horsewoman:N,horsewomen
+horsewoman:N,-men
 horst:N
 hortative:A
 hortatory:A
@@ -30411,7 +30411,7 @@ hotdog:N
 hotel:N
 hotelier:N
 hotelkeeper:N
-hotelman:N,hotelmen
+hotelman:N,-men
 hotfoot:Av
 hotfoot:V
 hothead:N
@@ -30464,7 +30464,7 @@ housekeeping:N
 houseless:A
 houselights:N
 housemaid:N
-houseman:N,housemen
+houseman:N,-men
 housemaster:N
 housemate:N
 housemother:N
@@ -30474,7 +30474,7 @@ houseroom:N
 housetop:N
 houseware:N
 housewarming:N
-housewife:N,housewives
+housewife:N,-ives
 housewifely:A
 housewifery:N
 housework:N
@@ -30668,7 +30668,7 @@ hunted:A
 hunter:N
 hunting:N
 huntress:N
-huntsman:N,huntsmen
+huntsman:N,-men
 hurdle:N
 hurdle:V
 hurdler:N
@@ -30698,7 +30698,7 @@ hurtling:A
 husband:N
 husband:V
 husbandly:A
-husbandman:N,husbandmen
+husbandman:N,-men
 husbandry:N
 hush:N
 hush:V
@@ -30863,7 +30863,7 @@ hymen:N
 hymenal:A
 hymeneal:A
 hymeneal:N
-hymenium:N,hymenia,_s
+hymenium:N,-ia,_s
 hymenopter:N
 hymenopteran:N
 hymenopteron:N
@@ -30881,7 +30881,7 @@ hyoscine:N
 hyoscyamine:N
 hypaethral:A
 hypallage:N
-hypanthium:N,hypanthia
+hypanthium:N,-ia
 hype:N
 hyperacidity:N
 hyperactive:A
@@ -31011,7 +31011,7 @@ hypnotizer:N
 hypo:N
 hypoactive:A
 hypoadrenalism:N
-hypobasidium:N,hypobasidia
+hypobasidium:N,-ia
 hypoblast:N
 hypocalcaemia:N
 hypocalcemia:N
@@ -31023,7 +31023,7 @@ hypochondriac:A
 hypochondriac:N
 hypochondriacal:A
 hypochondriasis:N
-hypochondrium:N,hypochondria
+hypochondrium:N,-ia
 hypocorism:N
 hypocrisy:N
 hypocrite:N
@@ -31132,7 +31132,7 @@ icebreaker:N
 icecap:N
 icefall:N
 icehouse:N
-iceman:N,icemen
+iceman:N,-men
 icepick:N
 icetray:N
 ichneumon:N
@@ -31159,7 +31159,7 @@ iconolatry:N
 iconology:N
 iconoscope:N
 icosahedral:A
-icosahedron:N,icosahedra,_s
+icosahedron:N,-ra,_s
 ictal:A
 icteric:A
 icterogenic:A
@@ -32345,7 +32345,7 @@ indurate:A
 indurate:V
 induration:N
 indusial:A
-indusium:N,indusia
+indusium:N,-ia
 industrial:A
 industrialisation:N
 industrialise:V
@@ -32482,7 +32482,7 @@ infantile:A
 infantilism:N
 infantine:A
 infantry:N
-infantryman:N,infantrymen
+infantryman:N,-men
 infarct:N
 infarction:N
 infatuate:V
@@ -32767,7 +32767,7 @@ inlaid:A
 inland:A
 inland:Av
 inlay:N
-inlay:V,_s,_ing,inlaid
+inlay:V,_s,_ing,-aid
 inlet:N
 inline:A
 inmarriage:N
@@ -33240,7 +33240,7 @@ interlacing:A
 interlanguage:N
 interlard:V
 interlayer:N
-interleaf:N,interleaves
+interleaf:N,-aves
 interleave:V
 interleukin:N
 interlineal:A
@@ -33743,7 +33743,7 @@ ironically:Av
 ironing:N
 ironist:N
 ironlike:A
-ironman:N,ironmen
+ironman:N,-men
 ironmonger:N
 ironmongery:N
 ironshod:A
@@ -33846,7 +33846,7 @@ ischaemic:A
 ischemia:N
 ischemic:A
 ischial:A
-ischium:N,ischia
+ischium:N,-ia
 isentropic:A
 isinglass:N
 island:N
@@ -34001,7 +34001,7 @@ jacket:N
 jacket:V
 jackfruit:N
 jackhammer:N
-jackknife:N,jackknives
+jackknife:N,-ives
 jackknife:V
 jacklight:N
 jacklight:V
@@ -34114,7 +34114,7 @@ jaywalk:V
 jaywalker:N
 jazz:N
 jazz:V
-jazzman:N,jazzmen
+jazzman:N,-men
 jazzy:A
 jealous:A
 jealously:Av
@@ -34350,7 +34350,7 @@ journey:N
 journey:V
 journeyer:N
 journeying:N
-journeyman:N,journeymen
+journeyman:N,-men
 joust:N
 joust:V
 jovial:A
@@ -34370,7 +34370,7 @@ joyous:A
 joyously:Av
 joyousness:N
 joyride:N
-joyride:V,_s,joyriding,joyrode,joyridden
+joyride:V,_s,-ding,-rode,-dden
 joyrider:N
 joyriding:N
 joystick:N
@@ -34478,8 +34478,8 @@ juror:N
 jury:A
 jury:N
 jury:V
-juryman:N,jurymen
-jurywoman:N,jurywomen
+juryman:N,-men
+jurywoman:N,-men
 just:A
 just:Av
 justice:N
@@ -34859,9 +34859,9 @@ kinky:A
 kino:N
 kinsfolk:N
 kinship:N
-kinsman:N,kinsmen
-kinsperson:N,kinspeople,_s
-kinswoman:N,kinswomen
+kinsman:N,-men
+kinsperson:N,-eople,_s
+kinswoman:N,-men
 kiosk:N
 kip:N
 kip:V
@@ -35103,7 +35103,7 @@ labialize:V
 labiate:A
 labile:A
 labiodental:A
-labium:N,labia
+labium:N,-ia
 labor:N
 labor:V
 laboratory:N
@@ -35179,7 +35179,7 @@ lacteal:A
 lacteal:N
 lactic:A
 lactifuge:N
-lactobacillus:N,lactobacilli
+lactobacillus:N,-li
 lactoflavin:N
 lactogen:N
 lactogenic:A
@@ -35343,7 +35343,7 @@ landlocked:A
 landlord:N
 landlubber:N
 landlubberly:A
-landman:N,landmen
+landman:N,-men
 landmark:N
 landmass:N
 landmine:N
@@ -35358,7 +35358,7 @@ landscapist:N
 landside:N
 landslide:N
 landslip:N
-landsman:N,landsmen
+landsman:N,-men
 landward:Av
 landwards:Av
 lane:N
@@ -35420,7 +35420,7 @@ lapidator:N
 lapidify:V
 lapidist:N
 lapin:N
-lapis:N,lapides
+lapis:N,-ides
 lappet:N
 lapping:N
 lapse:N
@@ -35588,8 +35588,8 @@ launderette:N
 laundering:N
 laundress:N
 laundry:N
-laundryman:N,laundrymen
-laundrywoman:N,laundrywomen
+laundryman:N,-men
+laundrywoman:N,-men
 laureate:A
 laureate:N
 laurel:N
@@ -35626,7 +35626,7 @@ lawlessly:Av
 lawlessness:N
 lawmaker:N
 lawmaking:N
-lawman:N,lawmen
+lawman:N,-men
 lawn:N
 lawny:A
 lawrencium:N
@@ -35650,11 +35650,11 @@ layer:V
 layered:A
 layette:N
 laying:N
-layman:N,laymen
+layman:N,-men
 layoff:N
 layout:N
 layover:N
-layperson:N,laypeople,_s
+layperson:N,-eople,_s
 layup:N
 lazar:N
 lazaret:N
@@ -35729,7 +35729,7 @@ lease:V
 leased:A
 leasehold:N
 leaseholder:N
-leaseman:N,leasemen
+leaseman:N,-men
 leaser:N
 leash:N
 leash:V
@@ -35752,7 +35752,7 @@ leatherwood:N
 leatherwork:N
 leathery:A
 leave:N
-leave:V,_s,leaving,left
+leave:V,_s,-ving,left
 leaved:A
 leaven:N
 leaven:V
@@ -35782,7 +35782,7 @@ lectureship:N
 lecturing:N
 lederhosen:N
 ledge:N
-ledgeman:N,ledgemen
+ledgeman:N,-men
 ledger:N
 lee:A
 lee:N
@@ -35834,7 +35834,7 @@ legation:N
 legato:A
 legato:Av
 legend:N
-legendarium:N,legendaria
+legendarium:N,-ia
 legendary:A
 leger:N
 legerdemain:N
@@ -35927,7 +35927,7 @@ lenitive:N
 lenity:N
 lens:N
 lense:N
-lensman:N,lensmen
+lensman:N,-men
 lenten:A
 lentic:A
 lenticel:N
@@ -35977,7 +35977,7 @@ leptorrhinic:A
 leptospira:N
 leptospirosis:N
 leptosporangiate:A
-leptosporangium:N,leptosporangia
+leptosporangium:N,-ia
 leptotene:N
 leresis:N
 lerot:N
@@ -36015,7 +36015,7 @@ lettered:A
 letterer:N
 letterhead:N
 lettering:N
-letterman:N,lettermen
+letterman:N,-men
 letterpress:N
 letting:N
 lettuce:N
@@ -36091,7 +36091,7 @@ lexicographical:A
 lexicography:N
 lexicologist:N
 lexicology:N
-lexicon:N,lexica,_s
+lexicon:N,-ca,_s
 lexicostatistic:A
 lexicostatistics:N.p
 lexis:N
@@ -36138,7 +36138,7 @@ library:N
 librate:V
 libration:N
 librettist:N
-libretto:N,libretti,_s
+libretto:N,-ti,_s
 licence:N
 licence:V
 licenced:A
@@ -36180,7 +36180,7 @@ lief:A
 lief:Av
 liege:A
 liege:N
-liegeman:N,liegemen
+liegeman:N,-men
 lien:N
 lienal:A
 lieu:N
@@ -36209,7 +36209,7 @@ lift:N
 lift:V
 lifted:A
 lifter:N
-liftman:N,liftmen
+liftman:N,-men
 liftoff:N
 ligament:N
 ligan:N
@@ -36229,7 +36229,7 @@ lightening:N
 lighter:N
 lighter:V
 lighterage:N
-lighterman:N,lightermen
+lighterman:N,-men
 lightheaded:A
 lightheadedness:N
 lighthearted:A
@@ -36367,11 +36367,11 @@ linebacker:N
 linecut:N
 lined:A
 linelike:A
-lineman:N,linemen
+lineman:N,-men
 linen:N
 linendraper:N
 liner:N
-linesman:N,linesmen
+linesman:N,-men
 lineup:N
 ling:N
 lingam:N
@@ -36405,8 +36405,8 @@ link:V
 linkage:N
 linkboy:N
 linked:A
-linkman:N,linkmen
-linksman:N,linksmen
+linkman:N,-men
+linksman:N,-men
 linkup:N
 linnet:N
 lino:N
@@ -36600,7 +36600,7 @@ liverwort:N
 liverwurst:N
 livery:A
 livery:N
-liveryman:N,liverymen
+liveryman:N,-men
 livestock:N
 livestream:N
 livestream:V
@@ -36666,7 +36666,7 @@ lobscouse:N
 lobscuse:N
 lobster:N
 lobsterback:N
-lobsterman:N,lobstermen
+lobsterman:N,-men
 lobular:A
 lobularity:N
 lobule:N
@@ -36703,7 +36703,7 @@ locket:N
 locking:N
 lockjaw:N
 lockkeeper:N
-lockman:N,lockmen
+lockman:N,-men
 lockmaster:N
 locknut:N
 lockout:N
@@ -36821,7 +36821,7 @@ longanimous:A
 longbeard:N
 longboat:N
 longbow:N
-longbowman:N,longbowmen
+longbowman:N,-men
 longer:Av
 longer:N
 longest:Av
@@ -36840,7 +36840,7 @@ longitudinally:Av
 longlegs:N
 longness:N
 longroot:N
-longshoreman:N,longshoremen
+longshoreman:N,-men
 longshot:N
 longsighted:A
 longsightedness:N
@@ -37008,7 +37008,7 @@ lowdown:N
 lower:N
 lower:V
 lowercase:A
-lowerclassman:N,lowerclassmen
+lowerclassman:N,-men
 lowered:A
 lowering:A
 lowering:N
@@ -37017,7 +37017,7 @@ lowermost:A
 lowest:Av
 lowland:A
 lowland:N
-lowlife:N,_s,lowlives
+lowlife:N,_s,-ives
 lowly:A
 lowness:N
 lowset:A
@@ -37092,7 +37092,7 @@ lumber:V
 lumbering:A
 lumbering:N
 lumberjack:N
-lumberman:N,lumbermen
+lumberman:N,-men
 lumbermill:N
 lumberyard:N
 lumbosacral:A
@@ -37355,7 +37355,7 @@ macrocosm:N
 macrocosmic:A
 macrocyte:N
 macrocytosis:N
-macrodatum:N,macrodata
+macrodatum:N,-ta
 macroeconomic:A
 macroeconomics:N.p
 macroeconomist:N
@@ -37370,7 +37370,7 @@ macrophage:N
 macroscopic:A
 macroscopical:A
 macroscopically:Av
-macrosporangium:N,macrosporangia
+macrosporangium:N,-ia
 macrospore:N
 macrotus:N
 macrozamia:N
@@ -37398,7 +37398,7 @@ made:A
 mademoiselle:N
 madhouse:N
 madly:Av
-madman:N,madmen
+madman:N,-men
 madnep:N
 madness:N
 madras:N
@@ -37410,14 +37410,14 @@ madrigalist:N
 madrilene:N
 madrona:N
 madrono:N
-madwoman:N,madwomen
+madwoman:N,-men
 madwort:N
 maelstrom:N
 maenad:N
 maestro:N
 maffia:N
 mafia:N
-mafioso:N,mafiosi
+mafioso:N,-si
 mag:N
 magazine:N
 magdalen:N
@@ -37524,7 +37524,7 @@ mailed:A
 mailer:N
 mailing:N
 maillot:N
-mailman:N,mailmen
+mailman:N,-men
 mailroom:N
 mailshot:N
 mailsorter:N
@@ -37690,7 +37690,7 @@ malt:N
 malt:V
 malted:N
 maltha:N
-maltman:N,maltmen
+maltman:N,-men
 maltose:N
 maltreat:V
 maltreated:A
@@ -37883,7 +37883,7 @@ manta:N
 mantel:N
 mantelet:N
 mantelpiece:N
-mantelshelf:N,mantelshelves
+mantelshelf:N,-lves
 mantic:A
 mantichora:N
 manticora:N
@@ -37891,7 +37891,7 @@ manticore:N
 mantid:N
 mantiger:N
 mantilla:N
-mantis:N,_es,mantes
+mantis:N,_es,-tes
 mantispid:N
 mantissa:N
 mantle:N
@@ -37905,7 +37905,7 @@ mantua:N
 manual:A
 manual:N
 manually:Av
-manubrium:N,manubria,_s
+manubrium:N,-ia,_s
 manufactory:N
 manufacturability:N
 manufacturable:A
@@ -38037,7 +38037,7 @@ markhoor:N
 markhor:N
 marking:N
 markka:N,_a,_s
-marksman:N,marksmen
+marksman:N,-men
 marksmanship:N
 markup:N
 markweed:N
@@ -38092,7 +38092,7 @@ marshmallow:N
 marshy:A
 marsupial:A
 marsupial:N
-marsupium:N,marsupia
+marsupium:N,-ia
 mart:N
 martagon:N
 marten:N
@@ -38289,7 +38289,7 @@ mathematize:V
 matinee:N
 mating:N
 matins:N
-matman:N,matmen
+matman:N,-men
 matriarch:N,_s
 matriarchal:A
 matriarchate:N
@@ -38310,7 +38310,7 @@ matrilinear:A
 matrimonial:A
 matrimony:N
 matrisib:N
-matrix:N,matrices,_es
+matrix:N,-ices,_es
 matron:N
 matronly:A
 matronymic:N
@@ -38337,7 +38337,7 @@ maturement:N
 matureness:N
 maturity:N
 matutinal:A
-matzah:N,_s,matzas
+matzah:N,_s,-as
 matzo:N,_th,_t,_s
 matzoh:N,_s
 maudlin:A
@@ -38381,7 +38381,7 @@ maximization:N
 maximize:V
 maximizing:A
 maximum:A
-maximum:N,maxima,_s
+maximum:N,-ima,_s
 maximus:A
 maxwell:N
 may:N
@@ -38480,8 +38480,8 @@ meatball:N
 meathead:N
 meatiness:N
 meatless:A
-meatloaf:N,meatloaves
-meatman:N,meatmen
+meatloaf:N,-aves
+meatman:N,-men
 meatpacking:N
 meatus:N
 meaty:A
@@ -38565,7 +38565,7 @@ meditative:A
 meditatively:Av
 meditativeness:N
 medium:A
-medium:N,media,_s
+medium:N,-ia,_s
 medivac:N
 medlar:N
 medley:N
@@ -38632,7 +38632,7 @@ megaphone:N
 megapixel:N
 megapode:N
 megascopic:A
-megasporangium:N,megasporangia
+megasporangium:N,-ia
 megaspore:N
 megasporophyll:N
 megastar:N
@@ -38739,7 +38739,7 @@ memorabilia:N
 memorability:N
 memorable:A
 memorably:Av
-memorandum:N,memoranda,_s
+memorandum:N,-da,_s
 memorial:N
 memorialisation:N
 memorialise:V
@@ -38786,7 +38786,7 @@ meningitis:N
 meningocele:N
 meninx:N
 meniscectomy:N
-meniscus:N,menisci,_es
+meniscus:N,-ci,_es
 menopausal:A
 menopause:N
 menorah:N
@@ -38860,7 +38860,7 @@ merchandising:N
 merchant:N
 merchantability:N
 merchantable:A
-merchantman:N,merchantmen
+merchantman:N,-men
 merciful:A
 mercifully:Av
 mercifulness:N
@@ -38908,7 +38908,7 @@ merle:N
 merlin:N
 merlon:N
 mermaid:N
-merman:N,mermen
+merman:N,-men
 meromelia:N
 meronym:N
 meronymy:N
@@ -38971,7 +38971,7 @@ mesorrhine:A
 mesosphere:N
 mesothelial:A
 mesothelioma:N
-mesothelium:N,mesothelia
+mesothelium:N,-ia
 mesotron:N
 mesquit:N
 mesquite:N
@@ -39003,13 +39003,13 @@ metabolize:V
 metabolous:A
 metacarpal:A
 metacarpal:N
-metacarpus:N,metacarpi
+metacarpus:N,-pi
 metacenter:N
 metacentre:N
 metacentric:A
 metacognition:N
 metacyesis:N
-metadatum:N,metadata
+metadatum:N,-ta
 metagenesis:N
 metagrabolised:A
 metagrabolized:A
@@ -39064,7 +39064,7 @@ metastasize:V
 metastatic:A
 metatarsal:A
 metatarsal:N
-metatarsus:N,metatarsi
+metatarsus:N,-rsi
 metatherian:N
 metathesis:N
 metaverse:N
@@ -39104,7 +39104,7 @@ metharbital:N
 metheglin:N
 methenamine:N
 methicillin:N
-methinks:V,methought
+methinks:V,-hought
 methionine:N
 methocarbamol:N
 method:N
@@ -39294,7 +39294,7 @@ microsecond:N
 microseism:N
 microsomal:A
 microsome:N
-microsporangium:N,microsporangia
+microsporangium:N,-ia
 microspore:N
 microsporidian:N
 microsporophyll:N
@@ -39326,7 +39326,7 @@ middle:N
 middle:V
 middlebreaker:N
 middlebrow:N
-middleman:N,middlemen
+middleman:N,-men
 middlemost:A
 middleware:N
 middleweight:A
@@ -39358,7 +39358,7 @@ midpoint:N
 midrib:N
 midriff:N
 midsection:N
-midshipman:N,midshipmen
+midshipman:N,-men
 midships:Av
 midsize:A
 midsized:A
@@ -39378,7 +39378,7 @@ midweek:A
 midweek:Av
 midweekly:A
 midwestern:A
-midwife:N,midwives
+midwife:N,-ives
 midwifery:N
 midwinter:N
 midyear:A
@@ -39446,8 +39446,8 @@ military:A
 military:N
 militate:V
 militia:N
-militiaman:N,militiamen
-milium:N,milia
+militiaman:N,-men
+milium:N,-ia
 milk:N
 milk:V
 milkcap:N
@@ -39456,7 +39456,7 @@ milkiness:N
 milkless:A
 milklike:A
 milkmaid:N
-milkman:N,milkmen
+milkman:N,-men
 milkshake:N
 milksop:N
 milkwagon:N
@@ -39477,7 +39477,7 @@ millenary:A
 millennial:A
 millennial:N
 millennian:A
-millennium:N,millennia,_s
+millennium:N,-ia,_s
 millenniumism:N
 millepede:N
 miller:N
@@ -39639,7 +39639,7 @@ minimization:N
 minimize:V
 minimized:A
 minimum:A
-minimum:N,minima,_s
+minimum:N,-ima,_s
 mining:N
 minion:N
 miniscule:A
@@ -39691,7 +39691,7 @@ minuscule:N
 minute:A
 minute:N
 minutely:Av
-minuteman:N,minutemen
+minuteman:N,-men
 minuteness:N
 minutia:N,_e
 minx:N
@@ -39797,7 +39797,7 @@ misdiagnose:V
 misdiagnosis:N
 misdirect:V
 misdirection:N
-misdo:V,_es,_ing,misdid,_ne
+misdo:V,_es,_ing,-did,_ne
 misdoubt:N
 misdoubt:V
 miser:N
@@ -39821,7 +39821,7 @@ misfortunate:A
 misfortune:N
 misfunction:V
 misgauge:V
-misgive:V,_s,misgiving,misgave,_n
+misgive:V,_s,-ving,-gave,_n
 misgiving:N
 misgovern:V
 misgovernment:N
@@ -39848,8 +39848,8 @@ misjudgment:N
 mislabel:V,_s,_ing,_ling,_ed,_led
 mislabeled:A
 mislaid:A
-mislay:V,_s,_ing,mislaid
-mislead:V,_s,_ing,misled
+mislay:V,_s,_ing,-aid
+mislead:V,_s,_ing,-ed
 misleader:N
 misleading:A
 misleadingly:Av
@@ -39918,10 +39918,10 @@ missioner:N
 missis:N
 missish:A
 missive:N
-misspeak:V,_s,_ing,misspoke,misspoken
+misspeak:V,_s,_ing,-poke,-poken
 misspell:V
 misspelling:N
-misspend:V,_s,_ing,misspent
+misspend:V,_s,_ing,-nt
 misstate:V
 misstatement:N
 misstep:N
@@ -39931,7 +39931,7 @@ mist:N
 mist:V
 mistakable:A
 mistake:N
-mistake:V,_s,mistaking,mistook,_n
+mistake:V,_s,-king,-took,_n
 mistaken:A
 mistakenly:Av
 mistaking:N
@@ -39957,7 +39957,7 @@ mistrustful:A
 mistrustfully:Av
 misty:A
 mistype:V
-misunderstand:V,_s,_ing,misunderstood
+misunderstand:V,_s,_ing,-tood
 misunderstanding:N
 misunderstood:A
 misuse:N
@@ -39978,7 +39978,7 @@ mitigation:N
 mitigative:A
 mitigatory:A
 mitochondrial:A
-mitochondrion:N,mitochondria
+mitochondrion:N,-ia
 mitogen:N
 mitomycin:N
 mitosis:N
@@ -40181,7 +40181,7 @@ mollification:N
 mollify:V
 mollusc:N
 molluscan:A
-molluscum:N,mollusca
+molluscum:N,-ca
 mollusk:N
 molluskan:A
 molly:N
@@ -40209,7 +40209,7 @@ momently:Av
 momentous:A
 momentously:Av
 momentousness:N
-momentum:N,momenta,_s
+momentum:N,-ta,_s
 momism:N
 momma:N
 mommy:N
@@ -40265,7 +40265,7 @@ moneyless:A
 moneymaker:N
 moneymaking:A
 moneymaking:N
-moneyman:N,moneymen
+moneyman:N,-men
 moneywort:N
 monger:N
 monger:V
@@ -40540,7 +40540,7 @@ moralizer:N
 moralizing:N
 morally:Av
 morass:N
-moratorium:N,_s,moratoria
+moratorium:N,_s,-ia
 moray:N
 morbid:A
 morbidity:N
@@ -40699,7 +40699,7 @@ motive:A
 motive:N
 motiveless:A
 motivity:N
-motley:A,motlier,motliest
+motley:A,-lier,-liest
 motley:N
 motmot:N
 motocross:N
@@ -40729,7 +40729,7 @@ motorization:N
 motorize:V
 motorized:A
 motorless:A
-motorman:N,motormen
+motorman:N,-men
 motormouth:N
 motorsport:N
 motortruck:N
@@ -40921,7 +40921,7 @@ mugwort:N
 mugwump:N
 muishond:N
 mujahid:N
-mujahideen:N.p,mujahedin,mujahedeen
+mujahideen:N.p,-hedin,-hedeen
 mujik:N
 mujtihad:N
 mukataa:N
@@ -41129,7 +41129,7 @@ muscle:V
 musclebound:A
 musclebuilder:N
 musclebuilding:N
-muscleman:N,musclemen
+muscleman:N,-men
 muscly:A
 muscovite:N
 muscular:A
@@ -41271,8 +41271,8 @@ my:D
 myalgia:N
 myalgic:A
 myasthenia:N
-mycelium:N,mycelia
-mycobacterium:N,mycobacteria
+mycelium:N,-ia
+mycobacterium:N,-ia
 mycologist:N
 mycology:N
 mycomycin:N
@@ -41310,7 +41310,7 @@ mynah:N
 myocardial:A
 myocardiopathy:N
 myocarditis:N
-myocardium:N,myocardia
+myocardium:N,-ia
 myoclonus:N
 myodynia:N
 myofibril:N
@@ -41397,11 +41397,11 @@ mythologize:V
 mythology:N
 mythopoeia:N
 mythopoeic:A
-mythos:N,mythoi
+mythos:N,-oi
 mytilid:N
 myxedema:N
 myxobacter:N
-myxobacterium:N,myxobacteria
+myxobacterium:N,-ia
 myxoedema:N
 myxoma:N
 myxomatosis:N
@@ -41526,7 +41526,7 @@ narcism:N
 narcissism:N
 narcissist:N
 narcissistic:A
-narcissus:N,narcissi,_es
+narcissus:N,-issi,_es
 narcist:N
 narcolepsy:N
 narcoleptic:A
@@ -41596,7 +41596,7 @@ natalism:N
 natalist:N
 natality:N
 natator:N
-natatorium:N,natatoria,_s
+natatorium:N,-ia,_s
 natch:Av
 nates:N
 nation:N
@@ -41689,7 +41689,7 @@ naw:I
 nawab:N
 nay:Av
 nay:N
-naysay:V,_s,_ing,naysaid
+naysay:V,_s,_ing,-aid
 naysayer:N
 naysaying:N
 naïve:A
@@ -41800,7 +41800,7 @@ needlepoint:N
 needless:A
 needlessly:Av
 needlessness:N
-needlewoman:N,needlewomen
+needlewoman:N,-men
 needlewood:N
 needlework:N
 needleworker:N
@@ -41912,7 +41912,7 @@ neon:N
 neonatal:A
 neonate:N
 neonatology:N
-neopallium:N,neopallia,_s
+neopallium:N,-ia,_s
 neophilia:N
 neophiliac:N
 neophobia:N
@@ -42037,7 +42037,7 @@ neurilemoma:N
 neurinoma:N
 neuritic:A
 neuritic:N
-neuritis:N,neuritides,_es
+neuritis:N,-ides,_es
 neuroanatomic:A
 neuroanatomical:A
 neuroanatomy:N
@@ -42056,7 +42056,7 @@ neurodiverse:A
 neurodiversity:N
 neuroendocrine:A
 neuroepithelioma:N
-neuroepithelium:N,neuroepithelia,_s
+neuroepithelium:N,-ia,_s
 neuroethics:N.p
 neurofibroma:N
 neurofibromatosis:N
@@ -42167,14 +42167,14 @@ newsgroup:N
 newshound:N
 newsless:A
 newsletter:N
-newsman:N,newsmen
+newsman:N,-men
 newsmonger:N
 newspaper:N
 newspapering:N
-newspaperman:N,newspapermen
-newspaperwoman:N,newspaperwomen
+newspaperman:N,-men
+newspaperwoman:N,-men
 newspeak:N
-newsperson:N,newspeople,_s
+newsperson:N,-eople,_s
 newsprint:N
 newsreader:N
 newsreel:N
@@ -42183,7 +42183,7 @@ newssheet:N
 newsstand:N
 newsvendor:N
 newsweekly:N
-newswoman:N,newswomen
+newswoman:N,-men
 newsworthiness:N
 newsworthy:A
 newswriter:N
@@ -42301,7 +42301,7 @@ nimble:A
 nimbleness:N
 nimblewill:N
 nimbly:Av
-nimbus:N,nimbi,_es
+nimbus:N,-bi,_es
 nimby:A
 nimiety:N
 niminy-piminy:A
@@ -42367,7 +42367,7 @@ nitrile:N
 nitrite:N
 nitro:A
 nitro:N
-nitrobacterium:N,nitrobacteria
+nitrobacterium:N,-ia
 nitrobenzene:N
 nitrocalcite:N
 nitrocellulose:N
@@ -42382,7 +42382,7 @@ nitrogenize:V
 nitrogenous:A
 nitroglycerin:N
 nitroglycerine:N
-nitrosobacterium:N,nitrosobacteria
+nitrosobacterium:N,-ia
 nitrous:A
 nitweed:N
 nitwit:N
@@ -42398,10 +42398,10 @@ nobelium:N
 nobility:N
 noble:A
 noble:N
-nobleman:N,noblemen
+nobleman:N,-men
 nobleness:N
 noblesse:N
-noblewoman:N,noblewomen
+noblewoman:N,-men
 nobly:Av
 nobody:D
 nobody:N
@@ -42824,7 +42824,7 @@ nonperformer:N
 nonperforming:A
 nonperiodic:A
 nonperishable:A
-nonperson:N,nonpeople,_s
+nonperson:N,-eople,_s
 nonpersonal:A
 nonphilosophic:A
 nonphilosophical:A
@@ -42910,7 +42910,7 @@ nonseasonal:A
 nonsectarian:A
 nonsegmental:A
 nonsegregated:A
-nonself:N,nonselves
+nonself:N,-lves
 nonsense:A
 nonsense:N
 nonsensical:A
@@ -43251,7 +43251,7 @@ nucleator:N
 nucleic:A
 nucleolar:A
 nucleole:N
-nucleolus:N,nucleoli
+nucleolus:N,-li
 nucleon:N
 nucleonics:N.p
 nucleoplasm:N
@@ -43259,7 +43259,7 @@ nucleoprotein:N
 nucleoside:N
 nucleosynthesis:N
 nucleotide:N
-nucleus:N,nuclei,necleuses
+nucleus:N,-ei,necleuses
 nude:A
 nude:N
 nudeness:N
@@ -43340,7 +43340,7 @@ nurseling:N
 nursemaid:N
 nurser:N
 nursery:N
-nurseryman:N,nurserymen
+nurseryman:N,-men
 nursing:N
 nursling:N
 nurtural:A
@@ -43420,9 +43420,9 @@ oakum:N
 oar:N
 oarfish:N
 oarlock:N
-oarsman:N,oarsmen
+oarsman:N,-men
 oarsmanship:N
-oarswoman:N,oarswomen
+oarswoman:N,-men
 oasis:N
 oast:N
 oat:N
@@ -43547,7 +43547,7 @@ obscurity:N
 obsequious:A
 obsequiously:Av
 obsequiousness:N
-obsequy:N,obsequies
+obsequy:N,-uies
 observable:A
 observably:Av
 observance:N
@@ -43690,7 +43690,7 @@ octad:N
 octagon:N
 octagonal:A
 octahedral:A
-octahedron:N,octahedra,_s
+octahedron:N,-ra,_s
 octal:A
 octameter:N
 octane:N
@@ -43704,7 +43704,7 @@ octogenarian:A
 octogenarian:N
 octonary:N
 octopod:N
-octopus:N,_es,octopi,octopodes
+octopus:N,_es,-pi,-podes
 octosyllabic:A
 octosyllable:N
 octroi:N
@@ -43758,7 +43758,7 @@ oenophilist:N
 oersted:N
 oesophagitis:N
 oesophagoscope:N
-oesophagus:N,oesophagi
+oesophagus:N,-gi
 oestradiol:N
 oestriol:N
 oestrogen:N
@@ -43876,7 +43876,7 @@ oilfield:N
 oilfish:N
 oilily:Av
 oiliness:N
-oilman:N,oilmen
+oilman:N,-men
 oilpaper:N
 oilrig:N
 oilseed:N
@@ -43908,7 +43908,7 @@ oldness:N
 oldster:N
 oldtimer:N
 oldwench:N
-oldwife:N,oldwives
+oldwife:N,-ives
 ole:A
 oleaceous:A
 oleaginous:A
@@ -43955,10 +43955,10 @@ olm:N
 ology:N
 olympian:A
 om:N
-omasum:N,omasa
+omasum:N,-sa
 ombrophobous:A
 ombu:N
-ombudsman:N,ombudsmen
+ombudsman:N,-men
 omega:N
 omelet:N
 omelette:N
@@ -43976,7 +43976,7 @@ omission:N
 omissive:A
 omit:V
 ommastrephes:N
-ommatidium:N,ommatidia
+ommatidium:N,-ia
 omnibus:A
 omnibus:N
 omnidirectional:A
@@ -44030,7 +44030,7 @@ oneness:N
 onerous:A
 onerously:Av
 onerousness:N
-oneself:Pn,oneselves
+oneself:Pn,-lves
 onetime:A
 ongoing:A
 onion:N
@@ -44246,7 +44246,7 @@ optimistic:A
 optimistically:Av
 optimization:N
 optimize:V
-optimum:A,optima,_s
+optimum:A,-ima,_s
 optimum:N
 option:N
 option:V
@@ -44627,7 +44627,7 @@ ounce:N
 our:D
 ouroboros:N.p
 ours:Pn
-ourself:Pn,ourselves
+ourself:Pn,-lves
 ousel:N
 oust:V
 ouster:N
@@ -44669,15 +44669,15 @@ outcry:N
 outcry:V
 outdated:A
 outdistance:V
-outdo:V,_es,_ing,outdid,_ne
+outdo:V,_es,_ing,-did,_ne
 outdoor:A
 outdoors:Av
 outdoors:N.p
 outdoors:P.i
-outdoorsman:N,outdoorsmen
-outdoorswoman:N,outdoorswomen
+outdoorsman:N,-men
+outdoorswoman:N,-men
 outdoorsy:A
-outdraw:V,_s,_ing,outdrew,_n
+outdraw:V,_s,_ing,-rew,_n
 outer:A
 outercourse:N
 outermost:A
@@ -44686,7 +44686,7 @@ outface:V
 outfall:N
 outfield:N
 outfielder:N
-outfight:V,_s,_ing,outfought
+outfight:V,_s,_ing,-fought
 outfit:N
 outfit:V
 outfitted:A
@@ -44701,7 +44701,7 @@ outgo:N,_es
 outgo:V,_es,_ing,outwent
 outgoer:N
 outgoing:A
-outgrow:V,_s,_ing,outgrew,_n
+outgrow:V,_s,_ing,-rew,_n
 outgrowth:N
 outguess:V
 outgun:V
@@ -44722,7 +44722,7 @@ outlaw:V
 outlawed:A
 outlawry:N
 outlay:N
-outlay:V,_s,_ing,outlaid
+outlay:V,_s,_ing,-aid
 outlet:N
 outlier:N
 outline:N
@@ -44764,7 +44764,7 @@ outrank:V
 outre:A
 outreach:N
 outride:N
-outride:V,_s,outriding,outrode,outridden
+outride:V,_s,-ding,-rode,-dden
 outrider:N
 outrigged:A
 outrigger:N
@@ -44772,12 +44772,12 @@ outright:A
 outright:Av
 outrival:V
 outroar:V
-outrun:V,_s,_ning,outran
+outrun:V,_s,_ning,-ran
 outsail:V
 outscore:V
-outsell:V,_s,_ing,outsold
+outsell:V,_s,_ing,-sold
 outset:N
-outshine:V,_s,outshining,outshone,_d
+outshine:V,_s,-ning,-hone,_d
 outshout:V
 outside:A
 outside:Av
@@ -44793,7 +44793,7 @@ outsoar:V
 outsole:N
 outsource:V
 outspan:V
-outspend:V,_s,_ing,outspent
+outspend:V,_s,_ing,-nt
 outspoken:A
 outspokenly:Av
 outspokenness:N
@@ -44820,7 +44820,7 @@ outwardness:N
 outwards:Av
 outwards:P.i
 outwatch:V
-outwear:V,_s,_ing,outwore,outworn
+outwear:V,_s,_ing,-wore,-worn
 outweigh:V
 outwit:V
 outwith:P
@@ -44873,14 +44873,14 @@ overattentive:A
 overawe:V
 overawed:A
 overbalance:V
-overbear:V,_s,_ing,overbore,overborne,overborn
+overbear:V,_s,_ing,-bore,-borne,-born
 overbearing:A
 overbearingly:Av
 overbearingness:N
 overbid:N
 overbid:V,_s,_ding
 overbite:N
-overblow:V,_s,_ing,overblew,_n
+overblow:V,_s,_ing,-lew,_n
 overblown:A
 overboard:Av
 overboard:P.i
@@ -44888,12 +44888,12 @@ overboil:V
 overbold:A
 overbook:V
 overbrim:V
-overbuild:V,_s,_ing,overbuilt
+overbuild:V,_s,_ing,-lt
 overburden:N
 overburden:V
 overburdened:A
 overbusy:A
-overbuy:V,_s,_ing,overbought
+overbuy:V,_s,_ing,-bought
 overcall:N
 overcapacity:N
 overcapitalise:V
@@ -44913,7 +44913,7 @@ overcloud:V
 overcoat:N
 overcoating:N
 overcome:A
-overcome:V,_s,overcoming,overcame
+overcome:V,_s,-ming,-came
 overcomer:N
 overcompensate:V
 overcompensation:N
@@ -44939,24 +44939,24 @@ overdependence:N
 overdependent:A
 overdevelop:V
 overdevelopment:N
-overdo:V,_es,_ing,overdid,_ne
+overdo:V,_es,_ing,-did,_ne
 overdone:A
 overdose:V
 overdraft:N
 overdramatise:V
 overdramatize:V
 overdraught:N
-overdraw:V,_s,_ing,overdrew,_n
+overdraw:V,_s,_ing,-rew,_n
 overdress:V
 overdressed:A
 overdrive:N
-overdrive:V,_s,overdriving,overdrove,_n
+overdrive:V,_s,-ving,-rove,_n
 overdriven:A
 overdub:N
 overdub:V
 overdue:A
 overeager:A
-overeat:V,_s,_ing,overate,_en
+overeat:V,_s,_ing,-rate,_en
 overeater:N
 overeating:N
 overemotional:A
@@ -44987,7 +44987,7 @@ overextend:V
 overfamiliar:A
 overfatigue:V
 overfed:A
-overfeed:V,_s,_ing,overfed
+overfeed:V,_s,_ing,-fed
 overfeeding:N
 overfill:V
 overfit:V
@@ -44995,7 +44995,7 @@ overflight:N
 overflow:N
 overflow:V
 overflowing:A
-overfly:V,overflies,_ing,overflew,overflown
+overfly:V,-lies,_ing,-lew,-lown
 overfond:A
 overfraught:A
 overfull:A
@@ -45009,13 +45009,13 @@ overgraze:V
 overgreedy:A
 overground:A
 overground:N
-overgrow:V,_s,_ing,overgrew,_n
+overgrow:V,_s,_ing,-rew,_n
 overgrown:A
 overgrowth:N
 overhand:A
 overhanded:A
 overhang:N
-overhang:V,_s,_ing,overhung
+overhang:V,_s,_ing,-hung
 overhasty:A
 overhaul:N
 overhaul:V
@@ -45049,11 +45049,11 @@ overlapping:A
 overlapping:N
 overlarge:A
 overlay:N
-overlay:V,_s,_ing,overlaid
+overlay:V,_s,_ing,-aid
 overlayer:N
 overleaf:Av
 overleap:V
-overlie:V,_s,overlying,overlay,overlain
+overlie:V,_s,-lying,-lay,-lain
 overline:N
 overline:V
 overload:N
@@ -45090,7 +45090,7 @@ overoptimistically:Av
 overparticular:A
 overpass:N
 overpass:V
-overpay:V,_s,_ing,overpaid
+overpay:V,_s,_ing,-aid
 overpayment:N
 overplay:V
 overplus:N
@@ -45134,13 +45134,13 @@ overrepresent:V
 overrepresentation:N
 overrepresented:A
 override:N
-override:V,_s,overriding,overrode,overridden
+override:V,_s,-ding,-rode,-dden
 overriding:A
 overripe:A
 overrule:V
 overrun:A
 overrun:N
-overrun:V,_s,_ning,overran
+overrun:V,_s,_ning,-ran
 oversaturate:V
 oversaturated:A
 oversaturation:N
@@ -45149,9 +45149,9 @@ oversea:Av
 overseas:A
 overseas:Av
 overseas:P.i
-oversee:V,_s,_ing,oversaw,_n
+oversee:V,_s,_ing,-saw,_n
 overseer:N
-oversell:V,_s,_ing,oversold
+oversell:V,_s,_ing,-sold
 oversensitive:A
 oversensitiveness:N
 overserious:A
@@ -45165,7 +45165,7 @@ oversharer:N
 overshielding:N
 overshoe:N
 overshoot:N
-overshoot:V,_s,_ing,overshot
+overshoot:V,_s,_ing,-hot
 overshot:A
 overside:Av
 oversight:N
@@ -45177,12 +45177,12 @@ oversimply:Av
 oversize:A
 oversized:A
 overskirt:N
-oversleep:V,_s,_ing,overslept
+oversleep:V,_s,_ing,-lept
 oversolicitous:A
 overspecialise:V
 overspecialization:N
 overspecialize:V
-overspend:V,_s,_ing,overspent
+overspend:V,_s,_ing,-nt
 overspill:N
 overspray:N
 overspread:V
@@ -45214,12 +45214,12 @@ oversupply:N
 oversupply:V
 oversuspicious:A
 overt:A
-overtake:V,_s,overtaking,overtook,_n
+overtake:V,_s,-king,-took,_n
 overtaking:N
 overtax:V
-overthink:V,_s,_ing,overthought
+overthink:V,_s,_ing,-hought
 overthrow:N
-overthrow:V,_s,_ing,overthrew,_n
+overthrow:V,_s,_ing,-rew,_n
 overtighten:V
 overtime:Av
 overtime:N
@@ -45256,7 +45256,7 @@ overwinter:V
 overwork:N
 overwork:V
 overworking:N
-overwrite:V,_s,overwriting,overwrote,overwritten
+overwrite:V,_s,-ting,-rote,-tten
 overwrought:A
 overzealous:A
 oviduct:N
@@ -45269,7 +45269,7 @@ ovoflavin:N
 ovoid:A
 ovoid:N
 ovolo:N
-ovotestis:N,ovotestes
+ovotestis:N,-tes
 ovoviviparous:A
 ovular:A
 ovulate:V
@@ -45343,7 +45343,7 @@ oxygenise:V
 oxygenize:V
 oxyhaemoglobin:N
 oxyhemoglobin:N
-oxymoron:N,_s,oxymora
+oxymoron:N,_s,-ra
 oxymoronic:A
 oxymoronically:Av
 oxyopia:N
@@ -45421,7 +45421,7 @@ packetize:V
 packhorse:N
 packing:N
 packinghouse:N
-packman:N,packmen
+packman:N,-men
 packrat:N
 packsack:N
 packsaddle:N
@@ -45561,7 +45561,7 @@ palatine:N
 palatoglossal:A
 palaver:N
 palaver:V
-palazzo:N,palazzi
+palazzo:N,-zi
 pale:A
 pale:N
 pale:V
@@ -45632,7 +45632,7 @@ pallid:A
 pallidly:Av
 pallidness:N
 pallidum:N
-pallium:N,pallia,_s
+pallium:N,-ia,_s
 pallone:N
 pallor:N
 pally:A
@@ -45706,12 +45706,12 @@ pancreatin:N
 pancreatitis:N
 pancytopenia:N
 panda:N
-pandaemonium:N,pandaemonia,_s
+pandaemonium:N,-ia,_s
 pandanus:N
 pandar:N
 pandemic:A
 pandemic:N
-pandemonium:N,pandemonia,_s
+pandemonium:N,-ia,_s
 pander:N
 pander:V
 panderer:N
@@ -45794,7 +45794,7 @@ pantothen:N
 pantropic:A
 pantropical:A
 pantry:N
-pantryman:N,pantrymen
+pantryman:N,-men
 pantsuit:N
 pantsuited:A
 panty:N
@@ -45808,7 +45808,7 @@ papacy:N
 papaia:N
 papain:N
 papal:A
-paparazzo:N,paparazzi
+paparazzo:N,-zi
 papaverine:N
 papaw:N
 papaya:N
@@ -45828,7 +45828,7 @@ papergirl:N
 paperhanger:N
 paperhanging:N
 papering:N
-paperknife:N,paperknives
+paperknife:N,-ives
 paperless:A
 paperlike:A
 papermaking:N
@@ -45858,7 +45858,7 @@ pappy:N
 paprika:N
 papule:N
 papulovesicle:N
-papyrus:N,papyri,_es
+papyrus:N,-ri,_es
 par:N
 par:V
 para:N
@@ -45934,7 +45934,7 @@ paramagnet:N
 paramagnetic:A
 paramagnetism:N
 paramecia:N
-paramecium:N,paramecia,_s
+paramecium:N,-ia,_s
 paramedic:N
 paramedical:A
 paramedical:N
@@ -45974,7 +45974,7 @@ paraplegia:N
 paraplegic:A
 paraplegic:N
 parapodial:A
-parapodium:N,parapodia
+parapodium:N,-ia
 parapraxis:N
 paraprofessional:N
 paraprosdokian:N
@@ -46061,7 +46061,7 @@ parheliacal:A
 parhelic:A
 parhelion:N
 pariah:N
-paries:N,parietes
+paries:N,-etes
 parietal:A
 parimutuel:N
 paring:N
@@ -46144,7 +46144,7 @@ parsonage:N
 part:Av
 part:N
 part:V
-partake:V,_s,partaking,partook,_n
+partake:V,_s,-king,-took,_n
 partaker:N
 parted:A
 parterre:N
@@ -46248,7 +46248,7 @@ passel:N
 passementerie:N
 passenger:N
 passer:N
-passerby:N,passersby
+passerby:N,-rsby
 passerine:A
 passerine:N
 passim:Av
@@ -46421,9 +46421,9 @@ patristics:N.p
 patrol:N
 patrol:V
 patroller:N
-patrolman:N,patrolmen
+patrolman:N,-men
 patrology:N
-patrolwoman:N,patrolwomen
+patrolwoman:N,-men
 patron:N
 patronage:N
 patronage:V
@@ -46798,9 +46798,9 @@ penitentially:Av
 penitentiary:A
 penitentiary:N
 penitently:Av
-penknife:N,penknives
+penknife:N,-ives
 penlight:N
-penman:N,penmen
+penman:N,-men
 penmanship:N
 pennant:N
 pennate:A
@@ -46813,7 +46813,7 @@ penning:N
 pennon:N
 pennoncel:N
 pennoncelle:N
-penny:N,pence,pennies
+penny:N,pence,-nies
 pennycress:N
 pennyroyal:N
 pennyweight:N
@@ -46842,7 +46842,7 @@ pentagon:N
 pentagonal:A
 pentagram:N
 pentahedral:A
-pentahedron:N,pentahedra,_s
+pentahedron:N,-ra,_s
 pentail:N
 pentamerous:A
 pentameter:N
@@ -47028,21 +47028,21 @@ periarteritis:N
 pericardiac:A
 pericardial:A
 pericarditis:N
-pericardium:N,pericardia
+pericardium:N,-ia
 pericarp:N
 pericementoclasia:N
 periclase:N
 peridinian:N
-peridium:N,peridia
+peridium:N,-ia
 peridot:N
 peridotite:N
 perigee:N
 perigon:N
 perigonal:A
 perigone:N
-perigonium:N,perigonia
+perigonium:N,-ia
 perihelial:A
-perihelion:N,perihelia
+perihelion:N,-ia
 perijove:N
 peril:N
 peril:V
@@ -47059,8 +47059,8 @@ perinatologist:N
 perinatology:N
 perineal:A
 perineotomy:N
-perineum:N,perinea
-perineurium:N,perineuria
+perineum:N,-ea
+perineurium:N,-ia
 period:N
 periodic:A
 periodical:A
@@ -47102,9 +47102,9 @@ peristome:N
 peristylar:A
 peristyle:N
 perithecial:A
-perithecium:N,perithecia
+perithecium:N,-ia
 perithelial:A
-perithelium:N,perithelia
+perithelium:N,-ia
 peritoneal:A
 peritoneum:N
 peritonitis:N
@@ -47406,7 +47406,7 @@ phalange:N
 phalangeal:A
 phalanger:N
 phalangitis:N
-phalanx:N,_es,phalanges
+phalanx:N,_es,-nges
 phalarope:N
 phallephoric:A
 phallic:A
@@ -47414,7 +47414,7 @@ phallocentric:A
 phallocentrism:N
 phallocratic:A
 phalloplasty:N
-phallus:N,phalli,_es
+phallus:N,-li,_es
 phalsa:N
 phanerogam:N
 phaneromania:N
@@ -47452,7 +47452,7 @@ pharmacotherapy:N
 pharmacy:N
 pharyngeal:A
 pharyngitis:N
-pharynx:N,pharynges,_es
+pharynx:N,-nges,_es
 phase:N
 phase:V
 phaseout:N
@@ -47483,7 +47483,7 @@ phenomenally:Av
 phenomenological:A
 phenomenologically:Av
 phenomenology:N
-phenomenon:N,phenomena,_s
+phenomenon:N,-ena,_s
 phenoplast:N
 phenothiazine:N
 phenotype:N
@@ -47765,7 +47765,7 @@ phylogenesis:N
 phylogenetic:A
 phylogenetically:Av
 phylogeny:N
-phylum:N,phyla
+phylum:N,-la
 physa:N
 physiatrics:N.p
 physic:N
@@ -47900,7 +47900,7 @@ piecework:N
 pieceworker:N
 piecrust:N
 pied:A
-pieman:N,piemen
+pieman:N,-men
 pieplant:N
 pier:N
 pierce:V
@@ -47940,7 +47940,7 @@ pigheaded:A
 pigheadedly:Av
 pigheadedness:N
 piglet:N
-pigman:N,pigmen
+pigman:N,-men
 pigment:N
 pigment:V
 pigmentation:N
@@ -48217,7 +48217,7 @@ pitcherful:N
 pitchfork:N
 pitchfork:V
 pitching:N
-pitchman:N,pitchmen
+pitchman:N,-men
 pitchpole:V
 pitchstone:N
 pitchy:A
@@ -48239,7 +48239,7 @@ pitifully:Av
 pitiless:A
 pitilessly:Av
 pitilessness:N
-pitman:N,pitmen
+pitman:N,-men
 piton:N
 pitprop:N
 pitsaw:N
@@ -48276,7 +48276,7 @@ pizzazz:N
 pizzeria:N
 pizzicato:A
 pizzicato:Av
-pizzicato:N,pizzicati
+pizzicato:N,-ti
 piñata:N
 pj’s:N.p
 placable:A
@@ -48298,7 +48298,7 @@ placekick:N
 placekick:V
 placekicker:N
 placeless:A
-placeman:N,placemen
+placeman:N,-men
 placement:N
 placename:N
 placenta:N
@@ -48347,10 +48347,10 @@ plain:N
 plain:V
 plainchant:N
 plainclothes:A
-plainclothesman:N,plainclothesmen
+plainclothesman:N,-men
 plainly:Av
 plainness:N
-plainsman:N,plainsmen
+plainsman:N,-men
 plainsong:N
 plainspoken:A
 plaint:N
@@ -48379,7 +48379,7 @@ planeness:N
 planer:N
 planet:N
 planetal:A
-planetarium:N,_s,planetaria
+planetarium:N,_s,-ia
 planetary:A
 planetesimal:N
 planetoid:N
@@ -48414,7 +48414,7 @@ plantigrade:A
 planting:N
 plantlet:N
 plantlike:A
-plantsman:N,plantsmen
+plantsman:N,-men
 planula:N
 plaque:N
 plash:N
@@ -48428,7 +48428,7 @@ plasmapheresis:N
 plasmid:N
 plasmin:N
 plasminogen:N
-plasmodium:N,plasmodia
+plasmodium:N,-ia
 plasmon:N
 plaster:N
 plaster:V
@@ -48477,7 +48477,7 @@ platonic:A
 platonically:Av
 platoon:N
 platter:N
-platy:N,_s,platies
+platy:N,_s,-ties
 platyctenean:N
 platyfish:N
 platyhelminth:N
@@ -48578,7 +48578,7 @@ plecopteran:N
 plectognath:N
 plectranthus:N
 plectron:N
-plectrum:N,plectra,_s
+plectrum:N,-ra,_s
 pledge:N
 pledge:V
 pledged:A
@@ -48672,7 +48672,7 @@ ploughboy:N
 ploughed:A
 ploughing:N
 ploughland:N
-ploughman:N,ploughmen
+ploughman:N,-men
 ploughshare:N
 ploughwright:N
 plover:N
@@ -48683,7 +48683,7 @@ plowed:A
 plower:N
 plowing:N
 plowland:N
-plowman:N,plowmen
+plowman:N,-men
 plowshare:N
 plowwright:N
 ploy:N
@@ -48792,7 +48792,7 @@ pneumatically:Av
 pneumatics:N.p
 pneumatophore:N
 pneumococcal:A
-pneumococcus:N,pneumococci
+pneumococcus:N,-ci
 pneumoconiosis:N
 pneumocytosis:N
 pneumogastric:A
@@ -48817,7 +48817,7 @@ pocketable:A
 pocketbook:N
 pocketcomb:N
 pocketful:N
-pocketknife:N,pocketknives
+pocketknife:N,-ives
 pockmark:V
 pockmarked:A
 pod:N
@@ -48827,11 +48827,11 @@ podalgia:N
 podcast:N
 podcast:V
 podcaster:N
-podetium:N,podetia
+podetium:N,-ia
 podgy:A
 podiatrist:N
 podiatry:N
-podium:N,_s,podia
+podium:N,_s,-ia
 podlike:A
 podocarp:N
 podsol:N
@@ -48888,7 +48888,7 @@ pointless:A
 pointlessly:Av
 pointlessness:N
 pointrel:N
-pointsman:N,pointsmen
+pointsman:N,-men
 pointy:A
 poise:N
 poise:V
@@ -48948,8 +48948,8 @@ polestar:N
 police:N
 police:V
 policeless:A
-policeman:N,policemen
-policewoman:N,policewomen
+policeman:N,-men
+policewoman:N,-men
 policy:N
 policyholder:N
 policymaker:N
@@ -48992,7 +48992,7 @@ pollex:N
 pollinate:V
 pollination:N
 pollinator:N
-pollinium:N,pollinia
+pollinium:N,-ia
 pollinosis:N
 polliwog:N
 pollock:N
@@ -49066,7 +49066,7 @@ polygynist:N
 polygynous:A
 polygyny:N
 polyhedral:A
-polyhedron:N,polyhedra,_s
+polyhedron:N,-ra,_s
 polyhidrosis:N
 polymastigote:N
 polymath:N
@@ -49284,7 +49284,7 @@ porkchop:N
 porker:N
 porkfish:N
 porkholt:N
-porkman:N,porkmen
+porkman:N,-men
 porkpie:N
 porky:A
 porky:N
@@ -49376,7 +49376,7 @@ positivity:N
 positron:N
 posology:N
 posse:N
-posseman:N,possemen
+posseman:N,-men
 possess:V
 possessed:A
 possession:N
@@ -49438,7 +49438,7 @@ postillion:N
 postindustrial:A
 posting:N
 postlude:N
-postman:N,postmen
+postman:N,-men
 postmark:N
 postmark:V
 postmaster:N
@@ -49484,7 +49484,7 @@ posture:N
 posture:V
 posturing:N
 postwar:A
-postwoman:N,postwomen
+postwoman:N,-men
 posy:N
 pot:N
 pot:V
@@ -49530,7 +49530,7 @@ pothouse:N
 pothunter:N
 potion:N
 potluck:N
-potman:N,potmen
+potman:N,-men
 potomania:N
 potoroo:N
 potpie:N
@@ -49560,7 +49560,7 @@ poulterer:N
 poultice:N
 poultice:V
 poultry:N
-poultryman:N,poultrymen
+poultryman:N,-men
 pounce:N
 pounce:V
 pound:N
@@ -49626,7 +49626,7 @@ practise:V
 practised:A
 practitioner:N
 praenomen:N
-praesidium:N,_s,praesidia
+praesidium:N,_s,-ia
 praetor:N
 praetorial:A
 praetorian:A
@@ -49704,7 +49704,7 @@ preassign:V
 preassigned:A
 prebend:N
 prebendary:N
-prebuild:V,_s,_ing,prebuilt
+prebuild:V,_s,_ing,-lt
 precancel:N
 precancel:V,_s,_ing,_ed
 precancellation:N
@@ -49794,7 +49794,7 @@ precooked:A
 precool:V
 precooled:A
 precordial:A
-precordium:N,precordia
+precordium:N,-ia
 precursor:N
 precursory:A
 predaceous:A
@@ -50000,7 +50000,7 @@ prepare:V
 prepared:A
 preparedness:N
 preparing:N
-prepay:V,_s,_ing,prepaid
+prepay:V,_s,_ing,-aid
 prepayment:N
 prepend:V
 prepense:A
@@ -50087,14 +50087,14 @@ preserver:N
 preserving:A
 preset:A
 preset:V,_s,_ting
-preshrink:V,_s,_ing,preshrank,preshrunk
+preshrink:V,_s,_ing,-rank,-runk
 preside:V
 presidency:N
 president:N
 presidential:A
 presidentship:N
 presidio:N
-presidium:N,presidia,_s
+presidium:N,-ia,_s
 presocratic:A
 presort:V
 press:N
@@ -50105,7 +50105,7 @@ pressie:N
 pressing:A
 pressing:N
 pressingly:Av
-pressman:N,pressmen
+pressman:N,-men
 pressmark:N
 pressor:A
 pressure:N
@@ -50285,7 +50285,7 @@ primo:N
 primogenitor:N
 primogeniture:N
 primordial:A
-primordium:N,primordia
+primordium:N,-ia
 primp:V
 primping:N
 primrose:N
@@ -50346,7 +50346,7 @@ privacy:N
 private:A
 private:N
 privateer:N
-privateersman:N,privateersmen
+privateersman:N,-men
 privately:Av
 privateness:N
 privation:N
@@ -50405,7 +50405,7 @@ problematical:A
 problematically:Av
 proboscidean:N
 proboscidian:N
-proboscis:N,_es,proboscides
+proboscis:N,_es,-ides
 procaine:N
 procarbazine:N
 procaryote:N
@@ -50678,7 +50678,7 @@ promulgate:V
 promulgated:A
 promulgation:N
 promulgator:N
-promycelium:N,promycelia
+promycelium:N,-ia
 pronatalist:N
 pronate:V
 pronation:N
@@ -50760,7 +50760,7 @@ prophetical:A
 prophetically:Av
 prophylactic:A
 prophylactic:N
-prophylaxis:N,prophylaxes
+prophylaxis:N,-xes
 prophyll:N
 propinquity:N
 propionaldehyde:N
@@ -50772,7 +50772,7 @@ propitious:A
 propitiously:Av
 propitiousness:N
 propjet:N
-propman:N,propmen
+propman:N,-men
 proponent:N
 proportion:N
 proportion:V
@@ -50821,7 +50821,7 @@ prosaic:A
 prosaically:Av
 prosaicness:N
 proscenium:N
-prosciutto:N,prosciutti,_s
+prosciutto:N,-ti,_s
 proscribe:V
 proscribed:A
 proscription:N
@@ -50961,7 +50961,7 @@ protozoic:A
 protozoological:A
 protozoologist:N
 protozoology:N
-protozoon:N,protozoa
+protozoon:N,-zoa
 protract:V
 protracted:A
 protractedly:Av
@@ -50986,7 +50986,7 @@ proudly:Av
 provability:N
 provable:A
 provably:Av
-prove:V,_s,proving,_d,_n
+prove:V,_s,-ving,_d,_n
 proved:A
 proven:A
 provenance:N
@@ -51072,7 +51072,7 @@ psalm:N
 psalm:V
 psalmist:N
 psalmody:N
-psalterium:N,psalteria
+psalterium:N,-ia
 psaltery:N
 psammoma:N
 psephologist:N
@@ -51091,7 +51091,7 @@ pseudonymous:A
 pseudoperipteral:A
 pseudophloem:N
 pseudopod:N
-pseudopodium:N,pseudopodia
+pseudopodium:N,-ia
 pseudoprostyle:A
 pseudorandom:A
 pseudorubella:N
@@ -51201,7 +51201,7 @@ pterion:N
 pterodactyl:N
 pteropogon:N
 pterosaur:N
-pterygium:N,pterygia,_s
+pterygium:N,-ia,_s
 ptomain:N
 ptomaine:N
 ptosis:N
@@ -51253,12 +51253,12 @@ puckishness:N
 pud:N
 pudding:N
 puddingheaded:A
-puddingwife:N,puddingwives
+puddingwife:N,-ives
 puddle:N
 puddle:V
 puddler:N
 pudendal:A
-pudendum:N,pudenda
+pudendum:N,-da
 pudge:N
 pudginess:N
 pudgy:A
@@ -51268,7 +51268,7 @@ puerile:A
 puerility:N
 puerpera:N
 puerperal:A
-puerperium:N,puerperia
+puerperium:N,-ia
 puff:A
 puff:N
 puff:V
@@ -51606,7 +51606,7 @@ pya:N
 pyaemia:N
 pyaemic:A
 pycnidial:A
-pycnidium:N,pycnidia
+pycnidium:N,-ia
 pycnodysostosis:N
 pycnogonid:N
 pycnosis:N
@@ -51625,7 +51625,7 @@ pyknosis:N
 pyknotic:A
 pylon:N
 pyloric:A
-pylorus:N,pylori
+pylorus:N,-ri
 pyocyanase:N
 pyocyanin:N
 pyogenic:A
@@ -51708,7 +51708,7 @@ python:N
 pythoness:N
 pyuria:N
 pyx:N
-pyxidium:N,pyxidia,_s
+pyxidium:N,-ia,_s
 pyxie:N
 pyxis:N
 qabala:N
@@ -51743,7 +51743,7 @@ quadratic:N
 quadrature:N
 quadrennial:A
 quadrennially:Av
-quadrennium:N,quadrennia,_s
+quadrennium:N,-ia,_s
 quadric:N
 quadriceps:N
 quadrilateral:A
@@ -51830,7 +51830,7 @@ quantize:V
 quantized:A
 quantong:N
 quantum:A
-quantum:N,quanta
+quantum:N,-ta
 quarantine:N
 quarantine:V
 quarantined:A
@@ -51845,7 +51845,7 @@ quarrier:N
 quarry:N
 quarry:V
 quarrying:N
-quarryman:N,quarrymen
+quarryman:N,-men
 quart:N
 quartan:A
 quarter:N
@@ -51861,7 +51861,7 @@ quarterly:Av
 quarterly:N
 quartermaster:N
 quartern:N
-quarterstaff:N,quarterstaves
+quarterstaff:N,-aves
 quartervine:N
 quartet:N
 quartette:N
@@ -52065,7 +52065,7 @@ quoin:N
 quoit:N
 quondam:A
 quorate:A
-quorum:N,quora,_s
+quorum:N,-ra,_s
 quota:N
 quotability:N
 quotable:A
@@ -52173,7 +52173,7 @@ radiator:N
 radical:A
 radical:N
 radicalism:N
-radicalization:N,_s,radicalisation
+radicalization:N,_s,-lisation
 radicalize:V
 radically:Av
 radicchio:N
@@ -52205,7 +52205,7 @@ radiologist:N
 radiology:N
 radiolucent:A
 radiolysis:N
-radioman:N,radiomen
+radioman:N,-men
 radiometer:N
 radiometric:A
 radiometrically:Av
@@ -52234,7 +52234,7 @@ radiotherapy:N
 radiothorium:N
 radish:N
 radium:N
-radius:N,radii,_es
+radius:N,-ii,_es
 radix:N
 radome:N
 radon:N
@@ -52251,8 +52251,8 @@ raft:V
 rafter:N
 rafter:V
 raftered:A
-raftman:N,raftmen
-raftsman:N,raftsmen
+raftman:N,-men
+raftsman:N,-men
 rag:N
 rag:V
 raga:N
@@ -52294,7 +52294,7 @@ railroad:V
 railroader:N
 railroading:N
 railway:N
-railwayman:N,railwaymen
+railwayman:N,-men
 railworker:N
 raiment:N
 raiment:V
@@ -52796,7 +52796,7 @@ reata:N
 reattribute:V
 reauthorization:N
 reauthorize:V
-reave:V,_s,reaving,_d,reft
+reave:V,_s,-ving,_d,reft
 reawaken:V
 rebadge:V
 rebalance:V
@@ -52817,7 +52817,7 @@ rebid:V,_s,_ding
 rebind:V
 rebirth:N
 rebleed:N
-rebleed:V,_s,_ing,rebled
+rebleed:V,_s,_ing,-led
 reboard:V
 reboil:V
 reboot:V
@@ -52833,7 +52833,7 @@ rebroadcast:V
 rebuckle:V
 rebuff:N
 rebuff:V
-rebuild:V,_s,_ing,rebuilt
+rebuild:V,_s,_ing,-lt
 rebuilding:N
 rebuilt:A
 rebuke:N
@@ -53192,7 +53192,7 @@ redox:N
 redpoll:N
 redraft:N
 redraw:N
-redraw:V,_s,_ing,redrew,_n
+redraw:V,_s,_ing,-rew,_n
 redress:N
 redress:V
 redroot:N
@@ -53280,7 +53280,7 @@ refereeing:N
 reference:N
 reference:V
 referenced:A
-referendum:N,referenda,_s
+referendum:N,-da,_s
 referent:N
 referential:A
 referral:N
@@ -53475,9 +53475,9 @@ regretful:A
 regretfully:Av
 regrettable:A
 regrettably:Av
-regrind:V,_s,_ing,reground
+regrind:V,_s,_ing,-round
 regroup:V
-regrow:V,_s,_ing,regrew,_n
+regrow:V,_s,_ing,-rew,_n
 regular:A
 regular:N
 regularisation:N
@@ -53618,7 +53618,7 @@ relaxer:N
 relaxin:N
 relaxing:A
 relay:N
-relay:V,_s,_ing,_ed,relaid
+relay:V,_s,_ing,_ed,-aid
 relearn:V
 release:N
 release:V
@@ -53854,7 +53854,7 @@ repairability:N
 repairable:A
 repaired:A
 repairer:N
-repairman:N,repairmen
+repairman:N,-men
 repand:A
 reparable:A
 reparation:N
@@ -53865,7 +53865,7 @@ repast:N
 repatriate:N
 repatriate:V
 repatriation:N
-repay:V,_s,_ing,repaid
+repay:V,_s,_ing,-aid
 repayable:A
 repayment:N
 repeal:N
@@ -54079,7 +54079,7 @@ reread:V,_s,_ing
 rerebrace:N
 rerecord:V
 reredos:N
-rerelease:V,_s,rereleasing,_d
+rerelease:V,_s,-sing,_d
 reroute:V
 rerun:N
 rerun:V,_s,_ning,reran
@@ -54110,7 +54110,7 @@ resell:V,_s,_ing,resold
 reseller:N
 resemblance:N
 resemble:V
-resend:V,_s,_ing,resent
+resend:V,_s,_ing,-nt
 resent:V
 resentful:A
 resentfully:Av
@@ -54136,7 +54136,7 @@ resh:N
 reshape:V
 reship:V
 reshipment:N
-reshoot:V,_s,_ing,reshot
+reshoot:V,_s,_ing,-hot
 reshuffle:N
 reshuffle:V
 reshuffling:N
@@ -54153,7 +54153,7 @@ residual:N
 residually:Av
 residuary:A
 residue:N
-residuum:N,residua
+residuum:N,-dua
 resift:V
 resign:V
 resignation:N
@@ -54297,7 +54297,7 @@ restrictive:A
 restrictively:Av
 restrictiveness:N
 restrictor:N
-restring:V,_s,_ing,restrung
+restring:V,_s,_ing,-rung
 restroom:N
 restructure:V
 resublime:V
@@ -54338,7 +54338,7 @@ retained:A
 retainer:N
 retaining:A
 retake:N
-retake:V,_s,retaking,retook,_n
+retake:V,_s,-king,retook,_n
 retaking:N
 retaliate:V
 retaliation:N
@@ -54364,7 +54364,7 @@ retentively:Av
 retentiveness:N
 retentivity:N
 rethink:N
-rethink:V,_s,_ing,rethought
+rethink:V,_s,_ing,-hought
 reticence:N
 reticent:A
 reticently:Av
@@ -54411,7 +54411,7 @@ retral:A
 retranslate:V
 retransmit:V
 retread:N
-retread:V,_s,_ing,retrod,retrodden,_ed
+retread:V,_s,_ing,-rod,-rodden,_ed
 retreat:N
 retreat:V
 retreatant:N
@@ -54614,7 +54614,7 @@ rewarding:A
 rewardingly:Av
 rewarm:V
 rewash:V
-reweave:V,_s,reweaving,_d,rewove,rewoven
+reweave:V,_s,-ving,_d,rewove,rewoven
 rewed:V,_s,_ding,_ded
 rewind:V,_s,_ing,rewound
 rewire:V
@@ -54622,7 +54622,7 @@ reword:V
 rewording:N
 rework:V
 rewrite:N
-rewrite:V,_s,rewriting,rewrote,rewritten
+rewrite:V,_s,-ting,-rote,-tten
 rewriter:N
 rewriting:N
 rezone:V
@@ -54700,7 +54700,7 @@ rhomb:N
 rhombencephalon:N
 rhombic:A
 rhombohedral:A
-rhombohedron:N,rhombohedra,_s
+rhombohedron:N,-ra,_s
 rhomboid:A
 rhomboid:N
 rhomboidal:A
@@ -54829,7 +54829,7 @@ rifle:N
 rifle:V
 riflebird:N
 rifled:A
-rifleman:N,riflemen
+rifleman:N,-men
 rifler:N
 rifling:N
 rift:N
@@ -55021,7 +55021,7 @@ roadhouse:N
 roadie:N
 roadkill:N
 roadless:A
-roadman:N,roadmen
+roadman:N,-men
 roadmap:N
 roadrunner:N
 roadshow:N
@@ -55257,7 +55257,7 @@ roster:N
 rostral:A
 rostrally:Av
 rostrate:A
-rostrum:N,rostra,_s
+rostrum:N,-ra,_s
 rosy:A
 rot:N
 rot:V
@@ -55342,7 +55342,7 @@ rounding:N
 roundish:A
 roundly:Av
 roundness:N
-roundsman:N,roundsmen
+roundsman:N,-men
 roundtable:N
 roundup:N
 roundworm:N
@@ -55713,7 +55713,7 @@ sacroiliac:A
 sacroiliac:N
 sacrosanct:A
 sacrosanctness:N
-sacrum:N,sacra
+sacrum:N,-ra
 sad:A
 sadden:V
 saddening:A
@@ -55832,11 +55832,11 @@ saleroom:N
 salesclerk:N
 salesgirl:N
 saleslady:N
-salesman:N,salesmen
+salesman:N,-men
 salesmanship:N
-salesperson:N,salespeople,_s
+salesperson:N,-eople,_s
 salesroom:N
-saleswoman:N,saleswomen
+saleswoman:N,-men
 salicylate:N
 salience:N
 saliency:N
@@ -55959,9 +55959,9 @@ sampler:N
 sampling:N
 samsara:N
 samurai:N
-sanatarium:N,_s,sanataria
+sanatarium:N,_s,-ia
 sanative:A
-sanatorium:N,_s,sanatoria
+sanatorium:N,_s,-ia
 sanctification:N
 sanctified:A
 sanctify:V
@@ -56012,7 +56012,7 @@ sandlike:A
 sandlot:A
 sandlot:N
 sandlotter:N
-sandman:N,sandmen
+sandman:N,-men
 sandpaper:N
 sandpaper:V
 sandpapery:A
@@ -56024,7 +56024,7 @@ sandstone:N
 sandstorm:N
 sandwich:N
 sandwich:V
-sandwichman:N,sandwichmen
+sandwichman:N,-men
 sandwort:N
 sandy:A
 sane:A
@@ -56049,7 +56049,7 @@ sanies:N
 sanious:A
 sanitarian:N
 sanitariness:N
-sanitarium:N,_s,sanitaria
+sanitarium:N,_s,-ia
 sanitary:A
 sanitate:V
 sanitation:N
@@ -56131,7 +56131,7 @@ sarcolemmic:A
 sarcolemnous:A
 sarcoma:N
 sarcomere:N
-sarcophagus:N,sarcophagi,_es
+sarcophagus:N,-gi,_es
 sarcoplasm:N
 sarcoptid:N
 sarcosine:N
@@ -56449,7 +56449,7 @@ scaremonger:N
 scaremongering:N
 scarer:N
 scarey:A
-scarf:N,scarves,_s
+scarf:N,-rves,_s
 scarf:V,_s,_ing,_ed
 scarfpin:N
 scarification:N
@@ -56613,7 +56613,7 @@ schoolhouse:N
 schooling:N
 schoolish:A
 schoolkid:N
-schoolman:N,schoolmen
+schoolman:N,-men
 schoolmarm:N
 schoolmarmish:A
 schoolmaster:N
@@ -56682,7 +56682,7 @@ sclerosis:N
 sclerotial:A
 sclerotic:A
 sclerotinia:N
-sclerotium:N,sclerotia
+sclerotium:N,-ia
 sclerotomy:N
 scoff:N
 scoff:V
@@ -56900,7 +56900,7 @@ scroller:N
 scromit:V,_s,_ing,_ed
 scrooge:N
 scrotal:A
-scrotum:N,scrota,_s
+scrotum:N,-ta,_s
 scrounge:V
 scrounger:N
 scroungy:A
@@ -57039,7 +57039,7 @@ sealing:N
 sealskin:N
 seam:N
 seam:V
-seaman:N,seamen
+seaman:N,-men
 seamanlike:A
 seamanly:A
 seamanship:N
@@ -57245,9 +57245,9 @@ seeding:N
 seedless:A
 seedlike:A
 seedling:N
-seedman:N,seedmen
+seedman:N,-men
 seedpod:N
-seedsman:N,seedsmen
+seedsman:N,-men
 seedtime:N
 seedy:A
 seeing:A
@@ -57324,10 +57324,10 @@ selection:N
 selective:A
 selectively:Av
 selectivity:N
-selectman:N,selectmen
+selectman:N,-men
 selectness:N
 selector:N
-selectwoman:N,selectwomen
+selectwoman:N,-men
 selenium:N
 selenographer:N
 selenography:N
@@ -57608,7 +57608,7 @@ septicemia:N
 septicemic:A
 septrional:A
 septuagenarian:N
-septum:N,septa
+septum:N,-ta
 septuple:A
 sepulcher:N
 sepulchral:A
@@ -57666,7 +57666,7 @@ serialize:V
 serially:Av
 seriatim:Av
 sericeous:A
-sericterium:N,sericteria
+sericterium:N,-ia
 serictery:N
 sericultural:A
 sericulture:N
@@ -57726,8 +57726,8 @@ serviceable:A
 serviceableness:N
 serviceberry:N
 serviced:A
-serviceman:N,servicemen
-servicewoman:N,servicewomen
+serviceman:N,-men
+servicewoman:N,-men
 servicing:N
 serviette:N
 servile:A
@@ -57915,7 +57915,7 @@ shaheed:N
 shaitan:N
 shakable:A
 shake:N
-shake:V,_s,shaking,shook,_n
+shake:V,_s,-king,shook,_n
 shakeable:A
 shakedown:A
 shakedown:N
@@ -58035,7 +58035,7 @@ sharpie:N
 sharpish:A
 sharply:Av
 sharpness:N
-sharpshoot:V,_s,_ing,sharpshot
+sharpshoot:V,_s,_ing,-hot
 sharpshooter:N
 sharpy:N
 shatter:N
@@ -58091,7 +58091,7 @@ sheepish:A
 sheepishly:Av
 sheepishness:N
 sheeplike:A
-sheepman:N,sheepmen
+sheepman:N,-men
 sheeprun:N
 sheepshank:N
 sheepshead:N
@@ -58120,7 +58120,7 @@ sheila:N
 shekel:N
 sheldrake:N
 shelduck:N
-shelf:N,shelves
+shelf:N,-lves
 shelfful:N
 shelflike:A
 shelfy:A
@@ -58198,7 +58198,7 @@ shinbone:N
 shindig:N
 shindy:N
 shine:N
-shine:V,_s,shining,shone,_d
+shine:V,_s,-ning,shone,_d
 shiner:N
 shingle:N
 shingle:V
@@ -58209,7 +58209,7 @@ shinguard:N
 shininess:N
 shining:A
 shining:N
-shinleaf:N,shinleaves
+shinleaf:N,-aves
 shinny:V
 shinpad:N
 shinplaster:N
@@ -58362,7 +58362,7 @@ shopkeeper:N
 shoplift:V
 shoplifter:N
 shoplifting:N
-shopman:N,shopmen
+shopman:N,-men
 shoppe:N
 shopper:N
 shopping:N
@@ -58375,7 +58375,7 @@ shore:N
 shore:V
 shorebird:N
 shoreline:N
-shoreman:N,shoremen
+shoreman:N,-men
 shoring:N
 shorn:A
 short:A
@@ -58458,13 +58458,13 @@ showily:Av
 showiness:N
 showing:N
 showjumping:N
-showman:N,showmen
+showman:N,-men
 showmanship:N
 showoff:N
 showpiece:N
 showplace:N
 showroom:N
-showrun:V,_s,_ning,showran
+showrun:V,_s,_ning,-ran
 showrunner:N
 showstopper:N
 showstopping:A
@@ -58482,7 +58482,7 @@ shrewdness:N
 shrewish:A
 shrewishly:Av
 shrewishness:N
-shrewmouse:N,shrewmice
+shrewmouse:N,-mice
 shriek:N
 shriek:V
 shrieked:A
@@ -58511,7 +58511,7 @@ shrinker:N
 shrinkflation:N
 shrinking:N
 shrinkwrap:V
-shrive:V,_s,shriving,_d,shrove,_n
+shrive:V,_s,-ving,_d,shrove,_n
 shrivel:V
 shriveled:A
 shrivelled:A
@@ -58628,7 +58628,7 @@ sideline:N
 sideload:V
 sidelong:A
 sidelong:Av
-sideman:N,sidemen
+sideman:N,-men
 sidepiece:N
 sidequest:N
 sidereal:A
@@ -58642,7 +58642,7 @@ sidesaddle:Av
 sidesaddle:N
 sideshow:N
 sideslip:N
-sidesman:N,sidesmen
+sidesman:N,-men
 sidesplitter:N
 sidesplitting:A
 sidesplittingly:Av
@@ -58711,7 +58711,7 @@ signalization:N
 signalize:V
 signaller:N
 signally:Av
-signalman:N,signalmen
+signalman:N,-men
 signatory:N
 signature:N
 signboard:N
@@ -58730,8 +58730,8 @@ signify:V
 signing:N
 signior:N
 signor:N,_s,_i
-signora:N,_s,signore
-signorina:N,_s,signorine
+signora:N,_s,-re
+signorina:N,_s,-ne
 signory:N
 signpost:N
 signpost:V
@@ -58855,7 +58855,7 @@ simplified:A
 simplify:V
 simplistic:A
 simply:Av
-simulacrum:N,simulacra,_s
+simulacrum:N,-ra,_s
 simulate:V
 simulated:A
 simulation:N
@@ -59188,7 +59188,7 @@ skyward:P.i
 skywards:Av
 skywards:P.i
 skyway:N
-skywrite:V,_s,skywriting,skywrote,skywritten
+skywrite:V,_s,-ting,-rote,-tten
 skywriter:N
 skywriting:N
 slab:A
@@ -59357,7 +59357,7 @@ slicker:N
 slickly:Av
 slickness:N
 slide:N
-slide:V,_s,sliding,slid
+slide:V,_s,-ding,-d
 slider:N
 slideshow:N
 slideway:N
@@ -59618,7 +59618,7 @@ smirched:A
 smirk:N
 smirk:V
 smirker:N
-smite:V,_s,smiting,smote,smitten
+smite:V,_s,-ting,smote,-tten
 smith:N
 smithereens:N
 smithy:N
@@ -59887,7 +59887,7 @@ snowiness:N
 snowline:N
 snowmaker:N
 snowmaking:N
-snowman:N,snowmen
+snowman:N,-men
 snowmobile:N
 snowmobile:V
 snowplough:N
@@ -60094,7 +60094,7 @@ solanaceous:A
 solar:A
 solarisation:N
 solarise:V
-solarium:N,solaria,_s
+solarium:N,-ia,_s
 solarization:N
 solarize:V
 sold:A
@@ -60153,11 +60153,11 @@ solidifying:N
 solidity:N
 solidly:Av
 solidness:N
-solidus:N,solidi
+solidus:N,-di
 soliloquise:V
 soliloquize:V
 soliloquizer:N
-soliloquy:N,soliloquies
+soliloquy:N,-uies
 solipsism:N
 solipsist:N
 solipsistic:A
@@ -60433,7 +60433,7 @@ soundless:A
 soundlessly:Av
 soundlessness:N
 soundly:Av
-soundman:N,soundmen
+soundman:N,-men
 soundness:N
 soundproof:A
 soundproof:V
@@ -60546,7 +60546,7 @@ spacecraft:N,_
 spaced:A
 spacefaring:N
 spaceflight:N
-spaceman:N,spacemen
+spaceman:N,-men
 spaceport:N
 spacer:N
 spaceship:N
@@ -60556,7 +60556,7 @@ spacewalk:V
 spacewalker:N
 spaceward:Av
 spacewards:Av
-spacewoman:N,spacewomen
+spacewoman:N,-men
 spacey:A
 spacial:A
 spaciness:N
@@ -60573,7 +60573,7 @@ spadefish:N
 spadefoot:N
 spadeful:N
 spadework:N
-spadix:N,spadices
+spadix:N,-ices
 spaghetti:N
 spaghettini:N
 spall:N
@@ -60748,7 +60748,7 @@ spectroscope:N
 spectroscopic:A
 spectroscopical:A
 spectroscopy:N
-spectrum:N,spectra,_s
+spectrum:N,-ra,_s
 specular:A
 speculate:V
 speculation:N
@@ -60803,7 +60803,7 @@ spelt:N
 spelunk:V
 spelunker:N
 spencer:N
-spend:V,_s,_ing,spent
+spend:V,_s,_ing,-nt
 spendable:A
 spender:N
 spending:N
@@ -60823,7 +60823,7 @@ spermatozoal:A
 spermatozoan:A
 spermatozoan:N
 spermatozoid:N
-spermatozoon:N,spermatozoa
+spermatozoon:N,-zoa
 spermicidal:A
 spermicide:N
 spermophile:N
@@ -60851,7 +60851,7 @@ spherule:N
 sphincter:N
 sphingid:N
 sphingine:A
-sphinx:N,_es,sphinges
+sphinx:N,_es,-nges
 sphygmomanometer:N
 sphynx:N
 spic:A
@@ -61029,7 +61029,7 @@ splay:A
 splay:N
 splay:V
 splayfoot:A
-splayfoot:N,splayfeet
+splayfoot:N,-feet
 splayfooted:A
 spleen:N
 spleenwort:N
@@ -61093,9 +61093,9 @@ spoilsport:N
 spoilt:A
 spoke:N
 spoken:A
-spokesman:N,spokesmen
-spokesperson:N,spokespeople,_s
-spokeswoman:N,spokeswomen
+spokesman:N,-men
+spokesperson:N,-eople,_s
+spokeswoman:N,-men
 spoliation:N
 spondaic:A
 spondaise:V
@@ -61135,7 +61135,7 @@ spoon:V
 spoonbill:N
 spoondrift:N
 spoonerism:N
-spoonfeed:V,_s,_ing,spoonfed
+spoonfeed:V,_s,_ing,-fed
 spoonfeeding:N
 spoonflower:N
 spoonful:N
@@ -61146,7 +61146,7 @@ sporadic:A
 sporadically:Av
 sporangial:A
 sporangiophore:N
-sporangium:N,sporangia
+sporangium:N,-ia
 spore:N
 sporocarp:N
 sporogenous:A
@@ -61170,12 +61170,12 @@ sportively:Av
 sportiveness:N
 sportscast:V
 sportscaster:N
-sportsman:N,sportsmen
+sportsman:N,-men
 sportsmanlike:A
 sportsmanship:N
-sportsperson:N,sportspeople
+sportsperson:N,-eople
 sportswear:N
-sportswoman:N,sportswomen
+sportswoman:N,-men
 sportswriter:N
 sporty:A
 sporulate:V
@@ -61186,7 +61186,7 @@ spotless:A
 spotlessly:Av
 spotlessness:N
 spotlight:N
-spotlight:V,_s,_ing,spotlit,_ed
+spotlight:V,_s,_ing,-it,_ed
 spotted:A
 spotter:N
 spottily:Av
@@ -61307,7 +61307,7 @@ sputter:N
 sputter:V
 sputtering:A
 sputtering:N
-sputum:N,sputa,_s
+sputum:N,-ta,_s
 spy:N
 spy:V
 spyglass:N
@@ -61455,7 +61455,7 @@ stable:A
 stable:N
 stable:V
 stableboy:N
-stableman:N,stablemen
+stableman:N,-men
 stablemate:N
 stableness:N
 stabling:N
@@ -61469,7 +61469,7 @@ stacked:A
 stacker:N
 stacte:N
 staddle:N
-stadium:N,_s,stadia
+stadium:N,_s,-ia
 staff:N
 staff:V
 staffer:N
@@ -61705,11 +61705,11 @@ statement:V
 stater:N
 stateroom:N
 stateside:A
-statesman:N,statesmen
+statesman:N,-men
 statesmanlike:A
 statesmanly:A
 statesmanship:N
-stateswoman:N,stateswomen
+stateswoman:N,-men
 statewide:A
 static:A
 static:N
@@ -61800,7 +61800,7 @@ steel:N
 steel:V
 steeliness:N
 steelmaker:N
-steelman:N,steelmen
+steelman:N,-men
 steelworker:N
 steelworks:N.p
 steely:A
@@ -61825,9 +61825,9 @@ steerage:N
 steerageway:N
 steerer:N
 steering:N
-steersman:N,steersmen
+steersman:N,-men
 stegosaur:N
-stegosaurus:N,stegosauri
+stegosaurus:N,-ri
 stein:N
 steinbok:N
 stela:N
@@ -62016,7 +62016,7 @@ stimulation:N
 stimulative:A
 stimulator:N
 stimulatory:Av
-stimulus:N,stimuli
+stimulus:N,-li
 sting:N
 sting:V,_s,_ing,stung
 stinger:N
@@ -62099,7 +62099,7 @@ stocking:N
 stockinged:A
 stockist:N
 stockjobber:N
-stockman:N,stockmen
+stockman:N,-men
 stockpile:N
 stockpile:V
 stockpiling:N
@@ -62343,7 +62343,7 @@ stratify:V
 stratosphere:N
 stratospheric:A
 stratospherically:Av
-stratum:N,strata
+stratum:N,-ta
 stratus:N
 straw:A
 straw:N
@@ -62351,7 +62351,7 @@ straw:V
 strawberry:N
 strawboard:N
 strawflower:N
-strawman:N,strawmen
+strawman:N,-men
 strawworm:N
 stray:A
 stray:N
@@ -62393,7 +62393,7 @@ strenuously:Av
 strenuousness:N
 strep:A
 strep:N
-streptobacillus:N,streptobacilli
+streptobacillus:N,-li
 streptocarpus:N
 streptococcal:A
 streptococci:N
@@ -62437,7 +62437,7 @@ strictly:Av
 strictness:N
 stricture:N
 stride:N
-stride:V,_s,striding,strode,stridden
+stride:V,_s,-ding,strode,-dden
 stridence:N
 stridency:N
 strident:A
@@ -62448,7 +62448,7 @@ stridulate:V
 stridulation:N
 strife:N
 strike:N
-strike:V,_s,striking,struck
+strike:V,_s,-king,struck
 strikebound:A
 strikebreaker:N
 strikebreaking:N
@@ -62483,7 +62483,7 @@ stripping:N
 striptease:N
 stripteaser:N
 stripy:A
-strive:V,_s,striving,strove,_n,_d
+strive:V,_s,-ving,strove,_n,_d
 striver:N
 striving:N
 strobe:N
@@ -62504,7 +62504,7 @@ strong:A
 strongbox:N
 stronghold:N
 strongly:Av
-strongman:N,strongmen
+strongman:N,-men
 strongroom:N
 strontianite:N
 strontium:N
@@ -62608,7 +62608,7 @@ stunt:V
 stunted:A
 stuntedness:N
 stunting:N
-stuntman:N,stuntmen
+stuntman:N,-men
 stupa:N
 stupefaction:N
 stupefied:A
@@ -62653,9 +62653,9 @@ stylite:N
 stylization:N
 stylize:V
 stylized:A
-stylopodium:N,stylopodia
+stylopodium:N,-ia
 stylostixis:N
-stylus:N,styli,_es
+stylus:N,-li,_es
 stymie:N
 stymie:V
 stymy:V
@@ -62924,7 +62924,7 @@ substitute:V
 substituting:N
 substitution:N
 substrate:N
-substratum:N,substrata
+substratum:N,-ta
 substructure:N
 subsume:V
 subsumption:N
@@ -63025,7 +63025,7 @@ succour:N
 succour:V
 succourer:N
 succuba:N,_e
-succubus:N,succubi
+succubus:N,-bi
 succulence:N
 succulency:N
 succulent:A
@@ -63105,7 +63105,7 @@ sugarcoat:V
 sugared:A
 sugariness:N
 sugarless:A
-sugarloaf:N,sugarloaves
+sugarloaf:N,-aves
 sugarplum:N
 sugary:A
 suggest:V
@@ -63326,7 +63326,7 @@ supercharger:N
 supercilious:A
 superciliously:Av
 superciliousness:N
-supercilium:N,supercilia
+supercilium:N,-ia
 supercity:N
 superclass:N
 supercluster:N
@@ -63392,7 +63392,7 @@ superload:N
 superlunar:A
 superlunary:A
 supermajority:N
-superman:N,supermen
+superman:N,-men
 supermarket:N
 supermarketeer:N
 supermarketer:N
@@ -63734,7 +63734,7 @@ swagger:V
 swaggerer:N
 swaggering:A
 swaggie:N
-swagman:N,swagmen
+swagman:N,-men
 swain:N
 swallow:N
 swallow:V
@@ -63906,7 +63906,7 @@ switcher:N
 switcheroo:N
 switchgear:N
 switching:N
-switchman:N,switchmen
+switchman:N,-men
 switchover:N
 swither:N
 swivel:N
@@ -63929,7 +63929,7 @@ sword:N
 swordfish:N
 swordlike:A
 swordplay:N
-swordsman:N,swordsmen
+swordsman:N,-men
 swordsmanship:N
 swordtail:N
 sworn:A
@@ -63939,7 +63939,7 @@ swot:V
 sybarite:N
 sybaritic:A
 sycamore:N
-syconium:N,syconia
+syconium:N,-ia
 sycophancy:N
 sycophant:N
 sycophantic:A
@@ -63956,7 +63956,7 @@ syllabize:V
 syllable:N
 syllabled:A
 syllabub:N
-syllabus:N,syllabi,_es
+syllabus:N,-bi,_es
 syllepsis:N
 syllogise:V
 syllogiser:N
@@ -64024,7 +64024,7 @@ symphony:N
 symphysion:N
 symphysis:N
 symploce:N
-symposium:N,symposia,_s
+symposium:N,-ia,_s
 symptom:N
 symptomatic:A
 symptomatically:Av
@@ -64082,7 +64082,7 @@ syncretistic:A
 syncretistical:A
 syncretize:V
 syncytial:A
-syncytium:N,syncytia
+syncytium:N,-ia
 syndactylism:N
 syndactyly:N
 syndetic:A
@@ -64389,7 +64389,7 @@ tally:N
 tally:V
 tallyho:I
 tallyho:N
-tallyman:N,tallymen
+tallyman:N,-men
 talon:N
 taloned:A
 talus:N,tali
@@ -64688,12 +64688,12 @@ taxicab:N
 taxidermist:N
 taxidermy:N
 taxidriver:N
-taximan:N,taximen
+taximan:N,-men
 taximeter:N
 taxing:A
 taxistand:N
 taxiway:N
-taxman:N,taxmen
+taxman:N,-men
 taxon:N,taxa
 taxonomer:N
 taxonomic:A
@@ -65031,7 +65031,7 @@ tendentiousness:N
 tender:A
 tender:N
 tender:V
-tenderfoot:N,tenderfeet,_s
+tenderfoot:N,-feet,_s
 tendergreen:N
 tenderhearted:A
 tenderheartedness:N
@@ -65110,7 +65110,7 @@ tenth:N
 tenthly:Av
 tenting:N
 tentmaker:N
-tentorium:N,tentoria
+tentorium:N,-ia
 tenuity:N
 tenuous:A
 tenuously:Av
@@ -65171,8 +65171,8 @@ terminator:N
 terminatory:A
 terminological:A
 terminology:N
-terminus:N,termini,_es
-termitarium:N,termitaria
+terminus:N,-ni,_es
+termitarium:N,-ia
 termitary:N
 termite:N
 tern:N
@@ -65189,7 +65189,7 @@ terrace:V
 terracotta:N
 terrain:N
 terrapin:N
-terrarium:N,terraria,_s
+terrarium:N,-ia,_s
 terrasse:V
 terrazzo:N
 terrene:A
@@ -65251,7 +65251,7 @@ testamentary:A
 testate:A
 testate:N
 testator:N
-testatrix:N,testatrices,_es
+testatrix:N,-ices,_es
 testcross:N
 tested:A
 testee:N
@@ -65267,7 +65267,7 @@ testimonial:N
 testimony:N
 testiness:N
 testing:N
-testis:N,testes
+testis:N,-tes
 testosterone:N
 testudo:N
 testy:A
@@ -65296,7 +65296,7 @@ tetragonal:A
 tetragram:N
 tetrahalide:N
 tetrahedral:A
-tetrahedron:N,tetrahedra,_s
+tetrahedron:N,-ra,_s
 tetrahymena:N
 tetralogy:N
 tetramerous:A
@@ -65307,7 +65307,7 @@ tetrapod:N
 tetrasaccharide:N
 tetraskele:N
 tetraskelion:N
-tetrasporangium:N,tetrasporangia
+tetrasporangium:N,-ia
 tetraspore:N
 tetravalent:A
 tetri:N
@@ -65330,7 +65330,7 @@ textured:A
 textureless:A
 thalamic:A
 thalamocortical:A
-thalamus:N,thalami
+thalamus:N,-mi
 thalassaemia:N
 thalassemia:N
 thalassic:A
@@ -65386,7 +65386,7 @@ theelin:N
 theft:N
 their:D
 theirs:Pn
-theirself:Pn,theirselves
+theirself:Pn,-lves
 theism:N
 theist:A
 theist:N
@@ -65398,7 +65398,7 @@ thematic:A
 thematically:Av
 theme:N
 theme:V
-themself:Pn,themselves
+themself:Pn,-lves
 then:A
 then:Av
 then:N
@@ -65535,7 +65535,7 @@ thermostatics:N.p
 thermotherapy:N
 theropod:N
 thesaural:A
-thesaurus:N,thesauri,_es
+thesaurus:N,-ri,_es
 these:D
 thesis:N
 thespian:A
@@ -65566,7 +65566,7 @@ thickness:N
 thicko:N
 thickset:A
 thickspread:A
-thief:N,thieves
+thief:N,-eves
 thieve:V
 thievery:N
 thieving:A
@@ -65608,8 +65608,8 @@ thinned:A
 thinner:N
 thinness:N
 thinning:N
-thiobacillus:N,thiobacilli
-thiobacterium:N,thiobacteria
+thiobacillus:N,-li
+thiobacterium:N,-ia
 thiocyanate:N
 thiodiphenylamine:N
 thioguanine:N
@@ -65746,7 +65746,7 @@ thrillingly:Av
 thrilly:A
 thrip:N
 thripid:N
-thrive:V,_s,thriving,_d,throve,_n
+thrive:V,_s,-ving,_d,throve,_n
 thriving:A
 throat:N
 throated:A
@@ -65776,7 +65776,7 @@ thrombose:V
 thrombosed:A
 thrombosis:N
 thrombotic:A
-thrombus:N,thrombi
+thrombus:N,-bi
 throne:N
 throne:V
 throng:N
@@ -66015,7 +66015,7 @@ timbered:A
 timbering:N
 timberland:N
 timberline:N
-timberman:N,timbermen
+timberman:N,-men
 timberwork:N
 timbre:N
 timbrel:N
@@ -66077,7 +66077,7 @@ tinfoil:N
 ting:N
 ting:V
 tinge:N
-tinge:V,_s,_ing,tinging,_d
+tinge:V,_s,_ing,-ging,_d
 tinged:A
 tingle:N
 tingle:V
@@ -66188,7 +66188,7 @@ title:V
 titled:A
 titleholder:N
 titlist:N
-titmouse:N,titmice
+titmouse:N,-mice
 titrate:V
 titration:N
 titrator:N
@@ -66317,7 +66317,7 @@ tollgate:N
 tollgatherer:N
 tollhouse:N
 tollkeeper:N
-tollman:N,tollmen
+tollman:N,-men
 tollon:N
 tollway:N
 tolu:N
@@ -66521,7 +66521,7 @@ torsion:N
 torsional:A
 torsionally:Av
 torsk:N
-torso:N,_es,torsi
+torso:N,_es,-si
 tort:N
 torte:N
 tortellini:N
@@ -66676,9 +66676,9 @@ townscape:N
 townsfolk:N.p
 township:N
 townsite:N
-townsman:N,townsmen
-townsperson:N,townspeople
-townswoman:N,townswomen
+townsman:N,-men
+townsperson:N,-eople
+townswoman:N,-men
 towny:N
 towpath:N
 towrope:N
@@ -66757,9 +66757,9 @@ trademark:N
 trademarked:A
 tradeoff:N
 trader:N
-tradesman:N,tradesmen
-tradesperson:N,tradespeople
-tradeswoman:N,tradeswomen
+tradesman:N,-men
+tradesperson:N,-eople
+tradeswoman:N,-men
 tradie:N
 trading:N
 tradition:N
@@ -66802,7 +66802,7 @@ train:V
 trainability:N
 trainable:A
 trainband:N
-trainbandsman:N,trainbandsmen
+trainbandsman:N,-men
 trainbearer:N
 trained:A
 trainee:N
@@ -66810,7 +66810,7 @@ traineeship:N
 trainer:N
 training:N
 trainload:N
-trainman:N,trainmen
+trainman:N,-men
 trainmaster:N
 trainspotter:N
 trainspotting:N
@@ -67067,9 +67067,9 @@ trap:N
 trap:V
 trapdoor:N
 trapeze:N
-trapezium:N,trapezia,_s
+trapezium:N,-ia,_s
 trapezius:N
-trapezohedron:N,trapezohedra,_s
+trapezohedron:N,-ra,_s
 trapezoid:N
 trapezoidal:A
 trapped:A
@@ -67195,7 +67195,7 @@ trenchancy:N
 trenchant:A
 trenchantly:Av
 trencher:N
-trencherman:N,trenchermen
+trencherman:N,-men
 trend:N
 trend:V
 trendily:Av
@@ -67248,8 +67248,8 @@ tribalisation:N
 tribalism:N
 tribalization:N
 tribe:N
-tribesman:N,tribesmen
-tribeswoman:N,tribeswomen
+tribesman:N,-men
+tribeswoman:N,-men
 tribologist:N
 tribology:N
 triboluminescence:N
@@ -67306,7 +67306,7 @@ trickster:N
 tricksy:A
 tricky:A
 triclinic:A
-triclinium:N,triclinia
+triclinium:N,-ia
 tricolor:A
 tricolor:N
 tricolored:A
@@ -67349,7 +67349,7 @@ trigeminus:N
 trigger:N
 trigger:V
 triggerfish:N
-triggerman:N,triggermen
+triggerman:N,-men
 triglyceride:N
 trigon:N
 trigonal:A
@@ -67548,7 +67548,7 @@ trouble:V
 troubled:A
 troublemaker:N
 troubler:N
-troubleshoot:V,_s,_ing,troubleshot
+troubleshoot:V,_s,_ing,-hot
 troubleshooter:N
 troublesome:A
 troublesomely:Av
@@ -68047,7 +68047,7 @@ typeface:N
 typescript:N
 typeset:V
 typesetter:N
-typewrite:V,_s,typewriting,typewrote,typewritten
+typewrite:V,_s,-ting,-rote,-tten
 typewriter:N
 typewriting:N
 typewritten:A
@@ -68195,7 +68195,7 @@ umber:A
 umber:N
 umbilical:A
 umbilicate:A
-umbilicus:N,umbilici,_es
+umbilicus:N,-ci,_es
 umbo:N
 umbra:N
 umbrage:N
@@ -68480,7 +68480,7 @@ unbrushed:A
 unbrutalised:A
 unbrutalized:A
 unbuckle:V
-unbuild:V,_s,_ing,unbuilt
+unbuild:V,_s,_ing,-lt
 unbuilt:A
 unburden:V
 unburdened:A
@@ -68819,7 +68819,7 @@ undercarriage:N
 undercharge:N
 undercharge:V
 underclass:A
-underclassman:N,underclassmen
+underclassman:N,-men
 underclothed:A
 underclothes:N
 underclothing:N
@@ -68851,7 +68851,7 @@ underevaluation:N
 underexpose:V
 underexposure:N
 underfed:A
-underfeed:V,_s,_ing,underfed
+underfeed:V,_s,_ing,-fed
 underfelt:N
 underfit:V
 underfloor:A
@@ -68863,14 +68863,14 @@ underfund:V
 underfur:N
 undergarment:N
 undergird:V
-undergo:V,_es,_ing,underwent,_ne
+undergo:V,_es,_ing,-rwent,_ne
 undergrad:N
 undergraduate:N
 underground:A
 underground:Av
 underground:N
 underground:P.i
-undergrow:V,_s,_ing,undergrew,_n
+undergrow:V,_s,_ing,-rew,_n
 undergrowth:N
 underhand:A
 underhand:Av
@@ -68886,9 +68886,9 @@ underinvestment:N
 underivative:A
 underived:A
 underlay:N
-underlay:V,_s,_ing,underlaid
+underlay:V,_s,_ing,-aid
 underlayment:N
-underlie:V,_s,underlying,underlay,underlain
+underlie:V,_s,-lying,-lay,-lain
 underline:N
 underline:V
 underlinen:N
@@ -68909,7 +68909,7 @@ underpants:N.p
 underpart:N
 underpass:N
 underpass:V
-underpay:V,_s,_ing,underpaid
+underpay:V,_s,_ing,-aid
 underpayment:N
 underperform:V
 underperformance:N
@@ -68934,13 +68934,13 @@ undersea:A
 underseal:N
 undersealed:A
 undersecretary:N
-undersell:V,_s,_ing,undersold
+undersell:V,_s,_ing,-sold
 underseller:N
 underservant:N
 underserved:A
 undersexed:A
 undershirt:N
-undershoot:V,_s,_ing,undershot
+undershoot:V,_s,_ing,-hot
 undershorts:N.p
 undershot:A
 undershrub:N
@@ -68951,11 +68951,11 @@ undersized:A
 underskirt:N
 underslung:A
 undersoil:N
-underspend:V,_s,_ing,underspent
+underspend:V,_s,_ing,-nt
 underspent:A
 understaffed:A
 understaffing:N
-understand:V,_s,_ing,understood
+understand:V,_s,_ing,-tood
 understandability:N
 understandable:A
 understandably:Av
@@ -68973,7 +68973,7 @@ understructure:N
 understudy:N
 understudy:V
 undersurface:N
-undertake:V,_s,undertaking,undertook,_n
+undertake:V,_s,-king,-took,_n
 undertaker:N
 undertaking:N
 underthings:N.p
@@ -68995,7 +68995,7 @@ underwing:N
 underwire:N
 underwood:N
 underworld:N
-underwrite:V,_s,underwriting,underwrote,underwritten
+underwrite:V,_s,-ting,-rote,-tten
 underwriter:N
 undescended:A
 undescribable:A
@@ -69078,7 +69078,7 @@ undramatic:A
 undramatically:Av
 undrape:V
 undraped:A
-undraw:V,_s,_ing,undrew,_n
+undraw:V,_s,_ing,-rew,_n
 undrawn:A
 undreamed:A
 undreamt:A
@@ -69961,7 +69961,7 @@ unpermed:A
 unpermissive:A
 unpermissiveness:N
 unperplexed:A
-unperson:N,unpeople,_s
+unperson:N,-eople,_s
 unpersuadable:A
 unpersuaded:A
 unpersuasive:A
@@ -70435,7 +70435,7 @@ unsporting:A
 unsportingly:Av
 unsportsmanlike:A
 unspotted:A
-unspring:V,_s,_ing,unsprang,unsprung
+unspring:V,_s,_ing,-rang,-rung
 unstable:A
 unstableness:N
 unstaged:A
@@ -70450,7 +70450,7 @@ unsteadiness:N
 unsteady:A
 unsterilised:A
 unsterilized:A
-unstick:V,_s,_ing,unstuck
+unstick:V,_s,_ing,-tuck
 unstilted:A
 unstimulating:A
 unstinted:A
@@ -70466,7 +70466,7 @@ unstrained:A
 unstrap:V
 unstratified:A
 unstressed:A
-unstring:V,_s,_ing,unstrung
+unstring:V,_s,_ing,-rung
 unstructured:A
 unstrung:A
 unstuck:A
@@ -70879,7 +70879,7 @@ upside:N
 upsilon:N
 upskill:V
 upskilling:N
-upspring:V,_s,_ing,upsprang,upsprung
+upspring:V,_s,_ing,-rang,-rung
 upstage:A
 upstage:Av
 upstage:P.i
@@ -70955,7 +70955,7 @@ urchin:N
 urea:N
 urease:N
 uredinial:A
-uredinium:N,uredinia
+uredinium:N,-ia
 uredo:N
 uredostage:N
 uremia:N
@@ -71049,7 +71049,7 @@ usury:N
 utahraptor:N
 utensil:N
 uterine:A
-uterus:N,uteri,_es
+uterus:N,-ri,_es
 utile:A
 utilisation:N
 utilise:V
@@ -71637,11 +71637,11 @@ verso:N
 verst:N
 versus:P.t
 vert:N
-vertebra:N,_e,vertebræ,_s
+vertebra:N,_e,-ræ,_s
 vertebral:A
 vertebrate:A
 vertebrate:N
-vertex:N,vertices,_es
+vertex:N,-tices,_es
 vertical:A
 vertical:N
 verticality:N
@@ -71694,8 +71694,8 @@ vestment:N
 vestmental:A
 vestmented:A
 vestry:N
-vestryman:N,vestrymen
-vestrywoman:N,vestrywomen
+vestryman:N,-men
+vestrywoman:N,-men
 vesture:N
 vesture:V
 vesuvian:N
@@ -71909,7 +71909,7 @@ violin:N
 violinist:N
 violist:N
 violoncellist:N
-violoncello:N,violoncelli,_s
+violoncello:N,-li,_s
 viomycin:N
 viosterol:N
 viper:N
@@ -71951,7 +71951,7 @@ virtuosic:A
 virtuosically:Av
 virtuosity:N
 virtuoso:A
-virtuoso:N,_s,virtuosi
+virtuoso:N,_s,-si
 virtuous:A
 virtuously:Av
 virtuousness:N
@@ -72072,7 +72072,7 @@ vivacious:A
 vivaciously:Av
 vivaciousness:N
 vivacity:N
-vivarium:N,vivaria,_s
+vivarium:N,-ia,_s
 viverrine:N
 vivid:A
 vividly:Av
@@ -72222,7 +72222,7 @@ voracious:A
 voraciously:Av
 voraciousness:N
 voracity:N
-vortex:N,vortices,_es
+vortex:N,-tices,_es
 vorticella:N
 votary:N
 vote:N
@@ -72366,7 +72366,7 @@ wait:V
 waiter:N
 waiting:A
 waiting:N
-waitperson:N,waitpeople
+waitperson:N,-eople
 waitress:N
 waitstaff:N
 waive:V
@@ -72493,7 +72493,7 @@ ware:N
 ware:V
 warehouse:N
 warehouse:V
-warehouseman:N,warehousemen
+warehouseman:N,-men
 warehouser:N
 warehousing:N
 warfare:N
@@ -72569,8 +72569,8 @@ washcloth:N
 washday:N
 washed:A
 washer:N
-washerman:N,washermen
-washerwoman:N,washerwomen
+washerman:N,-men
+washerwoman:N,-men
 washeteria:N
 washhouse:N
 washing:N
@@ -72580,7 +72580,7 @@ washroom:N
 washstand:N
 washtub:N
 washup:N
-washwoman:N,washwomen
+washwoman:N,-men
 washy:A
 wasp:N
 waspish:A
@@ -72598,7 +72598,7 @@ wasteful:A
 wastefully:Av
 wastefulness:N
 wasteland:N
-wasteman:N,wastemen
+wasteman:N,-men
 wastepaper:N
 waster:N
 wastewater:N
@@ -72621,7 +72621,7 @@ watching:N
 watchlist:N
 watchmaker:N
 watchmaking:N
-watchman:N,watchmen
+watchman:N,-men
 watchstrap:N
 watchtower:N
 watchword:N
@@ -72661,7 +72661,7 @@ waterless:A
 waterlessness:N
 waterline:N
 waterlogged:A
-waterman:N,watermen
+waterman:N,-men
 watermark:N
 watermeal:N
 watermelon:N
@@ -72732,7 +72732,7 @@ waybill:N
 wayfarer:N
 wayfaring:A
 wayfinding:N
-waylay:V,_s,_ing,waylaid
+waylay:V,_s,_ing,-aid
 waylayer:N
 waypoint:N
 ways:Av
@@ -72796,15 +72796,15 @@ weatherization:N
 weatherize:V
 weatherliness:N
 weatherly:A
-weatherman:N,weathermen
-weatherperson:N,weatherpeople
+weatherman:N,-men
+weatherperson:N,-eople
 weatherproof:A
 weatherproof:V
 weatherstrip:V
 weathervane:N
 weatherworn:A
 weave:N
-weave:V,_s,weaving,_d,wove,woven
+weave:V,_s,-ving,_d,wove,woven
 weaver:N
 weaverbird:N
 weaving:A
@@ -72819,7 +72819,7 @@ webcast:N
 webcast:V
 webcaster:N
 weber:N
-webfoot:N,webfeet
+webfoot:N,-feet
 webinar:N
 webisode:N
 weblike:A
@@ -72946,7 +72946,7 @@ wench:N
 wench:V
 wencher:N
 wend:V
-werewolf:N,werewolves
+werewolf:N,-lves
 west:A
 west:Av
 west:N
@@ -72996,7 +72996,7 @@ whale:N
 whale:V
 whaleboat:N
 whalebone:N
-whaleman:N,whalemen
+whaleman:N,-men
 whaler:N
 whalesucker:N
 wham:V
@@ -73004,7 +73004,7 @@ whammy:N
 whang:N
 whang:V
 whap:V
-wharf:N,wharves,_s
+wharf:N,-rves,_s
 wharf:V
 wharfage:N
 what:D
@@ -73138,7 +73138,7 @@ whine:N
 whine:V
 whiner:N
 whiney:A
-whinge:V,_s,whinging,_ing,_d
+whinge:V,_s,-ging,_ing,_d
 whining:A
 whiningly:Av
 whinny:N
@@ -73188,7 +73188,7 @@ whisker:V
 whiskered:A
 whiskerless:A
 whiskery:A
-whiskey:N,_s,whiskies
+whiskey:N,_s,-kies
 whisky:N,_s
 whisper:N
 whisper:V
@@ -73344,7 +73344,7 @@ widow:V
 widowed:A
 widower:N
 widowhood:N
-widowman:N,widowmen
+widowman:N,-men
 width:N
 wield:V
 wielder:N
@@ -73505,7 +73505,7 @@ winged:A
 winger:N
 wingless:A
 winglike:A
-wingman:N,wingmen
+wingman:N,-men
 wingnut:N
 wingspan:N
 wingspread:N
@@ -73552,7 +73552,7 @@ wired:A
 wirehair:N
 wireless:A
 wireless:N
-wireman:N,wiremen
+wireman:N,-men
 wirer:N
 wiretap:N
 wiretap:V
@@ -73603,7 +73603,7 @@ witching:A
 witchlike:A
 with:P.t
 withal:Av
-withdraw:V,_s,_ing,withdrew,_n
+withdraw:V,_s,_ing,-rew,_n
 withdrawal:N
 withdrawer:N
 withdrawing:A
@@ -73617,7 +73617,7 @@ withering:N
 witheringly:Av
 withers:N
 withersoever:C
-withhold:V,_s,_ing,withheld
+withhold:V,_s,_ing,-held
 withholder:N
 withholding:N
 within:A
@@ -73628,7 +73628,7 @@ without:Av
 without:C
 without:N
 without:P
-withstand:V,_s,_ing,withstood
+withstand:V,_s,_ing,-tood
 withstander:N
 withy:N
 witless:A
@@ -73681,7 +73681,7 @@ wolfhound:N
 wolfish:A
 wolfishly:Av
 wolflike:A
-wolfman:N,wolfmen
+wolfman:N,-men
 wolfram:N
 wolframite:N
 wolfsbane:N
@@ -73754,15 +73754,15 @@ woodiness:N
 woodland:N
 woodlet:N
 woodlot:N
-woodlouse:N,woodlice
-woodman:N,woodmen
+woodlouse:N,-lice
+woodman:N,-men
 woodpecker:N
 woodpile:N
 woodruff:N
 woodscrew:N
 woodshed:N
 woodsia:N
-woodsman:N,woodsmen
+woodsman:N,-men
 woodsy:A
 woodwaxen:N
 woodwind:N
@@ -73837,10 +73837,10 @@ workhorse:N
 workhouse:N
 working:A
 working:N
-workingman:N,workingmen
-workingwoman:N,workingwomen
+workingman:N,-men
+workingwoman:N,-men
 workload:N
-workman:N,workmen
+workman:N,-men
 workmanlike:A
 workmanship:N
 workmate:N
@@ -73858,7 +73858,7 @@ worktable:N
 worktop:N
 workup:N
 workweek:N
-workwoman:N,workwomen
+workwoman:N,-men
 world:A
 world:N
 worldliness:N
@@ -73997,7 +73997,7 @@ wristlet:N
 wristwatch:N
 writ:N
 writative:A
-write:V,_s,writing,wrote,written
+write:V,_s,-ting,wrote,-tten
 writer:N
 writhe:V
 writhed:A
@@ -74091,8 +74091,8 @@ yacca:N
 yacht:N
 yacht:V
 yachting:N
-yachtsman:N,yachtsmen
-yachtswoman:N,yachtswomen
+yachtsman:N,-men
+yachtswoman:N,-men
 yack:N
 yack:V
 yagi:N
@@ -74119,7 +74119,7 @@ yardarm:N
 yarder:N
 yardgrass:N
 yardie:N
-yardman:N,yardmen
+yardman:N,-men
 yardmaster:N
 yardstick:N
 yarmelke:N
@@ -74195,7 +74195,7 @@ yelping:N
 yen:N
 yen:V
 yenta:N
-yeoman:N,yeomen
+yeoman:N,-men
 yeomanry:N
 yep:Av
 yes:Av
@@ -74267,7 +74267,7 @@ younker:N
 your:D
 yourn:Pn
 yours:Pn
-yourself:Pn,yourselves
+yourself:Pn,-lves
 youth:N
 youthful:A
 youthfully:Av
