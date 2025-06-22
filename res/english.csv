@@ -5438,7 +5438,7 @@ backsheesh:N
 backside:N
 backslap:V
 backslapper:N
-backslide:V
+backslide:V,_s,-ding,-d
 backslider:N
 backsliding:N
 backspace:V
@@ -35087,6 +35087,8 @@ kylix:N
 kymograph:N
 kyphosis:N
 kyphotic:A
+la:I
+la:N
 la-di-da:A
 laager:N
 lab:N
@@ -35102,6 +35104,7 @@ labialise:V
 labialize:V
 labiate:A
 labile:A
+lability:N
 labiodental:A
 labium:N,-ia
 labor:N
@@ -35121,6 +35124,7 @@ labourer:N
 labouring:A
 laboursaving:A
 labrocyte:N
+laburnum:N
 labyrinth:N
 labyrinthian:A
 labyrinthine:A
@@ -35185,7 +35189,7 @@ lactogen:N
 lactogenic:A
 lactose:N
 lactosuria:N
-lacuna:N
+lacuna:N,_e,_s
 lacustrine:A
 lacy:A
 lad:N
@@ -35193,6 +35197,8 @@ ladanum:N
 ladder:N
 ladder:V
 laddie:N
+laddish:A
+laddishness:N
 lade:V
 laden:A
 laden:V
@@ -35223,6 +35229,7 @@ laggard:A
 laggard:N
 lagger:N
 lagging:N
+laggy:A
 lagniappe:N
 lagomorph:N
 lagoon:N
@@ -35253,6 +35260,7 @@ lama:N
 lamasery:N
 lamb:N
 lamb:V
+lambada:N
 lambast:V
 lambaste:V
 lambchop:N
@@ -35266,9 +35274,13 @@ lambkin:N
 lamblike:A
 lambrequin:N
 lambskin:N
+lambswool:N
 lame:A
 lame:N
 lame:V
+lamebrain:A
+lamebrain:N
+lamebrained:A
 lamedh:N
 lamella:N,_e,_s
 lamellibranch:A
@@ -35284,7 +35296,7 @@ lamented:A
 lamenter:N
 lamenting:A
 lamia:N
-lamina:N
+lamina:N,_e,_s
 laminal:A
 laminar:A
 laminate:N
@@ -35341,6 +35353,7 @@ landless:A
 landline:N
 landlocked:A
 landlord:N
+landlordism:N
 landlubber:N
 landlubberly:A
 landman:N,-men
@@ -35348,6 +35361,8 @@ landmark:N
 landmass:N
 landmine:N
 landowner:N
+landownership:N
+landowning:A
 landrover:N
 landscape:N
 landscape:V
@@ -35357,11 +35372,13 @@ landscaping:N
 landscapist:N
 landside:N
 landslide:N
+landslide:V,_s,-ding,-d
 landslip:N
 landsman:N,-men
 landward:Av
 landwards:Av
 lane:N
+laneway:N
 langbeinite:N
 langlauffer:N
 langley:N
@@ -35374,6 +35391,7 @@ langsyne:N
 language:N
 languid:A
 languidly:Av
+languidness:N
 languish:V
 languisher:N
 languor:N
@@ -35383,7 +35401,10 @@ langur:N
 laniard:N
 laniary:A
 lank:A
+lankily:Av
 lankiness:N
+lankly:Av
+lankness:N
 lanky:A
 lanolin:N
 lansa:N
@@ -35404,6 +35425,8 @@ lap:N
 lap:V
 laparocele:N
 laparoscope:N
+laparoscopic:A
+laparoscopist:N
 laparoscopy:N
 laparotomy:N
 lapboard:N
@@ -35439,9 +35462,12 @@ larch:N
 lard:N
 lard:V
 larder:N
+lardy:A
 large:A
 large:Av
 large:N
+largehearted:A
+largeheartedness:N
 largely:Av
 largemouth:N
 largeness:N
@@ -35477,13 +35503,14 @@ laryngopharyngeal:A
 laryngopharynx:N
 laryngoscope:N
 laryngospasm:N
-larynx:N
+larynx:N,-nges,_es
 lasagna:N
 lasagne:N
 lascar:N
 lascivious:A
 lasciviously:Av
 lasciviousness:N
+lase:V
 laser:N
 laserdisc:N
 lash:N
@@ -35531,7 +35558,7 @@ lateralization:N
 lateralize:V
 laterally:Av
 laterite:N
-latex:N
+latex:N,latices,_es
 lath:N
 lathe:N
 lathee:N
@@ -35584,14 +35611,19 @@ launcher:N
 launching:N
 launchpad:N
 launder:V
+launderer:N
 launderette:N
 laundering:N
 laundress:N
+laundromat:N
 laundry:N
 laundryman:N,-men
 laundrywoman:N,-men
 laureate:A
 laureate:N
+laureate:V
+laureateship:N
+laureation:N
 laurel:N
 laureled:A
 laurelled:A
@@ -35605,6 +35637,7 @@ lavalier:N
 lavaliere:N
 lavalliere:N
 lavation:N
+lavatorial:A
 lavatory:N
 lave:V
 lavender:A
@@ -35616,6 +35649,7 @@ lavishly:Av
 lavishness:N
 law:N
 lawbreaker:N
+lawbreaking:A
 lawcourt:N
 lawful:A
 lawfully:Av
@@ -35628,6 +35662,7 @@ lawmaker:N
 lawmaking:N
 lawman:N,-men
 lawn:N
+lawnmower:N
 lawny:A
 lawrencium:N
 lawsuit:N
@@ -35644,6 +35679,7 @@ lay:A
 lay:N
 lay:V,_s,_ing,laid
 layabout:N
+layaway:N
 layby:N
 layer:N
 layer:V
@@ -35656,6 +35692,7 @@ layout:N
 layover:N
 layperson:N,-eople,_s
 layup:N
+laywoman:N,-men
 lazar:N
 lazaret:N
 lazarette:N
@@ -35676,6 +35713,8 @@ lead:V,_s,_ing,led
 leaded:A
 leaden:A
 leader:N
+leaderboard:N
+leaderless:A
 leadership:N
 leading:A
 leading:N
@@ -35700,6 +35739,8 @@ leak:N
 leak:V
 leakage:N
 leaker:N
+leakily:Av
+leakiness:N
 leaking:A
 leakproof:A
 leaky:A
@@ -35718,6 +35759,8 @@ leapfrog:N
 leapfrog:V
 leaping:N
 learn:V,_s,_ing,_t,_ed
+learnability:N
+learnable:A
 learned:A
 learnedly:Av
 learnedness:N
@@ -35726,6 +35769,7 @@ learning:N
 leasable:A
 lease:N
 lease:V
+leaseback:N
 leased:A
 leasehold:N
 leaseholder:N
@@ -35793,6 +35837,7 @@ leechlike:A
 leek:N
 leer:N
 leer:V
+leeriness:N
 leering:A
 leery:A
 leet:N
@@ -35823,9 +35868,13 @@ legalese:N
 legalisation:N
 legalise:V
 legalism:N
+legalist:N
+legalistic:A
+legalistically:Av
 legality:N
 legalization:N
 legalize:V
+legalizer:N
 legally:Av
 legate:N
 legatee:N
@@ -35834,12 +35883,14 @@ legation:N
 legato:A
 legato:Av
 legend:N
+legendarily:Av
 legendarium:N,-ia
 legendary:A
 leger:N
 legerdemain:N
 legerity:N
 legged:A
+legginess:N
 legging:N
 leggy:A
 leghorn:N
@@ -35859,6 +35910,8 @@ legislatively:Av
 legislator:N
 legislatorship:N
 legislature:N
+legit:A
+legit:Av
 legitimacy:N
 legitimate:A
 legitimate:V
@@ -35867,12 +35920,18 @@ legitimation:N
 legitimatise:V
 legitimatize:V
 legitimise:V
+legitimization:N
 legitimize:V
+legitimizer:N
 legless:A
 leglike:A
+legman:N,-men
+legroom:N
 legume:N
 leguminious:A
 leguminous:A
+legwarmer:N
+legwork:N
 lei:N
 leiomyoma:N
 leiomyosarcoma:N
@@ -35885,6 +35944,7 @@ leisured:A
 leisureliness:N
 leisurely:A
 leisurely:Av
+leisurewear:N
 leitmotif:N
 leitmotiv:N
 lek:N
@@ -35896,6 +35956,7 @@ lemniscate:N
 lemniscus:N
 lemon:N
 lemonade:N
+lemongrass:N
 lemonlike:A
 lemonwood:N
 lemony:A
@@ -35969,7 +36030,8 @@ leptocephalus:N
 leptodactylid:N
 leptomeninges:N
 leptomeningitis:N
-lepton:N
+lepton:N,-ta
+leptonic:A
 leptorhine:A
 leptorrhine:A
 leptorrhinian:A
@@ -36010,6 +36072,7 @@ lethargically:Av
 lethargy:N
 letter:N
 letter:V
+letterbox:N
 lettercard:N
 lettered:A
 letterer:N
@@ -36034,6 +36097,7 @@ leucothoe:N
 leucotomy:N
 leukaemia:N
 leukemia:N
+leukemic:A
 leukocyte:N
 leukocytosis:N
 leukoderma:N
@@ -36052,8 +36116,11 @@ level:N
 level:V,_s,_ing,_ling,_ed,_led
 leveler:N
 levelheaded:A
+levelheadedness:N
 leveling:N
 leveller:N
+levelly:Av
+levelness:N
 lever:N
 lever:V
 leverage:N
@@ -36061,6 +36128,7 @@ leverage:V
 leveraging:N
 leveret:N
 leviathan:N
+levier:N
 levirate:N
 levis:N
 levitate:V
@@ -36102,6 +36170,7 @@ liaise:V
 liaison:N
 liana:N
 liar:N
+lib:N
 libation:N
 libber:N
 libel:N
@@ -36187,8 +36256,10 @@ lieu:N
 lieutenancy:N
 lieutenant:N
 life:N,lives
+lifebelt:N
 lifeblood:N
 lifeboat:N
+lifebuoy:N
 lifeform:N
 lifeguard:N
 lifeless:A
@@ -36225,11 +36296,14 @@ light:V,_s,_ing,lit
 lightbulb:N
 lighted:A
 lighten:V
+lightener:N
 lightening:N
 lighter:N
 lighter:V
 lighterage:N
 lighterman:N,-men
+lightface:N
+lightfaced:A
 lightheaded:A
 lightheadedness:N
 lighthearted:A
@@ -36257,14 +36331,18 @@ lignite:N
 lignosae:N
 lignum:N
 ligule:N
+likability:N
 likable:A
+likableness:N
 like:A
 like:Av
 like:C
 like:N
 like:P.t
 like:V
+likeability:N
 likeable:A
+likeableness:N
 liked:A
 likelihood:N
 likeliness:N
@@ -36296,6 +36374,8 @@ limbed:A
 limber:A
 limber:N
 limber:V
+limberly:Av
+limberness:N
 limbic:A
 limbless:A
 limbo:N
@@ -36307,9 +36387,12 @@ limekiln:N
 limelight:N
 limen:N
 limerick:N
+limescale:N
 limestone:N
 limewater:N
 limey:N
+liminal:A
+liminality:N
 limit:N
 limit:V
 limitation:N
@@ -36339,10 +36422,12 @@ limpet:N
 limpid:A
 limpidity:N
 limpidly:Av
+limpidness:N
 limping:N
 limpkin:N
 limply:Av
 limpness:N
+limy:A
 linac:N
 linage:N
 linalool:N
@@ -36371,6 +36456,7 @@ lineman:N,-men
 linen:N
 linendraper:N
 liner:N
+linerless:A
 linesman:N,-men
 lineup:N
 ling:N
@@ -36384,7 +36470,7 @@ lingerie:N
 lingering:A
 lingering:N
 lingeringly:Av
-lingo:N
+lingo:N,_s,_es
 lingonberry:N
 lingua:N
 lingual:A
@@ -36397,6 +36483,7 @@ linguistic:A
 linguistically:Av
 linguistics:N.p
 lingulate:A
+lingulated:A
 liniment:N
 linin:N
 lining:N
@@ -36405,6 +36492,7 @@ link:V
 linkage:N
 linkboy:N
 linked:A
+linker:N
 linkman:N,-men
 linksman:N,-men
 linkup:N
@@ -36416,7 +36504,10 @@ linseed:N
 linstock:N
 lint:N
 lintel:N
+linter:N
+lintless:A
 lintwhite:N
+linty:A
 linuron:N
 lion:N
 lioness:N
@@ -36424,7 +36515,9 @@ lionet:N
 lionfish:N
 lionhearted:A
 lionise:V
+lionization:N
 lionize:V
+lionizer:N
 liothyronine:N
 lip:N
 lipaemia:N
@@ -36450,9 +36543,12 @@ lipophilic:A
 lipoprotein:N
 liposarcoma:N
 liposome:N
+liposuction:N
 lipotropic:A
 lipped:A
+lippy:A
 lipread:V,_s,_ing
+lipreader:N
 lipreading:N
 lipstick:N
 lipstick:V
@@ -36519,6 +36615,8 @@ literalism:N
 literalize:V
 literally:Av
 literalness:N
+literarily:Av
+literariness:N
 literary:A
 literate:A
 literate:N
@@ -36551,6 +36649,8 @@ litigate:V
 litigation:N
 litigator:N
 litigious:A
+litigiously:Av
+litigiousness:N
 litmus:N
 litoral:N
 litotes:N
@@ -36604,6 +36704,7 @@ liveryman:N,-men
 livestock:N
 livestream:N
 livestream:V
+liveware:N
 livid:A
 lividity:N
 lividly:Av
@@ -36637,6 +36738,7 @@ loan:V
 loanblend:N
 loaner:N
 loaning:N
+loansharking:N
 loanword:N
 loasa:N
 loath:A
@@ -36651,6 +36753,7 @@ lob:V
 lobar:A
 lobate:A
 lobated:A
+lobber:N
 lobby:N
 lobby:V
 lobbyist:N
@@ -36661,11 +36764,13 @@ lobefin:N
 lobelia:N
 lobeliaceous:A
 loblolly:N
+lobotomize:V
 lobotomy:N
 lobscouse:N
 lobscuse:N
 lobster:N
 lobsterback:N
+lobstering:N
 lobsterman:N,-men
 lobular:A
 lobularity:N
@@ -36690,6 +36795,7 @@ locating:N
 location:N
 locative:N
 locator:N
+locavore:N
 loch:N
 lochia:N
 lock:N
@@ -36771,6 +36877,7 @@ logistic:A
 logistical:A
 logistician:N
 logistics:N.p
+logit:N
 logjam:N
 logo:N
 logogram:N
@@ -36826,6 +36933,8 @@ longer:Av
 longer:N
 longest:Av
 longevity:N
+longhair:N
+longhaired:A
 longhand:A
 longhand:N
 longhorn:N
@@ -36858,6 +36967,7 @@ loofa:N
 loofah:N
 look:N
 look:V
+lookalike:N
 lookdown:N
 looker:N
 looking:A
@@ -36870,6 +36980,7 @@ loom:N
 loom:V
 loon:N
 looney:N
+loonie:N
 loony:A
 loony:N
 loop:N
@@ -36923,6 +37034,7 @@ lore:N
 lorgnette:N
 lorica:N
 lorikeet:N
+loris:N
 lorn:A
 lorry:N
 lory:N
@@ -36950,6 +37062,7 @@ louche:A
 loud:A
 loud:Av
 louden:V
+loudhailer:N
 loudly:Av
 loudmouth:N
 loudness:N
@@ -36962,6 +37075,7 @@ lounging:A
 loupe:N
 lour:V
 louse:N,lice
+lousily:Av
 lousiness:N
 lousy:A
 lout:N
@@ -36970,7 +37084,10 @@ louvar:N
 louver:N
 louvered:A
 louvre:N
+lovability:N
 lovable:A
+lovableness:N
+lovably:Av
 lovage:N
 lovastatin:N
 love:N
@@ -36990,6 +37107,7 @@ loverly:A
 lovesick:A
 lovesickness:N
 lovesome:A
+lovey:N
 loving:A
 lovingly:Av
 lovingness:N
@@ -37000,6 +37118,7 @@ low:V
 lowan:N
 lowball:V
 lowborn:A
+lowboy:N
 lowbred:A
 lowbrow:A
 lowbrow:N
@@ -37015,9 +37134,11 @@ lowering:N
 loweringly:Av
 lowermost:A
 lowest:Av
+lowish:A
 lowland:A
 lowland:N
 lowlife:N,_s,-ives
+lowliness:N
 lowly:A
 lowness:N
 lowset:A
@@ -37025,10 +37146,12 @@ lox:N
 loxapine:N
 loxodrome:N
 loyal:A
+loyalism:N
 loyalist:N
 loyally:Av
 loyalty:N
 lozenge:N
+luau:N
 lubber:N
 lubberly:A
 lube:V
@@ -37038,20 +37161,25 @@ lubricated:A
 lubrication:N
 lubricator:N
 lubricious:A
+lubricity:N
 lucent:A
 lucerne:N
 lucid:A
 lucidity:N
 lucidly:Av
+lucidness:N
 lucifer:N
 luciferin:N
 lucifugal:A
 lucifugous:A
 luck:N
 luckily:Av
+luckiness:N
 luckless:A
 lucky:A
 lucrative:A
+lucratively:Av
+lucrativeness:N
 lucre:N
 lucubrate:V
 lucubration:N
@@ -37060,6 +37188,7 @@ lucullan:A
 ludic:A
 ludicrous:A
 ludicrously:Av
+ludicrousness:N
 ludo:N
 luff:N
 luff:V
@@ -37071,6 +37200,7 @@ luge:V
 luger:N
 luggage:N
 lugger:N
+lughole:N
 luging:N
 lugsail:N
 lugubrious:A
@@ -37085,10 +37215,12 @@ lull:V
 lullaby:N
 lulling:A
 lulu:N
+luma:N
 lumbago:N
 lumbar:A
 lumber:N
 lumber:V
+lumberer:N
 lumbering:A
 lumbering:N
 lumberjack:N
@@ -37115,6 +37247,8 @@ lumpectomy:N
 lumpen:A
 lumper:N
 lumpfish:N
+lumpily:Av
+lumpiness:N
 lumpish:A
 lumpsucker:N
 lumpy:A
@@ -37126,7 +37260,9 @@ lunatic:N
 lunation:N
 lunch:N
 lunch:V
+lunchbox:N
 luncheon:N
+luncheonette:N
 luncher:N
 lunching:N
 lunchroom:N
@@ -37138,6 +37274,7 @@ lunge:V
 lungen:N
 lunger:N
 lungfish:N
+lungful:N
 lungi:N
 lungyi:N
 lunisolar:A
@@ -37154,6 +37291,7 @@ lurcher:N
 lurching:A
 lure:N
 lure:V
+lurgy:N
 lurid:A
 luridly:Av
 luridness:N
@@ -37207,6 +37345,7 @@ luxuriance:N
 luxuriant:A
 luxuriantly:Av
 luxuriate:V
+luxuriation:N
 luxurious:A
 luxuriously:Av
 luxuriousness:N
@@ -37253,6 +37392,7 @@ lymphopenia:N
 lymphopoiesis:N
 lymphuria:N
 lynch:V,_es,_ing,_ed
+lyncher:N
 lynchet:N
 lynching:N
 lynchpin:N
@@ -37287,6 +37427,7 @@ lysogenisation:N
 lysogenization:N
 lysogenize:V
 lysogeny:N
+lysosomal:A
 lysosome:N
 lysozyme:N
 lyssa:N
@@ -60181,6 +60322,7 @@ solo:V
 soloist:N
 solon:N
 solstice:N
+solstitial:A
 solubility:N
 soluble:A
 solubleness:N
