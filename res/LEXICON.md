@@ -10,7 +10,7 @@ necessary.
 Example:
 
 ```
-go:V,_es,_ing,went,_ne
+go:V,goes,going,went,gone
 ```
 
 ### Lemma (Base Word)
@@ -49,19 +49,21 @@ If any attributes are provided, they are preceded by a dot `.`:
 ### Inflected Forms
 
 Forms are modifications of the **lemma**, indicating tense, number, etc.
-They can be abbreviated in a couple ways:
+They can be abbreviated using a hyphen (\-) at the beginning of a form.
+This includes the lemma, trimmed to the first letter after the hyphen.  For
+example:
 
-- An underscore (\_) in a form is treated as an exact copy of the lemma.
-- A hyphen (\-) at the beginning of a form includes the lemma, trimmed
-  to the first letter after the hyphen.  For example, `alumnus:N,-ni`
+```
+alumnus:N,-ni
+```
 
 If no inflected forms are provided, regular forms will be automatically
 generated for these four word classes:
 
-- **Adjective**: Comparative (\_*er*), Superlative (\_*est*)
-- **Noun**: Plural (\_*s*)
-- **Pronoun**: Plural (\_*s*)
-- **Verb**: Present tense (\_*s*), Present participle (\_*ing*),
-            Past tense (\_*ed*)
+- **Adjective**: Comparative (*er*), Superlative (*est*)
+- **Noun**: Plural (*s* suffix)
+- **Pronoun**: Plural (*s* suffix)
+- **Verb**: Present tense (*s*), Present participle (*ing*),
+            Past tense (*ed*)
 
 There are rules for attaching the suffixes, but they're not perfect.

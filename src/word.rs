@@ -156,7 +156,7 @@ fn decode_irregular(lemma: &str, form: &str) -> String {
             }
         }
     }
-    form.replace("_", lemma)
+    form.into()
 }
 
 /// Encode an irregular word form
@@ -192,11 +192,7 @@ impl fmt::Debug for Lexeme {
             write!(fmt, ".{}", self.attr)?;
         }
         for form in &self.irregular_forms {
-            write!(fmt, ",")?;
-            match form.strip_prefix(&self.lemma) {
-                Some(suffix) => write!(fmt, "_{suffix}")?,
-                None => write!(fmt, "{}", encode_irregular(&self.lemma, form))?,
-            }
+            write!(fmt, ",{}", encode_irregular(&self.lemma, form))?;
         }
         Ok(())
     }
