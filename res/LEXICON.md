@@ -1,8 +1,7 @@
 ## Lexicon Entries
 
 The lexicon `english.csv` uses a variation of the comma separated value (CSV)
-format.  Each line contains one **lexeme**, including inflected forms if
-necessary.
+format.  Each line contains one **lexeme**:
 
 * Value 1: **lemma** : **word class** {.**attributes**}
 * Values 2+: **irregular inflected forms**
@@ -49,21 +48,22 @@ If any attributes are provided, they are preceded by a dot `.`:
 ### Inflected Forms
 
 Forms are modifications of the **lemma**, indicating tense, number, etc.
-They can be abbreviated using a hyphen (\-) at the beginning of a form.
-This includes the lemma, trimmed to the first letter after the hyphen.  For
-example:
+These forms can be **regular** or **irregular**.  If no irregular forms are
+provided, regular forms will be automatically generated for these four word
+classes:
+
+- **Adjective**: Comparative (*er*), Superlative (*est*)
+- **Noun**: Plural (*s*)
+- **Pronoun**: Plural (*s*)
+- **Verb**: Present tense (*s*), Present participle (*ing*),
+            Past tense (*ed*)
+
+The suffixes are attached to lemmas based on special rules.
+
+Irregular forms can be abbreviated with a hyphen (\-) at the beginning.  This
+includes the lemma, trimmed to the first letter after the hyphen.
+For example:
 
 ```
 alumnus:N,-ni
 ```
-
-If no inflected forms are provided, regular forms will be automatically
-generated for these four word classes:
-
-- **Adjective**: Comparative (*er*), Superlative (*est*)
-- **Noun**: Plural (*s* suffix)
-- **Pronoun**: Plural (*s* suffix)
-- **Verb**: Present tense (*s*), Present participle (*ing*),
-            Past tense (*ed*)
-
-There are rules for attaching the suffixes, but they're not perfect.
