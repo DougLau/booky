@@ -44,6 +44,7 @@ If any attributes are provided, they are preceded by a dot `.`:
 | `a`  | Auxiliary verb                   | _cannot_
 | `i`  | Intransitive verb or preposition |
 | `t`  | Transitive verb or preposition   |
+| `z`  | Alternate `-ize`, etc. forms     | _realize_ `=>` _realise_
 
 ### Inflected Forms
 

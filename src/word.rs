@@ -39,6 +39,8 @@ pub enum WordAttr {
     Intransitive,
     /// `t` Transitive verb or preposition
     Transitive,
+    /// `z` Alternate `z => s` spelling
+    AlternateZ,
 }
 
 /// Word Lexeme
@@ -92,6 +94,29 @@ impl fmt::Display for WordClass {
     }
 }
 
+impl WordClass {
+    /// Build regular forms
+    fn build_regular_forms(self, lex: &Lexeme, lemma: &str) -> Vec<String> {
+        let mut forms = Vec::new();
+        match self {
+            WordClass::Adjective if lex.count_syllables() < 4 => {
+                forms.push(adjective_comparative(&lemma));
+                forms.push(adjective_superlative(&lemma));
+            }
+            WordClass::Noun if lex.has_plural() => {
+                forms.push(noun_plural(&lemma));
+            }
+            WordClass::Verb => {
+                forms.push(verb_present(&lemma));
+                forms.push(verb_present_participle(&lemma));
+                forms.push(verb_past(&lemma));
+            }
+            _ => (),
+        }
+        forms
+    }
+}
+
 impl TryFrom<char> for WordAttr {
     type Error = ();
 
@@ -103,6 +128,7 @@ impl TryFrom<char> for WordAttr {
             'a' => Ok(Self::Auxiliary),
             'i' => Ok(Self::Intransitive),
             't' => Ok(Self::Transitive),
+            'z' => Ok(Self::AlternateZ),
             _ => Err(()),
         }
     }
@@ -258,22 +284,25 @@ impl Lexeme {
         true
     }
 
+    /// Check if a word has alternate spelling form (`z => s`)
+    fn has_alternate_z(&self) -> bool {
+        for a in self.attr.chars() {
+            if let Ok(WordAttr::AlternateZ) = WordAttr::try_from(a) {
+                return true;
+            }
+        }
+        false
+    }
+
     /// Build regular word forms
     fn build_regular_forms(&mut self) {
-        match self.word_class {
-            WordClass::Adjective if self.count_syllables() < 4 => {
-                self.forms.push(adjective_comparative(&self.lemma));
-                self.forms.push(adjective_superlative(&self.lemma));
-            }
-            WordClass::Noun if self.has_plural() => {
-                self.forms.push(noun_plural(&self.lemma));
-            }
-            WordClass::Verb => {
-                self.forms.push(verb_present(&self.lemma));
-                self.forms.push(verb_present_participle(&self.lemma));
-                self.forms.push(verb_past(&self.lemma));
-            }
-            _ => (),
+        self.forms
+            .extend(self.word_class.build_regular_forms(&self, &self.lemma));
+        if self.has_alternate_z() {
+            let lemma = self.lemma.replace('z', "s");
+            self.forms.push(lemma.to_string());
+            self.forms
+                .extend(self.word_class.build_regular_forms(&self, &lemma));
         }
     }
 }
