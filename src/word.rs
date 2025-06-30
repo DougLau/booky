@@ -301,8 +301,9 @@ impl Lexeme {
                 .extend(self.word_class.build_regular_forms(self, lemma));
         } else {
             for form in &self.irregular_forms {
-                if *form != lemma {
-                    self.forms.push(decode_irregular(lemma, form));
+                let form = decode_irregular(lemma, form);
+                if form != lemma {
+                    self.forms.push(form);
                 }
             }
         }
