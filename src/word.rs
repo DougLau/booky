@@ -100,16 +100,16 @@ impl WordClass {
         let mut forms = Vec::new();
         match self {
             WordClass::Adjective if lex.count_syllables() < 4 => {
-                forms.push(adjective_comparative(&lemma));
-                forms.push(adjective_superlative(&lemma));
+                forms.push(adjective_comparative(lemma));
+                forms.push(adjective_superlative(lemma));
             }
             WordClass::Noun if lex.has_plural() => {
-                forms.push(noun_plural(&lemma));
+                forms.push(noun_plural(lemma));
             }
             WordClass::Verb => {
-                forms.push(verb_present(&lemma));
-                forms.push(verb_present_participle(&lemma));
-                forms.push(verb_past(&lemma));
+                forms.push(verb_present(lemma));
+                forms.push(verb_present_participle(lemma));
+                forms.push(verb_past(lemma));
             }
             _ => (),
         }
@@ -297,12 +297,13 @@ impl Lexeme {
     /// Build regular word forms
     fn build_regular_forms(&mut self) {
         self.forms
-            .extend(self.word_class.build_regular_forms(&self, &self.lemma));
+            .extend(self.word_class.build_regular_forms(self, &self.lemma));
         if self.has_alternate_z() {
             let lemma = self.lemma.replace('z', "s");
+            assert_ne!(&lemma, &self.lemma);
             self.forms.push(lemma.to_string());
             self.forms
-                .extend(self.word_class.build_regular_forms(&self, &lemma));
+                .extend(self.word_class.build_regular_forms(self, &lemma));
         }
     }
 }
