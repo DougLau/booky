@@ -52,7 +52,7 @@ pub struct Lexeme {
     word_class: WordClass,
     /// Attributes
     attr: String,
-    /// Irregular forms
+    /// Irregular forms (encoded)
     irregular_forms: Vec<String>,
     /// All forms
     forms: Vec<String>,
@@ -95,7 +95,7 @@ impl fmt::Display for WordClass {
 }
 
 impl WordClass {
-    /// Build regular forms
+    /// Build regular inflected forms
     fn build_regular_forms(self, lex: &Lexeme, lemma: &str) -> Vec<String> {
         let mut forms = Vec::new();
         match self {
@@ -147,15 +147,11 @@ impl TryFrom<&str> for Lexeme {
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
-            irregular_forms.push(decode_irregular(&lemma, form));
+            let form = decode_irregular(&lemma, form);
+            let form = encode_irregular(&lemma, &form);
+            irregular_forms.push(form);
         }
-        let mut forms = Vec::new();
-        forms.push(lemma.clone());
-        for form in &irregular_forms {
-            if *form != lemma {
-                forms.push(form.clone());
-            }
-        }
+        let forms = Vec::new();
         let mut word = Lexeme {
             lemma,
             word_class,
@@ -163,9 +159,7 @@ impl TryFrom<&str> for Lexeme {
             irregular_forms,
             forms,
         };
-        if word.irregular_forms.is_empty() {
-            word.build_regular_forms();
-        }
+        word.build_inflected_forms();
         Ok(word)
     }
 }
@@ -218,7 +212,7 @@ impl fmt::Debug for Lexeme {
             write!(fmt, ".{}", self.attr)?;
         }
         for form in &self.irregular_forms {
-            write!(fmt, ",{}", encode_irregular(&self.lemma, form))?;
+            write!(fmt, ",{form}")?;
         }
         Ok(())
     }
@@ -243,11 +237,6 @@ impl Lexeme {
     /// Get the word class
     pub fn word_class(&self) -> WordClass {
         self.word_class
-    }
-
-    /// Get irregular forms
-    pub fn irregular_forms(&self) -> &[String] {
-        &self.irregular_forms[..]
     }
 
     /// Get all forms
@@ -294,16 +283,28 @@ impl Lexeme {
         false
     }
 
-    /// Build regular word forms
-    fn build_regular_forms(&mut self) {
-        self.forms
-            .extend(self.word_class.build_regular_forms(self, &self.lemma));
+    /// Build inflected word forms
+    fn build_inflected_forms(&mut self) {
+        self.build_inflected(&self.lemma.clone());
         if self.has_alternate_z() {
             let lemma = self.lemma.replace('z', "s");
             assert_ne!(&lemma, &self.lemma);
-            self.forms.push(lemma.to_string());
+            self.build_inflected(&lemma);
+        }
+    }
+
+    /// Build inflected word forms
+    fn build_inflected(&mut self, lemma: &str) {
+        self.forms.push(lemma.to_string());
+        if self.irregular_forms.is_empty() {
             self.forms
-                .extend(self.word_class.build_regular_forms(self, &lemma));
+                .extend(self.word_class.build_regular_forms(self, lemma));
+        } else {
+            for form in &self.irregular_forms {
+                if *form != lemma {
+                    self.forms.push(decode_irregular(lemma, form));
+                }
+            }
         }
     }
 }
