@@ -291,6 +291,12 @@ impl Lexeme {
             assert_ne!(&lemma, &self.lemma);
             self.build_inflected(&lemma);
         }
+        if self.lemma.contains('æ') {
+            let lemma = self.lemma.replace('æ', "ae");
+            self.build_inflected(&lemma);
+            let lemma = self.lemma.replace('æ', "e");
+            self.build_inflected(&lemma);
+        }
     }
 
     /// Build inflected word forms
