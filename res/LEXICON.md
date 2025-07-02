@@ -68,3 +68,12 @@ For example:
 ```
 alumnus:N,-ni
 ```
+
+### Special Characters
+
+Some characters create alternate forms when included in a *lemma*:
+
+| Character | Alternates |
+|-----------|------------|
+| `æ`       | `ae`, `e`  |
+| `œ`       | `oe`, `e`  |

@@ -297,6 +297,12 @@ impl Lexeme {
             let lemma = self.lemma.replace('æ', "e");
             self.build_inflected(&lemma);
         }
+        if self.lemma.contains('œ') {
+            let lemma = self.lemma.replace('œ', "oe");
+            self.build_inflected(&lemma);
+            let lemma = self.lemma.replace('œ', "e");
+            self.build_inflected(&lemma);
+        }
     }
 
     /// Build inflected word forms
