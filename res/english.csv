@@ -110,7 +110,7 @@ aba:N
 abaca:N
 aback:Av
 abactinal:A
-abacus:N
+abacus:N,-ci,-ses
 abaft:Av
 abalone:N
 abamp:N
@@ -453,7 +453,7 @@ acanthopterygian:N
 acanthosis:N
 acanthotic:A
 acanthous:A
-acanthus:N
+acanthus:N,-s
 acapnia:N
 acapnial:A
 acapnic:A
@@ -470,7 +470,7 @@ acarophobia:N
 acarpellous:A
 acarpelous:A
 acarpous:A
-acarus:N
+acarus:N,-ri
 acaryote:N
 acatalectic:A
 acataphasia:N
@@ -645,7 +645,7 @@ acerbity:N
 acerola:N
 acerose:A
 acervate:A
-acervulus:N
+acervulus:N,-li
 acetabular:A
 acetabulum:N
 acetal:N
@@ -2200,7 +2200,7 @@ altocumulus:N
 altogether:Av
 altogether:N
 altoist:N
-altostratus:N
+altostratus:N,-ti
 altricial:A
 altruism:N
 altruist:N
@@ -11993,7 +11993,7 @@ cirque:N
 cirrhosis:N
 cirrhus:N
 cirrocumulus:N
-cirrostratus:N
+cirrostratus:N,-ti
 cirrus:N
 cisalpine:A
 cisco:N
@@ -35529,7 +35529,7 @@ knuckleduster:N
 knucklehead:N
 knuckler:N
 knuckly:A
-knucks:N
+knucks:N.p
 knurl:N
 knurled:A
 knurly:A
@@ -41497,7 +41497,7 @@ muggee:N
 mugger:N
 mugginess:N
 mugging:N
-muggins:N
+muggins:N,-s
 muggle:N
 muggy:A
 mugshot:N
@@ -49644,7 +49644,7 @@ pongee:N
 pongid:N
 poniard:N
 poniard:V
-pons:N
+pons:N,pontes
 pontifex:N
 pontiff:N
 pontifical:A
@@ -52534,7 +52534,7 @@ rabid:A
 rabidity:N
 rabidly:Av
 rabidness:N
-rabies:N
+rabies:N,-s
 raccoon:N
 race:N
 race:V
@@ -52953,7 +52953,7 @@ rat:V
 rat-a-tat:N
 ratability:N
 ratable:A
-ratables:N
+ratables:N.p
 ratafee:N
 ratafia:N
 ratan:N
@@ -52967,7 +52967,7 @@ rate:N
 rate:V
 rateability:N
 rateable:A
-rateables:N
+rateables:N.p
 ratel:N
 ratepayer:N
 rater:N
@@ -53307,7 +53307,7 @@ receding:N
 receipt:N
 receipt:V
 receivable:A
-receivables:N
+receivables:N.p
 receive:V
 received:A
 receiver:N
@@ -53864,7 +53864,7 @@ regiment:N
 regiment:V
 regimental:A
 regimentally:Av
-regimentals:N
+regimentals:N.p
 regimentation:N
 regimented:A
 region:N
@@ -54101,11 +54101,11 @@ reluctivity:N
 rely:V
 relyric:V
 rem:N
+remain:N
 remain:V
 remainder:N
 remainder:V
 remaining:A
-remains:N
 remake:N
 remake:V
 remaking:N
@@ -54934,7 +54934,7 @@ reverential:A
 reverentially:Av
 reverently:Av
 reverie:N
-revers:N
+revers:N,-s
 reversal:N
 reverse:A
 reverse:N
@@ -55167,7 +55167,7 @@ ricebird:N
 ricegrass:N
 ricer:N
 rich:A
-riches:N
+riches:N.p
 richly:Av
 richness:N
 richweed:N
@@ -55175,7 +55175,7 @@ ricin:N
 rick:N
 rick:V
 ricketiness:N
-rickets:N
+rickets:N.p
 rickettsial:A
 rickettsialpox:N
 rickettsias:N
@@ -56443,7 +56443,7 @@ sanguineness:N
 sanguineous:A
 sanguinity:N
 sanicle:N
-sanies:N
+sanies:N,-s
 sanious:A
 sanitarian:N
 sanitariness:N
@@ -56461,7 +56461,7 @@ sannyasin:N
 sans:P.t
 sanserif:N
 sansevieria:N
-santims:N
+santims:N,-mi,-mu
 sanyasi:N
 sap:N
 sap:V
@@ -56725,7 +56725,7 @@ scabbard:N
 scabbiness:N
 scabby:A
 scabicide:N
-scabies:N
+scabies:N,-s
 scabiosa:N
 scabious:N
 scabrous:A
@@ -56965,8 +56965,7 @@ schmooze:V
 schmoozer:N
 schmuck:N
 schmutz:N
-schnapps:N
-schnaps:N
+schnapps:N,-s
 schnauzer:N
 schnecken:N
 schnittlaugh:N
@@ -56992,7 +56991,7 @@ schoolbook:N
 schoolboy:N
 schoolboyish:A
 schoolchild:N,-dren
-schooldays:N
+schooldays:N.p
 schooled:A
 schoolfellow:N
 schoolfriend:N
@@ -57498,7 +57497,7 @@ sebum:N
 sec:A
 sec:N
 secant:N
-secateurs:N
+secateur:N
 secede:V
 secern:V
 secernate:V
@@ -59028,7 +59027,7 @@ sidewise:Av
 siding:N
 sidle:V
 siege:N
-siemens:N
+siemens:N,-s
 sienna:N
 sierra:N
 siesta:N
@@ -59107,8 +59106,8 @@ silenced:A
 silencer:N
 silene:N
 silent:A
+silent:N
 silently:Av
-silents:N
 silenus:N,-ni
 silesia:N
 silex:N
@@ -59192,7 +59191,7 @@ simmer:N
 simmer:V
 simmering:N
 simnel:N
-simoleons:N
+simoleon:N
 simonize:V
 simony:N
 simoom:N
@@ -59893,7 +59892,7 @@ sluttishly:Av
 sluttishness:N
 slutty:A
 sly:A,slyer,slier,slyest,sliest
-slyboots:N
+slyboots:N.p
 slyish:A
 slyly:Av
 slyness:N
@@ -59980,7 +59979,7 @@ smirk:V
 smirker:N
 smite:V,-es,-ting,smote,-tten
 smith:N
-smithereens:N
+smithereens:N.p
 smithy:N
 smitten:A
 smock:N
@@ -60326,7 +60325,7 @@ sobering:A
 soberly:Av
 soberness:N
 sobersided:A
-sobersides:N
+sobersides:N.p
 sobralia:N
 sobriety:N
 sobriquet:N
@@ -61257,8 +61256,8 @@ spinal:N
 spinally:Av
 spindle:N
 spindleberry:N
-spindlelegs:N
-spindleshanks:N
+spindlelegs:N.p
+spindleshanks:N.p
 spindly:A
 spindrift:N
 spine:N
@@ -61939,7 +61938,7 @@ stannous:A
 stanza:N
 stapedectomy:N
 stapelia:N
-stapes:N
+stapes:N,-edes
 staph:N
 staphylococcal:A
 staphylococci:N
@@ -61969,7 +61968,7 @@ stardust:N
 stare:N
 stare:V
 starer:N
-starets:N
+starets:N,-rtsy
 starfish:N
 starflower:N
 starfruit:N
@@ -62639,7 +62638,7 @@ strangle:V
 strangled:A
 stranglehold:N
 strangler:N
-strangles:N
+strangles:N.p
 strangling:N
 strangulate:V
 strangulation:N
@@ -62668,7 +62667,7 @@ stratosphere:N
 stratospheric:A
 stratospherically:Av
 stratum:N,-ta
-stratus:N
+stratus:N,-ti
 straw:A
 straw:N
 straw:V
@@ -63515,7 +63514,7 @@ summational:A
 summative:A
 summer:N
 summer:V
-summercaters:N
+summercater:N
 summerhouse:N
 summerize:V.z
 summertime:N
@@ -63568,13 +63567,13 @@ sundog:N
 sundown:N
 sundowner:N
 sundress:N
-sundrops:N
+sundrops:N.p
 sundry:A
 sundry:N
 sunfish:N
 sunflower:N
 sung:A
-sunglasses:N
+sunglass:N
 sunhat:N
 sunk:A
 sunken:A
@@ -63658,7 +63657,7 @@ superfetation:N
 superficial:A
 superficiality:N
 superficially:Av
-superficies:N
+superficies:N,-s
 superfine:A
 superfluity:N
 superfluous:A
@@ -63957,7 +63956,7 @@ surround:N
 surround:V
 surrounded:A
 surrounding:A
-surroundings:N
+surroundings:N.p
 surtax:N
 surtax:V
 surtitle:N
@@ -64476,8 +64475,8 @@ tabbouleh:N
 tabby:A
 tabby:N
 tabernacle:N
-tabes:N
-tabi:N
+tabes:N,-s
+tabi:N.p
 tabla:N
 tablature:N
 table:N
@@ -65084,7 +65083,7 @@ teen:A
 teenage:A
 teenaged:A
 teenager:N
-teens:N
+teens:N.p
 teensy:A
 teensy-weensy:A
 teentsy:A
@@ -65620,7 +65619,7 @@ thankfulness:N
 thankless:A
 thanklessly:Av
 thanklessness:N
-thanks:N
+thanks:N.p
 thanksgiving:N
 that:D
 thatch:N
@@ -66206,11 +66205,11 @@ tidewater:N
 tideway:N
 tidily:Av
 tidiness:N
-tidings:N
+tiding:N
 tidy:A
 tidy:N
 tidy:V
-tidytips:N
+tidytips:N.p
 tie:N
 tie:V,ties,tying,tieing,tied
 tieback:N
@@ -66537,7 +66536,7 @@ togetherness:N
 togged:A
 toggle:N
 toggle:V
-togs:N
+togs:N.p
 toil:N
 toil:V
 toiler:N
@@ -66808,7 +66807,7 @@ torturing:N
 torturous:A
 torturously:Av
 torulose:A
-torus:N
+torus:N,tori
 tosh:N
 toss:N
 toss:V
@@ -67473,7 +67472,7 @@ tress:N
 tressel:N
 trestle:N
 trestlework:N
-trews:N
+trews:N.p
 trey:N
 triacetate:N
 triad:N
@@ -67823,7 +67822,7 @@ trover:N
 trow:V
 trowel:N
 trowel:V
-trowsers:N
+trowsers:N.p
 troy:N
 truancy:N
 truant:A
@@ -68013,7 +68012,7 @@ tumult:N
 tumultuous:A
 tumultuously:Av
 tumultuousness:N
-tumulus:N
+tumulus:N,-li
 tun:N
 tuna:N,-as
 tunaburger:N
@@ -68115,7 +68114,7 @@ turnup:N
 turnverein:N
 turpentine:N
 turpitude:N
-turps:N
+turps:N.p
 turquoise:N
 turreae:N
 turret:N
@@ -68995,7 +68994,7 @@ uncurled:A
 uncurtained:A
 uncurved:A
 uncurving:A
-uncus:N
+uncus:N,unci
 uncut:A
 undamaged:A
 undatable:A
@@ -69062,7 +69061,7 @@ undercharge:V
 underclass:A
 underclassman:N,-men
 underclothed:A
-underclothes:N
+underclothes:N.p
 underclothing:N
 undercoat:N
 undercoat:V
@@ -69079,7 +69078,7 @@ underdeveloped:A
 underdevelopment:N
 underdog:N
 underdone:A
-underdrawers:N
+underdrawers:N.p
 underdress:V
 underdressed:A
 undereducated:A
@@ -69265,7 +69264,7 @@ undeveloped:A
 undeviating:A
 undiagnosable:A
 undiagnosed:A
-undies:N
+undies:N.p
 undifferentiated:A
 undigested:A
 undignified:A
@@ -71535,7 +71534,7 @@ varsity:N
 varus:A
 vary:V
 varying:A
-vas:N
+vas:N,vasa
 vascular:A
 vascularity:N
 vascularization:N.z
@@ -71711,7 +71710,7 @@ ventricle:N
 ventricose:A
 ventricous:A
 ventricular:A
-ventriculus:N
+ventriculus:N,-li
 ventriloquism:N
 ventriloquist:N
 ventriloquy:N
@@ -72045,7 +72044,7 @@ villainy:N
 villein:N
 villeinage:N
 villoma:N
-villus:N
+villus:N,-li
 vim:N
 vinaceous:A
 vinaigrette:N
@@ -72155,7 +72154,6 @@ visa:V
 visage:N
 visaged:A
 viscacha:N
-viscera:N
 visceral:A
 viscerally:Av
 viscid:A
@@ -72176,7 +72174,7 @@ viscountess:N
 viscounty:N
 viscous:A
 viscousness:N
-viscus:N
+viscus:N,-cera
 vise:N
 viselike:A
 visibility:N
@@ -72215,7 +72213,7 @@ vitalizer:N.z
 vitalizing:A.z
 vitally:Av
 vitalness:N
-vitals:N
+vitals:N.p
 vitamin:N
 vitaminize:V.z
 vitellus:N
@@ -73238,7 +73236,7 @@ where:C
 where:N
 whereabout:Av
 whereabouts:Av
-whereabouts:N
+whereabouts:N.p
 whereas:C
 whereat:Av
 whereby:Av
@@ -73775,7 +73773,7 @@ withered:A
 withering:A
 withering:N
 witheringly:Av
-withers:N
+withers:N.p
 withersoever:C
 withhold:V,-ds,-ding,-held
 withholder:N
@@ -74340,7 +74338,7 @@ yellowfin:N
 yellowfish:N
 yellowhammer:N
 yellowish:A
-yellowlegs:N
+yellowlegs:N.p
 yellowly:Av
 yellowness:N
 yellowtail:N
@@ -74381,7 +74379,7 @@ yip:V,yips,yipping,yipped
 yipe:N
 yipe:V
 yippee:I
-yips:N
+yips:N.p
 ylem:N
 yo:I
 yo-yo:N
