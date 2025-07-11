@@ -10371,7 +10371,7 @@ cassocked:A
 cassowary:N
 cast:A
 cast:N
-cast:V
+cast:V,-ts,-ting
 castanets:N
 castaway:A
 castaway:N
@@ -40354,7 +40354,7 @@ miscalculation:N
 miscall:V
 miscarriage:N
 miscarry:V
-miscast:V
+miscast:V,-ts,-ting
 miscegenate:V
 miscegenation:N
 miscellanea:N
@@ -45435,7 +45435,7 @@ overcapitalize:V.z
 overcareful:A
 overcast:A
 overcast:N
-overcast:V
+overcast:V,-ts,-ting
 overcasting:N
 overcautious:A
 overcharge:N
@@ -49290,7 +49290,7 @@ pod:V
 podagra:N
 podalgia:N
 podcast:N
-podcast:V
+podcast:V,-ts,-ting
 podcaster:N
 podetium:N,-ia
 podgy:A
@@ -53295,7 +53295,7 @@ recapitulate:V
 recapitulation:N
 recapture:N
 recapture:V
-recast:V
+recast:V,-ts,-ting
 recasting:N
 recce:N
 recco:N
@@ -55706,7 +55706,7 @@ rough:N
 rough:V
 roughage:N
 roughcast:N
-roughcast:V
+roughcast:V,-ts,-ting
 roughdried:A
 roughen:V
 roughened:A
@@ -61503,7 +61503,8 @@ sportingly:Av
 sportive:A
 sportively:Av
 sportiveness:N
-sportscast:V
+sportscast:N
+sportscast:V,-ts,-ting
 sportscaster:N
 sportsman:N,-men
 sportsmanlike:A
@@ -68285,7 +68286,7 @@ tympanoplasty:N
 tympanum:N
 type:N
 type:V
-typecast:V
+typecast:V,-ts,-ting
 typed:A
 typeface:N
 typescript:N
