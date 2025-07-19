@@ -13,6 +13,7 @@ default-run = "booky"
 [dependencies]
 anyhow = "1.0"
 argh = "0.1"
+deunicode = "1.6.2"
 fastrand = "2.0"
 yansi = "1.0"
 

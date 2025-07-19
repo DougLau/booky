@@ -75,5 +75,14 @@ Some characters create alternate forms when included in a *lemma*:
 
 | Character | Alternates |
 |-----------|------------|
+| `à`       | `a`        |
+| `â`       | `a`        |
+| `é`       | `e`        |
+| `è`       | `e`        |
+| `ê`       | `e`        |
+| `ï`       | `i`        |
+| `ñ`       | `n`        |
+| `ü`       | `ue`, `u`  |
 | `æ`       | `ae`, `e`  |
 | `œ`       | `oe`, `e`  |
+| `ç`       | `c`        |

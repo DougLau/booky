@@ -1,3 +1,4 @@
+use deunicode::deunicode_char;
 use std::fmt;
 
 /// Word class
@@ -285,24 +286,46 @@ impl Lexeme {
 
     /// Build inflected word forms
     fn build_inflected_forms(&mut self) {
-        self.build_inflected(&self.lemma.clone());
+        for variant in self.variant_spellings() {
+            self.build_inflected(&variant);
+        }
+    }
+
+    /// Get all variant spellings of the lemma
+    fn variant_spellings(&self) -> Vec<String> {
+        let mut variants = Vec::new();
+        variants.push(String::new());
+        for ch in self.lemma.chars() {
+            if let Some(alt) = deunicode_char(ch) {
+                let mut more = Vec::new();
+                if !(alt.len() == 1 && alt.chars().nth(0) == Some(ch)) {
+                    for variant in &variants {
+                        let mut v = variant.to_string();
+                        v.push_str(alt);
+                        more.push(v);
+                    }
+                }
+                if ch == 'æ' || ch == 'œ' {
+                    for variant in &variants {
+                        let mut v = variant.to_string();
+                        v.push('e');
+                        more.push(v);
+                    }
+                }
+                for variant in variants.iter_mut() {
+                    variant.push(ch);
+                }
+                variants.extend(more);
+            }
+        }
         if self.has_alternate_z() {
-            let lemma = self.lemma.replace('z', "s");
-            assert_ne!(&lemma, &self.lemma);
-            self.build_inflected(&lemma);
+            let mut more = Vec::new();
+            for variant in &variants {
+                more.push(variant.replace('z', "s"));
+            }
+            variants.extend(more);
         }
-        if self.lemma.contains('æ') {
-            let lemma = self.lemma.replace('æ', "ae");
-            self.build_inflected(&lemma);
-            let lemma = self.lemma.replace('æ', "e");
-            self.build_inflected(&lemma);
-        }
-        if self.lemma.contains('œ') {
-            let lemma = self.lemma.replace('œ', "oe");
-            self.build_inflected(&lemma);
-            let lemma = self.lemma.replace('œ', "e");
-            self.build_inflected(&lemma);
-        }
+        variants
     }
 
     /// Build inflected word forms
@@ -478,6 +501,29 @@ fn adjective_superlative(lemma: &str) -> String {
 #[cfg(test)]
 mod test {
     use super::*;
+
+    #[test]
+    fn variants() {
+        let lex = Lexeme::try_from("café:N").unwrap();
+        assert_eq!(lex.variant_spellings(), vec![
+            "café",
+            "cafe",
+        ]);
+        let lex = Lexeme::try_from("façade:N").unwrap();
+        assert_eq!(lex.variant_spellings(), vec![
+            "façade",
+            "facade",
+        ]);
+        let lex = Lexeme::try_from("anæsthetize:V.z").unwrap();
+        assert_eq!(lex.variant_spellings(), vec![
+            "anæsthetize",
+            "anaesthetize",
+            "anesthetize",
+            "anæsthetise",
+            "anaesthetise",
+            "anesthetise",
+        ]);
+    }
 
     #[test]
     fn irregular() {
