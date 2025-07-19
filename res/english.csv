@@ -11,8 +11,6 @@ Atlantic:A
 Aug:N.n
 August:N.n
 Australia:N.n
-Caesarean:A
-Caesarian:A
 Celsius:A
 Christmas:N.n
 Darwinian:A
@@ -9429,14 +9427,10 @@ caecilian:A
 caecilian:N
 caecum:N
 caenogenesis:N
-caesarean:A
-caesarean:N
-caesarian:A
 caesium:N
 caespitose:A
-caesura:N
+caesura:N,-as,-ae
 caesural:A
-cafe:N
 cafeteria:N
 cafetière:N
 caff:N
@@ -11017,10 +11011,6 @@ cervicitis:N
 cervid:N
 cervine:A
 cervix:N,-ices,-xes
-cesarean:A
-cesarean:N
-cesarian:A
-cesarian:N
 cespitose:A
 cessation:N
 cession:N
@@ -16714,6 +16704,10 @@ czaritza:N
 cæcal:A
 cæcally:Av
 cæcum:N,-ca
+cæsarean:A
+cæsarean:N
+cæsarian:A
+cæsarian:N
 cæsium:N
 cœliac:A
 dab:N

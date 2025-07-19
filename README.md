@@ -14,13 +14,13 @@ listed:
 ```
 > booky kind < Dr_Jeckyll_And_Mr_Hyde.txt
 
- 3914 l Lexicon
+ 3915 l Lexicon
     1 f Foreign
     4 o Ordinal
     0 r Roman
     2 n Number
    12 a Acronym
-   38 p Proper
+   37 p Proper
    16 s Symbol
     7 u Unknown
 ```
