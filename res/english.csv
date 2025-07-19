@@ -1,3 +1,6 @@
+'hood:N
+'tween:Av
+'tween:P.t
 2D:A
 3D:A
 Africa:N.n
@@ -31,8 +34,8 @@ Feb:N.n
 February:N.n
 Fri:N.n
 Friday:N.n
+Hallowe'en:N.n
 Halloween:N.n
-Hallowe’en:N.n
 Herculean:A
 I:Pn
 Indian:N.n
@@ -7651,6 +7654,8 @@ blusterer:N
 blustering:A
 blusterous:A
 blustery:A
+bo's'n:N
+bo'sun:N
 boa:N
 boar:N
 board:N
@@ -8016,6 +8021,7 @@ borshch:N
 borsht:N
 bortsch:N
 borzoi:N
+bos'n:N
 bosc:N
 bosh:N
 bosie:N
@@ -8035,7 +8041,6 @@ boss:V
 bossism:N
 bossy:A
 bosun:N
-bos’n:N
 bot:N
 bota:N
 botanic:A
@@ -8212,8 +8217,6 @@ boylike:Av
 boysenberry:N
 boytrose:A
 bozo:N
-bo’sun:N
-bo’s’n:N
 bpi:N
 bpm:N
 bps:N
@@ -11021,6 +11024,7 @@ cetchup:N
 cetology:N
 cetrimide:N
 cf:Av
+ch'i:N
 cha-cha:N
 chabasite:N
 chabazite:N
@@ -12023,7 +12027,6 @@ chyme:N
 chymosin:N
 chyron:N
 château:N,-ux,-us
-ch’i:N
 ciabatta:N
 ciao:N
 cicada:N
@@ -16707,6 +16710,7 @@ cæsarian:A
 cæsarian:N
 cæsium:N
 cœliac:A
+d'oh:I,doh
 dab:N
 dab:V
 dabber:N
@@ -20970,7 +20974,8 @@ dæmonian:A
 dæmonic:A
 dæmonistic:A
 début:N
-d’oh:I,doh
+e'en:Av
+e'er:Av
 e-mail:N
 e-mail:V
 each:A
@@ -22394,6 +22399,7 @@ entozoan:A
 entozoan:N
 entozoic:A
 entozoon:N
+entr'acte:N
 entrails:N.p
 entrain:V
 entrance:N
@@ -22421,7 +22427,6 @@ entropy:N
 entrust:V
 entry:N
 entryway:N
-entr’acte:N
 entwine:V
 enucleate:V
 enucleation:N
@@ -23889,8 +23894,6 @@ eyrie:N
 eyrir:N
 eyry:N
 ezed:N
-e’en:Av
-e’er:Av
 fa:N
 fab:A
 fabian:A
@@ -29241,6 +29244,8 @@ gyve:N
 gyve:V
 gâteau:N,-ux,-us
 ha:I
+ha'p'orth:N
+ha'penny:N
 habanera:N
 haberdasher:N
 haberdashery:N
@@ -29948,8 +29953,6 @@ hazily:Av
 haziness:N
 hazmat:N
 hazy:A
-ha’penny:N
-ha’p’orth:N
 he:Pn
 head:N
 head:V
@@ -30861,7 +30864,7 @@ hive:N
 hive:V
 hivemind:N
 hiya:I
-hm:I,hmm,h’m
+hm:I,hmm,h'm
 ho:I
 ho-hum:A
 hoactzin:N
@@ -35193,8 +35196,8 @@ jacinth:N
 jack:N
 jack:V
 jack-a-lantern:N
+jack-o'-lantern:N
 jack-o-lantern:N
-jack-o’-lantern:N
 jackal:N
 jackanapes:N
 jackass:N
@@ -38719,6 +38722,7 @@ lysozyme:N
 lyssa:N
 lyssavirus:N
 ma:N
+ma'am:N
 maar:N
 mac:N
 macabre:A
@@ -39817,7 +39821,6 @@ mazopathy:N
 mazurka:N
 mazy:A
 mazzard:N
-ma’am:N
 me:Pn
 mead:N
 meadow:N
@@ -40145,6 +40148,7 @@ memorize:V.z
 memorizer:N.z
 memory:N
 memsahib:N
+men's:N
 menace:N
 menace:V
 menacing:A
@@ -40216,7 +40220,6 @@ mentor:V,-rs,-ring,-red
 mentorship:N
 mentum:N
 menu:N
-men’s:N
 meow:N
 meow:V
 mepacrine:N
@@ -43033,6 +43036,8 @@ naïvely:Av
 naïveness:N
 naïvete:N
 naïvety:N
+ne'er:Av
+ne'er-do-well:N
 neandertal:A
 neanderthal:A
 neap:N
@@ -43528,8 +43533,6 @@ next:Av
 next:D
 next:P.t
 nexus:N
-ne’er:Av
-ne’er-do-well:N
 ngultrum:N
 ngwee:N
 niacin:N
@@ -44734,6 +44737,8 @@ nystagmus:N
 nystatin:N
 o:I
 o'clock:Av
+o'er:Av
+o'er:P.t
 oaf:N
 oafish:A
 oafishly:Av
@@ -46656,9 +46661,7 @@ ozokerite:N
 ozone:N
 ozonide:N
 ozonosphere:N
-o’clock:Av
-o’er:Av
-o’er:P.t
+pa'anga:N
 pablum:N
 pabulum:N
 paca:N
@@ -47772,7 +47775,6 @@ payroll:N
 paysheet:N
 payslip:N
 paywall:N
-pa’anga:N
 pea:N
 peace:N
 peaceable:A
@@ -48049,6 +48051,7 @@ penknife:N,-ives
 penlight:N
 penman:N,-men
 penmanship:N
+penn'orth:N
 pennant:N
 pennate:A
 penne:N
@@ -48066,7 +48069,6 @@ pennyroyal:N
 pennyweight:N
 pennywhistle:N
 pennyworth:N
-penn’orth:N
 penoche:N
 penologist:N
 penology:N
@@ -49518,7 +49520,7 @@ pizzicato:A
 pizzicato:Av
 pizzicato:N,-ti
 piñata:N
-pj’s:N.p
+pj's:N.p
 placable:A
 placard:N
 placard:V
@@ -56244,6 +56246,7 @@ rocambole:N
 roccella:N
 rock:N
 rock:V
+rock'n'roll:N
 rockabilly:N
 rockbound:A
 rockchuck:N
@@ -56262,7 +56265,6 @@ rockrose:N
 rockslide:N
 rockweed:N
 rocky:A
-rock’n’roll:N
 rococo:A
 rococo:N
 rod:N
@@ -57768,12 +57770,12 @@ schoolhouse:N
 schooling:N
 schoolish:A
 schoolkid:N
+schoolma'am:N
 schoolman:N,-men
 schoolmarm:N
 schoolmarmish:A
 schoolmaster:N
 schoolmate:N
-schoolma’am:N
 schoolmistress:N
 schoolroom:N
 schoolteacher:N
@@ -61510,6 +61512,9 @@ sottish:A
 sottishly:Av
 sottishness:N
 sou:N
+sou'easter:N
+sou'west:Av
+sou'wester:N
 souari:N
 soubrette:N
 soubriquet:N
@@ -61630,9 +61635,6 @@ southwestwardly:Av
 souvenir:N
 souvlaki:N
 souvlakia:N
-sou’easter:N
-sou’west:Av
-sou’wester:N
 sovereign:A
 sovereign:N
 sovereignty:N
@@ -66673,6 +66675,7 @@ thistledown:N
 thistlelike:A
 thither:Av
 tho:C
+tho':Av
 thole:N
 tholepin:N
 thong:N
@@ -66716,7 +66719,6 @@ thousandfold:A
 thousandfold:Av
 thousandth:A
 thousandth:N
-tho’:Av
 thraldom:N
 thrall:N
 thralldom:N
@@ -74330,7 +74332,7 @@ wiliness:N
 will:N
 will:V
 will:V.a,would,wouldst
-will-o’-the-wisp:N
+will-o'-the-wisp:N
 willet:N
 willful:A
 willfully:Av
@@ -75421,6 +75423,3 @@ zymurgy:N
 œstrogen:N
 œstrogenic:A
 œstrous:A
-’hood:N
-’tween:Av
-’tween:P.t

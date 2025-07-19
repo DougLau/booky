@@ -38,7 +38,7 @@ pub fn make_word(word: &str) -> String {
     let mut w = String::with_capacity(word.len());
     for c in word.chars() {
         if is_apostrophe(c) {
-            w.push('’');
+            w.push('\'');
         } else {
             for cl in c.to_lowercase() {
                 w.push(cl);
