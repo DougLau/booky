@@ -1,6 +1,5 @@
 'hood:N
 'tween:Av
-'tween:P.t
 2D:A
 3D:A
 Africa:N.n
@@ -6654,7 +6653,7 @@ bettong:N
 bettor:N
 betulaceous:A
 between:Av
-between:P
+between:P.t
 betweenbrain:N
 betwixt:Av
 bevatron:N
@@ -18698,6 +18697,7 @@ diehard:N
 dielectric:N
 dielectrolysis:N
 diemaker:N
+diencephalic:A
 diencephalon:N
 diesel:N
 diesinker:N
@@ -65927,6 +65927,7 @@ telemeter:N
 telemetered:A
 telemetry:N
 telemovie:N
+telencephalic:A
 telencephalon:N
 telenovela:N
 teleological:A
@@ -68953,6 +68954,7 @@ tweediness:N
 tweedle:V
 tweedy:A
 tween:N
+tween:P.t
 tweet:N
 tweet:V
 tweeter:N
