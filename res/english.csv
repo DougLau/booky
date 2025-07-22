@@ -2035,6 +2035,7 @@ alkyne:N
 all:A
 all:Av
 all:D
+all:Pn
 allamanda:N
 allantoic:A
 allantoid:A
@@ -3120,6 +3121,7 @@ anosmia:N
 anosmic:A
 another:A
 another:D
+another:Pn
 anovulant:N
 anovulation:N
 anoxemia:N
@@ -3480,18 +3482,23 @@ anxiousness:N
 any:A
 any:Av
 any:D
+any:Pn
 anybody:D
+anybody:Pn
 anyhow:Av
 anymore:Av
 anyone:D
+anyone:Pn
 anyplace:Av
 anything:D
 anything:N
+anything:Pn
 anytime:Av
 anyway:Av
 anyways:Av
 anywhere:Av
 anywhere:D
+anywhere:Pn
 anywise:Av
 anæmia:N
 anæmic:A
@@ -4368,6 +4375,7 @@ arytenoid:N
 as:Av
 as:C
 as:P.t
+as:Pn
 asafetida:N
 asafoetida:N
 asana:N
@@ -4971,6 +4979,7 @@ auditory:A
 augend:N
 auger:N
 aught:N
+aught:Pn
 augite:N
 augitic:A
 augment:N
@@ -6618,9 +6627,8 @@ beige:N
 beigel:N
 being:N
 beingness:N
-bejeezus:I
+bejeezus:I,bejesus
 bejeezus:N
-bejesus:I
 bejesus:N
 bejewel:V
 bejeweled:A
@@ -8449,6 +8457,7 @@ botchy:A
 botfly:N
 both:A
 both:D
+both:Pn
 bother:N
 bother:V
 botheration:N
@@ -11457,6 +11466,7 @@ cerripede:N
 cert:N
 certain:A
 certain:D
+certain:Pn
 certainly:Av
 certainty:N
 certifiable:A
@@ -21446,6 +21456,7 @@ e-mail:V
 each:A
 each:Av
 each:D
+each:Pn
 eager:A
 eager:N
 eagerly:Av
@@ -21910,6 +21921,7 @@ eisegesis:N
 eisteddfod:N
 either:Av
 either:D
+either:Pn
 ejaculate:N
 ejaculate:V
 ejaculation:N
@@ -22730,7 +22742,7 @@ enosis:N
 enough:A
 enough:Av
 enough:D
-enough:N
+enough:Pn
 enounce:V
 enplane:V
 enqueue:V
@@ -23627,14 +23639,18 @@ everting:N
 every:A
 every:D
 everybody:D
+everybody:Pn
 everyday:A
 everydayness:N
 everyman:N,-men
 everyone:D
+everyone:Pn
 everyplace:Av
 everything:D
+everything:Pn
 everywhere:Av
 everywhere:D
+everywhere:Pn
 evict:V
 eviction:N
 evidence:N
@@ -25141,7 +25157,9 @@ feverroot:N
 few:A
 few:D
 few:N
+few:Pn
 fewer:D
+fewer:Pn
 fewest:D
 fewness:N
 fey:A
@@ -29924,8 +29942,6 @@ hallelujah:N
 halliard:N
 hallmark:N
 hallo:V
-halloa:I
-halloo:I
 halloo:N
 halloo:V
 hallow:V
@@ -30648,7 +30664,6 @@ hedonic:A
 hedonism:N
 hedonist:N
 hedonistic:A
-hee-haw:I
 hee-haw:N
 hee-haw:V
 heebie-jeebies:N.p
@@ -30660,7 +30675,7 @@ heedfulness:N
 heedless:A
 heedlessly:Av
 heedlessness:N
-heehaw:I
+heehaw:I,hee-haw
 heel:N
 heel:V
 heelbone:N
@@ -30894,6 +30909,7 @@ heptagonal:A
 heptane:N
 heptathlon:N
 her:D
+her:Pn
 herald:N
 herald:V
 heralded:A
@@ -31268,6 +31284,7 @@ hirsuteness:N
 hirsutism:N
 hirudinean:N
 his:D
+his:Pn
 hispid:A
 hiss:N
 hiss:V
@@ -31431,7 +31448,7 @@ hollandaise:N
 holler:N
 holler:V
 hollering:N
-hollo:I
+hollo:I,hallo,halloo,halloa
 hollo:N
 hollo:V
 holloa:N
@@ -32206,8 +32223,7 @@ hut:N
 hutch:N
 hutment:N
 hutzpah:N
-huzza:I
-huzzah:I
+huzzah:I,-a
 huzzah:N
 hyacinth:N
 hyalin:N
@@ -35630,6 +35646,7 @@ itinerate:V
 itineration:N
 itraconazole:N
 its:D
+its:Pn
 itself:Pn
 itsy-bitsy:A
 itty-bitty:A
@@ -39803,6 +39820,7 @@ manus:N
 manuscript:N
 many:A,more,most
 many:D
+many:Pn
 manzanita:N
 manège:N
 manœuver:N
@@ -41419,6 +41437,7 @@ mindlessly:Av
 mindlessness:N
 mindset:N
 mine:N
+mine:Pn
 mine:V
 mined:A
 minefield:N
@@ -42469,6 +42488,7 @@ mosstone:A
 mossy:A
 most:Av
 most:D
+most:Pn
 mostaccioli:N
 mostly:Av
 mot:N
@@ -42655,7 +42675,7 @@ muazzin:N
 much:A,more,most
 much:Av
 much:D
-much:N
+much:Pn
 muchness:N
 muciferous:A
 mucilage:N
@@ -43085,6 +43105,7 @@ muzzle:V
 muzzler:N
 muzzy:A
 my:D
+my:Pn
 myalgia:N
 myalgic:A
 myasthenia:N
@@ -43452,6 +43473,7 @@ naturopath:N
 naturopathy:N
 nauch:N
 naught:N
+naught:Pn
 naughtily:Av
 naughtiness:N
 naughty:A
@@ -43671,6 +43693,7 @@ neighbourliness:N
 neighbourly:A
 neither:Av
 neither:D
+neither:Pn
 nekton:N
 nelfinavir:N
 nelson:N
@@ -44199,6 +44222,7 @@ noblewoman:N,-men
 nobly:Av
 nobody:D
 nobody:N
+nobody:Pn
 nocent:A
 nociceptive:A
 nock:V
@@ -44442,6 +44466,7 @@ none:A
 none:Av
 none:D
 none:N
+none:Pn
 nonechoic:A
 noneducational:A
 noneffective:A
@@ -44936,6 +44961,7 @@ noteworthy:A
 nothing:Av
 nothing:D
 nothing:N
+nothing:Pn
 nothingism:N
 nothingness:N
 nothosaur:N
@@ -44966,6 +44992,7 @@ notwithstanding:C
 notwithstanding:P
 nougat:N
 nought:N
+nought:Pn
 noughties:N.p
 noumenon:N
 noun:N
@@ -45800,6 +45827,7 @@ oncoming:N
 one:A
 one:D
 one:N
+one:Pn
 oneiric:A
 oneirism:N
 oneiromancer:N
@@ -46358,7 +46386,9 @@ otalgia:N
 otc:A
 other:A
 other:N
+other:Pn
 other:V
+othering:N
 otherness:N
 otherwise:A
 otherwise:Av
@@ -46392,6 +46422,7 @@ ought:V.a
 ouguiya:N
 ounce:N
 our:D
+our:Pn
 ouroboros:N.p
 ours:Pn
 ourself:Pn,-lves
@@ -57402,7 +57433,6 @@ saguaro:N
 sahib:N
 sahuaro:N
 said:A
-said:D
 saiga:N
 sail:N
 sail:V
@@ -59388,6 +59418,7 @@ sever:V
 severable:A
 several:A
 several:D
+several:Pn
 severality:N
 severalize:V.z
 severally:Av
@@ -61795,11 +61826,14 @@ sombrero:N
 some:A
 some:Av
 some:D
+some:Pn
 somebody:D
 somebody:N
+somebody:Pn
 someday:Av
 somehow:Av
 someone:N
+someone:Pn
 someplace:Av
 somersault:N
 somersault:V
@@ -61810,6 +61844,7 @@ somesthesia:N
 somesthesis:N
 something:D
 something:N
+something:Pn
 sometime:A
 sometime:Av
 sometimes:Av
@@ -64573,7 +64608,9 @@ succuss:V
 succussion:N
 such:A
 such:Av
+such:Pn
 suchlike:A
+suchlike:Pn
 suck:N
 suck:V
 sucker:N
@@ -64615,7 +64652,6 @@ suffering:N
 suffice:V
 sufficiency:N
 sufficient:A
-sufficient:D
 sufficiently:Av
 suffix:N
 suffix:V
@@ -66850,7 +66886,11 @@ thanklessly:Av
 thanklessness:N
 thanks:N.p
 thanksgiving:N
-that:D
+that:A
+that:Av
+that:C
+that:D,those
+that:Pn,those
 thatch:N
 thatch:V
 thatcher:N
@@ -66859,7 +66899,9 @@ thaw:N
 thaw:V
 thawed:A
 thawing:N
+the:Av
 the:D
+the:Pn
 theanthropism:N
 theater:N
 theatergoer:N
@@ -66878,6 +66920,7 @@ thee:Pn
 theelin:N
 theft:N
 their:D
+their:Pn
 theirs:Pn
 theirself:Pn,-lves
 theism:N
@@ -66941,7 +66984,7 @@ therapsid:N
 therapy:N
 there:Av
 there:N
-there:P.i
+there:Pn
 thereabout:Av
 thereabouts:Av
 thereafter:Av
@@ -67025,6 +67068,7 @@ theropod:N
 thesaural:A
 thesaurus:N,-ri,-ses
 these:D
+these:Pn
 thesis:N
 thespian:A
 thespian:N
@@ -67126,7 +67170,9 @@ thirtieth:A
 thirtieth:N
 thirty:A
 thirty:N
+this:Av
 this:D
+this:Pn
 thistle:N
 thistledown:N
 thistlelike:A
@@ -67157,7 +67203,6 @@ thoroughly:Av
 thoroughness:N
 thoroughwort:N
 thortveitite:N
-those:D
 thou:N
 thou:Pn
 though:Av
@@ -67356,6 +67401,7 @@ thwarting:A
 thwarting:N
 thwartwise:A
 thy:D
+thy:Pn
 thylacine:N
 thyme:N
 thymidine:N
@@ -72448,6 +72494,7 @@ urus:N
 uræmia:N
 uræmic:A
 us:D
+us:Pn
 usability:N
 usable:A
 usableness:N
@@ -72747,10 +72794,13 @@ variolic:A
 variolization:N
 variolous:A
 variometer:N
+variorum:A
 variorum:N
 various:A
 various:D
+various:Pn
 variously:Av
+variousness:N
 varix:N
 varlet:N
 varment:N
@@ -74130,6 +74180,7 @@ wayward:A
 waywardness:N
 wazoo:N
 we:D
+we:Pn
 weak:A
 weaken:V
 weakened:A
@@ -74395,11 +74446,13 @@ wharf:N,-rves,-fs
 wharf:V
 wharfage:N
 what:D
+what:Pn
 whataboutism:N
 whatchamacallit:N
 whatever:A
 whatever:Av
 whatever:D
+whatever:Pn
 whatnot:N
 whatsherface:N
 whatshername:N
@@ -74491,11 +74544,15 @@ wherewithal:N
 wherry:N
 whet:V
 whether:C
+whether:Pn
 whetstone:N
 whew:I
 whey:N
 which:D
+which:Pn
 whichever:D
+whichever:Pn
+whichsoever:Pn
 whicker:N
 whicker:V
 whid:V
@@ -74665,6 +74722,7 @@ wholly:Av
 whom:Pn
 whomever:Pn
 whomp:V
+whomso:Pn
 whomsoever:Pn
 whoo:I
 whoo:N
@@ -74693,6 +74751,9 @@ whorled:A
 whorlywort:N
 whortleberry:N
 whose:D
+whose:Pn
+whosesoever:Pn
+whosever:Pn
 whoso:Pn
 whosoever:Pn
 whup:V
@@ -75110,7 +75171,6 @@ wont:N
 wonted:A
 wonton:N
 woo:V
-woo-hoo:I
 wood:N
 woodbine:N
 woodblock:N
@@ -75159,7 +75219,7 @@ woodyard:N
 wooer:N
 woof:N
 woofer:N
-woohoo:I
+woohoo:I,woo-hoo
 wooing:N
 wool:N
 wooled:A
@@ -75635,6 +75695,7 @@ yolk:N
 yolo:I
 yon:A
 yon:Av
+yon:Pn
 yonder:A
 yonder:Av
 yonks:N.p
@@ -75649,6 +75710,7 @@ youngness:N
 youngster:N
 younker:N
 your:D
+your:Pn
 yourn:Pn
 yours:Pn
 yourself:Pn,-lves
