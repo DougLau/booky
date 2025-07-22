@@ -177,7 +177,7 @@ fn decode_irregular(lemma: &str, form: &str) -> Result<String, ()> {
             }
             // check for variant spelling of suffix joiner
             if let Some(alt) = deunicode_char(ch) {
-                if alt.chars().nth(0) != Some(ch) {
+                if !alt.starts_with(ch) {
                     if let Some((base, _ending)) = lemma.rsplit_once(alt) {
                         let mut f =
                             String::with_capacity(base.len() + suffix.len());
