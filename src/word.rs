@@ -148,7 +148,7 @@ impl TryFrom<&str> for Lexeme {
         let attr = a.to_string();
         let mut irregular_forms = Vec::new();
         for form in vals {
-            let form = decode_irregular(&lemma, form);
+            let form = decode_irregular(&lemma, form)?;
             let form = encode_irregular(&lemma, &form);
             irregular_forms.push(form);
         }
@@ -160,24 +160,40 @@ impl TryFrom<&str> for Lexeme {
             irregular_forms,
             forms,
         };
-        word.build_inflected_forms();
+        word.build_inflected_forms()?;
         Ok(word)
     }
 }
 
 /// Decode an irregular word form
-fn decode_irregular(lemma: &str, form: &str) -> String {
+fn decode_irregular(lemma: &str, form: &str) -> Result<String, ()> {
     if let Some(suffix) = form.strip_prefix('-') {
-        if let Some(c) = suffix.chars().next() {
-            if let Some((base, _ending)) = lemma.rsplit_once(c) {
+        if let Some(ch) = suffix.chars().next() {
+            if let Some((base, _ending)) = lemma.rsplit_once(ch) {
                 let mut f = String::with_capacity(base.len() + suffix.len());
                 f.push_str(base);
                 f.push_str(suffix);
-                return f;
+                return Ok(f);
             }
+            // check for variant spelling of suffix joiner
+            if let Some(alt) = deunicode_char(ch) {
+                if alt.chars().nth(0) != Some(ch) {
+                    if let Some((base, _ending)) = lemma.rsplit_once(alt) {
+                        let mut f =
+                            String::with_capacity(base.len() + suffix.len());
+                        let mut suffix = suffix.chars();
+                        suffix.next(); // skip joiner character
+                        f.push_str(base);
+                        f.push_str(alt);
+                        f.push_str(suffix.as_str());
+                        return Ok(f);
+                    }
+                }
+            }
+            return Err(());
         }
     }
-    form.into()
+    Ok(form.into())
 }
 
 /// Encode an irregular word form
@@ -285,10 +301,11 @@ impl Lexeme {
     }
 
     /// Build inflected word forms
-    fn build_inflected_forms(&mut self) {
+    fn build_inflected_forms(&mut self) -> Result<(), ()> {
         for variant in self.variant_spellings() {
-            self.build_inflected(&variant);
+            self.build_inflected(&variant)?;
         }
+        Ok(())
     }
 
     /// Get all variant spellings of the lemma
@@ -298,7 +315,7 @@ impl Lexeme {
         for ch in self.lemma.chars() {
             if let Some(alt) = deunicode_char(ch) {
                 let mut more = Vec::new();
-                if !(alt.len() == 1 && alt.chars().nth(0) == Some(ch)) {
+                if alt.chars().nth(0) != Some(ch) {
                     for variant in &variants {
                         let mut v = variant.to_string();
                         v.push_str(alt);
@@ -329,19 +346,20 @@ impl Lexeme {
     }
 
     /// Build inflected word forms
-    fn build_inflected(&mut self, lemma: &str) {
+    fn build_inflected(&mut self, lemma: &str) -> Result<(), ()> {
         self.forms.push(lemma.to_string());
         if self.irregular_forms.is_empty() {
             self.forms
                 .extend(self.word_class.build_regular_forms(self, lemma));
         } else {
             for form in &self.irregular_forms {
-                let form = decode_irregular(lemma, form);
+                let form = decode_irregular(lemma, form)?;
                 if form != lemma {
                     self.forms.push(form);
                 }
             }
         }
+        Ok(())
     }
 }
 
@@ -505,29 +523,28 @@ mod test {
     #[test]
     fn variants() {
         let lex = Lexeme::try_from("café:N").unwrap();
-        assert_eq!(lex.variant_spellings(), vec![
-            "café",
-            "cafe",
-        ]);
+        assert_eq!(lex.variant_spellings(), vec!["café", "cafe",]);
         let lex = Lexeme::try_from("façade:N").unwrap();
-        assert_eq!(lex.variant_spellings(), vec![
-            "façade",
-            "facade",
-        ]);
+        assert_eq!(lex.variant_spellings(), vec!["façade", "facade",]);
+        let lex = Lexeme::try_from("appliqué:V,-és,-éing,-éd").unwrap();
+        assert_eq!(lex.variant_spellings(), vec!["appliqué", "applique"]);
         let lex = Lexeme::try_from("anæsthetize:V.z").unwrap();
-        assert_eq!(lex.variant_spellings(), vec![
-            "anæsthetize",
-            "anaesthetize",
-            "anesthetize",
-            "anæsthetise",
-            "anaesthetise",
-            "anesthetise",
-        ]);
+        assert_eq!(
+            lex.variant_spellings(),
+            vec![
+                "anæsthetize",
+                "anaesthetize",
+                "anesthetize",
+                "anæsthetise",
+                "anaesthetise",
+                "anesthetise",
+            ]
+        );
     }
 
     #[test]
     fn irregular() {
-        let a = decode_irregular("addendum", "-da");
+        let a = decode_irregular("addendum", "-da").unwrap();
         let form = encode_irregular("addendum", &a);
         assert_eq!(form, "-da");
     }
