@@ -70,6 +70,9 @@ struct KindCmd {
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "lex")]
 struct LexCmd {
+    /// word classes (A,Av,C,D,I,N,P,Pn,V)
+    #[argh(option, short = 'c')]
+    classes: Option<String>,
     /// list all word forms
     #[argh(switch, short = 'f')]
     forms: bool,
@@ -178,10 +181,32 @@ impl LexCmd {
         } else {
             // into_iter() sorts the entries
             for word in lex::builtin().clone().into_iter() {
-                println!("{word:?}");
+                if self.display_class(word.word_class()) {
+                    println!("{word:?}");
+                }
             }
         }
         Ok(())
+    }
+
+    /// Check if a word class should be displayed
+    fn display_class(&self, wc: WordClass) -> bool {
+        match &self.classes {
+            Some(classes) => {
+                for cl in classes.split(',') {
+                    match WordClass::try_from(cl) {
+                        Ok(cl) => {
+                            if cl == wc {
+                                return true;
+                            }
+                        }
+                        Err(_) => return false,
+                    }
+                }
+                false
+            }
+            None => true,
+        }
     }
 
     /// Lookup a word form

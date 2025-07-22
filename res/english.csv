@@ -2068,7 +2068,6 @@ allele:N
 allelic:A
 allelomorph:N
 allelomorphic:A
-alleluia:I
 allemande:N
 allergen:N
 allergenic:A
@@ -5856,6 +5855,7 @@ baneberry:N
 baneful:A
 banefully:Av
 bang:Av
+bang:I
 bang:N
 bang:V
 banger:N
@@ -8261,9 +8261,11 @@ bonxie:N
 bony:A
 bonyness:N
 bonzer:A
+boo:I
 boo:N
 boo:V
 boo-boo:N
+boo-hoo:I
 boo-hoo:N
 boo-hoo:V
 boob:N
@@ -8277,6 +8279,7 @@ boogie:N
 boogie:V
 boogie-woogie:N
 boogieman:N,-men
+boohoo:I
 boohoo:N
 boohoo:V
 book:N
@@ -8788,6 +8791,7 @@ bravely:Av
 braveness:N
 bravery:N
 braving:N
+bravo:I
 bravo:N
 bravo:V
 bravura:N
@@ -29938,6 +29942,7 @@ halitosis:N
 halitus:N
 hall:N
 hallah:N
+hallelujah:I,alleluia
 hallelujah:N
 halliard:N
 hallmark:N
@@ -31097,6 +31102,7 @@ hexestrol:N
 hexose:N
 hey:I
 heyday:N
+hi:I
 hi:N
 hi-fi:A
 hi-fi:N
@@ -74359,6 +74365,7 @@ welfarist:A
 welkin:N
 well:A,better,best
 well:Av
+well:I
 well:N
 well:V
 wellbeing:N
@@ -75373,6 +75380,7 @@ wounded:N
 wounding:A
 wounding:N
 woven:A
+wow:I
 wow:N
 wow:V
 wrack:N
