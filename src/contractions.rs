@@ -5,6 +5,7 @@ enum Contraction {
     Full(&'static str, &'static str, &'static str),
     Prefix(&'static str, &'static str),
     Suffix(&'static str, &'static str),
+    SuffixReplacement(&'static str, &'static str),
 }
 
 /// Some contractions
@@ -33,17 +34,20 @@ const CONTRACTIONS: &[Contraction] = &[
     Contraction::Full("m’lord", "my", "lord"),
     Contraction::Suffix("’d", "would"),
     Contraction::Suffix("’s", ""), // possessive
+    Contraction::SuffixReplacement("n’", "ng"),
     Contraction::Suffix("’", ""),  // possessive
     Contraction::Prefix("’", "’"), // nested quote
 ];
 
 impl Contraction {
     /// Try to expand the contraction
-    fn try_expand<'a>(&self, word: &'a str) -> Option<(&'a str, &'a str)> {
+    fn try_expand(&self, words: &mut Vec<String>, word: &str) -> bool {
         match self {
             Contraction::Full(c, a, b) => {
                 if equals_contraction(c, word) {
-                    return Some((a, b));
+                    words.push(a.to_string());
+                    words.push(b.to_string());
+                    return true;
                 }
             }
             Contraction::Prefix(p, ex) => {
@@ -51,7 +55,9 @@ impl Contraction {
                 if let Some((i, _c)) = word.char_indices().nth(len) {
                     if let Some((a, b)) = word.split_at_checked(i) {
                         if equals_contraction(p, a) {
-                            return Some((b, ex));
+                            words.push(b.to_string());
+                            words.push(ex.to_string());
+                            return true;
                         }
                     }
                 }
@@ -61,13 +67,28 @@ impl Contraction {
                 if let Some((i, _c)) = word.char_indices().rev().nth(len) {
                     if let Some((a, b)) = word.split_at_checked(i) {
                         if equals_contraction(s, b) {
-                            return Some((ex, a));
+                            words.push(ex.to_string());
+                            words.push(a.to_string());
+                            return true;
+                        }
+                    }
+                }
+            }
+            Contraction::SuffixReplacement(s, ex) => {
+                let len = s.chars().count() - 1;
+                if let Some((i, _c)) = word.char_indices().rev().nth(len) {
+                    if let Some((a, b)) = word.split_at_checked(i) {
+                        if equals_contraction(s, b) {
+                            let mut a = a.to_string();
+                            a.push_str(ex);
+                            words.push(a.to_string());
+                            return true;
                         }
                     }
                 }
             }
         }
-        None
+        false
     }
 }
 
@@ -87,11 +108,11 @@ fn equals_contraction(part: &str, word: &str) -> bool {
 }
 
 /// Split contractions
-pub fn split(word: &str) -> Vec<&str> {
-    let mut words = vec![word];
+pub fn split(word: &str) -> Vec<String> {
+    let mut words = vec![word.to_string()];
     let mut ex = Vec::with_capacity(2);
     while let Some(word) = words.pop() {
-        if let Some(word) = split_contraction(&mut words, word) {
+        if !split_contraction(&mut words, &word) {
             ex.push(word);
         }
     }
@@ -99,16 +120,11 @@ pub fn split(word: &str) -> Vec<&str> {
 }
 
 /// Split one contraction
-fn split_contraction<'a>(
-    words: &mut Vec<&'a str>,
-    word: &'a str,
-) -> Option<&'a str> {
+fn split_contraction(words: &mut Vec<String>, word: &str) -> bool {
     for con in CONTRACTIONS {
-        if let Some(ex) = con.try_expand(word) {
-            words.push(ex.0);
-            words.push(ex.1);
-            return None;
+        if con.try_expand(words, word) {
+            return true;
         }
     }
-    Some(word)
+    false
 }

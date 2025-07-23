@@ -249,7 +249,7 @@ where
             let mut kinds = Vec::new();
             for w in contractions::split(word) {
                 if !w.is_empty() {
-                    let k = self.word_kind(w);
+                    let k = self.word_kind(&w);
                     if k == Kind::Unknown {
                         return Kind::Unknown;
                     }
