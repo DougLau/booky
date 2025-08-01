@@ -481,6 +481,8 @@ acarpous:A
 acarus:N,-ri
 acaryote:N
 acatalectic:A
+acatalectic:N
+acatalepsy:N
 acataphasia:N
 acathexia:N
 acathexis:N
@@ -1070,6 +1072,7 @@ adjective:N
 adjectively:Av
 adjoin:V
 adjoining:A
+adjoint:N
 adjourn:V
 adjournment:N
 adjudge:V
@@ -2716,6 +2719,8 @@ anaphylaxis:N
 anaplasia:N
 anaplasmosis:N
 anaplastic:A
+anaplastologist:N
+anaplastology:N
 anaplasty:N
 anapsid:N
 anapæst:N
@@ -7132,6 +7137,8 @@ bigoted:A
 bigotry:N
 bigram:N
 bigwig:N
+bijection:N
+bijective:A
 bijou:A
 bijou:N,-us,-ux
 bike:N
@@ -9247,6 +9254,7 @@ brute:N
 brutish:A
 brutishly:Av
 brutishness:N
+bruv:N
 bruxism:N
 bryanthus:N
 bryony:N
@@ -10978,11 +10986,10 @@ cataleptic:A
 cataleptic:N
 catalexis:N
 catalog:N
-catalog:V
+catalog:V,-gs,-ging,-ged
 cataloger:N
 catalogue:N
-catalogue:V
-catalogued:A
+catalogue:V,-es,-uing,-ed
 cataloguer:N
 catalpa:N
 catalufa:N
@@ -18939,6 +18946,8 @@ devout:A
 devoutly:Av
 devoutness:N
 dew:N
+dewax:V
+dewaxable:A
 dewberry:N
 dewclaw:N
 dewdrop:N
@@ -21159,6 +21168,7 @@ dualism:N
 dualist:N
 dualistic:A
 duality:N
+dually:Av
 dub:N
 dub:V
 dubber:N
@@ -23183,6 +23193,7 @@ equivalence:N
 equivalency:N
 equivalent:A
 equivalent:N
+equivalently:Av
 equivocal:A
 equivocally:Av
 equivocalness:N
@@ -24815,6 +24826,8 @@ faunally:Av
 faunistic:A
 faunistically:Av
 fauteuil:N
+fauve:A
+fauve:N
 fauvism:N
 fauvist:N
 faux:A
@@ -26079,6 +26092,7 @@ fluoroboride:N
 fluorocarbon:N
 fluorochrome:N
 fluoroform:N
+fluoroquinolone:N
 fluoroscope:N
 fluoroscopic:A
 fluoroscopically:Av
@@ -28536,6 +28550,7 @@ glycerole:N
 glycerolize:V.z
 glyceryl:N
 glycine:N
+glycinergic:A
 glycogen:N
 glycogenesis:N
 glycogenic:A
@@ -30975,6 +30990,7 @@ herewith:Av
 herewith:P.i
 heritable:A
 heritage:N
+heritance:N
 heritor:N
 herm:N
 hermaphrodism:N
@@ -31052,6 +31068,9 @@ heterologic:A
 heterological:A
 heterologous:A
 heterology:N
+heteromer:N
+heteromeric:A
+heteromerous:A
 heterometabolic:A
 heterometabolous:A
 heteronomous:A
@@ -31576,6 +31595,8 @@ homocercal:A
 homochromatic:A
 homocyclic:A
 homoecious:A
+homoeoteleuton:N
+homoeotopy:N
 homoerotic:A
 homoeroticism:N
 homogenate:N
@@ -31619,6 +31640,8 @@ homospory:N
 homostylic:A
 homostylous:A
 homothermic:A
+homotopic:A
+homotopy:N
 homozygosity:N
 homozygous:A
 homunculus:N,-li
@@ -33695,6 +33718,7 @@ increment:N
 incremental:A
 incrementalism:N
 incrementalist:N
+incrementally:Av
 incriminate:V
 incriminating:A
 incriminatingly:Av
@@ -34348,6 +34372,7 @@ inject:V
 injectable:A
 injectant:N
 injection:N
+injective:A
 injector:N
 injudicious:A
 injudiciously:Av
@@ -34447,6 +34472,7 @@ inorganically:Av
 inorganization:N
 inosculate:V
 inosculation:N
+inosilicate:N
 inositol:N
 inpatient:N
 inpour:N
@@ -43821,6 +43847,7 @@ nervus:N
 nervy:A
 nescience:N
 nescient:A
+nesosilicate:N
 ness:N
 nest:N
 nest:V
@@ -43938,6 +43965,7 @@ neurotically:Av
 neuroticism:N
 neurotoxic:A
 neurotoxin:N
+neurotransmission:N
 neurotransmitter:N
 neurotropic:A
 neurotropism:N
@@ -46103,7 +46131,7 @@ orb:N
 orbicular:A
 orbiculate:A
 orbit:N
-orbit:V
+orbit:V,-ts,-ted,-ting
 orbital:A
 orbital:N
 orbitale:N
@@ -46299,6 +46327,7 @@ orthopædics:N.p
 orthopædist:N
 orthorhombic:A
 orthoscope:N
+orthosilicate:N
 orthostatic:A
 orthotropous:A
 ortolan:N
@@ -46980,6 +47009,7 @@ oversized:A
 overskirt:N
 oversleep:V,-ps,-ping,-lept
 oversolicitous:A
+oversoul:N
 overspecialization:N.z
 overspecialize:V.z
 overspend:V,-ds,-ding,-nt
@@ -48370,6 +48400,7 @@ pedagogy:N
 pedal:A
 pedal:N
 pedal:V
+pedalboard:N
 pedaler:N
 pedaller:N
 pedalo:N
@@ -48586,10 +48617,12 @@ pentad:N
 pentaerythritol:N
 pentagon:N
 pentagonal:A
+pentagonally:Av
 pentagram:N
 pentahedral:A
 pentahedron:N,-ra,-ns
 pentail:N
+pentamer:N
 pentamerous:A
 pentameter:N
 pentangular:A
@@ -49499,6 +49532,7 @@ phylloclade:N
 phyllode:N
 phyllodial:A
 phylloquinone:N
+phyllosilicate:N
 phylogenesis:N
 phylogenetic:A
 phylogenetically:Av
@@ -51695,6 +51729,8 @@ preoccupied:A
 preoccupy:V
 preoperative:A
 preordain:V
+preorder:N
+preorder:V
 preordination:N
 preowned:A
 prep:N
@@ -52505,6 +52541,7 @@ proprioception:N
 proprioceptive:A
 proprioceptor:N
 proprionamide:N
+proprium:N,-ia
 propulsion:N
 propulsive:A
 propyl:N
@@ -54037,6 +54074,7 @@ rake:V
 rakish:A
 rakishly:Av
 rakishness:N
+raku:N
 rale:N
 rallentando:A
 rallentando:Av
@@ -56140,6 +56178,8 @@ returnable:A
 returnee:N
 returner:N
 returning:A
+retweet:N
+retweet:V
 reunification:N
 reunify:V
 reunion:N
@@ -56732,6 +56772,7 @@ robotic:N
 robotize:V
 robotlike:A
 robust:A
+robusta:N
 robustious:A
 robustly:Av
 robustness:N
@@ -60251,6 +60292,7 @@ sidecar:N
 sidekick:N
 sidelight:N
 sideline:N
+sideline:V
 sideload:V
 sidelong:A
 sidelong:Av
@@ -61029,6 +61071,7 @@ slippy:A
 slipshod:A
 slipstick:N
 slipstream:N
+slipware:N
 slipway:N
 slit:N
 slit:V
@@ -61980,6 +62023,7 @@ sorghum:N
 sorgo:N
 sororal:A
 sorority:N
+sorosilicate:N
 sorption:N
 sorrel:A
 sorrel:N
@@ -65172,6 +65216,8 @@ surgical:A
 surgically:Av
 surging:A
 suricate:N
+surjection:N
+surjective:A
 surlily:Av
 surliness:N
 surly:A
@@ -72474,6 +72520,7 @@ urination:N
 urinator:N
 urine:N
 urn:N
+urnfield:N
 urobilin:N
 urobilinogen:N
 urocele:N
@@ -73034,6 +73081,7 @@ verbatim:Av
 verbena:N
 verbiage:N
 verbify:V
+verbigeration:N
 verbolatry:N
 verbose:A
 verbosely:Av
