@@ -718,7 +718,7 @@ achondritic:A
 achondroplasia:N
 achondroplastic:A
 achondroplasty:N
-achoo:I,ahchoo
+achoo:I,ahchoo,atishoo
 achromasia:N
 achromatic:A
 achromatin:N
@@ -760,6 +760,7 @@ acinic:A
 acinose:A
 acinous:A
 acinus:N
+ack:I
 ack-ack:N
 ackee:N
 acker:N
@@ -2181,6 +2182,7 @@ alocasia:N
 aloe:N
 aloft:Av
 aloft:P
+aloha:I
 aloha:N
 alone:A
 alone:Av
@@ -4111,7 +4113,7 @@ argentine:N
 argentinosaur:N
 argentite:N
 argentous:A
-argh:I
+argh:I,aargh
 argil:N
 argillaceous:A
 argillite:N
@@ -4799,7 +4801,6 @@ athodyd:N
 athrill:A
 athwart:Av
 atilt:A
-atishoo:I
 atlas:N
 atmometer:N
 atmosphere:N
@@ -4852,6 +4853,7 @@ atrophied:A
 atrophy:N
 atrophy:V
 atropine:N
+attaboy:I
 attach:V
 attachable:A
 attache:N
@@ -4861,6 +4863,7 @@ attack:N
 attack:V
 attacker:N
 attacking:A
+attagirl:I
 attain:V
 attainability:N
 attainable:A
@@ -5289,7 +5292,7 @@ avower:N
 avulse:V
 avulsion:N
 avuncular:A
-aw:I
+aw:I,aww
 await:V
 awaited:A
 awake:A
@@ -5375,6 +5378,7 @@ ayahuasca:N
 ayapana:N
 ayatollah:N
 aye:Av
+aye:I
 aye:N
 ayin:N
 azadirachtin:N
@@ -5622,6 +5626,7 @@ baculiform:A
 bad:A
 bad:Av
 bad:N
+bada-bing:I
 badass:A
 badass:N
 baddeleyite:N
@@ -7258,6 +7263,7 @@ binge:N
 binge:V
 binger:N
 bingle:N
+bingo:I
 bingo:N
 binman:N,-men
 binnacle:N
@@ -8272,7 +8278,7 @@ boo:I
 boo:N
 boo:V
 boo-boo:N
-boo-hoo:I
+boo-hoo:I,boohoo
 boo-hoo:N
 boo-hoo:V
 boob:N
@@ -8286,7 +8292,6 @@ boogie:N
 boogie:V
 boogie-woogie:N
 boogieman:N,-men
-boohoo:I
 boohoo:N
 boohoo:V
 book:N
@@ -8372,6 +8377,7 @@ bootmaker:N
 bootstrap:N
 bootstrap:V
 booty:N
+booyah:I,boo-yah,-a
 booyong:N
 booze:N
 booze:V
@@ -9207,7 +9213,7 @@ browse:N
 browse:V
 browser:N
 browsing:N
-brr:I
+brr:I,brrr
 brucellosis:N
 brucine:N
 bruin:N
@@ -11893,6 +11899,7 @@ cheerleader:N
 cheerless:A
 cheerlessly:Av
 cheerlessness:N
+cheers:I
 cheery:A
 cheese:N
 cheese:V
@@ -14542,6 +14549,7 @@ congou:N
 congrats:I
 congratulate:V
 congratulation:N
+congratulations:I
 congratulatory:A
 congregant:N
 congregate:A
@@ -15912,6 +15920,7 @@ covid:N
 coville:N
 cow:N
 cow:V
+cowabunga:I
 cowage:N
 coward:N
 cowardice:N
@@ -23698,7 +23707,7 @@ evolutionism:N
 evolutionist:A
 evolutionist:N
 evolve:V
-ew:I
+ew:I,eww
 ewe:N
 ewer:N
 ex:A
@@ -25243,10 +25252,12 @@ fictive:A
 ficus:N
 fiddle:N
 fiddle:V
+fiddledeedee:I,-lededee,-le-de-dee
 fiddlehead:N
 fiddleneck:N
 fiddler:N
 fiddlestick:N
+fiddlesticks:I
 fiddling:A
 fiddly:A
 fidelity:N
@@ -26384,6 +26395,7 @@ fordable:A
 fording:N
 fore:A
 fore:Av
+fore:I
 fore:N
 forearm:N
 forearm:V
@@ -27427,6 +27439,7 @@ gadgetry:N
 gadoid:N
 gadolinite:N
 gadolinium:N
+gadzooks:I
 gaff:N
 gaffe:N
 gaffer:N
@@ -27831,6 +27844,7 @@ gearstick:N
 geartrain:N
 gearwheel:N
 gecko:N
+gee:I
 gee:N
 gee:V
 geebung:N
@@ -28159,6 +28173,7 @@ giblet:N
 giddily:Av
 giddiness:N
 giddy:A
+giddy-up:I,-yup,-yap,-dap
 gidgee:N
 gift:N
 gift:V
@@ -28744,6 +28759,7 @@ good-tempered:A
 good-temperedly:Av
 good-temperedness:N
 goodby:N
+goodbye:I,-d-bye,-y,-d-by
 goodbye:N
 goodish:A
 goodly:A
@@ -30713,6 +30729,7 @@ hegemonic:A
 hegemony:N
 hegira:N
 heifer:N
+heigh-ho:I
 height:N
 heighten:V
 heightening:A
@@ -31371,9 +31388,10 @@ hive:N
 hive:V
 hivemind:N
 hiya:I
-hm:I,hmm,h'm
+hm:I,hmm,hmmm,h'm
 ho:I
 ho-hum:A
+ho-hum:I
 hoactzin:N
 hoagie:N
 hoagy:N
@@ -31750,6 +31768,8 @@ hoopla:N
 hoopoe:N
 hoopoo:N
 hoopskirt:N
+hoorah:N
+hooray:I,hurrah,hurray
 hooray:N
 hoosegow:N
 hoosgow:N
@@ -32005,6 +32025,7 @@ how:Av
 howbeit:Av
 howbeit:C
 howdah:N
+howdy:I
 howdy:N
 however:Av
 howitzer:N
@@ -32110,6 +32131,7 @@ humbling:A
 humbly:Av
 humbug:N
 humbug:V
+humbuggery:N
 humdinger:N
 humdrum:A
 humectant:N
@@ -32164,7 +32186,7 @@ hump:V
 humpback:N
 humpbacked:A
 humped:A
-humph:I
+humph:I,hmph
 humph:V
 humus:N
 hunch:N
@@ -32716,6 +32738,7 @@ icicle:N
 icily:Av
 iciness:N
 icing:N
+ick:I
 icky:A
 icon:N
 iconic:A
@@ -35851,6 +35874,7 @@ jealously:Av
 jealousy:N
 jean:N
 jeep:N
+jeepers:I
 jeer:N
 jeer:V
 jeerer:N
@@ -38837,6 +38861,7 @@ lordolatry:N
 lordosis:N
 lordotic:A
 lordship:N
+lordy:I
 lore:N
 lorgnette:N
 lorica:N
@@ -41896,6 +41921,8 @@ mizzen:N
 mizzenmast:N
 mizzle:N
 mizzle:V
+mm:I,mmm
+mm-hmm:I,-hm
 mnemonic:A
 mnemonic:N
 mnemonically:Av
@@ -45703,7 +45730,7 @@ ohmage:N
 ohmic:A
 ohmmeter:N
 oho:I
-oi:I
+oi:I,oy
 oik:N
 oil:N
 oil:V
@@ -45930,7 +45957,7 @@ oomph:N
 oophorectomy:N
 oophoritis:N
 oops:I
-oopsy:I
+oopsie:I,-sy
 oosphere:N
 oospore:N
 ootid:N
@@ -50959,6 +50986,7 @@ pooch:N
 pooch:V
 pood:N
 poodle:N
+poof:I
 poof:N
 pooh:I
 pooh-bah:N
@@ -60006,6 +60034,7 @@ shogun:N
 shogunate:N
 shoji:N
 shonky:A
+shoo:I
 shoo:V
 shoofly:N
 shook:N
@@ -74399,6 +74428,7 @@ weisenheimer:N
 weka:N
 welcher:N
 welcome:A
+welcome:I
 welcome:N
 welcome:V
 welcomed:A
@@ -74752,7 +74782,7 @@ whizz:N
 whizz:V
 whizzbang:N
 who:Pn
-whoa:I
+whoa:I,woah
 whodunit:N
 whoever:Pn
 whole:A
@@ -75784,7 +75814,7 @@ ytterbium:N
 yttrium:N
 yuan:N
 yucca:N
-yuck:I
+yuck:I,yuk
 yuck:N
 yucky:A
 yuk:N
@@ -75793,7 +75823,9 @@ yukky:A
 yule:N
 yuletide:N
 yum:I
+yum-yum:I
 yummy:A
+yummy:I
 yup:Av
 yuppie:N
 yuppification:N
@@ -75945,6 +75977,7 @@ zori:N
 zoril:N
 zoster:N
 zounds:I
+zowie:I
 zoysia:N
 zucchini:N
 zwieback:N
