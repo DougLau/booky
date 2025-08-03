@@ -7649,7 +7649,7 @@ blank:N
 blank:V
 blanket:A
 blanket:N
-blanket:V
+blanket:V,-ts,-ting,-ted
 blankly:Av
 blankness:N
 blanquillo:N
@@ -10456,6 +10456,7 @@ capitalist:N
 capitalistic:A
 capitalization:N.z
 capitalize:V.z
+capitally:Av
 capitate:A
 capitate:N
 capitation:N
@@ -17792,8 +17793,6 @@ decoder:N
 decoding:N
 decoherence:N
 decoke:V
-decolletage:N
-decollete:A
 decolonization:N.z
 decolonize:V.z
 decolor:V
@@ -18374,7 +18373,6 @@ denotative:A
 denotatum:N
 denote:V
 denotive:A
-denouement:N
 denounce:V
 denouncement:N
 denouncer:N
@@ -20317,6 +20315,7 @@ divided:A
 dividend:N
 divider:N
 dividing:A
+divil:N
 divination:N
 divinatory:A
 divine:A
@@ -21473,6 +21472,10 @@ dæmonian:A
 dæmonic:A
 dæmonistic:A
 début:N
+décolletage:N
+décolleté:A
+décolleté:N
+dénouement:N
 e'en:Av
 e'er:Av
 e-mail:N
@@ -21654,7 +21657,6 @@ echolocation:N
 echovirus:N
 echt:A
 eclampsia:N
-eclat:N
 eclectic:A
 eclectic:N
 eclecticism:N
@@ -21962,7 +21964,6 @@ elaborated:A
 elaborately:Av
 elaborateness:N
 elaboration:N
-elan:N
 eland:N
 elaphure:N
 elapid:N
@@ -22132,10 +22133,6 @@ eliminate:V
 elimination:N
 eliminator:N
 elision:N
-elite:A
-elite:N
-elitism:N
-elitist:N
 elixir:N
 elk:N
 elkhound:N
@@ -22915,7 +22912,6 @@ entrapment:N
 entreat:V
 entreatingly:Av
 entreaty:N
-entree:N
 entrench:V
 entrenched:A
 entrenchment:N
@@ -22927,6 +22923,7 @@ entropy:N
 entrust:V
 entry:N
 entryway:N
+entrée:N
 entwine:V
 enucleate:V
 enucleation:N
@@ -25145,8 +25142,6 @@ feta:N
 fetch:V,-hes,-hing,-hed
 fetcher:N
 fetching:A
-fete:N
-fete:V
 feterita:N
 fetich:N
 fetichism:N
@@ -27404,6 +27399,8 @@ fuzzy:A
 fæcal:A
 fæcalith:N
 fæces:N
+fête:N
+fête:V
 führer:N
 fœtal:A
 fœtid:A
@@ -28835,11 +28832,12 @@ gospeller:N
 gossamer:A
 gossamer:N
 gossip:N
-gossip:V
+gossip:V,-ps,-ping,-ped
 gossiper:N
 gossiping:N
 gossipmonger:N
 gossipmongering:N
+gossipry:N
 gossipy:A
 gotcha:N
 goth:A
@@ -30320,6 +30318,7 @@ harshly:Av
 harshness:N
 hart:N
 hartebeest:N
+harum-scarum:A
 harvest:N
 harvest:V
 harvester:N
@@ -33752,7 +33751,7 @@ incrustation:N
 incubate:V
 incubation:N
 incubator:N
-incubus:N
+incubus:N,-bi,-ses
 inculcate:V
 inculcation:N
 inculpability:N
@@ -35941,6 +35940,7 @@ jetsam:N
 jetting:A
 jettison:V
 jetty:N
+jew:N
 jewel:N
 jewel:V
 jeweled:A
@@ -36853,6 +36853,7 @@ koala:N
 koan:N
 kob:N
 kobo:N
+kobold:N
 kohl:N
 kohleria:N
 kohlrabi:N,-ies
@@ -38934,6 +38935,7 @@ lovely:A
 lovely:N
 lovemaking:N
 lover:N
+lovering:N
 loverlike:A
 loverly:A
 lovesick:A
@@ -40235,9 +40237,9 @@ mathematician:N
 mathematics:N.p
 mathematization:N
 mathematize:V
-matinee:N
 mating:N
 matins:N.p
+matinée:N
 matman:N,-men
 matriarch:N,-hs
 matriarchal:A
@@ -40601,7 +40603,6 @@ melancholic:A
 melancholic:N
 melancholy:A
 melancholy:N
-melange:N
 melanin:N
 melanism:N
 melanize:V.z
@@ -40990,6 +40991,7 @@ metathesis:N
 metaverse:N
 metazoan:N
 mete:N
+mete:V
 metempsychosis:N
 metencephalon:N
 meteor:N
@@ -42037,8 +42039,8 @@ mogul:N
 mohair:N
 moiety:N
 moil:V
-moire:A
-moire:N
+moiré:A
+moiré:N
 moist:A
 moisten:V
 moistener:N
@@ -43302,6 +43304,7 @@ myxomatosis:N
 myxomycete:N
 myxosporidian:N
 myxovirus:N
+mélange:N
 naan:N
 nab:V
 nabob:N
@@ -43575,8 +43578,8 @@ naysaying:N
 naïve:A
 naïvely:Av
 naïveness:N
-naïvete:N
 naïvety:N
+naïveté:N
 ne'er:Av
 ne'er-do-well:N
 neandertal:A
@@ -43713,7 +43716,6 @@ neglecter:N
 neglectful:A
 neglectfully:Av
 neglectfulness:N
-neglige:N
 negligee:N
 negligence:N
 negligent:A
@@ -43721,6 +43723,7 @@ negligently:Av
 negligibility:N
 negligible:A
 negligibly:Av
+negligé:N
 negociate:V
 negotiability:N
 negotiable:A
@@ -53204,8 +53207,6 @@ pureblood:N
 pureblooded:A
 purebred:A
 purebred:N
-puree:N
-puree:V
 purely:Av
 pureness:N
 purfle:V
@@ -53287,6 +53288,8 @@ purvey:V
 purveyance:N
 purveyor:N
 purview:N
+purée:N
+purée:V,-es,-eing,-ed
 pus:N.s
 push:N
 push:V
@@ -53470,6 +53473,7 @@ pyx:N
 pyxidium:N,-ia,-ms
 pyxie:N
 pyxis:N
+pâté:N
 pæan:N
 pæderast:N
 pæderastic:A
@@ -53527,6 +53531,7 @@ quadriplegia:N
 quadriplegic:N
 quadrisonic:A
 quadrivium:N.s
+quadroon:N
 quadrumvirate:N
 quadruped:A
 quadruped:N
@@ -56193,7 +56198,7 @@ retrospection:N
 retrospective:A
 retrospective:N
 retrospectively:Av
-retrousse:A
+retroussé:A
 retroversion:N
 retrovert:V
 retrovirus:N
@@ -58769,7 +58774,6 @@ seamount:N
 seamster:N
 seamstress:N
 seamy:A
-seance:N
 seaplane:N
 seaplane:V
 seaport:N
@@ -59198,9 +59202,6 @@ seniority:N
 seniti:N
 senna:N
 sennit:N
-senor:N
-senora:N
-senorita:N
 sensate:A
 sensation:N
 sensational:A
@@ -59548,6 +59549,9 @@ sexualize:V.z
 sexually:Av
 sexy:A
 sezession:N
+señor:N,-res,-rs
+señora:N
+señorita:N
 sforzando:N
 sgraffito:N
 sh:I,shh,shhh
@@ -61767,7 +61771,7 @@ soil:V
 soiled:A
 soiling:N
 soilure:N
-soiree:N
+soirée:N
 soja:N
 sojourn:N
 sojourn:V
@@ -62271,6 +62275,7 @@ span:V
 spandex:N
 spandrel:N
 spandril:N
+spandy:A
 spang:V
 spangle:N
 spangle:V
@@ -63261,6 +63266,7 @@ standee:N
 stander:N
 standing:A
 standing:N
+standish:N
 standoff:N
 standoffish:A
 standoffishly:Av
@@ -65810,6 +65816,7 @@ systemizer:N.z
 systole:N
 systolic:A
 syzygy:N
+séance:N
 t-shirt:N
 ta:I
 tab:N
@@ -66890,8 +66897,6 @@ tetartanopia:N
 tetchily:Av
 tetchiness:N
 tetchy:A
-tete-a-tete:A
-tete-a-tete:N
 teth:N
 tether:N
 tether:V
@@ -69701,6 +69706,9 @@ tzarina:N
 tzarist:A
 tzatziki:N
 tzetze:N
+tête:N
+tête-à-tête:A
+tête-à-tête:N
 u-turn:N
 uakari:N
 ubiety:N
@@ -71325,6 +71333,7 @@ unlubricated:A
 unluckily:Av
 unlucky:A
 unmade:A
+unmaidenly:A
 unmake:V
 unmalicious:A
 unmaligned:A
@@ -72467,6 +72476,7 @@ upstroke:N
 upsurge:N
 upswing:N
 uptake:N
+uptear:V,-rs,-ring,uptore,uptorn
 uptempo:A
 upthrow:N
 upthrust:N
@@ -74561,6 +74571,7 @@ wheatworm:N
 whee:I
 wheedle:V
 wheedler:N
+wheedlesome:A
 wheedling:N
 wheel:N
 wheel:V
@@ -76023,6 +76034,13 @@ zymurgy:N
 æther:N
 æthereal:A
 éclair:N
+éclat:N
+élan:N
+élite:A
+élite:N
+élitism:N
+élitist:A
+élitist:N
 œdema:N
 œdematous:A
 œnologist:N
