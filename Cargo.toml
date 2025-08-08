@@ -3,6 +3,7 @@ name = "booky"
 description = "A tool to analyze English text"
 license = "MIT OR Apache-2.0"
 documentation = "https://docs.rs/booky"
+keywords = ["text", "english", "lexicon"]
 categories = ["text-processing", "command-line-utilities"]
 repository = "https://github.com/DougLau/booky/"
 readme = "README.md"
