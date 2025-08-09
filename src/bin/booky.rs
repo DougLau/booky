@@ -21,7 +21,7 @@ struct Args {
 enum SubCommand {
     Hilite(HiliteCmd),
     Read(ReadCmd),
-    Lex(LexCmd),
+    Word(WordCmd),
     Nonsense(Nonsense),
 }
 
@@ -30,7 +30,7 @@ enum SubCommand {
 #[argh(subcommand, name = "hl")]
 struct HiliteCmd {}
 
-/// Read from stdin, grouping tokens by kind
+/// Read text from stdin, grouping tokens by kind
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "read")]
 struct ReadCmd {
@@ -39,17 +39,17 @@ struct ReadCmd {
     kinds: Option<String>,
 }
 
-/// List words from lexicon
+/// Lookup words from lexicon
 #[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "lex")]
-struct LexCmd {
+#[argh(subcommand, name = "word")]
+struct WordCmd {
     /// word classes (A,Av,C,D,I,N,P,Pn,V)
     #[argh(option, short = 'c')]
     classes: Option<String>,
     /// list all word forms
     #[argh(switch, short = 'f')]
     forms: bool,
-    /// lookup a word
+    /// word to lookup
     #[argh(positional)]
     word: Option<String>,
 }
@@ -147,7 +147,7 @@ impl ReadCmd {
     }
 }
 
-impl LexCmd {
+impl WordCmd {
     /// Run command
     fn run(self) -> Result<()> {
         if self.forms {
@@ -244,7 +244,7 @@ fn main() -> Result<()> {
     match args.cmd {
         Some(SubCommand::Hilite(cmd)) => cmd.run()?,
         Some(SubCommand::Read(cmd)) => cmd.run()?,
-        Some(SubCommand::Lex(cmd)) => cmd.run()?,
+        Some(SubCommand::Word(cmd)) => cmd.run()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         None => {
             if let Err(e) = Args::from_args(&["booky"], &["--help"]) {
