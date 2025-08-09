@@ -52,39 +52,36 @@ impl Contraction {
             }
             Contraction::Prefix(p, ex) => {
                 let len = p.chars().count();
-                if let Some((i, _c)) = word.char_indices().nth(len) {
-                    if let Some((a, b)) = word.split_at_checked(i) {
-                        if equals_contraction(p, a) {
-                            words.push(b.to_string());
-                            words.push(ex.to_string());
-                            return true;
-                        }
-                    }
+                if let Some((i, _c)) = word.char_indices().nth(len)
+                    && let Some((a, b)) = word.split_at_checked(i)
+                    && equals_contraction(p, a)
+                {
+                    words.push(b.to_string());
+                    words.push(ex.to_string());
+                    return true;
                 }
             }
             Contraction::Suffix(s, ex) => {
                 let len = s.chars().count() - 1;
-                if let Some((i, _c)) = word.char_indices().rev().nth(len) {
-                    if let Some((a, b)) = word.split_at_checked(i) {
-                        if equals_contraction(s, b) {
-                            words.push(ex.to_string());
-                            words.push(a.to_string());
-                            return true;
-                        }
-                    }
+                if let Some((i, _c)) = word.char_indices().rev().nth(len)
+                    && let Some((a, b)) = word.split_at_checked(i)
+                    && equals_contraction(s, b)
+                {
+                    words.push(ex.to_string());
+                    words.push(a.to_string());
+                    return true;
                 }
             }
             Contraction::SuffixReplacement(s, ex) => {
                 let len = s.chars().count() - 1;
-                if let Some((i, _c)) = word.char_indices().rev().nth(len) {
-                    if let Some((a, b)) = word.split_at_checked(i) {
-                        if equals_contraction(s, b) {
-                            let mut a = a.to_string();
-                            a.push_str(ex);
-                            words.push(a.to_string());
-                            return true;
-                        }
-                    }
+                if let Some((i, _c)) = word.char_indices().rev().nth(len)
+                    && let Some((a, b)) = word.split_at_checked(i)
+                    && equals_contraction(s, b)
+                {
+                    let mut a = a.to_string();
+                    a.push_str(ex);
+                    words.push(a.to_string());
+                    return true;
                 }
             }
         }

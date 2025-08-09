@@ -28,10 +28,10 @@ impl fmt::Display for WordEntry {
     fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {
         let kind = self.kind().code();
         write!(fmt, "{:5} {} ", self.seen.bright().yellow(), kind.yellow())?;
-        if let Some(c) = self.word.chars().next() {
-            if c.is_control() || c == '\u{FEFF}' {
-                return write!(fmt, "{}", c.escape_unicode());
-            }
+        if let Some(c) = self.word.chars().next()
+            && (c.is_control() || c == '\u{FEFF}')
+        {
+            return write!(fmt, "{}", c.escape_unicode());
         }
         write!(fmt, "{}", self.word)
     }

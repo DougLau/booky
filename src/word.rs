@@ -167,31 +167,29 @@ impl TryFrom<&str> for Lexeme {
 
 /// Decode an irregular word form
 fn decode_irregular(lemma: &str, form: &str) -> Result<String, ()> {
-    if let Some(suffix) = form.strip_prefix('-') {
-        if let Some(ch) = suffix.chars().next() {
-            if let Some((base, _ending)) = lemma.rsplit_once(ch) {
-                let mut f = String::with_capacity(base.len() + suffix.len());
-                f.push_str(base);
-                f.push_str(suffix);
-                return Ok(f);
-            }
-            // check for variant spelling of suffix joiner
-            if let Some(alt) = deunicode_char(ch) {
-                if !alt.starts_with(ch) {
-                    if let Some((base, _ending)) = lemma.rsplit_once(alt) {
-                        let mut f =
-                            String::with_capacity(base.len() + suffix.len());
-                        let mut suffix = suffix.chars();
-                        suffix.next(); // skip joiner character
-                        f.push_str(base);
-                        f.push_str(alt);
-                        f.push_str(suffix.as_str());
-                        return Ok(f);
-                    }
-                }
-            }
-            return Err(());
+    if let Some(suffix) = form.strip_prefix('-')
+        && let Some(ch) = suffix.chars().next()
+    {
+        if let Some((base, _ending)) = lemma.rsplit_once(ch) {
+            let mut f = String::with_capacity(base.len() + suffix.len());
+            f.push_str(base);
+            f.push_str(suffix);
+            return Ok(f);
         }
+        // check for variant spelling of suffix joiner
+        if let Some(alt) = deunicode_char(ch)
+            && !alt.starts_with(ch)
+            && let Some((base, _ending)) = lemma.rsplit_once(alt)
+        {
+            let mut f = String::with_capacity(base.len() + suffix.len());
+            let mut suffix = suffix.chars();
+            suffix.next(); // skip joiner character
+            f.push_str(base);
+            f.push_str(alt);
+            f.push_str(suffix.as_str());
+            return Ok(f);
+        }
+        return Err(());
     }
     Ok(form.into())
 }
@@ -202,14 +200,14 @@ fn encode_irregular(lemma: &str, form: &str) -> String {
     for i in 3..lemma.len() {
         if let (Some((a0, a1)), Some((b0, b1))) =
             (lemma.split_at_checked(i), form.split_at_checked(i))
+            && a0 == b0
         {
-            if a0 == b0 {
-                let mut ch = a1.chars();
-                if let Some(c) = ch.next() {
-                    if b1.starts_with(c) && !ch.any(|x| x == c) {
-                        pos = Some(i);
-                    }
-                }
+            let mut ch = a1.chars();
+            if let Some(c) = ch.next()
+                && b1.starts_with(c)
+                && !ch.any(|x| x == c)
+            {
+                pos = Some(i);
             }
         }
     }
@@ -365,10 +363,10 @@ impl Lexeme {
 
 /// Make a regular plural noun from the singular form
 fn noun_plural(lemma: &str) -> String {
-    if let Some(root) = lemma.strip_suffix("sis") {
-        if !root.is_empty() {
-            return format!("{root}ses");
-        }
+    if let Some(root) = lemma.strip_suffix("sis")
+        && !root.is_empty()
+    {
+        return format!("{root}ses");
     }
     if ends_in_y(lemma) {
         let root = lemma.trim_end_matches('y');

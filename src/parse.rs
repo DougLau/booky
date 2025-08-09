@@ -54,10 +54,10 @@ where
                 Some(Err(e)) => return Some(Err(e)),
                 Some(Ok(b)) => {
                     self.code.push(b);
-                    if let Ok(c) = str::from_utf8(&self.code) {
-                        if let Some(c) = c.chars().next() {
-                            return Some(Ok(c));
-                        }
+                    if let Ok(c) = str::from_utf8(&self.code)
+                        && let Some(c) = c.chars().next()
+                    {
+                        return Some(Ok(c));
                     }
                 }
                 None => {
