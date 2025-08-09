@@ -5,6 +5,28 @@ Installation:
 cargo install booky
 ```
 
+### Lexicon
+
+The `word` sub-command lists words from the built-in lexicon.
+
+- Looks up all entries matching the provided word
+- With no options, all entries are listed
+- The `-f` option lists all known word forms
+- The `-c` option filters words by class.  Provide a comma-separated list to
+  specify classes:
+
+Option | Word Class
+-------|-----------
+`A`    | Adjective
+`Av`   | Adverb
+`C`    | Conjunction
+`D`    | Determiner
+`I`    | Interjection
+`N`    | Noun
+`P`    | Preposition
+`Pn`   | Pronoun
+`V`    | Verb
+
 ### Reading a Text
 
 The `read` sub-command reads UTF-8 text from `stdin`, which can be redirected
@@ -38,15 +60,6 @@ Option | Kind    | Description
 `s`    | Symbol  | Symbols / letters
 `u`    | Unknown | Unknown (no other kind)
 `A`    | All     | All kinds
-
-### Lexicon
-
-The `word` sub-command lists words from the built-in lexicon.
-
-- Looks up all entries matching the provided word
-- The `-f` option lists all known word forms
-- The `-c` option filters words by class
-- With no options, all entries are listed
 
 ### Highlighting
 
