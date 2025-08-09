@@ -25227,6 +25227,8 @@ fibroid:A
 fibroid:N
 fibroma:N
 fibromyositis:N
+fibrose:A
+fibrose:V
 fibrosis:N
 fibrositis:N
 fibrous:A
@@ -31107,6 +31109,8 @@ heterospory:N
 heterostracan:N
 heterotaxy:N
 heterothermic:A
+heterotopia:N
+heterotopic:A
 heterotroph:N
 heterotrophic:A
 heterozygosity:N
@@ -34930,6 +34934,7 @@ interfile:V
 intergalactic:A
 intergeneration:A
 intergenerational:A
+intergenic:A
 intergovernmental:A
 interim:A
 interim:N
@@ -35171,6 +35176,8 @@ intramolecular:A
 intramural:A
 intramuscular:A
 intramuscularly:Av
+intranasal:A
+intranasally:Av
 intranet:N
 intransigence:N
 intransigency:N
@@ -39430,6 +39437,8 @@ magnetize:V.z
 magnetized:A.z
 magnetizer:N.z
 magneto:N
+magnetohydrodynamic:A
+magnetohydrodynamics:N.p
 magnetometer:N
 magneton:N
 magnetosphere:N
@@ -42762,7 +42771,9 @@ mucopurulent:A
 mucor:N
 mucosa:N
 mucosal:A
+mucosanguineous:A
 mucose:A
+mucoserous:A
 mucous:A
 mucoviscidosis:N
 mucuna:N
@@ -46844,6 +46855,8 @@ overexploit:V
 overexploitation:N
 overexpose:V
 overexposure:N
+overexpress:V
+overexpression:N
 overextend:V
 overfamiliar:A
 overfatigue:V
@@ -48714,12 +48727,14 @@ pepsinogen:N
 peptic:A
 peptidase:N
 peptide:N
+peptidoglycan:N
 peptization:N.z
 peptize:V.z
 peptizing:A.z
 peptone:N
 per:P.t
 peradventure:Av
+peradventure:N
 perambulate:V
 perambulating:A
 perambulation:N
@@ -50894,6 +50909,7 @@ polyploid:A
 polyploid:N
 polyploidy:N
 polypody:N
+polypoid:A
 polypore:N
 polypropene:N
 polypropylene:N
@@ -55187,6 +55203,7 @@ regenerate:A
 regenerate:V
 regenerating:A
 regeneration:N
+regenerative:A
 regent:A
 regent:N
 reggae:N
@@ -67497,6 +67514,7 @@ thymol:N
 thymosin:N
 thymus:N
 thyreophoran:N
+thyristor:N
 thyrocalcitonin:N
 thyroglobulin:N
 thyroid:A
