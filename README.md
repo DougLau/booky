@@ -25,20 +25,20 @@ listed:
     7 u Unknown
 ```
 
-Command-line options can be added to list all words of a kind.
+Comma-separated options can be added to list all words of a kind.
 
 Option | Kind    | Description
 -------|---------|--------------------------
-`-l`   | Lexicon | Found in built-in lexicon
-`-f`   | Foreign | Foreign words (non-English)
-`-o`   | Ordinal | Ordinal numbers (1st, 2nd, etc.)
-`-r`   | Roman   | Roman numerals (IV, LXI, etc.)
-`-n`   | Number  | Other words containing numbers
-`-a`   | Acronym | Acronyms / initialisms (ALL-CAPS)
-`-p`   | Proper  | Proper names / nouns
-`-s`   | Symbol  | Symbols / letters
-`-u`   | Unknown | Unknown (no other kind)
-`-A`   | All     | All kinds
+`l`    | Lexicon | Found in built-in lexicon
+`f`    | Foreign | Foreign words (non-English)
+`o`    | Ordinal | Ordinal numbers (1st, 2nd, etc.)
+`r`    | Roman   | Roman numerals (IV, LXI, etc.)
+`n`    | Number  | Other words containing numbers
+`a`    | Acronym | Acronyms / initialisms (ALL-CAPS)
+`p`    | Proper  | Proper names / nouns
+`s`    | Symbol  | Symbols / letters
+`u`    | Unknown | Unknown (no other kind)
+`A`    | All     | All kinds
 
 ### Lexicon
 
