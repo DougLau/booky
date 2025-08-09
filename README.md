@@ -5,14 +5,13 @@ Installation:
 cargo install booky
 ```
 
-### Grouping Words by Kind
+### Reading a Text
 
-The `kind` sub-command reads UTF-8 text from `stdin`, which can be redirected
-from a file.  With no additional options, a summary of words of each kind is
-listed:
+The `read` sub-command reads UTF-8 text from `stdin`, which can be redirected
+from a file.  With no additional options, a summary of token kinds is listed:
 
 ```
-> booky kind < Dr_Jeckyll_And_Mr_Hyde.txt
+> booky read < Dr_Jeckyll_And_Mr_Hyde.txt
 
  3915 l Lexicon
     1 f Foreign
@@ -25,7 +24,7 @@ listed:
     7 u Unknown
 ```
 
-Comma-separated options can be added to list all words of a kind.
+Comma-separated options can be added to list all tokens of a kind.
 
 Option | Kind    | Description
 -------|---------|--------------------------

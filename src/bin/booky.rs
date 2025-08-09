@@ -20,7 +20,7 @@ struct Args {
 #[argh(subcommand)]
 enum SubCommand {
     Hilite(HiliteCmd),
-    Kind(KindCmd),
+    Read(ReadCmd),
     Lex(LexCmd),
     Nonsense(Nonsense),
 }
@@ -30,11 +30,11 @@ enum SubCommand {
 #[argh(subcommand, name = "hl")]
 struct HiliteCmd {}
 
-/// Group words by kind from stdin
+/// Read from stdin, grouping tokens by kind
 #[derive(FromArgs, Debug, PartialEq)]
-#[argh(subcommand, name = "kind")]
-struct KindCmd {
-    /// word kinds (l,f,o,r,n,a,p,s,u,A)
+#[argh(subcommand, name = "read")]
+struct ReadCmd {
+    /// token kinds (l,f,o,r,n,a,p,s,u,A)
     #[argh(positional)]
     kinds: Option<String>,
 }
@@ -75,7 +75,7 @@ impl HiliteCmd {
     }
 }
 
-impl KindCmd {
+impl ReadCmd {
     /// Run command
     fn run(self) -> Result<()> {
         let stdin = stdin();
@@ -96,7 +96,7 @@ impl KindCmd {
         }
     }
 
-    /// Parse word kinds
+    /// Parse token kinds
     fn parse_kinds(&self) -> Result<Vec<Kind>> {
         let mut kinds = Vec::new();
         if let Some(knd) = &self.kinds {
@@ -243,7 +243,7 @@ fn main() -> Result<()> {
     let args: Args = argh::from_env();
     match args.cmd {
         Some(SubCommand::Hilite(cmd)) => cmd.run()?,
-        Some(SubCommand::Kind(cmd)) => cmd.run()?,
+        Some(SubCommand::Read(cmd)) => cmd.run()?,
         Some(SubCommand::Lex(cmd)) => cmd.run()?,
         Some(SubCommand::Nonsense(_)) => nonsense(),
         None => {
