@@ -1,4 +1,4 @@
-use anyhow::Result;
+use anyhow::{Result, bail};
 use argh::FromArgs;
 use booky::hilite;
 use booky::kind::Kind;
@@ -34,36 +34,9 @@ struct HiliteCmd {}
 #[derive(FromArgs, Debug, PartialEq)]
 #[argh(subcommand, name = "kind")]
 struct KindCmd {
-    /// list words of all kinds
-    #[argh(switch, short = 'A')]
-    all: bool,
-    /// list lexicon words
-    #[argh(switch, short = 'l')]
-    lexicon: bool,
-    /// list foreign words (non-English)
-    #[argh(switch, short = 'f')]
-    foreign: bool,
-    /// list ordinal numbers
-    #[argh(switch, short = 'o')]
-    ordinal: bool,
-    /// list roman numerals
-    #[argh(switch, short = 'r')]
-    roman: bool,
-    /// list numbers
-    #[argh(switch, short = 'n')]
-    number: bool,
-    /// list acronyms / initialisms
-    #[argh(switch, short = 'a')]
-    acronym: bool,
-    /// list proper names
-    #[argh(switch, short = 'p')]
-    proper: bool,
-    /// list symbols / letters
-    #[argh(switch, short = 's')]
-    symbol: bool,
-    /// list unknown words
-    #[argh(switch, short = 'u')]
-    unknown: bool,
+    /// word kinds (l,f,o,r,n,a,p,s,u,A)
+    #[argh(positional)]
+    kinds: Option<String>,
 }
 
 /// List words from lexicon
@@ -113,38 +86,45 @@ impl KindCmd {
             );
             return Ok(());
         }
+        let kinds = self.parse_kinds()?;
         let mut tally = WordTally::new();
         tally.parse_text(stdin.lock())?;
-        if Kind::all().iter().any(|k| self.show_kind(*k)) {
-            self.write_entries(tally)
-        } else {
+        if kinds.is_empty() {
             self.write_summary(tally)
+        } else {
+            self.write_entries(tally, &kinds)
         }
     }
 
-    /// Check if a word kind should be shown
-    fn show_kind(&self, kind: Kind) -> bool {
-        if self.all {
-            return true;
+    /// Parse word kinds
+    fn parse_kinds(&self) -> Result<Vec<Kind>> {
+        let mut kinds = Vec::new();
+        if let Some(knd) = &self.kinds {
+            for kind in knd.split(',') {
+                let kind = match kind.trim() {
+                    "A" => return Ok(Kind::all().to_vec()),
+                    "l" => Kind::Lexicon,
+                    "f" => Kind::Foreign,
+                    "o" => Kind::Ordinal,
+                    "r" => Kind::Roman,
+                    "n" => Kind::Number,
+                    "a" => Kind::Acronym,
+                    "p" => Kind::Proper,
+                    "s" => Kind::Symbol,
+                    "u" => Kind::Unknown,
+                    k => bail!("Unknown kind: {k}"),
+                };
+                kinds.push(kind);
+            }
         }
-        match kind {
-            Kind::Lexicon => self.lexicon,
-            Kind::Foreign => self.foreign,
-            Kind::Ordinal => self.ordinal,
-            Kind::Roman => self.roman,
-            Kind::Number => self.number,
-            Kind::Acronym => self.acronym,
-            Kind::Proper => self.proper,
-            Kind::Symbol => self.symbol,
-            Kind::Unknown => self.unknown,
-        }
+        Ok(kinds)
     }
 
     /// Write entries of selected kinds
-    fn write_entries(self, tally: WordTally) -> Result<()> {
+    fn write_entries(self, tally: WordTally, kinds: &[Kind]) -> Result<()> {
         let mut count = 0;
         for entry in tally.into_entries() {
-            if self.show_kind(entry.kind()) {
+            if kinds.contains(&entry.kind()) {
                 println!("{entry}");
                 count += 1;
             }
@@ -181,7 +161,7 @@ impl LexCmd {
         } else {
             // into_iter() sorts the entries
             for word in lex::builtin().clone().into_iter() {
-                if self.display_class(word.word_class()) {
+                if self.show_class(word.word_class()) {
                     println!("{word:?}");
                 }
             }
@@ -189,8 +169,8 @@ impl LexCmd {
         Ok(())
     }
 
-    /// Check if a word class should be displayed
-    fn display_class(&self, wc: WordClass) -> bool {
+    /// Check if a word class should be shown
+    fn show_class(&self, wc: WordClass) -> bool {
         match &self.classes {
             Some(classes) => {
                 for cl in classes.split(',') {
