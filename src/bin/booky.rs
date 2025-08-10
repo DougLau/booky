@@ -37,6 +37,15 @@ struct ReadCmd {
     /// token kinds (l,f,o,r,n,a,p,s,u,A)
     #[argh(positional)]
     kinds: Option<String>,
+    /// token output limit
+    #[argh(option, short = 't', default = "u32::MAX")]
+    tokens: u32,
+    /// reverse sort
+    #[argh(switch, short = 'v')]
+    reverse: bool,
+    /// output token words only
+    #[argh(switch, short = 'w')]
+    word: bool,
 }
 
 /// Lookup words from lexicon
@@ -123,13 +132,27 @@ impl ReadCmd {
     /// Write entries of selected kinds
     fn write_entries(self, tally: WordTally, kinds: &[Kind]) -> Result<()> {
         let mut count = 0;
-        for entry in tally.into_entries() {
+        let entries = if self.reverse {
+            tally.into_entries()
+        } else {
+            tally.into_entries().into_iter().rev().collect()
+        };
+        for entry in entries {
             if kinds.contains(&entry.kind()) {
-                println!("{entry}");
+                if self.word {
+                    println!("{}", entry.word());
+                } else {
+                    println!("{entry}");
+                }
                 count += 1;
             }
+            if count >= self.tokens {
+                break;
+            }
         }
-        println!("\ncount: {}", count.bright_yellow());
+        if !self.word {
+            println!("\ncount: {}", count.bright_yellow());
+        }
         Ok(())
     }
 
