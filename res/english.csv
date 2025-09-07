@@ -969,6 +969,7 @@ adamantly:Av
 adapt:V
 adaptability:N
 adaptable:A
+adaptate:V
 adaptation:N
 adaptational:A
 adaptative:A
@@ -3432,6 +3433,7 @@ antiseptic:A
 antiseptic:N
 antisepticize:V.z
 antiserum:N
+antisexist:A
 antislavery:A
 antisocial:A
 antispasmodic:N
@@ -4147,6 +4149,7 @@ argy-bargy:N
 argyle:N
 argyll:N
 argyrodite:N
+argyropœia:N
 aria:N
 arianist:N
 arid:A
@@ -5601,6 +5604,7 @@ backwards:Av
 backwards:P.i
 backwash:N
 backwater:N
+backwearing:N
 backwoods:A
 backwoods:N.p
 backwoodsman:N,-men
@@ -5864,6 +5868,7 @@ bandmate:N
 bandoleer:N
 bandolier:N
 bandsaw:N
+bandsaw:V
 bandsman:N,-men
 bandstand:N
 bandtail:N
@@ -7246,6 +7251,7 @@ bimillenial:A
 bimillennium:N,-ms,-ia
 bimli:N
 bimodal:A
+bimodality:N
 bimolecular:A
 bimonthly:A
 bimonthly:Av
@@ -8336,6 +8342,7 @@ bookmarker:N
 bookmobile:N
 bookplate:N
 bookseller:N
+bookselling:N
 bookshelf:N,-lves
 bookshop:N
 bookstall:N
@@ -10163,6 +10170,7 @@ calypter:N
 calyptra:N
 calyptrate:A
 calyx:N
+calzone:N
 calèche:N
 cam:N
 camachile:N
@@ -11639,6 +11647,7 @@ championship:N
 champleve:A
 chamæleon:N
 chamæleonic:A
+chamæleonlike:A
 chanal:N
 chanar:N
 chance:A
@@ -12459,8 +12468,8 @@ chrysoberyl:N
 chrysolite:N
 chrysomelid:N
 chrysopid:N
-chrysopoeia:N
 chrysoprase:N
+chrysopœia:N
 chrysotherapy:N
 chrysotile:N
 chthonian:A
@@ -14254,6 +14263,7 @@ concenter:V
 concentrate:N
 concentrate:V
 concentrated:A
+concentratedly:Av
 concentration:N
 concentre:V
 concentric:A
@@ -14512,6 +14522,7 @@ confound:V
 confounded:A
 confoundedly:Av
 confounding:A
+confraternity:N
 confrere:N
 confront:V
 confrontation:N
@@ -15873,6 +15884,9 @@ courage:N
 courageous:A
 courageously:Av
 courageousness:N
+courant:A
+courant:N
+courante:N
 courbaril:N
 courgette:N
 courier:N
@@ -17663,8 +17677,6 @@ debug:V
 debugger:N
 debunk:V
 debunking:N
-debut:V,-ts,-ting,-ted
-debutante:N
 decade:N
 decadence:N
 decadency:N
@@ -19557,6 +19569,8 @@ disadvantageously:Av
 disaffect:V
 disaffected:A
 disaffection:N
+disaffiliate:V
+disaffiliation:N
 disafforest:V
 disagree:V
 disagreeable:A
@@ -19658,6 +19672,7 @@ disclosed:A
 disclosing:A
 disclosure:N
 disco:N
+discographer:N
 discography:N
 discoid:A
 discoidal:A
@@ -21499,6 +21514,9 @@ dæmonian:A
 dæmonic:A
 dæmonistic:A
 début:N
+début:V,-ts,-ting,-ted
+débutant:N
+débutante:N
 décolletage:N
 décolleté:A
 décolleté:N
@@ -21564,6 +21582,7 @@ earthen:A
 earthenware:N
 earthiness:N
 earthing:N
+earthlight:N
 earthlike:A
 earthling:N
 earthly:A
@@ -21574,6 +21593,8 @@ earthquaked:A
 earthquaken:A
 earthquaking:A
 earthshaking:A
+earthshakingly:Av
+earthshine:N
 earthstar:N
 earthtongue:N
 earthward:Av
@@ -22640,6 +22661,7 @@ endoscope:N
 endoscopic:A
 endoscopy:N
 endoskeleton:N
+endosomatic:A
 endosperm:N
 endospore:N
 endosteum:N
@@ -23504,6 +23526,7 @@ ethnocultural:A
 ethnographer:N
 ethnographic:A
 ethnographical:A
+ethnographically:Av
 ethnography:N
 ethnologic:A
 ethnological:A
@@ -23608,11 +23631,13 @@ eurhythmy:N
 euro:N
 euronithopod:N
 europium:N
+eurozone:N
 eurypterid:N
 eurythmics:N.p
 eurythmy:N
 eusporangiate:A
 eusporangium:N,-ia
+eustatic:A
 eutectic:N
 euthanasia:N
 euthanize:V
@@ -24025,6 +24050,7 @@ exorcize:V.z
 exorcizer:N.z
 exordium:N,-ms,-ia
 exoskeleton:N
+exosomatic:A
 exosphere:N
 exostosis:N
 exoteric:A
@@ -26212,6 +26238,7 @@ foaming:A
 foamy:A
 fob:N
 fob:V
+focaccia:N
 focal:A
 focalization:N.z
 focalize:V.z
@@ -26533,7 +26560,7 @@ forestland:N
 forestry:N
 foreswear:V,-rs,-ring,-wore,-worn
 foretaste:N
-foretell:V
+foretell:V,-ls,-ling,-told
 foretelling:N
 forethought:N
 forethoughtful:A
@@ -29133,6 +29160,7 @@ graveness:N
 graver:N
 graverobber:N
 graveside:N
+gravesite:N
 gravestone:N
 graveyard:N
 gravid:A
@@ -31139,6 +31167,7 @@ heteronym:N
 heteroploid:N
 heteroploidy:N
 heterosexism:N
+heterosexist:A
 heterosexual:A
 heterosexual:N
 heterosexualism:N
@@ -34366,6 +34395,7 @@ ingratiatory:A
 ingratitude:N
 ingredient:N
 ingress:N
+ingression:N
 ingroup:N
 ingrowing:A
 ingrown:A
@@ -34497,6 +34527,7 @@ innersole:N
 innerspring:A
 innervate:V
 innervation:N
+innerwear:N
 innie:N
 inning:N
 innkeeper:N
@@ -34984,6 +35015,8 @@ intergalactic:A
 intergeneration:A
 intergenerational:A
 intergenic:A
+interglacial:A
+interglacial:N
 intergovernmental:A
 interim:A
 interim:N
@@ -35055,6 +35088,7 @@ internalization:N.z
 internalize:V.z
 internally:Av
 international:A
+international:N
 internationalism:N
 internationalist:A
 internationalist:N
@@ -35149,6 +35183,7 @@ intertidal:A
 intertitle:N
 intertribal:A
 intertrigo:N
+intertropical:A
 intertwine:V
 intertwined:A
 interurban:A
@@ -35237,6 +35272,7 @@ intransitively:Av
 intransitiveness:N
 intransitivity:N
 intransitivize:V.z
+intraplate:A
 intrapulmonary:A
 intrasentential:A
 intraspecies:A
@@ -35718,6 +35754,9 @@ isopteran:A
 isosceles:A
 isosmotic:A
 isosorbide:N
+isostasy:N
+isostatic:A
+isostatically:Av
 isotherm:N
 isothermal:A
 isothermic:A
@@ -36240,6 +36279,7 @@ judicious:A
 judiciously:Av
 judiciousness:N
 judo:N
+judoka:N
 jug:N
 jug:V
 jugale:N
@@ -37259,6 +37299,7 @@ landed:A
 lander:N
 landfall:N
 landfill:N
+landform:N
 landgrave:N
 landholder:N
 landholding:N
@@ -37977,6 +38018,7 @@ letch:N
 letdown:N
 lethal:A
 lethality:N
+lethally:Av
 lethargic:A
 lethargically:Av
 lethargy:N
@@ -40548,8 +40590,11 @@ mediastinum:N
 mediate:A
 mediate:V
 mediated:A
+mediately:Av
 mediateness:N
 mediation:N
+mediative:A
+mediatize:V.z
 mediator:N
 mediatorial:A
 mediatory:A
@@ -41281,6 +41326,7 @@ microphotometer:N
 microplastic:N
 microprocessor:N
 micropsia:N
+micropsy:N
 micropylar:A
 micropyle:N
 microradian:N
@@ -42572,6 +42618,8 @@ morphemic:A
 morphia:N
 morphine:N
 morphogenesis:N
+morphographic:A
+morphography:N
 morphologic:A
 morphological:A
 morphologically:Av
@@ -42972,6 +43020,7 @@ multimeter:N
 multimillion:A
 multimillionaire:N
 multimodal:A
+multimodality:N
 multinational:A
 multinomial:A
 multinomial:N
@@ -45217,6 +45266,8 @@ nucleoside:N
 nucleosynthesis:N
 nucleotide:N
 nucleus:N,-ei,necleuses
+nuclide:N
+nuclidic:A
 nude:A
 nude:N
 nudeness:N
@@ -46865,6 +46916,8 @@ overcome:V,-es,-ming,-came
 overcomer:N
 overcompensate:V
 overcompensation:N
+overconcentrated:A
+overconcentration:N
 overconfidence:N
 overconfident:A
 overconscientious:A
@@ -49668,6 +49721,7 @@ physiatrics:N.p
 physic:N
 physic:V,-cs,-cking,-cked
 physical:A
+physical:N
 physicalism:N
 physicality:N
 physically:Av
@@ -49678,6 +49732,9 @@ physicochemical:A
 physiognomic:A
 physiognomically:Av
 physiognomy:N
+physiographer:N
+physiographic:A
+physiographical:A
 physiography:N
 physiologic:A
 physiological:A
@@ -50741,6 +50798,7 @@ poetics:N.p
 poetize:V.z
 poetizer:N.z
 poetry:N
+poetship:N
 pogey:N
 pogge:N
 pogo:V
@@ -50923,6 +50981,7 @@ polychromic:A
 polychromize:V.z
 polyclinic:N
 polycrystalline:A
+polycyclic:A
 polycystic:A
 polycythemia:N
 polydactyl:A
@@ -51329,6 +51388,8 @@ postmistress:N
 postmodern:A
 postmodernism:N
 postmodernist:A
+postmodernist:N
+postmodernity:N
 postmortal:A
 postmortem:A
 postmortem:N
@@ -52130,6 +52191,8 @@ primary:A
 primary:N
 primate:N
 primateship:N
+primatological:A
+primatologist:N
 primatology:N
 prime:A
 prime:N
@@ -52492,6 +52555,7 @@ prolificacy:N
 proline:N
 prolix:A
 prolixity:N
+prolixly:Av
 prolixness:N
 prologize:V.z
 prologue:N
@@ -52691,6 +52755,8 @@ proscribe:V
 proscribed:A
 proscription:N
 prose:N
+prosector:N
+prosectorship:N
 prosecutable:A
 prosecute:V
 prosecution:N
@@ -52931,7 +52997,7 @@ prying:A
 prying:N
 pryingly:Av
 præmium:A
-præmium:N
+præmium:N,-ia,-ms
 prætor:N
 prætorial:A
 prætorian:A
@@ -54945,8 +55011,9 @@ rectoplasty:N
 rector:N
 rectory:N
 rectosigmoid:A
+rectress:N
 rectum:N
-rectus:N
+rectus:N,-ti
 recumb:V
 recumbent:A
 recuperate:V
@@ -56204,7 +56271,7 @@ retch:N
 retch:V
 rete:N
 reteach:V,-hes,-hing,retaught
-retell:V
+retell:V,-ls,-ling,retold
 retem:N
 retention:N
 retentive:A
@@ -59036,6 +59103,10 @@ sediment:N
 sediment:V
 sedimentary:A
 sedimentation:N
+sedimentologic:A
+sedimentologically:Av
+sedimentologist:N
+sedimentology:N
 sedition:N
 seditious:A
 seduce:V
@@ -59121,6 +59192,7 @@ seiner:N
 seism:N
 seismal:A
 seismic:A
+seismically:Av
 seismogram:N
 seismograph:N
 seismographer:N
@@ -61875,8 +61947,8 @@ soggily:Av
 sogginess:N
 soggy:A
 soh:N
-soigne:A
-soignee:A
+soigné:A
+soignée:A
 soil:N
 soil:V
 soiled:A
@@ -63785,6 +63857,8 @@ stillbirth:N
 stillborn:A
 stillness:N
 stillroom:N
+stillstand:N
+stillstand:V
 stilly:A
 stilt:N
 stiltbird:N
@@ -63938,6 +64012,7 @@ stonechat:N
 stonecress:N
 stonecrop:N
 stonecutter:N
+stonecutting:N
 stoned:A
 stoneface:N
 stonefish:N
@@ -63953,6 +64028,7 @@ stonewalling:N
 stoneware:N
 stonewash:V
 stonework:N
+stoneworker:N
 stonewort:N
 stonily:Av
 stoniness:N
@@ -64123,6 +64199,8 @@ strategy:N
 stratification:N
 stratified:A
 stratify:V
+stratigraphic:A
+stratigraphy:N
 stratosphere:N
 stratospheric:A
 stratospherically:Av
@@ -64283,6 +64361,7 @@ stroll:V
 stroller:N
 stroma:N
 stromateid:N
+stromboli:N
 strong:A
 strongbox:N
 stronghold:N
@@ -64502,6 +64581,7 @@ subdivider:N
 subdivision:N
 subdominant:N
 subduable:A
+subduct:V
 subduction:N
 subdue:V
 subdued:A
@@ -64636,9 +64716,11 @@ subprofessionsl:N
 subprogram:N
 subpœna:N,-næ,-ae
 subpœna:V
+subrange:N
 subrogate:V
 subrogation:N
 subroutine:N
+subscore:N
 subscribe:V
 subscribed:A
 subscriber:N
@@ -66533,6 +66615,7 @@ technophobia:N
 technophobic:A
 techy:A
 tectonic:A
+tectonically:Av
 tectonics:N.p
 ted:V,teds,tedding,tedded
 teddy:N
@@ -68264,6 +68347,7 @@ torsk:N
 torso:N,-oes,-si
 tort:N
 torte:N
+tortelli:N
 tortellini:N
 tortfeasor:N
 torticollis:N
@@ -69121,6 +69205,8 @@ trimmed:A
 trimmer:N
 trimming:N
 trimness:N
+trimodal:A
+trimodality:N
 trimonthly:Av
 trimotored:A
 trine:N
@@ -70161,7 +70247,7 @@ unbending:A
 unbeneficed:A
 unbent:A
 unbiased:A
-unbiassed:A
+unbiasedness:N
 unbid:A
 unbidden:A
 unbigoted:A
@@ -71242,6 +71328,7 @@ unimaginative:A
 unimaginatively:Av
 unimagined:A
 unimodal:A
+unimodality:N
 unimpaired:A
 unimpassioned:A
 unimpeachable:A
@@ -71457,6 +71544,7 @@ unluckily:Av
 unlucky:A
 unmade:A
 unmaidenly:A
+unmaintained:A
 unmake:V,-es,-king,-ade
 unmalicious:A
 unmaligned:A
@@ -72266,6 +72354,7 @@ untaught:A
 untaxed:A
 unteach:V,-hes,-hing,untaught
 untechnical:A
+untell:V,-ls,-ling,untold
 untellable:A
 untempered:A
 untempting:A
@@ -73085,7 +73174,7 @@ vector:N
 vector:V
 vectorial:A
 vectorially:Av
-vectorize:V
+vectorize:V.z
 vecturist:N
 vedalia:N
 veejay:N
@@ -73370,7 +73459,9 @@ vesiculitis:N
 vesiculopapular:A
 vesiculovirus:N
 vesper:N
+vespertilian:A
 vespertilionid:N
+vespertine:A
 vespid:N
 vessel:N
 vest:N
@@ -73828,9 +73919,11 @@ volatilizable:A.z
 volatilize:V.z
 volatilized:A.z
 volcanic:A
+volcanic:N
 volcanically:Av
 volcanism:N
 volcano:N,-os,-oes
+volcanologist:N
 volcanology:N
 vole:N
 volition:N
@@ -73926,11 +74019,13 @@ voyeuristical:A
 voyeuristically:Av
 vroom:V
 vs:P.t
+vulcanism:N
 vulcanite:N
 vulcanization:N.z
 vulcanize:V.z
 vulcanized:A.z
 vulcanizer:N.z
+vulcanologist:N
 vulcanology:N
 vulgar:A
 vulgarian:N
