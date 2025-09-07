@@ -39,7 +39,6 @@ If any attributes are provided, they are preceded by a dot `.`:
 | Code | Description                      | Examples
 |------|----------------------------------|----------------------
 | `a`  | Auxiliary verb                   | _cannot_
-| `i`  | Intransitive verb or preposition |
 | `n`  | Proper (name) noun               | _Monday_
 | `p`  | Plurale Tantum                   | _pants_, _scissors_
 | `s`  | Singulare Tantum                 | _dust_, _information_

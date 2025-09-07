@@ -30,8 +30,6 @@ pub enum WordClass {
 pub enum WordAttr {
     /// `a`: Auxiliary verb (e.g. "cannot")
     Auxiliary,
-    /// `i` Intransitive verb or preposition
-    Intransitive,
     /// `n`: Proper (name) noun
     Proper,
     /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
@@ -124,7 +122,6 @@ impl TryFrom<char> for WordAttr {
     fn try_from(val: char) -> Result<Self, Self::Error> {
         match val {
             'a' => Ok(Self::Auxiliary),
-            'i' => Ok(Self::Intransitive),
             'n' => Ok(Self::Proper),
             'p' => Ok(Self::PluraleTantum),
             's' => Ok(Self::SingulareTantum),
