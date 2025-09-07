@@ -225,7 +225,7 @@ ablative:A
 ablative:N
 ablaut:N
 ablaze:A
-able:A
+able:A.c
 abled:A
 ableism:N
 ablepharia:N
@@ -321,7 +321,7 @@ abrocome:N
 abrogate:V
 abrogation:N
 abrogator:N
-abrupt:A
+abrupt:A.c
 abruption:N
 abruptly:Av
 abruptness:N
@@ -337,7 +337,7 @@ abseil:N
 abseil:V
 abseiler:N
 absence:N
-absent:A
+absent:A.c
 absent:P.t
 absent:V
 absentee:N
@@ -644,7 +644,7 @@ accusingly:Av
 accusive:A
 accustom:V
 accustomed:A
-ace:A
+ace:A.c
 ace:N
 ace:V
 acebutolol:N
@@ -729,7 +729,7 @@ achromatous:A
 achromia:N
 achromic:A
 achromous:A
-achy:A
+achy:A.c
 achylia:N
 acicula:N
 acicular:A
@@ -943,7 +943,7 @@ acupressure:N
 acupuncture:N
 acupuncture:V
 acupuncturist:N
-acute:A
+acute:A.c
 acute:N
 acutely:Av
 acuteness:N
@@ -1379,7 +1379,7 @@ aerosolize:V.z
 aerosolized:A.z
 aerospace:N
 aerugo:N
-aery:A
+aery:A.c
 aery:N
 aeschynanthus:N
 aesculapian:A
@@ -1608,7 +1608,7 @@ aggrieve:V
 aggro:N
 aggroup:V
 aghast:A
-agile:A
+agile:A.c
 agilely:Av
 agility:N
 aging:A
@@ -1819,7 +1819,7 @@ airway:N
 airwoman:N,-men
 airworthiness:N
 airworthy:A
-airy:A
+airy:A.c
 aisle:N
 aitch:N
 aitchbone:N
@@ -1922,7 +1922,7 @@ alehouse:N
 alembic:N
 alendronate:N
 aleph:N
-alert:A
+alert:A.c
 alert:N
 alert:V
 alerting:N
@@ -2177,7 +2177,7 @@ allylic:A
 almanac:N
 almandine:N
 almandite:N
-almighty:A
+almighty:A.c
 almond:N
 almoner:N
 almost:Av
@@ -2344,7 +2344,7 @@ ambassador:N
 ambassadorial:A
 ambassadorship:N
 ambassadress:N
-amber:A
+amber:A.c
 amber:N
 amberbell:N
 amberfish:N
@@ -2578,7 +2578,7 @@ amphoric:A
 amphoteric:A
 amphotericin:N
 ampicillin:N
-ample:A
+ample:A.c
 ampleness:N
 amplification:N
 amplifier:N
@@ -2920,11 +2920,11 @@ angostura:N
 angrecum:N
 angrily:Av
 angriness:N
-angry:A
+angry:A.c
 angst:N
 angst:V
 angstrom:N
-angsty:A
+angsty:A.c
 anguine:A
 anguish:N
 anguish:V
@@ -3476,7 +3476,7 @@ antral:A
 antre:N
 antrorse:A
 antrum:N,-ra
-antsy:A
+antsy:A.c
 anulus:N,-li,-ses
 anuran:A
 anuran:N
@@ -3888,7 +3888,7 @@ apropos:P
 apse:N
 apsidal:A
 apsis:N
-apt:A
+apt:A.c
 apteral:A
 apterous:A
 apteryx:N
@@ -3996,7 +3996,7 @@ arcanum:N
 arcdegree:N
 arced:A
 arcella:N
-arch:A
+arch:A.c
 arch:N
 arch:V
 archaean:A
@@ -4152,7 +4152,7 @@ argyrodite:N
 argyropœia:N
 aria:N
 arianist:N
-arid:A
+arid:A.c
 aridity:N
 aridness:N
 arietta:N
@@ -4312,7 +4312,7 @@ arteriovenous:A
 arteritis:N
 artery:N
 artesian:A
-artful:A
+artful:A.c
 artfully:Av
 artfulness:N
 arthralgia:N
@@ -4378,9 +4378,9 @@ artistry:N
 artless:A
 artlessly:Av
 artlessness:N
-artsy:A
+artsy:A.c
 artwork:N
-arty:A
+arty:A.c
 arugula:N
 arui:N
 arum:N
@@ -4460,14 +4460,14 @@ ashamedly:Av
 ashbin:N
 ashcake:N
 ashcan:N
-ashen:A
+ashen:A.c
 ashlar:N
 ashore:Av
 ashore:P
 ashplant:N
 ashram:N
 ashtray:N
-ashy:A
+ashy:A.c
 aside:Av
 aside:N
 aside:P
@@ -4739,7 +4739,7 @@ astronomy:N
 astrophysical:A
 astrophysicist:N
 astrophysics:N.p
-astute:A
+astute:A.c
 astutely:Av
 astuteness:N
 astylar:A
@@ -5268,7 +5268,7 @@ aviation:N
 aviator:N
 aviatress:N
 aviatrix:N,-xes,-ices
-avid:A
+avid:A.c
 avidity:N
 avidly:Av
 avidness:N
@@ -5309,7 +5309,7 @@ avuncular:A
 aw:I,aww
 await:V
 awaited:A
-awake:A
+awake:A.c
 awake:V,-es,-king,awoke,awoken
 awaken:V
 awakened:A
@@ -5333,11 +5333,11 @@ aweary:A
 awed:A
 aweigh:A
 aweless:A
-awesome:A
+awesome:A.c
 awesomeness:N
 awestricken:A
 awestruck:A
-awful:A
+awful:A.c
 awful:Av
 awfully:Av
 awfulness:N
@@ -5355,9 +5355,9 @@ awned:A
 awning:N
 awninged:A
 awnless:A
-awny:A
+awny:A.c
 awol:A
-awry:A
+awry:A.c
 awry:Av
 ax:N
 ax:V
@@ -5416,7 +5416,7 @@ azoturia:N
 azotæmia:N
 azotæmic:A
 aztreonam:N
-azure:A
+azure:A.c
 azure:N
 azure:V
 azygos:A
@@ -5638,7 +5638,7 @@ bacteroidal:A
 bacteræmia:N
 bacteræmic:A
 baculiform:A
-bad:A
+bad:A.c
 bad:Av
 bad:N
 bada-bing:I
@@ -5683,7 +5683,7 @@ baggie:N
 baggily:Av
 bagginess:N
 bagging:N
-baggy:A
+baggy:A.c
 bagman:N,-men
 bagnio:N
 bagpipe:N
@@ -5743,7 +5743,7 @@ balboa:N
 balbriggan:N
 balconied:A
 balcony:N
-bald:A
+bald:A.c
 bald:V
 baldachin:N
 balderdash:N
@@ -5772,7 +5772,7 @@ balker:N
 balkiness:N
 balking:A
 balkline:N
-balky:A
+balky:A.c
 ball:N
 ball:V
 ballad:N
@@ -5812,9 +5812,9 @@ ballplayer:N
 ballpoint:N
 ballroom:N
 ballsiness:N
-ballsy:A
+ballsy:A.c
 ballup:N
-bally:A
+bally:A.c
 ballyhoo:N
 ballyhoo:V
 ballyrag:V
@@ -5822,7 +5822,7 @@ balm:N
 balmily:Av
 balminess:N
 balmoral:N
-balmy:A
+balmy:A.c
 baloney:N
 balsa:N
 balsam:N
@@ -5874,7 +5874,7 @@ bandstand:N
 bandtail:N
 bandwagon:N
 bandwidth:N
-bandy:A
+bandy:A.c
 bandy:V
 bane:N
 baneberry:N
@@ -5996,7 +5996,7 @@ bard:N
 bard:V
 bardic:A
 bardolatry:N
-bare:A
+bare:A.c
 bare:V
 bareback:A
 bareback:Av
@@ -6041,14 +6041,14 @@ bark:V
 barkeep:N
 barkeeper:N
 barker:N
-barky:A
+barky:A.c
 barley:N
 barleycorn:N
 barm:N
 barmaid:N
 barman:N,-men
 barmbrack:N
-barmy:A
+barmy:A.c
 barn:N
 barnacle:N
 barnacled:A
@@ -6138,7 +6138,7 @@ basal:A
 basalt:N
 basaltic:A
 bascule:N
-base:A
+base:A.c
 base:N
 base:V
 baseball:N
@@ -6307,7 +6307,7 @@ battleship:N
 battlesight:N
 battlewagon:N
 battue:N
-batty:A
+batty:A.c
 batwing:A
 batwing:N
 bauble:N
@@ -6322,7 +6322,7 @@ bawd:N
 bawdily:Av
 bawdiness:N
 bawdry:N
-bawdy:A
+bawdy:A.c
 bawdy:N
 bawdyhouse:N
 bawl:V
@@ -6357,7 +6357,7 @@ beachhead:N
 beachlike:A
 beachside:A
 beachwear:N
-beachy:A
+beachy:A.c
 beacon:N
 beacon:V
 bead:N
@@ -6368,7 +6368,7 @@ beadle:N
 beadlike:A
 beadsman:N,-men
 beadwork:N
-beady:A
+beady:A.c
 beagle:N
 beagling:N
 beak:N
@@ -6384,7 +6384,7 @@ beamingly:Av
 beamish:A
 beamless:A
 beamline:N
-beamy:A
+beamy:A.c
 bean:N
 bean:V
 beanbag:N
@@ -6421,7 +6421,7 @@ bearwood:N
 beast:N
 beastie:N
 beastliness:N
-beastly:A
+beastly:A.c
 beastly:Av
 beat:A
 beat:N
@@ -6546,7 +6546,7 @@ beefcake:N
 beefeater:N
 beefsteak:N
 beefwood:N
-beefy:A
+beefy:A.c
 beehive:N
 beekeeper:N
 beekeeping:N
@@ -6555,7 +6555,7 @@ beep:N
 beep:V
 beeper:N
 beer:N
-beery:A
+beery:A.c
 beeswax:N
 beeswax:V
 beet:N
@@ -6649,7 +6649,7 @@ beholding:N
 behoof:N,-oves
 behoove:V
 behove:V
-beige:A
+beige:A.c
 beige:N
 beigel:N
 being:N
@@ -6770,7 +6770,7 @@ bended:A
 bender:N
 bending:A
 bending:N
-bendy:A
+bendy:A.c
 beneath:Av
 beneath:P
 benedick:N
@@ -7128,7 +7128,7 @@ bifurcate:A
 bifurcate:V
 bifurcated:A
 bifurcation:N
-big:A
+big:A.c
 big:Av
 bigamist:N
 bigamous:A
@@ -7183,7 +7183,7 @@ bilestone:N
 bilge:N
 bilge:V
 bilgewater:N
-bilgy:A
+bilgy:A.c
 bilharzia:N
 bilharziasis:N
 biliary:A
@@ -7222,7 +7222,7 @@ billionth:N
 billow:N
 billow:V
 billowing:A
-billowy:A
+billowy:A.c
 billy:N
 billycan:N
 billyo:N
@@ -7506,7 +7506,7 @@ bitch:V
 bitchery:N
 bitchily:Av
 bitchiness:N
-bitchy:A
+bitchy:A.c
 bitcoin:N
 bite:N
 bite:V,-es,biting,bit,bitten
@@ -7538,7 +7538,7 @@ bitterweed:N
 bitterwood:N
 bitthead:N
 bittie:A
-bitty:A
+bitty:A.c
 bitumastic:N
 bitumen:N
 bitumenoid:A
@@ -7570,8 +7570,8 @@ blabber:N
 blabber:V
 blabbermouth:N
 blabbermouthed:A
-blabby:A
-black:A
+blabby:A.c
+black:A.c
 black:N
 black:V
 blackamoor:N
@@ -7663,7 +7663,7 @@ blandish:V
 blandishment:N
 blandly:Av
 blandness:N
-blank:A
+blank:A.c
 blank:N
 blank:V
 blanket:A
@@ -7743,19 +7743,19 @@ bleach:V
 bleached:A
 bleacher:N
 bleachery:N
-bleak:A
+bleak:A.c
 bleakly:Av
 bleakness:N
 blear:A
 blear:V
 blearily:Av
 bleariness:N
-bleary:A
+bleary:A.c
 bleat:N
 bleat:V
 bleb:N
 blebbed:A
-blebby:A
+blebby:A.c
 bleed:V,-ds,-ding,bled
 bleeder:N
 bleeding:N
@@ -7796,7 +7796,7 @@ blighter:N
 blimey:I,-my
 blimp:N
 blimpish:A
-blind:A
+blind:A.c
 blind:N
 blind:V
 blinded:A
@@ -7830,7 +7830,7 @@ blister:V
 blistered:A
 blistering:A
 blistering:N
-blistery:A
+blistery:A.c
 blithe:A
 blithely:Av
 blitheness:N
@@ -7850,7 +7850,7 @@ bloatware:N
 blob:N
 blob:V
 blobbiness:N
-blobby:A
+blobby:A.c
 bloc:N
 block:N
 block:V
@@ -7871,7 +7871,7 @@ blockhouse:N
 blocking:N
 blockish:A
 blocklike:A
-blocky:A
+blocky:A.c
 blog:N
 blog:V
 blogger:N
@@ -7883,9 +7883,9 @@ blokeishness:N
 blokish:A
 blokishness:N
 blolly:N
-blond:A
+blond:A.c
 blond:N
-blonde:A
+blonde:A.c
 blonde:N
 blondish:A
 blondness:N
@@ -7921,10 +7921,10 @@ bloodsucker:N
 bloodsucking:A
 bloodthirstily:Av
 bloodthirstiness:N
-bloodthirsty:A
+bloodthirsty:A.c
 bloodworm:N
 bloodwort:N
-bloody:A
+bloody:A.c
 bloody:Av
 bloody:V
 bloom:N
@@ -7944,7 +7944,7 @@ blot:V
 blotch:N
 blotch:V
 blotched:A
-blotchy:A
+blotchy:A.c
 blotter:N
 blotto:A
 blouse:N
@@ -7965,22 +7965,22 @@ blowlamp:N
 blown:A
 blowout:N
 blowpipe:N
-blowsy:A
+blowsy:A.c
 blowtorch:N
 blowtube:N
 blowup:N
-blowy:A
-blowzy:A
+blowy:A.c
+blowzy:A.c
 blub:V
 blubber:N
 blubber:V
 blubberer:N
-blubbery:A
+blubbery:A.c
 blucher:N
 bludgeon:N
 bludgeon:V
 bludgeoner:N
-blue:A
+blue:A.c
 blue:N
 blue:V
 bluebell:N
@@ -8008,13 +8008,13 @@ blueshifted:A
 bluestem:N
 bluestocking:N
 bluestone:N
-bluesy:A
+bluesy:A.c
 bluet:N
 bluethroat:N
 bluetick:N
 blueweed:N
 bluewing:N
-bluey:A
+bluey:A.c
 bluff:A
 bluff:N
 bluff:V
@@ -8027,7 +8027,7 @@ blunder:N
 blunder:V
 blunderbuss:N
 blunderer:N
-blunt:A
+blunt:A.c
 blunt:V
 blunted:A
 bluntly:Av
@@ -8037,7 +8037,7 @@ blur:V
 blurb:N
 blurred:A
 blurriness:N
-blurry:A
+blurry:A.c
 blurt:V
 blush:N
 blush:V
@@ -8050,7 +8050,7 @@ bluster:V
 blusterer:N
 blustering:A
 blusterous:A
-blustery:A
+blustery:A.c
 bo's'n:N
 bo'sun:N
 boa:N
@@ -8143,7 +8143,7 @@ bogey:N
 bogey:V
 bogeyman:N,-men
 boggle:V
-boggy:A
+boggy:A.c
 bogie:N
 bogmat:N
 bogosity:N
@@ -8268,7 +8268,7 @@ boner:N
 boneset:N
 bonesetter:N
 boneshaker:N
-boney:A
+boney:A.c
 boneyard:N
 bonfire:N
 bong:V
@@ -8285,12 +8285,12 @@ bonnet:V
 bonnethead:N
 bonnie:A
 bonnily:Av
-bonny:A
+bonny:A.c
 bonobo:N
 bonsai:N
 bonus:N
 bonxie:N
-bony:A
+bony:A.c
 bonyness:N
 bonzer:A
 boo:I
@@ -8403,7 +8403,7 @@ booze:N
 booze:V
 boozer:N
 boozing:N
-boozy:A
+boozy:A.c
 bop:N
 bop:V
 bopeep:N
@@ -8463,11 +8463,11 @@ bosie:N
 bosk:N
 bosket:N
 boskopoid:A
-bosky:A
+bosky:A.c
 bosom:N
 bosom:V
 bosomed:A
-bosomy:A
+bosomy:A.c
 boson:N
 bosquet:N
 boss:A
@@ -8476,7 +8476,7 @@ boss:V
 bossily:Av
 bossiness:N
 bossism:N
-bossy:A
+bossy:A.c
 bosun:N
 bot:N
 bota:N
@@ -8489,7 +8489,7 @@ botch:N
 botch:V
 botched:A
 botcher:N
-botchy:A
+botchy:A.c
 botfly:N
 both:A
 both:D
@@ -8544,7 +8544,7 @@ bouillabaisse:N
 bouillon:N
 boulder:N
 bouldered:A
-bouldery:A
+bouldery:A.c
 boule:N
 boulevard:N
 boulle:N
@@ -8555,7 +8555,7 @@ bouncily:Av
 bounciness:N
 bouncing:A
 bouncing:N
-bouncy:A
+bouncy:A.c
 bound:A
 bound:N
 bound:V
@@ -8648,7 +8648,7 @@ boxroom:N
 boxset:N
 boxthorn:N
 boxwood:N
-boxy:A
+boxy:A.c
 boy:N
 boyband:N
 boycott:N
@@ -8722,7 +8722,7 @@ braggart:N
 bragger:N
 bragging:A
 bragging:N
-braggy:A
+braggy:A.c
 brahman:N
 brahmin:N
 brahminic:A
@@ -8754,18 +8754,18 @@ brainwashed:A
 brainwashing:N
 brainwave:N
 brainworker:N
-brainy:A
+brainy:A.c
 braise:V
 braised:A
 braising:N
 brake:N
 brake:V
 brakeman:N,-men
-braky:A
+braky:A.c
 braless:A
 bramble:N
 brambling:N
-brambly:A
+brambly:A.c
 bran:N
 branch:N
 branch:V
@@ -8782,7 +8782,7 @@ branchiopodan:N
 branchiopodous:A
 branchless:A
 branchlet:N
-branchy:A
+branchy:A.c
 brand:N
 brand:V
 branded:A
@@ -8794,7 +8794,7 @@ brandy:N
 brandyball:N
 brandysnap:N
 brant:N
-brash:A
+brash:A.c
 brashly:Av
 brashness:N
 brasier:N
@@ -8808,16 +8808,16 @@ brassiere:N
 brassily:Av
 brassiness:N
 brasslike:A
-brassy:A
+brassy:A.c
 brat:N
 brattice:N
 brattice:V
 brattish:A
 brattle:V
-bratty:A
+bratty:A.c
 bratwurst:N
 bravado:N,-os,-oes
-brave:A
+brave:A.c
 brave:N
 brave:V
 bravely:Av
@@ -8836,7 +8836,7 @@ brawling:A
 brawn:N
 brawnily:Av
 brawniness:N
-brawny:A
+brawny:A.c
 bray:N
 bray:V
 braze:V
@@ -8922,7 +8922,7 @@ breathless:A
 breathlessly:Av
 breathlessness:N
 breathtaking:A
-breathy:A
+breathy:A.c
 breccia:N
 brecciate:V
 breech:N
@@ -8941,7 +8941,7 @@ breeze:V
 breezeway:N
 breezily:Av
 breeziness:N
-breezy:A
+breezy:A.c
 bregma:N
 bregmatic:A
 brent:N
@@ -8979,9 +8979,9 @@ brickkiln:N
 bricklayer:N
 bricklaying:N
 brickle:A
-brickly:A
+brickly:A.c
 brickwork:N
-bricky:A
+bricky:A.c
 bricky:N
 brickyard:N
 bricolage:N
@@ -9003,7 +9003,7 @@ bridleway:N
 bridlewise:A
 bridoon:N
 brie:N
-brief:A
+brief:A.c
 brief:N
 brief:V
 briefcase:N
@@ -9014,7 +9014,7 @@ briefness:N
 brier:N
 brierpatch:N
 brierwood:N
-briery:A
+briery:A.c
 brig:N
 brigade:N
 brigade:V
@@ -9056,7 +9056,7 @@ brininess:N
 brinjal:N
 brink:N
 brinkmanship:N
-briny:A
+briny:A.c
 briny:N
 brio:N
 brioche:N
@@ -9065,7 +9065,7 @@ briquet:N
 briquette:N
 brisance:N
 brisant:A
-brisk:A
+brisk:A.c
 brisk:V
 brisken:V
 brisket:N
@@ -9078,7 +9078,7 @@ bristled:A
 bristlegrass:N
 bristlelike:A
 bristletail:N
-bristly:A
+bristly:A.c
 brit:N
 britches:N.p
 britt:N
@@ -9090,7 +9090,7 @@ bro:N
 broach:N
 broach:V
 broached:A
-broad:A
+broad:A.c
 broad:N
 broad-minded:A
 broadax:N
@@ -9134,7 +9134,7 @@ broil:V
 broiled:A
 broiler:N
 broiling:N
-broke:A
+broke:A.c
 broken:A
 brokenhearted:A
 brokenheartedness:N
@@ -9178,7 +9178,7 @@ bronze:A
 bronze:N
 bronze:V
 bronzed:A
-bronzy:A
+bronzy:A.c
 brooch:N
 brooch:V
 brood:N
@@ -9189,7 +9189,7 @@ broodiness:N
 brooding:A
 brooding:N
 broodmare:N
-broody:A
+broody:A.c
 broody:N
 brook:N
 brook:V
@@ -9207,7 +9207,7 @@ brother:N
 brotherhood:N
 brotherlike:A
 brotherliness:N
-brotherly:A
+brotherly:A.c
 brotherly:Av
 brotula:N
 brougham:N
@@ -9217,7 +9217,7 @@ browallia:N
 browbeat:V
 browbeaten:A
 browed:A
-brown:A
+brown:A.c
 brown:N
 brown:V
 browned:A
@@ -9261,7 +9261,7 @@ brushstroke:N
 brushup:N
 brushwood:N
 brushwork:N
-brushy:A
+brushy:A.c
 brusk:A
 brusque:A
 brusquely:Av
@@ -9297,7 +9297,7 @@ bubblejet:N
 bubbler:N
 bubbliness:N
 bubbling:A
-bubbly:A
+bubbly:A.c
 bubbly:N
 bubo:N,-oes
 bubonic:A
@@ -9349,7 +9349,7 @@ budget:N
 budget:V
 budgetary:A
 budgie:N
-buff:A
+buff:A.c
 buff:N
 buff:V
 buffalo:N,-os,-oes
@@ -9376,7 +9376,7 @@ bugger:N
 bugger:V
 buggery:N
 bugginess:N
-buggy:A
+buggy:A.c
 buggy:N
 bugle:N
 bugle:V
@@ -9410,7 +9410,7 @@ bulghur:N
 bulginess:N
 bulging:A
 bulgur:N
-bulgy:A
+bulgy:A.c
 bulimarexia:N
 bulimia:N
 bulimic:A
@@ -9419,7 +9419,7 @@ bulk:N
 bulk:V
 bulkhead:N
 bulkiness:N
-bulky:A
+bulky:A.c
 bull:N
 bull:V
 bulla:N
@@ -9455,7 +9455,7 @@ bullishness:N
 bullnecked:A
 bullnose:N
 bullock:N
-bullocky:A
+bullocky:A.c
 bullpen:N
 bullring:N
 bullrush:N
@@ -9466,7 +9466,7 @@ bullshitter:N
 bullshot:N
 bullterrier:N
 bullwhip:N
-bully:A
+bully:A.c
 bully:N
 bully:V
 bullyboy:N
@@ -9494,11 +9494,11 @@ bumper:N
 bumph:N
 bumpiness:N
 bumpkin:N
-bumpkinly:A
+bumpkinly:A.c
 bumptious:A
 bumptiously:Av
 bumptiousness:N
-bumpy:A
+bumpy:A.c
 bun:N
 bunce:N
 bunch:N
@@ -9506,7 +9506,7 @@ bunch:V
 bunchberry:N
 bunched:A
 bunchgrass:N
-bunchy:A
+bunchy:A.c
 bunco:N
 bunco:V
 buncombe:N
@@ -9553,7 +9553,7 @@ bur:V
 burb:N
 burble:V
 burbling:A
-burbly:A
+burbly:A.c
 burbot:N
 burden:N
 burden:V
@@ -9604,7 +9604,7 @@ burlesque:N
 burlesque:V
 burlily:Av
 burliness:N
-burly:A
+burly:A.c
 burn:N
 burn:V,-ns,-ning,-nt,-ned
 burnable:A
@@ -9639,7 +9639,7 @@ burro:N
 burrow:N
 burrow:V
 burrower:N
-burry:A
+burry:A.c
 bursa:N,-as,-ae
 bursal:A
 bursar:N
@@ -9685,7 +9685,7 @@ bushwalker:N
 bushwhack:V
 bushwhacker:N
 bushwhacking:A
-bushy:A
+bushy:A.c
 busily:Av
 business:N
 businesslike:A
@@ -9710,8 +9710,8 @@ buster:N
 bustle:N
 bustle:V
 bustling:A
-busty:A
-busy:A
+busty:A.c
+busy:A.c
 busy:V
 busybodied:A
 busybody:N
@@ -9726,13 +9726,13 @@ butane:N
 butanol:N
 butanone:N
 butat:N
-butch:A
+butch:A.c
 butch:N
 butcher:N
 butcher:V
 butcherbird:N
 butchering:N
-butcherly:A
+butcherly:A.c
 butchery:N
 butene:N
 buteonine:A
@@ -9762,7 +9762,7 @@ butternut:N
 butterscotch:N
 butterweed:N
 butterwort:N
-buttery:A
+buttery:A.c
 buttery:N
 buttinsky:N
 buttock:N
@@ -9774,7 +9774,7 @@ buttonhole:V
 buttonhook:N
 buttonlike:A
 buttonwood:N
-buttony:A
+buttony:A.c
 buttress:N
 buttress:V
 buttressed:A
@@ -9788,7 +9788,7 @@ butylene:N
 butyraceous:A
 butyric:A
 butyrin:N
-buxom:A
+buxom:A.c
 buxomly:Av
 buxomness:N
 buy:N
@@ -9891,7 +9891,7 @@ cackel:V
 cackle:N
 cackle:V
 cackler:N
-cackly:A
+cackly:A.c
 cacodyl:N
 cacodylic:A
 cacodæmon:N
@@ -9964,11 +9964,11 @@ cage:N
 cage:V
 cageless:A
 cager:N
-cagey:A
+cagey:A.c
 cagily:Av
 caginess:N
 cagoule:N
-cagy:A
+cagy:A.c
 cahoot:N
 caiman:N
 caimitillo:N
@@ -10123,7 +10123,7 @@ callowness:N
 callsign:N
 callus:N
 callus:V
-calm:A
+calm:A.c
 calm:N
 calm:V
 calming:A
@@ -10209,7 +10209,7 @@ camosh:N
 camouflage:N
 camouflage:V
 camouflaged:A
-camp:A
+camp:A.c
 camp:N
 camp:V
 campaign:N
@@ -10243,7 +10243,7 @@ campong:N
 campsite:N
 campstool:N
 campus:N
-campy:A
+campy:A.c
 campylotropous:A
 camshaft:N
 camwood:N
@@ -10373,7 +10373,7 @@ cannulate:V
 cannulation:N
 cannulization:N.z
 cannulize:V.z
-canny:A
+canny:A.c
 canoe:N
 canoe:V
 canoeist:N
@@ -10421,7 +10421,7 @@ canton:V
 cantonal:A
 cantonment:N
 cantor:N
-canty:A
+canty:A.c
 canulate:V
 canulation:N
 canulization:N.z
@@ -10832,7 +10832,7 @@ carrion:N
 carrizo:N
 carrot:N
 carrottop:N
-carroty:A
+carroty:A.c
 carrousel:N
 carry:N
 carry:V
@@ -10867,7 +10867,7 @@ cartoonish:A
 cartoonishly:Av
 cartoonist:N
 cartoonlike:A
-cartoony:A
+cartoony:A.c
 cartouch:N
 cartouche:N
 cartridge:N
@@ -11077,7 +11077,7 @@ catchpenny:A
 catchphrase:N
 catchweed:N
 catchword:N
-catchy:A
+catchy:A.c
 catclaw:N
 catechesis:N
 catechetic:A
@@ -11160,7 +11160,7 @@ cattle:N
 cattleman:N,-men
 cattleship:N
 cattleya:N
-catty:A
+catty:A.c
 catty:N
 catwalk:N
 caucasian:A
@@ -11573,7 +11573,7 @@ chaffer:V
 chaffinch:N
 chafflike:A
 chaffweed:N
-chaffy:A
+chaffy:A.c
 chafing:N
 chagrin:N
 chagrin:V
@@ -11611,7 +11611,7 @@ chalkboard:N
 chalkiness:N
 chalkpit:N
 chalkstone:N
-chalky:A
+chalky:A.c
 challah:N
 challenge:N
 challenge:V
@@ -11650,7 +11650,7 @@ chamæleonic:A
 chamæleonlike:A
 chanal:N
 chanar:N
-chance:A
+chance:A.c
 chance:N
 chance:V
 chanceful:A
@@ -11664,7 +11664,7 @@ chancre:N
 chancroid:N
 chancroidal:A
 chancrous:A
-chancy:A
+chancy:A.c
 chandelier:N
 chandelle:N
 chandelle:V
@@ -11732,7 +11732,7 @@ chaplet:N
 chapleted:A
 chapman:N,-men
 chapped:A
-chappy:A
+chappy:A.c
 chapter:N
 chapterhouse:N
 char:N
@@ -11809,7 +11809,7 @@ chartless:A
 chartreuse:A
 chartreuse:N
 charwoman:N,-men
-chary:A
+chary:A.c
 chase:N
 chase:V
 chased:N
@@ -11846,7 +11846,7 @@ chattering:A
 chattering:N
 chattily:Av
 chattiness:N
-chatty:A
+chatty:A.c
 chauffeur:N
 chauffeur:V
 chauffeuse:N
@@ -11858,7 +11858,7 @@ chauvinistic:A
 chaw:N
 chaw:V
 chawbacon:N
-cheap:A
+cheap:A.c
 cheapen:V
 cheapjack:A
 cheaply:Av
@@ -11902,7 +11902,7 @@ cheekbone:N
 cheekily:Av
 cheekiness:N
 cheekpiece:N
-cheeky:A
+cheeky:A.c
 cheep:N
 cheep:V
 cheer:N
@@ -11923,7 +11923,7 @@ cheerless:A
 cheerlessly:Av
 cheerlessness:N
 cheers:I
-cheery:A
+cheery:A.c
 cheese:N
 cheese:V
 cheeseboard:N
@@ -11935,7 +11935,7 @@ cheeselike:A
 cheesemonger:N
 cheeseparing:A
 cheesiness:N
-cheesy:A
+cheesy:A.c
 cheetah:N
 cheewink:N
 chef:N
@@ -11999,6 +11999,7 @@ cherished:A
 cheroot:N
 cherry:A
 cherry:N
+cherrylike:A
 cherrystone:N
 chert:N
 cherty:A
@@ -12016,7 +12017,7 @@ chesterfield:N
 chestful:N
 chestnut:A
 chestnut:N
-chesty:A
+chesty:A.c
 chetah:N
 chetrum:N
 cheval:N
@@ -12034,7 +12035,7 @@ chewer:N
 chewiness:N
 chewing:N
 chewink:N
-chewy:A
+chewy:A.c
 chez:P.t
 chi:N
 chia:N,-a
@@ -12045,7 +12046,7 @@ chiasmal:A
 chiasmatic:A
 chiasmic:A
 chiasmus:N
-chic:A
+chic:A.c
 chic:N
 chicane:N
 chicane:V
@@ -12103,7 +12104,7 @@ childishness:N
 childless:A
 childlessness:N
 childlike:A
-childly:A
+childly:A.c
 childminder:N
 childminding:N
 childproof:A
@@ -12113,7 +12114,7 @@ chiliad:N
 chiliasm:N
 chiliast:N
 chiliastic:A
-chill:A
+chill:A.c
 chill:N
 chill:V
 chiller:N
@@ -12122,7 +12123,7 @@ chilliness:N
 chilling:A
 chilling:N
 chillness:N
-chilly:A
+chilly:A.c
 chilly:N
 chilver:N
 chime:N
@@ -12152,7 +12153,7 @@ chincherinchee:N
 chinchilla:N
 chinchillon:N
 chinchona:N
-chinchy:A
+chinchy:A.c
 chine:N
 chine:V
 chink:N
@@ -12167,7 +12168,7 @@ chinquapin:N
 chinstrap:N
 chintz:N
 chintzily:Av
-chintzy:A
+chintzy:A.c
 chinwag:N
 chip:N
 chip:V
@@ -12180,7 +12181,7 @@ chipped:A
 chipper:A
 chippie:N
 chipping:N
-chippy:A
+chippy:A.c
 chippy:N
 chipset:N
 chiralgia:N
@@ -12202,7 +12203,7 @@ chirp:N
 chirp:V
 chirpily:Av
 chirpiness:N
-chirpy:A
+chirpy:A.c
 chirr:V
 chirrup:N
 chirrup:V
@@ -12288,9 +12289,9 @@ chockablock:A
 chockful:A
 chocoholic:N
 chocolate:N
-chocolatey:A
-chocolaty:A
-choice:A
+chocolatey:A.c
+chocolaty:A.c
+choice:A.c
 choice:N
 choiceness:N
 choir:N
@@ -12308,7 +12309,7 @@ chokepoint:N
 choker:N
 chokey:N
 choking:N
-choky:A
+choky:A.c
 choky:N
 cholangiography:N
 cholangitis:N
@@ -12345,8 +12346,8 @@ chondrule:N
 choora:N
 choose:V,-es,-sing,chose,chosen
 chooser:N
-choosey:A
-choosy:A
+choosey:A.c
+choosy:A.c
 chop:N
 chop:V
 chopfallen:A
@@ -12356,7 +12357,7 @@ chopped:A
 chopper:N
 choppily:Av
 choppiness:N
-choppy:A
+choppy:A.c
 chopsteak:N
 chopstick:N
 choragic:A
@@ -12413,7 +12414,7 @@ christian:A
 christianly:A
 christless:A
 christlike:A
-christly:A
+christly:A.c
 christmas:V
 chroma:N
 chromaesthesia:N
@@ -12476,7 +12477,7 @@ chthonian:A
 chthonic:A
 chub:N
 chubbiness:N
-chubby:A
+chubby:A.c
 chuck:N
 chuck:V
 chuckhole:N
@@ -12498,7 +12499,7 @@ chum:N
 chum:V
 chummily:Av
 chumminess:N
-chummy:A
+chummy:A.c
 chump:N
 chunder:N
 chunder:V
@@ -12507,14 +12508,14 @@ chunk:N
 chunk:V
 chunkiness:N
 chunking:N
-chunky:A
+chunky:A.c
 chunter:V
 church:N
 church:V
 churchgoer:N
 churchgoing:A
 churchlike:A
-churchly:A
+churchly:A.c
 churchman:N,-men
 churchwarden:N
 churchwoman:N,-men
@@ -12680,7 +12681,7 @@ cisgender:A
 cisgendered:A
 cislunar:A
 cismontane:A
-cissy:A
+cissy:A.c
 cistern:N
 cisterna:N,-ae
 cisternal:A
@@ -12761,7 +12762,7 @@ clamber:V
 clamberer:N
 clammily:Av
 clamminess:N
-clammy:A
+clammy:A.c
 clammyweed:N
 clamor:N
 clamor:V
@@ -12850,14 +12851,14 @@ classman:N,-men
 classmate:N
 classroom:N
 classwork:N
-classy:A
+classy:A.c
 clast:N
 clastic:A
 clathrate:A
 clatter:N
 clatter:V
 clattering:A
-clattery:A
+clattery:A.c
 claudication:N
 clausal:A
 clause:N
@@ -12886,7 +12887,7 @@ claylike:A
 claymore:N
 claystone:N
 clayware:N
-clean:A
+clean:A.c
 clean:Av
 clean:N
 clean:V
@@ -12895,7 +12896,7 @@ cleaned:A
 cleaner:N
 cleaning:N
 cleanliness:N
-cleanly:A
+cleanly:A.c
 cleanly:Av
 cleanness:N
 cleanse:V
@@ -12904,7 +12905,7 @@ cleanser:N
 cleansing:A
 cleansing:N
 cleanup:N
-clear:A
+clear:A.c
 clear:Av
 clear:N
 clear:V
@@ -12960,7 +12961,7 @@ clerk:N
 clerk:V
 clerking:N
 clerkship:N
-clever:A
+clever:A.c
 cleverly:Av
 cleverness:N
 clevis:N
@@ -12984,7 +12985,7 @@ cliffhanger:N
 cliffhanging:A
 clifflike:A
 clifftop:N
-cliffy:A
+cliffy:A.c
 climacteric:N
 climactic:A
 climate:N
@@ -13013,7 +13014,7 @@ clingfilm:N
 clingfish:N
 clinginess:N
 clingstone:N
-clingy:A
+clingy:A.c
 clinic:N
 clinical:A
 clinically:Av
@@ -13041,7 +13042,7 @@ clipped:A
 clipper:N
 clipping:N
 clique:N
-cliquey:A
+cliquey:A.c
 cliquish:A
 cliquishly:Av
 cliquishness:N
@@ -13078,7 +13079,7 @@ clog:N
 clog:V
 clogged:A
 clogging:A
-cloggy:A
+cloggy:A.c
 cloisonne:A
 cloisonne:N
 cloister:N
@@ -13099,7 +13100,7 @@ cloning:N
 clonk:V
 clonus:N
 clop:V
-close:A
+close:A.c
 close:Av
 close:N
 close:V
@@ -13156,7 +13157,7 @@ cloudless:A
 cloudlessly:Av
 cloudlessness:N
 cloudlike:A
-cloudy:A
+cloudy:A.c
 clout:N
 clout:V
 clove:N
@@ -13184,7 +13185,7 @@ clubbable:A
 clubber:N
 clubbing:N
 clubbish:A
-clubby:A
+clubby:A.c
 clubfoot:N,-feet
 clubfooted:A
 clubhead:N
@@ -13199,15 +13200,15 @@ clueless:A
 clumber:N
 clump:N
 clump:V
-clumpy:A
+clumpy:A.c
 clumsily:Av
 clumsiness:N
-clumsy:A
+clumsy:A.c
 clunch:N
 clunk:N
 clunk:V
 clunker:N
-clunky:A
+clunky:A.c
 clupeid:N
 clusia:N
 cluster:N
@@ -13322,7 +13323,7 @@ cobnut:N
 cobra:N
 cobweb:N
 cobwebbed:A
-cobwebby:A
+cobwebby:A.c
 coca:N
 cocain:N
 cocaine:N
@@ -13348,7 +13349,7 @@ cock:V
 cock-a-doodle-doo:N
 cockade:N
 cockamamie:A
-cockamamy:A
+cockamamy:A.c
 cockateel:N
 cockatiel:N
 cockatoo:N
@@ -13383,7 +13384,7 @@ cocksure:A
 cocksureness:N
 cocktail:N
 cockup:N
-cocky:A
+cocky:A.c
 coco:N
 cocoa:N
 cocoanut:N
@@ -13559,7 +13560,7 @@ col:N
 cola:N
 colander:N
 colchine:N
-cold:A
+cold:A.c
 cold:N
 coldblooded:A
 coldbloodedly:Av
@@ -13577,7 +13578,7 @@ coleus:N
 colewort:N
 coley:N,-y
 colic:N
-colicky:A
+colicky:A.c
 colicroot:N
 coliphage:N
 coliseum:N
@@ -13840,7 +13841,7 @@ comedo:N
 comedown:N
 comedy:N
 comeliness:N
-comely:A
+comely:A.c
 comer:N
 comestible:A
 comestible:N
@@ -13862,7 +13863,7 @@ comforting:A
 comfortingly:Av
 comfortless:A
 comfrey:N
-comfy:A
+comfy:A.c
 comic:A
 comic:N
 comical:A
@@ -13954,7 +13955,7 @@ commoditization:N
 commoditize:V
 commodity:N
 commodore:N
-common:A
+common:A.c
 common:N
 commonage:N
 commonality:N
@@ -14227,7 +14228,7 @@ computerized:A.z
 computing:N
 comrade:N
 comradeliness:N
-comradely:A
+comradely:A.c
 comradery:N
 comradeship:N
 con:Av
@@ -15045,14 +15046,14 @@ contrarily:Av
 contrariness:N
 contrarious:A
 contrariwise:Av
-contrary:A
+contrary:A.c
 contrary:N
 contrast:N
 contrast:V
 contrasting:A
 contrastingly:Av
 contrastive:A
-contrasty:A
+contrasty:A.c
 contravene:V
 contravention:N
 contredanse:N
@@ -15064,7 +15065,7 @@ contribution:N
 contributive:A
 contributor:N
 contributory:A
-contrite:A
+contrite:A.c
 contritely:Av
 contriteness:N
 contrition:N
@@ -15217,7 +15218,7 @@ cookstove:N
 cooktop:N
 cookware:N
 cooky:N
-cool:A
+cool:A.c
 cool:I
 cool:N
 cool:V
@@ -15297,7 +15298,7 @@ copperhead:N
 copperplate:N
 coppersmith:N
 copperware:N
-coppery:A
+coppery:A.c
 coppice:N
 copra:N
 coprolalia:N
@@ -15401,7 +15402,7 @@ corking:A
 corkscrew:N
 corkscrew:V
 corkwood:N
-corky:A
+corky:A.c
 corm:N
 cormorant:N
 cormose:A
@@ -15454,7 +15455,7 @@ cornucopia:N
 cornute:A
 cornute:N
 cornute:V
-corny:A
+corny:A.c
 corolla:N
 corollary:N
 corona:N
@@ -15663,7 +15664,7 @@ costive:A
 costless:A
 costlessly:Av
 costliness:N
-costly:A
+costly:A.c
 costmary:N
 costochondritis:N
 costume:N
@@ -15672,7 +15673,7 @@ costumed:A
 costumer:N
 costumier:N
 costusroot:N
-cosy:A
+cosy:A.c
 cosy:N
 cot:N
 cotan:N
@@ -15700,7 +15701,7 @@ cottontail:N
 cottonweed:N
 cottonwick:N
 cottonwood:N
-cottony:A
+cottony:A.c
 cotyledon:N
 cotyloid:A
 cotyloidal:A
@@ -15912,7 +15913,7 @@ courthouse:N
 courtier:N
 courting:N
 courtliness:N
-courtly:A
+courtly:A.c
 courtroom:N
 courtship:N
 courtyard:N
@@ -15921,7 +15922,7 @@ cousin:N
 cousinly:A
 couth:A
 couthie:A
-couthy:A
+couthy:A.c
 couture:N
 couturier:N
 couvade:N
@@ -15961,7 +15962,7 @@ cowage:N
 coward:N
 cowardice:N
 cowardliness:N
-cowardly:A
+cowardly:A.c
 cowbarn:N
 cowbell:N
 cowberry:N
@@ -16005,7 +16006,7 @@ coxless:A
 coxsackievirus:N
 coxswain:N
 coxswain:V
-coy:A
+coy:A.c
 coydog:N
 coyly:Av
 coyness:N
@@ -16018,7 +16019,7 @@ cozey:N
 cozie:N
 cozily:Av
 coziness:N
-cozy:A
+cozy:A.c
 cozy:N
 crab:N
 crab:V
@@ -16028,7 +16029,7 @@ crabbedness:N
 crabber:N
 crabbily:Av
 crabbiness:N
-crabby:A
+crabby:A.c
 crabgrass:N
 crabhole:N
 crablike:A
@@ -16052,7 +16053,7 @@ crackle:N
 crackle:V
 crackleware:N
 crackling:N
-crackly:A
+crackly:A.c
 crackpot:N
 cracksman:N,-men
 crackup:N
@@ -16068,13 +16069,13 @@ craftsman:N,-men
 craftsmanship:N
 craftspeople:N.p
 craftswoman:N,-men
-crafty:A
+crafty:A.c
 crag:N
 cragfast:A
 cragged:A
 craggily:Av
 cragginess:N
-craggy:A
+craggy:A.c
 cragsman:N,-men
 crake:N
 cram:V
@@ -16109,7 +16110,7 @@ crankcase:N
 crankily:Av
 crankiness:N
 crankshaft:N
-cranky:A
+cranky:A.c
 crannied:A
 cranny:N
 crap:N
@@ -16120,7 +16121,7 @@ crape:V
 crapette:N
 crapper:N
 crappie:N
-crappy:A
+crappy:A.c
 crapshoot:N
 crapshooter:N
 crapulence:N
@@ -16131,7 +16132,7 @@ crash:N
 crash:V
 crasher:N
 crashing:A
-crass:A
+crass:A.c
 crassitude:N
 crassness:N
 crate:N
@@ -16157,7 +16158,7 @@ crawl:V
 crawler:N
 crawling:N
 crawlspace:N
-crawly:A
+crawly:A.c
 crawly:N
 cray:N
 crayfish:N
@@ -16168,7 +16169,7 @@ craze:V
 crazed:A
 crazily:Av
 craziness:N
-crazy:A
+crazy:A.c
 crazy:N
 crazyweed:N
 creak:N
@@ -16178,7 +16179,7 @@ creakiness:N
 creaking:A
 creaking:N
 creakingly:Av
-creaky:A
+creaky:A.c
 cream:N
 cream:V
 creamcups:N.p
@@ -16186,7 +16187,7 @@ creamer:N
 creamery:N
 creamily:Av
 creaminess:N
-creamy:A
+creamy:A.c
 crease:N
 crease:V
 creased:A
@@ -16225,7 +16226,7 @@ creditably:Av
 credited:A
 creditor:N
 creditworthiness:N
-creditworthy:A
+creditworthy:A.c
 credo:N
 credulity:N
 credulous:A
@@ -16241,7 +16242,7 @@ creeper:N
 creepily:Av
 creepiness:N
 creeping:N
-creepy:A
+creepy:A.c
 creepypasta:N
 creese:N
 cremains:N.p
@@ -16333,12 +16334,12 @@ criminology:N
 crimp:N
 crimp:V
 crimper:N
-crimson:A
+crimson:A.c
 crimson:N
 crimson:V
 cringe:V
-cringeworthy:A
-cringey:A
+cringeworthy:A.c
+cringey:A.c
 cringing:A
 cringle:N
 crinion:N
@@ -16346,7 +16347,7 @@ crinkle:N
 crinkle:V
 crinkled:A
 crinkleroot:N
-crinkly:A
+crinkly:A.c
 crinoid:A
 crinoid:N
 crinoline:N
@@ -16359,7 +16360,7 @@ crippler:N
 crippleware:N
 crippling:A
 crisis:N
-crisp:A
+crisp:A.c
 crisp:N
 crisp:V
 crispate:A
@@ -16367,7 +16368,7 @@ crispbread:N
 crispiness:N
 crisply:Av
 crispness:N
-crispy:A
+crispy:A.c
 crisscross:A
 crisscross:Av
 crisscross:N
@@ -16396,7 +16397,7 @@ croak:V
 croaker:N
 croaking:A
 croaking:N
-croaky:A
+croaky:A.c
 crochet:N
 crochet:V
 crocheter:N
@@ -16442,7 +16443,7 @@ croquet:V
 croquette:N
 crore:N
 crosier:N
-cross:A
+cross:A.c
 cross:N
 cross:V
 crossbar:N
@@ -16498,7 +16499,7 @@ crotaphion:N
 crotch:N
 crotchet:N
 crotchetiness:N
-crotchety:A
+crotchety:A.c
 croton:N
 crotonbug:N
 crottal:N
@@ -16510,7 +16511,7 @@ crouching:A
 croup:N
 croupe:N
 croupier:N
-croupy:A
+croupy:A.c
 crouton:N
 crow:N
 crow:V
@@ -16548,8 +16549,8 @@ crucifixion:N
 cruciform:A
 crucify:V
 crud:N
-cruddy:A
-crude:A
+cruddy:A.c
+crude:A.c
 crude:N
 crudely:Av
 crudeness:N
@@ -16561,7 +16562,7 @@ cruelness:N
 cruelty:N
 cruet:N
 cruft:N.p
-crufty:A
+crufty:A.c
 cruise:N
 cruise:V
 cruiser:N
@@ -16572,10 +16573,10 @@ crumb:V
 crumble:V
 crumbled:A
 crumbliness:N
-crumbly:A
+crumbly:A.c
 crumhorn:N
 crumminess:N
-crummy:A
+crummy:A.c
 crump:V
 crumpet:N
 crumple:V
@@ -16586,7 +16587,7 @@ crunched:A
 cruncher:N
 crunchily:Av
 crunchiness:N
-crunchy:A
+crunchy:A.c
 crupper:N
 crural:A
 crus:N,crura
@@ -16613,7 +16614,7 @@ crustiness:N
 crustless:A
 crustlike:A
 crustose:A
-crusty:A
+crusty:A.c
 crutch:N
 crux:N
 cruzeiro:N
@@ -16738,7 +16739,7 @@ cuddle:N
 cuddle:V
 cuddlesome:A
 cuddling:N
-cuddly:A
+cuddly:A.c
 cuddy:N
 cudgel:N
 cudgel:V
@@ -16830,7 +16831,7 @@ cunning:A
 cunning:N
 cunningly:Av
 cunt:N
-cunty:A
+cunty:A.c
 cup:N
 cup:V
 cupbearer:N
@@ -16911,9 +16912,9 @@ curlicue:N
 curliness:N
 curling:A
 curling:N
-curly:A
+curly:A.c
 curmudgeon:N
-curmudgeonly:A
+curmudgeonly:A.c
 currajong:N
 currant:N
 currawong:N
@@ -16971,11 +16972,11 @@ curveball:N
 curved:A
 curvet:N
 curvet:V
-curvey:A
+curvey:A.c
 curvilineal:A
 curvilinear:A
 curving:A
-curvy:A
+curvy:A.c
 cuscus:N
 cushat:N
 cushaw:N
@@ -16983,8 +16984,8 @@ cushion:N
 cushion:V
 cushioned:A
 cushioning:N
-cushiony:A
-cushy:A
+cushiony:A.c
+cushy:A.c
 cusk:N
 cusp:N
 cuspate:A
@@ -17025,11 +17026,11 @@ cutaneous:A
 cutaway:N
 cutback:N
 cutch:N
-cute:A
+cute:A.c
 cutely:Av
 cuteness:N
 cutesiness:N
-cutesy:A
+cutesy:A.c
 cutey:N
 cuticle:N
 cuticula:N
@@ -17057,7 +17058,7 @@ cuttlefish:N
 cutup:N
 cutwork:N
 cutworm:N
-cyan:A
+cyan:A.c
 cyan:N
 cyanamid:N
 cyanamide:N
@@ -17281,8 +17282,8 @@ dado:V
 daffily:Av
 daffiness:N
 daffodil:N
-daffy:A
-daft:A
+daffy:A.c
+daft:A.c
 daftly:Av
 daftness:N
 dag:N
@@ -17303,7 +17304,7 @@ daily:N
 daimon:N
 daintily:Av
 daintiness:N
-dainty:A
+dainty:A.c
 dainty:N
 daiquiri:N
 dairy:N
@@ -17365,7 +17366,7 @@ damoiselle:N
 damosel:N
 damourite:N
 damozel:N
-damp:A
+damp:A.c
 damp:N
 damp:V
 dampen:V
@@ -17393,7 +17394,7 @@ dandify:V
 dandily:Av
 dandle:V
 dandruff:N
-dandy:A
+dandy:A.c
 dandy:N
 dandyish:A
 danewort:N
@@ -17409,7 +17410,7 @@ dangleberry:N
 dangler:N
 dangling:N
 danish:N
-dank:A
+dank:A.c
 dankness:N
 danseur:N
 danseuse:N
@@ -17433,7 +17434,7 @@ daresay:V,-y
 daring:A
 daring:N
 daringly:Av
-dark:A
+dark:A.c
 dark:N
 darken:V
 darkened:A
@@ -17477,7 +17478,7 @@ dassie:N
 dastard:A
 dastard:N
 dastardliness:N
-dastardly:A
+dastardly:A.c
 dasymeter:N
 dasyure:N
 dasyurid:N
@@ -17504,7 +17505,7 @@ dauber:N
 daubing:N
 daughter:N
 daughterboard:N
-daughterly:A
+daughterly:A.c
 daunt:V
 daunted:A
 daunting:A
@@ -17559,7 +17560,7 @@ deacon:N
 deaconess:N
 deactivate:V
 deactivation:N
-dead:A
+dead:A.c
 dead:Av
 dead:N
 deadbeat:N
@@ -17575,7 +17576,7 @@ deadline:N
 deadliness:N
 deadlock:N
 deadlocked:A
-deadly:A
+deadly:A.c
 deadly:Av
 deadness:N
 deadpan:A
@@ -17584,7 +17585,7 @@ deadpan:N
 deadpan:V
 deadpanner:N
 deadwood:N
-deaf:A
+deaf:A.c
 deaf:N
 deaf:V
 deafen:V
@@ -17607,7 +17608,7 @@ deaminize:V
 dean:N
 deanery:N
 deanship:N
-dear:A
+dear:A.c
 dear:Av
 dear:N
 dearest:N
@@ -17621,7 +17622,7 @@ deathbed:N
 deathblow:N
 deathless:A
 deathlike:A
-deathly:A
+deathly:A.c
 deathly:Av
 deathrate:N
 deathtrap:N
@@ -17931,7 +17932,7 @@ deedbox:N
 deejay:N
 deejay:V
 deem:V
-deep:A
+deep:A.c
 deep:Av
 deep:N
 deepen:V
@@ -18079,7 +18080,7 @@ defrayment:N
 defrock:V
 defrost:V
 defroster:N
-deft:A
+deft:A.c
 deftly:Av
 deftness:N
 defunct:A
@@ -18413,7 +18414,7 @@ denotive:A
 denounce:V
 denouncement:N
 denouncer:N
-dense:A
+dense:A.c
 densely:Av
 denseness:N
 densification:N
@@ -19000,7 +19001,7 @@ dewdrop:N
 dewily:Av
 dewiness:N
 dewlap:N
-dewy:A
+dewy:A.c
 dexamethasone:N
 dexter:A
 dexterity:N
@@ -19180,12 +19181,12 @@ dichromia:N
 dick:N
 dickens:N
 dicker:V
-dickey:A
+dickey:A.c
 dickey:N
 dickeybird:N
 dickhead:N
 dickie:N
-dicky:A
+dicky:A.c
 dicky:N
 dickybird:N
 diclinous:A
@@ -19375,7 +19376,7 @@ diluted:A
 dilution:N
 diluvial:A
 diluvian:A
-dim:A
+dim:A.c
 dim:V
 dime:N
 dimenhydrinate:N
@@ -19415,7 +19416,7 @@ dimout:N
 dimple:N
 dimple:V
 dimpled:A
-dimply:A
+dimply:A.c
 dimwit:N
 dimwitted:A
 dimwittedly:Av
@@ -19441,11 +19442,11 @@ dingle:N
 dingleberry:N
 dingo:N,-oes
 dingus:N
-dingy:A
+dingy:A.c
 dining:N
 dink:N
 dinkey:N
-dinky:A
+dinky:A.c
 dinky:N
 dinner:N
 dinnertime:N
@@ -19499,7 +19500,7 @@ dipole:N
 dipped:A
 dipper:N
 dippiness:N
-dippy:A
+dippy:A.c
 dipso:N
 dipsomania:N
 dipsomaniac:N
@@ -19510,7 +19511,7 @@ dipterocarp:N
 dipteron:N
 dipterous:A
 diptych:N,-hs
-dire:A
+dire:A.c
 direct:A
 direct:Av
 direct:V
@@ -19545,7 +19546,7 @@ dirtbag:N
 dirtball:N
 dirtily:Av
 dirtiness:N
-dirty:A
+dirty:A.c
 dirty:V
 dirtying:N
 dis:V
@@ -19897,7 +19898,7 @@ dishware:N
 dishwasher:N
 dishwashing:N
 dishwater:N
-dishy:A
+dishy:A.c
 disillusion:N
 disillusion:V
 disillusioned:A
@@ -20298,7 +20299,7 @@ dither:N
 dither:V
 ditherer:N
 dithering:N
-dithery:A
+dithery:A.c
 dithyramb:N
 dithyrambic:A
 ditransitive:A
@@ -20309,7 +20310,7 @@ ditto:V
 ditty:N
 ditz:N
 ditziness:N
-ditzy:A
+ditzy:A.c
 diuresis:N
 diuretic:N
 diurnal:A
@@ -20394,7 +20395,7 @@ dizygotic:A
 dizygous:A
 dizzily:Av
 dizziness:N
-dizzy:A
+dizzy:A.c
 dizzy:V
 diæresis:N
 djellaba:N
@@ -20450,7 +20451,7 @@ dodder:N
 dodder:V
 dodderer:N
 doddering:A
-doddery:A
+doddery:A.c
 doddle:N
 dodecagon:N
 dodecahedral:A
@@ -20460,7 +20461,7 @@ dodge:V
 dodgem:N
 dodger:N
 dodging:N
-dodgy:A
+dodgy:A.c
 dodo:N
 doe:N
 doer:N
@@ -20664,16 +20665,16 @@ dope:N
 dope:V
 doped:A
 doper:N
-dopey:A
+dopey:A.c
 dopily:Av
 dopiness:N
 doppelgänger:N
-dopy:A
+dopy:A.c
 dorbeetle:N
 doric:A
 dork:N
 dorkiness:N
-dorky:A
+dorky:A.c
 dorm:N
 dormancy:N
 dormant:A
@@ -20718,7 +20719,7 @@ dotted:A
 dotterel:N
 dottily:Av
 dottle:N
-dotty:A
+dotty:A.c
 double:A
 double:Av
 double:N
@@ -20751,9 +20752,9 @@ douchebag:N
 dough:N
 doughboy:N
 doughnut:N
-doughty:A
-doughy:A
-dour:A
+doughty:A.c
+doughy:A.c
+dour:A.c
 doura:N
 dourah:N
 dourly:Av
@@ -20771,7 +20772,7 @@ dovishness:N
 dowager:N
 dowdily:Av
 dowdiness:N
-dowdy:A
+dowdy:A.c
 dowdy:N
 dowel:N
 dowel:V,-ls,-lling,-ling,-lled,-led
@@ -20782,7 +20783,7 @@ dowered:A
 dowerless:A
 dowery:N
 dowitcher:N
-down:A
+down:A.c
 down:Av
 down:N
 down:P
@@ -20871,7 +20872,7 @@ downwash:N
 downwind:A
 downwind:Av
 downwind:P
-downy:A
+downy:A.c
 dowry:N
 dowse:N
 dowse:V
@@ -20897,9 +20898,9 @@ dozen:N
 dozer:N
 dozily:Av
 doziness:N
-dozy:A
+dozy:A.c
 doña:N
-drab:A
+drab:A.c
 draba:N
 drabble:V
 drably:Av
@@ -20921,7 +20922,7 @@ draftsman:N,-men
 draftsmanship:N
 draftsperson:N,-eople,-ns
 draftswoman:N,-men
-drafty:A
+drafty:A.c
 drag:N
 drag:V
 dragee:N
@@ -20930,7 +20931,7 @@ dragging:A
 draggingly:Av
 draggle:V
 draggled:A
-draggy:A
+draggy:A.c
 dragnet:N
 dragoman:N,-ns,-men
 dragon:N
@@ -20972,7 +20973,7 @@ drat:V
 draught:N
 draught:V
 draughtsman:N,-men
-draughty:A
+draughty:A.c
 draw:N
 draw:V,-ws,-wing,drew,-wn
 drawback:N
@@ -21014,11 +21015,11 @@ dreamland:N
 dreamless:A
 dreamlike:A
 dreamworld:N
-dreamy:A
+dreamy:A.c
 drear:A
 drearily:Av
 dreariness:N
-dreary:A
+dreary:A.c
 dreck:N
 dredge:N
 dredge:V
@@ -21037,7 +21038,7 @@ dressiness:N
 dressing:N
 dressmaker:N
 dressmaking:N
-dressy:A
+dressy:A.c
 drey:N
 dribble:N
 dribble:V
@@ -21079,7 +21080,7 @@ drippiness:N
 dripping:A
 dripping:Av
 dripping:N
-drippy:A
+drippy:A.c
 dripstone:N
 drivability:N
 drivable:A
@@ -21099,11 +21100,11 @@ driving:N
 drizzle:N
 drizzle:V
 drizzling:A
-drizzly:A
+drizzly:A.c
 drogue:N
 droid:N
 droke:N
-droll:A
+droll:A.c
 droll:N
 droll:V
 drollery:N
@@ -21124,7 +21125,7 @@ droop:V
 droopiness:N
 drooping:A
 droopingly:Av
-droopy:A
+droopy:A.c
 drop:N
 drop:V
 dropforge:V
@@ -21156,7 +21157,7 @@ drowse:V
 drowsily:Av
 drowsiness:N
 drowsing:A
-drowsy:A
+drowsy:A.c
 drub:V
 drubber:N
 drubbing:N
@@ -21188,7 +21189,7 @@ drumlin:N
 drummer:N
 drumming:N
 drumstick:N
-drunk:A
+drunk:A.c
 drunk:N
 drunkard:N
 drunken:A
@@ -21198,7 +21199,7 @@ drupaceous:A
 drupe:N
 drupelet:N
 druthers:N.p
-dry:A
+dry:A.c
 dry:N,drys
 dry:V
 dryad:N
@@ -21286,7 +21287,7 @@ dulciana:N
 dulcify:V
 dulcimer:N
 dulcorate:V
-dull:A
+dull:A.c
 dull:V
 dullard:N
 dulled:A
@@ -21295,7 +21296,7 @@ dully:Av
 dulness:N
 dulse:N
 duly:Av
-dumb:A
+dumb:A.c
 dumbass:A
 dumbass:N
 dumbbell:N
@@ -21310,7 +21311,7 @@ dumbwaiter:N
 dumdum:N
 dumfounded:A
 dumfounding:A
-dummy:A
+dummy:A.c
 dummy:N
 dummy:V
 dump:N
@@ -21323,8 +21324,8 @@ dumping:N
 dumpling:N
 dumpsite:N
 dumpster:N
-dumpy:A
-dun:A
+dumpy:A.c
+dun:A.c
 dun:N
 dun:V
 dunce:N
@@ -21390,7 +21391,7 @@ dusk:N
 duskily:Av
 duskiness:N
 duskly:Av
-dusky:A
+dusky:A.c
 dust:N.s
 dust:V
 dustbin:N
@@ -21408,7 +21409,7 @@ dustpanful:N
 dustrag:N
 dustsheet:N
 dustup:N
-dusty:A
+dusty:A.c
 dutch:Av
 duteous:A
 dutiable:A

@@ -30,6 +30,8 @@ pub enum WordClass {
 pub enum WordAttr {
     /// `a`: Auxiliary verb (e.g. "cannot")
     Auxiliary,
+    /// `c` Comparative / superlative inflected forms
+    Comparative,
     /// `n`: Proper (name) noun
     Proper,
     /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
@@ -98,7 +100,7 @@ impl WordClass {
     fn build_regular_forms(self, lex: &Lexeme, lemma: &str) -> Vec<String> {
         let mut forms = Vec::new();
         match self {
-            WordClass::Adjective if lex.count_syllables() < 4 => {
+            WordClass::Adjective => {
                 forms.push(adjective_comparative(lemma));
                 forms.push(adjective_superlative(lemma));
             }
@@ -122,6 +124,7 @@ impl TryFrom<char> for WordAttr {
     fn try_from(val: char) -> Result<Self, Self::Error> {
         match val {
             'a' => Ok(Self::Auxiliary),
+            'c' => Ok(Self::Comparative),
             'n' => Ok(Self::Proper),
             'p' => Ok(Self::PluraleTantum),
             's' => Ok(Self::SingulareTantum),
@@ -256,21 +259,20 @@ impl Lexeme {
         &self.forms[..]
     }
 
-    /// Count syllables in lemma form (poorly)
-    fn count_syllables(&self) -> usize {
-        let mut lemma = self.lemma();
-        if ends_in_e(lemma) {
-            lemma = lemma.trim_end_matches('e');
-        }
-        let mut syllables = 0;
-        let mut letter = None;
-        for c in lemma.chars() {
-            if is_vowel(c) && !is_vowel(letter.unwrap_or(' ')) {
-                syllables += 1;
+    /// Check if a word has inflected forms
+    fn has_inflected_forms(&self) -> bool {
+        match self.word_class() {
+            WordClass::Adjective => {
+                for a in self.attr.chars() {
+                    if let Ok(WordAttr::Comparative) = WordAttr::try_from(a) {
+                        return true;
+                    }
+                }
+                false
             }
-            letter = Some(c);
+            WordClass::Noun | WordClass::Verb => true,
+            _ => false,
         }
-        syllables
     }
 
     /// Check if a word (noun) has plural form
@@ -344,8 +346,10 @@ impl Lexeme {
     fn build_inflected(&mut self, lemma: &str) -> Result<(), ()> {
         self.forms.push(lemma.to_string());
         if self.irregular_forms.is_empty() {
-            self.forms
-                .extend(self.word_class.build_regular_forms(self, lemma));
+            if self.has_inflected_forms() {
+                self.forms
+                    .extend(self.word_class.build_regular_forms(self, lemma));
+            }
         } else {
             for form in &self.irregular_forms {
                 let form = decode_irregular(lemma, form)?;

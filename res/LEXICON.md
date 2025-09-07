@@ -36,14 +36,15 @@ Codes for one of nine basic word classes:
 
 If any attributes are provided, they are preceded by a dot `.`:
 
-| Code | Description                      | Examples
-|------|----------------------------------|----------------------
-| `a`  | Auxiliary verb                   | _cannot_
-| `n`  | Proper (name) noun               | _Monday_
-| `p`  | Plurale Tantum                   | _pants_, _scissors_
-| `s`  | Singulare Tantum                 | _dust_, _information_
-| `t`  | Transitive verb or preposition   |
-| `z`  | Alternate `-ize`, etc. forms     | _realize_ `=>` _realise_
+| Code | Description                    | Examples
+|------|--------------------------------|----------------------
+| `a`  | Auxiliary verb                 | _cannot_
+| `c`  | Comparative inflected forms    | _big_ `=>` _bigger_ `=>` _biggest_
+| `n`  | Proper (name) noun             | _Monday_
+| `p`  | Plurale Tantum                 | _pants_, _scissors_
+| `s`  | Singulare Tantum               | _dust_, _information_
+| `t`  | Transitive verb or preposition |
+| `z`  | Alternate `-ize`, etc. forms   | _realize_ `=>` _realise_
 
 ### Inflected Forms
 
