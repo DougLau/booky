@@ -28,16 +28,16 @@ pub enum WordClass {
 /// Word attributes
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq, Ord, PartialOrd)]
 pub enum WordAttr {
-    /// `s`: Singulare Tantum (e.g. "dust" or "information")
-    SingulareTantum,
-    /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
-    PluraleTantum,
-    /// `n`: Proper (name) noun
-    Proper,
     /// `a`: Auxiliary verb (e.g. "cannot")
     Auxiliary,
     /// `i` Intransitive verb or preposition
     Intransitive,
+    /// `n`: Proper (name) noun
+    Proper,
+    /// `p`: Plurale Tantum (e.g. "pants" or "scissors")
+    PluraleTantum,
+    /// `s`: Singulare Tantum (e.g. "dust" or "information")
+    SingulareTantum,
     /// `t` Transitive verb or preposition
     Transitive,
     /// `z` Alternate `z => s` spelling
@@ -123,11 +123,11 @@ impl TryFrom<char> for WordAttr {
 
     fn try_from(val: char) -> Result<Self, Self::Error> {
         match val {
-            's' => Ok(Self::SingulareTantum),
-            'p' => Ok(Self::PluraleTantum),
-            'n' => Ok(Self::Proper),
             'a' => Ok(Self::Auxiliary),
             'i' => Ok(Self::Intransitive),
+            'n' => Ok(Self::Proper),
+            'p' => Ok(Self::PluraleTantum),
+            's' => Ok(Self::SingulareTantum),
             't' => Ok(Self::Transitive),
             'z' => Ok(Self::AlternateZ),
             _ => Err(()),

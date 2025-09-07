@@ -38,11 +38,11 @@ If any attributes are provided, they are preceded by a dot `.`:
 
 | Code | Description                      | Examples
 |------|----------------------------------|----------------------
-| `s`  | Singulare Tantum                 | _dust_, _information_
-| `p`  | Plurale Tantum                   | _pants_, _scissors_
-| `n`  | Proper (name) noun               | _Monday_
 | `a`  | Auxiliary verb                   | _cannot_
 | `i`  | Intransitive verb or preposition |
+| `n`  | Proper (name) noun               | _Monday_
+| `p`  | Plurale Tantum                   | _pants_, _scissors_
+| `s`  | Singulare Tantum                 | _dust_, _information_
 | `t`  | Transitive verb or preposition   |
 | `z`  | Alternate `-ize`, etc. forms     | _realize_ `=>` _realise_
 
