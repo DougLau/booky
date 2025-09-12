@@ -35860,7 +35860,7 @@ jacquard:N
 jactation:N
 jactitate:V
 jactitation:N
-jade:A
+jade:A.c
 jade:N
 jade:V
 jaded:A
@@ -35878,7 +35878,7 @@ jaggedness:N
 jaggery:N
 jagghery:N
 jaggies:N.p
-jaggy:A
+jaggy:A.c
 jagua:N
 jaguar:N
 jaguarondi:N
@@ -35911,7 +35911,7 @@ jammed:A
 jammer:N
 jammies:N.p
 jamming:N
-jammy:A
+jammy:A.c
 jampack:V
 jampan:N
 jampot:N
@@ -35919,12 +35919,12 @@ jangle:N
 jangle:V
 jangler:N
 jangling:A
-jangly:A
+jangly:A.c
 janissary:N
 janitor:N
 janitorial:A
 jank:N
-janky:A
+janky:A.c
 japan:N
 japan:V
 jape:N
@@ -35948,7 +35948,7 @@ jaunt:N
 jaunt:V
 jauntily:Av
 jauntiness:N
-jaunty:A
+jaunty:A.c
 java:N
 javelin:N
 javelina:N
@@ -35968,7 +35968,7 @@ jaywalker:N
 jazz:N
 jazz:V
 jazzman:N,-men
-jazzy:A
+jazzy:A.c
 jealous:A
 jealously:Av
 jealousy:N
@@ -36020,7 +36020,7 @@ jerkiness:N
 jerking:A
 jerking:N
 jerkwater:A
-jerky:A
+jerky:A.c
 jerky:N
 jeroboam:N
 jerrican:N
@@ -36032,7 +36032,7 @@ jest:V
 jester:N
 jesting:A
 jestingly:Av
-jet:A
+jet:A.c
 jet:N
 jet:V
 jetliner:N
@@ -36069,7 +36069,7 @@ jiggered:A
 jiggermast:N
 jiggle:N
 jiggle:V
-jiggly:A
+jiggly:A.c
 jigsaw:N
 jihad:N
 jihadi:A
@@ -36087,7 +36087,7 @@ jingle:N
 jingle:V
 jingler:N
 jingling:A
-jingly:A
+jingly:A.c
 jingo:N
 jingoism:N
 jingoist:N
@@ -36109,7 +36109,7 @@ jitterbug:N
 jitterbug:V
 jitteriness:N
 jittering:A
-jittery:A
+jittery:A.c
 jiujitsu:N
 jive:N
 jive:V
@@ -36170,18 +36170,18 @@ joke:N
 joke:V
 joker:N
 jokester:N
-jokey:A
+jokey:A.c
 jokily:Av
 jokiness:N
 joking:A
 jokingly:Av
-joky:A
+joky:A.c
 jollification:N
 jollify:V
 jollily:Av
 jolliness:N
 jollity:N
-jolly:A
+jolly:A.c
 jolly:Av
 jolly:N
 jolly:V
@@ -36190,7 +36190,7 @@ jolt:V
 jolted:A
 jolter:N
 jolting:A
-jolty:A
+jolty:A.c
 jonah:N
 jones:V
 jongleur:N
@@ -36212,7 +36212,7 @@ jotting:N
 joule:N
 jounce:N
 jounce:V
-jouncy:A
+jouncy:A.c
 journal:N
 journal:V
 journaler:N
@@ -36235,7 +36235,7 @@ jovial:A
 joviality:N
 jovially:Av
 jowl:N
-jowly:A
+jowly:A.c
 joy:N
 joy:V
 joyful:A
@@ -36299,7 +36299,7 @@ juiceless:A
 juicer:N
 juicily:Av
 juiciness:N
-juicy:A
+juicy:A.c
 jujitsu:N
 juju:N
 jujube:N
@@ -36324,13 +36324,13 @@ jumpiness:N
 jumping:N
 jumpstart:V
 jumpsuit:N
-jumpy:A
+jumpy:A.c
 junco:N
 junction:N
 juncture:N
 juneberry:N
 jungle:N
-jungly:A
+jungly:A.c
 junior:A
 junior:N
 juniper:N
@@ -36365,7 +36365,7 @@ jury:N
 jury:V
 juryman:N,-men
 jurywoman:N,-men
-just:A
+just:A.c
 just:Av
 justice:N
 justiciar:N
@@ -36508,7 +36508,7 @@ keelboat:N
 keeled:A
 keelhaul:V
 keelson:N
-keen:A
+keen:A.c
 keen:N
 keen:V
 keenly:Av
@@ -36665,7 +36665,7 @@ kickoff:N
 kickshaw:N
 kicksorter:N
 kickstand:N
-kicky:A
+kicky:A.c
 kid:N
 kid:V
 kidder:N
@@ -36730,7 +36730,7 @@ kinaesthetic:A
 kinaesthetically:Av
 kinanesthesia:N
 kinase:N
-kind:A
+kind:A.c
 kind:N
 kinda:Av
 kindergarten:N
@@ -36742,7 +36742,7 @@ kindle:V
 kindled:A
 kindliness:N
 kindling:N
-kindly:A
+kindly:A.c
 kindly:Av
 kindness:N
 kindred:A
@@ -36775,7 +36775,7 @@ kingfish:N
 kingfisher:N
 kinglet:N
 kinglike:A
-kingly:A
+kingly:A.c
 kingmaker:N
 kingpin:N
 kingship:N
@@ -36787,7 +36787,7 @@ kink:V
 kinkajou:N
 kinkily:Av
 kinkiness:N
-kinky:A
+kinky:A.c
 kino:N
 kinsfolk:N
 kinship:N
@@ -36821,9 +36821,9 @@ kite:N
 kite:V
 kitembilla:N
 kith:N
-kitsch:A
+kitsch:A.c
 kitsch:N
-kitschy:A
+kitschy:A.c
 kitten:N
 kitten:V
 kittenish:A
@@ -36844,10 +36844,10 @@ kleptomaniac:N
 klick:N
 klondike:N
 kludge:N
-kludgy:A
+kludgy:A.c
 klutz:N
 klutziness:N
-klutzy:A
+klutzy:A.c
 klystron:N
 knack:N
 knacker:N
@@ -36888,7 +36888,7 @@ knight:N
 knight:V
 knighthood:N
 knightliness:N
-knightly:A
+knightly:A.c
 kniphofia:N
 knish:N
 knit:N
@@ -36901,8 +36901,8 @@ knitwork:N
 knob:N
 knobbed:A
 knobble:N
-knobbly:A
-knobby:A
+knobbly:A.c
+knobby:A.c
 knobkerrie:N
 knobkerry:N
 knock:N
@@ -36924,7 +36924,7 @@ knotgrass:N
 knothole:N
 knotted:A
 knottiness:N
-knotty:A
+knotty:A.c
 knout:N
 know:V,-ws,-wing,knew,-wn
 knowable:A
@@ -36946,11 +36946,11 @@ knucklebone:N
 knuckleduster:N
 knucklehead:N
 knuckler:N
-knuckly:A
+knuckly:A.c
 knucks:N.p
 knurl:N
 knurled:A
-knurly:A
+knurly:A.c
 koala:N
 koan:N
 kob:N
@@ -36969,9 +36969,9 @@ konini:N
 koodoo:N
 kook:N
 kookaburra:N
-kookie:A
+kookie:A.c
 kookiness:N
-kooky:A
+kooky:A.c
 kopeck:N
 kopek:N
 kopiyka:N
@@ -37029,7 +37029,7 @@ kvass:N
 kvetch:N
 kvetch:V
 kvetcher:N
-kvetchy:A
+kvetchy:A.c
 kwacha:N
 kwai:N
 kwanza:N
@@ -37146,7 +37146,7 @@ lactose:N
 lactosuria:N
 lacuna:N,-ae,-as
 lacustrine:A
-lacy:A
+lacy:A.c
 lad:N
 ladanum:N
 ladder:N
@@ -37184,7 +37184,7 @@ laggard:A
 laggard:N
 lagger:N
 lagging:N
-laggy:A
+laggy:A.c
 lagniappe:N
 lagomorph:N
 lagoon:N
@@ -37229,7 +37229,7 @@ lamblike:A
 lambrequin:N
 lambskin:N
 lambswool:N
-lame:A
+lame:A.c
 lame:N
 lame:V
 lamebrain:A
@@ -37359,12 +37359,12 @@ languorously:Av
 langur:N
 laniard:N
 laniary:A
-lank:A
+lank:A.c
 lankily:Av
 lankiness:N
 lankly:Av
 lankness:N
-lanky:A
+lanky:A.c
 lanolin:N
 lansa:N
 lansat:N
@@ -37421,8 +37421,8 @@ larch:N
 lard:N
 lard:V
 larder:N
-lardy:A
-large:A
+lardy:A.c
+large:A.c
 large:Av
 large:N
 largehearted:A
@@ -37499,7 +37499,7 @@ latch:V
 latched:A
 latchkey:N
 latchstring:N
-late:A
+late:A.c
 late:Av
 latecomer:N
 lateen:A
@@ -37522,7 +37522,7 @@ lathe:N
 lathee:N
 lather:N
 lather:V
-lathery:A
+lathery:A.c
 lathi:N
 laticifer:N
 latinate:A
@@ -37620,12 +37620,12 @@ lawmaking:N
 lawman:N,-men
 lawn:N
 lawnmower:N
-lawny:A
+lawny:A.c
 lawrencium:N
 lawsuit:N
 lawyer:N
 lawyerbush:N
-lax:A
+lax:A.c
 laxation:N
 laxative:A
 laxative:N
@@ -37659,7 +37659,7 @@ lazily:Av
 laziness:N
 lazuli:N
 lazuline:N
-lazy:A
+lazy:A.c
 lazybones:N.p
 lea:N
 leach:N
@@ -37689,7 +37689,7 @@ leafless:A
 leaflet:N
 leaflike:A
 leafstalk:N
-leafy:A
+leafy:A.c
 league:N
 league:V
 leak:N
@@ -37700,9 +37700,9 @@ leakily:Av
 leakiness:N
 leaking:A
 leakproof:A
-leaky:A
-leal:A
-lean:A
+leaky:A.c
+leal:A.c
+lean:A.c
 lean:N
 lean:V,-ns,-ning,-nt,-ned
 leaner:N
@@ -37751,7 +37751,7 @@ leathern:A
 leatherneck:N
 leatherwood:N
 leatherwork:N
-leathery:A
+leathery:A.c
 leave:N
 leave:V,-es,-ving,left
 leaved:A
@@ -37796,7 +37796,7 @@ leer:N
 leer:V
 leeriness:N
 leering:A
-leery:A
+leery:A.c
 leet:N
 leetspeak:N
 leeward:A
@@ -37804,7 +37804,7 @@ leeward:Av
 leeward:N
 leeway:N
 leflunomide:N
-left:A
+left:A.c
 left:Av
 left:N
 lefthander:N
@@ -37840,14 +37840,14 @@ legato:Av
 legend:N
 legendarily:Av
 legendarium:N,-ia
-legendary:A
+legendary:A.c
 leger:N
 legerdemain:N
 legerity:N
 legged:A
 legginess:N
 legging:N
-leggy:A
+leggy:A.c
 leghorn:N
 legibility:N
 legible:A
@@ -37895,7 +37895,7 @@ leister:N
 leisure:N
 leisured:A
 leisureliness:N
-leisurely:A
+leisurely:A.c
 leisurely:Av
 leisurewear:N
 leitmotif:N
@@ -37912,7 +37912,7 @@ lemonade:N
 lemongrass:N
 lemonlike:A
 lemonwood:N
-lemony:A
+lemony:A.c
 lempira:N
 lemur:N
 lend:V,-ds,-ding,lent
@@ -37929,7 +37929,7 @@ lengthways:A
 lengthways:Av
 lengthwise:A
 lengthwise:Av
-lengthy:A
+lengthy:A.c
 lenience:N
 leniency:N
 lenient:A
@@ -38018,7 +38018,7 @@ let:N
 let:V,lets,letting
 letch:N
 letdown:N
-lethal:A
+lethal:A.c
 lethality:N
 lethally:Av
 lethargic:A
@@ -38064,7 +38064,7 @@ levallorphan:N
 levant:V
 levanter:N
 levee:N
-level:A
+level:A.c
 level:N
 level:V,-ls,-ling,-lling,-led,-lled
 leveler:N
@@ -38094,7 +38094,7 @@ levorotatory:A
 levulose:N
 levy:N
 levy:V
-lewd:A
+lewd:A.c
 lewdly:Av
 lewdness:N
 lexeme:N
@@ -38237,7 +38237,7 @@ ligate:V
 ligation:N
 ligature:N
 liger:N
-light:A
+light:A.c
 light:Av
 light:N
 light:V,-ts,-ting,lit
@@ -38294,7 +38294,7 @@ likeableness:N
 liked:A
 likelihood:N
 likeliness:N
-likely:A
+likely:A.c
 likely:Av
 liken:V
 likeness:N
@@ -38361,7 +38361,7 @@ limo:N
 limonene:N
 limonite:N
 limousine:N
-limp:A
+limp:A.c
 limp:N
 limp:V
 limpa:N
@@ -38375,7 +38375,7 @@ limping:N
 limpkin:N
 limply:Av
 limpness:N
-limy:A
+limy:A.c
 linac:N
 linage:N
 linalool:N
@@ -38454,7 +38454,7 @@ lintel:N
 linter:N
 lintless:A
 lintwhite:N
-linty:A
+linty:A.c
 linuron:N
 lion:N
 lioness:N
@@ -38492,7 +38492,7 @@ liposome:N
 liposuction:N
 lipotropic:A
 lipped:A
-lippy:A
+lippy:A.c
 lipread:V,-ds,-ding
 lipreader:N
 lipreading:N
@@ -38549,7 +38549,7 @@ litany:N
 litas:N,-ai,litu
 litchee:N
 litchi:N
-lite:A
+lite:A.c
 liter:N
 literacy:N
 literal:A
@@ -38568,7 +38568,7 @@ literate:N
 literati:N.p
 literatim:Av
 literature:N
-lithe:A
+lithe:A.c
 litheness:N
 lithesome:A
 lithiasis:N
@@ -38608,7 +38608,7 @@ litterbin:N
 litterbug:N
 littered:A
 litterer:N
-little:A,less,-er,least,-est
+little:A.c,less,-er,least,-est
 little:Av
 little:D
 little:N
@@ -38623,7 +38623,7 @@ liturgist:N
 liturgy:N
 livability:N
 livable:A
-live:A
+live:A.c
 live:Av
 live:V
 liveable:A
@@ -38633,7 +38633,7 @@ livelihood:N
 liveliness:N
 livelong:A
 livelong:N
-lively:A
+lively:A.c
 liven:V
 liveness:N
 liver:N
@@ -38677,7 +38677,7 @@ loafer:N
 loafing:N
 loam:N
 loamless:A
-loamy:A
+loamy:A.c
 loan:N
 loan:V
 loanblend:N
@@ -38790,7 +38790,7 @@ loft:N
 loft:V
 loftily:Av
 loftiness:N
-lofty:A
+lofty:A.c
 log:N
 log:V
 logagraphia:N
@@ -38837,7 +38837,7 @@ logotype:N
 logroll:V
 logrolling:N
 logwood:N
-logy:A
+logy:A.c
 lohan:N
 loin:N
 loincloth:N
@@ -38856,11 +38856,11 @@ loment:N
 lomustine:N
 lone:A
 loneliness:N
-lonely:A
+lonely:A.c
 loner:N
 lonesome:A
 lonesomeness:N
-long:A
+long:A.c
 long:Av
 long:N
 long:V
@@ -38924,7 +38924,7 @@ loom:V
 loon:N
 looney:N
 loonie:N
-loony:A
+loony:A.c
 loony:N
 loop:N
 loop:V
@@ -38932,8 +38932,8 @@ looped:A
 looper:N
 loophole:N
 looping:N
-loopy:A
-loose:A
+loopy:A.c
+loose:A.c
 loose:Av
 loose:V
 looseleaf:A
@@ -38968,7 +38968,7 @@ lord:N
 lord:V
 lordless:A
 lordliness:N
-lordly:A
+lordly:A.c
 lordolatry:N
 lordosis:N
 lordotic:A
@@ -38987,7 +38987,7 @@ loser:N
 losings:N.p
 loss:N
 lossless:A
-lossy:A
+lossy:A.c
 lost:A
 lost:N
 lot:N
@@ -39002,8 +39002,8 @@ lottery:N
 lotto:N
 lotus:N
 lotusland:N
-louche:A
-loud:A
+louche:A.c
+loud:A.c
 loud:Av
 louden:V
 loudhailer:N
@@ -39021,7 +39021,7 @@ lour:V
 louse:N,lice
 lousily:Av
 lousiness:N
-lousy:A
+lousy:A.c
 lout:N
 loutish:A
 louvar:N
@@ -39042,13 +39042,13 @@ loved:A
 loveless:A
 loveliness:N
 lovelorn:A
-lovely:A
+lovely:A.c
 lovely:N
 lovemaking:N
 lover:N
 lovering:N
 loverlike:A
-loverly:A
+loverly:A.c
 lovesick:A
 lovesickness:N
 lovesome:A
@@ -39056,7 +39056,7 @@ lovey:N
 loving:A
 lovingly:Av
 lovingness:N
-low:A
+low:A.c
 low:Av
 low:N
 low:V
@@ -39084,7 +39084,7 @@ lowland:A
 lowland:N
 lowlife:N,-es,-ives
 lowliness:N
-lowly:A
+lowly:A.c
 lowness:N
 lowset:A
 lox:N
@@ -39098,7 +39098,7 @@ loyalty:N
 lozenge:N
 luau:N
 lubber:N
-lubberly:A
+lubberly:A.c
 lube:V
 lubricant:N
 lubricate:V
@@ -39121,7 +39121,7 @@ luck:N
 luckily:Av
 luckiness:N
 luckless:A
-lucky:A
+lucky:A.c
 lucrative:A
 lucratively:Av
 lucrativeness:N
@@ -39152,7 +39152,7 @@ lugubrious:A
 lugubriously:Av
 lugubriousness:N
 lugworm:N
-lukewarm:A
+lukewarm:A.c
 lukewarmly:Av
 lukewarmness:N
 lull:N
@@ -39196,7 +39196,7 @@ lumpily:Av
 lumpiness:N
 lumpish:A
 lumpsucker:N
-lumpy:A
+lumpy:A.c
 lunacy:N
 lunar:A
 lunate:A
@@ -39246,7 +39246,7 @@ lurking:A
 luscious:A
 lusciously:Av
 lusciousness:N
-lush:A
+lush:A.c
 lush:N
 lushness:N
 lust:N
@@ -39266,7 +39266,7 @@ lustreless:A
 lustrelessness:N
 lustrous:A
 lustrum:N
-lusty:A
+lusty:A.c
 lutanist:N
 lute:N
 luteal:A
@@ -39463,7 +39463,7 @@ maculation:N
 macule:N
 macumba:N
 macushla:N
-mad:A
+mad:A.c
 madake:N
 madam:N
 madame:N
@@ -39507,7 +39507,7 @@ mage:N
 magenta:A
 magenta:N
 maggot:N
-maggoty:A
+maggoty:A.c
 magic:A
 magic:N
 magic:V,-cs,-cking,-cked
@@ -39593,7 +39593,7 @@ maidenhead:N
 maidenhood:N
 maidenlike:A
 maidenliness:N
-maidenly:A
+maidenly:A.c
 maidhood:N
 maidism:N
 maidservant:N
@@ -39783,7 +39783,7 @@ maltreated:A
 maltreater:N
 maltreatment:N
 maltster:N
-malty:A
+malty:A.c
 malvasia:N
 malversate:V
 malversation:N
@@ -39868,7 +39868,7 @@ manganite:N
 mange:N
 manger:N
 mangetout:N
-mangey:A
+mangey:A.c
 mangily:Av
 manginess:N
 mangle:N
@@ -39881,7 +39881,7 @@ mangold:N
 mangonel:N
 mangosteen:N
 mangrove:N
-mangy:A
+mangy:A.c
 manhandle:V
 manhattan:N
 manhole:N
@@ -39920,10 +39920,10 @@ manipulative:A
 manipulator:N
 maniraptor:N
 mankind:N
-manky:A
+manky:A.c
 manlike:A
 manliness:N
-manly:A
+manly:A.c
 manly:Av
 manna:N
 manned:A
@@ -39931,7 +39931,7 @@ mannequin:N
 manner:N
 mannered:A
 mannerism:N
-mannerly:A
+mannerly:A.c
 mannikin:N
 mannish:A
 mannishly:Av
@@ -39996,7 +39996,7 @@ manure:N
 manure:V
 manus:N
 manuscript:N
-many:A,more,most
+many:A.c,more,most
 many:D
 many:Pn
 manzanita:N
@@ -40127,7 +40127,7 @@ marlingspike:N
 marlinspike:N
 marlite:N
 marlstone:N
-marly:A
+marly:A.c
 marmalade:N
 marmite:N
 marmoreal:A
@@ -40164,7 +40164,7 @@ marshall:N
 marshalship:N
 marshland:N
 marshmallow:N
-marshy:A
+marshy:A.c
 marsupial:A
 marsupial:N
 marsupium:N,-ia
@@ -40265,7 +40265,7 @@ masterful:A
 masterfully:Av
 mastering:N
 masterless:A
-masterly:A
+masterly:A.c
 mastermind:N
 mastermind:V
 masterpiece:N
@@ -40381,7 +40381,7 @@ matrimony:N
 matrisib:N
 matrix:N,-ices,-xes
 matron:N
-matronly:A
+matronly:A.c
 matronymic:N
 matsyendra:N
 matt:A
@@ -40417,7 +40417,7 @@ maulstick:N
 maund:N
 maunder:V
 mausoleum:N
-mauve:A
+mauve:A.c
 mauve:N
 maven:N
 maverick:A
@@ -40477,7 +40477,7 @@ mazed:A
 mazer:N
 mazopathy:N
 mazurka:N
-mazy:A
+mazy:A.c
 mazzard:N
 me:Pn
 mead:N
@@ -40485,7 +40485,7 @@ meadow:N
 meadowgrass:N
 meadowlark:N
 meager:A
-meagerly:A
+meagerly:A.c
 meagerly:Av
 meagerness:N
 meagre:A
@@ -40497,10 +40497,10 @@ mealie:N
 mealiness:N
 mealtime:N
 mealworm:N
-mealy:A
+mealy:A.c
 mealybug:N
 mealymouthed:A
-mean:A
+mean:A.c
 mean:N
 mean:V,-ns,-ning,-nt
 meander:N
@@ -40527,7 +40527,7 @@ meanwhile:Av
 meany:N
 mearstone:N
 measles:N.p
-measly:A
+measly:A.c
 measurability:N
 measurable:A
 measurable:N
@@ -40549,7 +40549,7 @@ meatloaf:N,-aves
 meatman:N,-men
 meatpacking:N
 meatus:N
-meaty:A
+meaty:A.c
 mebendazole:N
 mecca:N
 mechanic:A
@@ -40642,7 +40642,7 @@ medusan:N
 medusoid:A
 medusoid:N
 meed:N
-meek:A
+meek:A.c
 meekly:Av
 meekness:N
 meerestone:N
@@ -40749,7 +40749,7 @@ mellifluous:A
 mellifluously:Av
 mellifluousness:N
 mellisonant:A
-mellow:A
+mellow:A.c
 mellow:Av
 mellow:V
 mellowed:A
@@ -40927,7 +40927,7 @@ mercuric:A
 mercurous:A
 mercury:N
 mercy:N
-mere:A
+mere:A.c
 mere:N
 merely:Av
 merestone:N
@@ -40971,7 +40971,7 @@ merozoite:N
 merrily:Av
 merriment:N
 merriness:N
-merry:A
+merry:A.c
 merrymaker:N
 merrymaking:N
 mesa:N
@@ -41036,7 +41036,7 @@ messily:Av
 messiness:N
 messmate:N
 messuage:N
-messy:A
+messy:A.c
 mestiza:N
 mestizo:N
 mestranol:N
@@ -41360,7 +41360,7 @@ microwave:V
 microwaveable:A
 micturate:V
 micturition:N
-mid:A
+mid:A.c
 mid:P.t
 mid-on:N
 midafternoon:N
@@ -41439,7 +41439,7 @@ miffed:A
 might:N
 mightily:Av
 mightiness:N
-mighty:A
+mighty:A.c
 mighty:Av
 mignonette:N
 migraine:N
@@ -41459,10 +41459,10 @@ milady:N
 milage:N
 milch:A
 milcher:N
-mild:A
+mild:A.c
 mildew:N
 mildew:V
-mildewy:A
+mildewy:A.c
 mildly:Av
 mildness:N
 mile:N
@@ -41507,7 +41507,7 @@ milksop:N
 milkwagon:N
 milkweed:N
 milkwort:N
-milky:A
+milky:A.c
 mill:N
 mill:V
 millage:N
@@ -41653,7 +41653,7 @@ minginess:N
 mingle:V
 mingling:A
 mingling:N
-mingy:A
+mingy:A.c
 mini:A
 miniate:V
 miniature:A
@@ -41715,13 +41715,13 @@ minster:N
 minstrel:N
 minstrel:V
 minstrelsy:N
-mint:A
+mint:A.c
 mint:N
 mint:V
 mintage:N
 minter:N
 mintmark:N
-minty:A
+minty:A.c
 minuend:N
 minuet:N
 minus:A
@@ -41730,7 +41730,7 @@ minus:P.t
 minuscular:A
 minuscule:A
 minuscule:N
-minute:A
+minute:A.c
 minute:N
 minutely:Av
 minuteman:N,-men
@@ -41749,7 +41749,7 @@ mire:N
 mire:V
 mired:A
 mirid:N
-mirky:A
+mirky:A.c
 miro:N
 mirror:N
 mirror:V
@@ -41760,7 +41760,7 @@ mirthful:A
 mirthfully:Av
 mirthfulness:N
 mirthless:A
-miry:A
+miry:A.c
 misaddress:V
 misadventure:N
 misadvise:V
@@ -41848,7 +41848,7 @@ miserable:N
 miserableness:N
 miserably:Av
 miserliness:N
-miserly:A
+miserly:A.c
 misery:N
 misestimate:V
 misestimation:N
@@ -41995,7 +41995,7 @@ mistrust:N
 mistrust:V
 mistrustful:A
 mistrustfully:Av
-misty:A
+misty:A.c
 mistype:V
 misunderstand:V,-ds,-ding,-tood
 misunderstanding:N
@@ -42090,7 +42090,7 @@ mocking:A
 mockingbird:N
 mockingly:Av
 mockup:N
-mod:A
+mod:A.c
 mod:N
 mod:P.t
 mod:V
@@ -42167,7 +42167,7 @@ moiety:N
 moil:V
 moiré:A
 moiré:N
-moist:A
+moist:A.c
 moisten:V
 moistener:N
 moistening:N
@@ -42198,7 +42198,7 @@ moldered:A
 moldering:A
 moldiness:N
 molding:N
-moldy:A
+moldy:A.c
 mole:N
 molecular:A
 molecularity:N
@@ -42494,7 +42494,7 @@ moocher:N
 mood:N
 moodily:Av
 moodiness:N
-moody:A
+moody:A.c
 moolah:N
 moon:N
 moon:V
@@ -42522,7 +42522,7 @@ moonstone:N
 moonstruck:A
 moonwalk:N
 moonwort:N
-moony:A
+moony:A.c
 moor:N
 moor:V
 moorage:N
@@ -42536,7 +42536,7 @@ moorland:N
 moorwort:N
 moose:N,-e
 moosewood:N
-moot:A
+moot:A.c
 moot:N
 moot:V
 mop:N
@@ -42546,7 +42546,7 @@ mope:N
 mope:V
 moped:N
 moper:N
-mopey:A,mopier,mopiest
+mopey:A.c,mopier,mopiest
 mopish:A
 mopper:N
 moppet:N
@@ -42675,7 +42675,7 @@ mosquitofish:N
 moss:N
 mossback:N
 mosstone:A
-mossy:A
+mossy:A.c
 most:Av
 most:D
 most:Pn
@@ -42700,13 +42700,13 @@ motherless:A
 motherlike:A
 motherliness:N
 motherlode:N
-motherly:A
+motherly:A.c
 motherly:Av
 mothership:N
 motherwort:N
 mothproof:A
 mothproof:V
-mothy:A
+mothy:A.c
 motif:N
 motile:A
 motile:N
@@ -42729,7 +42729,7 @@ motive:A
 motive:N
 motiveless:A
 motivity:N
-motley:A,-lier,-liest
+motley:A.c,-lier,-liest
 motley:N
 motmot:N
 motocross:N
@@ -42777,7 +42777,7 @@ moulder:V
 mouldered:A
 mouldering:A
 moulding:N
-mouldy:A
+mouldy:A.c
 moult:N
 moult:V
 moulter:N
@@ -42815,7 +42815,7 @@ mousepad:N
 mouser:N
 mousetrap:N
 mousetrap:V
-mousey:A
+mousey:A.c
 mousily:Av
 mousiness:N
 moussaka:N
@@ -42823,7 +42823,7 @@ mousse:N
 mousse:V
 moustache:N
 moustachio:N
-mousy:A
+mousy:A.c
 mouth:N
 mouth:V
 mouthbreeder:N
@@ -42837,7 +42837,7 @@ mouthpiece:N
 mouthwash:N
 mouthwatering:A
 mouthwateringly:Av
-mouthy:A
+mouthy:A.c
 mouton:N
 movability:N
 movable:A
@@ -42862,7 +42862,7 @@ msasa:N
 mu:N
 muadhdhin:N
 muazzin:N
-much:A,more,most
+much:A.c,more,most
 much:Av
 much:D
 much:Pn
@@ -42881,7 +42881,7 @@ muckle:N
 muckrake:V
 muckraker:N
 muckraking:N
-mucky:A
+mucky:A.c
 mucocutaneous:A
 mucoid:A
 mucoid:N
@@ -42908,7 +42908,7 @@ muddle:N
 muddle:V
 muddled:A
 muddleheaded:A
-muddy:A
+muddy:A.c
 muddy:V
 mudflap:N
 mudflat:N
@@ -42944,7 +42944,7 @@ mugginess:N
 mugging:N
 muggins:N,-s
 muggle:N
-muggy:A
+muggy:A.c
 mugshot:N
 mugwort:N
 mugwump:N
@@ -43138,7 +43138,7 @@ murk:N
 murk:V
 murkily:Av
 murkiness:N
-murky:A
+murky:A.c
 murmur:N
 murmur:V,-rs,-ring,-red
 murmuration:N
@@ -43160,7 +43160,7 @@ musclebound:A
 musclebuilder:N
 musclebuilding:N
 muscleman:N,-men
-muscly:A
+muscly:A.c
 muscovite:N
 muscular:A
 muscularity:N
@@ -43179,7 +43179,7 @@ musher:N
 mushiness:N
 mushroom:N
 mushroom:V
-mushy:A
+mushy:A.c
 music:N
 musical:A
 musical:N
@@ -43209,7 +43209,7 @@ muskiness:N
 muskmelon:N
 muskrat:N
 muskwood:N
-musky:A
+musky:A.c
 muslin:N
 musnud:N
 musophobia:N
@@ -43220,7 +43220,7 @@ mussel:N
 mussiness:N
 mussitate:V
 mussitation:N
-mussy:A
+mussy:A.c
 must:A
 must:N
 must:V.a
@@ -43237,7 +43237,7 @@ muster:V
 musth:N
 mustily:Av
 mustiness:N
-musty:A
+musty:A.c
 mut:N
 mutability:N
 mutable:A
@@ -43254,7 +43254,7 @@ mutation:N
 mutational:A
 mutative:A
 mutchkin:N
-mute:A
+mute:A.c
 mute:N
 mute:V
 muted:A
@@ -43281,7 +43281,7 @@ mutton:N
 muttonchops:N.p
 muttonfish:N
 muttonhead:N
-muttony:A
+muttony:A.c
 mutual:A
 mutualism:N
 mutualist:A
@@ -43296,7 +43296,7 @@ muzziness:N
 muzzle:N
 muzzle:V
 muzzler:N
-muzzy:A
+muzzy:A.c
 my:D
 my:Pn
 myalgia:N
