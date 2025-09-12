@@ -417,6 +417,7 @@ abulic:A
 abundance:N
 abundant:A
 abundantly:Av
+abusage:N
 abuse:N
 abuse:V
 abused:A
@@ -36675,7 +36676,6 @@ kiddish:A
 kiddo:N
 kiddy:N
 kidnap:V
-kidnaped:A
 kidnapped:A
 kidnapper:N
 kidnapping:N
@@ -37194,6 +37194,9 @@ lagune:N
 lah:N
 lahar:N
 laic:A
+laic:N
+laical:A
+laically:Av
 laicize:V.z
 laid:A
 lair:N
@@ -37293,7 +37296,6 @@ lancetfish:N
 lancewood:N
 lancinate:A
 lancinating:A
-land:A
 land:N
 land:V
 landau:N
@@ -37702,6 +37704,7 @@ leaking:A
 leakproof:A
 leaky:A.c
 leal:A.c
+leally:Av
 lean:A.c
 lean:N
 lean:V,-ns,-ning,-nt,-ned
@@ -38569,6 +38572,7 @@ literati:N.p
 literatim:Av
 literature:N
 lithe:A.c
+lithely:Av
 litheness:N
 lithesome:A
 lithiasis:N
@@ -39893,6 +39897,7 @@ maniac:N
 maniacal:A
 maniacally:Av
 manic:A
+manically:Av
 maniclike:A
 manicotti:N
 manicure:N
@@ -40348,6 +40353,7 @@ maternalistic:A
 maternally:Av
 maternity:N
 matey:A
+mateyness:N
 math:N
 mathematical:A
 mathematically:Av
@@ -40654,6 +40660,7 @@ meet:V,-ts,-ting,met
 meeter:N
 meeting:N
 meetinghouse:N
+meetly:Av
 meetup:N
 mefloquine:N
 meg:N
@@ -42131,6 +42138,7 @@ modernization:N.z
 modernize:V.z
 modernized:A.z
 modernizer:N.z
+modernly:Av
 modernness:N
 modest:A
 modestly:Av
