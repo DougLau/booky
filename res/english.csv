@@ -43806,7 +43806,6 @@ nectariferous:A
 nectarine:N
 nectarous:A
 nectary:N
-nee:A
 need:N
 need:V
 needed:A
@@ -44048,6 +44047,7 @@ nettle:N
 nettle:V
 nettled:A
 nettlesome:A
+netty:A.c
 network:N
 network:V
 networklike:A
@@ -45428,6 +45428,7 @@ nymphomaniac:N
 nymphomaniacal:A
 nystagmus:N
 nystatin:N
+née:A
 o:I
 o'clock:Av
 o'er:Av
@@ -46841,6 +46842,9 @@ ouzo:N
 oval:A
 oval:N
 ovalbumin:N
+ovality:N
+ovally:Av
+ovalness:N
 ovarian:A
 ovariectomy:N
 ovary:N
@@ -48763,12 +48767,11 @@ penknife:N,-ives
 penlight:N
 penman:N,-men
 penmanship:N
-penn'orth:N
 pennant:N
 pennate:A
 penne:N
 penned:A
-penni:N
+penni:N,-ia,-is
 penniless:A
 pennilessness:N
 penning:N
@@ -50744,7 +50747,6 @@ ply:V
 plyboard:N
 plyer:N
 plywood:N
-pm:A
 pneumatic:A
 pneumatically:Av
 pneumatics:N.p
@@ -52208,6 +52210,8 @@ prime:A
 prime:N
 prime:V
 primed:A
+primely:Av
+primeness:N
 primer:N
 primetime:A
 primidone:N
@@ -53348,6 +53352,7 @@ punk:N
 punkah:N
 punkey:N
 punkie:N
+punkish:A
 punky:N
 punnet:N
 punning:N
