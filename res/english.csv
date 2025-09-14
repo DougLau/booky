@@ -5638,7 +5638,7 @@ bacteroidal:A
 bacteræmia:N
 bacteræmic:A
 baculiform:A
-bad:A.c
+bad:A.c,worse,badder,worst,baddest
 bad:Av
 bad:N
 bada-bing:I
@@ -32963,7 +32963,7 @@ ileus:N
 iliac:A
 ilium:N,ilia
 ilk:N
-ill:A.c
+ill:A.c,worse,iller,worst,illest
 ill:Av
 ill:N
 illation:N
@@ -72969,6 +72969,7 @@ vain:A
 vainglorious:A
 vainglory:N
 vainly:Av
+vainness:N
 vaisya:N
 valance:N
 vale:N
@@ -74080,7 +74081,6 @@ vulvectomy:N
 vulvitis:N
 vulvovaginitis:N
 vuvuzela:N
-wabbit:A
 wack:A.c
 wackily:Av
 wackily:Av
@@ -75679,7 +75679,6 @@ worrying:A
 worrying:N
 worryingly:Av
 worrywart:N
-worse:A
 worse:Av
 worse:N
 worsen:V
@@ -75694,7 +75693,6 @@ worshiping:A
 worshipped:A
 worshipper:N
 worshipping:A
-worst:A
 worst:Av
 worst:N
 worst:V
@@ -76056,7 +76054,7 @@ you:D
 you:Pn
 young:A.c
 young:N
-younger:A
+younger:N
 youngish:A
 youngness:N
 youngster:N
