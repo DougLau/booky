@@ -32350,6 +32350,7 @@ hut:N
 hutch:N
 hutment:N
 hutzpah:N
+huzz:V
 huzzah:I,-a
 huzzah:N
 hyacinth:N
@@ -54315,7 +54316,6 @@ ramee:N
 ramekin:N
 ramen:N
 ramequin:N
-ramgunshoch:A
 ramie:N
 ramification:N
 ramify:V
@@ -54381,6 +54381,7 @@ ranker:N
 ranking:A
 ranking:N
 rankle:V
+rankly:Av
 rankness:N
 ransack:V
 ransacked:A
@@ -55354,6 +55355,7 @@ regal:A
 regale:V
 regalement:N
 regalia:N
+regality:N
 regally:Av
 regard:N
 regard:V
@@ -56655,6 +56657,7 @@ rhytidectomy:N
 rhytidoplasty:N
 rial:N
 riant:A
+riantly:Av
 riata:N
 rib:N
 rib:V
@@ -56746,6 +56749,7 @@ ridley:N
 riel:N
 rifampin:N
 rife:A
+rifely:Av
 riff:N
 riff:V
 riffle:N
@@ -56936,7 +56940,6 @@ rivulet:N
 rivulus:N
 riyal:N
 roach:N
-road:A
 road:N
 roadbed:N
 roadblock:N
@@ -57184,6 +57187,7 @@ rostrally:Av
 rostrate:A
 rostrum:N,-ra,-ms
 rosy:A.c
+rosé:N
 rot:N
 rot:V
 rota:N
@@ -57689,6 +57693,7 @@ sage:A.c
 sage:N
 sagebrush:N
 sagely:Av
+sageness:N
 sagging:A
 saggy:A.c
 sagitta:N
@@ -57741,6 +57746,7 @@ salai:N
 salal:N
 salamander:N
 salamandriform:A
+salamandrine:A
 salami:N
 salaried:A
 salary:N
@@ -57779,6 +57785,7 @@ sallet:N
 sallow:A
 sallow:N
 sallow:V
+sallowish:A
 sallowness:N
 sally:N
 sally:V
@@ -58166,10 +58173,10 @@ saurischian:N
 sauropod:N
 saury:N
 sausage:N
-saute:A
-saute:V
-sauteed:A
-sauteing:N
+sauté:A
+sauté:V
+sautéed:A
+sautéing:N
 savage:A
 savage:N
 savage:V
@@ -58902,6 +58909,7 @@ scurry:N
 scurry:V
 scurrying:A
 scurvily:Av
+scurviness:N
 scurvy:A
 scurvy:N
 scut:N
@@ -59392,6 +59400,7 @@ senescence:N
 senescent:A
 seneschal:N
 senile:A
+senilely:Av
 senility:N
 senior:A
 senior:N
@@ -60515,6 +60524,7 @@ side:N
 side:V
 sidearm:A
 sidearm:Av
+sidearm:N
 sidebar:N
 sideboard:N
 sideburn:N
@@ -61678,6 +61688,7 @@ snicker:V
 snickersnee:N
 snide:A.c
 snidely:Av
+snideness:N
 sniff:N
 sniff:V
 sniffable:A
@@ -61801,6 +61812,8 @@ snowy:A.c
 snub:A
 snub:N
 snub:V
+snubbed:A
+snubness:N
 snuff:A
 snuff:N
 snuff:V
@@ -63237,6 +63250,7 @@ squashy:A.c
 squat:A.c
 squat:N
 squat:V
+squatly:Av
 squatness:N
 squatter:N
 squattiness:N
@@ -63875,6 +63889,7 @@ stillroom:N
 stillstand:N
 stillstand:V
 stilly:A
+stilly:Av
 stilt:N
 stiltbird:N
 stilted:A
@@ -64476,7 +64491,6 @@ stun:V
 stung:A
 stunned:A
 stunner:N
-stunng:A
 stunning:A
 stunningly:Av
 stunsail:N
@@ -65501,6 +65515,8 @@ surreal:A
 surrealism:N
 surrealist:N
 surrealistic:A
+surreality:N
+surreally:Av
 surrebuttal:N
 surrebutter:N
 surrejoinder:N
@@ -65640,6 +65656,7 @@ swarming:A
 swart:A
 swarthiness:N
 swarthy:A.c
+swartness:N
 swash:N
 swash:V
 swashbuckler:N
@@ -66422,6 +66439,7 @@ tart:N
 tartan:N
 tartar:N
 tartaric:A
+tartish:A
 tartlet:N
 tartly:Av
 tartness:N
@@ -67477,9 +67495,10 @@ thistle:N
 thistledown:N
 thistlelike:A
 thither:Av
+tho:Av
 tho:C
-tho':Av
 thole:N
+thole:V
 tholepin:N
 thong:N
 thoracic:A
@@ -67770,7 +67789,6 @@ tictac:N
 tidal:A
 tidbit:N
 tiddler:N
-tiddley:A
 tiddly:A.c
 tiddlywink:N
 tide:N
@@ -68078,7 +68096,6 @@ tocktact:N
 tocology:N
 tocopherol:N
 tocsin:N
-tod:A
 tod:N
 today:Av
 today:N
@@ -68086,7 +68103,6 @@ toddle:V
 toddler:N
 toddy:N
 tody:N
-toe:A
 toe:N
 toe:V
 toea:N
@@ -68455,9 +68471,8 @@ toughener:N
 toughie:N
 toughly:Av
 toughness:N
-toupe:N
-toupee:N
-toupeed:A
+toupée:N
+toupéed:A
 tour:N
 tour:V
 touraco:N
@@ -68995,7 +69010,7 @@ treelike:A
 treeline:N
 treenail:N
 treetop:N
-tref:A
+tref:N,-fi
 trefoil:N
 treillage:N
 trek:N
