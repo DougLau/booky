@@ -7521,7 +7521,7 @@ bitstock:N
 bitstream:N
 bitt:N
 bitt:V
-bitter:A
+bitter:A.c
 bitter:Av
 bitter:N
 bitter:V
@@ -7932,6 +7932,7 @@ bloom:V
 bloomer:N
 blooming:A
 blooming:N
+bloomy:A.c
 bloop:N
 bloop:V
 blooper:N
@@ -8168,7 +8169,7 @@ boisterous:A
 boisterously:Av
 boisterousness:N
 bola:N
-bold:A
+bold:A.c
 bold:N
 boldface:N
 boldface:V
@@ -9024,7 +9025,7 @@ brigandage:N
 brigandine:N
 brigandish:A
 brigantine:N
-bright:A
+bright:A.c
 bright:Av
 bright:N
 brighten:V
@@ -12072,7 +12073,7 @@ chicory:N
 chicot:N
 chide:V,-es,-ding,-d,-ed,-dden
 chiding:N
-chief:A
+chief:A.c
 chief:N
 chiefdom:N
 chiefess:N
@@ -13270,7 +13271,7 @@ coaming:N
 coapt:V
 coarctate:A
 coarctation:N
-coarse:A
+coarse:A.c
 coarsely:Av
 coarsen:V
 coarsened:A
@@ -14114,7 +14115,7 @@ complementarity:N
 complementary:A
 complementary:N
 complementation:N
-complete:A
+complete:A.c
 complete:V
 completed:A
 completely:Av
@@ -18989,7 +18990,7 @@ devour:V
 devoured:A
 devourer:N
 devouring:A
-devout:A
+devout:A.c
 devoutly:Av
 devoutness:N
 dew:N
@@ -20361,7 +20362,7 @@ dividing:A
 divil:N
 divination:N
 divinatory:A
-divine:A
+divine:A.c
 divine:N
 divine:V
 divinely:Av
@@ -20401,7 +20402,7 @@ diæresis:N
 djellaba:N
 djinni:N
 do:N
-do:V,does,doing,did,done,didst,dost
+do:V,does,doing,did,done,didst,dost,doth
 do-si-do:N
 doable:A
 dobbin:N
@@ -24097,7 +24098,7 @@ expectancy:N
 expectant:A
 expectantly:Av
 expectation:N
-expected:A
+expected:A.c
 expectedness:N
 expectorant:N
 expectorate:V
@@ -24373,7 +24374,7 @@ extravert:A
 extravert:N
 extraverted:A
 extravertive:A
-extreme:A
+extreme:A.c
 extreme:N
 extremely:Av
 extremeness:N
@@ -25777,7 +25778,7 @@ flameproof:A
 flamethrower:N
 flaming:A
 flaming:N
-flamingo:N
+flamingo:N,-os,-oes
 flammability:N
 flammable:A
 flan:N
@@ -26355,7 +26356,7 @@ foolhardily:Av
 foolhardiness:N
 foolhardy:A.c
 fooling:A
-foolish:A
+foolish:A.c
 foolishly:Av
 foolishness:N
 foolproof:A
@@ -26613,7 +26614,7 @@ forked:A
 forkful:N
 forking:N
 forklift:N
-forlorn:A
+forlorn:A.c
 forlornly:Av
 forlornness:N
 form:N
@@ -26724,11 +26725,12 @@ fortunetelling:N
 forty:A
 forty:N
 forum:N,fora,-ms
-forward:A
+forward:A.c
 forward:Av
 forward:N
 forward:P
 forward:V
+forwarder:N
 forwarding:N
 forwardness:N
 forwards:Av
@@ -29123,7 +29125,7 @@ grassroots:A
 grassy:A.c
 grate:N
 grate:V
-grateful:A
+grateful:A.c
 gratefully:Av
 gratefulness:N
 grater:N
@@ -30184,7 +30186,7 @@ handset:N
 handsewn:A
 handshake:N
 handshaking:N
-handsome:A
+handsome:A.c
 handsomely:Av
 handsomeness:N
 handspike:N
@@ -31747,7 +31749,7 @@ honcho:N
 hone:N
 hone:V
 honer:N
-honest:A
+honest:A.c
 honestly:Av
 honestness:N
 honesty:N
@@ -33362,7 +33364,7 @@ implosion:N
 implosive:A
 implosive:N
 imply:V
-impolite:A
+impolite:A.c
 impolitely:Av
 impoliteness:N
 impolitic:A
@@ -38917,6 +38919,7 @@ look:N
 look:V
 lookalike:N
 lookdown:N
+lookee:I,-ky
 looker:N
 looking:A
 looking:N
@@ -40405,7 +40408,7 @@ mattress:N
 maturate:V
 maturation:N
 maturational:A
-mature:A
+mature:A.c
 mature:V
 matured:A
 maturely:Av
@@ -43587,7 +43590,7 @@ narration:N
 narrative:A
 narrative:N
 narrator:N
-narrow:A
+narrow:A.c
 narrow:N
 narrow:V
 narrowboat:N
@@ -48495,7 +48498,7 @@ peace:N
 peaceable:A
 peaceableness:N
 peaceably:Av
-peaceful:A
+peaceful:A.c
 peacefully:Av
 peacefulness:N
 peacekeeper:N
@@ -50509,7 +50512,7 @@ pleading:A
 pleading:N
 pleadingly:Av
 pleasance:N
-pleasant:A
+pleasant:A.c
 pleasantly:Av
 pleasantness:N
 pleasantry:N
@@ -50920,7 +50923,7 @@ polished:A
 polisher:N
 polishing:N
 politburo:N
-polite:A
+polite:A.c
 politely:Av
 politeness:N
 politesse:N
@@ -51170,6 +51173,7 @@ poolroom:N
 poolside:A
 poolside:N
 poon:N
+poontang:N
 poop:N
 poor:A.c
 poorhouse:N
@@ -51177,6 +51181,8 @@ poorly:A.c
 poorly:Av
 poorness:N
 poorwill:N
+pooty:A.c
+pooty:N
 poove:N
 pop:A
 pop:Av
@@ -52486,7 +52492,7 @@ profligacy:N
 profligate:A
 profligate:N
 profligately:Av
-profound:A
+profound:A.c
 profoundly:Av
 profoundness:N
 profundity:N
@@ -52686,7 +52692,7 @@ propene:N
 propenoate:N
 propenonitrile:N
 propensity:N
-proper:A
+proper:A.c
 properly:Av
 properness:N
 propertied:A
@@ -54218,7 +54224,7 @@ rage:N
 rage:V
 ragee:N
 ragga:N
-ragged:A
+ragged:A.c
 raggedly:Av
 raggedness:N
 raggedy:A.c
@@ -57782,7 +57788,7 @@ salivate:V
 salivation:N
 sallade:N
 sallet:N
-sallow:A
+sallow:A.c
 sallow:N
 sallow:V
 sallowish:A
@@ -59707,7 +59713,7 @@ severalize:V.z
 severally:Av
 severalty:N
 severance:N
-severe:A
+severe:A.c
 severed:A
 severely:Av
 severeness:N
@@ -62927,7 +62933,7 @@ splayfoot:N,-feet
 splayfooted:A
 spleen:N
 spleenwort:N
-splendid:A
+splendid:A.c,-der,-dest
 splendidly:Av
 splendiferous:A
 splendor:N
@@ -71040,7 +71046,7 @@ unexclusive:A
 unexcused:A
 unexhausted:A
 unexpansive:A
-unexpected:A
+unexpected:A.c
 unexpectedly:Av
 unexpectedness:N
 unexpendable:A
@@ -71255,7 +71261,7 @@ unhampered:A
 unhand:V
 unhandily:Av
 unhandiness:N
-unhandsome:A
+unhandsome:A.c
 unhandsomely:Av
 unhandy:A.c
 unhappily:Av
@@ -72556,7 +72562,7 @@ unwelcome:A
 unwelcomed:A
 unwell:A
 unwellness:N
-unwholesome:A
+unwholesome:A.c
 unwholesomely:Av
 unwholesomeness:N
 unwieldiness:N
@@ -72965,7 +72971,7 @@ vague:A.c
 vaguely:Av
 vagueness:N
 vagus:N
-vain:A
+vain:A.c
 vainglorious:A
 vainglory:N
 vainly:Av
@@ -73471,7 +73477,7 @@ vertu:N
 vervain:N
 verve:N
 vervet:N
-very:A
+very:A.c
 very:Av
 vesica:N
 vesical:A
@@ -75063,7 +75069,7 @@ wholesale:Av
 wholesale:N
 wholesale:V
 wholesaler:N
-wholesome:A
+wholesome:A.c
 wholesomely:Av
 wholesomeness:N
 wholewheat:A
@@ -75111,7 +75117,7 @@ why:C
 why:N,whys
 whydah:N
 wick:N
-wicked:A
+wicked:A.c
 wickedly:Av
 wickedness:N
 wicker:N
@@ -75766,7 +75772,7 @@ wrestle:V
 wrestler:N
 wrestling:N
 wretch:N
-wretched:A
+wretched:A.c
 wretchedly:Av
 wretchedness:N
 wrick:N
