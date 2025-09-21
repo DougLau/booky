@@ -13,6 +13,7 @@ Atlantic:A
 Aug:N.n
 August:N.n
 Australia:N.n
+Bolognese:A
 Celsius:A
 Christmas:N.n
 Darwinian:A
@@ -23,6 +24,7 @@ Earl:N.n
 Earth:N.n
 Easter:N.n
 English:A
+English:N
 Esq:N.n
 Eurasia:N.n
 Eurocentric:A
@@ -31,8 +33,12 @@ Excellency:N.n
 Fahrenheit:N.n
 Feb:N.n
 February:N.n
+French:A
+French:N
 Fri:N.n
 Friday:N.n
+German:A
+German:N
 Hallowe'en:N.n
 Halloween:N.n
 Herculean:A
@@ -49,6 +55,7 @@ Kafkaesque:A
 Lady:N.n
 Lord:N.n
 Machiavellian:A
+Machiavellianism:N
 Mama:N.n
 Mar:N.n
 March:N.n
@@ -64,6 +71,7 @@ Mr:N.n
 Mrs:N.n
 Ms:N.n
 Neanderthal:A
+Nephilim:N.p
 Neptune:N.n
 Nov:N.n
 November:N.n
@@ -83,6 +91,8 @@ Sep:N.n
 September:N.n
 St:N.n
 Sunday:N.n
+Swedish:A
+Swedish:N
 Thu:N.n
 Thursday:N.n
 Tue:N.n
@@ -7101,6 +7111,7 @@ bidder:N
 bidding:N
 biddy:N
 bide:V
+bident:N
 bidentate:A
 bidet:N
 bidimensional:A
@@ -7461,6 +7472,7 @@ birr:N
 birr:V
 birth:N
 birth:V
+birthdate:N
 birthday:N
 birther:N
 birtherism:N
@@ -8959,6 +8971,7 @@ brewage:N
 brewer:N
 brewery:N
 brewing:N
+brewmaster:N
 brewpub:N
 briar:N
 briard:N
@@ -12586,6 +12599,7 @@ cinder:N
 cinderous:A
 cine:N
 cinema:N
+cinemagoer:N
 cinematic:A
 cinematize:V.z
 cinematographer:N
@@ -16503,6 +16517,7 @@ crotchetiness:N
 crotchety:A.c
 croton:N
 crotonbug:N
+crotoxin:N
 crottal:N
 crottle:N
 crouch:N
@@ -18385,6 +18400,7 @@ dendritic:A
 dendrobium:N
 dendroid:A
 dendroidal:A
+denegation:N
 dengue:N
 deniability:N
 deniable:A
@@ -22998,7 +23014,7 @@ enveloped:A
 enveloper:N
 enveloping:A
 envelopment:N
-envenom:V
+envenom:V,-ms,-ming,-med
 enviable:A
 enviably:Av
 envious:A
@@ -23023,7 +23039,9 @@ enwrap:V
 enwrapped:A
 enzootic:A
 enzymatic:A
+enzymatically:Av
 enzyme:N
+enzymic:A
 enzymologist:N
 enzymology:N
 eoan:A
@@ -24579,7 +24597,7 @@ fairlead:N
 fairly:Av
 fairness:N
 fairway:N
-fairy:N,-ries,færy,færie,færies,faerie,faeries
+fairy:N,-ries,færy,faery,færie,færies,faerie,faeries
 fairyland:N
 fairytale:N
 faith:N
@@ -25462,6 +25480,8 @@ filtration:N
 filum:N
 fimbria:N
 fimbriate:A
+fimbriated:A
+fimbriation:N
 fin:N
 fin:V
 finable:A
@@ -25772,6 +25792,8 @@ flame:N
 flame:V
 flamefish:N
 flameflower:N
+flameless:A
+flamelessly:Av
 flamen:N
 flamenco:N
 flameproof:A
@@ -28854,7 +28876,7 @@ goonie:N
 goony:N
 goop:N
 goosander:N
-goose:N,geese
+goose:N,geese,-es
 gooseberry:N
 goosebumps:N.p
 goosefish:N
@@ -30087,6 +30109,8 @@ haltere:N
 halterneck:N
 halting:A
 haltingly:Av
+halva:N
+halvah:N
 halve:V
 halyard:N
 ham:N
@@ -31142,6 +31166,8 @@ heterocycle:N
 heterocyclic:A
 heterocyclic:N
 heterodactyl:A
+heterodimer:N
+heterodimeric:A
 heterodox:A
 heterodoxy:N
 heterodyne:A
@@ -31207,6 +31233,7 @@ hexagram:N
 hexahedral:A
 hexahedron:N,-ra,-ns
 hexameter:N
+hexamine:N
 hexane:N
 hexangular:A
 hexed:A
@@ -31997,6 +32024,7 @@ hosteler:N
 hosteller:N
 hostelry:N
 hostess:N
+hostess:V
 hostile:A
 hostilely:Av
 hostility:N
@@ -33165,6 +33193,8 @@ immunologic:A
 immunological:A
 immunologist:N
 immunology:N
+immunomodulator:N
+immunomodulatory:A
 immunopathology:N
 immunosuppressant:N
 immunosuppressed:A
@@ -37205,6 +37235,7 @@ laid:A
 lair:N
 laird:N
 laissez-faire:A
+lait:V
 laity:N
 lake:N
 lakefront:N
@@ -40066,6 +40097,7 @@ marchioness:N
 marchland:N
 marchpane:N
 mare:N
+marengo:A
 margarin:N
 margarine:N
 margarita:N
@@ -41721,6 +41753,7 @@ minocycline:N
 minor:A
 minor:N
 minority:N
+minotaur:N
 minoxidil:N
 minster:N
 minstrel:N
@@ -42086,6 +42119,7 @@ mobility:N
 mobilization:N.z
 mobilize:V.z
 mobilizer:N.z
+moble:V
 moblike:A
 mobster:N
 mocassin:N
@@ -43164,6 +43198,8 @@ murre:N
 muscadel:N
 muscadelle:N
 muscadine:N
+muscarine:N
+muscarinic:A
 muscat:N
 muscatel:N
 muscle:N
@@ -43383,6 +43419,8 @@ myotic:A
 myotomy:N
 myotonia:N
 myotonic:A
+myotoxic:A
+myotoxicity:N
 myriad:A
 myriad:N
 myriagram:N
@@ -44252,6 +44290,7 @@ nicknack:N
 nickname:N
 nickname:V
 nicotine:N
+nicotinic:A
 nictate:V
 nictation:N
 nictitate:V
@@ -47274,6 +47313,9 @@ overwinter:V
 overwork:N
 overwork:V
 overworking:N
+overwrap:N
+overwrap:V
+overwrapper:N
 overwrite:V,-es,-ting,-rote,-tten
 overwrought:A
 overzealous:A
@@ -48663,6 +48705,7 @@ peewee:N
 peewit:N
 peg:N
 peg:V
+pegasus:N,-ses,-asi
 pegboard:N
 pegleg:N
 pegmatite:N
@@ -52095,6 +52138,8 @@ presumptuousness:N
 presuppose:V
 presupposition:N
 presymptomatic:A
+presynaptic:A
+presynaptically:Av
 pretax:A
 preteen:A
 preteen:N
@@ -52858,6 +52903,7 @@ protectress:N
 protein:N
 proteinaceous:A
 proteinase:N
+proteinic:A
 proteinuria:N
 proteolysis:N
 proteolytic:A
@@ -53027,6 +53073,7 @@ prætorship:N
 psalm:N
 psalm:V
 psalmist:N
+psalmodist:N
 psalmody:N
 psalterium:N,-ia
 psaltery:N
@@ -55470,6 +55517,9 @@ reheel:V
 rehire:V
 rehome:V
 rehouse:V
+rehydratable:A
+rehydrate:V
+rehydration:N
 reification:N
 reify:V
 reign:N
@@ -56035,6 +56085,7 @@ rescue:V
 rescued:A
 rescuer:N
 reseal:V
+resealable:A
 research:N
 research:V
 researchable:A
@@ -63046,6 +63097,7 @@ sporangial:A
 sporangiophore:N
 sporangium:N,-ia
 spore:N
+spork:N
 sporocarp:N
 sporogenous:A
 sporophore:N
@@ -65975,6 +66027,7 @@ synergetic:A
 synergism:N
 synergist:N
 synergistic:A
+synergistically:Av
 synergize:V
 synergy:N
 synezesis:N
@@ -66363,6 +66416,7 @@ tantamount:A
 tantara:N
 tantra:N
 tantrum:N
+tanuki:N
 tanyard:N
 tao:N
 tap:N
@@ -69895,6 +69949,8 @@ type:V
 typecast:V,-ts,-ting
 typed:A
 typeface:N
+typefounder:N
+typefounding:N
 typescript:N
 typeset:V
 typesetter:N
@@ -74526,6 +74582,7 @@ wayfinding:N
 waylay:V,-ys,-ying,-aid
 waylayer:N
 waypoint:N
+waypost:N
 ways:Av
 wayside:N
 wayward:A
@@ -75854,6 +75911,7 @@ xenogamy:N
 xenogenesis:N
 xenograft:N
 xenolith:N
+xenomorphic:A
 xenon:N
 xenophobe:N
 xenophobia:N
@@ -76184,6 +76242,7 @@ zionist:N
 zip:N
 zip:V
 zipless:A
+ziplock:A
 zipper:N
 zipper:V
 zippy:A.c
