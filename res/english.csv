@@ -4,6 +4,7 @@
 3D:A
 Africa:N.n
 American:A
+Americana:N.p
 Antarctic:A
 Apr:N.n
 April:N.n
@@ -102,7 +103,6 @@ Utopia:N.n
 Venus:N.n
 Wed:N.n
 Wednesday:N.n
-X-raying:N
 Xmas:N.n
 a:D
 a:P.t
@@ -2925,6 +2925,7 @@ anglophil:N
 anglophile:N
 anglophobe:N
 anglophone:A
+anglophone:N
 angora:N
 angostura:N
 angrecum:N
@@ -5648,6 +5649,7 @@ bacteroidal:A
 bacteræmia:N
 bacteræmic:A
 baculiform:A
+baculum:N,-ms,-la
 bad:A.c,worse,badder,worst,baddest
 bad:Av
 bad:N
@@ -7234,6 +7236,7 @@ billow:N
 billow:V
 billowing:A
 billowy:A.c
+billposter:N
 billy:N
 billycan:N
 billyo:N
@@ -7364,12 +7367,17 @@ biomarker:N
 biomass:N
 biomaterial:N
 biome:N
+biomechanical:A
+biomechanically:Av
+biomechanics:N.s
 biomedical:A
 biomedicine:N
 biometric:A
 biometrical:A
 biometrics:N.p
 biometry:N
+biomicroscope:N
+biomicroscopy:N
 biomimicry:N
 bionic:A
 bionics:N.p
@@ -7539,6 +7547,7 @@ bitter:N
 bitter:V
 bittercress:N
 bitterish:A
+bitterless:A
 bitterly:Av
 bittern:N
 bitterness:N
@@ -8756,6 +8765,7 @@ brainish:A
 brainless:A
 brainpan:N
 brainpower:N
+brainrot:N
 brainsick:A
 brainstem:N
 brainstorm:N
@@ -9170,6 +9180,7 @@ bromide:N
 bromidic:A
 brominate:V
 bromine:N
+bromo:N
 bromoform:N
 bronc:N
 bronchial:A
@@ -11026,6 +11037,8 @@ catalectic:A
 catalepsy:N
 cataleptic:A
 cataleptic:N
+cataleptical:A
+cataleptically:Av
 catalexis:N
 catalog:N
 catalog:V,-gs,-ging,-ged
@@ -11647,7 +11660,7 @@ chamfer:N
 chamfer:V
 chamfron:N
 chammy:N
-chamois:N
+chamois:N,-ix
 chamomile:N
 chamosite:N
 champ:N
@@ -12198,7 +12211,9 @@ chipping:N
 chippy:A.c
 chippy:N
 chipset:N
+chiral:A
 chiralgia:N
+chirality:N
 chirk:V
 chirographer:N
 chirographic:A
@@ -16432,6 +16447,7 @@ crofter:N
 croissant:N
 cromlech:N
 cromorne:N,-ones
+cromulent:A
 crone:N
 cronk:V
 crony:N
@@ -17777,6 +17793,7 @@ decidable:A
 decide:V
 decided:A
 decidedly:Av
+decider:N
 deciding:A
 deciding:N
 decidua:N,-ae
@@ -21416,6 +21433,7 @@ dust:V
 dustbin:N
 dustcart:N
 dustcloth:N
+dustcoat:N
 duster:N
 dustily:Av
 dustiness:N
@@ -21984,7 +22002,7 @@ egress:N
 egress:V
 egression:N
 egret:N
-eh:I
+eh:I,heh
 eider:N
 eiderdown:N
 eidetic:A
@@ -22304,6 +22322,7 @@ embezzle:V
 embezzled:A
 embezzlement:N
 embezzler:N
+embiggen:V
 embitter:V
 embitterment:N
 emblazon:V
@@ -22860,6 +22879,7 @@ enrollment:N
 enrolment:N
 ensconce:V
 ensemble:N
+enshittification:N
 enshrine:V
 enshrinement:N
 enshroud:V
@@ -25241,6 +25261,7 @@ fetter:N
 fetter:V
 fetterbush:N
 fettered:A
+fetterless:A
 fettle:N
 fettuccine:N
 fettuccini:N
@@ -25282,6 +25303,7 @@ fiber:N
 fiberboard:N
 fiberfill:N
 fiberglass:N
+fiberless:A
 fiberoptic:A
 fiberoptics:N.p
 fiberscope:N
@@ -25470,6 +25492,7 @@ fils:N
 filter:N
 filter:V
 filterer:N
+filterless:A
 filth:N
 filthily:Av
 filthiness:N
@@ -26902,6 +26925,7 @@ frangible:A
 frangipane:N
 frangipani:N
 frangipanni:N
+franion:N
 frank:A.c
 frank:N
 frank:V
@@ -27122,6 +27146,7 @@ frock:V
 frog:N
 frogbit:N
 frogfish:N
+frogged:A
 frogging:N
 froghopper:N
 frogman:N,-men
@@ -27200,6 +27225,8 @@ frugal:A
 frugality:N
 frugally:Av
 frugalness:N
+frugivore:N
+frugivorous:A
 fruit:N
 fruit:V
 fruitage:N
@@ -29026,6 +29053,8 @@ grainy:A.c
 gram:N
 grama:N
 gramicidin:N
+gramineous:A
+graminivorous:A
 gramma:N
 grammar:N
 grammarian:N
@@ -31539,6 +31568,7 @@ hockshop:N
 hocus-pocus:N
 hod:N
 hodgepodge:N
+hodiernal:A
 hodman:N,-men
 hodometer:N
 hodoscope:N
@@ -32510,6 +32540,8 @@ hydroxyproline:N
 hydroxyzine:N
 hydrozoan:N
 hyemation:N
+hygge:A
+hygge:N
 hygiene:N
 hygienic:A
 hygienical:A
@@ -32628,6 +32660,9 @@ hyperplane:N
 hyperplasia:N
 hyperpnea:N
 hyperpyrexia:N
+hyperrealism:N
+hyperrealist:A
+hyperrealistic:A
 hypersecretion:N
 hypersensitive:A
 hypersensitiveness:N
@@ -32928,6 +32963,8 @@ idiosyncratic:A
 idiot:N
 idiotic:A
 idiotically:Av
+idiotype:N
+idiotypic:A
 idle:A.c
 idle:V
 idleness:N
@@ -34062,6 +34099,7 @@ indivisibly:Av
 indocile:A
 indoctrinate:V
 indoctrination:N
+indole:N
 indolence:N
 indolent:A
 indolently:Av
@@ -35417,6 +35455,7 @@ invariableness:N
 invariably:Av
 invariance:N
 invariant:A
+invariant:N
 invasion:N
 invasive:A
 invective:N
@@ -38571,6 +38610,7 @@ list:V
 listed:A
 listen:V
 listener:N
+listenership:N
 listening:A
 listening:N
 lister:N
@@ -39398,6 +39438,7 @@ lyricality:N
 lyrically:Av
 lyricism:N
 lyricist:N
+lysergic:A
 lysin:N
 lysine:N
 lysinemia:N
@@ -39993,6 +40034,9 @@ manservant:N,menservants
 mansion:N
 manslaughter:N
 manslayer:N
+mansplain:V
+mansplainer:N
+mansplaining:N
 manta:N
 mantel:N
 mantelet:N
@@ -42868,6 +42912,7 @@ moussaka:N
 mousse:N
 mousse:V
 moustache:N
+moustached:A
 moustachio:N
 mousy:A.c
 mouth:N
@@ -44607,6 +44652,7 @@ noncandidate:N
 noncarbonated:A
 noncausal:A
 noncausative:A
+nonce:A
 nonce:N
 noncellular:A
 nonchalance:N
@@ -44819,6 +44865,8 @@ nonlethal:A
 nonlexical:A
 nonlexically:Av
 nonlinear:A
+nonlinearity:N
+nonlinearly:Av
 nonlinguistic:A
 nonliteral:A
 nonliterary:A
@@ -46241,6 +46289,7 @@ opisthotonos:N
 opium:N
 opopanax:N
 opossum:N
+oppidum:N,-da
 opponent:A
 opponent:N
 opportune:A
@@ -49627,6 +49676,7 @@ phoronid:N
 phosgene:N
 phosphatase:N
 phosphate:N
+phosphene:N
 phosphine:N
 phosphocreatine:N
 phosphodiesterase:N
@@ -50196,6 +50246,7 @@ piscary:N
 piscatorial:A
 piscatory:A
 piscine:A
+piscivore:N
 piscivorous:A
 pisiform:N
 pismire:N
@@ -51578,6 +51629,7 @@ pouring:A
 pout:N
 pout:V
 pouter:N
+poutine:N
 poutingly:Av
 poverty:N
 pow:N
@@ -54012,6 +54064,9 @@ quincentenary:A
 quincentenary:N
 quincentennial:A
 quincentennial:N
+quincuncial:A
+quincunx:N
+quincunxial:A
 quinidine:N
 quinine:N
 quinoa:N
@@ -54341,6 +54396,7 @@ rajah:N
 rajanya:N
 rake:N
 rake:V
+raki:N.s
 rakish:A
 rakishly:Av
 rakishness:N
@@ -54359,6 +54415,7 @@ ramble:N
 ramble:V
 rambler:N
 rambling:A
+rambling:N
 ramblingly:Av
 rambotan:N
 rambunctious:A
@@ -54476,6 +54533,7 @@ rappel:V
 rapper:N
 rapping:N
 rapport:N
+rapportage:N
 rapporteur:N
 rapprochement:N
 rapscallion:N
@@ -55464,6 +55522,7 @@ regnellidium:N
 regolith:N
 regorge:V
 regosol:N
+regrade:V
 regress:N
 regress:V
 regression:N
@@ -60106,6 +60165,7 @@ shelver:N
 shelvy:A.c
 shemozzle:N
 shenanigan:N
+sheng:N
 shepherd:N
 shepherd:V
 shepherdess:N
@@ -60145,6 +60205,13 @@ shill:V
 shillalah:N
 shillelagh:N
 shilling:N
+shilly-shally:A
+shilly-shally:Av
+shilly-shally:N
+shilly-shally:V
+shillyshallier:N
+shillyshally:A
+shillyshally:Av
 shillyshally:N
 shillyshally:V
 shim:N
@@ -60942,6 +61009,7 @@ sissy:N
 sissyish:A
 sister:N
 sisterhood:N
+sisterless:A
 sisterlike:A
 sisterliness:N
 sisterly:A.c
@@ -61687,6 +61755,7 @@ snakeroot:N
 snakeskin:N
 snakeweed:N
 snakewood:N
+snakish:A
 snaky:A.c
 snap:N
 snap:V
@@ -63908,6 +63977,7 @@ sticktight:N
 stickup:N
 stickweed:N
 sticky:A.c
+stiction:N
 stiff:A.c
 stiff:Av
 stiff:N
@@ -64294,6 +64364,7 @@ stratospheric:A
 stratospherically:Av
 stratum:N,-ta
 stratus:N,-ti
+stravage:V
 straw:A
 straw:N
 straw:V
@@ -64410,6 +64481,7 @@ strikingness:N
 string:A
 string:N
 string:V,-gs,-ging,strung
+stringed:A
 stringency:N
 stringent:A
 stringently:Av
@@ -64655,6 +64727,7 @@ subcontract:N
 subcontract:V
 subcontractor:N
 subcortical:A
+subcritical:A
 subculture:N
 subcutaneous:A
 subcutaneously:Av
@@ -67069,6 +67142,7 @@ tergiversation:N
 teriyaki:N
 term:N
 term:V
+termagant:A
 termagant:N
 termer:N
 terminable:A
@@ -69141,8 +69215,10 @@ triangularity:N
 triangulate:A
 triangulate:V
 triangulation:N
+trianon:N
 triathlete:N
 triathlon:N
+triaxon:N
 triazine:N
 triazolam:N
 tribade:N
@@ -73846,6 +73922,7 @@ viscidity:N
 viscidly:Av
 viscidness:N
 viscoelastic:A
+viscoelasticity:N
 viscometer:N
 viscometric:A
 viscometry:N
@@ -73946,6 +74023,7 @@ vivisectional:A
 vivisectionist:N
 vixen:N
 vixenish:A
+vizard:N
 vizier:N
 viziership:N
 vizla:N
@@ -74318,6 +74396,7 @@ wanton:N
 wanton:V
 wantonly:Av
 wantonness:N
+wapentake:N
 wapiti:N
 war:N
 war:V
@@ -75398,6 +75477,7 @@ winter:V
 winterberry:N
 wintergreen:N
 winterize:V.z
+winterless:A
 wintertime:N
 wintery:A.c
 wintry:A.c
@@ -75895,6 +75975,7 @@ wyethia:N
 wysiwyg:A
 wyvern:N
 x-ray:V
+x-raying:N
 xanthate:N
 xanthelasma:N
 xanthemia:N
