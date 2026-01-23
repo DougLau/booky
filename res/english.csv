@@ -596,7 +596,8 @@ accouterment:N
 accoutre:V
 accoutred:A
 accoutrement:N
-accredit:V
+accredit:V,-ts,-ting,-ted
+accreditable:A
 accreditation:N
 accredited:A
 accrete:V
@@ -1168,6 +1169,7 @@ adored:A
 adorer:N
 adoring:A
 adoringly:Av
+adorkable:A
 adorn:V
 adorned:A
 adornment:N
@@ -1801,6 +1803,7 @@ airship:N
 airshow:N
 airsick:A
 airsickness:N
+airside:N
 airspace:N
 airspeed:N
 airstream:N
@@ -2258,6 +2261,7 @@ althea:N
 altho:C
 although:C
 altimeter:N
+altimetry:N
 altissimo:A
 altitude:N
 altitudinal:A
@@ -3604,6 +3608,9 @@ apicultural:A
 apiculture:N
 apiculturist:N
 apiece:Av
+apiphobe:N
+apiphobia:N
+apiphobic:A
 apish:A
 apishamore:N
 apivorous:A
@@ -5102,6 +5109,8 @@ autobiography:N
 autobus:N
 autocatalysis:N
 autocatalytic:A
+autocephalous:A
+autocephaly:N
 autochthonal:A
 autochthonic:A
 autochthonous:A
@@ -7386,6 +7395,10 @@ biopic:N
 biopiracy:N
 biopsy:N
 bioreactor:N
+bioregion:N
+bioregional:A
+bioregionalism:N
+bioregionalist:N
 bioremediation:N
 biorhythm:N
 biorhythmic:A
@@ -9148,6 +9161,7 @@ brochette:N
 brochure:N
 brocket:N
 brodiaea:N
+broflake:N
 brogan:N
 brogue:N
 broider:V
@@ -9701,6 +9715,8 @@ bushing:N
 bushland:N
 bushman:N,-men
 bushmaster:N
+bushranger:N
+bushranging:N
 bushtit:N
 bushwalk:N
 bushwalk:V
@@ -11127,7 +11143,7 @@ categorization:N.z
 categorize:V.z
 categorized:A.z
 category:N
-catena:N
+catena:N,-ae,-as
 catenary:N
 catenate:V
 catenulate:A
@@ -12215,6 +12231,7 @@ chiral:A
 chiralgia:N
 chirality:N
 chirk:V
+chiro:N
 chirographer:N
 chirographic:A
 chirography:N
@@ -12516,6 +12533,7 @@ chucklehead:N
 chuckleheaded:A
 chuckleheadedness:N
 chuckwalla:N
+chud:N
 chuddar:N
 chufa:N
 chuff:V
@@ -14345,12 +14363,15 @@ conchologist:N
 conchology:N
 concierge:N
 conciliable:A
+conciliar:A
+conciliarly:Av
 conciliate:V
 conciliation:N
 conciliative:A
 conciliator:N
 conciliatoriness:N
 conciliatory:A
+concinnity:N
 concise:A
 concisely:Av
 conciseness:N
@@ -15750,6 +15771,9 @@ coulee:N
 coulis:N
 coulisse:N
 coulomb:N
+coulrophobe:N
+coulrophobia:N
+coulrophobic:A
 coulter:N
 coumarone:N
 council:N
@@ -16402,6 +16426,7 @@ crispiness:N
 crisply:Av
 crispness:N
 crispy:A.c
+criss:N
 crisscross:A
 crisscross:Av
 crisscross:N
@@ -17658,6 +17683,7 @@ dearly:Av
 dearness:N
 dearth:N
 deary:N
+deasil:Av
 death:N
 deathbed:N
 deathblow:N
@@ -17990,6 +18016,7 @@ deerhound:N
 deerskin:N
 deerstalker:N
 deerstalking:N
+deets:N.p
 def:A
 deface:V
 defaced:A
@@ -20210,6 +20237,7 @@ dissimulator:N
 dissipate:V
 dissipated:A
 dissipation:N
+dissipative:A
 dissociable:A
 dissociate:V
 dissociated:A
@@ -20649,6 +20677,7 @@ donee:N
 dong:N
 dong:V
 dongle:N
+doniferous:A
 donjon:N
 donkey:N
 donkeywork:N
@@ -22143,7 +22172,9 @@ electroencephalograph:N
 electroencephalographer:N
 electroencephalographic:A
 electroencephalography:N
+electrogram:N
 electrograph:N
+electrography:N
 electrologist:N
 electrolysis:N
 electrolyte:N
@@ -22173,6 +22204,8 @@ electrophonically:Av
 electrophoresis:N
 electrophoretic:A
 electrophorus:N
+electrophotographic:A
+electrophotography:N
 electroplate:N
 electroplate:V
 electroplater:N
@@ -22323,6 +22356,7 @@ embarrassment:N
 embassador:N
 embassy:N
 embattled:A
+embayment:N
 embed:V,-ds,-dding,-dded
 embedded:A
 embellish:V
@@ -23585,6 +23619,9 @@ ethnographic:A
 ethnographical:A
 ethnographically:Av
 ethnography:N
+ethnohistorian:N
+ethnohistoric:A
+ethnohistory:N
 ethnologic:A
 ethnological:A
 ethnologist:N
@@ -25479,6 +25516,8 @@ filiform:A
 filigree:N
 filigree:V
 filing:N
+filk:N
+filker:N
 fill:N
 fill:V
 fille:N
@@ -26087,6 +26126,7 @@ floating:N
 floatplane:N
 floaty:A.c
 floc:N
+floccinaucinihilipilification:N
 floccose:A
 flocculate:V
 flocculation:N
@@ -26900,6 +26940,7 @@ fractal:N
 fraction:N
 fraction:V
 fractional:A
+fractionally:Av
 fractionate:V
 fractionation:N
 fractious:A
@@ -27860,6 +27901,8 @@ gasify:V
 gasket:N
 gaskin:N
 gaslight:N
+gaslight:V,-ts,-ting,-ted,-it
+gaslighting:N
 gasman:N,-men
 gasmask:N
 gasohol:N
@@ -28191,6 +28234,7 @@ geophysics:N.p
 geophyte:N
 geophytic:A
 geopolitical:A
+geopolitically:Av
 geopolitics:N.p
 georgette:N
 geoscience:N
@@ -29347,6 +29391,9 @@ greenside:A
 greenskeeper:N
 greenstone:N
 greensward:N
+greenwash:N
+greenwash:V
+greenwashing:N
 greenway:N
 greenweed:N
 greenwing:N
@@ -31218,6 +31265,7 @@ hesitation:N
 hesitator:N
 hessian:N
 hessonite:N
+hesychast:N
 het:A
 hetero:A
 hetero:N
@@ -31798,6 +31846,8 @@ homograft:N
 homograph:N
 homoiothermic:A
 homolog:N
+homologate:V
+homologation:N
 homologic:A
 homological:A
 homologize:V.z
@@ -32899,6 +32949,7 @@ iceboat:N
 icebound:A
 icebox:N
 icebreaker:N
+icebreaking:A
 icecap:N
 icefall:N
 icehouse:N
@@ -33108,6 +33159,8 @@ illuminate:V
 illuminated:A
 illuminating:A
 illumination:N
+illuminato:N,-ti
+illuminator:N
 illumine:V
 illusion:N
 illusional:A
@@ -33762,6 +33815,7 @@ incinerator:N
 incipience:N
 incipiency:N
 incipient:A
+incipit:N
 incise:V
 incised:A
 incision:N
@@ -34848,6 +34902,7 @@ inspirit:V,-ts,-ting,-ted
 inspiriting:A
 inspissate:V
 inspissation:N
+inspo:N
 inst:A
 instability:N
 instal:V
@@ -35152,6 +35207,7 @@ interline:V
 interlineal:A
 interlinear:A
 interlineation:N
+interlinguistics:N.p
 interlining:N
 interlink:V
 interlinking:A
@@ -35236,6 +35292,7 @@ interplay:N
 interpolate:V
 interpolation:N
 interpose:V
+interposer:N
 interposition:N
 interpret:V
 interpretable:A
@@ -38280,6 +38337,7 @@ license:V
 licensed:A
 licensee:N
 licenser:N
+licensure:N
 licentiate:N
 licentious:A
 licentiously:Av
@@ -39465,6 +39523,7 @@ lyonnaise:A
 lyophilization:N.z
 lyophilize:V.z
 lyophilized:A.z
+lyophilizer:N.z
 lypressin:N
 lyrate:A
 lyre:N
@@ -39539,8 +39598,8 @@ mackintosh:N
 mackle:N
 macon:N
 maconnais:N
-macrame:N
-macrame:V
+macramé:N
+macramé:V
 macrencephalic:A
 macrencephalous:A
 macrencephaly:N
@@ -40872,6 +40931,9 @@ melioration:N
 meliorative:A
 meliorism:N
 meliorist:N
+melissophobe:N
+melissophobia:N
+melissophobic:A
 mellifluous:A
 mellifluously:Av
 mellifluousness:N
@@ -42168,6 +42230,7 @@ mitzvah:N
 mix:N
 mix:V
 mixable:A
+mixdown:N
 mixed:A
 mixer:N
 mixing:N
@@ -42620,6 +42683,7 @@ monthly:N
 monument:N
 monumental:A
 monumentalize:V.z
+monzonite:N
 moo:N
 moo:V
 moo-cow:N
@@ -43160,6 +43224,7 @@ multimillion:A
 multimillionaire:N
 multimodal:A
 multimodality:N
+multimode:A
 multinational:A
 multinomial:A
 multinomial:N
@@ -43176,7 +43241,9 @@ multiple:A
 multiple:N
 multiplex:A
 multiplex:N
-multiplexer:N
+multiplex:V
+multiplexer:N,-xor,-rs,-xors
+multiplexing:N
 multiplicand:N
 multiplication:N
 multiplicative:A
@@ -43660,6 +43727,7 @@ nanosecond:N
 nanotechnology:N
 nanotube:N
 nanovolt:N
+nanowire:N
 nanus:N
 nap:N
 nap:V
@@ -47146,6 +47214,9 @@ overexpress:V
 overexpression:N
 overextend:V
 overextension:N
+overexuberance:N
+overexuberant:A
+overexuberantly:Av
 overfamiliar:A
 overfatigue:V
 overfed:A
@@ -48883,7 +48954,8 @@ peneplain:N
 peneplane:N
 penetrability:N
 penetrable:A
-penetralia:N
+penetralian:A
+penetralium:N,-ia
 penetrance:N
 penetrant:A
 penetrant:N
@@ -49332,6 +49404,10 @@ personableness:N
 personage:N
 personal:A
 personal:N
+personalia:N.p
+personalism:N
+personalist:A
+personalist:N
 personality:N
 personalization:N.z
 personalize:V.z
@@ -49751,6 +49827,7 @@ phosphorus:N
 phosphorylate:V
 phosphorylation:N
 phosphorylative:A
+phosphosilicate:N
 phosphotransferase:N
 phot:N
 photalgia:N
@@ -49809,6 +49886,8 @@ photometry:N
 photomicrograph:N
 photomontage:N
 photon:N
+photonic:A
+photonics:N.p
 photophobia:N
 photopia:N
 photopic:A
@@ -53393,6 +53472,7 @@ puffing:A
 puffing:N
 puffy:A.c
 pug:N
+pugil:N
 pugilism:N
 pugilist:N
 pugilistic:A
@@ -54414,6 +54494,7 @@ rail:V
 railbird:N
 railcar:N
 railcard:N
+railfan:N
 railhead:N
 railing:N
 raillery:N
@@ -55506,7 +55587,7 @@ refrigerating:A
 refrigeration:N
 refrigerator:N
 refuel:V,-ls,-ling,-led
-refueling:N
+refuelling:N,-gs,-eling,-elings
 refuge:N
 refugee:N
 refulgence:N
@@ -55514,6 +55595,7 @@ refulgency:N
 refulgent:A
 refund:N
 refund:V
+refundable:A
 refurb:N
 refurbish:V
 refurbishment:N
@@ -58140,6 +58222,7 @@ sane:A.c
 sanely:Av
 saneness:N
 sanewash:V
+sanewashing:N
 sanfoin:N
 sang:N
 sangapenum:N
@@ -59301,6 +59384,8 @@ sedative:A
 sedative:N
 sedentary:A
 sederunt:N
+sedevacantism:N
+sedevacantist:N
 sedge:N
 sedgelike:A
 sedgy:A.c
@@ -59539,6 +59624,7 @@ semipro:N
 semiprofessional:N
 semipublic:A
 semiquaver:N
+semiregular:A
 semiretired:A
 semirigid:A
 semiskilled:A
@@ -60764,6 +60850,7 @@ sidewise:Av
 siding:N
 sidle:V
 siege:N
+siege:V
 siemens:N,-s
 sienna:N
 sierra:N
@@ -62643,6 +62730,7 @@ spaced:A
 spacefaring:N
 spaceflight:N
 spaceman:N,-men
+spaceplane:N
 spaceport:N
 spacer:N
 spaceship:N
@@ -62828,6 +62916,7 @@ spectator:N
 specter:N
 spectinomycin:N
 spectral:A
+spectrally:Av
 spectre:N
 spectrogram:N
 spectrograph:N
@@ -64783,6 +64872,7 @@ subbing:N
 subbranch:N
 subcategory:N
 subcellular:A
+subchannel:N
 subclass:N
 subclavian:A
 subclinical:A
@@ -65420,6 +65510,7 @@ superconducting:A
 superconductive:A
 superconductivity:N
 superconductor:N
+supercontinuum:N,-nua
 supercritical:A
 superego:N
 supererogation:N
@@ -66005,6 +66096,7 @@ swizz:N
 swizzle:N
 swob:N
 swob:V
+swole:A
 swollen:A
 swoon:N
 swoon:V
@@ -69342,6 +69434,7 @@ trichomoniasis:N
 trichopteran:N
 trichopteron:N
 trichotillomania:N
+trichotillomanic:A
 trichroism:N
 trichromacy:N
 trichromatic:A
@@ -69549,6 +69642,7 @@ troglodytic:A
 trogon:N
 troika:N
 trojan:N
+troland:N
 troll:N
 troll:V
 troller:N
@@ -70218,6 +70312,7 @@ ultracentrifuge:V
 ultraconservative:A
 ultraconservative:N
 ultracrepidarian:N
+ultrafast:A
 ultrahigh:A
 ultraism:N
 ultraist:N
@@ -70915,6 +71010,7 @@ underexposure:N
 underfed:A
 underfeed:V,-ds,-ding,-fed
 underfelt:N
+underfill:N
 underfit:V
 underfloor:A
 underflow:N
@@ -75831,6 +75927,7 @@ wordiness:N
 wording:N
 wordless:A
 wordlessly:Av
+wordmark:N
 wordmonger:N
 wordplay:N
 wordsmith:N
@@ -76079,6 +76176,9 @@ xenograft:N
 xenolith:N
 xenomorphic:A
 xenon:N
+xenophile:N
+xenophilia:N
+xenophilic:A
 xenophobe:N
 xenophobia:N
 xenophobic:A
