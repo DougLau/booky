@@ -203,6 +203,7 @@ abiogenesis:N
 abiogenetic:A
 abiogenist:N
 abiotrophy:N
+abirritate:V
 abject:A
 abjection:N
 abjectly:Av
@@ -1559,6 +1560,7 @@ ageing:A
 ageing:N
 ageism:N
 ageist:A
+agelast:N
 ageless:A
 agelessness:N
 agelong:A
@@ -2334,6 +2336,7 @@ amateurishness:N
 amateurism:N
 amative:A
 amativeness:N
+amatorculist:N
 amatory:A
 amatungulu:N
 amaurosis:N
@@ -2368,6 +2371,7 @@ ambiguously:Av
 ambit:N
 ambition:N
 ambition:V
+ambitionist:N
 ambitionless:A
 ambitious:A
 ambitiously:Av
@@ -2829,8 +2833,9 @@ androphobia:N
 androsterone:N
 andryala:N
 ane:A
+anecdotage:N
 anecdotal:A
-anecdote:N
+anecdote:N,-es,-ta
 anecdotic:A
 anecdotical:A
 anecdotist:N
@@ -3118,6 +3123,7 @@ anonymize:V.z
 anonymizer:N.z
 anonymous:A
 anonymously:Av
+anonymuncule:N
 anoperineal:A
 anopheles:N
 anopheline:A
@@ -3399,6 +3405,7 @@ antipasto:N,-ti
 antipathetic:A
 antipathetical:A
 antipathy:N
+antipelargy:N
 antipersonnel:A
 antiperspirant:N
 antiphlogistic:A
@@ -3455,6 +3462,7 @@ antisubmarine:A
 antisyphilitic:N
 antitank:A
 antitauon:N
+antithalian:A
 antithesis:N
 antithetic:A
 antithetical:A
@@ -4396,6 +4404,7 @@ artistry:N
 artless:A
 artlessly:Av
 artlessness:N
+artophagous:A
 artsy:A.c
 artwork:N
 arty:A.c
@@ -5275,6 +5284,9 @@ average:V
 averagely:Av
 averageness:N
 averment:N
+averruncate:V
+averruncation:N
+averruncator:N
 averse:A
 aversion:N
 aversive:A
@@ -5585,11 +5597,13 @@ backside:N
 backslap:V
 backslapper:N
 backslash:N
+backslide:N
 backslide:V,-es,-ding,-d
 backslider:N
 backsliding:N
 backspace:V
 backspacer:N
+backspang:N
 backspin:N
 backsplash:N
 backstab:V
@@ -5993,6 +6007,7 @@ barbarously:Av
 barbarousness:N
 barbasco:N
 barbate:A
+barbatulous:A
 barbecue:N
 barbecue:V
 barbecued:A
@@ -6004,6 +6019,7 @@ barbellate:A
 barbeque:N
 barber:N
 barber:V
+barbermonger:N
 barberry:N
 barbershop:N
 barbet:N
@@ -10552,6 +10568,7 @@ capitate:A
 capitate:N
 capitation:N
 capitol:N
+capitulant:N
 capitular:A
 capitulary:A
 capitulate:V
@@ -12097,6 +12114,7 @@ chetrum:N
 cheugy:A
 cheval:N
 chevalier:N
+chevelure:N
 cheviot:N
 chevre:N
 chevron:N
@@ -14871,6 +14889,7 @@ consonant:A
 consonant:N
 consonantal:A
 consonate:V
+consopition:N
 consort:N
 consort:V
 consortium:N,-ia,-ms
@@ -20468,9 +20487,10 @@ diversionist:N
 diversity:N
 divert:V
 diverted:A
+diverticular:A
 diverticulitis:N
 diverticulosis:N
-diverticulum:N
+diverticulum:N,-la
 divertimento:N
 diverting:A
 divertingly:Av
@@ -25217,6 +25237,7 @@ feist:N
 feisty:A.c
 felafel:N
 feldspar:N
+felicific:A
 felicitate:V
 felicitation:N
 felicitous:A
@@ -26129,6 +26150,7 @@ fleshed:A
 fleshiness:N
 fleshless:A
 fleshly:A
+fleshment:N
 fleshpot:N
 fleshy:A.c
 fleur-de-lis:N
@@ -27734,6 +27756,7 @@ gaillardia:N
 gaily:Av
 gain:N
 gain:V
+gaincope:V
 gainer:N
 gainful:A
 gainfully:Av
@@ -28137,6 +28160,7 @@ gegenschein:N
 geisha:N
 gel:N
 gel:V
+gelastic:A
 gelatin:N
 gelatine:N
 gelatinize:V.z
@@ -30484,6 +30508,7 @@ happen:V
 happening:A
 happening:N
 happenstance:N
+happify:V
 happily:Av
 happiness:N
 happy:A.c
@@ -34505,6 +34530,7 @@ infectiously:Av
 infectiousness:N
 infective:A
 infectivity:N
+infelicific:A
 infelicitous:A
 infelicitously:Av
 infelicity:N
@@ -36122,6 +36148,7 @@ jack-o-lantern:N
 jackal:N
 jackanapes:N
 jackass:N
+jackassery:N
 jackboot:N
 jackdaw:N
 jacket:N
@@ -40401,6 +40428,8 @@ mariner:N
 marionette:N
 mariposa:N
 marital:A
+maritality:A
+maritally:Av
 maritime:A
 marjoram:N
 mark:N
@@ -43441,6 +43470,7 @@ mundane:A
 mundanely:Av
 mundaneness:N
 mundanity:N
+mundivagant:A
 mung:N
 municipal:A
 municipality:N
@@ -44592,6 +44622,8 @@ nictitation:N
 nidation:N
 nidicolous:A
 nidifugous:A
+nidorosity:N
+nidorous:A
 nidus:N
 niece:N
 nierembergia:N
@@ -45561,6 +45593,7 @@ novelize:V.z
 novella:N
 novelty:N
 novena:N,-ae
+novercal:A
 novice:N
 noviciate:N
 novillada:N
@@ -48224,6 +48257,7 @@ parachute:V
 parachuter:N
 parachuting:N
 parachutist:N
+paracme:N
 paracosm:N
 parade:N
 parade:V
@@ -49149,6 +49183,7 @@ penny:N,pence,-nies
 pennycress:N
 pennyroyal:N
 pennyweight:N
+pennyweighter:N
 pennywhistle:N
 pennyworth:N
 penoche:N
@@ -52230,6 +52265,7 @@ preferential:A
 preferentially:Av
 preferment:N
 preferred:A
+prefestinate:V
 prefiguration:N
 prefigurative:A
 prefigure:V
@@ -53459,9 +53495,14 @@ psilosis:N
 psionic:A
 psionics:N.p
 psithurism:N
+psittaceous:A
+psittacine:A
+psittacine:N
+psittacism:N
 psittacosaur:N
 psittacosaurus:N
 psittacosis:N
+psittacotic:A
 psoas:N,-ai,-ae
 psocid:N
 psoriasis:N
@@ -54751,6 +54792,7 @@ ramrod:Av
 ramrod:N
 ramrod:V
 ramshackle:A
+ramulose:A,-ous
 ramus:N
 ranch:N
 ranch:V
@@ -54957,6 +54999,7 @@ rattling:N
 rattly:A.c
 rattrap:N
 ratty:A.c
+raucity:N
 raucous:A
 raucously:Av
 raucousness:N
@@ -57317,6 +57360,7 @@ risen:A
 riser:N
 risibility:N
 risible:A
+risibly:Av
 rising:A
 rising:N
 risk:N
@@ -57550,6 +57594,7 @@ roomily:Av
 roominess:N
 roommate:N
 roomy:A.c
+roorback:N
 roost:N
 roost:V
 rooster:N
@@ -58564,6 +58609,7 @@ satisfactoriness:N
 satisfactory:A
 satisfiable:A
 satisfice:V
+satisficer:N
 satisfied:A
 satisfier:N
 satisfy:V
@@ -59986,6 +60032,7 @@ seraphical:A
 sere:A
 serenade:N
 serenade:V
+serendipitist:N
 serendipitous:A
 serendipity:N
 serene:A
@@ -61588,6 +61635,7 @@ slangy:A.c
 slant:N
 slant:V
 slanted:A
+slantindicular:A
 slanting:A
 slantingly:Av
 slantways:Av
@@ -61789,6 +61837,9 @@ sloganeer:N
 sloganeer:V
 sloganeering:N
 slogger:N
+sloom:N
+sloom:V
+sloomy:A.c
 sloop:N
 slop:N
 slop:V
@@ -61910,6 +61961,8 @@ smallmouth:N
 smallness:N
 smallpox:N
 smaltite:N
+smaragd:N
+smaragdine:A
 smarm:N
 smarmily:Av
 smarminess:N
@@ -62949,6 +63002,7 @@ spandrel:N
 spandril:N
 spandy:A.c
 spang:V
+spanghew:V
 spangle:N
 spangle:V
 spangled:A
@@ -76536,6 +76590,8 @@ yesternight:N
 yesteryear:N
 yet:Av
 yeti:N
+yeuk:V
+yeuky:A.c
 yew:N
 yid:N
 yield:N
