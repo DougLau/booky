@@ -104,6 +104,8 @@ aba:N
 abaca:N
 aback:Av
 abactinal:A
+abactinally:Av
+abactor:N
 abacus:N,-ci,-ses
 abaft:Av
 abalone:N
@@ -3404,6 +3406,8 @@ antiparticle:N
 antipasto:N,-ti
 antipathetic:A
 antipathetical:A
+antipathist:N
+antipathize:V.z
 antipathy:N
 antipelargy:N
 antipersonnel:A
@@ -5574,6 +5578,7 @@ backlight:V
 backlit:A
 backlog:N
 backlog:V
+backlotter:N
 backmost:A
 backpack:N
 backpack:V
@@ -12655,7 +12660,9 @@ ciao:N
 cicada:N
 cicala:N
 cicatrice:N
-cicatrix:N
+cicatricial:A
+cicatrix:N,-ices
+cicatrizant:A.z
 cicatrize:V.z
 cicero:N
 cicerone:N,-ni
@@ -13289,6 +13296,7 @@ cloze:A
 club:N
 club:V
 clubable:A
+clubbability:N
 clubbable:A
 clubber:N
 clubbing:N
@@ -15666,6 +15674,7 @@ corruptibility:N
 corruptible:A
 corrupting:A
 corruption:N
+corruptionist:N
 corruptive:A
 corruptly:Av
 corruptness:N
@@ -20137,6 +20146,7 @@ disobedience:N
 disobedient:A
 disobediently:Av
 disobey:V
+disobligation:N
 disoblige:V
 disobliging:A
 disorder:N
@@ -23836,6 +23846,7 @@ evacuee:N
 evadable:A
 evade:V
 evader:N
+evagation:N
 evaluate:V
 evaluation:N
 evaluative:A
@@ -28951,6 +28962,7 @@ gobble:V
 gobbledegook:N
 gobbledygook:N
 gobbler:N
+gobemouche:N
 goblet:N
 goblin:N
 gobsmacked:A
@@ -29635,6 +29647,7 @@ grizzle:V
 grizzled:A
 grizzly:A.c
 grizzly:N
+groak:V
 groan:N
 groan:V
 groaner:N
@@ -29766,6 +29779,7 @@ grubstake:N
 grubstake:V
 grudge:N
 grudge:V
+grudgeful:A
 grudging:A
 grudgingly:Av
 grue:N
@@ -31959,6 +31973,7 @@ homocentric:A
 homocercal:A
 homochromatic:A
 homocyclic:A
+homodox:A
 homoecious:A
 homoeoteleuton:N
 homoeotopy:N
@@ -33484,6 +33499,7 @@ impalpability:N
 impalpable:A
 impalpably:Av
 impanel:V,-ls,-ling,-lling,-led,-lled
+imparadise:V
 imparipinnate:A
 imparity:N
 impart:V
@@ -33827,6 +33843,7 @@ inadvisability:N
 inadvisable:A
 inadvisably:Av
 inaesthetic:A
+inaffable:A
 inalienability:N
 inalienable:A
 inalienably:Av
@@ -34735,6 +34752,7 @@ inheriting:A
 inheritor:N
 inheritress:N
 inheritrix:N
+inhesion:N
 inhibit:V
 inhibited:A
 inhibition:N
@@ -35154,6 +35172,7 @@ insurgence:N
 insurgency:N
 insurgent:A
 insurgent:N
+insurgescence:N
 insurmountable:A
 insurmountably:Av
 insurrection:N
@@ -36442,6 +36461,7 @@ jockstrap:N
 jocose:A
 jocosely:Av
 jocoseness:N
+jocoserious:A
 jocosity:N
 jocote:N
 jocular:A
@@ -38357,6 +38377,7 @@ letup:N
 leu:N
 leucaemia:N
 leucine:N
+leucocholy:N
 leucocyte:N
 leucocytosis:N
 leucocytozoan:N
@@ -39405,6 +39426,7 @@ lowering:A
 lowering:N
 loweringly:Av
 lowermost:A
+lowery:A
 lowest:Av
 lowish:A
 lowland:A
@@ -40092,6 +40114,7 @@ malnourish:V
 malnourished:A
 malnourishment:N
 malnutrition:N
+malobservation:N
 malocclusion:N
 malodor:N
 malodorous:A
@@ -40118,6 +40141,7 @@ malty:A.c
 malvasia:N
 malversate:V
 malversation:N
+malverse:V
 malware:N
 mam:N
 mama:N
@@ -40960,6 +40984,7 @@ medicolegal:A
 mediety:N
 medina:N
 mediocre:A
+mediocrist:N
 mediocrity:N
 meditate:V
 meditation:N
@@ -43985,8 +44010,11 @@ natal:A
 natalism:N
 natalist:N
 natality:N
+natation:N
 natator:N
+natatorial:A
 natatorium:N,-ia,-ms
+natatory:A
 natch:Av
 nates:N.p
 nation:N
@@ -54275,6 +54303,8 @@ quasar:N
 quash:V
 quasi:A
 quasiparticle:N
+quasquicentennial:A
+quasquicentennial:N
 quassia:N
 quat:N
 quatercentenary:N
@@ -58041,6 +58071,7 @@ rya:N
 rydberg:N
 rye:N
 ryegrass:N
+réclame:N
 résumé:N
 sabaton:N
 sabayon:N
@@ -63501,6 +63532,7 @@ spoilation:N
 spoiled:A
 spoiler:N
 spoiling:N
+spoilsmonger:N
 spoilsport:N
 spoilt:A
 spoke:N
@@ -70511,6 +70543,7 @@ udometer:N
 ufological:A
 ufologist:N
 ufology:N
+ugglesome:A
 ugh:I
 ugli:N
 uglify:V
@@ -70518,6 +70551,7 @@ uglily:Av
 ugliness:N
 ugly:A.c
 ugly:Av
+ugsome:A
 uh:I
 uh-oh:I
 uintathere:N
@@ -70983,6 +71017,7 @@ unclothe:V
 unclothed:A
 unclouded:A
 uncloudedness:N
+unclubbable:A
 unclutter:V
 uncluttered:A
 unco:A
